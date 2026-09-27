@@ -1,0 +1,81 @@
+{
+  "schema": "minesim_evidence_requirements_v1",
+  "scope": "只针对接续需要的已登记原件；不要求全项目重传，不由缺件推断删除。",
+  "latest_phase": {
+    "namespace_recorded": "minesim_dual_phase_horizon_pair_v1",
+    "cloud_output_directory_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1",
+    "full_zip_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1.zip",
+    "review_zip_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1_review.zip",
+    "log_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1.log",
+    "uploaded_original_name_in_transcript": "fb81b833-4372-4253-a57d-8e312b511261.zip",
+    "original_zip_bytes_reported": 19285361,
+    "original_zip_sha256_reported": "167b9869dce081fd001f260063b9fba324c4e994c69239fefafe2235f5398571",
+    "payload_name_reported": "minesim_dual_phase_horizon_pair_v1_payload.zip",
+    "payload_bytes_reported": 6137494,
+    "payload_sha256_reported": "53c9bf121093b77ce3f28526a28420a0ed819c03a434c01fedcf4b6a3e9d7d42",
+    "status_reported": "COMPLETE_PHASE_HORIZON_H16_H8_PAIR_V1",
+    "rc_reported": 0,
+    "start_reported": "2026-09-19T14:04:06.544927+00:00",
+    "capture_reported": "2026-09-19T14:05:47.375055+00:00",
+    "source": "T01 local lines3353-3384,3455-3872",
+    "raw_package_present_in_current_scan": false,
+    "all_paths_and_hashes_are_reported_not_live_verified": true
+  },
+  "minimum_saved_root": {
+    "member_recorded": "release/evidence/hold_parent_candidate/steps/0050.json",
+    "sha256_reported": "c8d00920514d9da8484ac73dc99a5cd57ee142be9a4224e9aa77b7609afb317f",
+    "prior_member_required": "release/evidence/hold_parent_candidate/steps/0049.json",
+    "reported_time_in_parent_policy_s": 25.0,
+    "reported_A": {
+      "route_s_m": 254.041586,
+      "speed_mps": 0,
+      "region": "AFTER",
+      "task_complete": false
+    },
+    "reported_B": {
+      "route_s_m": 279.526656,
+      "speed_mps": 6.75,
+      "region": "AFTER",
+      "task_complete": false
+    },
+    "exact_bytes_currently_verified": false,
+    "state_and_rng_must_not_be_reconstructed_from_rounded_summary": true
+  },
+  "minimum_readonly_bundle_members": [
+    "RESULT.json",
+    "PROTOCOL.json",
+    "ROOTS.json",
+    "PAIR_SCHEDULE",
+    "DESIGN_FROZEN_BEFORE_TESTS.json",
+    "release文件清单与来源绑定",
+    "release/evidence/hold_parent_candidate/steps/0049.json",
+    "release/evidence/hold_parent_candidate/steps/0050.json",
+    "对应双RNG的PRE_CALL/前一调用返回记录",
+    "phase_horizon.py和其真实依赖：HoldCurrentGuide/V5/H审计实现",
+    "START/CAPTURE/RC与manifest及SHA"
+  ],
+  "member_name_warning": "上述部分为T01中登记逻辑入口，精确大小写/层级以原manifest为准；不得仅凭名称新造文件。",
+  "missing_latest_actual_experiments": [
+    "H8 policy4最终原始ZIP",
+    "导引V1/V2与Q优先/B64扩展原包",
+    "400ms各新版完整原始结果与release",
+    "V5 full32分卷/完整原包",
+    "四续行见证和H8/H16八策略原包",
+    "HoldCurrent原包",
+    "最新阶段式原包"
+  ],
+  "scan_scope_record": "audit/ARCHIVE_MEMBER_SCAN.json",
+  "unknowns": [
+    "7z内部是否还有相关未列名字节未本轮查验",
+    "云端对应文件是否仍存在未查询"
+  ],
+  "recovery_constraints": [
+    "优先从最新完整ZIP或现有云端归档读同SHA原件",
+    "保留archive/member到副本的来源链",
+    "不根据四舍五入状态和原seed重建完整state/RNG",
+    "不执行旧可执行ZIP",
+    "不重走前25秒寻找替代根",
+    "不重采512条",
+    "不声称找到原件前已可无缝执行最新算法"
+  ]
+}

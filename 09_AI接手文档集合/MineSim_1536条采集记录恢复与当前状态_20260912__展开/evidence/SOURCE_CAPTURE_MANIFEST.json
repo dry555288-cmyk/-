@@ -1,0 +1,3226 @@
+[
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1.screen.log",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140748834320662,
+      "relative_path": "minesim_confirmation768_parallel_v1.screen.log",
+      "size": 19959
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "36fe82cc38630dddf7e1dd9b25b0c65695e973a742d85db7e04ae3f049245a0a",
+    "size": 19959,
+    "source_after": {
+      "ctime_ns": 1789140748834320662,
+      "dev": 2304,
+      "inode": 10803386143,
+      "mode": 33188,
+      "mtime_ns": 1789140748834320662,
+      "size": 19959
+    },
+    "source_before": {
+      "ctime_ns": 1789140748834320662,
+      "dev": 2304,
+      "inode": 10803386143,
+      "mode": 33188,
+      "mtime_ns": 1789140748834320662,
+      "size": 19959
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1.screen.log",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1.screen_rc.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140748838320310,
+      "relative_path": "minesim_confirmation768_parallel_v1.screen_rc.txt",
+      "size": 2
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2,
+    "source_after": {
+      "ctime_ns": 1789140748838320310,
+      "dev": 2304,
+      "inode": 10845127978,
+      "mode": 33188,
+      "mtime_ns": 1789140748838320310,
+      "size": 2
+    },
+    "source_before": {
+      "ctime_ns": 1789140748838320310,
+      "dev": 2304,
+      "inode": 10845127978,
+      "mode": 33188,
+      "mtime_ns": 1789140748838320310,
+      "size": 2
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1.screen_rc.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/AUTHORIZATION.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139115594580006,
+      "relative_path": "minesim_confirmation768_parallel_v1/AUTHORIZATION.json",
+      "size": 1562
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "b7fe8ce5aecfc27c34d32f43935798d759a6612a005a9742f4c69f0e90674a1e",
+    "size": 1562,
+    "source_after": {
+      "ctime_ns": 1789139115598582589,
+      "dev": 2304,
+      "inode": 11412051266,
+      "mode": 33188,
+      "mtime_ns": 1789139115594580006,
+      "size": 1562
+    },
+    "source_before": {
+      "ctime_ns": 1789139115598582589,
+      "dev": 2304,
+      "inode": 11412051266,
+      "mode": 33188,
+      "mtime_ns": 1789139115594580006,
+      "size": 1562
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/AUTHORIZATION.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/CAPTURE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140736701718514,
+      "relative_path": "minesim_confirmation768_parallel_v1/CAPTURE.json",
+      "size": 156
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "d28202b746a8adb55d6e7e074943e70e1b36968f182db53b9863ffcbe9b43d58",
+    "size": 156,
+    "source_after": {
+      "ctime_ns": 1789140736701718514,
+      "dev": 2304,
+      "inode": 10845127983,
+      "mode": 33188,
+      "mtime_ns": 1789140736701718514,
+      "size": 156
+    },
+    "source_before": {
+      "ctime_ns": 1789140736701718514,
+      "dev": 2304,
+      "inode": 10845127983,
+      "mode": 33188,
+      "mtime_ns": 1789140736701718514,
+      "size": 156
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/CAPTURE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/COLLECTION_AUDIT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140735653449228,
+      "relative_path": "minesim_confirmation768_parallel_v1/COLLECTION_AUDIT.json",
+      "size": 162994
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "5fdaf32740702c1e8a563ed26c5daab6838a1a0b4279b1d4637f9f04f80276cc",
+    "size": 162994,
+    "source_after": {
+      "ctime_ns": 1789140735653449228,
+      "dev": 2304,
+      "inode": 10845127980,
+      "mode": 33188,
+      "mtime_ns": 1789140735653449228,
+      "size": 162994
+    },
+    "source_before": {
+      "ctime_ns": 1789140735653449228,
+      "dev": 2304,
+      "inode": 10845127980,
+      "mode": 33188,
+      "mtime_ns": 1789140735653449228,
+      "size": 162994
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/COLLECTION_AUDIT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/IMPORT_PROBE.stderr.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139115526536090,
+      "relative_path": "minesim_confirmation768_parallel_v1/IMPORT_PROBE.stderr.txt",
+      "size": 0
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0,
+    "source_after": {
+      "ctime_ns": 1789139115526536090,
+      "dev": 2304,
+      "inode": 11412051264,
+      "mode": 33188,
+      "mtime_ns": 1789139115526536090,
+      "size": 0
+    },
+    "source_before": {
+      "ctime_ns": 1789139115526536090,
+      "dev": 2304,
+      "inode": 11412051264,
+      "mode": 33188,
+      "mtime_ns": 1789139115526536090,
+      "size": 0
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/IMPORT_PROBE.stderr.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/IMPORT_PROBE.stdout.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139115522533506,
+      "relative_path": "minesim_confirmation768_parallel_v1/IMPORT_PROBE.stdout.txt",
+      "size": 2977
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "7191da282c0e32a8c83d88ca12b8dab866d8a1b6c49d84e11b260ae5c7c0696e",
+    "size": 2977,
+    "source_after": {
+      "ctime_ns": 1789139115526536090,
+      "dev": 2304,
+      "inode": 11405650815,
+      "mode": 33188,
+      "mtime_ns": 1789139115522533506,
+      "size": 2977
+    },
+    "source_before": {
+      "ctime_ns": 1789139115526536090,
+      "dev": 2304,
+      "inode": 11405650815,
+      "mode": 33188,
+      "mtime_ns": 1789139115522533506,
+      "size": 2977
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/IMPORT_PROBE.stdout.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/MANIFEST.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140737741943163,
+      "relative_path": "minesim_confirmation768_parallel_v1/MANIFEST.json",
+      "size": 845760
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "6ef869b9e79653b5888ebdd9ddba34510725898682972a9279554b5e040f7da5",
+    "size": 845760,
+    "source_after": {
+      "ctime_ns": 1789140737741943163,
+      "dev": 2304,
+      "inode": 10845127985,
+      "mode": 33188,
+      "mtime_ns": 1789140737741943163,
+      "size": 845760
+    },
+    "source_before": {
+      "ctime_ns": 1789140737741943163,
+      "dev": 2304,
+      "inode": 10845127985,
+      "mode": 33188,
+      "mtime_ns": 1789140737741943163,
+      "size": 845760
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/MANIFEST.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/POSTCHECK.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140736693716568,
+      "relative_path": "minesim_confirmation768_parallel_v1/POSTCHECK.json",
+      "size": 282915
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "7489f0d25d5eee67c80d3e56e313a768ba1a062a823d53b7766d71d8945898df",
+    "size": 282915,
+    "source_after": {
+      "ctime_ns": 1789140736697717541,
+      "dev": 2304,
+      "inode": 10845127981,
+      "mode": 33188,
+      "mtime_ns": 1789140736693716568,
+      "size": 282915
+    },
+    "source_before": {
+      "ctime_ns": 1789140736697717541,
+      "dev": 2304,
+      "inode": 10845127981,
+      "mode": 33188,
+      "mtime_ns": 1789140736693716568,
+      "size": 282915
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/POSTCHECK.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/PREFLIGHT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139115542546423,
+      "relative_path": "minesim_confirmation768_parallel_v1/PREFLIGHT.json",
+      "size": 284791
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "e7fb2e010db917f2499c08a56f037d3b2cf135e009309190891b76d00bc5b6aa",
+    "size": 284791,
+    "source_after": {
+      "ctime_ns": 1789139115542546423,
+      "dev": 2304,
+      "inode": 11412051265,
+      "mode": 33188,
+      "mtime_ns": 1789139115542546423,
+      "size": 284791
+    },
+    "source_before": {
+      "ctime_ns": 1789139115542546423,
+      "dev": 2304,
+      "inode": 11412051265,
+      "mode": 33188,
+      "mtime_ns": 1789139115542546423,
+      "size": 284791
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/PREFLIGHT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/RC.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140736701718514,
+      "relative_path": "minesim_confirmation768_parallel_v1/RC.txt",
+      "size": 2
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2,
+    "source_after": {
+      "ctime_ns": 1789140736701718514,
+      "dev": 2304,
+      "inode": 10845127984,
+      "mode": 33188,
+      "mtime_ns": 1789140736701718514,
+      "size": 2
+    },
+    "source_before": {
+      "ctime_ns": 1789140736701718514,
+      "dev": 2304,
+      "inode": 10845127984,
+      "mode": 33188,
+      "mtime_ns": 1789140736701718514,
+      "size": 2
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/RC.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140736697717541,
+      "relative_path": "minesim_confirmation768_parallel_v1/RESULT.json",
+      "size": 1040
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "56c32fc7520532ae4df6cca0cbd66b56dc9212adae0c52a4a303cb44a4e7bf86",
+    "size": 1040,
+    "source_after": {
+      "ctime_ns": 1789140736697717541,
+      "dev": 2304,
+      "inode": 10845127982,
+      "mode": 33188,
+      "mtime_ns": 1789140736697717541,
+      "size": 1040
+    },
+    "source_before": {
+      "ctime_ns": 1789140736697717541,
+      "dev": 2304,
+      "inode": 10845127982,
+      "mode": 33188,
+      "mtime_ns": 1789140736697717541,
+      "size": 1040
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/SCHEDULE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139115598582589,
+      "relative_path": "minesim_confirmation768_parallel_v1/SCHEDULE.json",
+      "size": 379572
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "c46cca0abff73537dfb393c48521ccd7b12c7f6ce5f54485d405c48f256ebb52",
+    "size": 379572,
+    "source_after": {
+      "ctime_ns": 1789139115602585172,
+      "dev": 2304,
+      "inode": 11412051269,
+      "mode": 33188,
+      "mtime_ns": 1789139115598582589,
+      "size": 379572
+    },
+    "source_before": {
+      "ctime_ns": 1789139115602585172,
+      "dev": 2304,
+      "inode": 11412051269,
+      "mode": 33188,
+      "mtime_ns": 1789139115598582589,
+      "size": 379572
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/SCHEDULE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/SEED_LEASE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139115598582589,
+      "relative_path": "minesim_confirmation768_parallel_v1/SEED_LEASE.json",
+      "size": 427
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "d54760696b0fd2cd232e06bb0ad6c222c0e3df5907c94d8cd0f944f322df2a54",
+    "size": 427,
+    "source_after": {
+      "ctime_ns": 1789139115598582589,
+      "dev": 2304,
+      "inode": 11412051268,
+      "mode": 33188,
+      "mtime_ns": 1789139115598582589,
+      "size": 427
+    },
+    "source_before": {
+      "ctime_ns": 1789139115598582589,
+      "dev": 2304,
+      "inode": 11412051268,
+      "mode": 33188,
+      "mtime_ns": 1789139115598582589,
+      "size": 427
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/SEED_LEASE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139115602585172,
+      "relative_path": "minesim_confirmation768_parallel_v1/START.json",
+      "size": 266
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "4c0844ed8a9ba0f20c2e1d49110a53f4620dcb2bf0755c90af6c81fec71979d5",
+    "size": 266,
+    "source_after": {
+      "ctime_ns": 1789139115602585172,
+      "dev": 2304,
+      "inode": 11412051270,
+      "mode": 33188,
+      "mtime_ns": 1789139115602585172,
+      "size": 266
+    },
+    "source_before": {
+      "ctime_ns": 1789139115602585172,
+      "dev": 2304,
+      "inode": 11412051270,
+      "mode": 33188,
+      "mtime_ns": 1789139115602585172,
+      "size": 266
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/BINDINGS_LIVE_FILES.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114401809873,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/BINDINGS_LIVE_FILES.json",
+      "size": 238350
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "e8f92f8cad7617012773970d2c78cccc5869ff62c1403993c3ab649f7a01a0fd",
+    "size": 238350,
+    "source_after": {
+      "ctime_ns": 1789139114401809873,
+      "dev": 2304,
+      "inode": 13109720199,
+      "mode": 33188,
+      "mtime_ns": 1789139114401809873,
+      "size": 238350
+    },
+    "source_before": {
+      "ctime_ns": 1789139114401809873,
+      "dev": 2304,
+      "inode": 13109720199,
+      "mode": 33188,
+      "mtime_ns": 1789139114401809873,
+      "size": 238350
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/BINDINGS_LIVE_FILES.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SCHEDULE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114401809873,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SCHEDULE.json",
+      "size": 379572
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "c46cca0abff73537dfb393c48521ccd7b12c7f6ce5f54485d405c48f256ebb52",
+    "size": 379572,
+    "source_after": {
+      "ctime_ns": 1789139114401809873,
+      "dev": 2304,
+      "inode": 13109720200,
+      "mode": 33188,
+      "mtime_ns": 1789139114401809873,
+      "size": 379572
+    },
+    "source_before": {
+      "ctime_ns": 1789139114401809873,
+      "dev": 2304,
+      "inode": 13109720200,
+      "mode": 33188,
+      "mtime_ns": 1789139114401809873,
+      "size": 379572
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SCHEDULE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SPEC.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SPEC.json",
+      "size": 20361
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "e1e7f5077cbef11fa76e4b9736e77b9693d3203fcf39258ff50c70f21d324296",
+    "size": 20361,
+    "source_after": {
+      "ctime_ns": 1789139114405812458,
+      "dev": 2304,
+      "inode": 13109720201,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 20361
+    },
+    "source_before": {
+      "ctime_ns": 1789139114405812458,
+      "dev": 2304,
+      "inode": 13109720201,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 20361
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SPEC.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/EXECUTION_PAYLOAD_MANIFEST.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/EXECUTION_PAYLOAD_MANIFEST.json",
+      "size": 16337
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "fb14ca6faedf7623b58f35e37f4feb7b9da3de3d366d64fa6cdf86a1adcb644b",
+    "size": 16337,
+    "source_after": {
+      "ctime_ns": 1789139114405812458,
+      "dev": 2304,
+      "inode": 13109720202,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 16337
+    },
+    "source_before": {
+      "ctime_ns": 1789139114405812458,
+      "dev": 2304,
+      "inode": 13109720202,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 16337
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/EXECUTION_PAYLOAD_MANIFEST.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/PAYLOAD_MANIFEST.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/PAYLOAD_MANIFEST.json",
+      "size": 14483
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "2023daf5477c712c027a9d559ef73f67073f2915a5db9973c684a0cea900d7e4",
+    "size": 14483,
+    "source_after": {
+      "ctime_ns": 1789139114405812458,
+      "dev": 2304,
+      "inode": 13109720203,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 14483
+    },
+    "source_before": {
+      "ctime_ns": 1789139114405812458,
+      "dev": 2304,
+      "inode": 13109720203,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 14483
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/PAYLOAD_MANIFEST.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/RELEASE_PROTOCOL.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/RELEASE_PROTOCOL.json",
+      "size": 396512
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "7663f7080c0a6eb215068dc9a11c98fa95ce71693287ee7dc6a15080ccb49a11",
+    "size": 396512,
+    "source_after": {
+      "ctime_ns": 1789139114405812458,
+      "dev": 2304,
+      "inode": 13109720204,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 396512
+    },
+    "source_before": {
+      "ctime_ns": 1789139114405812458,
+      "dev": 2304,
+      "inode": 13109720204,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 396512
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/RELEASE_PROTOCOL.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/REVIEWED_COLLECTORS.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/REVIEWED_COLLECTORS.json",
+      "size": 688
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "4b7495fdd50f0239c58b02c0c23704ee0bf0e1c0a3a667fa6c1a7917207a0610",
+    "size": 688,
+    "source_after": {
+      "ctime_ns": 1789139114409815044,
+      "dev": 2304,
+      "inode": 13109720205,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 688
+    },
+    "source_before": {
+      "ctime_ns": 1789139114409815044,
+      "dev": 2304,
+      "inode": 13109720205,
+      "mode": 33188,
+      "mtime_ns": 1789139114405812458,
+      "size": 688
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/REVIEWED_COLLECTORS.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/SOURCE_BINDINGS.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114409815044,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/SOURCE_BINDINGS.json",
+      "size": 19435
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "69d052671f8fbf09efaa530e95de5c34749792a9ae6a66c126ff0747dcb25ca0",
+    "size": 19435,
+    "source_after": {
+      "ctime_ns": 1789139114409815044,
+      "dev": 2304,
+      "inode": 13109720206,
+      "mode": 33188,
+      "mtime_ns": 1789139114409815044,
+      "size": 19435
+    },
+    "source_before": {
+      "ctime_ns": 1789139114409815044,
+      "dev": 2304,
+      "inode": 13109720206,
+      "mode": 33188,
+      "mtime_ns": 1789139114409815044,
+      "size": 19435
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/SOURCE_BINDINGS.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/WORKER_ASSIGNMENTS.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114409815044,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/WORKER_ASSIGNMENTS.json",
+      "size": 25370
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "b7567aad020887a47fdc3dfd9b870eda48927b89b243ce3e260450d5a2ce810d",
+    "size": 25370,
+    "source_after": {
+      "ctime_ns": 1789139114409815044,
+      "dev": 2304,
+      "inode": 13109720207,
+      "mode": 33188,
+      "mtime_ns": 1789139114409815044,
+      "size": 25370
+    },
+    "source_before": {
+      "ctime_ns": 1789139114409815044,
+      "dev": 2304,
+      "inode": 13109720207,
+      "mode": 33188,
+      "mtime_ns": 1789139114409815044,
+      "size": 25370
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/WORKER_ASSIGNMENTS.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/ALL_PAIRS_1440.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114417820215,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/ALL_PAIRS_1440.json",
+      "size": 1015182
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "43bc556321f735c5e4dddaba68c03a979a3a894fe4883dffac94e531f8c7a66a",
+    "size": 1015182,
+    "source_after": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148676,
+      "mode": 33188,
+      "mtime_ns": 1789139114417820215,
+      "size": 1015182
+    },
+    "source_before": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148676,
+      "mode": 33188,
+      "mtime_ns": 1789139114417820215,
+      "size": 1015182
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/ALL_PAIRS_1440.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_FREEZE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114421822800,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_FREEZE.json",
+      "size": 2034
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "55f361244034f2cf52458fa24cd17616dc3c0aa6eec38e580978d04f08b18cad",
+    "size": 2034,
+    "source_after": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148677,
+      "mode": 33188,
+      "mtime_ns": 1789139114421822800,
+      "size": 2034
+    },
+    "source_before": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148677,
+      "mode": 33188,
+      "mtime_ns": 1789139114421822800,
+      "size": 2034
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_FREEZE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_LIMITATIONS_AND_SPLIT_SUPPORT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114421822800,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_LIMITATIONS_AND_SPLIT_SUPPORT.json",
+      "size": 3527
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "c613634728bf825f75ed8b67a0dadb848d891821853c67ddfc74366e4cc632c0",
+    "size": 3527,
+    "source_after": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148678,
+      "mode": 33188,
+      "mtime_ns": 1789139114421822800,
+      "size": 3527
+    },
+    "source_before": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148678,
+      "mode": 33188,
+      "mtime_ns": 1789139114421822800,
+      "size": 3527
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_LIMITATIONS_AND_SPLIT_SUPPORT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/CONFIRMATION_HANDOFF.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114421822800,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CONFIRMATION_HANDOFF.json",
+      "size": 1331
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "24f646250edda850e74d86bd87bc46b6e073cba1e1c8ad54c5c593343babfeed",
+    "size": 1331,
+    "source_after": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148690,
+      "mode": 33188,
+      "mtime_ns": 1789139114421822800,
+      "size": 1331
+    },
+    "source_before": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148690,
+      "mode": 33188,
+      "mtime_ns": 1789139114421822800,
+      "size": 1331
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CONFIRMATION_HANDOFF.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/DISCOVERY_CANDIDATES.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114421822800,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/DISCOVERY_CANDIDATES.json",
+      "size": 193904
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "8fec4366c6988f2c539534b8b04c55bd9133f05101082190fb77c47fab6c9446",
+    "size": 193904,
+    "source_after": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148691,
+      "mode": 33188,
+      "mtime_ns": 1789139114421822800,
+      "size": 193904
+    },
+    "source_before": {
+      "ctime_ns": 1789139114421822800,
+      "dev": 2304,
+      "inode": 2432148691,
+      "mode": 33188,
+      "mtime_ns": 1789139114421822800,
+      "size": 193904
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/DISCOVERY_CANDIDATES.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/EPISODE_SPLITS_DESIGN.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/EPISODE_SPLITS_DESIGN.json",
+      "size": 4382
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "7edb2ee0dff2666e9f5bc54279de6eb3b627251facdf9773dc5ad886430584c7",
+    "size": 4382,
+    "source_after": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148692,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 4382
+    },
+    "source_before": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148692,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 4382
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/EPISODE_SPLITS_DESIGN.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/OBSERVATIONS_768.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/OBSERVATIONS_768.json",
+      "size": 896221
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "f01471cf9c2609995fa221868df4f0376eda2cca669972e93dc36f6248d76294",
+    "size": 896221,
+    "source_after": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148693,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 896221
+    },
+    "source_before": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148693,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 896221
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/OBSERVATIONS_768.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/PLANNED_CELLS_1536.csv",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/PLANNED_CELLS_1536.csv",
+      "size": 138116
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "bdbeddbdbea68dec9980d419b07b7cd0d43a14595ca182a045d3c901be65fa39",
+    "size": 138116,
+    "source_after": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148694,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 138116
+    },
+    "source_before": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148694,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 138116
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/PLANNED_CELLS_1536.csv",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/PROTOCOL.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/PROTOCOL.json",
+      "size": 15581
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "6e4d327e3a109e9e6e979ac902f23c0aaaf7bf5317f10085058d3e9383fe397b",
+    "size": 15581,
+    "source_after": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148695,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 15581
+    },
+    "source_before": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148695,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 15581
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/PROTOCOL.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/SELECTED_12_ROOTS_DESIGN.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/SELECTED_12_ROOTS_DESIGN.json",
+      "size": 11377
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "52b1294141230f4b927473f22451b0e8e49d615761cb9ed5fcd48b70cb58c5b3",
+    "size": 11377,
+    "source_after": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148696,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 11377
+    },
+    "source_before": {
+      "ctime_ns": 1789139114425825386,
+      "dev": 2304,
+      "inode": 2432148696,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 11377
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/SELECTED_12_ROOTS_DESIGN.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/prior_DISCOVERY_LEDGER_768.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/prior_DISCOVERY_LEDGER_768.json",
+      "size": 853788
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "efc04e51e2328351f3c7035a94a28baa2852af17004de98ffcea56e1928465f4",
+    "size": 853788,
+    "source_after": {
+      "ctime_ns": 1789139114429827971,
+      "dev": 2304,
+      "inode": 2432148697,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 853788
+    },
+    "source_before": {
+      "ctime_ns": 1789139114429827971,
+      "dev": 2304,
+      "inode": 2432148697,
+      "mode": 33188,
+      "mtime_ns": 1789139114425825386,
+      "size": 853788
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/prior_DISCOVERY_LEDGER_768.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/protocol_reference_frozen.py",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114429827971,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/protocol_reference_frozen.py",
+      "size": 8444
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "9767fa134c7478ae7a48232e8431c32e8cd3bd6be62ae2d19520d9ac32955a49",
+    "size": 8444,
+    "source_after": {
+      "ctime_ns": 1789139114429827971,
+      "dev": 2304,
+      "inode": 2432148698,
+      "mode": 33188,
+      "mtime_ns": 1789139114429827971,
+      "size": 8444
+    },
+    "source_before": {
+      "ctime_ns": 1789139114429827971,
+      "dev": 2304,
+      "inode": 2432148698,
+      "mode": 33188,
+      "mtime_ns": 1789139114429827971,
+      "size": 8444
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/protocol_reference_frozen.py",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/PHASE_RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140717506481597,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/PHASE_RESULT.json",
+      "size": 189
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "41168ec26d1c3d858a75f36090bdaa9d6ee5b080e6c768147b71a1a44b92a179",
+    "size": 189,
+    "source_after": {
+      "ctime_ns": 1789140717506481597,
+      "dev": 2304,
+      "inode": 6496305102,
+      "mode": 33188,
+      "mtime_ns": 1789140717506481597,
+      "size": 189
+    },
+    "source_before": {
+      "ctime_ns": 1789140717506481597,
+      "dev": 2304,
+      "inode": 6496305102,
+      "mode": 33188,
+      "mtime_ns": 1789140717506481597,
+      "size": 189
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/PHASE_RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/PROCESSES.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139115638608422,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/PROCESSES.json",
+      "size": 379684
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "67e6c3691497022d7adf6387be8079e069212bc1530e235d87139951059150aa",
+    "size": 379684,
+    "source_after": {
+      "ctime_ns": 1789139115638608422,
+      "dev": 2304,
+      "inode": 6455499887,
+      "mode": 33188,
+      "mtime_ns": 1789139115638608422,
+      "size": 379684
+    },
+    "source_before": {
+      "ctime_ns": 1789139115638608422,
+      "dev": 2304,
+      "inode": 6455499887,
+      "mode": 33188,
+      "mtime_ns": 1789139115638608422,
+      "size": 379684
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/PROCESSES.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140673349123329,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl",
+      "size": 35096
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "3b7a8c841203d43733c9f9749708fe185e621ce15f8e5b7568911f982bbb3ecb",
+    "size": 35096,
+    "source_after": {
+      "ctime_ns": 1789140673349123329,
+      "dev": 2304,
+      "inode": 13109720192,
+      "mode": 33188,
+      "mtime_ns": 1789140673349123329,
+      "size": 35096
+    },
+    "source_before": {
+      "ctime_ns": 1789140673349123329,
+      "dev": 2304,
+      "inode": 13109720192,
+      "mode": 33188,
+      "mtime_ns": 1789140673349123329,
+      "size": 35096
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_0/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140673349123329,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/RESULT.json",
+      "size": 6534
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "da6ef8cdaaa774d81b9fe5f4baecbdecdd12cacd92c5c420f8ea5bc547775103",
+    "size": 6534,
+    "source_after": {
+      "ctime_ns": 1789140673349123329,
+      "dev": 2304,
+      "inode": 13052638295,
+      "mode": 33188,
+      "mtime_ns": 1789140673349123329,
+      "size": 6534
+    },
+    "source_before": {
+      "ctime_ns": 1789140673349123329,
+      "dev": 2304,
+      "inode": 13052638295,
+      "mode": 33188,
+      "mtime_ns": 1789140673349123329,
+      "size": 6534
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_0/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139116467142921,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/START.json",
+      "size": 95016
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "6c1291b11d0f02a13878a35867454b334a65f2fa9d14e1039e7a1048f0b5545d",
+    "size": 95016,
+    "source_after": {
+      "ctime_ns": 1789139116467142921,
+      "dev": 2304,
+      "inode": 13109720226,
+      "mode": 33188,
+      "mtime_ns": 1789139116467142921,
+      "size": 95016
+    },
+    "source_before": {
+      "ctime_ns": 1789139116467142921,
+      "dev": 2304,
+      "inode": 13109720226,
+      "mode": 33188,
+      "mtime_ns": 1789139116467142921,
+      "size": 95016
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140717051626776,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl",
+      "size": 35087
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "add402e4b52be221cdda3b63773f667ce5ad92631aed761e3b662b22a6525340",
+    "size": 35087,
+    "source_after": {
+      "ctime_ns": 1789140717051626776,
+      "dev": 2304,
+      "inode": 8763461215,
+      "mode": 33188,
+      "mtime_ns": 1789140717051626776,
+      "size": 35087
+    },
+    "source_before": {
+      "ctime_ns": 1789140717051626776,
+      "dev": 2304,
+      "inode": 8763461215,
+      "mode": 33188,
+      "mtime_ns": 1789140717051626776,
+      "size": 35087
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_1/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140717051626776,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/RESULT.json",
+      "size": 6534
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "95bdbb12b3a41bf18dfd2b09d1b32ba534255cdfa8cadedaf5e3461fcee310e5",
+    "size": 6534,
+    "source_after": {
+      "ctime_ns": 1789140717051626776,
+      "dev": 2304,
+      "inode": 8700225116,
+      "mode": 33188,
+      "mtime_ns": 1789140717051626776,
+      "size": 6534
+    },
+    "source_before": {
+      "ctime_ns": 1789140717051626776,
+      "dev": 2304,
+      "inode": 8700225116,
+      "mode": 33188,
+      "mtime_ns": 1789140717051626776,
+      "size": 6534
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_1/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139116611235844,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/START.json",
+      "size": 95016
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "583686f8dc7411f7ba52b9184c8a05fc4fafa4da94c184f418373ab7f40c05b7",
+    "size": 95016,
+    "source_after": {
+      "ctime_ns": 1789139116611235844,
+      "dev": 2304,
+      "inode": 8763698368,
+      "mode": 33188,
+      "mtime_ns": 1789139116611235844,
+      "size": 95016
+    },
+    "source_before": {
+      "ctime_ns": 1789139116611235844,
+      "dev": 2304,
+      "inode": 8763698368,
+      "mode": 33188,
+      "mtime_ns": 1789139116611235844,
+      "size": 95016
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140701300035060,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl",
+      "size": 35088
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "c2fe2c409ac7bee3b1911e19d5d215c6a8d846a8812e3a7c4dba0636810c5273",
+    "size": 35088,
+    "source_after": {
+      "ctime_ns": 1789140701300035060,
+      "dev": 2304,
+      "inode": 11412051278,
+      "mode": 33188,
+      "mtime_ns": 1789140701300035060,
+      "size": 35088
+    },
+    "source_before": {
+      "ctime_ns": 1789140701300035060,
+      "dev": 2304,
+      "inode": 11412051278,
+      "mode": 33188,
+      "mtime_ns": 1789140701300035060,
+      "size": 35088
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_2/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140701303964916,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/RESULT.json",
+      "size": 6533
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "81f938b5bd6662ff6df1f78b101de3974d8c25a4c8d380ed6be6aac13093f8d1",
+    "size": 6533,
+    "source_after": {
+      "ctime_ns": 1789140701303964916,
+      "dev": 2304,
+      "inode": 10845230854,
+      "mode": 33188,
+      "mtime_ns": 1789140701303964916,
+      "size": 6533
+    },
+    "source_before": {
+      "ctime_ns": 1789140701303964916,
+      "dev": 2304,
+      "inode": 10845230854,
+      "mode": 33188,
+      "mtime_ns": 1789140701303964916,
+      "size": 6533
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_2/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139116619241006,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/START.json",
+      "size": 95017
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "f4df62f62c62c9c357fa724bf949764f11c6654e0f22778cb82ee3aba7693924",
+    "size": 95017,
+    "source_after": {
+      "ctime_ns": 1789139116619241006,
+      "dev": 2304,
+      "inode": 11412051273,
+      "mode": 33188,
+      "mtime_ns": 1789139116619241006,
+      "size": 95017
+    },
+    "source_before": {
+      "ctime_ns": 1789139116619241006,
+      "dev": 2304,
+      "inode": 11412051273,
+      "mode": 33188,
+      "mtime_ns": 1789139116619241006,
+      "size": 95017
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140696441684684,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl",
+      "size": 35106
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "a9f19ea67b33b3fdcd2acc3b377a6a7abedf062f2e116a9acbb518cb7c51b68d",
+    "size": 35106,
+    "source_after": {
+      "ctime_ns": 1789140696441684684,
+      "dev": 2304,
+      "inode": 391588148,
+      "mode": 33188,
+      "mtime_ns": 1789140696441684684,
+      "size": 35106
+    },
+    "source_before": {
+      "ctime_ns": 1789140696441684684,
+      "dev": 2304,
+      "inode": 391588148,
+      "mode": 33188,
+      "mtime_ns": 1789140696441684684,
+      "size": 35106
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_3/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789140696441684684,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/RESULT.json",
+      "size": 6533
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "a677a99eb8922d6f391c2268a4737d6df068f7cd547e6517e6e327d329f03ddd",
+    "size": 6533,
+    "source_after": {
+      "ctime_ns": 1789140696441684684,
+      "dev": 2304,
+      "inode": 126435728,
+      "mode": 33188,
+      "mtime_ns": 1789140696441684684,
+      "size": 6533
+    },
+    "source_before": {
+      "ctime_ns": 1789140696441684684,
+      "dev": 2304,
+      "inode": 126435728,
+      "mode": 33188,
+      "mtime_ns": 1789140696441684684,
+      "size": 6533
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_3/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139116639253912,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/START.json",
+      "size": 95017
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "183c914934db991def1531cd349f26cde08f9105f35674a5a62886dc3d5bebff",
+    "size": 95017,
+    "source_after": {
+      "ctime_ns": 1789139116639253912,
+      "dev": 2304,
+      "inode": 391588144,
+      "mode": 33188,
+      "mtime_ns": 1789139116639253912,
+      "size": 95017
+    },
+    "source_before": {
+      "ctime_ns": 1789139116639253912,
+      "dev": 2304,
+      "inode": 391588144,
+      "mode": 33188,
+      "mtime_ns": 1789139116639253912,
+      "size": 95017
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_confirmation768_parallel_v1/runner.py.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789139114477858995,
+      "relative_path": "minesim_confirmation768_parallel_v1/runner.py.txt",
+      "size": 1590799
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "92e95de0558783ab5678687d51aba207f8c4d1cbd4d3850f037243fd4faaa37e",
+    "size": 1590799,
+    "source_after": {
+      "ctime_ns": 1789139114477858995,
+      "dev": 2304,
+      "inode": 11405650814,
+      "mode": 33188,
+      "mtime_ns": 1789139114477858995,
+      "size": 1590799
+    },
+    "source_before": {
+      "ctime_ns": 1789139114477858995,
+      "dev": 2304,
+      "inode": 11405650814,
+      "mode": 33188,
+      "mtime_ns": 1789139114477858995,
+      "size": 1590799
+    },
+    "source_relative_path": "minesim_confirmation768_parallel_v1/runner.py.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1.screen.log",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132217556247729,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1.screen.log",
+      "size": 8232
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "922ae1407bf6043b80ee5e7bca29912b0720c8c0fcd0d51ca5281635d1d4ca31",
+    "size": 8232,
+    "source_after": {
+      "ctime_ns": 1789132217556247729,
+      "dev": 2304,
+      "inode": 10847328238,
+      "mode": 33188,
+      "mtime_ns": 1789132217556247729,
+      "size": 8232
+    },
+    "source_before": {
+      "ctime_ns": 1789132217556247729,
+      "dev": 2304,
+      "inode": 10847328238,
+      "mode": 33188,
+      "mtime_ns": 1789132217556247729,
+      "size": 8232
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1.screen.log",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1.screen_rc.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132217676243772,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1.screen_rc.txt",
+      "size": 2
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2,
+    "source_after": {
+      "ctime_ns": 1789132217676243772,
+      "dev": 2304,
+      "inode": 11030768884,
+      "mode": 33188,
+      "mtime_ns": 1789132217676243772,
+      "size": 2
+    },
+    "source_before": {
+      "ctime_ns": 1789132217676243772,
+      "dev": 2304,
+      "inode": 11030768884,
+      "mode": 33188,
+      "mtime_ns": 1789132217676243772,
+      "size": 2
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1.screen_rc.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/AUTHORIZATION.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132198864865841,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/AUTHORIZATION.json",
+      "size": 1164
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "5a384511b4f0e4545f04c17adb396cdfe5d3df736a7267b6dfd118ddbeed39f0",
+    "size": 1164,
+    "source_after": {
+      "ctime_ns": 1789132198864865841,
+      "dev": 2304,
+      "inode": 13063470919,
+      "mode": 33188,
+      "mtime_ns": 1789132198864865841,
+      "size": 1164
+    },
+    "source_before": {
+      "ctime_ns": 1789132198864865841,
+      "dev": 2304,
+      "inode": 13063470919,
+      "mode": 33188,
+      "mtime_ns": 1789132198864865841,
+      "size": 1164
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/AUTHORIZATION.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/CAPTURE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132217096262897,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/CAPTURE.json",
+      "size": 290
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "adee012ddaead53145dbc7a1544fc87743e679ec350dcc8662d94a545db0a199",
+    "size": 290,
+    "source_after": {
+      "ctime_ns": 1789132217096262897,
+      "dev": 2304,
+      "inode": 13063470935,
+      "mode": 33188,
+      "mtime_ns": 1789132217096262897,
+      "size": 290
+    },
+    "source_before": {
+      "ctime_ns": 1789132217096262897,
+      "dev": 2304,
+      "inode": 13063470935,
+      "mode": 33188,
+      "mtime_ns": 1789132217096262897,
+      "size": 290
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/CAPTURE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/JOIN_VALIDATION.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132216964267250,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/JOIN_VALIDATION.json",
+      "size": 661
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "a8920ffd3aae96d2c28f78a4555f1781ceae45fa7133f0647b1fe08352b6ba13",
+    "size": 661,
+    "source_after": {
+      "ctime_ns": 1789132216964267250,
+      "dev": 2304,
+      "inode": 13063470930,
+      "mode": 33188,
+      "mtime_ns": 1789132216964267250,
+      "size": 661
+    },
+    "source_before": {
+      "ctime_ns": 1789132216964267250,
+      "dev": 2304,
+      "inode": 13063470930,
+      "mode": 33188,
+      "mtime_ns": 1789132216964267250,
+      "size": 661
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/JOIN_VALIDATION.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/MANIFEST.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132217168260523,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/MANIFEST.json",
+      "size": 18419
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "b2e4a0e6eb25f45867ed04d9f7f80175d2b71a4042e3e02d9c8dda664e2229be",
+    "size": 18419,
+    "source_after": {
+      "ctime_ns": 1789132217168260523,
+      "dev": 2304,
+      "inode": 13063470915,
+      "mode": 33188,
+      "mtime_ns": 1789132217168260523,
+      "size": 18419
+    },
+    "source_before": {
+      "ctime_ns": 1789132217168260523,
+      "dev": 2304,
+      "inode": 13063470915,
+      "mode": 33188,
+      "mtime_ns": 1789132217168260523,
+      "size": 18419
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/MANIFEST.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/POSTCHECK.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132217076263557,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/POSTCHECK.json",
+      "size": 199
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "1ab7ab3a95b8b969d3d361a17733737e8d38370b1f0ebbba0173d6c5f8432a33",
+    "size": 199,
+    "source_after": {
+      "ctime_ns": 1789132217076263557,
+      "dev": 2304,
+      "inode": 13063470931,
+      "mode": 33188,
+      "mtime_ns": 1789132217076263557,
+      "size": 199
+    },
+    "source_before": {
+      "ctime_ns": 1789132217076263557,
+      "dev": 2304,
+      "inode": 13063470931,
+      "mode": 33188,
+      "mtime_ns": 1789132217076263557,
+      "size": 199
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/POSTCHECK.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/PREFLIGHT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132198860865973,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/PREFLIGHT.json",
+      "size": 7580
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "9cdefe319531b2a486509ecc62ec3d24ef131c65c3f970a6644db091bf54f64d",
+    "size": 7580,
+    "source_after": {
+      "ctime_ns": 1789132198860865973,
+      "dev": 2304,
+      "inode": 13063470918,
+      "mode": 33188,
+      "mtime_ns": 1789132198860865973,
+      "size": 7580
+    },
+    "source_before": {
+      "ctime_ns": 1789132198860865973,
+      "dev": 2304,
+      "inode": 13063470918,
+      "mode": 33188,
+      "mtime_ns": 1789132198860865973,
+      "size": 7580
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/PREFLIGHT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132216688276354,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/PROGRESS.jsonl",
+      "size": 5972
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "bfbcd5c6606b4b9ffb57b0e23864a3921c600eb212e5a7f6a5197ae88b9891fc",
+    "size": 5972,
+    "source_after": {
+      "ctime_ns": 1789132216688276354,
+      "dev": 2304,
+      "inode": 13063470924,
+      "mode": 33188,
+      "mtime_ns": 1789132216688276354,
+      "size": 5972
+    },
+    "source_before": {
+      "ctime_ns": 1789132216688276354,
+      "dev": 2304,
+      "inode": 13063470924,
+      "mode": 33188,
+      "mtime_ns": 1789132216688276354,
+      "size": 5972
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/RC.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132217096262897,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/RC.txt",
+      "size": 2
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2,
+    "source_after": {
+      "ctime_ns": 1789132217096262897,
+      "dev": 2304,
+      "inode": 13063470934,
+      "mode": 33188,
+      "mtime_ns": 1789132217096262897,
+      "size": 2
+    },
+    "source_before": {
+      "ctime_ns": 1789132217096262897,
+      "dev": 2304,
+      "inode": 13063470934,
+      "mode": 33188,
+      "mtime_ns": 1789132217096262897,
+      "size": 2
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/RC.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/RECONSTRUCTED_CONTEXT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132204176689824,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/RECONSTRUCTED_CONTEXT.json",
+      "size": 884
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "4a387771453b8bac21c86efa31867d5d4f0f432e0ad682ff5433a7a21228c140",
+    "size": 884,
+    "source_after": {
+      "ctime_ns": 1789132204176689824,
+      "dev": 2304,
+      "inode": 13063470922,
+      "mode": 33188,
+      "mtime_ns": 1789132204176689824,
+      "size": 884
+    },
+    "source_before": {
+      "ctime_ns": 1789132204176689824,
+      "dev": 2304,
+      "inode": 13063470922,
+      "mode": 33188,
+      "mtime_ns": 1789132204176689824,
+      "size": 884
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/RECONSTRUCTED_CONTEXT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/REQUEST.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132196576941745,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/REQUEST.json",
+      "size": 253
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "94c696f2d86ea3f794df3787a59f2dc15f8254a998a483bc4c97ff4e453842f5",
+    "size": 253,
+    "source_after": {
+      "ctime_ns": 1789132196576941745,
+      "dev": 2304,
+      "inode": 13052205448,
+      "mode": 33188,
+      "mtime_ns": 1789132196576941745,
+      "size": 253
+    },
+    "source_before": {
+      "ctime_ns": 1789132196576941745,
+      "dev": 2304,
+      "inode": 13052205448,
+      "mode": 33188,
+      "mtime_ns": 1789132196576941745,
+      "size": 253
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/REQUEST.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132217096262897,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/RESULT.json",
+      "size": 881
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "27ed371824ed5d129e8e03006198d1660d38869128c3d92f962e5ee4a53ec4dc",
+    "size": 881,
+    "source_after": {
+      "ctime_ns": 1789132217096262897,
+      "dev": 2304,
+      "inode": 13063470933,
+      "mode": 33188,
+      "mtime_ns": 1789132217096262897,
+      "size": 881
+    },
+    "source_before": {
+      "ctime_ns": 1789132217096262897,
+      "dev": 2304,
+      "inode": 13063470933,
+      "mode": 33188,
+      "mtime_ns": 1789132217096262897,
+      "size": 881
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132198864865841,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/START.json",
+      "size": 447
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "800099f99ccb0b94659bbbe6f7f358534c1ead2b34df572f1f9aaef7faa1310b",
+    "size": 447,
+    "source_after": {
+      "ctime_ns": 1789132198864865841,
+      "dev": 2304,
+      "inode": 13063470920,
+      "mode": 33188,
+      "mtime_ns": 1789132198864865841,
+      "size": 447
+    },
+    "source_before": {
+      "ctime_ns": 1789132198864865841,
+      "dev": 2304,
+      "inode": 13063470920,
+      "mode": 33188,
+      "mtime_ns": 1789132198864865841,
+      "size": 447
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/STATIC_INPUT_CHECK.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132198464879108,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/STATIC_INPUT_CHECK.json",
+      "size": 1163
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "bed31b3ae49ae1a1513410cfedf53f09171203a813ec955e70d896c781267ccb",
+    "size": 1163,
+    "source_after": {
+      "ctime_ns": 1789132198464879108,
+      "dev": 2304,
+      "inode": 13063470917,
+      "mode": 33188,
+      "mtime_ns": 1789132198464879108,
+      "size": 1163
+    },
+    "source_before": {
+      "ctime_ns": 1789132198464879108,
+      "dev": 2304,
+      "inode": 13063470917,
+      "mode": 33188,
+      "mtime_ns": 1789132198464879108,
+      "size": 1163
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/STATIC_INPUT_CHECK.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/CELL_START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132204176689824,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/CELL_START.json",
+      "size": 565
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "cdd6c9ca9f39ccccb1f3e2f19ac83389b4904f9621a41d6594d3c170c8d98b4d",
+    "size": 565,
+    "source_after": {
+      "ctime_ns": 1789132204176689824,
+      "dev": 2304,
+      "inode": 13052205493,
+      "mode": 33188,
+      "mtime_ns": 1789132204176689824,
+      "size": 565
+    },
+    "source_before": {
+      "ctime_ns": 1789132204176689824,
+      "dev": 2304,
+      "inode": 13052205493,
+      "mode": 33188,
+      "mtime_ns": 1789132204176689824,
+      "size": 565
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/CELL_START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/COMMIT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132217096262897,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/COMMIT.json",
+      "size": 1162
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "3992732f4201e8327259a220e508d00fce9a5a1421acd049b8cad7c494861a9c",
+    "size": 1162,
+    "source_after": {
+      "ctime_ns": 1789132217096262897,
+      "dev": 2304,
+      "inode": 13063470932,
+      "mode": 33188,
+      "mtime_ns": 1789132217096262897,
+      "size": 1162
+    },
+    "source_before": {
+      "ctime_ns": 1789132217096262897,
+      "dev": 2304,
+      "inode": 13063470932,
+      "mode": 33188,
+      "mtime_ns": 1789132217096262897,
+      "size": 1162
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/COMMIT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/RESOLVED_CONTEXT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132204176689824,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/RESOLVED_CONTEXT.json",
+      "size": 884
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "4ead99e9617aa1ca66d6eee052de7d36cf737c9b84ca05d14cfda3625d8246d7",
+    "size": 884,
+    "source_after": {
+      "ctime_ns": 1789132204176689824,
+      "dev": 2304,
+      "inode": 13063470921,
+      "mode": 33188,
+      "mtime_ns": 1789132204176689824,
+      "size": 884
+    },
+    "source_before": {
+      "ctime_ns": 1789132204176689824,
+      "dev": 2304,
+      "inode": 13063470921,
+      "mode": 33188,
+      "mtime_ns": 1789132204176689824,
+      "size": 884
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/RESOLVED_CONTEXT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/events.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132216756274111,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/events.jsonl",
+      "size": 263767
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "4a896f817da9779e4170c9015688baa72518afcee92ff5b0899aa0e5f66650f7",
+    "size": 263767,
+    "source_after": {
+      "ctime_ns": 1789132216756274111,
+      "dev": 2304,
+      "inode": 13063470923,
+      "mode": 33188,
+      "mtime_ns": 1789132216756274111,
+      "size": 263767
+    },
+    "source_before": {
+      "ctime_ns": 1789132216756274111,
+      "dev": 2304,
+      "inode": 13063470923,
+      "mode": 33188,
+      "mtime_ns": 1789132216756274111,
+      "size": 263767
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/events.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/metric_view.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132216884269889,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/metric_view.json",
+      "size": 191877
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "e103f7af5e017ec3939cab0cd6da5118cb7fb4ca574a6853172097f9acce4f16",
+    "size": 191877,
+    "source_after": {
+      "ctime_ns": 1789132216884269889,
+      "dev": 2304,
+      "inode": 13063470928,
+      "mode": 33188,
+      "mtime_ns": 1789132216884269889,
+      "size": 191877
+    },
+    "source_before": {
+      "ctime_ns": 1789132216884269889,
+      "dev": 2304,
+      "inode": 13063470928,
+      "mode": 33188,
+      "mtime_ns": 1789132216884269889,
+      "size": 191877
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/metric_view.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/metrics.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132216884269889,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/metrics.json",
+      "size": 4450
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "21adf0dfba3952219f5c758c32b87721264c8422c49a58f6e1da8f04c07a38db",
+    "size": 4450,
+    "source_after": {
+      "ctime_ns": 1789132216884269889,
+      "dev": 2304,
+      "inode": 13063470929,
+      "mode": 33188,
+      "mtime_ns": 1789132216884269889,
+      "size": 4450
+    },
+    "source_before": {
+      "ctime_ns": 1789132216884269889,
+      "dev": 2304,
+      "inode": 13063470929,
+      "mode": 33188,
+      "mtime_ns": 1789132216884269889,
+      "size": 4450
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/metrics.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/trace.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789132216768273716,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/trace.json",
+      "size": 219533
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "da523d091966f27b60b67866bac79b5271b65ff2f0b067a8880556018e6ada7d",
+    "size": 219533,
+    "source_after": {
+      "ctime_ns": 1789132216768273716,
+      "dev": 2304,
+      "inode": 13063470927,
+      "mode": 33188,
+      "mtime_ns": 1789132216768273716,
+      "size": 219533
+    },
+    "source_before": {
+      "ctime_ns": 1789132216768273716,
+      "dev": 2304,
+      "inode": 13063470927,
+      "mode": 33188,
+      "mtime_ns": 1789132216768273716,
+      "size": 219533
+    },
+    "source_relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/trace.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1.screen.log",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127319322618977,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1.screen.log",
+      "size": 25131
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "7f7157a3cb35d42c5390cc5f4dd7daa59a0accdf832f62fe1d43c827a150783e",
+    "size": 25131,
+    "source_after": {
+      "ctime_ns": 1789127319322618977,
+      "dev": 2304,
+      "inode": 10803625476,
+      "mode": 33188,
+      "mtime_ns": 1789127319322618977,
+      "size": 25131
+    },
+    "source_before": {
+      "ctime_ns": 1789127319322618977,
+      "dev": 2304,
+      "inode": 10803625476,
+      "mode": 33188,
+      "mtime_ns": 1789127319322618977,
+      "size": 25131
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1.screen.log",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1.screen_rc.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127319322618977,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1.screen_rc.txt",
+      "size": 2
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2,
+    "source_after": {
+      "ctime_ns": 1789127319326618872,
+      "dev": 2304,
+      "inode": 10847328228,
+      "mode": 33188,
+      "mtime_ns": 1789127319322618977,
+      "size": 2
+    },
+    "source_before": {
+      "ctime_ns": 1789127319326618872,
+      "dev": 2304,
+      "inode": 10847328228,
+      "mode": 33188,
+      "mtime_ns": 1789127319322618977,
+      "size": 2
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1.screen_rc.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/AUTHORIZATION.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623265047802,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/AUTHORIZATION.json",
+      "size": 1623
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "1fef964c90d103b19abe69d3841b28222a35f3a48d7aa3670cb9198129197314",
+    "size": 1623,
+    "source_after": {
+      "ctime_ns": 1789125623269047682,
+      "dev": 2304,
+      "inode": 809318447,
+      "mode": 33188,
+      "mtime_ns": 1789125623265047802,
+      "size": 1623
+    },
+    "source_before": {
+      "ctime_ns": 1789125623269047682,
+      "dev": 2304,
+      "inode": 809318447,
+      "mode": 33188,
+      "mtime_ns": 1789125623265047802,
+      "size": 1623
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/AUTHORIZATION.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/CAPTURE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127311114835538,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/CAPTURE.json",
+      "size": 166
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "beb7405b2a101db190a74e3be2c588fb78d8223ee46a77d82b99c2359a3ab3c3",
+    "size": 166,
+    "source_after": {
+      "ctime_ns": 1789127311114835538,
+      "dev": 2304,
+      "inode": 48028943,
+      "mode": 33188,
+      "mtime_ns": 1789127311114835538,
+      "size": 166
+    },
+    "source_before": {
+      "ctime_ns": 1789127311114835538,
+      "dev": 2304,
+      "inode": 48028943,
+      "mode": 33188,
+      "mtime_ns": 1789127311114835538,
+      "size": 166
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/CAPTURE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/CELL_LEASE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623269047682,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/CELL_LEASE.json",
+      "size": 12064
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "496fd9756bfa95427cbcc8ad794072b4ceb836a0eab6b20023f357eb057329c4",
+    "size": 12064,
+    "source_after": {
+      "ctime_ns": 1789125623269047682,
+      "dev": 2304,
+      "inode": 809318448,
+      "mode": 33188,
+      "mtime_ns": 1789125623269047682,
+      "size": 12064
+    },
+    "source_before": {
+      "ctime_ns": 1789125623269047682,
+      "dev": 2304,
+      "inode": 809318448,
+      "mode": 33188,
+      "mtime_ns": 1789125623269047682,
+      "size": 12064
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/CELL_LEASE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/COLLECTION_AUDIT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127310398854429,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/COLLECTION_AUDIT.json",
+      "size": 82350
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "70cfc0d08a92faaa6473180f91edee914df310f5096ae6f817b39e120a46b6bb",
+    "size": 82350,
+    "source_after": {
+      "ctime_ns": 1789127310450853057,
+      "dev": 2304,
+      "inode": 48028936,
+      "mode": 33188,
+      "mtime_ns": 1789127310398854429,
+      "size": 82350
+    },
+    "source_before": {
+      "ctime_ns": 1789127310450853057,
+      "dev": 2304,
+      "inode": 48028936,
+      "mode": 33188,
+      "mtime_ns": 1789127310398854429,
+      "size": 82350
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/COLLECTION_AUDIT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/MANIFEST.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127311734819179,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/MANIFEST.json",
+      "size": 425224
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "f2cdbc0fbd1fc663977fa9cdceaa501f73a9a25e36947d02cb239e579848c76e",
+    "size": 425224,
+    "source_after": {
+      "ctime_ns": 1789127311734819179,
+      "dev": 2304,
+      "inode": 48028945,
+      "mode": 33188,
+      "mtime_ns": 1789127311734819179,
+      "size": 425224
+    },
+    "source_before": {
+      "ctime_ns": 1789127311734819179,
+      "dev": 2304,
+      "inode": 48028945,
+      "mode": 33188,
+      "mtime_ns": 1789127311734819179,
+      "size": 425224
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/MANIFEST.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/POSTCHECK.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127311110835643,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/POSTCHECK.json",
+      "size": 3121
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "635990545c8eed99c7b8fb842db9a3d6e2ab2ec5a45bf2a8563b4ff213986076",
+    "size": 3121,
+    "source_after": {
+      "ctime_ns": 1789127311114835538,
+      "dev": 2304,
+      "inode": 48028941,
+      "mode": 33188,
+      "mtime_ns": 1789127311110835643,
+      "size": 3121
+    },
+    "source_before": {
+      "ctime_ns": 1789127311114835538,
+      "dev": 2304,
+      "inode": 48028941,
+      "mode": 33188,
+      "mtime_ns": 1789127311110835643,
+      "size": 3121
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/POSTCHECK.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/PREFLIGHT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623261047923,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/PREFLIGHT.json",
+      "size": 3416
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "8930e0766d768bab83b0f10bbebe08ff48fc6d4d67737cd6bfcfc1ea56c267f9",
+    "size": 3416,
+    "source_after": {
+      "ctime_ns": 1789125623261047923,
+      "dev": 2304,
+      "inode": 809318446,
+      "mode": 33188,
+      "mtime_ns": 1789125623261047923,
+      "size": 3416
+    },
+    "source_before": {
+      "ctime_ns": 1789125623261047923,
+      "dev": 2304,
+      "inode": 809318446,
+      "mode": 33188,
+      "mtime_ns": 1789125623261047923,
+      "size": 3416
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/PREFLIGHT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/RC.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127311118835432,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/RC.txt",
+      "size": 2
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2,
+    "source_after": {
+      "ctime_ns": 1789127311118835432,
+      "dev": 2304,
+      "inode": 48028944,
+      "mode": 33188,
+      "mtime_ns": 1789127311118835432,
+      "size": 2
+    },
+    "source_before": {
+      "ctime_ns": 1789127311118835432,
+      "dev": 2304,
+      "inode": 48028944,
+      "mode": 33188,
+      "mtime_ns": 1789127311118835432,
+      "size": 2
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/RC.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127311114835538,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/RESULT.json",
+      "size": 928
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "21099e6f846e5a05e904edee79bd264011dd1c8c2931c29accb2ed9e29c19e88",
+    "size": 928,
+    "source_after": {
+      "ctime_ns": 1789127311114835538,
+      "dev": 2304,
+      "inode": 48028942,
+      "mode": 33188,
+      "mtime_ns": 1789127311114835538,
+      "size": 928
+    },
+    "source_before": {
+      "ctime_ns": 1789127311114835538,
+      "dev": 2304,
+      "inode": 48028942,
+      "mode": 33188,
+      "mtime_ns": 1789127311114835538,
+      "size": 928
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/SCHEDULE.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623273047561,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/SCHEDULE.json",
+      "size": 191368
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "0aea1f06607d462e08cc80a61d4e644d8c44d608265c26add95558458a61b8a4",
+    "size": 191368,
+    "source_after": {
+      "ctime_ns": 1789125623273047561,
+      "dev": 2304,
+      "inode": 809318449,
+      "mode": 33188,
+      "mtime_ns": 1789125623273047561,
+      "size": 191368
+    },
+    "source_before": {
+      "ctime_ns": 1789125623273047561,
+      "dev": 2304,
+      "inode": 809318449,
+      "mode": 33188,
+      "mtime_ns": 1789125623273047561,
+      "size": 191368
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/SCHEDULE.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623277047441,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/START.json",
+      "size": 292
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "0bbec6f7fcf44587c9c2717e7cb8d39fb1bdbe4f2b7e4cd2959201bb13fbcbcc",
+    "size": 292,
+    "source_after": {
+      "ctime_ns": 1789125623277047441,
+      "dev": 2304,
+      "inode": 809318450,
+      "mode": 33188,
+      "mtime_ns": 1789125623277047441,
+      "size": 292
+    },
+    "source_before": {
+      "ctime_ns": 1789125623277047441,
+      "dev": 2304,
+      "inode": 809318450,
+      "mode": 33188,
+      "mtime_ns": 1789125623277047441,
+      "size": 292
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/bundle/BOUNDARY.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623205049610,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/BOUNDARY.json",
+      "size": 427315
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "55520800929ab5e6d67aa711f3e5ea6df1f9cecf5871851e2f5717eb51092b13",
+    "size": 427315,
+    "source_after": {
+      "ctime_ns": 1789125623205049610,
+      "dev": 2304,
+      "inode": 4796397445,
+      "mode": 33188,
+      "mtime_ns": 1789125623205049610,
+      "size": 427315
+    },
+    "source_before": {
+      "ctime_ns": 1789125623205049610,
+      "dev": 2304,
+      "inode": 4796397445,
+      "mode": 33188,
+      "mtime_ns": 1789125623205049610,
+      "size": 427315
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/BOUNDARY.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/bundle/MANIFEST.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623209049490,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/MANIFEST.json",
+      "size": 10463
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "fbb54ace5620585b43117be4c1b33f921ddcffa02d3b42bd19f2a50e5ab7de76",
+    "size": 10463,
+    "source_after": {
+      "ctime_ns": 1789125623209049490,
+      "dev": 2304,
+      "inode": 4796397446,
+      "mode": 33188,
+      "mtime_ns": 1789125623209049490,
+      "size": 10463
+    },
+    "source_before": {
+      "ctime_ns": 1789125623209049490,
+      "dev": 2304,
+      "inode": 4796397446,
+      "mode": 33188,
+      "mtime_ns": 1789125623209049490,
+      "size": 10463
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/MANIFEST.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/bundle/PROTOCOL.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623209049490,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/PROTOCOL.json",
+      "size": 210021
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "00434567b3fbe351922300b8ded2f4728cc0b86f9dc2ce8ce7ef6ad6edc216ba",
+    "size": 210021,
+    "source_after": {
+      "ctime_ns": 1789125623209049490,
+      "dev": 2304,
+      "inode": 4796397447,
+      "mode": 33188,
+      "mtime_ns": 1789125623209049490,
+      "size": 210021
+    },
+    "source_before": {
+      "ctime_ns": 1789125623209049490,
+      "dev": 2304,
+      "inode": 4796397447,
+      "mode": 33188,
+      "mtime_ns": 1789125623209049490,
+      "size": 210021
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/PROTOCOL.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/PHASE_RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127297591192397,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/PHASE_RESULT.json",
+      "size": 185
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "a33ab9637d17826564dbc2f2acec23d80d7f0c22cf103069151e27185c30543f",
+    "size": 185,
+    "source_after": {
+      "ctime_ns": 1789127297591192397,
+      "dev": 2304,
+      "inode": 2441261386,
+      "mode": 33188,
+      "mtime_ns": 1789127297591192397,
+      "size": 185
+    },
+    "source_before": {
+      "ctime_ns": 1789127297591192397,
+      "dev": 2304,
+      "inode": 2441261386,
+      "mode": 33188,
+      "mtime_ns": 1789127297591192397,
+      "size": 185
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/PHASE_RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/PROCESSES.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623301046718,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/PROCESSES.json",
+      "size": 191480
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "4bec9eb8ed81bcab7561bb60aa15a50da33f1c308cd38c62de84870ac1f05377",
+    "size": 191480,
+    "source_after": {
+      "ctime_ns": 1789125623301046718,
+      "dev": 2304,
+      "inode": 2433278255,
+      "mode": 33188,
+      "mtime_ns": 1789125623301046718,
+      "size": 191480
+    },
+    "source_before": {
+      "ctime_ns": 1789125623301046718,
+      "dev": 2304,
+      "inode": 2433278255,
+      "mode": 33188,
+      "mtime_ns": 1789125623301046718,
+      "size": 191480
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/PROCESSES.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789126808648144179,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl",
+      "size": 17599
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "09f3459a29fcc63572f0324c47fdb3a426cb48bf60120a63de72982a1e2662df",
+    "size": 17599,
+    "source_after": {
+      "ctime_ns": 1789126808648144179,
+      "dev": 2304,
+      "inode": 8697087780,
+      "mode": 33188,
+      "mtime_ns": 1789126808648144179,
+      "size": 17599
+    },
+    "source_before": {
+      "ctime_ns": 1789126808648144179,
+      "dev": 2304,
+      "inode": 8697087780,
+      "mode": 33188,
+      "mtime_ns": 1789126808648144179,
+      "size": 17599
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789126808652144073,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/RESULT.json",
+      "size": 3103
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "b7a54e58ab6ce434180cbc818aa5d9b62173fdaae1e6adab4e927230b40014ed",
+    "size": 3103,
+    "source_after": {
+      "ctime_ns": 1789126808652144073,
+      "dev": 2304,
+      "inode": 8697970677,
+      "mode": 33188,
+      "mtime_ns": 1789126808652144073,
+      "size": 3103
+    },
+    "source_before": {
+      "ctime_ns": 1789126808652144073,
+      "dev": 2304,
+      "inode": 8697970677,
+      "mode": 33188,
+      "mtime_ns": 1789126808652144073,
+      "size": 3103
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623613037315,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/START.json",
+      "size": 47718
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "7054a045b7df5578a88e13749bfb757f87a57748c97569e8bda11e15cb739dc2",
+    "size": 47718,
+    "source_after": {
+      "ctime_ns": 1789125623613037315,
+      "dev": 2304,
+      "inode": 8697087795,
+      "mode": 33188,
+      "mtime_ns": 1789125623613037315,
+      "size": 47718
+    },
+    "source_before": {
+      "ctime_ns": 1789125623613037315,
+      "dev": 2304,
+      "inode": 8697087795,
+      "mode": 33188,
+      "mtime_ns": 1789125623613037315,
+      "size": 47718
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789126755545559186,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl",
+      "size": 17584
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "7bbed2fad45df116f1e704d461087a3d4e4470cadf7007659bdfbdfca395702e",
+    "size": 17584,
+    "source_after": {
+      "ctime_ns": 1789126755545559186,
+      "dev": 2304,
+      "inode": 8697087801,
+      "mode": 33188,
+      "mtime_ns": 1789126755545559186,
+      "size": 17584
+    },
+    "source_before": {
+      "ctime_ns": 1789126755545559186,
+      "dev": 2304,
+      "inode": 8697087801,
+      "mode": 33188,
+      "mtime_ns": 1789126755545559186,
+      "size": 17584
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789126755545559186,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/RESULT.json",
+      "size": 3104
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "4bf7597616487a7932520f2aae47d018b363896fa92f5d765f129776c5195256",
+    "size": 3104,
+    "source_after": {
+      "ctime_ns": 1789126755545559186,
+      "dev": 2304,
+      "inode": 8697970672,
+      "mode": 33188,
+      "mtime_ns": 1789126755545559186,
+      "size": 3104
+    },
+    "source_before": {
+      "ctime_ns": 1789126755545559186,
+      "dev": 2304,
+      "inode": 8697970672,
+      "mode": 33188,
+      "mtime_ns": 1789126755545559186,
+      "size": 3104
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623781032253,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/START.json",
+      "size": 47718
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "da83898e96d01ab6204058f95047f1ebb1f1b718227e92a7103cc1d161f602f9",
+    "size": 47718,
+    "source_after": {
+      "ctime_ns": 1789125623785032132,
+      "dev": 2304,
+      "inode": 8697087797,
+      "mode": 33188,
+      "mtime_ns": 1789125623781032253,
+      "size": 47718
+    },
+    "source_before": {
+      "ctime_ns": 1789125623785032132,
+      "dev": 2304,
+      "inode": 8697087797,
+      "mode": 33188,
+      "mtime_ns": 1789125623781032253,
+      "size": 47718
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789126725930349338,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl",
+      "size": 17744
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "86546ac8f79be8059d5e1ce5a83bebae61881815b74441402cb259709bac5af0",
+    "size": 17744,
+    "source_after": {
+      "ctime_ns": 1789126725930349338,
+      "dev": 2304,
+      "inode": 809318457,
+      "mode": 33188,
+      "mtime_ns": 1789126725930349338,
+      "size": 17744
+    },
+    "source_before": {
+      "ctime_ns": 1789126725930349338,
+      "dev": 2304,
+      "inode": 809318457,
+      "mode": 33188,
+      "mtime_ns": 1789126725930349338,
+      "size": 17744
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789126725930349338,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/RESULT.json",
+      "size": 3134
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "747495ea242070efe65545305621ca5ff4335ebfb2f6104c077ef4a05ab194b2",
+    "size": 3134,
+    "source_after": {
+      "ctime_ns": 1789126725930349338,
+      "dev": 2304,
+      "inode": 44582502,
+      "mode": 33188,
+      "mtime_ns": 1789126725930349338,
+      "size": 3134
+    },
+    "source_before": {
+      "ctime_ns": 1789126725930349338,
+      "dev": 2304,
+      "inode": 44582502,
+      "mode": 33188,
+      "mtime_ns": 1789126725930349338,
+      "size": 3134
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623829030806,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/START.json",
+      "size": 48207
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "fcc700973778ad9eb952337fd7c5c970f291591dcf499ef739a7b7603a7e0fe5",
+    "size": 48207,
+    "source_after": {
+      "ctime_ns": 1789125623829030806,
+      "dev": 2304,
+      "inode": 809318454,
+      "mode": 33188,
+      "mtime_ns": 1789125623829030806,
+      "size": 48207
+    },
+    "source_before": {
+      "ctime_ns": 1789125623829030806,
+      "dev": 2304,
+      "inode": 809318454,
+      "mode": 33188,
+      "mtime_ns": 1789125623829030806,
+      "size": 48207
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127297035207069,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl",
+      "size": 17768
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "4853044de5020e48ab5434a983534f50bb5444138af188269a643e4ebf77b2ea",
+    "size": 17768,
+    "source_after": {
+      "ctime_ns": 1789127297035207069,
+      "dev": 2304,
+      "inode": 12918042331,
+      "mode": 33188,
+      "mtime_ns": 1789127297035207069,
+      "size": 17768
+    },
+    "source_before": {
+      "ctime_ns": 1789127297035207069,
+      "dev": 2304,
+      "inode": 12918042331,
+      "mode": 33188,
+      "mtime_ns": 1789127297035207069,
+      "size": 17768
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/RESULT.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789127297035207069,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/RESULT.json",
+      "size": 3134
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "765775dadd46d1f74701fc23838bbfd0324ffdfc460a0029e007f1a563662c26",
+    "size": 3134,
+    "source_after": {
+      "ctime_ns": 1789127297035207069,
+      "dev": 2304,
+      "inode": 13051075011,
+      "mode": 33188,
+      "mtime_ns": 1789127297035207069,
+      "size": 3134
+    },
+    "source_before": {
+      "ctime_ns": 1789127297035207069,
+      "dev": 2304,
+      "inode": 13051075011,
+      "mode": 33188,
+      "mtime_ns": 1789127297035207069,
+      "size": 3134
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/RESULT.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/START.json",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623809031408,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/START.json",
+      "size": 48207
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "ba35024e65f0baf2553c775c5f1bbaa04bd60482a4358a3e78de8bd1d4c9c532",
+    "size": 48207,
+    "source_after": {
+      "ctime_ns": 1789125623813031288,
+      "dev": 2304,
+      "inode": 13221428028,
+      "mode": 33188,
+      "mtime_ns": 1789125623809031408,
+      "size": 48207
+    },
+    "source_before": {
+      "ctime_ns": 1789125623813031288,
+      "dev": 2304,
+      "inode": 13221428028,
+      "mode": 33188,
+      "mtime_ns": 1789125623809031408,
+      "size": 48207
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/START.json",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  },
+  {
+    "archive_member": "sources/data/minesim_discovery_remaining390_parallel_v1/runner.py.txt",
+    "expected_from_inventory": {
+      "mtime_ns": 1789125623261047923,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/runner.py.txt",
+      "size": 1183244
+    },
+    "full_file": true,
+    "matches_prior_inventory": true,
+    "sha256": "6b48aee4276f498d611f11cabf1c23ae0e1ee17ec50d9acc2e9a3a8b8c7241b1",
+    "size": 1183244,
+    "source_after": {
+      "ctime_ns": 1789125623261047923,
+      "dev": 2304,
+      "inode": 809318445,
+      "mode": 33188,
+      "mtime_ns": 1789125623261047923,
+      "size": 1183244
+    },
+    "source_before": {
+      "ctime_ns": 1789125623261047923,
+      "dev": 2304,
+      "inode": 809318445,
+      "mode": 33188,
+      "mtime_ns": 1789125623261047923,
+      "size": 1183244
+    },
+    "source_relative_path": "minesim_discovery_remaining390_parallel_v1/runner.py.txt",
+    "stable_during_read": true,
+    "stable_through_capture": true
+  }
+]

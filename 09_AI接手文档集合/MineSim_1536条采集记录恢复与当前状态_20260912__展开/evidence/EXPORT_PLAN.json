@@ -1,0 +1,550 @@
+{
+  "archives_metadata_only": [
+    {
+      "mtime_ns": 1789127316646689579,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1.zip",
+      "size": 85059607
+    },
+    {
+      "mtime_ns": 1789132217468250630,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1.zip",
+      "size": 1131404
+    },
+    {
+      "mtime_ns": 1789140744894539738,
+      "relative_path": "minesim_confirmation768_parallel_v1.zip",
+      "size": 132348877
+    }
+  ],
+  "copy_files": [
+    {
+      "mtime_ns": 1789140748834320662,
+      "relative_path": "minesim_confirmation768_parallel_v1.screen.log",
+      "size": 19959
+    },
+    {
+      "mtime_ns": 1789140748838320310,
+      "relative_path": "minesim_confirmation768_parallel_v1.screen_rc.txt",
+      "size": 2
+    },
+    {
+      "mtime_ns": 1789139115594580006,
+      "relative_path": "minesim_confirmation768_parallel_v1/AUTHORIZATION.json",
+      "size": 1562
+    },
+    {
+      "mtime_ns": 1789140736701718514,
+      "relative_path": "minesim_confirmation768_parallel_v1/CAPTURE.json",
+      "size": 156
+    },
+    {
+      "mtime_ns": 1789140735653449228,
+      "relative_path": "minesim_confirmation768_parallel_v1/COLLECTION_AUDIT.json",
+      "size": 162994
+    },
+    {
+      "mtime_ns": 1789139115526536090,
+      "relative_path": "minesim_confirmation768_parallel_v1/IMPORT_PROBE.stderr.txt",
+      "size": 0
+    },
+    {
+      "mtime_ns": 1789139115522533506,
+      "relative_path": "minesim_confirmation768_parallel_v1/IMPORT_PROBE.stdout.txt",
+      "size": 2977
+    },
+    {
+      "mtime_ns": 1789140737741943163,
+      "relative_path": "minesim_confirmation768_parallel_v1/MANIFEST.json",
+      "size": 845760
+    },
+    {
+      "mtime_ns": 1789140736693716568,
+      "relative_path": "minesim_confirmation768_parallel_v1/POSTCHECK.json",
+      "size": 282915
+    },
+    {
+      "mtime_ns": 1789139115542546423,
+      "relative_path": "minesim_confirmation768_parallel_v1/PREFLIGHT.json",
+      "size": 284791
+    },
+    {
+      "mtime_ns": 1789140736701718514,
+      "relative_path": "minesim_confirmation768_parallel_v1/RC.txt",
+      "size": 2
+    },
+    {
+      "mtime_ns": 1789140736697717541,
+      "relative_path": "minesim_confirmation768_parallel_v1/RESULT.json",
+      "size": 1040
+    },
+    {
+      "mtime_ns": 1789139115598582589,
+      "relative_path": "minesim_confirmation768_parallel_v1/SCHEDULE.json",
+      "size": 379572
+    },
+    {
+      "mtime_ns": 1789139115598582589,
+      "relative_path": "minesim_confirmation768_parallel_v1/SEED_LEASE.json",
+      "size": 427
+    },
+    {
+      "mtime_ns": 1789139115602585172,
+      "relative_path": "minesim_confirmation768_parallel_v1/START.json",
+      "size": 266
+    },
+    {
+      "mtime_ns": 1789139114401809873,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/BINDINGS_LIVE_FILES.json",
+      "size": 238350
+    },
+    {
+      "mtime_ns": 1789139114401809873,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SCHEDULE.json",
+      "size": 379572
+    },
+    {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SPEC.json",
+      "size": 20361
+    },
+    {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/EXECUTION_PAYLOAD_MANIFEST.json",
+      "size": 16337
+    },
+    {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/PAYLOAD_MANIFEST.json",
+      "size": 14483
+    },
+    {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/RELEASE_PROTOCOL.json",
+      "size": 396512
+    },
+    {
+      "mtime_ns": 1789139114405812458,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/REVIEWED_COLLECTORS.json",
+      "size": 688
+    },
+    {
+      "mtime_ns": 1789139114409815044,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/SOURCE_BINDINGS.json",
+      "size": 19435
+    },
+    {
+      "mtime_ns": 1789139114409815044,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/WORKER_ASSIGNMENTS.json",
+      "size": 25370
+    },
+    {
+      "mtime_ns": 1789139114417820215,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/ALL_PAIRS_1440.json",
+      "size": 1015182
+    },
+    {
+      "mtime_ns": 1789139114421822800,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_FREEZE.json",
+      "size": 2034
+    },
+    {
+      "mtime_ns": 1789139114421822800,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_LIMITATIONS_AND_SPLIT_SUPPORT.json",
+      "size": 3527
+    },
+    {
+      "mtime_ns": 1789139114421822800,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/CONFIRMATION_HANDOFF.json",
+      "size": 1331
+    },
+    {
+      "mtime_ns": 1789139114421822800,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/DISCOVERY_CANDIDATES.json",
+      "size": 193904
+    },
+    {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/EPISODE_SPLITS_DESIGN.json",
+      "size": 4382
+    },
+    {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/OBSERVATIONS_768.json",
+      "size": 896221
+    },
+    {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/PLANNED_CELLS_1536.csv",
+      "size": 138116
+    },
+    {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/PROTOCOL.json",
+      "size": 15581
+    },
+    {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/SELECTED_12_ROOTS_DESIGN.json",
+      "size": 11377
+    },
+    {
+      "mtime_ns": 1789139114425825386,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/prior_DISCOVERY_LEDGER_768.json",
+      "size": 853788
+    },
+    {
+      "mtime_ns": 1789139114429827971,
+      "relative_path": "minesim_confirmation768_parallel_v1/bundle/frozen/protocol_reference_frozen.py",
+      "size": 8444
+    },
+    {
+      "mtime_ns": 1789140717506481597,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/PHASE_RESULT.json",
+      "size": 189
+    },
+    {
+      "mtime_ns": 1789139115638608422,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/PROCESSES.json",
+      "size": 379684
+    },
+    {
+      "mtime_ns": 1789140673349123329,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl",
+      "size": 35096
+    },
+    {
+      "mtime_ns": 1789140673349123329,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/RESULT.json",
+      "size": 6534
+    },
+    {
+      "mtime_ns": 1789139116467142921,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_0/START.json",
+      "size": 95016
+    },
+    {
+      "mtime_ns": 1789140717051626776,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl",
+      "size": 35087
+    },
+    {
+      "mtime_ns": 1789140717051626776,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/RESULT.json",
+      "size": 6534
+    },
+    {
+      "mtime_ns": 1789139116611235844,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_1/START.json",
+      "size": 95016
+    },
+    {
+      "mtime_ns": 1789140701300035060,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl",
+      "size": 35088
+    },
+    {
+      "mtime_ns": 1789140701303964916,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/RESULT.json",
+      "size": 6533
+    },
+    {
+      "mtime_ns": 1789139116619241006,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_2/START.json",
+      "size": 95017
+    },
+    {
+      "mtime_ns": 1789140696441684684,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl",
+      "size": 35106
+    },
+    {
+      "mtime_ns": 1789140696441684684,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/RESULT.json",
+      "size": 6533
+    },
+    {
+      "mtime_ns": 1789139116639253912,
+      "relative_path": "minesim_confirmation768_parallel_v1/parallel/workers/worker_3/START.json",
+      "size": 95017
+    },
+    {
+      "mtime_ns": 1789139114477858995,
+      "relative_path": "minesim_confirmation768_parallel_v1/runner.py.txt",
+      "size": 1590799
+    },
+    {
+      "mtime_ns": 1789132217556247729,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1.screen.log",
+      "size": 8232
+    },
+    {
+      "mtime_ns": 1789132217676243772,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1.screen_rc.txt",
+      "size": 2
+    },
+    {
+      "mtime_ns": 1789132198864865841,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/AUTHORIZATION.json",
+      "size": 1164
+    },
+    {
+      "mtime_ns": 1789132217096262897,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/CAPTURE.json",
+      "size": 290
+    },
+    {
+      "mtime_ns": 1789132216964267250,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/JOIN_VALIDATION.json",
+      "size": 661
+    },
+    {
+      "mtime_ns": 1789132217168260523,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/MANIFEST.json",
+      "size": 18419
+    },
+    {
+      "mtime_ns": 1789132217076263557,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/POSTCHECK.json",
+      "size": 199
+    },
+    {
+      "mtime_ns": 1789132198860865973,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/PREFLIGHT.json",
+      "size": 7580
+    },
+    {
+      "mtime_ns": 1789132216688276354,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/PROGRESS.jsonl",
+      "size": 5972
+    },
+    {
+      "mtime_ns": 1789132217096262897,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/RC.txt",
+      "size": 2
+    },
+    {
+      "mtime_ns": 1789132204176689824,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/RECONSTRUCTED_CONTEXT.json",
+      "size": 884
+    },
+    {
+      "mtime_ns": 1789132196576941745,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/REQUEST.json",
+      "size": 253
+    },
+    {
+      "mtime_ns": 1789132217096262897,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/RESULT.json",
+      "size": 881
+    },
+    {
+      "mtime_ns": 1789132198864865841,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/START.json",
+      "size": 447
+    },
+    {
+      "mtime_ns": 1789132198464879108,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/STATIC_INPUT_CHECK.json",
+      "size": 1163
+    },
+    {
+      "mtime_ns": 1789132204176689824,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/CELL_START.json",
+      "size": 565
+    },
+    {
+      "mtime_ns": 1789132217096262897,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/COMMIT.json",
+      "size": 1162
+    },
+    {
+      "mtime_ns": 1789132204176689824,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/RESOLVED_CONTEXT.json",
+      "size": 884
+    },
+    {
+      "mtime_ns": 1789132216756274111,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/events.jsonl",
+      "size": 263767
+    },
+    {
+      "mtime_ns": 1789132216884269889,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/metric_view.json",
+      "size": 191877
+    },
+    {
+      "mtime_ns": 1789132216884269889,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/metrics.json",
+      "size": 4450
+    },
+    {
+      "mtime_ns": 1789132216768273716,
+      "relative_path": "minesim_discovery_cell377_tail_continuation_v1/cell/trace.json",
+      "size": 219533
+    },
+    {
+      "mtime_ns": 1789127319322618977,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1.screen.log",
+      "size": 25131
+    },
+    {
+      "mtime_ns": 1789127319322618977,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1.screen_rc.txt",
+      "size": 2
+    },
+    {
+      "mtime_ns": 1789125623265047802,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/AUTHORIZATION.json",
+      "size": 1623
+    },
+    {
+      "mtime_ns": 1789127311114835538,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/CAPTURE.json",
+      "size": 166
+    },
+    {
+      "mtime_ns": 1789125623269047682,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/CELL_LEASE.json",
+      "size": 12064
+    },
+    {
+      "mtime_ns": 1789127310398854429,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/COLLECTION_AUDIT.json",
+      "size": 82350
+    },
+    {
+      "mtime_ns": 1789127311734819179,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/MANIFEST.json",
+      "size": 425224
+    },
+    {
+      "mtime_ns": 1789127311110835643,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/POSTCHECK.json",
+      "size": 3121
+    },
+    {
+      "mtime_ns": 1789125623261047923,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/PREFLIGHT.json",
+      "size": 3416
+    },
+    {
+      "mtime_ns": 1789127311118835432,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/RC.txt",
+      "size": 2
+    },
+    {
+      "mtime_ns": 1789127311114835538,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/RESULT.json",
+      "size": 928
+    },
+    {
+      "mtime_ns": 1789125623273047561,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/SCHEDULE.json",
+      "size": 191368
+    },
+    {
+      "mtime_ns": 1789125623277047441,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/START.json",
+      "size": 292
+    },
+    {
+      "mtime_ns": 1789125623205049610,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/BOUNDARY.json",
+      "size": 427315
+    },
+    {
+      "mtime_ns": 1789125623209049490,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/MANIFEST.json",
+      "size": 10463
+    },
+    {
+      "mtime_ns": 1789125623209049490,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/bundle/PROTOCOL.json",
+      "size": 210021
+    },
+    {
+      "mtime_ns": 1789127297591192397,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/PHASE_RESULT.json",
+      "size": 185
+    },
+    {
+      "mtime_ns": 1789125623301046718,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/PROCESSES.json",
+      "size": 191480
+    },
+    {
+      "mtime_ns": 1789126808648144179,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl",
+      "size": 17599
+    },
+    {
+      "mtime_ns": 1789126808652144073,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/RESULT.json",
+      "size": 3103
+    },
+    {
+      "mtime_ns": 1789125623613037315,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/START.json",
+      "size": 47718
+    },
+    {
+      "mtime_ns": 1789126755545559186,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl",
+      "size": 17584
+    },
+    {
+      "mtime_ns": 1789126755545559186,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/RESULT.json",
+      "size": 3104
+    },
+    {
+      "mtime_ns": 1789125623781032253,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/START.json",
+      "size": 47718
+    },
+    {
+      "mtime_ns": 1789126725930349338,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl",
+      "size": 17744
+    },
+    {
+      "mtime_ns": 1789126725930349338,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/RESULT.json",
+      "size": 3134
+    },
+    {
+      "mtime_ns": 1789125623829030806,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/START.json",
+      "size": 48207
+    },
+    {
+      "mtime_ns": 1789127297035207069,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl",
+      "size": 17768
+    },
+    {
+      "mtime_ns": 1789127297035207069,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/RESULT.json",
+      "size": 3134
+    },
+    {
+      "mtime_ns": 1789125623809031408,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/START.json",
+      "size": 48207
+    },
+    {
+      "mtime_ns": 1789125623261047923,
+      "relative_path": "minesim_discovery_remaining390_parallel_v1/runner.py.txt",
+      "size": 1183244
+    }
+  ],
+  "gate": "LOCATED_RECENT_STAGE_RECORDS_EXPORT_ONLY",
+  "plan_source": "26054d15-f09f-4ac8-b1f1-3e57fcbbfbcc.zip / INVENTORY.json",
+  "roots": [
+    "minesim_discovery_remaining390_parallel_v1",
+    "minesim_discovery_cell377_tail_continuation_v1",
+    "minesim_confirmation768_parallel_v1"
+  ],
+  "scope": "Copy only listed files. No filesystem search, archive expansion, experiment invocation, teacher generation, training, repair, resume or source mutation. Original full batch ZIPs are NOT included. Frozen candidate files are historical provenance, not certified confirmation labels.",
+  "source_inventory_sha256": "e57023b054c02fdff204f7a219f3c9d6090f630f818101b3223a55d38855f881"
+}

@@ -1,0 +1,1 @@
+{"START_WRITTEN":false,"automatic_retry":false,"details":{},"finished_utc":"2026-09-12T09:13:21.462309+00:00","gate":"DUAL_ONLY_BOUNDED_AUTONOMOUS_POLICY_RUN","new_teacher_samples":0,"next_gate":"BOUNDED_NEW_BASELINE_POLICY_RESULT_REVIEW_ONLY","production_patch_installed":false,"status":"HOLD_PRESTART","training_run":false}

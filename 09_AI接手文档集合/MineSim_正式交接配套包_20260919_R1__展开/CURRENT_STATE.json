@@ -1,0 +1,113 @@
+{
+  "schema": "minesim_handoff_state_v1",
+  "handoff_id": "H20260919-R1",
+  "EVIDENCE_CUTOFF": "2026-09-19；T01最后阶段式H16/H8单配对结果与后段直接对照建议，结尾没有新的后段执行结果。",
+  "CURRENT_STAGE": "协同rollout与搜索时域开发；最新阶段式候选实际H16=128、H8=0，两条均64秒CAP。",
+  "CURRENT_GATE": "HANDOFF_DOCUMENT_ONLY；后续最小资料Gate为POST_EXIT_SHARED_ROOT_PROVENANCE_READONLY（本交接管理名称，非原已执行协议）。",
+  "CURRENT_STATUS": "HANDOFF_COMPLETE_WITH_EXPLICIT_RAW_EVIDENCE_GAPS",
+  "LATEST_GIT_HEAD_RECORDED": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+  "GIT_STATUS_RECORDED": "?? ^C；pre/post相同，不是clean",
+  "LIVE_GIT_VERIFIED": false,
+  "CURRENT_EVIDENCE_ROOT": "sources/T01_原始完整对话.txt + sources/H18_历史交接与证据原包.zip + sources/A18_H8策略结果补充原件.docx",
+  "LATEST_FROZEN_RESULT": {
+    "namespace_recorded": "minesim_dual_phase_horizon_pair_v1",
+    "cloud_output_directory_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1",
+    "full_zip_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1.zip",
+    "review_zip_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1_review.zip",
+    "log_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1.log",
+    "uploaded_original_name_in_transcript": "fb81b833-4372-4253-a57d-8e312b511261.zip",
+    "original_zip_bytes_reported": 19285361,
+    "original_zip_sha256_reported": "167b9869dce081fd001f260063b9fba324c4e994c69239fefafe2235f5398571",
+    "payload_name_reported": "minesim_dual_phase_horizon_pair_v1_payload.zip",
+    "payload_bytes_reported": 6137494,
+    "payload_sha256_reported": "53c9bf121093b77ce3f28526a28420a0ed819c03a434c01fedcf4b6a3e9d7d42",
+    "status_reported": "COMPLETE_PHASE_HORIZON_H16_H8_PAIR_V1",
+    "rc_reported": 0,
+    "start_reported": "2026-09-19T14:04:06.544927+00:00",
+    "capture_reported": "2026-09-19T14:05:47.375055+00:00",
+    "source": "T01 local lines3353-3384,3455-3872",
+    "raw_package_present_in_current_scan": false,
+    "all_paths_and_hashes_are_reported_not_live_verified": true
+  },
+  "NEXT_MINIMAL_ACTION": "从现有归档定向取得最新原包中0050完整记录、0049及双RNG/匹配release；只读核对来源和生命周期。不是重新寻找停车状态或重走前25秒。",
+  "PASS_STANDARD": "原文件大小/SHA/角色、before=前步after、双RNG连续、两车均AFTER未停稳、源码/协议身份与namespace现场状态明确；只允许讨论新协议，不自动执行。",
+  "RESOURCE_REQUIRED_NOW": "LOW",
+  "future_scientific_question": "在共同BOTH_AFTER根、同初始双RNG/奖励/引导/400ms下，H8与H16的剩余任务表现是否不同？完整新协议尚未冻结或执行。",
+  "proposed_saved_input": {
+    "member_recorded": "release/evidence/hold_parent_candidate/steps/0050.json",
+    "sha256_reported": "c8d00920514d9da8484ac73dc99a5cd57ee142be9a4224e9aa77b7609afb317f",
+    "prior_member_required": "release/evidence/hold_parent_candidate/steps/0049.json",
+    "reported_time_in_parent_policy_s": 25.0,
+    "reported_A": {
+      "route_s_m": 254.041586,
+      "speed_mps": 0,
+      "region": "AFTER",
+      "task_complete": false
+    },
+    "reported_B": {
+      "route_s_m": 279.526656,
+      "speed_mps": 6.75,
+      "region": "AFTER",
+      "task_complete": false
+    },
+    "exact_bytes_currently_verified": false,
+    "state_and_rng_must_not_be_reconstructed_from_rounded_summary": true
+  },
+  "algorithm_status": {
+    "V2_conflict_only_rollout": "保留有开发任务收益的候选；停滞与净距反例保留",
+    "V5_checkpoint_fastpath": "保留共同运行器；限定微基准降低开销，非硬实时证明",
+    "Q_first_root_selection": "当前无条件Q优先关闭",
+    "H8_subtree_reuse": "语义验证通过，连续任务负结果关闭",
+    "legal_report_cache": "固定计时负结果关闭",
+    "neural_predictors": "已做训练/接入/开发对照，未建立稳定优势；冻结现有数据",
+    "HoldCurrentGuide": "有局部通行价值，但完整任务未解决且有约0.101m历史净距",
+    "phase_H16_H8": "代码按原条件运行；最新候选H8调用0，不能归因为H8造成退化"
+  },
+  "FROZEN_DATA": {
+    "path": "frozen_data/DATASET32.json",
+    "states": 32,
+    "source_groups": 8,
+    "returns": 512,
+    "parked": 467,
+    "cap": 45,
+    "bytes": 488232,
+    "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+    "recollect_authorized": false
+  },
+  "DO_NOT_REPEAT": "见EXPERIMENT_LEDGER.json中所有completed stages；不重复已消费启动器/原批次。",
+  "HOLD_ITEMS": [
+    "LATEST_PHASE_RAW_ZIP_NOT_FOUND_IN_SCANNED_ATTACHMENTS",
+    "EXACT_0050_AND_PREDECESSOR_AND_RNG_NOT_LOCALLY_VERIFIED",
+    "MATCHED_LATEST_RELEASE_CODE_NOT_LOCALLY_AVAILABLE",
+    "POST_EXIT_H8_EFFECT_NOT_DIRECTLY_TESTED",
+    "FULL_PHASE_POLICY_BENEFIT_NOT_ESTABLISHED",
+    "CROSS_ROUTE_GENERALIZATION_NOT_ESTABLISHED",
+    "STABLE_OVERALL_MCTS_ADVANTAGE_OVER_NON_MCTS_NOT_ESTABLISHED",
+    "CONTINUOUS_PHYSICAL_SAFETY_NOT_CERTIFIED",
+    "CONTROLLER_KBM_END_TO_END_NOT_COVERED_BY_RECENT_PLANNING_TRACES",
+    "PRODUCTION_DRIVABLE_GROUND_TRUTH_NOT_ESTABLISHED",
+    "LIVE_CLOUD_FILES_PROCESSES_GIT_RESOURCES_COSTS_NOT_QUERIED",
+    "CURRENT_DOCX_CLOUD_UPLOAD_NOT_VERIFIED"
+  ],
+  "LATEST_HANDOFF": "MineSim_Dynamic_正式交接_算法演进与最新效果_20260919_R1.docx",
+  "permissions": {
+    "document_generation": true,
+    "new_simulation": false,
+    "training": false,
+    "collection": false,
+    "replay": false,
+    "cloud_write": false,
+    "delete": false,
+    "retry": false,
+    "deployment": false
+  },
+  "new_scientific_execution_counts": {
+    "mcts": 0,
+    "outer_transitions": 0,
+    "geometry": 0,
+    "training": 0,
+    "model_forward": 0,
+    "cloud_queries": 0
+  },
+  "scope_warning": "报告完成与原实验成功不同；最新结果为对话记载，不是本次原包科学审计。"
+}

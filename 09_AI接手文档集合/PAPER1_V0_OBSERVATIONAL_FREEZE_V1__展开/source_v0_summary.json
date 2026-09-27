@@ -1,0 +1,39 @@
+{
+  "type": "C04_PAPER1_SAFETY_RISK_EVALUATOR_V0_SIDECAR",
+  "source_index": 4,
+  "seed": 0,
+  "base_runner_sha256": "6216d58dd995af97a4fd9b43bacc38252752397b0c7ed8d0db3e6cc957cbc2a6",
+  "behavior_change": false,
+  "reward_change": false,
+  "search_change": false,
+  "tree_pruning_change": false,
+  "v0_record_count": 126,
+  "v0_bitmap_local_shape": [
+    3496,
+    3496
+  ],
+  "v0_initial_boundary": {
+    "A": {
+      "road_mask_violation": false,
+      "non_drivable_pixels": 0,
+      "footprint_outside_crop": false
+    },
+    "B": {
+      "road_mask_violation": false,
+      "non_drivable_pixels": 0,
+      "footprint_outside_crop": false
+    }
+  },
+  "v0_any_route_boundary_violation": false,
+  "v0_any_direct_boundary_violation": false,
+  "v0_any_outside_crop": false,
+  "v0_route_direct_bool_mismatch_count": 0,
+  "v0_max_non_drivable_pixels": {
+    "A": 0,
+    "B": 0
+  },
+  "v0_min_actual_swept_v2v_clearance_m": 2.038038141193954,
+  "v0_internal_collision_transition_count": 0,
+  "paper1_safe_node_decision_available": false,
+  "v2h_status": "NOT_IMPLEMENTED_V0"
+}

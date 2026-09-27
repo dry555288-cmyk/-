@@ -1,0 +1,18 @@
+# OS / editor temp
+.DS_Store
+Thumbs.db
+desktop.ini
+~$*.docx
+*.tmp
+*.bak
+
+# Python generated
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Keep project archives/data trackable by default.
+
+# Redundant generated archive
+01_第二批去冗余_地图与原项目复现_20260920_Git整理版.zip

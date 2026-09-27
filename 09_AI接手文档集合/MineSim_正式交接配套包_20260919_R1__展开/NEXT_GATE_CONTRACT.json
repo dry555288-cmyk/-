@@ -1,0 +1,93 @@
+{
+  "schema": "minesim_handoff_next_gate_v1",
+  "handoff_id": "H20260919-R1",
+  "gate_id": "POST_EXIT_SHARED_ROOT_PROVENANCE_READONLY",
+  "gate_id_origin": "本交接管理标识，不是原对话已经冻结/执行的实验ID。",
+  "current_action": "READ_ONLY_SOURCE_RECONCILIATION",
+  "resource_now": "LOW",
+  "inputs": {
+    "member_recorded": "release/evidence/hold_parent_candidate/steps/0050.json",
+    "sha256_reported": "c8d00920514d9da8484ac73dc99a5cd57ee142be9a4224e9aa77b7609afb317f",
+    "prior_member_required": "release/evidence/hold_parent_candidate/steps/0049.json",
+    "reported_time_in_parent_policy_s": 25.0,
+    "reported_A": {
+      "route_s_m": 254.041586,
+      "speed_mps": 0,
+      "region": "AFTER",
+      "task_complete": false
+    },
+    "reported_B": {
+      "route_s_m": 279.526656,
+      "speed_mps": 6.75,
+      "region": "AFTER",
+      "task_complete": false
+    },
+    "exact_bytes_currently_verified": false,
+    "state_and_rng_must_not_be_reconstructed_from_rounded_summary": true
+  },
+  "latest_parent": {
+    "namespace_recorded": "minesim_dual_phase_horizon_pair_v1",
+    "cloud_output_directory_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1",
+    "full_zip_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1.zip",
+    "review_zip_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1_review.zip",
+    "log_recorded": "/root/autodl-tmp/minesim_dual_phase_horizon_pair_v1.log",
+    "uploaded_original_name_in_transcript": "fb81b833-4372-4253-a57d-8e312b511261.zip",
+    "original_zip_bytes_reported": 19285361,
+    "original_zip_sha256_reported": "167b9869dce081fd001f260063b9fba324c4e994c69239fefafe2235f5398571",
+    "payload_name_reported": "minesim_dual_phase_horizon_pair_v1_payload.zip",
+    "payload_bytes_reported": 6137494,
+    "payload_sha256_reported": "53c9bf121093b77ce3f28526a28420a0ed819c03a434c01fedcf4b6a3e9d7d42",
+    "status_reported": "COMPLETE_PHASE_HORIZON_H16_H8_PAIR_V1",
+    "rc_reported": 0,
+    "start_reported": "2026-09-19T14:04:06.544927+00:00",
+    "capture_reported": "2026-09-19T14:05:47.375055+00:00",
+    "source": "T01 local lines3353-3384,3455-3872",
+    "raw_package_present_in_current_scan": false,
+    "all_paths_and_hashes_are_reported_not_live_verified": true
+  },
+  "preconditions": [
+    "用户明确恢复研究后再做当前来源Gate",
+    "已有原件优先，不重读全部历史；实际路径、源码、输入与生命周期取证",
+    "当前目录/lease/START/RC/ZIP/pending/进程身份明确，不推断未启动"
+  ],
+  "pass": [
+    "0050原字节SHA匹配，原始父链与角色明确",
+    "before与0049.after一致；双RNG按PRE_CALL实际入口与前一after连续",
+    "两车均AFTER且尚未停稳的当前完整状态确定",
+    "HoldCurrent、V5及H适配源与父release绑定",
+    "未执行新MCTS/外层推进/训练/采集/云端修改"
+  ],
+  "failure_domain": "输入来源、身份或生命周期；HOLD留档，不扩大到奖励或搜索参数修改",
+  "future_experiment_proposal": {
+    "status": "PROPOSED_NOT_PREREGISTERED_NOT_EXECUTED",
+    "question": "共同AFTER起点下H8是否改善剩余任务而不混入前段触发差异",
+    "arms": [
+      "H16",
+      "H8"
+    ],
+    "hold_constant": [
+      "完整起始state与两套起始RNG",
+      "原奖励/运动模型/合法动作/停稳与几何判据",
+      "HoldCurrentGuide与p=0.5",
+      "V5完整400ms、380ms统计截止/20ms返回预留",
+      "访问次数优先根输出"
+    ],
+    "must_be_frozen_before_execution": [
+      "剩余任务评价上限与Y窗口定义",
+      "重复数量、运行顺序与共用随机链的限制",
+      "新namespace/输入SHA/源码SHA/授权",
+      "任务、成本、净距、超时的联合及分项判定",
+      "截尾/迟到/异常/未完成统计处理规则"
+    ],
+    "not_proven": [
+      "H8一定优于H16",
+      "完整阶段式策略有效",
+      "小净距问题已解决",
+      "相同初始RNG意味着等时限轨迹一致"
+    ]
+  },
+  "execution_authorized": false,
+  "cloud_write_authorized": false,
+  "delete_authorized": false,
+  "retry_authorized": false
+}

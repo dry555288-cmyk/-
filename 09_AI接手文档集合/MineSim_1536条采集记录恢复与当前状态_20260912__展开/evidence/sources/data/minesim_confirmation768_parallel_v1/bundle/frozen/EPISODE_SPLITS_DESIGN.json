@@ -1,0 +1,134 @@
+[
+  {
+    "heldout_episode": "C04_FROZEN_EP0",
+    "train_root_ids": [
+      "C04__C04_SEED5_EP1__step13",
+      "C04__C04_SEED5_EP1__step118",
+      "C06__C06_FROZEN_EP0__step0",
+      "C06__C06_FROZEN_EP0__step116",
+      "C06__C06_SEED1_EP1__step14",
+      "C06__C06_SEED1_EP1__step124",
+      "C11__C11_100M_SEED0_EP1__step0",
+      "C11__C11_100M_SEED0_EP1__step831",
+      "C11__C11_80M_SEED0_EP0__step0",
+      "C11__C11_80M_SEED0_EP0__step703"
+    ],
+    "heldout_root_ids": [
+      "C04__C04_FROZEN_EP0__step0",
+      "C04__C04_FROZEN_EP0__step100"
+    ],
+    "not_independent_final_test": true,
+    "training_executed": false,
+    "state_context_identity_guard": "REQUIRED_AT_RUNTIME_BINDING_AND_TRAINING_PREFLIGHT"
+  },
+  {
+    "heldout_episode": "C04_SEED5_EP1",
+    "train_root_ids": [
+      "C04__C04_FROZEN_EP0__step0",
+      "C04__C04_FROZEN_EP0__step100",
+      "C06__C06_FROZEN_EP0__step0",
+      "C06__C06_FROZEN_EP0__step116",
+      "C06__C06_SEED1_EP1__step14",
+      "C06__C06_SEED1_EP1__step124",
+      "C11__C11_100M_SEED0_EP1__step0",
+      "C11__C11_100M_SEED0_EP1__step831",
+      "C11__C11_80M_SEED0_EP0__step0",
+      "C11__C11_80M_SEED0_EP0__step703"
+    ],
+    "heldout_root_ids": [
+      "C04__C04_SEED5_EP1__step13",
+      "C04__C04_SEED5_EP1__step118"
+    ],
+    "not_independent_final_test": true,
+    "training_executed": false,
+    "state_context_identity_guard": "REQUIRED_AT_RUNTIME_BINDING_AND_TRAINING_PREFLIGHT"
+  },
+  {
+    "heldout_episode": "C06_FROZEN_EP0",
+    "train_root_ids": [
+      "C04__C04_FROZEN_EP0__step0",
+      "C04__C04_FROZEN_EP0__step100",
+      "C04__C04_SEED5_EP1__step13",
+      "C04__C04_SEED5_EP1__step118",
+      "C06__C06_SEED1_EP1__step14",
+      "C06__C06_SEED1_EP1__step124",
+      "C11__C11_100M_SEED0_EP1__step0",
+      "C11__C11_100M_SEED0_EP1__step831",
+      "C11__C11_80M_SEED0_EP0__step0",
+      "C11__C11_80M_SEED0_EP0__step703"
+    ],
+    "heldout_root_ids": [
+      "C06__C06_FROZEN_EP0__step0",
+      "C06__C06_FROZEN_EP0__step116"
+    ],
+    "not_independent_final_test": true,
+    "training_executed": false,
+    "state_context_identity_guard": "REQUIRED_AT_RUNTIME_BINDING_AND_TRAINING_PREFLIGHT"
+  },
+  {
+    "heldout_episode": "C06_SEED1_EP1",
+    "train_root_ids": [
+      "C04__C04_FROZEN_EP0__step0",
+      "C04__C04_FROZEN_EP0__step100",
+      "C04__C04_SEED5_EP1__step13",
+      "C04__C04_SEED5_EP1__step118",
+      "C06__C06_FROZEN_EP0__step0",
+      "C06__C06_FROZEN_EP0__step116",
+      "C11__C11_100M_SEED0_EP1__step0",
+      "C11__C11_100M_SEED0_EP1__step831",
+      "C11__C11_80M_SEED0_EP0__step0",
+      "C11__C11_80M_SEED0_EP0__step703"
+    ],
+    "heldout_root_ids": [
+      "C06__C06_SEED1_EP1__step14",
+      "C06__C06_SEED1_EP1__step124"
+    ],
+    "not_independent_final_test": true,
+    "training_executed": false,
+    "state_context_identity_guard": "REQUIRED_AT_RUNTIME_BINDING_AND_TRAINING_PREFLIGHT"
+  },
+  {
+    "heldout_episode": "C11_100M_SEED0_EP1",
+    "train_root_ids": [
+      "C04__C04_FROZEN_EP0__step0",
+      "C04__C04_FROZEN_EP0__step100",
+      "C04__C04_SEED5_EP1__step13",
+      "C04__C04_SEED5_EP1__step118",
+      "C06__C06_FROZEN_EP0__step0",
+      "C06__C06_FROZEN_EP0__step116",
+      "C06__C06_SEED1_EP1__step14",
+      "C06__C06_SEED1_EP1__step124",
+      "C11__C11_80M_SEED0_EP0__step0",
+      "C11__C11_80M_SEED0_EP0__step703"
+    ],
+    "heldout_root_ids": [
+      "C11__C11_100M_SEED0_EP1__step0",
+      "C11__C11_100M_SEED0_EP1__step831"
+    ],
+    "not_independent_final_test": true,
+    "training_executed": false,
+    "state_context_identity_guard": "REQUIRED_AT_RUNTIME_BINDING_AND_TRAINING_PREFLIGHT"
+  },
+  {
+    "heldout_episode": "C11_80M_SEED0_EP0",
+    "train_root_ids": [
+      "C04__C04_FROZEN_EP0__step0",
+      "C04__C04_FROZEN_EP0__step100",
+      "C04__C04_SEED5_EP1__step13",
+      "C04__C04_SEED5_EP1__step118",
+      "C06__C06_FROZEN_EP0__step0",
+      "C06__C06_FROZEN_EP0__step116",
+      "C06__C06_SEED1_EP1__step14",
+      "C06__C06_SEED1_EP1__step124",
+      "C11__C11_100M_SEED0_EP1__step0",
+      "C11__C11_100M_SEED0_EP1__step831"
+    ],
+    "heldout_root_ids": [
+      "C11__C11_80M_SEED0_EP0__step0",
+      "C11__C11_80M_SEED0_EP0__step703"
+    ],
+    "not_independent_final_test": true,
+    "training_executed": false,
+    "state_context_identity_guard": "REQUIRED_AT_RUNTIME_BINDING_AND_TRAINING_PREFLIGHT"
+  }
+]

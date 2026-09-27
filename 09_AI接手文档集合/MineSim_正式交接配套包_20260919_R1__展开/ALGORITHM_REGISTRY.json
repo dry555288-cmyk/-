@@ -1,0 +1,109 @@
+{
+  "version_names_are_separate_namespaces": true,
+  "entries": [
+    {
+      "id": "native_mcts",
+      "name": "原生新双停稳MCTS",
+      "mechanism": "B64/H8或共同400ms；随机扩展/随机rollout、UCT、(N,Q)根输出",
+      "status": "BASELINE",
+      "source": "C01-C07",
+      "execute_authorized": false
+    },
+    {
+      "id": "guide_v1",
+      "name": "V1全后缀意图导引",
+      "mechanism": "p=.5；A先/B先及FREE巡航；单rollout保持意图",
+      "status": "NO_OVERALL_ADVANTAGE",
+      "source": "T01 L721-844",
+      "execute_authorized": false
+    },
+    {
+      "id": "guide_v2",
+      "name": "V2仅冲突导引",
+      "mechanism": "FREE与冲突释放恢复原生随机，p=.5；不剪根动作、不跨周期锁意图",
+      "status": "CANDIDATE_WITH_TASK_BENEFIT_AND_COUNTEREXAMPLES",
+      "source": "T01 L849-987,1139-1275,2478-2643",
+      "execute_authorized": false
+    },
+    {
+      "id": "root_selection_v3",
+      "name": "根选择V3",
+      "mechanism": "仅最终改为(Q,N)优先；不要和运行器V3混淆",
+      "status": "CLOSED_UNCONDITIONAL_Q_FIRST",
+      "source": "T01 L992-1132",
+      "execute_authorized": false
+    },
+    {
+      "id": "runner_v2",
+      "name": "运行器修正版V2",
+      "mechanism": "按保存顺序精确重算，先收据后校验，移除2048正常护栏",
+      "status": "SUPERSEDED_AS_RUNNER_NOT_ERASED",
+      "source": "T01 L1429-1706",
+      "execute_authorized": false
+    },
+    {
+      "id": "runner_v3",
+      "name": "协作截止V3",
+      "mechanism": "模拟内部协作检查，未完成迭代不提交，保留实际RNG消耗",
+      "status": "SUPERSEDED_3_LATE_IN_FULL_BATCH",
+      "source": "T01 L1714-2012",
+      "execute_authorized": false
+    },
+    {
+      "id": "runner_v4",
+      "name": "暂存提交V4",
+      "mechanism": "动作内部检查＋回传/快照准备后集中提交；技术正但开销增",
+      "status": "PARENT_TECHNICAL_DESIGN_RETAINED",
+      "source": "T01 L2024-2149",
+      "execute_authorized": false
+    },
+    {
+      "id": "runner_v5",
+      "name": "检查快路径V5",
+      "mechanism": "保留V4全部检查/暂存提交，删除可选逐位置计数/间隔统计",
+      "status": "RETAIN_COMMON_RUNNER_NOT_HARD_REALTIME",
+      "source": "T01 L2162-2643",
+      "execute_authorized": false
+    },
+    {
+      "id": "hold_current",
+      "name": "当前位置保持让行",
+      "mechanism": "原can_yield失败后，对静止BEFORE/KEEP合法/原硬几何支持的状态扩展rollout让行",
+      "status": "LOCAL_PASSAGE_NOT_FULL_TASK",
+      "source": "T01 L3098-3236",
+      "execute_authorized": false
+    },
+    {
+      "id": "phase_horizon",
+      "name": "阶段式H16/H8",
+      "mechanism": "当次外层A/B均AFTER才选H8，否则H16；无RNG重置、无树统计复用",
+      "status": "H8_NOT_TRIGGERED_IN_LATEST_FULL_PAIR",
+      "source": "T01 L3250-3872",
+      "execute_authorized": false
+    },
+    {
+      "id": "subtree_h8",
+      "name": "H8子树后缀修正/重建",
+      "mechanism": "晋升已执行分支，移除首奖励，补尾，重建N/W/Q，继承m+新64-m",
+      "status": "CLOSED_TASK_NEGATIVE",
+      "source": "C08;A18",
+      "execute_authorized": false
+    },
+    {
+      "id": "legal_cache",
+      "name": "动作报告缓存",
+      "mechanism": "复用合法动作报告而非旧统计；计数减少不等于CPU减少",
+      "status": "CLOSED_FIXED_TIMING_NEGATIVE",
+      "source": "H18M",
+      "execute_authorized": false
+    },
+    {
+      "id": "neural_value",
+      "name": "旧Value/K13与新26/36维预测",
+      "mechanism": "目标、数据、特征不同，不共用checkpoint/未监督head",
+      "status": "NO_STABLE_ADVANTAGE_AUTHORIZED_DEPLOYMENT_FALSE",
+      "source": "H10/H18M",
+      "execute_authorized": false
+    }
+  ]
+}

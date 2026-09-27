@@ -1,0 +1,822 @@
+{
+  "summary": "All counts belong to their own experiment and denominator. Historical and repeated data overlap; do not sum into independent samples.",
+  "new_scientific_runs_this_handoff": 0,
+  "stages": [
+    {
+      "id": "L01",
+      "stage": "官方场景IDM＋Replay复现",
+      "source_refs": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {},
+      "params": {},
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {},
+      "scope": "Dapai/Jiangtong，非全部多车均受控",
+      "code": "原IDM基线",
+      "cloud_namespace_recorded": "minesim_idm_baseline_backup",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L02",
+      "stage": "Pure MCTS单车与预算对照",
+      "source_refs": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "historical_expert_samples": 448
+      },
+      "params": {
+        "budgets": [
+          50,
+          100,
+          200,
+          300
+        ],
+        "depth": 8,
+        "tree_dt": 0.5,
+        "c_uct": 1.4,
+        "gamma": 0.99
+      },
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {},
+      "scope": "历史单车Safe Goal；不同Planner信息条件不同，非完全公平排行榜",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L03",
+      "stage": "J117双车构造基准",
+      "source_refs": [
+        "H01",
+        "H03"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "seeds": 5,
+        "passed": 5
+      },
+      "params": {},
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {
+        "no_mcts_gap_s": 0.0007,
+        "seed0_gap_s": 1.561,
+        "seed0_clearance_m": 0.594
+      },
+      "scope": "真实GeoJSON构造benchmark，不外推全矿安全",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L04",
+      "stage": "FullMine研究地图与V4验收",
+      "source_refs": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "source_roads": 94,
+        "effective_roads": 100,
+        "references": 553,
+        "junctions": 35,
+        "targeted_passed": 7,
+        "targeted_total": 7
+      },
+      "params": {},
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {},
+      "scope": "研究地图；官方drivability真值等HOLD",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L05",
+      "stage": "旧跨场景",
+      "source_refs": [
+        "H01",
+        "H05"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "seed0_scenes": 3,
+        "task_complete": 2,
+        "avoid_collision": 3,
+        "C04_seeds": 5
+      },
+      "params": {},
+      "result": "SCIENTIFIC_NEGATIVE_PRESERVED",
+      "metrics": {},
+      "scope": "C11旧设置未完成；新模型成功不回填",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L06",
+      "stage": "旧C03/ValueV3/K13",
+      "source_refs": [
+        "H01",
+        "H02",
+        "H05"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "C03_roots": 135,
+        "C03_actions": 2160,
+        "C03_shadow_expansions": 8640,
+        "V3_roots": 2356,
+        "V3_episodes": 6
+      },
+      "params": {},
+      "result": "K13_NO_STABLE_END_TO_END_SPEEDUP_FROZEN",
+      "metrics": {},
+      "scope": "有实际神经排序/门控历史，不等于有收益部署；数字不跨阶段累计",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L07",
+      "stage": "旧教师1536恢复",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "discovery": 768,
+        "confirmation": 768,
+        "total": 1536,
+        "route_goal": 845,
+        "hard_safety_terminal": 394,
+        "cap": 297
+      },
+      "params": {},
+      "result": "RECOVERY_CLOSED",
+      "metrics": {},
+      "scope": "旧模型不要求双停稳；硬终止≠实际碰撞",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L08",
+      "stage": "新停稳policy4/policy2/multiseed8",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "old_policy4_task": 2,
+        "old_policy4_runs": 4,
+        "new_policy2_task": 2,
+        "new_policy2_runs": 2,
+        "new_multiseed_task": 8,
+        "new_multiseed_runs": 8,
+        "multiseed_steps": 744
+      },
+      "params": {
+        "model": "DUAL_ONLY_DESTINATION_STOP_CANDIDATE_V1",
+        "B": 64,
+        "H": 8,
+        "dt": 0.5
+      },
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {},
+      "scope": "各分母独立；同路线，不是8独立场景",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L09",
+      "stage": "新教师384＋384",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "total": 768,
+        "discovery_parked": 361,
+        "discovery_cap": 23,
+        "confirmation_parked": 360,
+        "confirmation_cap": 24,
+        "confirmed_pairs": 26,
+        "candidate_pairs": 84,
+        "states_with_confirmed_pairs": 4
+      },
+      "params": {},
+      "result": "EMPIRICAL_RELATIONS_FROZEN",
+      "metrics": {},
+      "scope": "完整任务目标；CAP尾未知；不是最优Q/剪枝安全证据",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L10",
+      "stage": "26对拟合",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "pairs": 26,
+        "network_satisfied": 26,
+        "stateblind_satisfied": 26
+      },
+      "params": {
+        "architecture": "26-64-64-16",
+        "updates": 2000,
+        "seed": 78000
+      },
+      "result": "STATE_CONDITIONING_NOT_REQUIRED_BY_THIS_TARGET",
+      "metrics": {},
+      "scope": "固定排序也满分，不加轮数救结果",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L11",
+      "stage": "固定64秒目标确认与四状态拟合",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "discovery_traces": 64,
+        "confirmation_traces": 64,
+        "confirmed_hypotheses": 4,
+        "fit_states": 4,
+        "fit_satisfied": 4,
+        "fixed_max": 3
+      },
+      "params": {
+        "target": "DUAL_STOP_FIXED_WINDOW64_STOPPED_RETURN_V1",
+        "model_seed": 78001
+      },
+      "result": "DEVELOPMENT_TARGET_CHANGE_FROZEN",
+      "metrics": {},
+      "scope": "事后改监督目标、独立确认；训练4/4不是泛化",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L12",
+      "stage": "新状态128条评价",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "newstates": 8,
+        "traces": 128,
+        "parked": 120,
+        "cap": 8,
+        "known_states": 2,
+        "network_correct": 1,
+        "fixed_correct": 1
+      },
+      "params": {},
+      "result": "NO_ADVANTAGE",
+      "metrics": {},
+      "scope": "覆盖2/8；网络1/2，不能写网络120/128",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L13",
+      "stage": "六状态分组诊断",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "fits": 12,
+        "states": 6,
+        "linear_correct": 4,
+        "mlp_correct": 3,
+        "fixed_correct": 4
+      },
+      "params": {
+        "seed": 78002,
+        "updates": 2000
+      },
+      "result": "NO_ADVANTAGE_POST_EVALUATION_DEVELOPMENT",
+      "metrics": {},
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_stop_window6_grouped_diagnostic_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L14",
+      "stage": "Window16输入恢复后完成",
+      "source_refs": [
+        "E01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "states": 16,
+        "returns": 256,
+        "groups": 8,
+        "fits": 16
+      },
+      "params": {
+        "seed": 78003,
+        "updates": 2000
+      },
+      "result": "COMPLETE_WINDOW16_RETURN_GAP_DEVELOPMENT_NOT_GENERALIZATION",
+      "metrics": {
+        "constant_mae": 27.421922197803028,
+        "constant_rmse": 36.629279244660054,
+        "linear_mae": 61.63788625592291,
+        "linear_rmse": 78.55349689053148,
+        "mlp_mae": 44.77478357346952,
+        "mlp_rmse": 73.44757905966804
+      },
+      "scope": "不要再沿用0913未训练状态",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_window16_return_gap_recovery_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L15",
+      "stage": "Coverage32选点静态冻结与技术恢复",
+      "source_refs": [
+        "E02"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "source_inputs": 54,
+        "oldstates": 16,
+        "newstates": 16,
+        "groups": 8
+      },
+      "params": {},
+      "result": "CLOSED_AFTER_PROCESS_AND_NUMERIC_RECOVERY",
+      "metrics": {},
+      "scope": "原选点/分组未变；五输出字节一致；不是新正式采集",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_grouped_coverage32_numeric_recovery_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L16",
+      "stage": "Coverage32采集器技术小试",
+      "source_refs": [
+        "E02"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "restored_states": 16,
+        "historic_one_step": 16,
+        "forced_one_step": 32,
+        "short_traces": 4
+      },
+      "params": {},
+      "result": "TECHNICAL_SMOKE_CLOSED",
+      "metrics": {},
+      "scope": "teacher_sample=false，不计正式采集",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_grouped_coverage32_collector_smoke_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L17",
+      "stage": "Coverage32新增256及合并512",
+      "source_refs": [
+        "E02",
+        "D01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "new": 256,
+        "reused": 256,
+        "total": 512,
+        "states": 32,
+        "groups": 8,
+        "new_parked": 253,
+        "new_cap": 3,
+        "merged_parked": 467,
+        "merged_cap": 45,
+        "steps_new": 11592,
+        "mcts_new": 11336
+      },
+      "params": {
+        "workers": 16,
+        "dt": 0.5,
+        "max_steps": 128,
+        "B": 64,
+        "H": 8
+      },
+      "result": "DATA_COLLECTION_CLOSED_NOT_MODEL_SUCCESS",
+      "metrics": {
+        "collection_worker_seconds": 356.41481153992936,
+        "start_to_result_seconds": 401.432377
+      },
+      "scope": "末尾打包/上传不在401秒中；CAP不是缺数据",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_grouped_coverage32_collect256_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L18",
+      "stage": "32状态普通线性/大MLP",
+      "source_refs": [
+        "E03"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "fits": 16,
+        "states": 32,
+        "returns": 512,
+        "groups": 8
+      },
+      "params": {
+        "seed": 78003,
+        "updates": 2000
+      },
+      "result": "NO_ADVANTAGE",
+      "metrics": {
+        "constant_mae": 14.9685,
+        "constant_rmse": 25.6308,
+        "linear_mae": 27.83,
+        "linear_rmse": 41.2,
+        "mlp_mae": 24.27,
+        "mlp_rmse": 35.2
+      },
+      "scope": "小数为文档显示精度；完整精度原RESULT",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_grouped_coverage32_fit16_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L19",
+      "stage": "26维岭回归与小网络正则",
+      "source_refs": [
+        "E04"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "inner_fits": 336,
+        "outer_models": 16,
+        "states": 32
+      },
+      "params": {
+        "lambda_candidates": [
+          0.01,
+          0.1,
+          1.0
+        ],
+        "mlp_architecture": "26-8-1",
+        "parameters": 225
+      },
+      "result": "NO_JOINT_MAE_RMSE_ADVANTAGE",
+      "metrics": {
+        "ridge_mae": 15.3505,
+        "ridge_rmse": 27.1489,
+        "mlp_mae": 14.9618,
+        "mlp_rmse": 25.8092
+      },
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual32_regularized_fit_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L20",
+      "stage": "输入/监督已有记录诊断",
+      "source_refs": [
+        "E05"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "states": 32,
+        "returns": 512,
+        "constant_feature_columns": 6,
+        "newstates_abs_gap_le2": 14,
+        "newstate_total": 16,
+        "cap_involved_states": 11
+      },
+      "params": {},
+      "result": "DESCRIPTIVE_ONLY_NO_NEW_TRAINING",
+      "metrics": {},
+      "scope": "上一段采样净距非瞬时；不能从CAP预测泄漏；非因果归因",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L21",
+      "stage": "36维交互特征",
+      "source_refs": [
+        "E06"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "inner_fits": 336,
+        "outer_models": 16
+      },
+      "params": {
+        "architecture": "36-8-1",
+        "data_changed": false
+      },
+      "result": "NO_JOINT_MAE_RMSE_ADVANTAGE",
+      "metrics": {
+        "ridge_mae": 15.4917,
+        "ridge_rmse": 27.4703,
+        "mlp_mae": 14.9486,
+        "mlp_rmse": 25.872
+      },
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual32_interaction_fit_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L22",
+      "stage": "标准化36维岭8折",
+      "source_refs": [
+        "E07"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "fits": 8
+      },
+      "params": {
+        "lambda": 1,
+        "standardization": "training_only"
+      },
+      "result": "SCIENTIFIC_NEGATIVE",
+      "metrics": {
+        "mae": 18.6805,
+        "rmse": 30.8778,
+        "choice_loss": 11.6731
+      },
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual32_scaledridge_fit_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L23",
+      "stage": "双动作代价加权逻辑偏好",
+      "source_refs": [
+        "E08"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "fits": 8,
+        "parameters": 37,
+        "states": 32
+      },
+      "params": {},
+      "result": "NO_CHOICE_ADVANTAGE",
+      "metrics": {
+        "choice_loss": 13.3015,
+        "constant_03": 7.4169,
+        "constant_30": 6.193,
+        "training_constant": 11.1173,
+        "old_known_correct": 1,
+        "old_known_denominator": 6
+      },
+      "scope": "不是在线MCTS计时；不授权其余14动作剪枝",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual32_preference_fit_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L24",
+      "stage": "搜索观察treeprobe",
+      "source_refs": [
+        "E09"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "mcts_calls": 8,
+        "pairs": 4,
+        "roots": 2,
+        "decisions_each": 2
+      },
+      "params": {},
+      "result": "OBSERVATIONAL_PARITY_PASS",
+      "metrics": {
+        "rollout_stage_percent_range": [
+          81.8,
+          90.2
+        ]
+      },
+      "scope": "插桩/0.5核技术测量，不是生产计时",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_treeprobe_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L25",
+      "stage": "动作报告缓存",
+      "source_refs": [
+        "E10"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "mcts_calls": 8,
+        "pairs": 4
+      },
+      "params": {},
+      "result": "SEMANTIC_PASS_TIMING_NEGATIVE",
+      "metrics": {
+        "hit_rate": 0.6968375136314068,
+        "baseline_reports": 7336,
+        "cached_reports": 2224,
+        "cpu_increase_percent": 70.8
+      },
+      "scope": "完整缓存键/深拷贝开销；不等于树复用",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_reportcache_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L26",
+      "stage": "轻量缓存小试",
+      "source_refs": [
+        "E11"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "mcts_calls": 8,
+        "pairs": 4
+      },
+      "params": {},
+      "result": "PARITY_PASS_TIMING_MIXED",
+      "metrics": {
+        "cpu_reduction_percent": 7.68210777411169,
+        "wall_reduction_percent": 3.571303933040537,
+        "effective_cpu": 0.5
+      },
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_reportcache_flat_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L27",
+      "stage": "轻量缓存固定计时",
+      "source_refs": [
+        "E12"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "mcts_calls": 40,
+        "warmup_calls": 8,
+        "measured_calls": 32,
+        "measured_pairs": 16
+      },
+      "params": {},
+      "result": "CLOSED_NO_STABLE_SPEEDUP",
+      "metrics": {
+        "baseline_cpu_ms": 538.8728434999998,
+        "cache_cpu_ms": 575.3675624375,
+        "relative_increase_percent": 6.772417533692288,
+        "effective_cpu": 16
+      },
+      "scope": "正式计时只32次；缓存支线关闭",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_cachetiming_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L28",
+      "stage": "policy4本地发布准备（H8候选源码不变）",
+      "source_refs": [
+        "P01"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "cloud_searches_in_preparation": 0,
+        "policy_continuations_in_preparation": 0,
+        "prior_unit_synthetic_tests": 49
+      },
+      "params": {},
+      "result": "RELEASE_PREPARED_NOT_EXECUTION",
+      "metrics": {},
+      "scope": "前次本地准备测试继承；本交接不重跑",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L29",
+      "stage": "H8两步子树小试",
+      "source_refs": [
+        "E13",
+        "R13"
+      ],
+      "evidence_status": "CURRENT_ORIGINAL_HASH_IDENTITY_RECHECKED_NO_SCIENTIFIC_RERUN",
+      "counts": {
+        "mcts_calls": 8,
+        "outer_steps": 8,
+        "promotions": 2,
+        "inherited_second": [
+          9,
+          8
+        ],
+        "fresh_second": [
+          55,
+          56
+        ],
+        "tail_transitions_total": 16
+      },
+      "params": {
+        "budget": "inherited corrected+fresh=64",
+        "H": 8,
+        "gamma": 0.99,
+        "cache": false
+      },
+      "result": "PASS_DUAL_H8_SUBTREE_REBASE_SEMANTICS",
+      "metrics": {
+        "cpu_original_s": 2.659554438,
+        "cpu_candidate_s": 2.52485861,
+        "wall_original_s": 5.757573701441288,
+        "wall_candidate_s": 7.191923756152391,
+        "effective_cpu": 0.5
+      },
+      "scope": "首轮一致，第二轮动作不同；完整策略/稳定加速未证",
+      "code": "pending_policy4/release/subtree_reuse.py",
+      "cloud_namespace_recorded": "minesim_dual_subtree_h8_smoke_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    },
+    {
+      "id": "L30",
+      "stage": "H8四条策略续行原计划",
+      "source_refs": [
+        "P01",
+        "P02"
+      ],
+      "evidence_status": "INHERITED_PRIOR_RECORD",
+      "counts": {
+        "planned_policy_runs": 4,
+        "max_search_calls": 512,
+        "actual_policy_runs": "UNKNOWN_NO_RESULT_RECEIVED",
+        "new_teacher_traces_planned": 0
+      },
+      "params": {
+        "max_steps": 128,
+        "workers": 1,
+        "effective_cpu_min": 2,
+        "memory_available_bytes_min": 2147483648,
+        "free_disk_bytes_min": 2147483648,
+        "gpu": false
+      },
+      "result": "PREPARED_RESULT_NOT_RECEIVED_USER_STOP",
+      "metrics": {},
+      "scope": "没有结果不是实时0执行；先问是否已有结果再只读盘点/新授权",
+      "code": "pending_policy4/run_dual_subtree_policy4.sh",
+      "cloud_namespace_recorded": "minesim_dual_subtree_h8_policy4_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false
+    }
+  ]
+}

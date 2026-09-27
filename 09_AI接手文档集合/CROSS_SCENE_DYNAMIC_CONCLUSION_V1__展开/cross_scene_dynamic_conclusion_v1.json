@@ -1,0 +1,190 @@
+{
+  "type": "FULLMINE_V4_CROSS_SCENE_DYNAMIC_CONCLUSION_V1",
+  "status": "PASS",
+  "input_inventory_zip_sha256": "e154a78f7e03f79458e4a7c249c01ad98359f7f23311bd437080b939686de239",
+  "input_inventory_json_sha256": "2eddb51786f024324e756d7365054025f10ba4265ffaf3bdde2414ff57daca5d",
+  "final_scene_set": [
+    4,
+    11,
+    6
+  ],
+  "fleet_science_parameters": {
+    "mcts_dt_s": 0.5,
+    "budget": 64,
+    "depth": 8,
+    "parameter_retuning_for_cross_scene": false
+  },
+  "authoritative_evidence": {
+    "C04_loader": {
+      "relative_path": "c04_loader_diag_v1/c04_loader_gate_fix_v2_20260817_193226/cross-scene-c04-real-loader-smoke-v2.json",
+      "sha256": "463857eeaff2985402b01107d2cd3ef84d21b44c762ff6aaa5a7b10032096c96",
+      "status": "PASS",
+      "PASS": null
+    },
+    "C04_nomcts": {
+      "relative_path": "c04_nomcts_diag_v1/c04_nomcts_fix_v3_20260817_194301/cross-scene-c04-nomcts-causal-conflict-v2.json",
+      "sha256": "0c806c2398047db7b4780147c4f959f92ece028d779fa286510052c0d0c2af37",
+      "status": "PASS",
+      "PASS": true
+    },
+    "C04_fleet_seed0": {
+      "relative_path": "c04_fleet_diag_v1/c04_fleet_seed0_v3_20260817_205518/cross-scene-c04-fleet-mcts-seed0-v2.json",
+      "sha256": "47e3ff50997d6ea095fce0ea0532ca9c01ace31abdc4646980f3b92b09129ca0",
+      "status": "PASS",
+      "PASS": true
+    },
+    "C04_fleet_seed1": {
+      "relative_path": "c04_fleet_diag_v1/c04_fleet_seed1_20260817_205945/cross-scene-c04-fleet-mcts-seed1-v2.json",
+      "sha256": "4e488d3403cf1d9c04b6380f554773825f513432effcb0c5c85ae817b0447d43",
+      "status": "PASS",
+      "PASS": true
+    },
+    "C04_fleet_seed2": {
+      "relative_path": "c04_fleet_multiseed_v5_20260817_210157/seed_2/cross-scene-c04-fleet-mcts-seed2-v2.json",
+      "sha256": "4f054872d3601ccb17a9189fef7e44e42ca64678d2c7d749e3ad5cbd89c73a62",
+      "status": "PASS",
+      "PASS": true
+    },
+    "C04_fleet_seed3": {
+      "relative_path": "c04_fleet_multiseed_v5_20260817_210157/seed_3/cross-scene-c04-fleet-mcts-seed3-v2.json",
+      "sha256": "53802aea40214bbf304c4f9c83e7fa576c08e23ed97f5b0fcc99918978f2d2c4",
+      "status": "PASS",
+      "PASS": true
+    },
+    "C04_fleet_seed4": {
+      "relative_path": "c04_fleet_multiseed_v5_20260817_210157/seed_4/cross-scene-c04-fleet-mcts-seed4-v2.json",
+      "sha256": "689d2811278460b8fefe480b9d931135db6d686be5db1df2789a50aec5097d6d",
+      "status": "PASS",
+      "PASS": true
+    },
+    "C11_loader": {
+      "relative_path": "c11_loader_diag_v1/c11_loader_v1_20260817_210800/cross-scene-c11-real-loader-smoke-v2.json",
+      "sha256": "dae7dca77b4ccb30427e2c1db239359abf7b08cc8714288bb5c9d643fd1394f0",
+      "status": "PASS",
+      "PASS": null
+    },
+    "C11_nomcts": {
+      "relative_path": "c11_nomcts_diag_v1/c11_nomcts_horizon_fix_20260817_211355/cross-scene-c11-nomcts-causal-conflict-v2.json",
+      "sha256": "c5bd459c1e936c089237f33b189b5b8d9d072f7ceab14e0d305d01a4642fa0e7",
+      "status": "PASS",
+      "PASS": true
+    },
+    "C11_fleet_seed0": {
+      "relative_path": "c11_fleet_diag_v1/c11_fleet_seed0_20260817_211809/cross-scene-c11-fleet-mcts-seed0-v2.json",
+      "sha256": "47a6d570f65953e7dea35f46eb9f8ac63975c1e9e96402f6753f3f41e839547e",
+      "status": "FAIL",
+      "PASS": false
+    },
+    "C06_loader": {
+      "relative_path": "c06_loader_diag_v1/c06_loader_v1_20260817_212241/cross-scene-c06-real-loader-smoke-v2.json",
+      "sha256": "3581e7ef6b62645d60999679f954b8b2ef3da7eecc445c3941c4af0a5ea9ed90",
+      "status": "PASS",
+      "PASS": null
+    },
+    "C06_nomcts": {
+      "relative_path": "c06_nomcts_diag_v1/c06_nomcts_20260817_212500/cross-scene-c06-nomcts-causal-conflict-v2.json",
+      "sha256": "db78f35b57ad897b50386698ddf488ab7b30343cf452ae61a9c86ab901c2f2fd",
+      "status": "PASS",
+      "PASS": true
+    },
+    "C06_fleet_seed0": {
+      "relative_path": "c06_fleet_diag_v1/c06_fleet_seed0_20260817_212755/cross-scene-c06-fleet-mcts-seed0-v2.json",
+      "sha256": "0cbec940ce6581da1669fb06f49d091267f2365c8909c0cacafe393693d3df22",
+      "status": "PASS",
+      "PASS": true
+    }
+  },
+  "scene_conclusions": {
+    "C04": {
+      "loader_pass": true,
+      "nomcts_physical_conflict_pass": true,
+      "nomcts_max_overlap_area_m2": 18.791156781959376,
+      "fleet_seed0_pass": true,
+      "fleet_multiseed_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "fleet_multiseed_pass_count": 5,
+      "fleet_multiseed_total": 5,
+      "fleet_min_clearance_m_across_5_seeds": 1.6284209991535123,
+      "classification": "ROBUST_WITHIN_SCENE_5_OF_5_UNDER_FROZEN_PARAMETERS"
+    },
+    "C11": {
+      "loader_pass": true,
+      "nomcts_physical_conflict_pass": true,
+      "nomcts_max_overlap_area_m2": 27.646995769348734,
+      "fleet_seed0_pass": false,
+      "fleet_seed0_collision_avoided": true,
+      "fleet_seed0_completed_post_conflict": false,
+      "fleet_seed0_duration_s": 89.0,
+      "fleet_seed0_iterations": 890,
+      "fleet_seed0_A_conflict_cross_time_s": null,
+      "fleet_seed0_B_conflict_cross_time_s": null,
+      "classification": "SAFE_BUT_PROGRESS_FAILURE_AT_SEED0_UNDER_FROZEN_PARAMETERS"
+    },
+    "C06": {
+      "loader_pass": true,
+      "nomcts_physical_conflict_pass": true,
+      "nomcts_max_overlap_area_m2": 17.254748950566743,
+      "fleet_seed0_pass": true,
+      "fleet_seed0_min_clearance_m": 2.0230127998459078,
+      "classification": "SEED0_TRANSFER_PASS_UNDER_FROZEN_PARAMETERS"
+    }
+  },
+  "balanced_seed0_summary": {
+    "scenes_evaluated": 3,
+    "full_benchmark_success_count": 2,
+    "full_benchmark_success_total": 3,
+    "collision_avoided_count": 3,
+    "collision_avoided_total": 3,
+    "full_benchmark_success_rate": 0.6666666666666666,
+    "collision_avoidance_rate": 1.0
+  },
+  "claim_boundary": {
+    "supported": [
+      "All three final scenes have PASS real-loader evidence.",
+      "All three final scenes have PASS constant-speed NO-MCTS causal physical-conflict evidence.",
+      "With frozen Fleet-MCTS parameters, seed0 fully succeeds on C04 and C06.",
+      "With the same frozen parameters, C11 seed0 avoids collision but fails progress/post-conflict completion.",
+      "C04 additionally passes seeds 0-4 (5/5), demonstrating within-scene stochastic robustness for C04.",
+      "Cross-scene transfer is demonstrated but universal cross-scene benchmark success is disproven by C11 seed0."
+    ],
+    "not_supported": [
+      "Do not claim 3/3 cross-scene Fleet-MCTS benchmark success.",
+      "Do not claim multiseed robustness for C11 or C06; only C04 has 5-seed evidence.",
+      "Do not aggregate the seven Fleet runs as an overall success rate because seed allocation is unbalanced by scene.",
+      "Do not retune parameters retroactively to erase the C11 negative result.",
+      "Do not claim production-authoritative mine-wide drivability from these three research benchmarks."
+    ]
+  },
+  "historical_or_superseded_artifacts_retained": [
+    {
+      "relative_path": "c04_loader_diag_v1/c04_loader_shape_fix_highmem_20260817_192947/cross-scene-c04-real-loader-smoke-v2.json",
+      "sha256": "78723279c3b47ec3bde7d54ca011e551f44d838b0ecc284f742cc8af2eb9fe86",
+      "status": "FAIL",
+      "error": null
+    },
+    {
+      "relative_path": "cross_scene_real_loader_reports_v2/cross-scene-c04-real-loader-smoke-v2.json",
+      "sha256": "adaa61f354a1ab3da03e413e7f1adb467bb71b40374763b8d1c158bcd1f2c8eb",
+      "status": "FAIL",
+      "error": "TypeError: float() argument must be a string or a number, not 'list'"
+    },
+    {
+      "relative_path": "c04_nomcts_diag_v1/c04_nomcts_fix_v2_20260817_194045/cross-scene-c04-nomcts-causal-conflict-v2.json",
+      "sha256": "31a0fffc9ba18aac3802367634f051b011dd748ab192c7859ef432cf811cbe05",
+      "status": "FAIL",
+      "error": "NameError: name 'MAX_STEPS' is not defined"
+    },
+    {
+      "relative_path": "c11_nomcts_diag_v1/c11_nomcts_20260817_211029/cross-scene-c11-nomcts-causal-conflict-v2.json",
+      "sha256": "19082f135c41dc667c96f47562cc2a56bfc34ac38e5b962ab58d44f0a7942d58",
+      "status": "FAIL",
+      "error": null
+    }
+  ],
+  "next_stage": "DATASET_GOVERNANCE_READ_ONLY_INVENTORY"
+}

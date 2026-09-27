@@ -1,0 +1,188 @@
+{
+  "handoff_id": "H20260919-R1",
+  "role": "字节完整性清单；不是科学结果或执行授权",
+  "excluded_self_files": [
+    "PACKAGE_MANIFEST.json",
+    "SHA256SUMS"
+  ],
+  "files": [
+    {
+      "path": "ALGORITHM_AND_EFFECTS.json",
+      "size": 146039,
+      "sha256": "c4f54cae9df324ced23de8557b068e393358a081b516a50d4a40d972335620e9"
+    },
+    {
+      "path": "ALGORITHM_REGISTRY.json",
+      "size": 3859,
+      "sha256": "3222a805113c29877d2e86e7490e834c8f77deda526b246f3367b1de389c0364"
+    },
+    {
+      "path": "ARTIFACT_SCOPE.json",
+      "size": 559,
+      "sha256": "32aa8e1c5b2ed5190b36fe3537cee069a6678197f6b5056950fbb36ddab670db"
+    },
+    {
+      "path": "CURRENT_STATE.json",
+      "size": 6045,
+      "sha256": "4d25d8c7acf4ec33e0fdd1fadd8aafbab573fad2d67236d43ebdc0095bdd13ef"
+    },
+    {
+      "path": "EVIDENCE_INDEX.json",
+      "size": 8293,
+      "sha256": "3c0e3d711c47e03ff2e3d1b77a19b43a635a7a404a11c6206af6169c13149ee9"
+    },
+    {
+      "path": "EXPERIMENT_LEDGER.json",
+      "size": 57159,
+      "sha256": "c821cd5d2a62c0b2985d9d82a49aedcfd8eb59d1515d27c7f88bbbb399855afb"
+    },
+    {
+      "path": "HANDOFF.md",
+      "size": 92158,
+      "sha256": "36c3fb5c2de09954d8e99d6ab9ba688467f2f370201b4305c2117698916ffc99"
+    },
+    {
+      "path": "LATEST_EVIDENCE_REQUIREMENTS.json",
+      "size": 3674,
+      "sha256": "60431094112e144abbef4f6dabaddee8d89acfa7ab89693cf492f146b60873cc"
+    },
+    {
+      "path": "MineSim_Dynamic_正式交接_算法演进与最新效果_20260919_R1.docx",
+      "size": 108687,
+      "sha256": "3228e740e2f30e5b37f7995168e968ba26120e71891f893b8cd67c2607a10c1d"
+    },
+    {
+      "path": "NEXT_GATE_CONTRACT.json",
+      "size": 4172,
+      "sha256": "0595aa2dd2a8fe696b8cc75c97f7590f181c1319dc8a883accaac77386216e78"
+    },
+    {
+      "path": "SOURCE_MAP.md",
+      "size": 2681,
+      "sha256": "4d2e364a895ceaf5b7009253bb113f5a67df0d676864df651c06dcb19c7a641a"
+    },
+    {
+      "path": "START_HERE.md",
+      "size": 3088,
+      "sha256": "51c969de0bd1beeb6e04866b979ce451cfe3d1573650913359c64ec61593ea26"
+    },
+    {
+      "path": "audit/ARCHIVE_MEMBER_SCAN.json",
+      "size": 11061,
+      "sha256": "6ded7105e293c47ebbc6896d7b352a3c51c96db0afaf86b95195a69cfe8ce88e"
+    },
+    {
+      "path": "audit/DOCUMENT_QA.json",
+      "size": 11869,
+      "sha256": "992f95cd5f662d3cd09b6c98fb368c7ed405331632bdda6c865e1aeaa7424318"
+    },
+    {
+      "path": "audit/DOCX_ACCESSIBILITY.json",
+      "size": 215,
+      "sha256": "ddc10ec93076ce4da8e0f44dd2e56d9033ee2acca08af2832e6a02d4a4c21fcf"
+    },
+    {
+      "path": "audit/H18_MANIFEST_CHECK.json",
+      "size": 5335,
+      "sha256": "d96feb66b8f4a1adcc25ce8ee23ff485b959f865d3de4832435d395bcb7b6a04"
+    },
+    {
+      "path": "audit/INPUT_FILE_INVENTORY.json",
+      "size": 5527,
+      "sha256": "1376481171a116572557650bc72eccbd36ccf9f90b9bfbfc4c5e6dcea34624c7"
+    },
+    {
+      "path": "frozen_data/DATASET32.json",
+      "size": 488232,
+      "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1"
+    },
+    {
+      "path": "source_code/C01_fleet_search.py",
+      "size": 7431,
+      "sha256": "e96c82d60b75c6d2b3311b9fd9d569cab1404c5c2ba4c729cb25c8e605d6ec94"
+    },
+    {
+      "path": "source_code/C02_dual_stop_motion_v1.py",
+      "size": 13473,
+      "sha256": "e9d024a6f56b6279de41b6f0889a188a201eeef07acca425e2ea69c4ef9c0626"
+    },
+    {
+      "path": "source_code/C03_dual_stop_adapter_v1.py",
+      "size": 16614,
+      "sha256": "04710705edeea28bf38560fc4e3ce8ee319fc0b6679dbf00bd4c61d897cd4961"
+    },
+    {
+      "path": "source_code/C04_fleet_reward.py",
+      "size": 3700,
+      "sha256": "bd2cefa0e6eac0980d009882aa5a4a0aa7f0b6701b6534ccb3af18634ad6213c"
+    },
+    {
+      "path": "source_code/C05_teacher_cell_core.py",
+      "size": 16731,
+      "sha256": "58c3e5d217189b5d4f7e108b57f3d3700f3e11216d1eab02d1d25c5e0885cba0"
+    },
+    {
+      "path": "source_code/C06_reward.py",
+      "size": 7651,
+      "sha256": "d225ca754b2e5f6a650a35a946819276d50c027eaf66449667973c45f98ed5a5"
+    },
+    {
+      "path": "source_code/C07_C11_100M_SEED0_EP1.json",
+      "size": 5959,
+      "sha256": "a13f2fc0b735d310d3bcd80fc44d09d366bd3474e284090b247654bc5ba5f911"
+    },
+    {
+      "path": "source_code/C08_subtree_reuse.py",
+      "size": 14097,
+      "sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532"
+    },
+    {
+      "path": "sources/A18_H8策略结果补充原件.docx",
+      "size": 41390,
+      "sha256": "5929f8752513de032e8a6c0d87d0e2be8e784b9a5b0e890bce361ef0746a9eb4"
+    },
+    {
+      "path": "sources/H10_论文标准对齐历史主文.md",
+      "size": 104921,
+      "sha256": "8e0573c20d2f60984f112baa92513da7293cf81aea748f8e06f269f9a73c28a8"
+    },
+    {
+      "path": "sources/H18_历史主文.md",
+      "size": 60550,
+      "sha256": "27222895555782c3cd8960e97a23462dd5db92b673687077daf21850d5b11e57"
+    },
+    {
+      "path": "sources/H18_历史交接与证据原包.zip",
+      "size": 7886495,
+      "sha256": "52aff4201a1cb612bc36c7a979985048dc36fb12cc4bccdcf723671999732a2a"
+    },
+    {
+      "path": "sources/H18_原实验台账.json",
+      "size": 22854,
+      "sha256": "e9cc2fa4dc27efd24f02c536d542dbc98978c84cbe0419981edc89fa2240b227"
+    },
+    {
+      "path": "sources/R19_上一轮阅读记录.md",
+      "size": 9528,
+      "sha256": "e5ebeed0d47e49716f38470e634ea702b05edbecb4c5b577657bc182b3b41257"
+    },
+    {
+      "path": "sources/S01_用户统一工作流原件.md",
+      "size": 24882,
+      "sha256": "0d16a325ff3a79eb81e9c2b65e2a98e7b70002b2b301de36c590c17c896dc64f"
+    },
+    {
+      "path": "sources/T01_原始完整对话.txt",
+      "size": 271324,
+      "sha256": "76cccf451dd44237879aa6438d4cb82378ac21fac8d7bb6ca68f9c3317a4cab9"
+    },
+    {
+      "path": "sources/T01_带行号阅读副本.txt",
+      "size": 290684,
+      "sha256": "6573ca108361595841c852cb7721d9fbe827fbbf49b8d2db6127cdadc24c4b50"
+    }
+  ],
+  "file_count": 35,
+  "total_bytes": 9756937,
+  "new_scientific_execution": 0
+}

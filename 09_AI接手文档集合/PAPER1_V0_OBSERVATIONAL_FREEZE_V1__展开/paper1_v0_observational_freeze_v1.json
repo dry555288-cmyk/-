@@ -1,0 +1,30 @@
+{
+  "type": "PAPER1_SAFETY_RISK_EVALUATOR_V0_OBSERVATIONAL_FREEZE_V1",
+  "status": "PASS",
+  "science_baseline": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+  "scene": "C04",
+  "seed": 0,
+  "authoritative_result_sha256": "47e3ff50997d6ea095fce0ea0532ca9c01ace31abdc4646980f3b92b09129ca0",
+  "authoritative_log_sha256": "604b24bf606980787a7e9430d74be4f9e4c1d7ef8e16b5bf985249dd074dddba",
+  "sidecar_result_sha256": "47e3ff50997d6ea095fce0ea0532ca9c01ace31abdc4646980f3b92b09129ca0",
+  "sidecar_log_sha256": "604b24bf606980787a7e9430d74be4f9e4c1d7ef8e16b5bf985249dd074dddba",
+  "v0_jsonl_sha256": "145bd2cd3768095ddf08e14409a5bea31d94f2df869789a6374c896a1cc01a86",
+  "v0_summary_sha256": "514eb243871a9144324277305830e6b9bd72a972e7593565d640eb9c9d851af5",
+  "record_count": 126,
+  "exact_result_parity": true,
+  "exact_log_parity": true,
+  "benchmark_success": true,
+  "v2r_route_boundary_violation": false,
+  "v2r_direct_boundary_violation": false,
+  "v2r_route_direct_bool_mismatch_count": 0,
+  "v2v_internal_collision_transition_count": 0,
+  "v0_min_route_geometry_swept_v2v_clearance_m": 2.038038141193954,
+  "paper1_safe_node_decision_available": false,
+  "v2h_status": "NOT_IMPLEMENTED_V0",
+  "claim_boundary": [
+    "V0 is observational only and does not alter search/reward/action/pruning.",
+    "V0 hard V2R bitmap parity is validated on C04 seed0.",
+    "V0 does not yet implement continuous d_v2r, dynamic context-aware V2V/V2H thresholds, probabilistic V2H, or Pi_safe pruning.",
+    "The route-geometry swept V2V clearance is not asserted to be numerically identical to the benchmark endpoint actual-footprint minimum clearance."
+  ]
+}

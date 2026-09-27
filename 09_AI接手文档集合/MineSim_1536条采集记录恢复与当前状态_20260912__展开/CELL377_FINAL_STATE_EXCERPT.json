@@ -1,0 +1,18 @@
+{
+  "source": "evidence/sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/trace.json",
+  "source_sha256": "da523d091966f27b60b67866bac79b5271b65ff2f0b067a8880556018e6ada7d",
+  "stored_outcome": "BOTH_CONFIGURED_ROUTE_ENDS",
+  "decoded_final_speeds": {
+    "A": {
+      "speed_mps_hex": "0x1.e000000000000p+3",
+      "speed_mps": 15.0,
+      "goal_reached": true
+    },
+    "B": {
+      "speed_mps_hex": "0x0.0p+0",
+      "speed_mps": 0.0,
+      "goal_reached": true
+    }
+  },
+  "interpretation": "Old configured-route-end terminal does not require both vehicles to be parked. This is not a new dual-stop-model result."
+}

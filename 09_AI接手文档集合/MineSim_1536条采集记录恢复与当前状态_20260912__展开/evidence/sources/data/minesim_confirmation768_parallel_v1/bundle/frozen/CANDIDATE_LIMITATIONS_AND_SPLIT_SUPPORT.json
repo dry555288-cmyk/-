@@ -1,0 +1,100 @@
+{
+  "status": "DESCRIPTIVE_SUPPORT_ONLY_NOT_TRAINING_AUTHORIZATION",
+  "episode_folds": [
+    {
+      "heldout_episode": "C04_FROZEN_EP0",
+      "train_discovery_candidates_by_scene": {
+        "C04": 66,
+        "C06": 119,
+        "C11": 13
+      },
+      "heldout_discovery_candidates": 75,
+      "train_roots_with_discovery_candidates": 7,
+      "heldout_roots_with_discovery_candidates": 2,
+      "zero_training_candidate_scenes": [],
+      "training_executed": false,
+      "interpretation": "Support ceiling before confirmation; unknown discovery pairs cannot be promoted."
+    },
+    {
+      "heldout_episode": "C04_SEED5_EP1",
+      "train_discovery_candidates_by_scene": {
+        "C04": 75,
+        "C06": 119,
+        "C11": 13
+      },
+      "heldout_discovery_candidates": 66,
+      "train_roots_with_discovery_candidates": 7,
+      "heldout_roots_with_discovery_candidates": 2,
+      "zero_training_candidate_scenes": [],
+      "training_executed": false,
+      "interpretation": "Support ceiling before confirmation; unknown discovery pairs cannot be promoted."
+    },
+    {
+      "heldout_episode": "C06_FROZEN_EP0",
+      "train_discovery_candidates_by_scene": {
+        "C04": 141,
+        "C06": 77,
+        "C11": 13
+      },
+      "heldout_discovery_candidates": 42,
+      "train_roots_with_discovery_candidates": 7,
+      "heldout_roots_with_discovery_candidates": 2,
+      "zero_training_candidate_scenes": [],
+      "training_executed": false,
+      "interpretation": "Support ceiling before confirmation; unknown discovery pairs cannot be promoted."
+    },
+    {
+      "heldout_episode": "C06_SEED1_EP1",
+      "train_discovery_candidates_by_scene": {
+        "C04": 141,
+        "C06": 42,
+        "C11": 13
+      },
+      "heldout_discovery_candidates": 77,
+      "train_roots_with_discovery_candidates": 7,
+      "heldout_roots_with_discovery_candidates": 2,
+      "zero_training_candidate_scenes": [],
+      "training_executed": false,
+      "interpretation": "Support ceiling before confirmation; unknown discovery pairs cannot be promoted."
+    },
+    {
+      "heldout_episode": "C11_100M_SEED0_EP1",
+      "train_discovery_candidates_by_scene": {
+        "C04": 141,
+        "C06": 119,
+        "C11": 0
+      },
+      "heldout_discovery_candidates": 13,
+      "train_roots_with_discovery_candidates": 8,
+      "heldout_roots_with_discovery_candidates": 1,
+      "zero_training_candidate_scenes": [
+        "C11"
+      ],
+      "training_executed": false,
+      "interpretation": "Support ceiling before confirmation; unknown discovery pairs cannot be promoted."
+    },
+    {
+      "heldout_episode": "C11_80M_SEED0_EP0",
+      "train_discovery_candidates_by_scene": {
+        "C04": 141,
+        "C06": 119,
+        "C11": 13
+      },
+      "heldout_discovery_candidates": 0,
+      "train_roots_with_discovery_candidates": 9,
+      "heldout_roots_with_discovery_candidates": 0,
+      "zero_training_candidate_scenes": [],
+      "training_executed": false,
+      "interpretation": "Support ceiling before confirmation; unknown discovery pairs cannot be promoted."
+    }
+  ],
+  "candidates_all_eight_observed_hard": 42,
+  "candidates_all_eight_observed_goal": 217,
+  "candidate_observed_range_gap": {
+    "min": 0.0011162155389996542,
+    "median": 0.3446653484972444,
+    "max": 46.41799990898308,
+    "meaning": "Descriptive composite-return separation, not useful-effect epsilon or safety margin."
+  },
+  "confirmation_cannot_fill_zero_candidate_roots_under_frozen_no_promotion_rule": true
+}

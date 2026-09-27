@@ -1,0 +1,341 @@
+{
+  "schema": "MINESIM_TEACHER_PILOT_DESIGN_V1",
+  "gate": "NEW_TEACHER_PILOT_PROTOCOL_DESIGN",
+  "status": "DESIGN_ONLY_NOT_AUTHORIZATION",
+  "evidence_cutoff": "2026-09-10",
+  "design_written_before_selection_utc": "2026-09-10T13:48:11.384539+00:00",
+  "resource_this_step": "LOW",
+  "execution_location_this_step": "CURRENT_CHAT_CONTAINER",
+  "cloud_required_this_step": false,
+  "hypothesis": "An explicitly bound long-horizon native-policy return, equally sampled per forced action, may yield repeatable partial supervision; no assumption that every action can be ordered or that neural guidance will improve.",
+  "scope": {
+    "development_only": true,
+    "fresh_states": false,
+    "fresh_policy_return_samples": "PLANNED_NOT_COLLECTED",
+    "not_a_formal_unseen_test": true,
+    "new_training": false,
+    "new_forward": false,
+    "new_simulation": false,
+    "new_pruning": false
+  },
+  "primary_candidate_target": {
+    "name": "Q128_NATIVE_B64_H8_COMPOSITE_POLICY_RETURN_CANDIDATE_V1",
+    "definition": "Q_128^pi(s,a)=E[sum_{k=0}^{min(128,tau)-1}0.99^k r_k | s, forced first a, then pi]",
+    "value_semantics": "finite-window fixed-policy composite return; not optimal Q, not internal UCT child Q",
+    "long_return_label_eligibility": "All planned repetitions for both compared actions valid and truly terminated; any artificial cutoff makes that action long-return-label UNKNOWN. Its finite-window observations remain in outputs.",
+    "complete_sample_qualification": "Complete sampled returns do not prove that the policy terminates almost surely or that the infinite-horizon expectation is known.",
+    "reward_policy": "Use each episode exact frozen reward/transition context; do not copy C06 numbers into C04 or C11. Context must be bound before scientific START.",
+    "change_from_old_target": "New target-generator branch explicitly replaces random short-tree target with forced-first-action native-policy execution for candidate labels ONLY; old datasets/checkpoints are untouched.",
+    "network_output": "16 unconstrained ranking scores for canonical actions, not calibrated Q/leaf values/safety probabilities",
+    "auxiliary_cost": "C64=min(T_ok,64); T_ok=+infinity for hard failure or no normal completion. Missing evidence=null/HOLD; no discount.",
+    "auxiliary_not_loss": "C64, hard-event frequency, sampled clearance and command smoothness kept separately; no weighted mixture, no substituted reward."
+  },
+  "inherited_execution": {
+    "dt_s": 0.5,
+    "gamma": 0.99,
+    "cap_steps_including_first": 128,
+    "cap_seconds": 64.0,
+    "policy_budget": 64,
+    "policy_max_depth": 8,
+    "policy_c_uct": 1.4,
+    "tree_reuse": false,
+    "policy_selector": "native visits first, then q, then smaller canonical action",
+    "first_step": "One forced deterministic transition; no policy RNG consumption and no MCTS count for this step.",
+    "subsequent_steps": "Fresh native search tree each decision; same outer stream retained, never reseed each decision.",
+    "true_terminal": "frozen hard_safety_violation OR all_goals_reached; hard has priority if both on same step",
+    "artificial_cap": "128 transitions includes first step, H8 remains unchanged; unknown tail not fabricated as zero task value",
+    "allowed_actions": "root 16 enumerated; after a car reaches goal its native legal set shrinks to KEEP; no pruning"
+  },
+  "selection": {
+    "pool": "evidence/BLIND_STATE_POOL.json",
+    "pool_sha256": "5872b2a77fb657fe92155fb5e215df7c258d6bc47525d6071bf7bd930f0387f5",
+    "pool_provenance": "36 historical corrected pilot raw roots inside bound E31 runtime snapshot",
+    "episodes_in_fixed_order": [
+      "C04_FROZEN_EP0",
+      "C04_SEED5_EP1",
+      "C06_FROZEN_EP0",
+      "C06_SEED1_EP1",
+      "C11_100M_SEED0_EP1",
+      "C11_80M_SEED0_EP0"
+    ],
+    "roots_per_episode": 2,
+    "root_count": 12,
+    "algorithm": "For each episode in fixed order, choose pair maximizing standardized squared Euclidean distance over seven stored motion/geometry features, excluding any float32-12D feature key already selected. Exact score tie -> ascending numeric root_step then pilot_id. Failure to provide two eligible unique states -> HOLD, no alternate pool.",
+    "feature_indices_for_distance": [
+      0,
+      1,
+      4,
+      5,
+      7,
+      9,
+      10
+    ],
+    "selection_scale": "Population SD of all 36 blind candidate rows, computed without rewards/visits/model scores; zero scale becomes 1.0. Only for selecting this development subset, not for NN normalization.",
+    "eligibility": "both recorded goal flags false, both initial collision flags false, all features finite; preserve actual acceleration fields",
+    "outcome_fields_forbidden": [
+      "actionwise",
+      "selected_action_id",
+      "root_total_child_visits",
+      "q_value",
+      "immediate_reward",
+      "model_score"
+    ],
+    "exclusions": "384 legacy trajectories not repeated, not used to fit this candidate; their two NEW24 root identities outside pool36; no outcome-based replacements.",
+    "selection_bias_boundary": "Ordered-episode, quota-constrained heuristic on an already examined pool; no k-center approximation guarantee, no random population sampling.",
+    "same_x_boundary": "12D key used only for experimental duplication control and split guard, NOT full state/context identity."
+  },
+  "sampling": {
+    "actions": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        2
+      ],
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        0
+      ],
+      [
+        2,
+        1
+      ],
+      [
+        2,
+        2
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        3,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        3,
+        3
+      ]
+    ],
+    "canonical_index": "4*A+B",
+    "action_accelerations_mps2": [
+      -3.0,
+      -1.5,
+      0.0,
+      1.0
+    ],
+    "discovery": {
+      "outer_repeats_per_action": 4,
+      "proposed_seeds": [
+        51000,
+        51001,
+        51002,
+        51003
+      ],
+      "planned_trajectories": 768
+    },
+    "confirmation": {
+      "outer_repeats_per_action": 4,
+      "proposed_seeds": [
+        52000,
+        52001,
+        52002,
+        52003
+      ],
+      "planned_trajectories": 768,
+      "collect_all_actions": true,
+      "candidate_mask_locked_before_start": true,
+      "allow_promote_discovery_unknown": false
+    },
+    "proposed_technical_seed": 51900,
+    "seed_namespace_status": "LOCAL_PROPOSAL_REQUIRES_LIVE_LEDGER_AND_AUTHORIZATION_CHECK",
+    "planned_total_trajectories": 1536,
+    "outer_repeats_total_per_action": 8,
+    "maximum_execution_transitions": 196608,
+    "maximum_policy_calls": 195072,
+    "maximum_policy_iterations": 12484608,
+    "stream": "Fresh Random(seed) per (root,forced_action,outer_seed); shared integer across actions = replicate index only, not identical rollout or iid guarantee.",
+    "scope_of_n": "1536 trajectory samples over 12 root inputs from 6 episodes/3 scenes; not 1536 independent states.",
+    "selection_before_outcomes": true,
+    "no_adaptive_replications": true,
+    "no_budget_or_depth_ladder": true,
+    "time_budget": "No cloud run authorized. Wall/CPU/RAM budget must be fixed from technical cost probe before scientific START; zero claimed runtime estimate here.",
+    "why_4_plus_4": "A deliberately bounded feasibility pilot with a second batch for empirical confirmation; not a statistically sufficient sample-size claim."
+  },
+  "labels": {
+    "schema": "EMPIRICAL_PARTIAL_ORDER_V1",
+    "comparison_atol": 1e-08,
+    "atol_role": "Inherited arithmetic-comparison guard only; not epsilon_Q, useful-effect threshold, safety margin or confidence level.",
+    "return_repetitions": "Keep every Y_z, terminal cause and valid flag; means/std are descriptive; no success-only conditioning.",
+    "discovery_rule": "i>j candidate iff every planned observation for both is valid, neither has any artificial cutoff, and min(Y_i^D)-max(Y_j^D)>atol; analogous reversed direction.",
+    "confirmation_rule": "Only previously fixed candidates: same range separation direction in C AND over D union C; otherwise mask=0. Confirm all16 actions, not only chosen winners.",
+    "accepted_name": "EMPIRICAL_REPEATED_ORDER_NOT_CERTIFIED",
+    "unknown_names": [
+      "UNKNOWN_OVERLAPPING_RETURNS",
+      "UNKNOWN_NUMERIC_RESOLUTION",
+      "UNKNOWN_CONFIRMATION",
+      "UNKNOWN_TAIL_CENSORED",
+      "HOLD_MISSING_OR_INVALID"
+    ],
+    "unknown_encoding": "mask=0; direction=null (never train y=0 as a true tie)",
+    "zero_evidence_root": "valid zero mask with explicit count; never manufacture pairs or drop silently to claim full scene support",
+    "graph": "Store direct observed edges; check acyclicity. No transitive pseudo-label promotion and no hard-safe action elimination.",
+    "quantities_reported": [
+      "discovery_pair_count",
+      "confirmed_pair_count",
+      "confirmation_fraction_or_null",
+      "coverage_over_120",
+      "unknown_reason_counts",
+      "root_scene_episode_support",
+      "per_action_return_distribution",
+      "hard_and_cutoff_counts",
+      "sampled_clearance",
+      "near_tie_gaps"
+    ],
+    "not_guaranteed": [
+      "statistical confidence",
+      "pruning safety",
+      "unique optimal action",
+      "meaningful delay tolerance"
+    ],
+    "test_on_legacy_returns_this_turn": false
+  },
+  "later_learning_contract": {
+    "training_authorized": false,
+    "architecture_candidate": [
+      12,
+      64,
+      64,
+      16
+    ],
+    "loss": "mean_scene mean_input_group [sum_{i<j}mask_ij*softplus(-y_ij*(f_i-f_j))/sum(mask)]",
+    "pair_weighting": "Equal known-pair weight within root; input-group/scene weights explicit. No Q-gap amplification.",
+    "zero_mask_aggregation": "Exclude zero-mask groups from differentiable loss only; publish their counts and full denominator. If a required training scene has no pairs, training HOLD; no reweighting to hide absence.",
+    "normalization": "Only eligible training groups of each fold; exact feature names/units/order retained; zero-SD guard specified in the later trainer contract.",
+    "primary_split": "Leave one full episode out, six fixed folds; all actions, repeats and labels of a root stay together; remove every training group sharing a 12D key OR state/context identity with heldout data.",
+    "source_leakage_guard": "Never pretrain on 2356/57 old records, including heldout provenance, then call the new leaveout unseen. Fresh model initialization required for this pilot diagnostic.",
+    "fold_size_expected": "12 selected roots =>10 training and2 heldout per fold before any valid-label or duplicate guards.",
+    "secondary_loso": "Whole-scene leaveout may be designed later; not authorized here, six folds do not prove unseen-scene generalization.",
+    "heldout_usage": "Fixed model recipe; no checkpoint, threshold or seed selection on heldout results. Candidate fit/optimization protocol is a separate gate.",
+    "metrics": [
+      "known-pair accuracy with coverage",
+      "heldout distribution and wrong-top-action witnesses",
+      "heldout return loss vs same-batch empirical oracle, labeled empirical not true regret",
+      "immediate-reward baseline evaluated only on same valid pairs"
+    ],
+    "known_limit": "12 roots only, old development pool, acceleration support may still be zero, no claimed feature adequacy/convergence/deployment readiness."
+  },
+  "required_logs": {
+    "trajectory": [
+      "root id and raw SHA",
+      "full context/source/config SHA",
+      "outer seed plus serialized RNG at checkpoints",
+      "before/after complete state",
+      "forced vs selected action and legal action set",
+      "reward and components if bound",
+      "goal/hard causes with priority",
+      "sampled internal clearance",
+      "step/time/dt",
+      "terminal vs artificial cutoff",
+      "input12 plus feature-helper SHA"
+    ],
+    "decision": [
+      "actual iteration count",
+      "root visits by canonical action",
+      "chosen native action",
+      "elapsed_ms from source preserved",
+      "monotonic wrapper elapsed separated from source time",
+      "call count",
+      "tree budget/depth/discount"
+    ],
+    "timing": "Monotonic per-search + per-trajectory execution elapsed, setup/io/packing separated; saving timing must not influence policy or RNG. Do not recover old missing timings from simulation seconds.",
+    "unavailable": [
+      "PET",
+      "all-object-pair MMTTC",
+      "road-boundary",
+      "paper V2V/V2H risk",
+      "full-tree expansion totals unless actual counter bound"
+    ],
+    "geometry": "Retain current 0.1s sampled/1m cached planning-model scope, not exact continuous/controller safety; no added threshold."
+  },
+  "execution_gates": {
+    "current": "DESIGN_ONLY",
+    "next": "NEW_TEACHER_PILOT_INPUT_AND_RUNNER_STATIC_PREFLIGHT",
+    "later_cloud_technical": "12 roots x16 one-step parity + wrapper/logging-on/off parity for actions(0,0),(3,3) at proposed techseed51900; no scientific labels from technical cells.",
+    "technical_requirements": [
+      "original raw/context/source SHA",
+      "reward/geometry config per episode",
+      "RNG parity excluding timing values",
+      "Q/visits/chosen-action parity",
+      "missing/invalid/cutoff semantics",
+      "namespace absent plus START/CAPTURE",
+      "wall resource bound before scientific sampling"
+    ],
+    "sample_stages": "Discovery and confirmation are separate authorizations/namespaces. No automatic chain execution."
+  },
+  "stopping_and_claims": {
+    "technical": "Missing source/context, failed single-step parity, NaN/schema inconsistency, resource interruption ->technical HOLD, preserve artifacts; no automatic rerun.",
+    "scientific": "A hard failure or a valid64s timeout is data, not a retry reason. Finish fixed cells when resources/technical integrity allow. Overlap/unconfirmed/censored pairs remain unknown.",
+    "no_signal": "No eligible labels in a required scene -> record insufficient support, do not lower thresholds or enlarge horizon/seeds. Any next hypothesis gets a separate prospective protocol.",
+    "end": "Stop after fixed batch; freeze raw data and empirical masks before any optional learning. No automatic training, deployment or pruning.",
+    "statistical_branch": "Independent HOLD; risk/epsilon/delta not guessed and not a blocker for descriptive development work."
+  },
+  "permissions": {
+    "cloud_launch": false,
+    "fresh_MCTS": false,
+    "new_training": false,
+    "old_dataset_overwrite": false,
+    "old_K13_rerun": false,
+    "actual_pruning": false,
+    "new_hard_safety_thresholds": false
+  },
+  "changes_this_design": [
+    "New full-policy target candidate, not a replacement of old labels",
+    "12-root quota-constrained subset of old corrected36 pool",
+    "Equal4+4 outer repeats per forced action",
+    "Range-separated empirical confirmation mask; not inherited old15/16 or10percent rule",
+    "Separate episode-heldout developmental learning plan, not currently executed"
+  ],
+  "pending_before_scientific_start": [
+    "exact12-state runtime/context binding",
+    "all-episode continuation builder and reward mapping parity",
+    "new wrapper logs/metrics tests",
+    "new output namespace and seed ledger verification",
+    "CPU/RAM and wall deadline",
+    "explicit scientific execution authorization"
+  ]
+}

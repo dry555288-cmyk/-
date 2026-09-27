@@ -1,0 +1,252 @@
+{
+  "scope": "所有本次挂载顶层ZIP及最多5层/单内嵌文件50MB以内的嵌套ZIP，按SHA去重；不含7z；仅目录扫描不是全量CRC或科学审计。",
+  "patterns": [
+    "fb81b833",
+    "22b7805e",
+    "minesim_dual_v2_slim_full32",
+    "hold_parent_candidate",
+    "policy4_result_original.zip",
+    "minesim_dual_phase_horizon"
+  ],
+  "unique_archives_attempted": 34,
+  "archives_read": [
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip",
+      "sha256": "52aff4201a1cb612bc36c7a979985048dc36fb12cc4bccdcf723671999732a2a",
+      "file_members": 46,
+      "depth": 0,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E01/Window16_复核.zip",
+      "sha256": "0f9c2f2d86df231c12d83b80dfc03929522f265d698eed78fe7d5907a16cfd52",
+      "file_members": 11,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E02/Coverage32_数据封存复核.zip",
+      "sha256": "fbe16fce66ea467d0e091cac0a953c5b04599e1e7098a7b5d7ad4a24da24ca70",
+      "file_members": 34,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E03/Coverage32_无正则拟合复核.zip",
+      "sha256": "ee950eb1e8fa19aac0f680a3b7e779bb95688e1bf25407048af1a4b848ab64ed",
+      "file_members": 22,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E04/双车26维正则复核.zip",
+      "sha256": "48eb017a74e85abbcc12378ec2cef365248def6c40355d80ba9803593f3f4cd4",
+      "file_members": 107,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E05/双车输入监督信号诊断.zip",
+      "sha256": "0225825b20f9ed4bce57fb497955db602e3880a265e226ae399794f25a6c5a0b",
+      "file_members": 23,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E06/双车36维交互复核.zip",
+      "sha256": "02f0b1d2dd91949c6789af073a1a380bfe36db238e36f64221d759e7bc0db9bb",
+      "file_members": 26,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E06/双车36维交互复核.zip!next_unexecuted/minesim_dual32_scaledridge_release_v1.zip",
+      "sha256": "c16d34302660397e0664b1bbcdf93ba3ff08a463eef03967d7ae49b63f24c14a",
+      "file_members": 10,
+      "depth": 2,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E07/双车标准化岭回归复核.zip",
+      "sha256": "bf1996ba87637fe621f20c00627a6d98c7dcd37e235688a1ed1992f27e49e25c",
+      "file_members": 70,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E08/双动作偏好与论文机制对照.zip",
+      "sha256": "da6c503a3dc6af9ac8af751114ae249247ed440fe91261b38f45af7a11b37e2b",
+      "file_members": 12,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E09/树观察复核及旧缓存提案.zip",
+      "sha256": "0b690dea9677647770df6addbcb194e48c0df670eaff75748106e4b56ee1c0c8",
+      "file_members": 26,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E09/树观察复核及旧缓存提案.zip!next_proposal/release_payload.zip",
+      "sha256": "9e9e26627e0d493f360cf9f9fc180e0b4a16b16422197c6500f084267e447a70",
+      "file_members": 6,
+      "depth": 2,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E10/动作报告缓存复核.zip",
+      "sha256": "d03d31fe2b4cbeb9a6c1c430cd925dac03a06e14e2c91a89e50cdb1bab4ff871",
+      "file_members": 121,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E10/动作报告缓存复核.zip!next_proposal/release_payload.zip",
+      "sha256": "a13f23c9607d57f8ce4755f083a8c6861a57321507e537e8ba363d528f4100fd",
+      "file_members": 6,
+      "depth": 2,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E11/轻量缓存小试复核.zip",
+      "sha256": "f44a07a4ccbba6d070b9767421ea9f076bf6f6b0362ca51b09b5370cfa6c3357",
+      "file_members": 24,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E11/轻量缓存小试复核.zip!analysis/TIMING_RELEASE.zip",
+      "sha256": "4eee283da478af9ae8ac616614976736a51d1efff160d2847e5126fbaf200ae5",
+      "file_members": 7,
+      "depth": 2,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E12/轻量缓存固定计时复核.zip",
+      "sha256": "e9fe11611a58c9ee8c86d20ecfece7c896d163e03bce9179debc563c1f1ed90d",
+      "file_members": 21,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E12/轻量缓存固定计时复核.zip!evidence/minesim_dual_cachetiming_v1.zip",
+      "sha256": "b2e1f9dc19e448883404120cb4cdf2d53d6abfe3513dada989ff4b1ff7066bca",
+      "file_members": 182,
+      "depth": 2,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+      "sha256": "5e8cd447847cce2e435ebc8c0376dfc723552b73caf86f1dde424f0982ab3478",
+      "file_members": 99,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/evidence/P01/H8_policy4_已交付准备原包.zip",
+      "sha256": "a38baff7ec4770cb719684d9fc513eb905eb0e3d68870daa2fc6f763d781d31c",
+      "file_members": 32,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_正式交接与接续证据_20260918_停工版V1.zip!MineSim_正式交接包_20260918_停工版V1/history/H02_20260910_论文标准对齐原包.zip",
+      "sha256": "9b0f1cbaa787695c95fd2b2d6b455e720e1d1dc71cc019b269aeb84901646c37",
+      "file_members": 45,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档.zip",
+      "sha256": "0d84f9cadc2e1250b2f6434edb62c865a4abe3726d9888b75156ef8437a70a13",
+      "file_members": 11,
+      "depth": 0,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档（截至9月12）.zip",
+      "sha256": "53ccb83dba93b7fff0097fa223e8c6967972dd239ad164c72515f53b0dc002fc",
+      "file_members": 8,
+      "depth": 0,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档（截至9月12）.zip!AI接手文档2.zip",
+      "sha256": "08ae0b5c269891ffc7b750354b60b28fe418148d8642111e4c69f67c44baaa0f",
+      "file_members": 9,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档（截至9月12）.zip!AI接手文档3.zip",
+      "sha256": "243f06894ebd3e754ec3794eec9b4f00ba79c6075b0817a462b603c4221c2308",
+      "file_members": 8,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档（截至9月12）.zip!AI接手文档4.zip",
+      "sha256": "c60924eaf0bda8ab5675594c8040a837edb94cef6a649388085fb5b0789d61d2",
+      "file_members": 5,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档（截至9月12）.zip!CROSS_SCENE_DYNAMIC_CONCLUSION_V1.zip",
+      "sha256": "2dde3d66652097ab8319ac44693f2c035435f838799e24ff6147facc6565ca0b",
+      "file_members": 4,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档（截至9月12）.zip!MineSim_云端项目整理最终文档包.zip",
+      "sha256": "b421fae9b0f36b948b5fda716f874f09256a670846a6e8fa41752b4620240251",
+      "file_members": 2,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档（截至9月12）.zip!PAPER1_V0_OBSERVATIONAL_FREEZE_V1.zip",
+      "sha256": "714698023347899f2b3f52e13965d6507eac7c325ad681ee48167b266521460d",
+      "file_members": 7,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "AI接手文档（截至9月12）.zip!PAPER_METHOD_COMPATIBILITY_DECISION_V1.zip",
+      "sha256": "2c2f85767b60e139bd9d6b56a6b24d7b3a0afd95c5ca802b81ad882acb67cb41",
+      "file_members": 3,
+      "depth": 1,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "MineSim_1536条采集记录恢复与当前状态_20260912.zip",
+      "sha256": "64a69eaff2354cf6cb23c86757531c6c81247a80d00f721a5a5a96ba8633589a",
+      "file_members": 128,
+      "depth": 0,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "地图新建相关文件.zip",
+      "sha256": "1e499fd92d3d76ae7167960d492e8760fc8aa7b73180458c0e90aefa07e1a44d",
+      "file_members": 9,
+      "depth": 0,
+      "check": "directory_read_only"
+    },
+    {
+      "archive": "原项目复现.zip",
+      "sha256": "bee262cbdc9aa366ae22af6dc6b7565707bd00534e9426ea5bb0a62d81d27516",
+      "file_members": 6,
+      "depth": 0,
+      "check": "directory_read_only"
+    }
+  ],
+  "matches": [],
+  "errors": [
+    {
+      "archive": "MineSim_Complete_Handoff_Package_2026-08-24 (1).zip",
+      "error": "BadZipFile: File is not a zip file"
+    }
+  ]
+}
