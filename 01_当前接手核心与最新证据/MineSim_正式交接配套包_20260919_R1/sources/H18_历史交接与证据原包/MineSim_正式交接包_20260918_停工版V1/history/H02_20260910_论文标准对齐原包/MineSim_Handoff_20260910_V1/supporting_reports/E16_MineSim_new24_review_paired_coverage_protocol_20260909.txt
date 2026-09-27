@@ -1,0 +1,168 @@
+MineSim：NEW24教师／冻结模型决策复核与成对覆盖增补训练协议 V1
+日期：2026-09-09
+
+一、当前结论与边界
+本轮云端技术执行PASS。NEW24教师可提取1997个经独立种子确认的经验排序动作对，但旧33输入诊断网络并未在新24状态上保持100%的排序表现；新状态下还出现与确认关系直接矛盾的最高分动作和缺乏排除依据的Top13删除。
+这不是原Value V3/K13的重跑，不是闭环安全、速度或最佳动作真值验证。
+下一步只执行“episode整组留出、共享归一化与相同初始化”的新训练对照，检验加入其他episode的新增覆盖及其确认标签是否改善留出episode的新状态决策。无新MCTS搜索、无原模型替换、无实际剪枝。
+
+二、本次证据与独立复算
+用户上传：5c075446-3b52-4a53-a480-6e09b4e3664c.zip
+ZIP SHA256：911fb01028c7622c951907a86b941835251e52c423c8f7c826bbd002880549f4
+根目录：minesim_new24_teacher_decision_validation_v1
+SHA256_MANIFEST.json SHA：1c30144dcc1ecb87ba0f4a44a71da7a8cffce2331f5529cc84eea44ea0789f5f
+
+独立审计脚本minesim_new24_result_audit_v1.py直接读取ZIP成员，不导入项目模块，不执行搜索／训练；可选的前向复核仅加载这18个新诊断模型，使用weights_only=True。
+已核验：
+1. 5903个清单成员大小和SHA；5904个ZIP成员（含清单）；成员CRC与清单完整覆盖。
+2. 1615条COPY_INDEX复制记录与各自归档复制件大小和SHA相符。这不等于本地能够直接检查云端当前原路径。
+3. 576个cell身份、状态、种子、预算与均衡访问支持相符。
+4. 442368条逐迭代回报记录重算，折扣gamma=0.99，根回传累计值、访问计数和最终Q闭合。最大数值差2.2737367544323206e-13。
+5. 192组B256/B1024完整日志前缀一致；此项检验实现可重复性，不意味着Q已经收敛。
+6. 2880个动作对重新分类；24个确认关系图重新求可达关系／未被支配集合；432个模型—状态决策条目、24条即时奖励基线独立计算，与原汇总相符。
+7. 18个冻结诊断模型重新构造归一化并前向，NEW24保存预测逐元素完全一致。局部复核环境numpy2.3.5、torch2.10.0+cpu、Python3.13.5；云端原环境numpy1.23.4、torch2.8.0+cpu、Python3.9.25。
+8. 模型预测完成时间02:44:55.165850早于第一条搜索02:45:12.594826（均2026-09-09 UTC）。独立确认START早于第一条确认搜索，且记录的预测与候选SHA均匹配归档文件。没有用新标签调整这些模型。
+9. 原结果Git前后记录一致，原source postcheck为PASS，ERRORS为空；本地不能据此断言此刻AutoDL live目录状态，下一脚本仍会重新检查。
+
+主要复算来源文件：
+SUMMARY.json；SHA256_MANIFEST.json；COPY_INDEX.json；cells/；CONFIRMED_PARTIAL_ORDERS.json；模型预测及models_source/；parent/old33_dataset.json；parent/NEW24_ROOT_MANIFEST.json。
+完整派生明细位于审核包audit_outputs/，包括teacher_per_state.csv、pair_labels_recomputed.csv、model_metrics_recomputed.json、baseline_metrics_recomputed.json、forward_reproduction.json和supplemental_results.json。
+
+三、NEW24教师证据
+场景    状态数  发现候选  独立确认  方向分歧  差距不足  确认/全部动作对
+C04       8       795       759       34        2        759/960
+C06       8       693       657       27        9        657/960
+C11       8       642       581       50       11        581/960
+合计     24      2130      1997      111       22       1997/2880
+
+候选确认率1997/2130=93.76%；完整动作对覆盖1997/2880=69.34%。这是预先冻结经验筛选的复验比例，不是标签真值准确率。
+其余883对没有确认监督，其中750对发现阶段未进入候选，133对复验未确认。不能当作并列，更不能改成“差动作”。
+8/8种子方向一致、冻结动作范围10%差距是既有项目经验规则，不是论文提供的置信水平。树内自适应rollout不被假定为独立同分布样本；没有新的Q收敛证明。
+
+四、冻结网络在新状态上的实际表现
+主表固定使用此前FIT_ALL：旧33输入训练，3个初始化种子37000—37002，未参与训练的NEW24各场景8状态。
+指标为先在每个状态内对确认动作对计算一致率，再对状态／初始化等权平均，不是任务成功率。
+
+场景   FIT_ALL确认排序一致率  即时奖励排序基线  top1被确认图否定  假设Top13删除中无排除依据
+C04          55.31%                76.71%             18/24                17/72
+C06          75.77%                75.59%              3/24                15/72
+C11          87.89%                28.87%              6/24                 2/72
+合计top1矛盾27/72；缺少排除依据34/216。
+24个评价条目=8状态×3初始化，不是24独立状态；72个删除条目=24条目×3动作。
+只看排序一致率，C04网络低于即时奖励基线；这不意味着即时奖励在所有决策指标上都更好：即时奖励基线自身top1矛盾C04为8/8、C06为5/8、C11为8/8。
+完整18模型×24状态结果均保留，没有用新状态结果挑选并替换部署模型。
+
+一个强反例：NEW24__C06__C06_SEED1_EP1__step155。
+该状态100/120动作对确认。经验图中没有被其他动作确认支配的集合为{(2,3),(3,2),(3,3)}。
+3个FIT_ALL初始化的最高分均为(0,0)；假设Top13均恰好删除上述三个未被支配动作。
+三种初始化确认排序一致率分别8%、0%、1%。
+这说明在该状态，网络打分与现有证据发生明显冲突；不能据此推导实际碰撞概率、真实最优Q或历史K13速度变化。
+另一个反例C04_SEED5_EP1 step147的逐初始化细节同样保留在supplemental_results.json，未删除不利结果。
+
+五、为什么下一步采用成对覆盖增补，而不是继续加教师预算
+现在已经取得一组可学习、但不完整的确认关系；旧小样本训练表现并未稳定迁移到运动中新增状态。优先检查增补其他episode的状态／标签是否改善留出状态，能比盲目加预算或扩大网络更直接回答当前问题。
+这只是研究假设：新增覆盖、标签分布及组权重同时变化，不能在运行前宣称问题已由数据覆盖完全解释。
+
+六、步骤A：数据身份与整episode留出——依据[P2]，工程实现需单独核验
+[P2]讨论有时间、空间和层级结构数据中的非随机／分块验证。它不是MineSim专用方法，也没有给本项目的同场景跨episode提供独立性保证。
+本项目适配：按episode UID整组留出；相同12D输入合并为一个group；若该group任何一份provenance属于目标episode，整个group从训练中排除，不能拆开重复输入制造隔离。
+
+设D_old为旧33组，D_new为新24组，E(g)为group g全部episode来源集合，目标episode为e：
+T_e^base={g in D_old: e not in E(g)}
+A_e={g in D_new: e not in E(g)}
+T_e^plus=T_e^base union A_e
+V_e={g in D_new: e in E(g)}
+
+每折均有20组新增训练输入和4组NEW24目标评价输入。
+episode                         基础组数  增补组数  主评价新状态
+C04_FROZEN_EP0                       27       47          4
+C04_SEED5_EP1                        27       47          4
+C06_FROZEN_EP0                       27       47          4
+C06_SEED1_EP1                        27       47          4
+C11_100M_SEED0_EP1                   27       47          4
+C11_80M_SEED0_EP0                    28       48          4
+
+总池57组、4385个确认动作对（2388旧＋1997新），但绝不把57组全部训练后又评价同一24组。
+开发数据已经用于本轮检查和设计，必须称为开发诊断，不是从未查看过的最终测试。不同episode仍共享场景、路线和采集机制，不能把episode隔离夸大为独立新矿区泛化。
+
+七、步骤B：控制归一化与初始化——项目成对对照，不冒称论文定理
+为避免上一轮“加入C11后归一化也变化”的混杂，本轮每折只使用基础旧训练组拟合变换，两臂共享。
+mu_e,j=mean_{g in T_e^base} x_g,j
+sigma_e,j=sqrt(mean_{g in T_e^base}(x_g,j-mu_e,j)^2)
+scale_e,j=1 if sigma_e,j<1e-8 else sigma_e,j
+z_g,j=(x_g,j-mu_e,j)/scale_e,j
+
+float32原输入转float64求mean/std(ddof=0)，归一化后转回float32。增补输入和留出输入均不能改变该变换。
+每fold×seed两臂的theta_0完全相同；记录initial_weights_sha256和normalization SHA。配对不一致时技术HOLD，不比较结果。
+初始化种子42000、42001、42002；6episode×2臂×3seed=36次新拟合。不是重跑此前旧12/6组实验，也不加载旧权重。
+
+八、步骤C：带mask成对排序学习——依据[P1]，项目适配
+[P1]第3节公式(1)—(3)：输出差经过logistic，使用成对交叉熵。本文用y=+1表示i优于j，y=-1表示j优于i，m=1仅表示已经确认的动作对；未知m=0。
+
+P(i优于j|s)=sigmoid(f_theta(s)_i-f_theta(s)_j)
+ell_s = sum_{i<j} m_s,ij log(1+exp(-y_s,ij(f_i-f_j))) / sum_{i<j}m_s,ij
+L_data = (1/|C|) sum_{c in C} (1/|T_c|) sum_{s in T_c} ell_s
+
+此处C是训练场景集合。场景等权、组等权、组内有效动作对等权，与上一次诊断的实现保持一致。
+16输出MLP、未知关系mask、场景等权均是项目适配，不是RankNet原论文逐字复现。未知关系忽略，而不是把它设成0.5概率以强制并列。f是排序分数，不是校准Q、回报概率或安全概率。
+
+固定12->64->64->16 ReLU、full batch、600轮、Adam lr=0.001、betas=(0.9,0.999)、eps=1e-8、weight_decay=1e-4，与之前诊断设置不变。
+Adam本身参考[P4]，不是RankNet原文的特定优化器。上述具体轮数、网络宽度、L2系数是项目固定设置，不是论文保证的最佳配置。采用PyTorch Adam原有权重衰减参数，不改成AdamW。
+每轮保存训练和留出loss、确认排序一致率、参数范数、梯度范数；仅保存第600轮诊断checkpoint，不用留出数据早停、不挑最优epoch／seed，也不自动增加训练轮数。
+小loss或100%方向拟合不被自动判为严格优化收敛。
+
+九、步骤D：动作判定与配对比较——[P3]动机，经验图适配
+[P3]最佳臂识别中的动作淘汰建立在有效统计界和独立采样假设上。例如具有同时有效的上下界时，U_a<max_b L_b可作为排除a最优性的依据。
+本实验没有构建这些置信界，不宣称继承PAC、最优动作或安全保证。只针对固定确认关系图做静态一致性检查。
+
+a≻_s b：确认图中存在a到b的有向路径；计算时同时检查无环。
+C(s)={a: 不存在b使b≻_s a}。
+a_hat=argmax_a f_theta(s)_a；同分时动作索引小者先，另记录同分标志。
+E_top1(s)=I[a_hat not in C(s)]。
+D_13(s)=按分数保留13个后假设删除的3动作。
+U_delete(s)=|D_13(s) intersect C(s)|/3。
+W_delete(s)=|{a in D_13(s): 不存在保留动作b使b≻_s a}|/3。
+
+U_delete和W_delete不是同一个指标，不能混用。前者看是否从未被支配，后者要求支配证据来自实际保留集合。无支配证据不等于动作真的最优；有支配证据也不是安全删动作的形式证明。
+主要成对差：Delta M_e,k=M_plus(e,k)-M_base(e,k)，两臂使用同一4个留出状态、同一初始化和同一归一化。
+排序一致率差为正是改善；矛盾／缺证删除计数差为负是改善。所有18对差值原样保存，不挑选好场景、不以多个seed冒充独立场景样本。
+本轮没有预设全局“可以上线”门槛。技术执行PASS只说明完整、无数值／输入错误，负差也保留，DEPLOYMENT_APPROVED始终False。
+
+十、代码审核与运行边界
+主程序：minesim_coverage_paired_episode_learning_v1.py
+仅读取本次父namespace中35项明确的冻结来源（包括清单）；原结果清单SHA和重建57组数据canonical SHA必须匹配。
+57组canonical SHA：ef095ea76d4b61f587f9d4a5474f02dfe168417023cac2bc002f5cf2d79868fa
+使用新namespace，不修改父目录、地图、旧模型、原始2356训练集或K13。云端要求Git HEAD和Python／numpy／torch符合已见证据；检测变化即HOLD。
+输出目录或ZIP／partial／done已存在时不启动训练。逐次fit先START，失败保留已写证据；可捕获中断尝试打包，SIGKILL/实例关机/断电不能由Python保证捕获，不承诺自动续跑。
+资源：CPU-only、GPU禁用，至少1GiB可用内存、1GiB空闲盘；总超时7200秒是保护上限，不是预计运行时长。
+
+本地实际测试（不是云端正式结果）：
+1. Python语法及3.9语法解析；46项程序测试通过。
+2. 真实57组与实际冻结数据结构绑定，源身份、动作次序、六折隔离和共享step0清除核验。
+3. 新损失与旧冻结纯损失函数，数值及梯度逐元素一致。
+4. 改变留出标签或留出特征，不改变训练后的参数SHA；两臂相同初始化与同一scaler核验。
+5. 真实57输入、六折×两臂×三个本地测试seed99070/99071/99072，36次两轮拟合，108行epoch记录、18组配对检查、ZIP验证通过。没有使用正式42000系列seed，没有跑正式600轮。
+6. 八项集成启动／监控桩测试通过：PASS、HOLD、脚本SHA错、已有done、已有目录、只有退出码无done、ZIP SHA错、screen启动失败。它们是替身环境的流程测试，不是实际AutoDL断网试验。
+7. 文件缺失、既有namespace、符号链接／路径越界、JSON重复key／非有限数、mask空、关系环、超时、可捕获中断、postcheck变化等路径均有本地检查。
+
+云端入口：python -I -B -u /root/autodl-tmp/minesim_coverage_paired_episode_learning_v1.py --run-paired-coverage
+只能下载主脚本后配合回复内screen集成启动／监控执行；结束自动退出监控，不能用一直等待的tail -f判断是否完成。
+最终ZIP：/root/autodl-tmp/minesim_coverage_paired_episode_learning_v1.zip
+PASS或HOLD都上传；没有ZIP上传启动日志；不删除、不原名重跑。
+
+十一、参考论文和定位
+[P1] Burges C, Shaked T, Renshaw E, et al. Learning to Rank using Gradient Descent. ICML 2005:89-96. DOI:10.1145/1102351.1102363.
+原文：https://www.microsoft.com/en-us/research/wp-content/uploads/2005/08/icml_ranking.pdf
+定位：Section3，公式(1)—(3)，PDF第3页；比较关系可以不完整，不意味着获得完整决策排序。
+
+[P2] Roberts D R, Bahn V, Ciuti S, et al. Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure. Ecography,2017,40(8):913-929. DOI:10.1111/ecog.02881.
+原出版：https://nsojournals.onlinelibrary.wiley.com/doi/abs/10.1111/ecog.02881
+定位：摘要／分块交叉验证的动机与边界，需使分块策略符合欲评价的预测问题。不能据此把共享路线的两episode视为独立矿区。
+
+[P3] Jamieson K, Nowak R. Best-arm Identification Algorithms for Multi-Armed Bandits in the Fixed Confidence Setting. CISS2014. DOI:10.1109/CISS.2014.6814096.
+作者原文：https://nowak.ece.wisc.edu/bestArmSurvey.pdf
+定位：SectionII Action Elimination，PDF第2页；独立、sub-Gaussian采样和有效界的假设。本文仅借用“排除需要单独证据”的研究动机。
+
+[P4] Kingma D P, Ba J. Adam: A Method for Stochastic Optimization. ICLR2015. arXiv:1412.6980.
+原文入口：https://arxiv.org/abs/1412.6980
+使用范围：自适应一阶优化器；不以论文收敛讨论证明本项目非凸网络600轮已经收敛。

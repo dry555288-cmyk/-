@@ -1,0 +1,33 @@
+test_action_map_invalidated (__main__.Tests.test_action_map_invalidated) ... ok
+test_all_state_fields (__main__.Tests.test_all_state_fields) ... ok
+test_baseline_does_not_cache (__main__.Tests.test_baseline_does_not_cache) ... ok
+test_bundling (__main__.Tests.test_bundling) ... ok
+test_cache_equivalence (__main__.Tests.test_cache_equivalence) ... ok
+test_capacity (__main__.Tests.test_capacity) ... ok
+test_claim_once (__main__.Tests.test_claim_once) ... ok
+test_claim_symlink_refused (__main__.Tests.test_claim_symlink_refused) ... ok
+test_close_restores_method (__main__.Tests.test_close_restores_method) ... ok
+test_config_invalidated (__main__.Tests.test_config_invalidated) ... ok
+test_cross_decision (__main__.Tests.test_cross_decision) ... ok
+test_install_twice_refused (__main__.Tests.test_install_twice_refused) ... ok
+test_invalid_capacity (__main__.Tests.test_invalid_capacity) ... ok
+test_invalid_not_cached (__main__.Tests.test_invalid_not_cached) ... ok
+test_key_types (__main__.Tests.test_key_types) ... ok
+test_nan_rejected (__main__.Tests.test_nan_rejected) ... ok
+test_no_shared_context (__main__.Tests.test_no_shared_context) ... ok
+test_overridden_method_restored (__main__.Tests.test_overridden_method_restored) ... ok
+test_parity_detects_changes (__main__.Tests.test_parity_detects_changes) ... ok
+test_parser_duplicate_refused (__main__.Tests.test_parser_duplicate_refused) ... ok
+test_process_only_real_executor (__main__.Tests.test_process_only_real_executor) ... ok
+test_returns_not_shared (__main__.Tests.test_returns_not_shared) ... ok
+test_safe_rel (__main__.Tests.test_safe_rel) ... ok
+test_signed_zero (__main__.Tests.test_signed_zero) ... ok
+test_source_bindings_true (__main__.Tests.test_source_bindings_true) ... ok
+test_source_original_not_modified (__main__.Tests.test_source_original_not_modified) ... ok
+test_tiny_value (__main__.Tests.test_tiny_value) ... ok
+test_window_invalidated (__main__.Tests.test_window_invalidated) ... ok
+
+----------------------------------------------------------------------
+Ran 28 tests in 0.011s
+
+OK

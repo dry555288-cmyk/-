@@ -1,0 +1,23 @@
+{
+  "current_phase": "Dual-vehicle first, fixed512 input representation and regularization development",
+  "latest_completed": "DUAL32_FIXED512_ROOT_INTERACTION_FEATURE_COMPARISON_V1",
+  "technical_status": "COMPLETE_AND_INDEPENDENTLY_REVIEWED",
+  "scientific_status": "NO_BOTH_METRICS_ADVANTAGE",
+  "data_collection_closed": true,
+  "current_rows": 32,
+  "observations": 512,
+  "next_proposal": "DUAL32_FIXED512_TRAIN_ONLY_SCALING_RIDGE_ABLATION_V1",
+  "next_real_fits_executed": 0,
+  "next_resource": "LOW",
+  "new_data_authorized": false,
+  "MCTS_pruning_authorized": false,
+  "single_vehicle_work": false,
+  "launcher": "run_dual32_scaledridge.sh",
+  "launch_flag": "--authorize-scale8-once",
+  "expected_result": "minesim_dual32_scaledridge_fit_v1.zip",
+  "known_limits": [
+    "same-route post-outcome development",
+    "two-action difference, not full16 actions",
+    "no acceleration or safety certification"
+  ]
+}

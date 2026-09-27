@@ -1,0 +1,126 @@
+{
+  "review/REVIEW.json": {
+    "size": 3212,
+    "sha256": "10998163fde0a6d49036b7cc313fe4d4c53eae01c36afd95725d58ea0e1f41de"
+  },
+  "review/REPORT.md": {
+    "size": 2563,
+    "sha256": "5f24c0a93d971fd8178306ae8e058a3a107bdc1f01b4b4d5e74020ac243a5061"
+  },
+  "review/CURRENT_STATE.json": {
+    "size": 1077,
+    "sha256": "207b6f80d112ab690689ac23a6c5632c29e0c61090793ca1cf11ad66ae45adc8"
+  },
+  "review/original/RESULT.json": {
+    "size": 4471,
+    "sha256": "6b8ff295aed37b91373780765c65fc298bd42b9c38fc38cc7b8dc4716e59484b"
+  },
+  "review/original/RESOURCES.json": {
+    "size": 168,
+    "sha256": "30a555912bec5ef055edf13bba368fb4270486a16e31aa10e05603d0e09797d6"
+  },
+  "review/original/RC.txt": {
+    "size": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "review/original/ENVIRONMENT.json": {
+    "size": 205,
+    "sha256": "7548d6a3943c8d390ce9717ee8ac4c1e166ed233fdb7cd80575b8e5b40b63462"
+  },
+  "review/original/release/subtree_reuse.py": {
+    "size": 14097,
+    "sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532"
+  },
+  "review/original/release/verify_audit.py": {
+    "size": 3366,
+    "sha256": "3c4f00ec3e15f8f04f54cc72b28ccda6c36f0ac55ebcd6049178055efb477659"
+  },
+  "review/original/release/PROTOCOL.json": {
+    "size": 3798,
+    "sha256": "18082214d62f62aef59cb10046fe4bc9d51cf5cd9e4d55063d2e48d196978bdc"
+  },
+  "review/original/native/RESULT.json": {
+    "size": 3790,
+    "sha256": "c5ff440f571605a94cc3bae3fd81d2f1610bc28f92f45d5eb9271c1eea8d7b38"
+  },
+  "release/subtree_reuse.py": {
+    "size": 14097,
+    "sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532"
+  },
+  "release/experiment.py": {
+    "size": 16886,
+    "sha256": "a59438b0a3337101aecb19d37e0da90561c33cab593585e185d0f02c62dec5ca"
+  },
+  "release/gate.py": {
+    "size": 16572,
+    "sha256": "3f3ea7f7a6874782e2252cfad535b5a7099e16d9f68d06ad4b9512d81773e32f"
+  },
+  "release/verify_audit.py": {
+    "size": 3366,
+    "sha256": "3c4f00ec3e15f8f04f54cc72b28ccda6c36f0ac55ebcd6049178055efb477659"
+  },
+  "release/SOURCE_BINDINGS.json": {
+    "size": 14589,
+    "sha256": "beaee6de98c2310da943a3b063c2db039149fceb1512289cd6dae58bbb6f5637"
+  },
+  "release/PROTOCOL.json": {
+    "size": 3324,
+    "sha256": "1cec368d1b6755c36c8809d172e4109f1819912367f24abe9df6d7b7b505eee0"
+  },
+  "release/RELEASE_MANIFEST.json": {
+    "size": 648,
+    "sha256": "d708997e72964e65a65a1461ecdde0b6dd17c2b64fe4269a733731228f24c8b5"
+  },
+  "technical_tests/tests_subtree.py": {
+    "size": 7892,
+    "sha256": "74d89aa79c911d54df635fbf6bdce7618062f6c548cec55333840d1d1180b7d9"
+  },
+  "technical_tests/tests_gate.py": {
+    "size": 5231,
+    "sha256": "c9a1acc7407213056806f3507a8e90061f885a596d128d3795dd62357017f654"
+  },
+  "technical_tests/tests_policy_metrics.py": {
+    "size": 2582,
+    "sha256": "2532ec8328199773348a434648be7afdae1efd1857fdad27b3449aa76a752ed5"
+  },
+  "technical_tests/tests_subtree.log": {
+    "size": 2463,
+    "sha256": "a5dc3d4490972f90654ced4601f8bf75dabc82104b6e2ee17cd6a3a55c49bbd2"
+  },
+  "technical_tests/tests_gate.log": {
+    "size": 1101,
+    "sha256": "cb9d20dfd859c48555929c994444da6bf9a567b47ce41a317463e762a4f44971"
+  },
+  "technical_tests/tests_policy_metrics.log": {
+    "size": 1061,
+    "sha256": "de8f0449aad886d7e43ca6261527fd8a884e3d6164fe3987f812d0f4b0206ab0"
+  },
+  "technical_tests/launcher_tests.json": {
+    "size": 257,
+    "sha256": "edbb4482f5aa72259266d270bde6be9947896191e92ecf9465c6e5165f12a13c"
+  },
+  "technical_tests/launcher_noarg.log": {
+    "size": 92,
+    "sha256": "4b411dc66da29f7f6670bac478756aa925c80c5b481b4cfa784cdc025ec74f96"
+  },
+  "technical_tests/launcher_wrongflag.log": {
+    "size": 92,
+    "sha256": "4b411dc66da29f7f6670bac478756aa925c80c5b481b4cfa784cdc025ec74f96"
+  },
+  "TEST_REPORT.json": {
+    "size": 1017,
+    "sha256": "be891fb149c31eaef492f9c5f6b7ef9a235cc1b9e0408a6a1e7938ac8a33ec23"
+  },
+  "README.md": {
+    "size": 1365,
+    "sha256": "13544346747c18a2f64f4b9a694a3dbd0072e6c993348100e84cc8e7bd30c591"
+  },
+  "run_dual_subtree_policy4.sh": {
+    "size": 34502,
+    "sha256": "fbdd654772f176a0a5d773139b7ecdb1d35ab951791204d7ed3c3b6c2488c975"
+  },
+  "submitted_smoke_original.zip": {
+    "size": 948911,
+    "sha256": "5e8cd447847cce2e435ebc8c0376dfc723552b73caf86f1dde424f0982ab3478"
+  }
+}

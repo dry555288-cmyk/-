@@ -1,0 +1,8 @@
+{
+  "tests_run": 28,
+  "failures": 0,
+  "errors": 0,
+  "real_MCTS_calls": 0,
+  "training_runs": 0,
+  "teacher_samples": 0
+}

@@ -1,0 +1,15 @@
+{
+  "latest_gate": "DUAL_TREE_REUSE_OBSERVATIONAL_PROBE_V1",
+  "latest_status": "PASS",
+  "source_evidence_cutoff_utc": "2026-09-18T02:14:03.273666+00:00",
+  "data32_512": "FROZEN_NOT_RECOLLECTED",
+  "next_gate_proposed": "DUAL_ACTION_REPORT_CACHE_EQUIVALENCE_SMOKE_V1",
+  "next_status": "READY_NOT_EXECUTED",
+  "resource": "LOW",
+  "next_max_search_calls": 8,
+  "next_teacher_samples": 0,
+  "next_training_runs": 0,
+  "tree_statistics_reuse": "NOT_IMPLEMENTED_HORIZON_AND_RETURN_SEMANTICS_UNRESOLVED",
+  "no_auto_retry": true,
+  "single_vehicle": "NOT_OPENED"
+}

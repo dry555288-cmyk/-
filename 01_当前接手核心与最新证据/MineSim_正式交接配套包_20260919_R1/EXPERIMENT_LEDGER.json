@@ -1,0 +1,1807 @@
+{
+  "schema": "minesim_handoff_experiment_ledger_v1",
+  "handoff_id": "H20260919-R1",
+  "interpretation": "每行是该阶段/子阶段；旧新数据与反复使用随机链存在重叠。禁止将台账计数求和当独立场景、样本或本轮新执行量。",
+  "original_historical_ledger": "sources/H18_原实验台账.json",
+  "historical_stages": 30,
+  "subsequent_stages": 19,
+  "stages": [
+    {
+      "id": "H18:L01",
+      "stage": "官方场景IDM＋Replay复现",
+      "source_refs": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {},
+      "params": {},
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {},
+      "scope": "Dapai/Jiangtong，非全部多车均受控",
+      "code": "原IDM基线",
+      "cloud_namespace_recorded": "minesim_idm_baseline_backup",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L02",
+      "stage": "Pure MCTS单车与预算对照",
+      "source_refs": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "historical_expert_samples": 448
+      },
+      "params": {
+        "budgets": [
+          50,
+          100,
+          200,
+          300
+        ],
+        "depth": 8,
+        "tree_dt": 0.5,
+        "c_uct": 1.4,
+        "gamma": 0.99
+      },
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {},
+      "scope": "历史单车Safe Goal；不同Planner信息条件不同，非完全公平排行榜",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L03",
+      "stage": "J117双车构造基准",
+      "source_refs": [
+        "H01",
+        "H03"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "seeds": 5,
+        "passed": 5
+      },
+      "params": {},
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {
+        "no_mcts_gap_s": 0.0007,
+        "seed0_gap_s": 1.561,
+        "seed0_clearance_m": 0.594
+      },
+      "scope": "真实GeoJSON构造benchmark，不外推全矿安全",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L04",
+      "stage": "FullMine研究地图与V4验收",
+      "source_refs": [
+        "H01",
+        "H02",
+        "H03"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "source_roads": 94,
+        "effective_roads": 100,
+        "references": 553,
+        "junctions": 35,
+        "targeted_passed": 7,
+        "targeted_total": 7
+      },
+      "params": {},
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {},
+      "scope": "研究地图；官方drivability真值等HOLD",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L05",
+      "stage": "旧跨场景",
+      "source_refs": [
+        "H01",
+        "H05"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "seed0_scenes": 3,
+        "task_complete": 2,
+        "avoid_collision": 3,
+        "C04_seeds": 5
+      },
+      "params": {},
+      "result": "SCIENTIFIC_NEGATIVE_PRESERVED",
+      "metrics": {},
+      "scope": "C11旧设置未完成；新模型成功不回填",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L06",
+      "stage": "旧C03/ValueV3/K13",
+      "source_refs": [
+        "H01",
+        "H02",
+        "H05"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "C03_roots": 135,
+        "C03_actions": 2160,
+        "C03_shadow_expansions": 8640,
+        "V3_roots": 2356,
+        "V3_episodes": 6
+      },
+      "params": {},
+      "result": "K13_NO_STABLE_END_TO_END_SPEEDUP_FROZEN",
+      "metrics": {},
+      "scope": "有实际神经排序/门控历史，不等于有收益部署；数字不跨阶段累计",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L07",
+      "stage": "旧教师1536恢复",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "discovery": 768,
+        "confirmation": 768,
+        "total": 1536,
+        "route_goal": 845,
+        "hard_safety_terminal": 394,
+        "cap": 297
+      },
+      "params": {},
+      "result": "RECOVERY_CLOSED",
+      "metrics": {},
+      "scope": "旧模型不要求双停稳；硬终止≠实际碰撞",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L08",
+      "stage": "新停稳policy4/policy2/multiseed8",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "old_policy4_task": 2,
+        "old_policy4_runs": 4,
+        "new_policy2_task": 2,
+        "new_policy2_runs": 2,
+        "new_multiseed_task": 8,
+        "new_multiseed_runs": 8,
+        "multiseed_steps": 744
+      },
+      "params": {
+        "model": "DUAL_ONLY_DESTINATION_STOP_CANDIDATE_V1",
+        "B": 64,
+        "H": 8,
+        "dt": 0.5
+      },
+      "result": "HISTORICAL_FROZEN",
+      "metrics": {},
+      "scope": "各分母独立；同路线，不是8独立场景",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L09",
+      "stage": "新教师384＋384",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "total": 768,
+        "discovery_parked": 361,
+        "discovery_cap": 23,
+        "confirmation_parked": 360,
+        "confirmation_cap": 24,
+        "confirmed_pairs": 26,
+        "candidate_pairs": 84,
+        "states_with_confirmed_pairs": 4
+      },
+      "params": {},
+      "result": "EMPIRICAL_RELATIONS_FROZEN",
+      "metrics": {},
+      "scope": "完整任务目标；CAP尾未知；不是最优Q/剪枝安全证据",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L10",
+      "stage": "26对拟合",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "pairs": 26,
+        "network_satisfied": 26,
+        "stateblind_satisfied": 26
+      },
+      "params": {
+        "architecture": "26-64-64-16",
+        "updates": 2000,
+        "seed": 78000
+      },
+      "result": "STATE_CONDITIONING_NOT_REQUIRED_BY_THIS_TARGET",
+      "metrics": {},
+      "scope": "固定排序也满分，不加轮数救结果",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L11",
+      "stage": "固定64秒目标确认与四状态拟合",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "discovery_traces": 64,
+        "confirmation_traces": 64,
+        "confirmed_hypotheses": 4,
+        "fit_states": 4,
+        "fit_satisfied": 4,
+        "fixed_max": 3
+      },
+      "params": {
+        "target": "DUAL_STOP_FIXED_WINDOW64_STOPPED_RETURN_V1",
+        "model_seed": 78001
+      },
+      "result": "DEVELOPMENT_TARGET_CHANGE_FROZEN",
+      "metrics": {},
+      "scope": "事后改监督目标、独立确认；训练4/4不是泛化",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L12",
+      "stage": "新状态128条评价",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "newstates": 8,
+        "traces": 128,
+        "parked": 120,
+        "cap": 8,
+        "known_states": 2,
+        "network_correct": 1,
+        "fixed_correct": 1
+      },
+      "params": {},
+      "result": "NO_ADVANTAGE",
+      "metrics": {},
+      "scope": "覆盖2/8；网络1/2，不能写网络120/128",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L13",
+      "stage": "六状态分组诊断",
+      "source_refs": [
+        "H01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "fits": 12,
+        "states": 6,
+        "linear_correct": 4,
+        "mlp_correct": 3,
+        "fixed_correct": 4
+      },
+      "params": {
+        "seed": 78002,
+        "updates": 2000
+      },
+      "result": "NO_ADVANTAGE_POST_EVALUATION_DEVELOPMENT",
+      "metrics": {},
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_stop_window6_grouped_diagnostic_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L14",
+      "stage": "Window16输入恢复后完成",
+      "source_refs": [
+        "E01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "states": 16,
+        "returns": 256,
+        "groups": 8,
+        "fits": 16
+      },
+      "params": {
+        "seed": 78003,
+        "updates": 2000
+      },
+      "result": "COMPLETE_WINDOW16_RETURN_GAP_DEVELOPMENT_NOT_GENERALIZATION",
+      "metrics": {
+        "constant_mae": 27.421922197803028,
+        "constant_rmse": 36.629279244660054,
+        "linear_mae": 61.63788625592291,
+        "linear_rmse": 78.55349689053148,
+        "mlp_mae": 44.77478357346952,
+        "mlp_rmse": 73.44757905966804
+      },
+      "scope": "不要再沿用0913未训练状态",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_window16_return_gap_recovery_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L15",
+      "stage": "Coverage32选点静态冻结与技术恢复",
+      "source_refs": [
+        "E02"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "source_inputs": 54,
+        "oldstates": 16,
+        "newstates": 16,
+        "groups": 8
+      },
+      "params": {},
+      "result": "CLOSED_AFTER_PROCESS_AND_NUMERIC_RECOVERY",
+      "metrics": {},
+      "scope": "原选点/分组未变；五输出字节一致；不是新正式采集",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_grouped_coverage32_numeric_recovery_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L16",
+      "stage": "Coverage32采集器技术小试",
+      "source_refs": [
+        "E02"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "restored_states": 16,
+        "historic_one_step": 16,
+        "forced_one_step": 32,
+        "short_traces": 4
+      },
+      "params": {},
+      "result": "TECHNICAL_SMOKE_CLOSED",
+      "metrics": {},
+      "scope": "teacher_sample=false，不计正式采集",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_grouped_coverage32_collector_smoke_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L17",
+      "stage": "Coverage32新增256及合并512",
+      "source_refs": [
+        "E02",
+        "D01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "new": 256,
+        "reused": 256,
+        "total": 512,
+        "states": 32,
+        "groups": 8,
+        "new_parked": 253,
+        "new_cap": 3,
+        "merged_parked": 467,
+        "merged_cap": 45,
+        "steps_new": 11592,
+        "mcts_new": 11336
+      },
+      "params": {
+        "workers": 16,
+        "dt": 0.5,
+        "max_steps": 128,
+        "B": 64,
+        "H": 8
+      },
+      "result": "DATA_COLLECTION_CLOSED_NOT_MODEL_SUCCESS",
+      "metrics": {
+        "collection_worker_seconds": 356.41481153992936,
+        "start_to_result_seconds": 401.432377
+      },
+      "scope": "末尾打包/上传不在401秒中；CAP不是缺数据",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_grouped_coverage32_collect256_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L18",
+      "stage": "32状态普通线性/大MLP",
+      "source_refs": [
+        "E03"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "fits": 16,
+        "states": 32,
+        "returns": 512,
+        "groups": 8
+      },
+      "params": {
+        "seed": 78003,
+        "updates": 2000
+      },
+      "result": "NO_ADVANTAGE",
+      "metrics": {
+        "constant_mae": 14.9685,
+        "constant_rmse": 25.6308,
+        "linear_mae": 27.83,
+        "linear_rmse": 41.2,
+        "mlp_mae": 24.27,
+        "mlp_rmse": 35.2
+      },
+      "scope": "小数为文档显示精度；完整精度原RESULT",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_grouped_coverage32_fit16_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L19",
+      "stage": "26维岭回归与小网络正则",
+      "source_refs": [
+        "E04"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "inner_fits": 336,
+        "outer_models": 16,
+        "states": 32
+      },
+      "params": {
+        "lambda_candidates": [
+          0.01,
+          0.1,
+          1.0
+        ],
+        "mlp_architecture": "26-8-1",
+        "parameters": 225
+      },
+      "result": "NO_JOINT_MAE_RMSE_ADVANTAGE",
+      "metrics": {
+        "ridge_mae": 15.3505,
+        "ridge_rmse": 27.1489,
+        "mlp_mae": 14.9618,
+        "mlp_rmse": 25.8092
+      },
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual32_regularized_fit_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L20",
+      "stage": "输入/监督已有记录诊断",
+      "source_refs": [
+        "E05"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "states": 32,
+        "returns": 512,
+        "constant_feature_columns": 6,
+        "newstates_abs_gap_le2": 14,
+        "newstate_total": 16,
+        "cap_involved_states": 11
+      },
+      "params": {},
+      "result": "DESCRIPTIVE_ONLY_NO_NEW_TRAINING",
+      "metrics": {},
+      "scope": "上一段采样净距非瞬时；不能从CAP预测泄漏；非因果归因",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L21",
+      "stage": "36维交互特征",
+      "source_refs": [
+        "E06"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "inner_fits": 336,
+        "outer_models": 16
+      },
+      "params": {
+        "architecture": "36-8-1",
+        "data_changed": false
+      },
+      "result": "NO_JOINT_MAE_RMSE_ADVANTAGE",
+      "metrics": {
+        "ridge_mae": 15.4917,
+        "ridge_rmse": 27.4703,
+        "mlp_mae": 14.9486,
+        "mlp_rmse": 25.872
+      },
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual32_interaction_fit_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L22",
+      "stage": "标准化36维岭8折",
+      "source_refs": [
+        "E07"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "fits": 8
+      },
+      "params": {
+        "lambda": 1,
+        "standardization": "training_only"
+      },
+      "result": "SCIENTIFIC_NEGATIVE",
+      "metrics": {
+        "mae": 18.6805,
+        "rmse": 30.8778,
+        "choice_loss": 11.6731
+      },
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual32_scaledridge_fit_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L23",
+      "stage": "双动作代价加权逻辑偏好",
+      "source_refs": [
+        "E08"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "fits": 8,
+        "parameters": 37,
+        "states": 32
+      },
+      "params": {},
+      "result": "NO_CHOICE_ADVANTAGE",
+      "metrics": {
+        "choice_loss": 13.3015,
+        "constant_03": 7.4169,
+        "constant_30": 6.193,
+        "training_constant": 11.1173,
+        "old_known_correct": 1,
+        "old_known_denominator": 6
+      },
+      "scope": "不是在线MCTS计时；不授权其余14动作剪枝",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual32_preference_fit_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L24",
+      "stage": "搜索观察treeprobe",
+      "source_refs": [
+        "E09"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "mcts_calls": 8,
+        "pairs": 4,
+        "roots": 2,
+        "decisions_each": 2
+      },
+      "params": {},
+      "result": "OBSERVATIONAL_PARITY_PASS",
+      "metrics": {
+        "rollout_stage_percent_range": [
+          81.8,
+          90.2
+        ]
+      },
+      "scope": "插桩/0.5核技术测量，不是生产计时",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_treeprobe_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L25",
+      "stage": "动作报告缓存",
+      "source_refs": [
+        "E10"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "mcts_calls": 8,
+        "pairs": 4
+      },
+      "params": {},
+      "result": "SEMANTIC_PASS_TIMING_NEGATIVE",
+      "metrics": {
+        "hit_rate": 0.6968375136314068,
+        "baseline_reports": 7336,
+        "cached_reports": 2224,
+        "cpu_increase_percent": 70.8
+      },
+      "scope": "完整缓存键/深拷贝开销；不等于树复用",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_reportcache_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L26",
+      "stage": "轻量缓存小试",
+      "source_refs": [
+        "E11"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "mcts_calls": 8,
+        "pairs": 4
+      },
+      "params": {},
+      "result": "PARITY_PASS_TIMING_MIXED",
+      "metrics": {
+        "cpu_reduction_percent": 7.68210777411169,
+        "wall_reduction_percent": 3.571303933040537,
+        "effective_cpu": 0.5
+      },
+      "scope": "",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_reportcache_flat_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L27",
+      "stage": "轻量缓存固定计时",
+      "source_refs": [
+        "E12"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "mcts_calls": 40,
+        "warmup_calls": 8,
+        "measured_calls": 32,
+        "measured_pairs": 16
+      },
+      "params": {},
+      "result": "CLOSED_NO_STABLE_SPEEDUP",
+      "metrics": {
+        "baseline_cpu_ms": 538.8728434999998,
+        "cache_cpu_ms": 575.3675624375,
+        "relative_increase_percent": 6.772417533692288,
+        "effective_cpu": 16
+      },
+      "scope": "正式计时只32次；缓存支线关闭",
+      "code": null,
+      "cloud_namespace_recorded": "minesim_dual_cachetiming_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L28",
+      "stage": "policy4本地发布准备（H8候选源码不变）",
+      "source_refs": [
+        "P01"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "cloud_searches_in_preparation": 0,
+        "policy_continuations_in_preparation": 0,
+        "prior_unit_synthetic_tests": 49
+      },
+      "params": {},
+      "result": "RELEASE_PREPARED_NOT_EXECUTION",
+      "metrics": {},
+      "scope": "前次本地准备测试继承；本交接不重跑",
+      "code": null,
+      "cloud_namespace_recorded": null,
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json",
+      "current_note": "发布准备已为历史，后续实际结果见N01。"
+    },
+    {
+      "id": "H18:L29",
+      "stage": "H8两步子树小试",
+      "source_refs": [
+        "E13",
+        "R13"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "mcts_calls": 8,
+        "outer_steps": 8,
+        "promotions": 2,
+        "inherited_second": [
+          9,
+          8
+        ],
+        "fresh_second": [
+          55,
+          56
+        ],
+        "tail_transitions_total": 16
+      },
+      "params": {
+        "budget": "inherited corrected+fresh=64",
+        "H": 8,
+        "gamma": 0.99,
+        "cache": false
+      },
+      "result": "PASS_DUAL_H8_SUBTREE_REBASE_SEMANTICS",
+      "metrics": {
+        "cpu_original_s": 2.659554438,
+        "cpu_candidate_s": 2.52485861,
+        "wall_original_s": 5.757573701441288,
+        "wall_candidate_s": 7.191923756152391,
+        "effective_cpu": 0.5
+      },
+      "scope": "首轮一致，第二轮动作不同；完整策略/稳定加速未证",
+      "code": "pending_policy4/release/subtree_reuse.py",
+      "cloud_namespace_recorded": "minesim_dual_subtree_h8_smoke_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json"
+    },
+    {
+      "id": "H18:L30",
+      "stage": "H8四条策略续行原计划",
+      "source_refs": [
+        "P01",
+        "P02"
+      ],
+      "evidence_status": "INHERITED_H18_RECORD_NOT_RERUN_THIS_HANDOFF",
+      "counts": {
+        "planned_policy_runs": 4,
+        "max_search_calls": 512,
+        "actual_policy_runs": "UNKNOWN_NO_RESULT_RECEIVED",
+        "new_teacher_traces_planned": 0
+      },
+      "params": {
+        "max_steps": 128,
+        "workers": 1,
+        "effective_cpu_min": 2,
+        "memory_available_bytes_min": 2147483648,
+        "free_disk_bytes_min": 2147483648,
+        "gpu": false
+      },
+      "result": "PREPARED_RESULT_NOT_RECEIVED_USER_STOP",
+      "metrics": {},
+      "scope": "没有结果不是实时0执行；先问是否已有结果再只读盘点/新授权",
+      "code": "pending_policy4/run_dual_subtree_policy4.sh",
+      "cloud_namespace_recorded": "minesim_dual_subtree_h8_policy4_v1",
+      "rerun_authorized": false,
+      "destructive_actions_authorized": false,
+      "source_refs_scope": "原source_refs在H18包内解释，不使用本交接根EVIDENCE_INDEX同名编号。",
+      "original_ledger_path": "sources/H18_原实验台账.json",
+      "current_note": "原结果未收到的状态已被A18和T01的2/2对0/2结果取代；原计划与旧字段仅历史保留。"
+    },
+    {
+      "id": "N01",
+      "stage": "H8子树复用policy4最终结果",
+      "source_refs": [
+        {
+          "source": "A18",
+          "section": "第1页任务结果与计时；第2页状态更新"
+        },
+        {
+          "source": "T01",
+          "local_line_range": [
+            313,
+            384
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "B64/H8",
+      "counts": {
+        "policy_records": 4,
+        "policy_searches": 427,
+        "native_complete": 2,
+        "native_denominator": 2,
+        "reuse_complete": 0,
+        "reuse_denominator": 2,
+        "promotions_per_candidate": 127
+      },
+      "result": "SCIENTIFIC_NEGATIVE_PRESERVED",
+      "metrics": {
+        "native_task_s": [
+          48.5,
+          37.0
+        ],
+        "candidate_cap_s": [
+          64,
+          64
+        ],
+        "native_cpu_s": [
+          31.33,
+          23.6
+        ],
+        "candidate_cpu_s": [
+          47.59,
+          41.02
+        ]
+      },
+      "algorithm_change": "连续晋升／补尾／重建，不直接拷旧Q",
+      "cloud_namespace_recorded": "minesim_dual_subtree_h8_policy4_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N02",
+      "stage": "通行意图导引V1三臂小试",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            721,
+            844
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "B64/H8",
+      "counts": {
+        "policies": 6,
+        "complete": 6,
+        "policy_searches": 356,
+        "technical_searches": 4,
+        "outer_steps": 519
+      },
+      "result": "TASK_PARITY_NO_OVERALL_ADVANTAGE",
+      "metrics": {
+        "policy01_task_s": {
+          "native": 48.5,
+          "guide": 47.5,
+          "direct": 41.0
+        },
+        "policy05_task_s": {
+          "native": 37,
+          "guide": 45,
+          "direct": 40.5
+        },
+        "guide_FREE_suffixes": 4476,
+        "guide_suffixes": 5274,
+        "direct_min_clearance_m": 0.082
+      },
+      "algorithm_change": "p=0.5导引；FREE仍巡航，非纯冲突因素",
+      "cloud_namespace_recorded": "minesim_dual_intent_rollout_trial_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N03",
+      "stage": "V2仅冲突导引同期消融",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            849,
+            987
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "B64/H8",
+      "counts": {
+        "policies": 6,
+        "complete": 6,
+        "policy_searches": 529,
+        "technical_searches": 6,
+        "outer_steps": 529
+      },
+      "result": "LOCAL_POSITIVE_ONE_PAIR_OTHER_REGRESSES",
+      "metrics": {
+        "policy01_native_v2_task_s": [
+          48.5,
+          40.5
+        ],
+        "policy05_native_v2_task_s": [
+          37,
+          46
+        ],
+        "policy01_native_v2_cpu_s": [
+          39.26,
+          31.32
+        ],
+        "policy05_native_v2_cpu_s": [
+          34.35,
+          40.96
+        ],
+        "FREE_suffix_random": 4024,
+        "release_suffix_random": 308
+      },
+      "algorithm_change": "FREE及模拟释放后回原生随机，不改p/奖励/动作域",
+      "cloud_namespace_recorded": "minesim_dual_conflict_only_rollout_v2",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N04",
+      "stage": "根动作Q优先V3因素对照",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            992,
+            1132
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "B64/H8",
+      "counts": {
+        "policies": 8,
+        "complete": 8,
+        "policy_searches": 716,
+        "technical_searches": 12,
+        "q_first_comparisons": 4
+      },
+      "result": "Q_FIRST_NOT_ADOPTED",
+      "metrics": {
+        "all_four_q_first_cpu_increased": true,
+        "changed_recommendations": 33,
+        "minimum_selected_visit_count": 5
+      },
+      "algorithm_change": "仅最终(N,Q)改(Q,N)，树内UCT不变",
+      "cloud_namespace_recorded": "minesim_dual_root_selection_v3",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N05",
+      "stage": "V2固定B64扩展32策略",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            1139,
+            1275
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "B64/H8",
+      "counts": {
+        "starts": 8,
+        "repeats": 2,
+        "methods": 2,
+        "pairs": 16,
+        "policies": 32,
+        "policy_searches": 2751,
+        "technical_searches": 8,
+        "native_complete": 10,
+        "v2_complete": 16,
+        "per_method_denominator": 16,
+        "native_cap": 6,
+        "v2_cap": 0
+      },
+      "result": "DEVELOPMENT_COMPLETION_BENEFIT_WITH_TRADEOFFS",
+      "metrics": {
+        "mean_Y64": [
+          27.9191,
+          55.8359
+        ],
+        "both_complete_pairs": 10,
+        "both_complete_mean_task_s": [
+          38.85,
+          36.75
+        ],
+        "both_complete_cpu_s": [
+          306.16,
+          300.06
+        ],
+        "all_cpu_s": [
+          654.15,
+          483.34
+        ],
+        "strict_joint_improvement_pairs": 2,
+        "v2_clearance_lower_pairs": 12,
+        "v2_both_no_progress_s_each": 0
+      },
+      "algorithm_change": "不改V2，扩起点和随机链",
+      "cloud_namespace_recorded": "minesim_dual_v2_expanded_pair_eval_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N06",
+      "stage": "首轮400ms与2048上限评价技术中止",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            1282,
+            1421
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "400ms/H8 + 2048 guard",
+      "counts": {
+        "planned_policies": 32,
+        "closed_records": 16,
+        "partial_record": 17,
+        "partial_steps": 66,
+        "remaining_not_started": 15,
+        "policy_returns": 1441,
+        "technical_searches": 8,
+        "outer_steps": 1439
+      },
+      "result": "HOLD_RUNTIME_TECHNICAL_ROOT_W_AGGREGATION",
+      "metrics": {
+        "first8pairs_native_complete": 6,
+        "first8pairs_v2_complete": 8,
+        "first8_native_cap": 1,
+        "first8_native_late": 1,
+        "late_ms": 401.883,
+        "first1374_calls_guard_hits": 113,
+        "failed_search_full_diagnostic_missing": true
+      },
+      "algorithm_change": "同时间预算首轮，分组求和固定容差暴露问题",
+      "cloud_namespace_recorded": "minesim_dual_v2_equal_walltime_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N07",
+      "stage": "运行器修正版V2限定技术验证",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            1429,
+            1562
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "fixed64/fixed4096 + 400ms/H8",
+      "counts": {
+        "technical_searches": 18,
+        "fixed_work_searches": 12,
+        "timed_calls": 6,
+        "timely_cloud_calls": 6,
+        "outer_steps": 0
+      },
+      "result": "TECHNICAL_PASS_NOT_TASK_SUCCESS",
+      "metrics": {
+        "local_late_ms_preserved": 444.614,
+        "cloud_aggregation_differences": [
+          6.519e-09,
+          -2.139e-09
+        ],
+        "ordered_recompute_match": true
+      },
+      "algorithm_change": "实际回传顺序hex重算、先收据后校验、2048改100000故障护栏",
+      "cloud_namespace_recorded": "minesim_dual_v2_walltime_repair_v2",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N08",
+      "stage": "修正版运行器V2完整32策略",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            1571,
+            1706
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "400ms/H8",
+      "counts": {
+        "policies": 32,
+        "pairs": 16,
+        "policy_searches": 2582,
+        "outer_steps": 2579,
+        "native_complete": 13,
+        "v2_complete": 14,
+        "per_method_denominator": 16,
+        "native_cap": 2,
+        "v2_cap": 0,
+        "native_late": 1,
+        "v2_late": 2
+      },
+      "result": "DEADLINE_NOT_RELIABLE_NO_STABLE_SPEEDUP",
+      "metrics": {
+        "both_complete_pairs": 12,
+        "both_complete_mean_task_s": [
+          40.79,
+          41.92
+        ],
+        "both_complete_cpu_s": [
+          362.32,
+          372.3
+        ],
+        "late_ms": [
+          404.932,
+          400.199,
+          404.784
+        ]
+      },
+      "algorithm_change": "V2导引保持，换完整记录运行器；新namespace不拼旧前缀",
+      "cloud_namespace_recorded": null,
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N09",
+      "stage": "协作式截止运行器V3技术检查",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            1714,
+            1854
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "fixed64 + forced clock + 400ms/H8",
+      "counts": {
+        "technical_searches": 24,
+        "fixed_work_searches": 12,
+        "forced_abort_calls": 6,
+        "real_timed_calls": 6,
+        "outer_steps": 0
+      },
+      "result": "TECHNICAL_PASS_NATURAL_ABORT_NOT_YET_TASK_EVIDENCE",
+      "metrics": {
+        "fixed_work_cpu_increase_percent": 8.31
+      },
+      "algorithm_change": "模拟内部检查；未完成贡献不回传，保留实际RNG",
+      "cloud_namespace_recorded": "minesim_dual_deadline_cooperative_v3",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N10",
+      "stage": "协作式V3完整32策略",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            1933,
+            2012
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "400ms/H8",
+      "counts": {
+        "policies": 32,
+        "pairs": 16,
+        "policy_searches": 2777,
+        "outer_steps": 2774,
+        "native_complete": 13,
+        "v2_complete": 14,
+        "per_method_denominator": 16,
+        "native_cap": 2,
+        "v2_cap": 0,
+        "native_late": 1,
+        "v2_late": 2,
+        "natural_abort_calls": 12,
+        "natural_abort_timely": 10
+      },
+      "result": "NATURAL_ABORT_WORKS_BUT_3_LATE_CALLS",
+      "metrics": {
+        "both_complete_pairs": 12,
+        "both_complete_mean_task_s": [
+          45.333,
+          45.208
+        ],
+        "both_complete_cpu_s": [
+          399.135,
+          398.463
+        ],
+        "min_clearance_m": [
+          0.863,
+          0.101
+        ],
+        "late_ms": [
+          403.917,
+          404.334,
+          407.289
+        ],
+        "container_archive_byte_identity_mismatch_reported": true
+      },
+      "algorithm_change": "共同V3运行器；归档容器差异与科学成员一致分开",
+      "cloud_namespace_recorded": "minesim_dual_v2_cooperative_full32_v3",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N11",
+      "stage": "暂存提交运行器V4技术验证",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            2024,
+            2149
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "fixed64 + forced clock + 400ms/H8",
+      "counts": {
+        "technical_searches": 36,
+        "fixed_work_searches": 12,
+        "forced_abort_calls": 18,
+        "real_timed_calls": 6,
+        "outer_steps": 0,
+        "natural_abort_calls": 0
+      },
+      "result": "TECHNICAL_PASS_COST_REGRESSION",
+      "metrics": {
+        "fixed_work_cpu_ms": [
+          2532.886,
+          3458.076
+        ],
+        "cpu_increase_percent": 36.53,
+        "local_increase_percent_separate": 25.59,
+        "checkpoint_calls_v3_v4": [
+          49614,
+          340524
+        ]
+      },
+      "algorithm_change": "legal内部检查；回传/快照先准备后集中提交",
+      "cloud_namespace_recorded": "minesim_dual_deadline_staged_v4",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N12",
+      "stage": "检查快路径V5技术及效率筛查",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            2162,
+            2470
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "fixed64 ABBA + forced/trace + 400ms/H8",
+      "counts": {
+        "technical_searches": 78,
+        "warm_searches": 12,
+        "measured_searches": 24,
+        "trace_searches": 12,
+        "forced_abort_searches": 18,
+        "timed_searches": 12,
+        "timely_searches": 12,
+        "outer_steps": 0,
+        "natural_abort_calls": 0
+      },
+      "result": "TECHNICAL_PASS_EFFICIENCY_SCREEN_PASS_NOT_GENERAL_SPEEDUP",
+      "metrics": {
+        "cpu_v4_v5_ms": [
+          4877.825,
+          3989.112
+        ],
+        "cpu_reduction_percent": 18.22,
+        "local_reduction_percent_separate": 13.29,
+        "conditions_improved": 6,
+        "total_conditions": 6,
+        "trace_events_each_version": 101936
+      },
+      "algorithm_change": "保留所有读钟/检查位置，删除每检查附带标签计数与最大间隔统计",
+      "cloud_namespace_recorded": "minesim_dual_checkpoint_fastpath_v5",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N13",
+      "stage": "共同V5运行器完整32策略",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            2478,
+            2643
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "400ms/H8; commit380ms + return20ms",
+      "counts": {
+        "policies": 32,
+        "pairs": 16,
+        "policy_searches": 2849,
+        "outer_steps": 2849,
+        "native_complete": 12,
+        "v2_complete": 15,
+        "per_method_denominator": 16,
+        "native_cap": 4,
+        "v2_cap": 1,
+        "native_late": 0,
+        "v2_late": 0,
+        "hard_stops": 0,
+        "natural_abort_calls": 10,
+        "natural_abort_timely": 10
+      },
+      "result": "DEVELOPMENT_COMPLETION_BENEFIT_REMAINING_V2_CAP",
+      "metrics": {
+        "mean_Y64": [
+          35.9314,
+          48.2764
+        ],
+        "both_complete_pairs": 11,
+        "only_v2_complete_pairs": 4,
+        "only_native_complete_pairs": 1,
+        "both_complete_mean_task_s": [
+          40.545,
+          39.818
+        ],
+        "both_complete_cpu_s": [
+          330.823,
+          324.482
+        ],
+        "both_complete_calls": [
+          892,
+          876
+        ],
+        "max_call_ms": [
+          392.466,
+          395.118
+        ],
+        "strict_joint_improvement_pairs": 4,
+        "min_clearance_m": [
+          0.242,
+          0.543
+        ]
+      },
+      "algorithm_change": "原生与V2共用V5；无同期V4任务对照",
+      "cloud_namespace_recorded": "minesim_dual_v2_slim_full32_v5",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N14",
+      "stage": "唯一V2 CAP只读失效诊断",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            2656,
+            2765
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "分析保存轨迹，无新搜索",
+      "counts": {
+        "native_steps_read": 72,
+        "v2_steps_read": 128,
+        "new_searches": 0,
+        "new_outer_steps": 0
+      },
+      "result": "TWO_MECHANISM_LEADS_NOT_UNIQUE_CAUSAL_PROOF",
+      "metrics": {
+        "v2_first_both_stopped_s": 9,
+        "v2_both_no_progress_cumulative_s": 45.5,
+        "no_progress_selected_also_maxQ": 82,
+        "no_progress_decisions": 91,
+        "late_no_guide_decisions": 47,
+        "late_hold_line_m": 248,
+        "late_B_s_m": 248.339156
+      },
+      "algorithm_change": "短前瞻等待偏好与线外让行适用域缺口分开",
+      "cloud_namespace_recorded": null,
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N15",
+      "stage": "两个停车状态的四条确定性续行见证",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            2771,
+            2927
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "each12s/24steps; noMCTS",
+      "counts": {
+        "traces": 4,
+        "steps": 96,
+        "mcts_calls": 0,
+        "teacher_samples": 0,
+        "full_dual_task_success": 0
+      },
+      "result": "FINITE_PASSAGE_WITNESS_NOT_TASK_COMPLETION",
+      "metrics": {
+        "immediate_minus_wait_early_4_8_12s": [
+          -0.159842,
+          0.546328,
+          0.888493
+        ],
+        "immediate_minus_wait_late_4_8_12s": [
+          -0.169739,
+          0.571678,
+          0.913842
+        ],
+        "early_A_exit_immediate_wait_s": [
+          5.5,
+          6
+        ],
+        "late_A_exit_immediate_wait_s": [
+          5,
+          5.5
+        ],
+        "min_clearance_m": 0.242
+      },
+      "algorithm_change": "同原奖励指定续行；4s等待偏好，8/12s排序反转",
+      "cloud_namespace_recorded": "minesim_dual_cap_witness_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N16",
+      "stage": "H8与H16两个停车根八策略",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            2940,
+            3086
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "400ms, H8/H16; each64s cap",
+      "counts": {
+        "policies": 8,
+        "policy_searches": 1024,
+        "outer_steps": 1024,
+        "h8_complete": 0,
+        "h8_denominator": 4,
+        "h16_complete": 0,
+        "h16_denominator": 4,
+        "late": 0,
+        "hard_stops": 0,
+        "natural_aborts": 3,
+        "timely_natural_aborts": 3
+      },
+      "result": "EARLY_V2_H16_LOCAL_PASSAGE_BUT_ALL_TASK_CAP",
+      "metrics": {
+        "early_v2_h16_A_exit_s": 16,
+        "early_v2_h16_A_park_s": 43,
+        "early_v2_h16_B_exit_s": 47.5,
+        "both_no_progress_4pairs_h8": [
+          55.5,
+          59.5,
+          58.5,
+          58
+        ],
+        "both_no_progress_4pairs_h16": [
+          50,
+          5,
+          48,
+          49
+        ],
+        "max_call_ms": 389.566
+      },
+      "algorithm_change": "只改总评价时域，H+1提交上限适配；不修线外条件",
+      "cloud_namespace_recorded": "minesim_dual_h8_h16_stop2_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N17",
+      "stage": "当前位置保持让行H16单配对",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            3098,
+            3236
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "400ms/H16,64s cap",
+      "counts": {
+        "policies": 2,
+        "policy_searches": 256,
+        "outer_steps": 256,
+        "native_v2_complete": 0,
+        "hold_current_complete": 0,
+        "per_method_denominator": 1,
+        "late": 0,
+        "natural_aborts": 0
+      },
+      "result": "LOCAL_PASSAGE_BENEFIT_TASK_INCOMPLETE_SMALL_CLEARANCE",
+      "metrics": {
+        "candidate_A_exit_s": 16.5,
+        "candidate_B_exit_s": 25,
+        "candidate_B_park_s": 63.5,
+        "both_no_progress_native_candidate_s": [
+          47.5,
+          1
+        ],
+        "Y64": [
+          -41.5392,
+          -8.6481
+        ],
+        "min_clearance_m": [
+          0.323,
+          0.100735
+        ],
+        "cpu_s": [
+          45.4776,
+          45.4693
+        ],
+        "candidate_incomplete_root_coverage_calls": 83,
+        "candidate_calls": 128,
+        "postexit_A_progress_m": 15.74
+      },
+      "algorithm_change": "原can_yield优先；静止BEFORE且KEEP合法+原硬几何核验才扩展导引",
+      "cloud_namespace_recorded": "minesim_dual_hold_current_pair_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N18",
+      "stage": "阶段式H16到H8发布前本地技术检查",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            3250,
+            3422
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "same horizon parity + real400ms",
+      "counts": {
+        "unit_lifecycle_checks": 48,
+        "local_searches": 15,
+        "local_outer_steps": 4,
+        "cloud_full_policies_this_stage": 0
+      },
+      "result": "LOCAL_TECHNICAL_PREPARATION_ONLY",
+      "metrics": {
+        "real400ms_calls": 4,
+        "real400ms_timely": 4
+      },
+      "algorithm_change": "按当前外层BOTH_AFTER切H8，否则H16；不重置RNG/复用旧树",
+      "cloud_namespace_recorded": "minesim_dual_phase_horizon_pair_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    },
+    {
+      "id": "N19",
+      "stage": "最新阶段式H16到H8单配对结果",
+      "source_refs": [
+        {
+          "source": "T01",
+          "local_line_range": [
+            3432,
+            3872
+          ]
+        }
+      ],
+      "evidence_status": "REPORTED_IN_ORIGINAL_TRANSCRIPT_NOT_RAW_AUDITED_THIS_HANDOFF",
+      "budget": "400ms/H16->H8; both64s cap",
+      "counts": {
+        "policies": 2,
+        "policy_searches": 256,
+        "outer_steps": 256,
+        "native_complete": 0,
+        "candidate_complete": 0,
+        "per_method_denominator": 1,
+        "candidate_H16_calls": 128,
+        "candidate_H8_calls": 0,
+        "candidate_horizon_switches": 0,
+        "natural_abort_calls": 1,
+        "natural_abort_timely": 1,
+        "late": 0,
+        "hard_stops": 0,
+        "complete_contributions": 6859
+      },
+      "result": "CANDIDATE_H8_NEVER_TRIGGERED_NO_DIRECT_POSTEXIT_EFFECT_TEST",
+      "metrics": {
+        "baseline_A_exit_s": 12,
+        "baseline_B_exit_s": 44.5,
+        "candidate_A_exit_s": 48,
+        "candidate_B_exit_s": null,
+        "parked_vehicles": [
+          1,
+          0
+        ],
+        "both_no_progress_s": [
+          1,
+          22.5
+        ],
+        "Y64": [
+          5.430763,
+          -38.03126
+        ],
+        "cpu_s": [
+          46.765383,
+          46.162316
+        ],
+        "wall_s": [
+          46.766922,
+          46.163743
+        ],
+        "min_clearance_m": [
+          0.241589453,
+          0.241589453
+        ],
+        "incomplete_root_coverage_calls": [
+          2,
+          3
+        ],
+        "first_rng_divergence_decision": 2,
+        "second_decision_iterations": [
+          24,
+          23
+        ],
+        "first_action_divergence_decision": 3
+      },
+      "algorithm_change": "候选整个窗口都未满足BOTH_AFTER；计时模拟量差引发随机链分叉",
+      "cloud_namespace_recorded": "minesim_dual_phase_horizon_pair_v1",
+      "raw_package_locally_verified": false,
+      "rerun_authorized": false,
+      "scientific_runs_this_handoff": 0,
+      "scope": "已用同一路线开发条件；技术分母、任务分母与继承记录不合并。"
+    }
+  ],
+  "new_scientific_executions_this_handoff": 0,
+  "latest_proposal_not_in_completed_results": "共同AFTER根的H16/H8直接后段评价，仅提出，未有返回结果。"
+}

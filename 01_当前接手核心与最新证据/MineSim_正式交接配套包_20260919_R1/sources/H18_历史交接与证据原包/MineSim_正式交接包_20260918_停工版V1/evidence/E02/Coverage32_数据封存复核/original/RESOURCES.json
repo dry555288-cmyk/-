@@ -1,0 +1,1 @@
+{"affinity_count":128,"available_memory_bytes":66165915648,"cpu_max_raw":"1600000 100000","effective_cpu":16.0,"free_disk_bytes":32190509056,"gpu_required":false,"memory_limit_raw":"66571993088","memory_usage_raw":"406077440","pid_namespace_only":true,"resource":"HIGH-CPU"}

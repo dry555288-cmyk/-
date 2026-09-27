@@ -1,0 +1,1 @@
+{"affinity_cpus":128,"available_memory_bytes":1688821760,"cpu_quota_records":[{"period":100000,"quota":"50000"}],"effective_cpu_upper_bound":0.5,"free_disk_bytes":31092813824,"gpu_computation":false,"memory_limits":[{"limit":"2147483648","limit_path":"/sys/fs/cgroup/memory.max","used":458661888}],"numeric_threads":1,"resource":"LOW"}

@@ -1,0 +1,9 @@
+{
+  "launcher": "run_dual_reportcache_flat.sh",
+  "sha256": "beb9918050b8b155eb3b981e3bbfb16a7ebc05db0b7af04f8ab3816b281f7689",
+  "payload_sha256": "a13f23c9607d57f8ce4755f083a8c6861a57321507e537e8ba363d528f4100fd",
+  "output_namespace": "minesim_dual_reportcache_flat_v1",
+  "authorization": "--authorize-flatcache-once",
+  "max_cloud_MCTS_calls": 8,
+  "no_auto_retry": true
+}

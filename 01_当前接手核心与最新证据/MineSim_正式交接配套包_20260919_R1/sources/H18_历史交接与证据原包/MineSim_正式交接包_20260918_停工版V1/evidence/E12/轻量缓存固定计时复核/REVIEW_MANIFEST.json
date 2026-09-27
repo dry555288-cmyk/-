@@ -1,0 +1,82 @@
+{
+  "CURRENT_STATE.json": {
+    "size": 1268,
+    "sha256": "a7bd0e3db5e5934220837ba4713fc9ecc819bff4ddd99fd389c57e2570cc55a2"
+  },
+  "INPUT_REFERENCE.json": {
+    "size": 208,
+    "sha256": "c73394b7cd3d9b25f298b56fb384760664b84d0fc2c5fd94d967289b99d1f4e2"
+  },
+  "REPORT.md": {
+    "size": 3475,
+    "sha256": "d7d89d469a2264148b6bbd77dab48e291af78d2077278fc8cff91549300d97b0"
+  },
+  "REVIEW.json": {
+    "size": 4980,
+    "sha256": "d7e3d27eded42b2e7f3c046f83c6546a5bc10edfa55c29b8694468363dd0b677"
+  },
+  "analysis/RECOMPUTED_TIMING.json": {
+    "size": 14096,
+    "sha256": "c2f8b49a3a008283f883b50c658ec45f2bd3319487624bc114b0361913db367e"
+  },
+  "original/CAPTURE.json": {
+    "size": 108,
+    "sha256": "2cddf6fc22d23e3a21e2f06c7517acefc1c3e373ab290ec46e52d6df980e6d24"
+  },
+  "original/ENVIRONMENT.json": {
+    "size": 205,
+    "sha256": "7548d6a3943c8d390ce9717ee8ac4c1e166ed233fdb7cd80575b8e5b40b63462"
+  },
+  "original/GIT_AFTER.json": {
+    "size": 249,
+    "sha256": "77f448358ba32ef2364f7e4886c686642472f1d46800762bf21a9e0368ae0016"
+  },
+  "original/GIT_BEFORE.json": {
+    "size": 249,
+    "sha256": "77f448358ba32ef2364f7e4886c686642472f1d46800762bf21a9e0368ae0016"
+  },
+  "original/RC.txt": {
+    "size": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "original/RESOURCES.json": {
+    "size": 177,
+    "sha256": "7e94327e4ebd9a958096dec5b9037c03e5bdbd6ad67b824fc9ef1cdd2de7e891"
+  },
+  "original/RESULT.json": {
+    "size": 2060,
+    "sha256": "50399feb469da8d92c54af8724c333593f2b9bd557faab5fe866c9b7912f9583"
+  },
+  "original/TECHNICAL_START.json": {
+    "size": 161,
+    "sha256": "4184e7be02b7822bc42235b62690b49825633f47348afd62083e72628315698a"
+  },
+  "original/native/RESULT.json": {
+    "size": 1396,
+    "sha256": "70d18c2bae5e67f4b08a57d31223ae0e650889d6f01b5ff37d05c325f940a42e"
+  },
+  "original/native/TIMING_ANALYSIS.json": {
+    "size": 9949,
+    "sha256": "2469db8c8e3b141840f576fcbd9bc6172a893de2da8421d142ecb3f81d394a6c"
+  },
+  "original/release/PROTOCOL.json": {
+    "size": 3448,
+    "sha256": "c923f74b59efffaa533eae2d922fa57e9ab7bd54e1a425649a608a34e4f7ce5a"
+  },
+  "original/release/action_cache.py": {
+    "size": 5642,
+    "sha256": "69b68b346ad6ae9e275f2b5b3f781e431f3dcb7fcb25b1a573c557519ef38933"
+  },
+  "original/release/parent_probe.py": {
+    "size": 9523,
+    "sha256": "a7bf7d2bde675df863a083f763ca6c969e9e60e543fdc6d0314aed41565502df"
+  },
+  "review_saved_artifacts.py": {
+    "size": 11132,
+    "sha256": "4b76eda4c95fc1c0cda5415bf0a57c50bbc83fec036356de1d39126acc1e38ce"
+  },
+  "evidence/minesim_dual_cachetiming_v1.zip": {
+    "size": 1408755,
+    "sha256": "b2e1f9dc19e448883404120cb4cdf2d53d6abfe3513dada989ff4b1ff7066bca"
+  }
+}

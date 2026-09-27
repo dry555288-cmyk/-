@@ -1,0 +1,29 @@
+{
+  "tests_run": 4,
+  "passed": 4,
+  "actual_MCTS_calls": 0,
+  "actual_training_runs": 0,
+  "synthetic_counter_8_is_not_actual_searches": true,
+  "cases": [
+    {
+      "case": "complete",
+      "status": "PASS",
+      "simulated_executor_only": true
+    },
+    {
+      "case": "missing",
+      "status": "PASS",
+      "simulated_executor_only": true
+    },
+    {
+      "case": "bad_sha",
+      "status": "PASS",
+      "simulated_executor_only": true
+    },
+    {
+      "case": "git_changed",
+      "status": "PASS",
+      "simulated_executor_only": true
+    }
+  ]
+}

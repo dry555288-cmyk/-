@@ -1,0 +1,426 @@
+{
+  "REVIEW.json": {
+    "size": 2169,
+    "sha256": "88bfe4847a933bbef9818501fb8dc0f31dc7b3f58a2ba8cd9dcf0b8ab722cb15"
+  },
+  "DESCRIPTIVE_DIAGNOSTIC.json": {
+    "size": 19872,
+    "sha256": "fe36474d833ca8632317a0ae4caced58477ecabad414e6250cbf04cf3c99f2f2"
+  },
+  "RECOMPUTED_METRICS.json": {
+    "size": 333,
+    "sha256": "bb0244070a151f3a97686a3f09aaec63de4a23305a76d41929badb93bbe084bb"
+  },
+  "CURRENT_STATE.json": {
+    "size": 2188,
+    "sha256": "4706079a76da1a7a0cba29c6c65e5855b7f364f1cffc72622854319425dd735f"
+  },
+  "SUMMARY.md": {
+    "size": 3048,
+    "sha256": "55cdd02c1058d11a8f553016ea8cfc23b746c86ced615c1cfc26ab1106975f3d"
+  },
+  "audit_saved_results.py": {
+    "size": 14926,
+    "sha256": "67f49e20a52a7691cf53264286315f7182307e9849dca46fff11ae88d2a078c0"
+  },
+  "original/RESULT.json": {
+    "size": 6245,
+    "sha256": "4bb113b6d5ab878c7d434f242b33e212c2f1943d12406336303379b5b900371f"
+  },
+  "original/METRICS.json": {
+    "size": 5094,
+    "sha256": "8bd9ebf2057fe200873bcd3e9bb4aee2f9e44a52f7de182c4f8a6a5957f3ecac"
+  },
+  "original/EXECUTION_PROTOCOL.json": {
+    "size": 3943,
+    "sha256": "6d50a269277fea6e31beaa318983b01998b913a7c8bda2247c4a37b54ae4017b"
+  },
+  "original/START.json": {
+    "size": 423,
+    "sha256": "d314fcd7301b47dde9f2f4e6eeaec5690af60d73bfd9ffe86cada7341490b325"
+  },
+  "original/CAPTURE.json": {
+    "size": 257,
+    "sha256": "01750465d5a35eb2267d884a082c78dfef303338f04096235dd7d041dafa7ba7"
+  },
+  "original/TIMING.json": {
+    "size": 135,
+    "sha256": "1b0515cd0f7dc57ca6bf030c84256b2a5ddac1828cd23812d74eef57ffe347e3"
+  },
+  "original/RC.txt": {
+    "size": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "original/GIT_BEFORE.json": {
+    "size": 152,
+    "sha256": "b22efa6b0c704fc588cc1cf4ffc79af727222b8d4e83e22061b92b70bbb09b31"
+  },
+  "original/POSTCHECK_GIT.json": {
+    "size": 152,
+    "sha256": "b22efa6b0c704fc588cc1cf4ffc79af727222b8d4e83e22061b92b70bbb09b31"
+  },
+  "original/POSTCHECK_PARENT.json": {
+    "size": 45,
+    "sha256": "3642b2904930fcb3b8d212e9abf72ce1e69669e1d9f61d5cce9b77712920abb7"
+  },
+  "original/INPUT_VALIDATION.json": {
+    "size": 471,
+    "sha256": "9ff2b8b6c05c99b605bfc019c779207deb30f7b679ca5b43b2d60e8e82aec8d1"
+  },
+  "original/RELEASE_BINDING.json": {
+    "size": 91,
+    "sha256": "fb607bf5f56ad4c2144f04ba9abd994c2309384b2ba05d0088e2bf3cd1926f16"
+  },
+  "original/release/SOURCE_BINDINGS.json": {
+    "size": 2134,
+    "sha256": "7e7ef73595124c08cc1c493c858b828f4efa34c60d872cde94b68284367c305a"
+  },
+  "original/release/PROTOCOL.json": {
+    "size": 4641,
+    "sha256": "6c27ed868371095cd1136126a647dbc2f63a70e72882662d27c106b4c6ac6c58"
+  },
+  "original/release/reg_models.py": {
+    "size": 7584,
+    "sha256": "c456f440b710de73a9de20ed65839affdd7d1eb956a6e19456b448b6d4c5cfa7"
+  },
+  "original/release/parent_core.py": {
+    "size": 5141,
+    "sha256": "789f34e4277ef89ceb8de852fa37e283323fc5de22e44ac6cae27750d2d554f0"
+  },
+  "original/release/runner.py": {
+    "size": 30978,
+    "sha256": "1d09c8ea1f8c6a1c7392cc89efbef3d4a47c3f182b96c5570f8462f2367b10d7"
+  },
+  "original/sources/FOLDS.json": {
+    "size": 8186,
+    "sha256": "61f1e114397d50261f03af0ac8f586c55ec98c4f009712b891758726790aa3c3"
+  },
+  "original/sources/sources/DATASET32.json": {
+    "size": 488232,
+    "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1"
+  },
+  "original/PARENT_METRICS_REFERENCE.json": {
+    "size": 4640,
+    "sha256": "354ce71c81a5f88e76ac38210f47be01952e623f9df4af2110b6add6fe68c04b"
+  },
+  "original/outer/fold00_mlp26_8_1_l2/RESULT.json": {
+    "size": 8597,
+    "sha256": "8d8cf5071b5b117b95444c1cbe0c0a772ada1186e7ed98a7bb5d81b9aa6817b6"
+  },
+  "original/outer/fold00_mlp26_8_1_l2/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "d9eb8ae88dc9742c654d29a6d38058ea4680ed8a72c6610a65116de8215d6544"
+  },
+  "original/outer/fold00_mlp26_8_1_l2/inner/SELECTION.json": {
+    "size": 6638,
+    "sha256": "2ef90877da5f3fb0bcf0031fba170fcb0bad70221b0ee5e9b498de16f284b924"
+  },
+  "original/outer/fold00_mlp26_8_1_l2/final/MODEL.json": {
+    "size": 5645,
+    "sha256": "0c16a516439f03e3d9612b4e38d041055a966cf9af390e2454c5ee7feeb9754c"
+  },
+  "original/outer/fold00_mlp26_8_1_l2/final/FIT_RESULT.json": {
+    "size": 5748,
+    "sha256": "ef4f1e2e4a9c37ca992ea070b9e31aa1d9be291f4c76b9952755d16bf634495e"
+  },
+  "original/outer/fold00_ridge26/RESULT.json": {
+    "size": 4712,
+    "sha256": "7838d6f3a9901d7451a77432199361329f0f81f96c74ddc5b7cd880bd62db7a8"
+  },
+  "original/outer/fold00_ridge26/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "65900b88c2580ccb4ae50c61e3a812f9b266ad6310eeaacb5a01930dee08e090"
+  },
+  "original/outer/fold00_ridge26/inner/SELECTION.json": {
+    "size": 6537,
+    "sha256": "c8d724a6832aa675d97f755a090820feaddbab8b32cf33ddaee40300adfd580e"
+  },
+  "original/outer/fold00_ridge26/final/MODEL.json": {
+    "size": 1063,
+    "sha256": "4f5e077535c2b7150a1b06464c41aafe0efc877cfee0d4dd791e1e0820ed748d"
+  },
+  "original/outer/fold00_ridge26/final/FIT_RESULT.json": {
+    "size": 1858,
+    "sha256": "f880504ab1f867c7e8c7b933b6130438fdf4a04926a2649c5f4a7fbbaab6d2da"
+  },
+  "original/outer/fold01_mlp26_8_1_l2/RESULT.json": {
+    "size": 8567,
+    "sha256": "729b44bff57dd9a2beeea13fc88511b666078c6dfc4a7cf54f0e1d21fb3764c6"
+  },
+  "original/outer/fold01_mlp26_8_1_l2/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "8d57ff811d44f426dac89fd61b3408ea0f9a6740d53e56b12fce47ddb88da00c"
+  },
+  "original/outer/fold01_mlp26_8_1_l2/inner/SELECTION.json": {
+    "size": 6637,
+    "sha256": "bc19aab38b6ecdcb6fbaa0329b9e5f573d2a32a188845c1d3430d4e39a60082d"
+  },
+  "original/outer/fold01_mlp26_8_1_l2/final/MODEL.json": {
+    "size": 5742,
+    "sha256": "ffdd7b1217a9dbebac559e10817b6ad831cc60cbed9401cd32dff88023e8f6d6"
+  },
+  "original/outer/fold01_mlp26_8_1_l2/final/FIT_RESULT.json": {
+    "size": 5722,
+    "sha256": "f9d860dc351a645d370fcf55c14251090a54fc23760cb333d1baca7c0f48a13b"
+  },
+  "original/outer/fold01_ridge26/RESULT.json": {
+    "size": 4705,
+    "sha256": "021945f90ecf48e966ab556c65b9ca76145609298aee9b835ea2aff22a47a790"
+  },
+  "original/outer/fold01_ridge26/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "845918d95a30e8228d37e301f1856a3ed86c36ce62436aad69194e2f1943cd17"
+  },
+  "original/outer/fold01_ridge26/inner/SELECTION.json": {
+    "size": 6527,
+    "sha256": "ebb0f24b60f8729258b4130b3e39f1358a0a6f62dbdf0f6a41bdbcd2df673d09"
+  },
+  "original/outer/fold01_ridge26/final/MODEL.json": {
+    "size": 1067,
+    "sha256": "b46dc9a035d2c391b97d8e6d446e32d96b99f3d652b329b3b9f1eb90600605c8"
+  },
+  "original/outer/fold01_ridge26/final/FIT_RESULT.json": {
+    "size": 1855,
+    "sha256": "d7a75a815d7a94b1943769526480a0e345e213884fff19b0343d1be90c2eb9bd"
+  },
+  "original/outer/fold02_mlp26_8_1_l2/RESULT.json": {
+    "size": 8511,
+    "sha256": "42ca69b38b58b4caffb30c3705f1c226e9a9f8f689a7a575c49a3f9cd7604e5b"
+  },
+  "original/outer/fold02_mlp26_8_1_l2/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "d96907225c21b93d86b3a27eb1b459552b36a4f30baafe3db1a3d8cbb01a2f6a"
+  },
+  "original/outer/fold02_mlp26_8_1_l2/inner/SELECTION.json": {
+    "size": 6747,
+    "sha256": "0fc9cfaf8709ef2e80db4c56d83be96644d77f14dea14bf2511999c48e606a73"
+  },
+  "original/outer/fold02_mlp26_8_1_l2/final/MODEL.json": {
+    "size": 5733,
+    "sha256": "c39f4fedc12820ca132693262aa396fa4914bb1d5ea205a93ed3654a2795b8da"
+  },
+  "original/outer/fold02_mlp26_8_1_l2/final/FIT_RESULT.json": {
+    "size": 5708,
+    "sha256": "e710278e59dbfdc742195941cb79e8a59ff551b2f56cc03b4bebb645c9daf21f"
+  },
+  "original/outer/fold02_ridge26/RESULT.json": {
+    "size": 4667,
+    "sha256": "f0dd9e329c443b8c618a567973a7a99c4cde9a1ee25f2d66d2a339ab636f9749"
+  },
+  "original/outer/fold02_ridge26/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "dda7b6c6c2e5adbc646a99127fed564bb150547145804b243792987cb1a1fe40"
+  },
+  "original/outer/fold02_ridge26/inner/SELECTION.json": {
+    "size": 6638,
+    "sha256": "6de6f77726a2e8155419b1cd0c85bbe443bdc40e3db55cb3110f7ed286fead4d"
+  },
+  "original/outer/fold02_ridge26/final/MODEL.json": {
+    "size": 1046,
+    "sha256": "22c2fb312bcd24c8465ed09c2d230bf31240235831434eacd581565a7507236b"
+  },
+  "original/outer/fold02_ridge26/final/FIT_RESULT.json": {
+    "size": 1859,
+    "sha256": "9f117347c69c9bdda971c9320b77dcce6c740c6d0bb491bd74598d07cbb25d78"
+  },
+  "original/outer/fold03_mlp26_8_1_l2/RESULT.json": {
+    "size": 8528,
+    "sha256": "b9326dfe5cc27217b8e50b71c49e2d0f8aeab710957d747aab9b274dbc6ddade"
+  },
+  "original/outer/fold03_mlp26_8_1_l2/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "6be729bef91e0e24a191a61b72174dfa14a2545a94dccc99ddf3608c10cb11fc"
+  },
+  "original/outer/fold03_mlp26_8_1_l2/inner/SELECTION.json": {
+    "size": 6742,
+    "sha256": "620a0f7137c2183bb1c1087f1d4b153525243f3a2ddd235387a8b3e00631c0df"
+  },
+  "original/outer/fold03_mlp26_8_1_l2/final/MODEL.json": {
+    "size": 5760,
+    "sha256": "6409926b6674e9d059da985e4154b081e66d6f400b9e67c6233da07c8212580d"
+  },
+  "original/outer/fold03_mlp26_8_1_l2/final/FIT_RESULT.json": {
+    "size": 5721,
+    "sha256": "52bb7a6c563d014e23f86eefc1b0b2465d9174b757d1d22e1ad456280d1f982a"
+  },
+  "original/outer/fold03_ridge26/RESULT.json": {
+    "size": 4646,
+    "sha256": "90ed49a831b850fb4aa8570f69885e5356d799861582d3b8912cc43bfcbc17fc"
+  },
+  "original/outer/fold03_ridge26/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "493600eb43df7dab3ca8f29da164489a0a81ce9e5cfe044f8e0e08bf5dda3cc8"
+  },
+  "original/outer/fold03_ridge26/inner/SELECTION.json": {
+    "size": 6638,
+    "sha256": "27dc7c8d4e4b9bde208350c31a46137cd3baf67b524bdac66cdc88f97e7b91ed"
+  },
+  "original/outer/fold03_ridge26/final/MODEL.json": {
+    "size": 1066,
+    "sha256": "6e44123200aebd809dec5c32372ad6fa660ebf5ec46b317a3cf8a608ad91584d"
+  },
+  "original/outer/fold03_ridge26/final/FIT_RESULT.json": {
+    "size": 1848,
+    "sha256": "4b6780bca898a6982ff0a22c1815848a77cccc609f4f8f68d071ddff184f2bd6"
+  },
+  "original/outer/fold04_mlp26_8_1_l2/RESULT.json": {
+    "size": 8606,
+    "sha256": "ec4da6e376d236f98c277f73c9ecc02458aa74f9a336a76dde498bd6e956de2c"
+  },
+  "original/outer/fold04_mlp26_8_1_l2/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "e68e0479e62258ab6d75779f0a843f1c28f2bad5ae1ab97052f5cbdb9c3402c8"
+  },
+  "original/outer/fold04_mlp26_8_1_l2/inner/SELECTION.json": {
+    "size": 6638,
+    "sha256": "83b27f045622966c0c064e3ed701411134c679a67a034b3203d99a2e6948271c"
+  },
+  "original/outer/fold04_mlp26_8_1_l2/final/MODEL.json": {
+    "size": 5699,
+    "sha256": "e9fff86816f2c3ee26df52265487cc87a4a49fa4df32efb046b4af5cf3669668"
+  },
+  "original/outer/fold04_mlp26_8_1_l2/final/FIT_RESULT.json": {
+    "size": 5746,
+    "sha256": "d16ddbcdde4fe641f2236d4558940775a2a91235a97b6616580c8276035f61ff"
+  },
+  "original/outer/fold04_ridge26/RESULT.json": {
+    "size": 4722,
+    "sha256": "b1a6656a0855cae7e647a94bcd3740fd77080146b94447d910a7002a872618bb"
+  },
+  "original/outer/fold04_ridge26/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "a0521a855c153967761a09fc7baca2e69d1ad6326721c29d45fb6d00f51abd0c"
+  },
+  "original/outer/fold04_ridge26/inner/SELECTION.json": {
+    "size": 6533,
+    "sha256": "e26150cb9bc9e0df7e2476fc79a2f315319ebfe350ff3753d9241194721d2f63"
+  },
+  "original/outer/fold04_ridge26/final/MODEL.json": {
+    "size": 1064,
+    "sha256": "362438be05c807835ec84cb388cb44314982fe237eb87e688e6a26b59aa0539e"
+  },
+  "original/outer/fold04_ridge26/final/FIT_RESULT.json": {
+    "size": 1860,
+    "sha256": "de21862f33a76bcc4e61e3a64be5c262c0dc882b817934f353f6d956f5e25255"
+  },
+  "original/outer/fold05_mlp26_8_1_l2/RESULT.json": {
+    "size": 8596,
+    "sha256": "b2ae9edf7c8151d3cf02417076947a5674bf82478508de028bc8a1e426c63d0b"
+  },
+  "original/outer/fold05_mlp26_8_1_l2/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "9b9f3ec0dd6d9d53696a691fb3abaab29844763923fb470433a9f49c50b52bfd"
+  },
+  "original/outer/fold05_mlp26_8_1_l2/inner/SELECTION.json": {
+    "size": 6640,
+    "sha256": "5275e211b777fcc8664129cb81571caa146e043a228dd0729868e994cf1dd069"
+  },
+  "original/outer/fold05_mlp26_8_1_l2/final/MODEL.json": {
+    "size": 5659,
+    "sha256": "88e44c1376127c9907e3ef16d4e23f29180f2612c1fef407e0a37a83b0e7d793"
+  },
+  "original/outer/fold05_mlp26_8_1_l2/final/FIT_RESULT.json": {
+    "size": 5740,
+    "sha256": "1fa1a89f30640e9c60939611c39cdf2d8ce69f81158fb3bbbfbdb4ea7bb4ea58"
+  },
+  "original/outer/fold05_ridge26/RESULT.json": {
+    "size": 4719,
+    "sha256": "339bd5ac5d7f4033d1ef8ade9005c9e7ac02cc83f6a42df2106220948a177a32"
+  },
+  "original/outer/fold05_ridge26/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "16f202dc796a882c0ae59af30218ce92d0360a412422acd30c2d422b3c26ef93"
+  },
+  "original/outer/fold05_ridge26/inner/SELECTION.json": {
+    "size": 6531,
+    "sha256": "52bcc1bf602e1bbb4ba52788e173453f54dc714fd0c5c41ca35d90f72b05efc0"
+  },
+  "original/outer/fold05_ridge26/final/MODEL.json": {
+    "size": 1064,
+    "sha256": "f57bb30c9f69a0b46aa9abe81bb56bc7a8cdccd78ca76dd76087cf364ee6702c"
+  },
+  "original/outer/fold05_ridge26/final/FIT_RESULT.json": {
+    "size": 1857,
+    "sha256": "f9315e0e168a2352fa8585cae122d85e93b00191c9d6d667ae4c3262681c9b6c"
+  },
+  "original/outer/fold06_mlp26_8_1_l2/RESULT.json": {
+    "size": 8521,
+    "sha256": "6d0d53c637e65b902215e153020cbc0014f47ebb4f7b429bf34d18b4d1c95a66"
+  },
+  "original/outer/fold06_mlp26_8_1_l2/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "e8c67b299e54cb95c33938d1f0714c8600c163a9c0407bb7c7b61fecb317f88b"
+  },
+  "original/outer/fold06_mlp26_8_1_l2/inner/SELECTION.json": {
+    "size": 6743,
+    "sha256": "1e84b732f49c1994aad216c97b2eaa1abf179f8d713a35ad7d7736011161fe30"
+  },
+  "original/outer/fold06_mlp26_8_1_l2/final/MODEL.json": {
+    "size": 5758,
+    "sha256": "bf16e428aebe6fd1f4198dd6e99189a975f04d757c625c824561e133dec75501"
+  },
+  "original/outer/fold06_mlp26_8_1_l2/final/FIT_RESULT.json": {
+    "size": 5718,
+    "sha256": "632027ac4af629fec7d5a9d2f3a87a5c2958998653476337010f4f87fafd386a"
+  },
+  "original/outer/fold06_ridge26/RESULT.json": {
+    "size": 4658,
+    "sha256": "e688f5f425e592af20dc32b987e4cff26c13b33515b161f23f6bbe8dffd32b7b"
+  },
+  "original/outer/fold06_ridge26/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "d2e0071e63d0fdd0b041386b5cfceeb515aa408b03151cf7f1b0d71cbc08c709"
+  },
+  "original/outer/fold06_ridge26/inner/SELECTION.json": {
+    "size": 6644,
+    "sha256": "21d1acd1b2c64cb0f442e3d5304282db42585d736fc758dc2e9204e2465a848e"
+  },
+  "original/outer/fold06_ridge26/final/MODEL.json": {
+    "size": 1060,
+    "sha256": "1ff18c8a564e215345b86ed2b6b7d0da5c802c3a07c2583f9832d1cfa22dc19a"
+  },
+  "original/outer/fold06_ridge26/final/FIT_RESULT.json": {
+    "size": 1856,
+    "sha256": "ea414b2be15e28eb5d778704b1dd90ac02f8314d6384a9174df8b511b59b08fd"
+  },
+  "original/outer/fold07_mlp26_8_1_l2/RESULT.json": {
+    "size": 8507,
+    "sha256": "c91ba07a8a39427c4c61b1f78ff16f514985baf5ed3f224e3e81ef05d1dee42b"
+  },
+  "original/outer/fold07_mlp26_8_1_l2/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "c04f47a973755afbc6a10e7fd8476047aa873f3e17d79452082cc45000586e9a"
+  },
+  "original/outer/fold07_mlp26_8_1_l2/inner/SELECTION.json": {
+    "size": 6744,
+    "sha256": "7412d6c687f2d8e4db5557b5f69763150ae7c9feec01c1b6ceb6082ec1f00bfb"
+  },
+  "original/outer/fold07_mlp26_8_1_l2/final/MODEL.json": {
+    "size": 5744,
+    "sha256": "a895c788a38e1bcef400a7e142e00d0bd7ad067bd49b842f960d61b66fd17d16"
+  },
+  "original/outer/fold07_mlp26_8_1_l2/final/FIT_RESULT.json": {
+    "size": 5706,
+    "sha256": "68700caa164afb11f6559f044711f68fad44b5dcf0b5b334d367d2f024a658aa"
+  },
+  "original/outer/fold07_ridge26/RESULT.json": {
+    "size": 4658,
+    "sha256": "b59ea22f003171ff9c5114afb7f56df07df73994dcdf264ec787a54358025b89"
+  },
+  "original/outer/fold07_ridge26/OUTER_SELECTION_LOCK.json": {
+    "size": 184,
+    "sha256": "e6302ed4fa052124ff01954eb65147c3495ab1a4f9f49c3e9ce373e9802d7e3b"
+  },
+  "original/outer/fold07_ridge26/inner/SELECTION.json": {
+    "size": 6640,
+    "sha256": "f0dfb9cba762fdf27f82ff7de5ddeaa4e12bb74e08798b03b3b7fdd7e7fce2ea"
+  },
+  "original/outer/fold07_ridge26/final/MODEL.json": {
+    "size": 1069,
+    "sha256": "7ac25fba42d910ae0f338e8f4390476d5fb6fddc55ed787e67148f815a80517e"
+  },
+  "original/outer/fold07_ridge26/final/FIT_RESULT.json": {
+    "size": 1852,
+    "sha256": "09897e395624cb1f2ff4dd1fa5dee159ffd637d77c7400a403e02cb7b4c984b7"
+  }
+}

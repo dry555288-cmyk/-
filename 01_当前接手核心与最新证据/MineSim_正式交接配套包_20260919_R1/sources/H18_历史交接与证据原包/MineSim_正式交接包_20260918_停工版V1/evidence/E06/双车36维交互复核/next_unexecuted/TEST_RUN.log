@@ -1,0 +1,56 @@
+test_closed_form_matches_augmented_lstsq_synthetic (__main__.TestNumerics.test_closed_form_matches_augmented_lstsq_synthetic) ... ok
+test_column_scaling_invariance_active (__main__.TestNumerics.test_column_scaling_invariance_active) ... ok
+test_constant_held_new_values_zeroed (__main__.TestNumerics.test_constant_held_new_values_zeroed) ... ok
+test_constant_target (__main__.TestNumerics.test_constant_target) ... ok
+test_empty_rejected (__main__.TestNumerics.test_empty_rejected) ... ok
+test_inf_target_rejected (__main__.TestNumerics.test_inf_target_rejected) ... ok
+test_mismatched_target (__main__.TestNumerics.test_mismatched_target) ... ok
+test_nan_rejected (__main__.TestNumerics.test_nan_rejected) ... ok
+test_no_training_permissions (__main__.TestNumerics.test_no_training_permissions) ... ok
+test_no_valid_columns (__main__.TestNumerics.test_no_valid_columns) ... ok
+test_permuted_train_rows (__main__.TestNumerics.test_permuted_train_rows) ... ok
+test_population_center_scale (__main__.TestNumerics.test_population_center_scale) ... ok
+test_save_reload_forward (__main__.TestNumerics.test_save_reload_forward) ... ok
+test_singular_features_ridge_finite (__main__.TestNumerics.test_singular_features_ridge_finite) ... ok
+test_train_only_no_held_dependency (__main__.TestNumerics.test_train_only_no_held_dependency) ... ok
+test_wrong_transform_dimension (__main__.TestNumerics.test_wrong_transform_dimension) ... ok
+test_after_start_failure_preserved_without_retry (__main__.TestSources.test_after_start_failure_preserved_without_retry) ... START=DUAL32_SCALING_ABLATION; ROOTS=32; RETURNS=512; FITS=8; INNER_FITS=0; GPU=False
+STATUS=RUNTIME_TECHNICAL_HOLD
+FITS_COMPLETED=0/8; SOURCES_VERIFIED=10/10; NEW_SAMPLES=0; MCTS_CALLS=0
+BUNDLE=/tmp/tmpa_kmak78/minesim_dual32_scaledridge_fit_v1.zip
+ZIP_VERIFIED=True; ZIP_SHA256=0088a3a52b61128148127c86046491568bcddba1164d42eba66d6638bba0463e
+ok
+test_authorization_before_writes (__main__.TestSources.test_authorization_before_writes) ... ok
+test_bound_archive_fallback_no_fit (__main__.TestSources.test_bound_archive_fallback_no_fit) ... ok
+test_duplicate_namespace_refused_without_removal (__main__.TestSources.test_duplicate_namespace_refused_without_removal) ... ok
+test_existing_source_not_overwritten (__main__.TestSources.test_existing_source_not_overwritten) ... ok
+test_input_feature_prefix_drift (__main__.TestSources.test_input_feature_prefix_drift) ... ok
+test_missing_source_hold (__main__.TestSources.test_missing_source_hold) ... ok
+test_outcomes_targets_unchanged (__main__.TestSources.test_outcomes_targets_unchanged) ... ok
+test_outer_leak_rejected (__main__.TestSources.test_outer_leak_rejected) ... ok
+test_postcheck_source_change (__main__.TestSources.test_postcheck_source_change) ... ok
+test_preflight_failure_packaged_no_start (__main__.TestSources.test_preflight_failure_packaged_no_start) ... STATUS=PRE_RUNTIME_TECHNICAL_HOLD
+FITS_COMPLETED=0/8; SOURCES_VERIFIED=0/10; NEW_SAMPLES=0; MCTS_CALLS=0
+BUNDLE=/tmp/tmp8qlc6b5t/minesim_dual32_scaledridge_fit_v1.zip
+ZIP_VERIFIED=True; ZIP_SHA256=05d147e47a4948e04e4ed5dcd4ff09475d45cf7ce3c666a879ff75824908aab3
+ok
+test_process_does_not_match_grep (__main__.TestSources.test_process_does_not_match_grep) ... ok
+test_process_does_not_match_shell_body (__main__.TestSources.test_process_does_not_match_shell_body) ... ok
+test_process_matches_new_launcher (__main__.TestSources.test_process_matches_new_launcher) ... ok
+test_real_sources_capture_validation_no_fit (__main__.TestSources.test_real_sources_capture_validation_no_fit) ... ok
+test_symlink_rejected (__main__.TestSources.test_symlink_rejected) ... ok
+test_synthetic_eight_fold_pipeline (__main__.TestSources.test_synthetic_eight_fold_pipeline) ... FITS_COMPLETED=1/8; INNER_FITS=0; OPTIMIZER_UPDATES=0; NEW_SAMPLES=0
+FITS_COMPLETED=2/8; INNER_FITS=0; OPTIMIZER_UPDATES=0; NEW_SAMPLES=0
+FITS_COMPLETED=3/8; INNER_FITS=0; OPTIMIZER_UPDATES=0; NEW_SAMPLES=0
+FITS_COMPLETED=4/8; INNER_FITS=0; OPTIMIZER_UPDATES=0; NEW_SAMPLES=0
+FITS_COMPLETED=5/8; INNER_FITS=0; OPTIMIZER_UPDATES=0; NEW_SAMPLES=0
+FITS_COMPLETED=6/8; INNER_FITS=0; OPTIMIZER_UPDATES=0; NEW_SAMPLES=0
+FITS_COMPLETED=7/8; INNER_FITS=0; OPTIMIZER_UPDATES=0; NEW_SAMPLES=0
+FITS_COMPLETED=8/8; INNER_FITS=0; OPTIMIZER_UPDATES=0; NEW_SAMPLES=0
+ok
+test_wrong_present_bytes_not_bypassed (__main__.TestSources.test_wrong_present_bytes_not_bypassed) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 0.246s
+
+OK

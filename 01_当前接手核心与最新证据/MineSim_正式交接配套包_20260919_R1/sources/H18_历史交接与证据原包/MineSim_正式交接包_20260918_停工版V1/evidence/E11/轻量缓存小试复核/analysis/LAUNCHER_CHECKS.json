@@ -1,0 +1,14 @@
+{
+  "bash_syntax": true,
+  "reject_missing_argument": true,
+  "reject_wrong_argument": true,
+  "reject_extra_argument": true,
+  "payload_hash_manifest_members": true,
+  "embedded_python39_syntax": true,
+  "resource_guard_before_experiment_claim": true,
+  "no_tee_helper": true,
+  "actual_cloud_run": false,
+  "actual_mcts_calls": 0,
+  "launcher_sha256": "65156a56ab339ffe7948a98c285716c7e02e83aedc44857024c09af1c0b5e661",
+  "payload_sha256": "4eee283da478af9ae8ac616614976736a51d1efff160d2847e5126fbaf200ae5"
+}

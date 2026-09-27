@@ -1,0 +1,1439 @@
+MineSim 本次上传资料：文件目录与关键原文摘录
+
+检查范围：本次上传的11个文件；检查压缩包目录、读取主要文本，抽看论文首页和实验表格。未运行包内代码、未重跑仿真或训练，未核验AutoDL实时状态。
+
+一、压缩包可读性
+9个压缩包中，8个正常读取。2026-08-24总包缺少ZIP结束目录记录，文件内容在“01_原始压缩包/蒙特卡洛实现.7z”成员内部截断。其前部6份说明/主交接/清单文件已按本地头读取，并通过原记录的CRC及长度核对；不代表整个压缩包完整。
+原总包字节数：95535104
+
+二、正常压缩包目录（只计文件，不计文件夹）
+
+MineSim地图更换.7z
+文件数量：7
+MineSim-Dynamic地图更换方案.docx | 71307 bytes
+MineSim-Dynamic地图更换方案.pdf | 642852 bytes
+MineSim-Dynamic新地图代码接入.docx | 70831 bytes
+MineSim-Dynamic新地图代码接入.pdf | 353333 bytes
+一些定义与功能.docx | 19444 bytes
+新地图说明.txt | 36651 bytes
+汇报.docx | 16046 bytes
+
+接下来方向.7z
+文件数量：9
+接下来方向/FusionPlanner：一种通过多传感器融合实现的矿用卡车多任务运动规划器.pdf | 9200545 bytes
+接下来方向/四篇论文精读翻译及其对MineSim的作用分析.docx | 1690312 bytes
+接下来方向/基于深度卷积网络的非结构化道路自动驾驶多模态轨迹预测.pdf | 507463 bytes
+接下来方向/基于神经 A 搜索的路径规划.pdf | 2096449 bytes
+接下来方向/基于驾驶行为预测与深度蒙特卡洛树搜索的自动驾驶控制.pdf | 4383838 bytes
+接下来方向/新挑战：最后运输段露天矿自动驾驶卡车的路径规划.pdf | 13442559 bytes
+接下来方向/方向.docx | 16236 bytes
+接下来方向/论文记录.docx | 16020 bytes
+接下来方向/面向自主运输的场景工程：露天矿山的新阶段.pdf | 8277914 bytes
+
+可参考论文.7z
+文件数量：2
+可参考论文/1-s2.0-S0968090X26003761-main.pdf | 11111058 bytes
+可参考论文/362388.pdf | 14661864 bytes
+
+蒙特卡洛实现.7z
+文件数量：10
+蒙特卡洛实现/dapai_mcts_vs_idm_native_release_94693dc_20260802.tar.gz | 26715829 bytes
+蒙特卡洛实现/MCTS算法接入阶段汇报.docx | 33333 bytes
+蒙特卡洛实现/MCTS算法接入阶段汇报.pdf | 149088 bytes
+蒙特卡洛实现/MineSim-Dynamic_AutoDL云端项目环境与文件资产说明书_2026-07-26.docx | 64522 bytes
+蒙特卡洛实现/MineSim-Dynamic_Git入门与项目版本管理学习手册_2026-07-26.docx | 50479 bytes
+蒙特卡洛实现/MineSim-Dynamic_MCTS接入与实验评估报告_20260802.docx | 479951 bytes
+蒙特卡洛实现/MineSim-Dynamic_明日用DeepSeek建立项目管理文件与数据目录_执行说明书_2026-07-26.docx | 50501 bytes
+蒙特卡洛实现/MineSim-Dynamic_纯MCTS与神经网络增强实施手册_面向基础AI编码助手_2026-07-26.docx | 74611 bytes
+蒙特卡洛实现/MineSim_MCTS_神经网络_研究思路汇报初稿_修订版.docx | 39144 bytes
+蒙特卡洛实现/蒙特卡洛树搜索+神经网络.pdf | 398563 bytes
+
+蒙特卡洛效果对比.7z
+文件数量：3
+蒙特卡洛效果对比/MineSim-Dynamic_MCTS在线闭环对比与搜索预算分析2026-08-07.docx | 1035809 bytes
+蒙特卡洛效果对比/MineSim-Dynamic_MCTS在线闭环对比与搜索预算分析2026-08-07.pdf | 931333 bytes
+蒙特卡洛效果对比/MineSim_Dynamic_Pure_MCTS_项目交接与进展总览_2026-08-09.docx | 57824 bytes
+
+MineSim_Dynamic_正式交接完整包_论文标准对齐版_V1_20260910.zip
+文件数量：45
+MineSim_Handoff_20260910_V1/CURRENT_STATE.json | 4806 bytes
+MineSim_Handoff_20260910_V1/MineSim_Dynamic_正式交接_论文标准对齐版_V1_20260910.docx | 107022 bytes
+MineSim_Handoff_20260910_V1/MineSim_Dynamic_正式交接_论文标准对齐版_V1_20260910.md | 104921 bytes
+MineSim_Handoff_20260910_V1/MineSim_Dynamic_正式交接_论文标准对齐版_V1_20260910.txt | 112527 bytes
+MineSim_Handoff_20260910_V1/NEXT_GATE_CONTRACT.json | 2259 bytes
+MineSim_Handoff_20260910_V1/README_先读我.txt | 3142 bytes
+MineSim_Handoff_20260910_V1/SHA256SUMS | 6122 bytes
+MineSim_Handoff_20260910_V1/document_quality_check.json | 1681 bytes
+MineSim_Handoff_20260910_V1/evidence_inventory.csv | 12569 bytes
+MineSim_Handoff_20260910_V1/evidence_inventory.json | 20957 bytes
+MineSim_Handoff_20260910_V1/experiment_ledger.csv | 4465 bytes
+MineSim_Handoff_20260910_V1/experiment_ledger.json | 9570 bytes
+MineSim_Handoff_20260910_V1/formula_index.json | 15994 bytes
+MineSim_Handoff_20260910_V1/historical_sources/E02_MineSim_handoff_summary_V1(4).docx | 38468 bytes
+MineSim_Handoff_20260910_V1/historical_sources/E03_MineSim_Dynamic_正式交接文档_20260831.docx | 722666 bytes
+MineSim_Handoff_20260910_V1/historical_sources/E04_MineSim_ValueV3_ConfidenceGated_TopKPruning_项目交接文档_K13运行价值评审完成版_V1.docx | 55253 bytes
+MineSim_Handoff_20260910_V1/historical_sources/E05_粘贴的文本 (1)(20260824-074313).txt | 922098 bytes
+MineSim_Handoff_20260910_V1/historical_sources/E06_粘贴的文本 (1)(20260908-031818).txt | 109328 bytes
+MineSim_Handoff_20260910_V1/historical_sources/README_历史来源不得作为当前Gate.txt | 393 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E01_RADEME(4).txt | 41285 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E07_MineSim_绑定证据复核与原始记录重绑定说明_20260908.txt | 9451 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E08_MineSim_原始记录重绑定复核与冻结包漏检说明_20260908.txt | 7643 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E09_MineSim_三项冻结来源补齐复核与运行依赖快照说明_20260908.txt | 8553 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E10_MineSim_36root技术验收与576次Pilot执行说明_20260908.txt | 7448 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E11_MineSim_576次Pilot复核与独立种子复验说明_20260908.txt | 8777 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E12_MineSim_独立种子确认复核与训练诊断说明_20260908.txt | 9919 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E13_MineSim_12组训练诊断复核与C11跨episode下一步_20260909.txt | 9761 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E14_MineSim_C11跨episode复核与动作证据审查_20260909.txt | 8690 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E15_MineSim_新状态覆盖与动作决策_论文公式协议_V1_20260909.txt | 15649 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E16_MineSim_new24_review_paired_coverage_protocol_20260909.txt | 15566 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E17_MineSim_覆盖增补复核与来源拆分_论文公式协议_20260909.txt | 11391 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E18_MineSim_来源拆分复核与C06时域诊断_论文公式协议_20260909.txt | 11135 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E19_MineSim_C06时域复核与同轨迹回报分解_20260909.txt | 16614 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E19b_MineSim_C06时域结果与同轨迹回报拆分_论文公式复核_20260909.txt | 14812 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E20_MineSim_叶节点续算契约与技术验证_论文公式协议_20260909.txt | 12329 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E21_MineSim_叶节点续算验收与续接策略对照_论文公式协议_20260909.txt | 9394 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E22_MineSim_续接策略复核与终止续行_论文公式协议_20260909.txt | 12957 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E23_MineSim_续行终止复核与根动作策略回报_论文公式协议_V1.txt | 14592 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E24_MineSim_根动作策略回报复核与独立复验_论文公式协议_20260910.txt | 11125 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E25_MineSim_独立复验结果与决策精度审查_20260910.txt | 13129 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E26_MineSim_决策精度与停止规则_论文公式及离线验证_20260910.txt | 14128 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E27_MineSim_任务指标与奖励映射审查_论文公式及复核_20260910.txt | 11916 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E28_MineSim_秒制目标与安全约束决策接口_论文公式及离线验证_20260910.txt | 13805 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/E29_MineSim_paper_standards_verified_20260910.txt | 9907 bytes
+MineSim_Handoff_20260910_V1/supporting_reports/S01_用户原始工作流_Skill.md | 24882 bytes
+
+原项目复现.zip
+文件数量：6
+原项目复现/MineSim-Dynamic_论文与项目相关函数详解.docx | 95530 bytes
+原项目复现/dapai_intersection_1_3_4_IDMPlanner.mp4 | 558214 bytes
+原项目复现/jiangtong_intersection_9_3_2_IDMPlanner.mp4 | 708451 bytes
+原项目复现/矿山项目分析.docx | 21858 bytes
+原项目复现/矿山项目原论文.pdf | 19716491 bytes
+原项目复现/项目地址.txt | 56 bytes
+
+地图新建相关文件.zip
+文件数量：9（8份GeoJSON＋1张PNG）
+地图新建相关文件/junction.geojson | Feature数量=35 | {'Polygon': 35}
+地图新建相关文件/lane.geojson | Feature数量=553 | {'LineString': 553}
+地图新建相关文件/rgn_auxiliary.geojson | Feature数量=6 | {'Polygon': 6}
+地图新建相关文件/rgn_boundary.geojson | Feature数量=84 | {'MultiLineString': 84}
+地图新建相关文件/rgn_unload.geojson | Feature数量=7 | {'Polygon': 7}
+地图新建相关文件/rng_load.geojson | Feature数量=36 | {'Polygon': 36}
+地图新建相关文件/road.geojson | Feature数量=94 | {'Polygon': 94}
+地图新建相关文件/road_boundary.geojson | Feature数量=100 | {'MultiLineString': 100}
+
+三、主要文档原文摘录
+以下是提取的正文开头；表格按“|”分隔，排版不等同于原Word/PDF。未将不同时间版本的内容合并为新的科学结论。
+
+===========================================================================
+原项目复现/原项目复现/MineSim-Dynamic_论文与项目相关函数详解.docx
+MineSim-Dynamic 论文与开源项目相关函数详解
+按论文架构与当前 IDMPlanner + replay policy 复现链路整理
+说明：本文档按照你上传的“相关函数”模板扩展而成，重点覆盖论文 Fig.1 架构和当前云端复现中会真正遇到的核心类/函数。它不是全仓库每一个辅助函数的索引，而是“老师问源码逻辑时最需要讲清楚”的函数级说明。
+阅读建议：先看第 1 部分总流程，再看第 2-7 部分函数卡片。每个函数都按“输入—输出—具体作用—项目地位—通俗理解”说明，避免只知道函数名却不知道它在闭环仿真中的意义。
+目录
+一：项目总流程和论文架构对应
+二：Environment Manager / Scenario / Map 读取函数
+三：Prediction Algorithm / Observation 相关函数
+四：Planning Algorithm 相关函数
+五：Motion Controller 相关函数
+六：Ego Update Model 相关函数
+七：Agent Update Policy 相关函数
+八：Visualization / Metrics 相关函数
+九：当前复现链路重点记忆版
+一：项目总流程和论文架构对应
+论文中的 MineSim 是一个面向露天矿区自动驾驶矿车规划任务的闭环仿真系统。对你当前复现来说，最重要的是理解 Simulation Engine 内部的闭环：场景读取、障碍车预测/更新、自车规划、自车控制、自车运动学更新、其他 agent 更新、日志和可视化。
+官方场景 JSON / HD Map    ↓Environment Manager / Scenario Builder    ↓Prediction / Observation：得到其他车辆当前状态和可能未来轨迹    ↓Planning Algorithm：生成 ego 自车未来 trajectory    ↓Motion Controller：把 trajectory 转成加速度、转向角速度等控制量    ↓Ego Update Model：用运动学模型更新 ego 下一帧状态    ↓Agent Update Policy：更新其他障碍车下一帧状态    ↓Simulation History / Log → 2D Visualizer / Metrics    ↓进入下一帧循环
+当前你已经跑通的链路可以概括为：IDMPlanner 控制 ego 自车；其他动态障碍车主要通过 replay policy 按官方场景轨迹回放；官方 2D Visualizer 读取 simulation log 并生成视频。
+关键概念速记
+概念 | 解释
+ego | 自车，也就是被算法控制的矿车。
+agent | 场景中的其他车/障碍车，不是你控制的 ego。
+route | 全局路线，大方向上经过哪些道路段。
+trajectory | 具体轨迹，每个时间点的位置、速度、航向角等。
+planner | 生成 ego 未来 trajectory 的算法。
+tracker/controller | 跟踪 planner 的 trajectory，算出加速度和转向等控制量。
+motion/update model | 用车辆运动学把控制量转换成下一帧 ego 状态。
+policy | 状态更新策略，常用于决定其他 agent 怎么动。
+二：Environment Manager / Scenario / Map 读取函数
+这一部分负责把官方 JSON 场景、地图、ego 初始状态、目标区域、动态障碍车轨迹读进来。它的作用不是规划，而是把“仿真需要的世界”准备好。
+相关目录：devkit/scenario_builder/minesim_scenario_json/；devkit/sim_engine/environment_manager/；devkit/sim_engine/map_manager/。
+函数 2.1：run_simulation.py / run_simulation()
+所属模块 | Environment / Simulation 启动入口
+源码位置 | devkit/script/run_simulation.py
+主要输入 | 仿真配置、worker、scenario filter、planner 配置等。
+主要输出 | SimulationRunner 或执行结果。
+具体作用 | 启动整个仿真流程，读取配置并调用 runner 执行 simulation。
+详细备注 | 你在终端执行 python run_simulation.py 时，首先进入的就是这个层级。它不直接规划，也不直接控制车辆，只负责把整个仿真任务启动起来。
+项目中的地位 | 项目入口函数。没有它，后面的 scenario 读取、planner 初始化、controller 更新都不会发生。
+通俗理解 | 相当于“按下开始仿真的按钮”。
+函数 2.2：SimulationsRunner._initialize()
+所属模块 | Environment / Runner 初始化
+源码位置 | devkit/sim_engine/runner/s
+[摘录至此；不是全文]
+
+===========================================================================
+原项目复现/原项目复现/矿山项目分析.docx
+MineSim-Dynamic 项目核心模块源码逻辑分析
+Prediction Algorithm（预测周围的障碍车接下来的行为）
+在本次 IDMPlanner + replay policy 复现中，障碍车主要来自官方场景轨迹回放，并没有重点使用复杂的深度学习预测模型。
+输入：
+当前场景中的其他车辆状态
+车辆位置、速度、航向角
+历史轨迹或场景给定轨迹
+输出：
+周围车辆未来一段时间的 predicted trajectory
+即每辆障碍车未来可能经过的一串位置
+云端代码地址：devkit/sim_engine/observation_manager/agent_update_policy/
+相关文件： 
+devkit/sim_engine/observation_manager/agent_update_policy/idm/idm_agent.py
+devkit/sim_engine/observation_manager/agent_update_policy/ego_centric_ml_agents.py
+devkit/sim_engine/observation_manager/agent_update_policy/abstract_ml_agents.py
+Planning Algorithm（ego 自车未来轨迹规划）
+输入：
+ego 当前状态
+地图和道路拓扑
+目标区域
+周围障碍车状态
+prediction 给出的障碍车未来轨迹
+处理：
+先找一条全局 route path
+再根据当前交通状态生成局部 trajectory
+判断前方是否有障碍车
+决定加速、减速、跟车、避让或停车
+输出：
+ego trajectory 未来几秒的一串轨迹点
+（route：大方向路线，比如应该经过哪些道路段
+trajectory：每一帧具体位置、速度、航向角）
+云端代码地址：devkit/sim_engine/planning/planner/
+相关文件：devkit/sim_engine/planning/planner/local_planner/idm_planner.py
+devkit/sim_engine/planning/planner/abstract_idm_planner.py
+frenet_optimal_planner.py
+predefined_maneuver_mode_sampling_planner.py
+ml_planner.py
+3. Motion Controller(车辆怎么根据planner的轨迹行走)
+输入：
+planner 给出的目标 trajectory
+ego 当前车辆状态
+处理：
+计算车辆应该怎么转向
+计算车辆应该加速还是减速
+让车辆尽量跟踪 planner 给出的轨迹
+输出：
+车辆控制量 / 动态状态，用于驱动 Ego Update Model 更新下一帧 ego 状态
+云端代码地址：devkit/sim_engine/ego_simulation/
+相关文件：devkit/sim_engine/ego_simulation/two_stage_controller.py
+devkit/sim_engine/ego_simulation/ego_motion_controller/
+devkit/sim_engine/ego_simulation/ego_update_model/
+4.Ego Update Model（自车状态更新运动学模型）
+根据当前 ego 状态 + 控制量，计算下一帧 ego 的仿真状态。
+云端代码地址：devkit/sim_engine/ego_simulation/ego_update_model/
+相关文件：kinematic_bicycle_model.py
+kinematic_bicycle_model_response_lag.py
+kinematic_bicycle_model_resp_lag_slope.py
+5. Agent Update Policy（动态障碍车的状态更新）
+云端代码地址：/root/autodl-tmp/MineSim-Dynamic/devkit/sim_engine/observation_manager/agent_update_policy/
+配置文件地址：
+devkit/script/config/sim_engine/observation_agent_update_policy/
+官方policy：
+replay_policy_agents_box_track（障碍车按官方轨迹回放。）
+reactive_policy_agents_idm（其他 agent 根据 IDM 规则运动。）
+reactive_policy_agents_idm_improved（普通 IDM agent update policy 的增强版。）
+reactive_policy_agents_multimodal_trajectory_prediction（预测其他车辆未来可能的多种轨迹。）
+ego_centric_ml_agents_observation（以 ego 自车为中心，观察周围 agent，并用 ML 模型预测
+[摘录至此；不是全文]
+
+===========================================================================
+原项目复现/原项目复现/矿山项目原论文.pdf
+
+---PAGE 1---
+MineSim: A scenario-based simulation test system and benchmark for 
+autonomous trucks in open-pit mines☆
+Zhifa Chen a
+, Guizhen Yu a, Peng Chen a,*, Guoxi Cao a, Zheng Li a, Yifang Zhang a,  
+Haoyuan Ni a, Bin Zhou a, Jian Sun b, Huanyu Ban c
+a School of Transportation Science and Engineering, Key Laboratory of Autonomous Transportation Technology for Special Vehicles, Ministry of Industry and Information 
+Technology, Beihang University, Beijing 100191, China
+b Key Laboratory of Road and Traffic Engineering, Department of Traffic Engineering, Ministry of Education, Tongji University, Shanghai 201804, China
+c The Department of Land Surveying and Geo-Informatics, The Hong Kong Polytechnic University, Hong Kong, China
+A R T I C L E  I N F O
+Keywords:
+Autonomous trucks
+Simulation environments
+Open-pit mining
+Planning tasks
+Scenario-based testing
+Obstacle avoidance
+A B S T R A C T
+Simulation environments are essential for validating algorithms, evaluating system performance, and ensuring 
+safety in autonomous driving systems before real-world deployment. Existing autonomous driving simulators are 
+designed for urban scenarios but lack coverage of unstructured road environments in open-pit mining. This paper 
+introduces MineSim, an open-source, scenario-based simulation test system specifically developed for planning 
+tasks in autonomous trucks operating in open-pit mines. MineSim includes several components: automated 
+scenario parsing, state update models for the ego vehicle, state update policies for other agents, metric evalu­
+ation, and scenario visualization tools. It incorporates numerous real-world traffic scenarios from two open-pit 
+mines that capture the unique challenges of unstructured road environments, including irregular intersections, 
+roads without clear lane markings, and the response lags of heavy autonomous mining trucks. Furthermore, 
+MineSim provides scenario libraries and benchmarks for static and dynamic obstacle avoidance problems, 
+facilitating research into planning algorithms in these complex settings. By offering reproducible testing methods 
+and scenario data, MineSim serves as a critical resource for advancing autonomous d
+[摘录至此；不是全文]
+
+===========================================================================
+接下来方向/接下来方向/方向.docx
+看论文：
+1、原文
+2、A New Challenge: Path Planning for Autonomous Truck of Open-Pit Mines in The Last Transport Section
+3、FusionPlanner: A multi-task motion planner for mining trucks via multi-sensor fusion
+4、Driving Maneuvers Prediction based Autonomous Driving Control by Deep Monte Carlo Tree Search 
+5、Multimodal Trajectory Prediction for Autonomous Driving on Unstructured Roads using Deep Convolutional Network
+6、Path Planning using Neural A* Search
+7、Scenario Engineering for Autonomous Transportation in Open-Pit Mines
+代码：
+1、LightZero/README.zh.md at main · opendilab/LightZero
+2、winds-line/deep-MCTS对应论文4
+问题：1、看看是否能改动场景（看看那个地图需要什么文件）2、理解方法，再套方法，看效果；
+主要做蒙特卡洛树搜索+神经网络（RL或者套网络参数寻优）
+[全文]
+
+===========================================================================
+接下来方向/接下来方向/论文记录.docx
+一：基于驾驶行为预测与深度蒙特卡洛树搜索的自动驾驶控制（重点）、
+不要只学习“现在应该怎么打方向”，而要学习“如果这么打方向，未来会发生什么”，然后利用搜索选择长期更好的动作。
+[全文]
+
+===========================================================================
+接下来方向/接下来方向/四篇论文精读翻译及其对MineSim的作用分析.docx
+MineSim-Dynamic 专题研读报告
+四篇论文精读翻译及其对 MineSim 的作用分析
+从运动规划、轨迹预测、学习型搜索到场景工程的系统化解读
+
+阅读目标
+本报告回答三个问题 第一，四篇论文到底提出了什么，关键方法和实验结论如何理解；第二，它们与 MineSim 当前的预测、规划、控制、Agent Policy、场景库和评价体系分别是什么关系；第三，哪些成果可以直接接入，哪些需要重构或新增基础设施。
+编制日期：2026年7月20日
+阅读说明
+这不是逐句机械直译，而是“忠实翻译 + 技术解释 + MineSim 工程映射”的精读版。正文保留论文的研究逻辑、关键符号、实验参数和主要数值，并把容易误解的术语改写成中文工程语言。参考文献列表不逐条翻译，只保留与理解方法和 MineSim 改造直接相关的内容。
+四篇论文的侧重点不同：FusionPlanner 是端到端控制型运动规划器；多模态轨迹预测论文属于动态障碍预测与 Agent 行为建模；Neural A* 属于学习增强的全局搜索；场景工程论文则是贯穿数据、场景、测试、校准和认证的系统方法论。
+重要边界 “论文方法有效”不等于“可原样放入 MineSim”。MineSim 当前主要面向场景状态与地图层面的规划测试，而部分论文依赖原始 LiDAR、GNSS、天气传感器和大规模训练数据。因此，本报告会明确区分：直接可用、需要适配、需要重大扩展。
+目录
+第一部分：MineSim 当前架构与四篇论文的关系图
+第二部分：FusionPlanner 精读翻译与 MineSim 作用分析
+第三部分：非结构化道路多模态轨迹预测精读翻译与 MineSim 作用分析
+第四部分：Neural A* 精读翻译与 MineSim 作用分析
+第五部分：场景工程精读翻译与 MineSim 作用分析
+第六部分：四篇论文的组合方案、优先级与实施路线
+附录：术语表、接口建议与验收指标
+第一部分  MineSim 当前架构与四篇论文的关系图
+截至本报告核查日期，MineSim 的核心定位是“面向露天矿山自动驾驶规划任务的场景化仿真测试系统”。Simulation Engine 依次组织 Environment Manager、Prediction Algorithm、Planning Algorithm、Motion Controller、Ego Update Model、Agent Update Policy 和 Test Logger；评价体系主要覆盖安全、效率、平顺性和任务完成。
+在动态障碍测试中，官方公开的预测方法包括完美预测、恒速度/恒横摆率预测，以及轻量级 CNN 多模态轨迹预测；规划器基线包括 IDM 纵向规划器与 SPPMM；闭环自车可使用 LQR、iLQR 或 Pure Pursuit 控制器，并配合不同的矿卡状态更新模型。多模态轨迹预测还被用于 Reactive Agent Policy。
+最关键的现状判断 第二篇论文的方法已经进入 MineSim 的公开组件；其主要问题不再是“是否能接入”，而是“如何让模型可重训、加地图约束并与风险规划结合”。另外三篇则分别补强端到端自车、全局搜索和场景工程基础设施。
+论文 | 核心能力 | MineSim 对应位置 | 当前关系 | 推荐定位
+FusionPlanner | LiDAR+GNSS 端到端控制、控制不确定性、多帧融合 | Planning Algorithm / Motion Controller / Sensor layer | 当前接口不能原样承载全部功能 | 先移植思想，再扩展传感器与控制接口
+多模态轨迹预测 | 其他车辆多条未来轨迹及概率 | Prediction Algorithm / Agent Update Policy | 已经有轻量实现 | 最高优先级完善：重训、地图约束、概率风险
+Neural A* | 学习引导的可微 A* 全局搜索 | Global route / Planning Algorithm 前端 | 公开基线中未作为核心方法提供 | 用作全局路由或现有规划器的启发式层
+场景工程 | 场景特征、数据增强、校准、V&V、覆盖度 | Scenario Library / Runner / Logger / Metrics | MineSim 有基础，但缺完整闭环 | 升级为场景工程平台和回归测试系统
+四篇论文可以组合成一条完整技术链：场景工程负责组织数据、场景和测试；轨迹预测负责推断其他车辆未来行为；Neural A* 负责从起点到目标生成全局引导；FusionPlanner 或传统规划控制链负责自车的局部运动和控制。
+层级 | 输入 | 输出 | 对应论文
+场景工程层 | 真实日志、虚拟场景、地图、模型版本 | 场景标签、覆盖度、测试计划、认证报告 | 场景工程
+行为预测层 | 动态 Agent 历史状态、局部地图 | M 条轨迹、概率、可选不确定性 | 多模态轨迹预测
+全局路由层 | 地图、起点、目标、道路代价 | 全局路线或引导代价图 | Neural A*
+局部规划/控制层 | 传感器或世界状态、路线、预测 | 轨迹或加速度/转角控制量 | FusionPlanner
+仿真与评价层 | 规划输出、车辆模型、Agent Policy | 闭环状态、碰撞、效率、平顺性、恢复能力 | MineSim + MiningNav/V&V
+论文 1
+FusionPlanner：多传感器融合的矿用卡车多任务运动规划器
+FusionPlanner: A Multi-task Motion Planner for Mining Trucks via Multi-sensor Fusion
+上传版本：arXiv v3 / 2023；22页。重点：LiDAR-GNSS 融合、任务不确定性、证据融合、MiningNav、PMS。
+1. 一页读懂
+论文试图解决一个直接而困难的问题：在没有清晰车道线、道路边界模糊、夜间视觉弱、GNSS 可能中断的露天矿山中，怎样让矿卡直接根据感知信息输出稳定、可信的驾驶控制。作者没有采用传统“感知-预测-规划-控制”逐层串联，而是构建了从 LiDAR 点云与 GNSS 定位到转向、油门和制动的端到端模型。
+模型不仅预测当前控制，还预测未来若干距离点的控制。因为 LiDAR 大约只有 10 Hz，而矿卡控制频率可能超过 50 Hz，作者利用历史帧对同一未来位置给出的多次预测进行融合。普通平均能够平滑控制，进一步的“证据融合”则用模型估计的不确定性给高置信预测更大权重。
+这篇论文实际上包含三个成果：FusionPlanner 算法、MiningNav 测试基准和 Parallel Mining Simulator（PMS）。对 MineSim 而言，最容易直接借鉴的不是完整 LiDAR 网络，而是 MiningNav 的扰动测试设计、控制不确定性、GNSS 失效注入和多帧融合机制。
+图1-1  FusionPlanner 总体结构（原文第6页图2）
+原文定位：论文1第6-11页，以及第17-19页实验结果。
+2. 摘要精读翻译
+近年智能车辆运动规划取得了显著进展，但露天矿山作为典型的非结构化环境，因为作业条件复杂、环境恶劣，受到的关注较少。论文提出了一套露天矿山无人运输范式。首先，作者利用多传感器融合提出面向矿用卡车的多任务运动规划算法 FusionPlanner，使系统同时适应横向和纵向控制任务。其次，构建 MiningNav 基准，通过三种验证方式评价训练后算法在矿山运输道路上的可信性与鲁棒性。最后，引入面向露天矿山的高保真 PMS 仿真器，使用户能够从单车控制和多车调度两个视角管理运输。实验表明，FusionPlanner 能显著减少碰撞和人工接管，但仍不能消除所有分布外事件。
+3. 研究动机与背景翻译
+露天矿山具有大尺度装备多、作业连续、人工成本高和安全风险高等特点，适合发展无人运输；但矿山道路与城市道路不同：护墙、土路和可行驶区域常由同质材料组成，缺少清晰边界，交通参与者类别较少，纹理和语义特征稀疏。夜间、雨雪、沙尘等环境又削弱了相机作用，因此作者强调 LiDAR、毫米波雷达等非视觉传感器。
+作者比较了流水线框架与端到端框架。流水线框架可解释、便于定位错误，但一个子模块失败可能拖垮全系统，而且多个模块与手工规则会增加时延。端到端框架可直接学习从原始感知到控制的映射，实时性和表示能力更强，但容易出现协变量偏移、因果混淆和黑箱问题。论文选择严格的离线模仿学习，以避免在真实矿场进行高成本在线强化学习。
+现有城市自动驾驶基准和仿真器并不
+[摘录至此；不是全文]
+
+===========================================================================
+可参考论文/可参考论文/1-s2.0-S0968090X26003761-main.pdf
+
+---PAGE 1---
+Risk-aware unsignalized intersection management in unstructured 
+mixed-traffic environment: a real-time hierarchical safety 
+evaluation method
+Fan Bu , Peng Chen *
+, Guizhen Yu , Yunpeng Wang
+State Key Laboratory of Intelligent Transportation System, Key Laboratory of Autonomous Transportation Technology for Special Vehicles, Ministry 
+of Industry and Information Technology, School of Transportation Science and Engineering, Beihang University, Xue Yuan Road No. 37, Hai Dian 
+District, Beijing 100191, China
+A R T I C L E  I N F O
+Keywords:
+Unsignalized intersection
+Mixed-traffic environment
+Cooperative right-of-way assignment
+Safety evaluation
+Risk field
+A B S T R A C T
+The mixed operation of connected automated vehicles and connected manual vehicles has 
+reshaped overall transportation management. Managing unsignalized intersections in unstruc­
+tured mixed-traffic environment presents inherent safety challenges, arising from a series of 
+factors such as human-driving uncertainties, irregular road boundaries, and uneven terrain. To 
+this end, this study proposes a risk-aware management method that determines the right-of-way 
+assignment strategy from a set of candidates, thereby optimizing passing orders for enhanced 
+operational safety and efficiency. Rather than directly solving the mixed-integer optimization 
+inherent in right-of-way assignment, the proposed method adopts a simulation–evaluation 
+paradigm to determine a near-optimal strategy. Central to this method is a hierarchical archi­
+tecture designed to assess the safety performance of each candidate right-of-way strategy. Spe­
+cifically, the upper layer generates simulated trajectories under candidate strategies and the lower 
+layer constructs a spatiotemporal risk field along these trajectories to quantify hazards arising 
+from the unstructured road environment and vehicles, capturing potential conflicts and human- 
+driving uncertainties. This risk-aware management method yields both instantaneous and long- 
+term risk metrics. By employing simulated trajectories as an intermediary, the abstract right-of- 
+way assignment task can be transformed into quantifiable safety assessment of candid
+[摘录至此；不是全文]
+
+===========================================================================
+可参考论文/可参考论文/362388.pdf
+
+---PAGE 1---
+1
+Safety-Critical Multi-Agent MCTS for Mixed
+Traffic Coordination at Unsignalized Intersections
+Zhihao Lin1, Jianglin Lan1,§, Christos Anagnostopoulos2, Zhen Tian1, and David Flynn1
+Abstract—Decision
+making
+at
+unsignalized
+intersections
+presents significant challenges for autonomous vehicles (AVs),
+particularly in mixed traffic scenarios where both AVs and
+human-driven vehicles (HDVs) must safely coordinate their
+movements. This paper proposes a safety-critical multi-agent
+Monte Carlo tree search (MCTS) framework that integrates
+deterministic and probabilistic predictions to enable cooperative
+decision making in complex intersection scenarios. The frame-
+work incorporates three main innovations: 1) a safety assessment
+mechanism that systematically handles AV-to-AV (V2V), AV-
+to-HDV (V2H), and Vehicle-to-Road (V2R) interactions using
+dynamic safety thresholds and spatiotemporal risk metrics, 2) an
+adaptive HDV behavior awareness by combining the Intelligent
+Driver Model (IDM) with probabilistic distributions, and 3)
+a multi-objective reward function optimization approach that
+balances safety, efficiency, and cooperation. Extensive simulations
+demonstrate our framework’s efficacy and superior capability in
+ensuring safe and efficient intersection navigation across the fully-
+autonomous scenario (100% AVs) and challenging mixed traffic
+scenario (50% AVs + 50% HDVs). Compared to benchmarks,
+our method reduces trajectory deviations by up to 37.56% in the
+fully-autonomous scenario and 62.43% in the mixed traffic sce-
+nario, while maintaining significantly lower Post-Encroachment
+Time (PET) violations (0% and 2.8%, respectively).
+Index Terms—Autonomous vehicles, decision making, mixed
+traffic, Monte Carlo tree search, risk assessment
+I. INTRODUCTION
+D
+ECISION making at unsignalized intersections presents
+significant challenges for autonomous vehicles (AVs) [1],
+particularly in mixed traffic environments where both AVs and
+human-driven vehicles (HDVs) must safely coordinate their
+movements without traffic signal guidance [2]. The complexity
+arises from the need to handle multiple types of critical
+interactions simultaneously while ensuring both safety and
+
+[摘录至此；不是全文]
+
+===========================================================================
+蒙特卡洛实现/蒙特卡洛实现/MCTS算法接入阶段汇报.docx
+MCTS 算法接入阶段汇报与下一步计划
+一、已经完成了什么
+步骤 | 工作模块 | 完成内容 | 状态
+1 | 接入局部规划链路 | 保留原有全局路径与车辆执行模块，MCTS 负责纵向动作决策。 | 已接入
+2 | 建立搜索模型 | 定义状态、四类动作（加速/保持/减速/制动）、状态转移和树搜索流程。 | 已实现
+3 | 加入安全机制 | 加入障碍物运动预测和二维车辆多边形碰撞检测；碰撞判定采用 0.5 m 缓冲区域，并加入净距奖励。 | 已实现
+4 | 搜索诊断 | 固定随机种子，记录访问次数、Q 值、奖励分解、预测净距和搜索耗时。 | 已完成
+5 | 完成闭环对照 | 在 Dapai、Jiangtong 两个测试场景中完成 MCTS 与 IDM 同条件运行。 | 已验证
+6 | 专家数据与版本归档 | 生成 448 条 MCTS 专家样本并完成完整性检查、发布包和 Git 标签；尚未开始神经网络训练。 | 已归档
+二、现在取得了什么结果
+场景 | 安全表现 | 通行表现 | 计算表现
+Dapai复杂交叉冲突 | MCTS：0 碰撞帧，最小净距 0.522 mIDM：21 碰撞帧，最小净距 0 m | MCTS 平均速度高约 30.6%，行驶距离多约 29.76 m | MCTS 1.37 HzIDM 22.78 Hz
+Jiangtong低冲突场景 | 两者均 0 碰撞MCTS 净距 2.260 mIDM 净距 2.341 m | MCTS 平均速度高约 5.4%，行驶距离多约 12.0 m | MCTS 3.18 HzIDM 15.22 Hz
+当前结果：MCTS 已在两个测试场景中完成闭环运行。Dapai 中 MCTS 为 0 碰撞帧、IDM 为 21 碰撞帧；Jiangtong 中两者均为 0 碰撞。
+方法特点：MCTS 两场的平均速度和行驶进度均高于 IDM，但规划频率仅为 1.37–3.18 Hz；IDM 计算更快、动作更平滑。
+结论边界：每种方法在每个场景仅运行一次；21 是碰撞帧数，并非 21 次独立事故；目标到达率尚未单独验证。
+三、接下来准备做什么
+第一步：扩大实验范围：增加独立场景、不同初始速度和交通扰动，并进行多次重复运行，补充安全成功率和目标到达率。
+第二步：定位计算瓶颈：分别分析树搜索、碰撞检测、障碍物预测和日志开销，明确当前 1.37–3.18 Hz 的主要耗时来源。
+第三步：优化 MCTS 实时性：比较不同搜索迭代数、剪枝、缓存复用和自适应计算预算，在碰撞数和最小净距不明显恶化的前提下提升规划频率。
+第四步：改善动作平滑性：减少离散动作频繁切换，加入动作保持、迟滞或加速度变化约束，降低速度差分得到的 jerk 代理指标。
+第五步：确定后续技术路线：完成多场景与性能验证后，再尝试神经网络加速；当前暂不接入神经网络。
+[全文]
+
+===========================================================================
+蒙特卡洛实现/蒙特卡洛实现/MineSim-Dynamic_MCTS接入与实验评估报告_20260802.docx
+MineSim-Dynamic 项目
+蒙特卡洛树搜索规划器接入与实验评估报告
+基于云端真实源码、Git 记录、运行日志、CSV 与质量门禁证据
+—  实验版本  —
+项目仓库 | /root/MineSim-Dynamic
+Git 提交 | 94693dc799fe5f325a75e8fc6d7d5e88764b4799
+发布标签 | mcts-expert-dataset-v1-20260802
+证据包时间 | 2026-08-02 05:11:12 UTC
+报告日期 | 2026年8月2日
+报告结论边界：现阶段证明的是两个确定性场景中的实现与实验表现，不构成全场景安全或泛化证明。
+摘要
+本报告说明蒙特卡洛树搜索（Monte Carlo Tree Search，MCTS）如何被接入 MineSim-Dynamic 仿真项目，并基于云端证据包评估其当前表现。当前实现不是独立于原工程重新搭建一套规划系统，而是继承 AbstractIDMPlanner，复用原有路线搜索、占用图构建、前导目标抽取、轨迹接口与下游控制链路，将纵向决策核心替换为几何感知的 MCTS。规划器每个周期从 EgoState 与 DetectionsTracks 构造根状态和障碍物快照，在四个离散纵向动作上执行 300 次、最大深度 8 的树搜索，并将选定动作转换为 16 个、间隔 0.5 s 的轨迹点，交给配置中的 two_stage_controller_ilqr_tracker_KBM 执行。
+安全机制由两层构成：第一层是硬约束式几何碰撞判断，障碍物预测占用在 0.5 m 安全边界上膨胀后与自车沿路径的多边形做相交检查；第二层是连续净距奖励，物理多边形净距低于 3.0 m 时产生二次惩罚。障碍物运动根据角速度在 CV、CTRV 或二者并集之间切换，并在 0.1 s 时间粒度上预计算未来占用。搜索采用 UCT 选择、随机扩展、带紧急制动尾部可行性检查的 rollout、折扣回传，并通过固定动作顺序、固定随机种子 42 和确定性平局规则保证可复现。
+实验覆盖 Dapai 与 Jiangtong 两个确定性场景。MCTS 在两个场景中均为零车辆碰撞帧和零道路边界碰撞帧；Dapai 中 IDM 出现 21 个连续碰撞帧，而 MCTS 的最小净距为 0.522 m；Jiangtong 中两者均安全，IDM 的最小净距略高。MCTS 两场加权平均速度比 IDM 高 13.329%，但规划频率仅为 1.371 Hz 和 3.178 Hz，低于 10 Hz 控制参考频率；IDM 则为 22.777 Hz 和 15.223 Hz。速度差分得到的舒适性代理显示，MCTS 的 jerk 明显大于 IDM。综合判断：当前 MCTS 在复杂交叉冲突安全、通行进度和专家数据生成方面具有明确价值，主要工程短板是计算频率，其次是离散动作导致的平滑性不足；现有证据不足以宣称全场景安全或总体优于 IDM。
+核心结论　当前 MCTS 已完成“可执行接入—几何安全—确定性诊断—专家数据—双场景对照”的闭环；适合作为复杂场景安全专家和离线教师，但尚不适合直接作为 10 Hz 高频在线规划器。
+关键词
+MineSim-Dynamic；蒙特卡洛树搜索；几何碰撞检测；净距奖励；CV/CTRV；IDM；专家数据；规划频率
+报告目录
+1. 报告依据、范围与证据可信度
+2. 项目规划链路与接入目标
+3. MCTS 接入项目的实施过程
+4. 当前 MCTS 方法的完整设计
+5. 运行时接入链路与轨迹执行
+6. 配置参数与可复现性设计
+7. 验证体系与实验方法
+8. MCTS 独立实验结果
+9. MCTS 与 IDM 对照结果
+10. 方法表现分析与阶段结论
+11. 局限性、风险与后续建议
+附录 A. 关键参数表
+附录 B. 证据索引与文件哈希
+附录 C. 当前数据集适用范围
+1. 报告依据、范围与证据可信度
+1.1 云端证据来源
+报告使用的证据包由 AutoDL 云端仓库只读采集，原始压缩包 SHA256 为 3818f81817d84c69cf0a8a34b61a6ee87ecd3c6ed7fa62b785b668c04a3a295c，共包含 96 个文件。解压后可校验的 94 个清单条目全部与证据包内文件匹配。证据覆盖当前源码、Git 提交与标签、MCTS/IDM 配置、完整场景日志、逐步 CSV、专家数据 manifest、质量门禁以及最终对照报告。
+证据类别 | 主要内容 | 用途
+版本证据 | HEAD、分支、提交图、发布标签、工作区状态 | 确定报告对应的代码版本
+实现证据 | MCTSPlanner、搜索、奖励、状态转移、几何模型、专家序列化 | 复原方法与接入链路
+配置证据 | simulation_mode_mcts_final/test 等 YAML | 确定下游控制器与规划参数
+实验证据 | Dapai/Jiangtong 控制台日志和步骤 CSV | 统计安全、速度、轨迹和耗时
+审计证据 | 专家数据 manifest、dataset card、quality gate | 判断数据完整性和适用边界
+对照证据 | MCTS vs IDM comparison.json/txt | 形成同场景对照结论
+1.2 版本基线
+证据包对应仓库 /root/MineSim-Dynamic，分支 fix-ilqr-determinism-20260731，HEAD 为 94693dc799fe5f325a75e8fc6d7d5e88764b4799，提交说明为“feat(mcts): emit strict expert policy samples”。注释标签 mcts-expert-dataset-v1-20260802 指向同一提交，并明确记录 448 条样本、2 个场景、质量门禁通过、神经网络训练尚未开始、泛化结论不受支持。
+工作区中的若干 YAML 与 .bak 文件是未跟踪文件，正式跟踪代码保持干净。报告对运行配置的描述会明确区分“已提交代码”和“云端使用的未跟踪实验配置”，避免将临时配置误写为发布代码。
+1.3 结论边界
+安全结论只覆盖 Dapai 与 Jiangtong 两个确定性回放场景，每个规划器每个场景各 1 次运行。
+碰撞数量是“碰撞仿真帧数”，不是独立事故次数；Dapai 的 21 帧来自与同一对象连续重叠。
+FULL SCENARIO EXECUTION PASSED 表示基准程序正常运行完毕，不等价于独立验证的目标到达。
+舒适性使用 0.1 s 速度差分得到的加速度和 jerk 代理，不等同于高精度车辆动力学测量。
+规划耗时包含日志和专家样本输出开销；它反映当前端到端实现，不是纯算法核的极限速度。
+2. 项目规划链路与接入目标
+2.1 原有 IDM 基线
+IDMPlanner 继承 AbstractIDMPlanner，其职责由两部分组成：首先搜索通向目标的路线，其次使用 IDM 纵向策略沿路线控制自车。compute_planner_trajectory 在每个周期读取当前 EgoState 与观测，构建局部 occupancy map 和去重后的目标对象，然后调用继承的 _get_planned_trajectory 生成可执行轨迹。该基线计算量较低，适合常规纵向跟车，但对横向交叉冲突的表达能力有限。
+2.2 MCTS 接入目标
+接入目标不是推翻 MineSim-Dynamic 的仿真与控制框架，而是在保持接口兼容的前提下，将“当前状态直接映射为纵向轨迹”的反应式决策替换为“比较未来多步动作序列”的搜索式决策。为降低工程风险，MCTSPlanner 仍继承 AbstractIDMPlanner，复用以下成熟能力：
+全局路线搜索及 ego path 表示；
+当前观测到 occupancy map 与 unique observations 的转换；
+前导对象抽取和路径进度计算；
+AbstractTrajectory / InterpolatedTrajectory 输出接口；
+仿真器的 propagate 接口和 two-stage controller 下游控制。
+设计原则　只替换纵向决策核心，尽量不改变项目已有的路线、观测、轨迹和控制边界，使 MCTS 能够作为原规划器的兼容替代实现。
+图 1　MCTS 在 MineSim-Dynamic 中的运行时接入链路
+3. MCTS 接入项目的实施过程
+3.1 版本演进路径
+Git 提交图显示，MCTS 采用逐层接入和逐步加固的方式进入项目，而不是一次性完成。
+[摘录至此；不是全文]
+
+===========================================================================
+蒙特卡洛实现/蒙特卡洛实现/MineSim-Dynamic_纯MCTS与神经网络增强实施手册_面向基础AI编码助手_2026-07-26.docx
+MineSim-Dynamic
+纯蒙特卡洛树搜索（MCTS）与神经网络增强实施手册
+面向只使用基础 DeepSeek / Kimi / 豆包等代码助手的独立执行流程
+项目 | 说明
+配套资产说明书 | MineSim-Dynamic_AutoDL云端项目环境与文件资产说明书_2026-07-26.docx
+正式项目 | /root/MineSim-Dynamic
+当前 Git 状态 | autodl-idm-baseline @ 2521aa4，working tree clean
+当前运行环境 | minesim / Python 3.9.25
+当前 baseline | IDMPlanner + Replay agents + iLQR + Kinematic Bicycle Model
+当前 MCTS 状态 | 尚未开始代码；mcts-dev 尚未创建
+目标 | 先得到可复现 Pure MCTS，再做 Value / Policy+Value 神经网络引导，最后与 IDM / SPPMM 公平比较
+这份手册的定位：不是“让某个 AI 一次性把项目写完”，而是把复杂研究拆成可验证的小步骤。任何基础代码助手只负责单个小任务；终端、Git、单元测试和仿真结果才是最终事实。
+目录与执行顺序
+0. 使用本手册之前必须理解的三条原则
+1. 根据云端资产说明书建立“唯一事实源”
+2. 项目目标、算法边界与“纯 MCTS”到底指什么
+3. 用基础 AI 写代码的标准工作法（非常重要）
+4. Phase 0：冻结 baseline，创建 mcts-dev 与研究目录
+5. Phase 1：先做 MCTSPlanner 空壳，不做 MCTS 算法
+6. Phase 2：定义状态 State、动作 Action 与 StateBuilder
+7. Phase 3：实现轻量 Transition Model
+8. Phase 4：设计 Reward、终止条件与安全约束
+9. Phase 5：实现 Pure MCTS 核心：Selection / Expansion / Rollout / Backup
+10. Phase 6：把 MCTS 决策变成 MineSim 可执行轨迹
+11. Phase 7：Hydra 配置、仿真模式与闭环集成
+12. Phase 8：单元测试、回归测试与故障定位
+13. Phase 9：Pure MCTS 参数实验与正式基线比较
+14. 评价指标：安全、效率、舒适、计算成本与统计规范
+15. 神经网络阶段总路线：不要直接跳到强化学习
+16. Phase N1：用 Pure MCTS 自动生成训练数据
+17. Phase N2：Value Network（最推荐的第一种神经增强）
+18. Phase N3：Policy + Value Network 与 PUCT
+19. Phase N4：迭代数据聚合 / 再训练
+20. 神经网络训练、验证、checkpoint 和数据盘组织
+21. 最终实验矩阵、消融实验与论文级结果表
+22. 常见失败模式与排查顺序
+23. 给 DeepSeek / Kimi / 豆包的可直接复制 Prompt 模板
+24. 预期最终代码目录树与 Git commit 路线
+附录 A. Pure MCTS 核心参考代码骨架
+附录 B. Policy-Value 网络参考骨架
+附录 C. 每一步“通过/不通过”验收清单
+执行原则：严格按 Phase 顺序推进。某一 Phase 的验收没有通过，就不要进入下一 Phase。尤其不要在 MCTSPlanner 接口尚未跑通时同时写树搜索、神经网络和训练脚本。
+0. 使用本手册之前必须理解的三条原则
+0.1 AI 不是项目事实源
+DeepSeek、Kimi、豆包可以很好地生成代码片段、解释报错、帮助重构，但它们没有自动看到你的云端文件，也不知道 MineSim-Dynamic 的真实 API。最危险的错误不是 Python 语法错，而是“代码看起来很专业，但调用了项目里根本不存在的属性、类或构造函数”。
+任何涉及 MineSim API 的代码，必须先把对应源文件原文提供给代码助手。
+让 AI 明确写出“哪些接口来自已提供源码，哪些地方仍未知”。
+只接受小 patch，不接受一次性重写整个 planner / sim engine。
+0.2 先证明集成正确，再证明算法有效
+第一阶段的目标不是“马上跑出比 IDM 好的结果”，而是证明新 Planner 能被 Hydra 正确加载、能收到 PlannerInput、能返回合法 AbstractTrajectory、现有 iLQR/KBM 能继续运行。这个接口问题与 MCTS 算法本身是两类问题，必须分开。
+0.3 Pure MCTS 不等于自己重写所有底层控制器
+本项目建议把 MCTS 定义为“无学习网络的高层决策搜索器”。MCTS 负责在 ACCEL / KEEP / DECEL / BRAKE 等高层动作上搜索；轨迹可由确定性的轨迹适配器、Frenet/SPPMM 轨迹生成逻辑或已有 route-based trajectory builder 生成；轨迹跟踪仍交给现有 iLQR，车辆更新仍用 K
+[摘录至此；不是全文]
+
+===========================================================================
+蒙特卡洛效果对比/蒙特卡洛效果对比/MineSim-Dynamic_MCTS在线闭环对比与搜索预算分析2026-08-07.docx
+MineSim-DynamicMCTS 与四种参考 Planner 的在线闭环对比及搜索预算分析
+数据截止：2026-08-07代码基线：Git Commit 94693dc799fe5f325a75e8fc6d7d5e88764b4799
+执行摘要
+这一阶段主要完成两件事：
+一是把 MCTS、IDM、Online Frenet、Online Adapted Maneuver 和 Simple 放到同一闭环框架下做完整场景对比；
+二是在其余参数不变的情况下，把 MCTS 的 Search Budget 从 50 调到 300，观察任务结果、轨迹变化和计算开销。需要先说明，严格的“同在线信息”比较主要针对 MCTS、IDM、Online Frenet 和 Online Adapted Maneuver；Simple 不使用 route、地图和障碍物，只作为能力下限参考。
+5 | 2 | 10 | 8 | 2/2
+种 Planner | 完整场景 | 主对比运行 | Budget 消融运行 | MCTS Safe Goal
+阶段性结果在 Dapai 和 Jiangtong 两个完整场景中，MCTS 都进入了目标区域，且车辆碰撞帧和道路边界违规帧均为 0。IDM 只在 Jiangtong 完成；Online Frenet 两个场景均未碰撞但均未到达；Online Adapted Maneuver 在当前适配条件下两个场景都未完成；Simple 只作为下限参考。Budget 消融中，300 是四档预算里唯一在两个场景都完成任务的设置。这些结果只描述当前两个场景，不应解释为总体成功率。
+当前结果概览
+MCTS 在 Dapai 第 198 步进入目标，在 Jiangtong 第 217 步进入目标；两个场景的碰撞帧和边界违规帧都为 0。
+IDM 在 Jiangtong 也能安全到达，但在 Dapai 出现 21 个碰撞帧且未到达。就这两个场景而言，它的结果不如 MCTS 一致，但不能据此否定 IDM 在其他场景的适用性。
+Online Frenet 两个场景均为 0 碰撞，但都没有进入目标区域。只看碰撞率会高估这类保守策略，因此任务完成必须与安全指标一起看。
+Online Adapted Maneuver 在当前适配和在线预测条件下两个场景均未完成，累计 67 个碰撞帧。这里评价的是当前适配版，不等同于对原始 SPPMM/Maneuver 方法的总体结论。
+Budget=300 是四档设置中唯一达到 2/2 Safe Goal 的配置；但 Jiangtong 在 Budget=50 时已经得到几乎相同的任务结果，说明固定使用高预算并不总是必要。
+文档结构
+研究背景与本轮实验问题
+五种 Planner 的实现与实验角色
+公平性处理与仍然存在的差异
+两个场景的五 Planner 闭环结果
+MCTS 搜索预算消融与关键决策窗口
+当前结论、适用范围和后续方向
+1　研究背景与本轮实验问题
+1.1 MineSim-Dynamic 与当前研究主线
+本次工作建立在现有 MineSim-Dynamic 闭环仿真链上，重点放在 local planner，而不是重新搭建仿真器。五种方法最终都通过既有控制与车辆模型执行。MCTS 沿全局 route 做纵向多步动作搜索，本轮实验主要检验：在动态车辆交互下，显式搜索多个未来动作序列，能否带来更一致的安全任务完成结果。
+当前版本还没有神经网络参与搜索，决策来自 MCTS 本身。后续如果引入网络，目标也不是改变本轮已经验证的任务定义，而是尽量用更少的搜索计算接近高预算 MCTS 的决策质量。
+1.2 为什么把 MCTS 放进这组对比
+选择 MCTS 不是因为预设它一定最好，而是因为五种方法的决策机制差异很明显：IDM 偏反应式纵向控制，Frenet 和 Maneuver 通过生成候选轨迹再筛选，Simple 几乎不做环境决策；MCTS 则在离散动作树里反复模拟未来结果。把这些方法放在同一闭环中比较，可以直接观察“前瞻搜索”是否会转化为实际的任务收益。
+这轮实验重点看三个问题：第一，MCTS 在当前两个完整场景中的任务完成是否更一致；第二，搜索预算增加后，动作和执行轨迹是否真的变化；第三，这些变化是否值得额外的计算时间。
+1.3 这轮实验主要回答的问题
+在相同场景和闭环执行条件下，四个主 Planner 的任务完成和安全表现有什么差异？Simple 作为下限参考放在旁边观察。
+为什么不能只看碰撞率，还要同时看 Goal、道路边界和任务推进？
+MCTS 的 Budget 从 50 增加到 300 后，动作、轨迹和任务结果是否真的发生变化？
+不同场景对搜索预算的需求是否一样，还是有的场景低预算已经够用？
+当前结果能为后续搜索加速提供哪些直接依据？
+图 1　主比较统一外部条件，Simple 作为下限参考
+2　五种 Planner：实现方式与实验角色
+五种 Planner 的内部结构差异很大，所以这里做的是系统级闭环对比：场景任务、时序、控制器和评价规则尽量统一，搜索空间和候选生成方式则保留各自实现。严格同在线信息的主比较对象是 MCTS、IDM、Online Frenet 和 Online Adapted Maneuver；Simple 不使用相关环境信息，只用来给出能力下限。
+Planner | 核心决策逻辑 | Route/地图 | 动态障碍 | 多步前瞻 | 横向采样 | 实验角色
+MCTS | 四离散纵向动作树搜索；UCT/rollout/backup | 是 | 当前观测 + CV/CTRV | 是，Depth=8 | 否（沿route纵向） | 核心方法
+IDM | 当前前车距离/相对速度驱动的反应式纵向控制 | 是 | 当前 leading object | 否 | 否 | 轻量反应式基线
+Online Frenet | Frenet坐标系生成二维多项式候选并筛选成本 | 是 | 公共在线预测 | 候选时域评估，非树搜索 | 是 | 经典轨迹采样基线
+Online Adapted Maneuver | 分段 jerk 机动组合 + Frenet 横向候选 | 是 | 公共在线预测 | 候选组合，非树搜索 | 是 | 适配版复杂采样基线
+Simple | 固定加速度/转角的运动学直行 | 否 | 不使用 | 否 | 否 | 能力下限（不参与同信息主排名）
+表 1　五种 Planner 的内部问题定义与实验角色
+2.1 MCTS
+当前 MCTS 沿全局参考 route 搜索四个纵向动作：BRAKE、DECEL、KEEP、ACCEL。根状态包含 route progress、速度、加速度、目标剩余距离、前车距离/相对速度以及终止状态等信息。
+每个 0.1 s 仿真步都会重新规划。当前观测中的障碍物先按 90 m 范围筛选，再用 CV/CTRV 生成未来占用。树搜索通过 Selection、Expansion、Rollout 和 Backup 更新根分支的 visits 与 Q；搜索结束后按当前实现的根节点选择逻辑给出动作，并生成控制参考。Decision Log 已经表明，最终动作并不是每一步都简单等于最大 Q 或最大 visits，因此这里把 Q/visits 用来解释搜索过程，而不把它们简化成单一决策规则。
+正式基线：Budget=300，max_depth=8，tree dt=0.5 s，c_uct=1.4，gamma=0.99，seed=42，use_viability_rollout=true。
+几何安全：预测占用按 0.1 s 离散；障碍物安全外扩 0.5 m；CV/CTRV 由角速度阈值切换。
+奖励由 progress、speed、safety、comfort 和 terminal 等部分组成。即时奖励只是当前动作的一步评价，MCTS 还会通过后续模拟把未来结果回传到根节点。
+2.2 IDM
+IDM 先沿 GlobalRoutePathPlanner 生成的参考路线确定自车纵向位置，再根据当前 leading object 的距离、相对速度、目标速度、headway 和最小间距计算加速度。其优点是计算快、规则明确；限制是缺少显式多步动作树与主动横向绕行能力。当前有效配置包括 target_velocity=10.5 m/s、accel_max=1.0 m/s²、decel_max=3.0 m/s²、headway=1.5 s、min_gap=1.0 m。
+2.3 Online Frenet
+Frenet 将自车映射到参考路线坐标系，采样横向
+[摘录至此；不是全文]
+
+===========================================================================
+蒙特卡洛效果对比/蒙特卡洛效果对比/MineSim_Dynamic_Pure_MCTS_项目交接与进展总览_2026-08-09.docx
+MineSim-Dynamic：Pure MCTS 自主矿卡规划项目
+项目交接与进展总览 / Handoff & Onboarding Document
+版本：2026-08-09    |    当前分支：multi-mcts-dev    |    当前 HEAD：f8ff186
+目的：让新加入的人或 AI 在 5–10 分钟内明确“项目在做什么、已经做到哪里、证据是什么、当前卡在哪里、下一步应执行什么”。
+30 秒结论项目已完成单车 Pure MCTS 基线、多车联合动作搜索、车辆间几何耦合、正式 FleetRewardModel 内部连续安全距离奖励，以及 dapai 场景上的双受控车辆闭环时序分离证据。当前主要阻塞不是算法本身，而是“第二个干净 benchmark 场景”的可用性。场景筛选已锁定 jiangtong 中唯一可能形成真实空间冲突的候选车辆 TrajInfo_Index_in_TrajSet=26；下一步是 V22 Step 2B 的时序可达性分析。
+最重要的工作约束
+算法口径固定为 Pure MCTS。不要写 Neural-MCTS，也不要声称训练过神经网络；当前没有训练 NN。
+当前阶段不要调 reward、hard margin、搜索预算或深度来“强行得到好结果”；先完成 benchmark 可用性判断。
+不要使用 git add .、git clean -fd、reset --hard；仓库存在大量重要但未跟踪/备份文件。
+所有正式结论要区分：内部 A-B 安全距离、外部交通清距、几何碰撞、时序冲突；不要把“某一场景安全”泛化成“整个系统安全”。
+AutoDL 资源很紧：0.5 CPU、2 GB RAM、无 GPU。正式 Pure MCTS 运行前应检查是否有无关 CPU 占用进程。
+目录与快速导航
+1.  项目目标与研究问题
+2.  当前系统边界与算法定义
+3.  环境、仓库与 Git 状态
+4.  代码与算法架构
+5.  已完成的关键实现
+6.  正式实验与证据矩阵（v14–v18）
+7.  第二 benchmark 场景筛选（v19–v22）
+8.  当前准确停点：V22 Step 2B
+9.  下一步执行计划与决策树
+10.  复现实验参数与运行规范
+11.  日志 / runner / 结果文件索引
+12.  已知风险、踩坑与禁止事项
+13.  论文/汇报可安全使用的表述
+14.  交接检查清单
+如果你是刚接手的 AI先读第 1、6、7、8、9 节。不要从头重新扫源码。当前需要继续完成的是 jiangtong 的 V22 Step 2B；此前的 dapai 正式证据链已经闭合。
+1. 项目目标与研究问题
+项目基于 MineSim-Dynamic，在露天矿山交通场景中研究自主矿卡/多车辆的局部决策与协同规划。当前主线不是端到端学习，而是构建并验证一个可解释、可复现的 Pure Monte Carlo Tree Search（MCTS）决策框架。
+1.1 当前核心研究问题
+单车：Pure MCTS 能否在真实 MineSim 场景中完成沿参考路线的纵向决策，并满足基础安全与目标到达约束？
+多车：将两个受控车辆同时纳入联合 MCTS 状态与联合动作空间后，是否能够在共享冲突区形成合理的“谁先通过、谁让行”的时序分离？
+机制：几何硬约束与连续安全距离软奖励分别如何改变树内联合策略，而不是仅在执行后被动避碰？
+benchmark：在不人为调参和不被无关第三方交通提前打断的条件下，能否找到第二个可复现的真实交互场景，用于跨场景验证？
+1.2 当前阶段性目标
+主算法和 dapai 证据链已经足够进入“冻结基线 + benchmark 扩展”阶段。当前首要任务是判断 jiangtong_intersection_9_3_2 是否能构成第二个原生多车交互 benchmark；若不能，应明确记录本地场景库不足，而不是继续通过调参制造冲突。
+2. 当前系统边界与算法定义
+维度 | 当前定义
+规划算法 | Pure MCTS；无神经网络价值函数/策略网络。
+动作空间 | 单车 4 个纵向动作（BRAKE / DECEL / KEEP / ACCEL）；双车联合动作笛卡尔积为 4×4=16。
+搜索 | 正式多车基线：budget=300，depth=8，c_uct=1.4，gamma=0.99，seed=0。
+车辆耦合 | 联合 FleetState / FleetTransitionModel；受控车辆之间采用真实几何 footprint 关系。
+外部车辆 | 外部 actor 通过 CV/CTRV 预测加入几何碰撞/清距检查；不是受控 MCTS agent。
+安全约束 | 硬几何安全 margin=0.5 m；正式内部连续安全距离 soft reward：safe=3.0 m，weight=0.5。
+坐标语义 | MineSim route progress 以 rear axle 定义；几何 footprint 以 geometric center 定义，已完成 rear-axle→center 对齐修正。
+当前不做 | 不训练 NN；不使用 IDM 代替联合 MCTS；不加入人工优先级规则；不做 
+[摘录至此；不是全文]
+
+===========================================================================
+MineSim地图更换/MineSim-Dynamic地图更换方案.docx
+MineSim-Dynamic
+地图更换方案
+按 Raster Map、Semantic Map 与 Scenario 分类整理
+
+姓名：________________学号：________________指导教师：________________
+2026 年 7 月 22 日
+摘要与阶段结论
+本报告在原有地图更换方案的基础上，将矿场资料和项目输出重新归入 Raster Map、Semantic Map 与 Scenario 三个部分。这种分类与 MineSim 原项目的数据流一致：Raster Map 描述可行驶空间，Semantic Map 描述道路语义和路径拓扑，Scenario 引用 HD Map 并定义一次具体仿真任务。
+阶段结论 MineSim-Dynamic 的新矿区接入需要形成一张二值栅格 PNG、一份符合当前 Loader 数据模式的 semantic_map.json，以及至少一个引用该地图的 Scenario JSON。三者必须使用一致的地图标识、坐标基准和版本配置。
+部分 | 解决的问题 | 最终输出 | 最关键的数据
+Raster Map | 哪里可以行驶、哪里不可行驶 | <location>_bitmap_mask.png | 道路可行驶面、禁行区、坐标范围、比例尺
+Semantic Map | 道路是什么、边界在哪里、车辆应怎样走 | <location>_semantic_map.json | 道路区域、边界、中心线、路口连接、拓扑、高程坡度
+Scenario | 在这张地图上测试谁、从哪里到哪里、遇到什么障碍 | Scenario-*.json | 地图引用、自车起终点、车辆参数、动态轨迹、静态障碍物
+与矿场沟通说明
+以下数据要求主要用于判断矿场现有资料能否支持 MineSim 地图和场景制作，并非要求矿场按照本文格式重新制作全部数据。烦请优先提供现有测绘、设计、运营和车辆运行成果；如某些字段或格式暂时不具备，可先说明现状，由项目组完成转换、补绘和结构化整理。
+目录
+一、MineSim 地图与场景的组成
+二、Raster Map：可行驶空间所需数据
+三、Semantic Map：道路语义与拓扑所需数据
+四、Scenario：仿真任务所需数据
+五、通用原始资料、交付格式与质量要求
+六、成果文件、制作流程与项目运行流程
+七、验证、评价与验收标准
+八、主要风险与资料不足时的处理
+九、版本说明与复现要求
+十、参考资料
+一、MineSim 地图与场景的组成
+（一）三部分的关系
+MineSim 中需要区分“地图本体”和“仿真任务”：
+Raster Map：二值栅格图，每个像素用 0 或 1 表示不可行驶或可行驶区域。
+Semantic Map：语义 JSON，保存道路区域、边界、参考路径、路口连接、高程坡度和 token 关联。
+Scenario：场景 JSON，引用对应 HD Map，并定义自车、目标、动态障碍物、静态障碍物和时间信息。
+关系说明 Raster Map 与 Semantic Map 共同构成矿区 HD Map；Scenario 不属于地图本体。一个 HD Map 可以被多个 Scenario 重复引用，例如同一交叉口地图可以分别建立空场景、单车会车场景和多车冲突场景。
+（二）三部分共用的数据基准
+三部分并不是相互独立的数据包，至少需要共享以下基础信息：
+统一地图标识（location 或当前分支中的等价字段）；
+统一局部坐标系和坐标单位；
+统一地图原点、X/Y 轴方向和高程基准；
+Raster Map 与 Semantic Map 一致的 local_x_range、local_y_range 和比例尺；
+Scenario 中自车、目标和障碍物坐标与 HD Map 使用同一坐标基准。
+（三）推荐目录结构
+MineSim-workspace/├── datasets/│   ├── maps/│   │   ├── bitmap/│   │   │   └── <location>_bitmap_mask.png│   │   └── semantic_map/│   │       └── <location>_semantic_map.json│   └── scenario-library-all/│       └── Scenario-<scenario_name>.json└── MineSim-Dynamic/    ├── devkit/    └── inputs/                 # 仓库中的示例 Scenario
+实际目录可以调整，但项目中的 dir_maps、Scenario 地图引用和 Loader 文件映射必须指向同一套地图文件。
+（四）原始资料到三类输出的总对应
+矿场资料 | Raster Map | Semantic Map | Scenario
+坐标系、投影、局部原点、控制点 | 确定栅格位置与范围 | 确定所有几何与路径坐标 | 确定自车、目标和障碍物坐标
+道路可行驶面、边界、禁行区 | 生成 0/1 掩码 | 生成 polygon、road、borderline 等 | 可用于选择起终点和障碍物位置
+道路中心线、GNSS 
+[摘录至此；不是全文]
+
+===========================================================================
+MineSim地图更换/MineSim-Dynamic新地图代码接入.docx
+MineSim-Dynamic
+新地图接入：代码修改与验证说明
+
+地图数据注册、Loader 适配、Scenario 配置、车辆参数与验收流程
+审校日期：2026 年 7 月 22 日
+摘要
+部分 | 回答的问题 | 主要文件或模块 | 通常需要做什么
+Raster Map | 哪里可以行驶？ | bitmap_mask.png、Bitmap Loader | 放置 PNG；核对文件映射、尺寸、比例和 Y 轴方向
+Semantic Map | 道路是什么、怎样连接？ | semantic_map.json、Semantic Loader | 登记 location/版本；校验图层、token、路径拓扑
+Scenario | 这一次如何测试？ | Scenario-*.json、车辆参数、Agent Policy | 引用地图；配置起终点、车辆、障碍物和时间
+共用部分 | 程序如何找到并组合三部分？ | sim_engine_conf.py、Map API、注册表、验证脚本 | 统一路径、location、版本和验收流程
+使用边界
+本文中的 shanxi_newmine 是示例 location，正式使用时应替换为项目实际地图标识。
+示例路径、地图版本和 VehicleParameters(...) 只用于标明修改位置，不能直接作为运行配置。
+官方文档可以确认 HD Map、Scenario 和语义图层的总体结构；具体文件路径、类名和硬编码字典必须以本地 Git commit 为准。
+若本地分支已经改为配置驱动，应修改配置文件或注册表，不应继续扩展旧式硬编码。
+目录
+一、原项目结构与三部分调用链
+二、共用基础配置与命名规则
+三、Raster Map：栅格地图接入与代码修改
+四、Semantic Map：语义地图接入与代码修改
+五、Scenario：仿真场景接入与代码修改
+六、通常不需要修改的模块与例外情况
+七、联合验证、实施顺序与常见问题
+八、最终验收清单
+附录 A：三部分最小修改示例
+附录 B：统一 MAP_REGISTRY 方案
+参考资料与版本说明
+一、原项目结构与三部分调用链
+从 MineSim 的工程职责看，Raster Map 与 Semantic Map 共同组成一张 HD Map；Scenario 不属于地图本体，而是一次仿真任务的描述文件。代码接入时应先把三者区分，再沿调用链检查路径、地图标识和数据格式。
+Raster Map：<location>_bitmap_mask.png        +Semantic Map：<location>_semantic_map.json        ↓MineSim HD Map        ↑Scenario.link_map 选择该地图，并配置自车、目标、车辆与障碍物
+1.1 地图进入仿真系统的调用链
+PNG + semantic JSON        ↓SimConfig['directory_conf']['dir_maps']        ↓Scenario.link_map        ↓Scenario 解析器得到 map_root / location（字段名以实际分支为准）        ↓get_maps_api(map_root, map_name)        ↓Bitmap Loader + Semantic Map Loader        ↓MineSimMap        ↓Planner / Controller / Simulation / Visualizer
+这条链路说明：Planner 不应直接打开 semantic JSON，Simulation 也不应自行拼接 PNG 文件名。地图文件由 Loader 读取，经 MineSimMap 组合后，通过统一 Map API 提供给上层。
+1.2 修改内容概览
+分类 | 文件或数据 | 是否必改 | 判断依据
+共用 | sim_engine_conf.py / dir_maps | 路径变化时必改 | 必须指向包含 bitmap/ 与 semantic_map/ 的 maps 根目录
+Raster | 新 bitmap PNG | 必须 | 提供新矿区二值可行驶掩码
+Raster | minesim_bitmap_png_loader.py | 视分支而定 | 仅当 location→PNG 仍硬编码时登记新地图
+Semantic | 新 semantic JSON | 必须 | 提供道路区域、边界、路径和拓扑
+Semantic | minesim_semanticmap_json_loader.py | 视分支而定 | 仅当 location、文件名或 version 仍硬编码时登记
+Scenario | 新的 Scenario-*.json | 必须 | 通过官方 link_map 引用地图并定义任务
+Scenario | vehicle_parameters.py | 视调用链而定 | 只有仍按 mine/location 选车型时才需增加映射
+Scenario | Agent Policy | 通常不用 | 官方字段不变时 Replay/Reactive
+[摘录至此；不是全文]
+
+===========================================================================
+MineSim地图更换/一些定义与功能.docx
+Loader：加载器，负责将硬盘上的PNG.JSON文件转化为Python 程序能够查询和使用的对象。
+MineSim 中两个主要 Loader 分别做什么
+A. MineSimBitMapPngLoader
+源码位置：
+devkit/sim_engine/map_manager/minesim_map_data/└── minesim_bitmap_png_loader.py
+它主要完成六件事。
+1. 根据 location 找到文件
+例如：
+location = guangdong_dapai
+映射成：
+guangdong_dapai_bitmap_mask.png
+2. 从语义 JSON 读取 Bitmap 元信息
+包括：
+local_x_rangelocal_y_rangescale_PixelPerMeter
+3. 打开 PNG
+image = Image.open(dir_bitmap)
+4. 转换成二值数组
+image.convert("1")
+最终得到类似：
+True  = 可行驶False = 不可行驶
+5. 翻转 Y 轴
+图片坐标通常左上角为原点，地理坐标通常左下角为原点。
+代码执行：
+np.flipud(image_ndarray)
+把图片上下翻转，使像素方向与地图坐标方向对齐。
+6. 实现地图坐标到像素坐标的转换
+代码核心是：
+pixel_x = int((x - x_range[0]) * scale)pixel_y = int((y - y_range[0]) * scale)
+例如：
+local_x_range 起点 = 1000 mscale = 10 pixels/m车辆 x = 1012 m
+则：
+pixel_x = (1012 - 1000) × 10        = 120
+Loader 就知道车辆对应 PNG 第 120 列。
+B. MineSimSemanticMapJsonLoader
+源码位置：
+devkit/sim_engine/map_manager/minesim_map_data/└── minesim_semanticmap_json_loader.py
+它主要完成七件事。
+1. 检查矿区名称
+assert location in locations
+2. 根据 location 找到 JSON
+例如：
+jiangxi_jiangtong→ jiangxi_jiangtong_semantic_map.json
+3. 读取 JSON
+json.load(f)
+4. 检查地图版本
+例如：
+代码支持版本：1.6JSON 版本：1.5
+则拒绝继续加载。
+5. 读取所有地图图层
+包括：
+nodepolygonroadintersectionreference_pathborderline...
+6. 建立 token 索引
+假设有：
+{  "token": "path-128"}
+Loader 会建立：
+path-128 → reference_path 数组中的第几个对象
+后续查询时，不需要遍历整个地图。
+7. 提供统一查询接口
+例如概念上的：
+semantic_map.get(    "reference_path",    "path-128")
+即可拿到一条参考路径。
+十三、Loader 在整个项目中的位置
+完整调用链是：
+Scenario 中的 map_root + location        ↓MineSimDynamicScenario.map_api        ↓get_maps_api()        ↓┌───────────────────────────────┐│ MineSimBitMapPngLoader        ││ 读取 PNG、比例、坐标范围       │└───────────────────────────────┘                +┌───────────────────────────────┐│ MineSimSemanticMapJsonLoader  ││ 读取图层、token、路径拓扑      │└───────────────────────────────┘        ↓MineSimMap        ↓统一 Map API        ↓Planner / Simulation / Visualizer
+get_maps_api()当前就是分别创建 Bitmap Loader 和 Semantic Loader，再把它们封装成 MineSimMap。
+Scenario 用 map_root 告诉系统地图放在哪里，用 location 告诉系统选择哪个矿区；map_api 调用 get_maps_api()，分别通过 Bitmap Loader 和 Semantic Loader 读取栅格与语义数据，再由 MineSimMap 封装为统一地图对象，最终交给 Planner 做路线搜索、交给 Simulation 组织仿真，并供 Visualizer 绘制地图。
+Token：为每一个地图元素分配稳定且唯一的身份，并通过 token 引用把点、面、边界、控制点和参考路径连
+[摘录至此；不是全文]
+
+===========================================================================
+MineSim地图更换/新地图说明.txt
+可以。现在我把 **J117 新地图到底是什么、文件在哪里、目前做到哪一步、接下来为什么这样做** 一次梳理清楚。
+
+## 一、这张“新地图”现在到底是什么
+
+你最开始给的是一套真实 GeoJSON 地图源数据，包括 `lane / road / road_boundary / junction / load / unload / auxiliary / rgn_boundary` 等图层。我们真正用于仿真的不是直接读取这些 GeoJSON，而是经过 Phase 1～3 转换之后形成的 **MineSim J117 pilot semantic map**。
+
+当前核心地图文件是：
+
+```text
+/root/autodl-tmp/new_map_phase2_j117/
+├── semantic_map/
+│   └── geojson_j117_pilot_semantic_map.json
+├── bitmap/
+│   └── geojson_j117_pilot_bitmap_mask.png
+├── conversion_manifest.json
+├── source_manifest.json
+├── validation/
+└── figures/
+```
+
+audit 显示 semantic map 约 3.35 MB，同时还有 raster/schema/topology/source-traceability 等验证结果。
+
+地图版本是：
+
+```text
+pilot-geojson-j117-v1
+```
+
+地图生成日期是 `2026-08-09`。它在文件内部被标记为 **INTERNAL PILOT**，也就是说目前是我们用于 J117 新地图验证的 pilot 转换结果，不是仓库原生已有的正式注册地图。
+
+Phase 3 又把这张地图整理成 production API 可以读取的目录：
+
+```text
+/root/autodl-tmp/new_map_phase3_maps/maps/
+├── semantic_map/
+│   └── geojson_j117_pilot_semantic_map.json
+└── bitmap/
+    └── geojson_j117_pilot_bitmap_mask.png
+```
+
+并且已经做过 semantic loader、bitmap loader、map API 和 production query 测试。
+
+---
+
+## 二、J117 里面我们现在真正使用的两条路线
+
+semantic map 里已经把原始 Lane 转成 `reference_path`。
+
+### Route A
+
+```text
+原始 Lane：
+6670 → 6674 → 5690
+
+semantic map：
+path-0 → path-1 → path-2
+```
+
+其中：
+
+```text
+path-0 = approach road
+path-1 = Junction 117 connector
+path-2 = exit road
+```
+
+### Route B
+
+```text
+原始 Lane：
+5691 → 6546 → 6523
+
+semantic map：
+path-3 → path-4 → path-5
+```
+
+audit 中能直接看到六条 reference path 的真实 waypoint 数据，其中：
+
+```text
+path-0: 1833 points
+path-1: 306 points
+path-2: 2180 points
+
+path-3: 2203 points
+path-4: 194 points
+path-5: 755 points
+```
+
+
+
+所以现在的实验不是在一张“示意图”上做的，而是在从原始地图转换出来的真实路径几何上跑。
+
+---
+
+## 三、真实冲突点
+
+两条 route 在 Junction 117 内存在真实几何交点。
+
+UTM：
+
+```text
+(412078.08878684574,
+ 4919599.656085037)
+```
+
+semantic map 使用 local coordinate，因此：
+
+```text
+E0 = 409200
+N0 = 4916800
+
+Conflict local =
+(2878.08878684574,
+ 2799.656085037)
+```
+
+Phase 5B 脚本里这套坐标转换和 conflict point 是明确写死并经过计算验证的。
+
+投影到两条完整 route：
+
+```text
+A_conflict_s ≈ 393.524374 m
+B_conflict_s ≈ 465.527535 m
+```
+
+这就是以后所有冲突判断应该统一使用的真实 benchmark 点。
+
+---
+
+# 四、最初的双车 benchmark 是怎么设计出来的
+
+Phase 5B 做的不是随便放两辆车，而是在真实道路中心线和 XG90G footprint 约束下搜索起点。
+
+最终得到：
+
+```text
+A:
+route_s = 20.0 m
+v
+[摘录至此；不是全文]
+
+===========================================================================
+MineSim地图更换/汇报.docx
+该项目要做什么，怎么做。流程是什么
+更换地图需要哪些文件，为什么需要，在地图中分别充当什么部分
+在有了这些文件之后，我们要更改原项目的哪些代码，才能实现地图更换
+项目首先需要取得矿场现有的道路测绘、CAD/GIS、正射影像、点云和车辆运行轨迹等资料，并统一坐标系。从这些资料中提取道路可行驶区域、道路边界、道路中心参考线、交叉口连接、装卸区、禁行区以及高程坡度等信息。
+道路可行驶区域经过栅格化后，生成由 0 和 1 表示不可行驶和可行驶区域的二值栅格 PNG；道路区域、边界、参考路径、路口连接关系和 token 拓扑则按照 MineSim 官方数据结构生成一份 Semantic JSON。二值栅格 PNG 与 Semantic JSON 共同组成新的矿区 HD Map。随后再创建引用该地图的 Scenario 文件，并完成 Loader 注册、路线搜索和闭环仿真验证。
+[全文]
+
+===========================================================================
+0824_partial/00_交接总文档/MineSim-Dynamic_全项目超详细阶段性总总结与AI无缝接管手册_2026-08-24.docx
+MineSim-Dynamic
+全项目超详细阶段性总总结与 AI 无缝接管手册
+Evidence cutoff：2026-08-24（包含 C03 Full Collection 与 Value V2 静态接入最新进展）
+主线：MineSim 复现 → 蒙特卡洛/MCTS 接入 → 单车跑通 → 双车冲突场景构建 → FullMine 新地图接入 → Fleet-MCTS 双车联合规划与多种子验证 → 原生 MineSim 可视化与汇报材料 → 云端文件安全整理 → 后续神经网络接入
+用途：供下一位 AI / 工程人员在不重新扫描全项目、不重复已冻结实验、不重新询问大量背景的前提下，安全、低成本、可复现地继续推进。
+正式仓库：/root/MineSim-Dynamic实验数据根：/root/autodl-tmp当前冻结 HEAD：112d2bd0f3412fc83b13d5587d2b41402d2d0f5e
+文档控制与证据口径
+项目 | 当前定义
+证据截止 | 2026-08-24；包含本轮 C03 causal/technical smoke/full collection 与 Value V2 evaluator 静态清点。
+事实优先级 | 当前 AutoDL 终端 / Git / 源码 / 文件 SHA / 实际运行输出 > frozen result/manifest/lock/bundle > 最新交接 Word > 历史 Word > 计划 > 模型记忆。
+作者归属 | 云端脚本、锁与日志可以证明“实际完成了什么”，但并非每个文件有独立 Codex 作者签名；本文不虚构逐文件作者。
+失败分类 | 必须区分 wrapper/import/path/runtime contract/technical/scientific。文件存在不等于 PASS；需结合 RC、JSON、结果字段与 gate。
+未验证规则 | 任何缺少直接证据的内容标记“未验证/HOLD”；不得用常识补齐。
+文档适用范围 | 当前综合接手文档覆盖会话中可见项目材料；不等于实时枚举 AutoDL 上全部文件。
+本文整合了 2026-08-18、08-21、08-23 三版综合接手手册、RADEME、项目压缩包/冻结包、2026-08-23～08-24 终端日志，以及本轮 C03 与 Value V2 静态审计的真实输出。旧文档中的“下一步”仅作为历史快照；与更晚终端结果冲突时自动降级。
+证据来源：MineSim-Dynamic_全项目阶段性总总结与AI无缝接管手册_2026-08-18/21/23.docx；RADEME.txt；20260823-20260824 终端日志。
+静态目录
+目录 1–12 | 目录 13–23
+1. 当前项目 30 秒状态与快速结论 | 13. 重要失败、排查与永久禁忌
+2. 真实发展时间线 | 14. 当前有效 / SUPERSEDED / ARCHIVE / HOLD 矩阵
+3. 运行架构、核心调用链与依赖边界 | 15. 关键 Commit / Tag / SHA 速查
+4. 阶段一：MineSim 原项目复现与 IDM Baseline | 16. 当前云端目录、依赖和恢复方式
+5. 阶段二：蒙特卡洛 / Pure MCTS 接入 | 17. 运行环境、资源与统一命令规范
+6. 阶段三：单车跑通 | 18. 用户—ChatGPT—Codex 协作规则
+7. 阶段四：双车冲突场景、MultiEgoRuntime 与 causal benchmark | 19. 文档生成、归档、移动与删除情况
+8. 阶段五：FullMine 新地图接入与 Vector V4 冻结 | 20. 会话材料与压缩包清单
+9. 阶段六：Fleet-MCTS 联合规划、多种子与跨场景结论 | 21. 快速接手区
+10. 阶段七：原生 MineSim 可视化与汇报材料 | 附录 A：统一 preflight / recovery checklist
+11. 阶段八：云端文件安全整理、目录系统与恢复 | 附录 B：本交付压缩包文件 Manifest
+12. 阶段九：后续神经网络接入与当前 C03 / Value V2 进展 | 
+1. 当前项目 30 秒状态与快速结论
+阶段 | 状态 | 当前真实结论
+MineSim 原项目复现 | PASS / FROZEN | Dapai/Jiangtong IDM、replay 与 closed-loop baseline 已建立；不重做。
+Pure MCTS 接入 | PASS / FROZEN | 真实 MineSim online closed-loop 已跑通，历史 strict expert 448 条。
+单车跑通 | PASS / FROZEN | J117 Phase4C 423 steps；FullMine representative Pure MCTS 3/3。
+双车冲突场景 | PASS / FROZEN | J117、Polygon21 与 cross-scene 通过 NO-MCTS exact footprint overlap 建 causal benchmark。
+FullMine 新地图 | PASS / FROZEN | Vector V2 semantic + V4 bitmap/runtime/planner，targeted 7/7 + old-map regression。
+Fleet-MCTS | PASS + 负结果 | Polygon21 5/5；C04/C06 success；C11 安全但 deadlock，必须保留。
+原生可视化 | PASS / FROZEN | Native Video V2 final；Map Showcase V2 stable；V3 incomplete/HOLD。
+云端整理 | PASS / COMPLETE | 约 530→121；423 move/isolate；科研文件删除 0；restore gate PASS。
+C03 independent collection | PASS / FROZEN | 135 roots、2160 action records、8640 expansions，benchmark_success=True。
+Value V2 接入 | STATIC PREP / HOLD | metric closure、feature/model inventory、inference source inventory已锁；真实 C03 checkpoint load/forward/prediction/metrics均未执行、未授权。
+当前真正节点：C03 full collection 已冻结，Value V2 evaluation 的 metric 侧已完成 exact closure synthetic PASS；12维冻结 feature 顺序、normalization 与模型结构已确认。下一步不是训练或直接 forward，而是低资源锁定“嵌套 JSON feature mapping + 已证明的 checkpoint load/forward chain”，再做 synthetic checkpoint-compatible forward；真实 C03 one-time evaluation 仍未授权。
+资源判断：当前下一步仅低资源 CPU；不要开高资源卡。只有完整 evaluator 静态链和 synthetic forward PASS 后，才讨论唯一一次真实 C03 Value V2 forward。
+2. 真实发展时间线
+日期 | 阶段 | 真实完成与意义
+2026-07-26 | 云端 baseline / 安全操作规范 | AutoDL 安全交互、Git 恢复、文件优先、“先读接口再改代码”。
+2026-07-30～08-02 | Pure MCTS closed-loop | MCTSPlanner→search/reward→trajectory adapter→Controller/KBM；commit 94693dc；448 strict expert。
+2026-08-03～07 | 五 Planner / budget / interface audit | MCTS、IDM、Frenet、Adapted Maneuver、Simple；形成搜索/adapter/controller故障分域
+[摘录至此；不是全文]
+
+===========================================================================
+MineSim_Dynamic_正式交接完整包_论文标准对齐版_V1_20260910/MineSim_Handoff_20260910_V1/MineSim_Dynamic_正式交接_论文标准对齐版_V1_20260910.docx
+MineSim-Dynamic 项目正式交接文档
+教师标签、神经排序与剪枝证据链｜论文标准对齐版 V1
+证据截止与编制日期：2026年9月10日
+从原项目复现到教师标签与剪枝评价的完整证据链
+用途：下一轮对话 / 下一位研究者无损接手
+当前终点：论文标准核查完成，准备只读对齐安全—效率评价契约。
+旧K13工程负结论保留；新诊断网络未部署；统计保证分支独立HOLD。
+本交接未启动新实验，未修改冻结数据、源码或参数。
+目录与阅读路径
+阅读入口先看当前状态；最后的快速接手区可直接交给下一位AI。公式与证据索引位于第16章。
+阅读入口与当前结论3
+1. 权威性、证据截止与状态管理5
+2. 按真实主线恢复工程成果6
+3. 统一符号、真实搜索与奖励实现8
+4. Value V2、Value V3与K13：方法及冻结结论10
+5. 训练数据审计：从文件正确到教师可靠13
+6. 相对排序候选、36-root Pilot与来源修复15
+7. 新诊断网络：可学习性、泛化与覆盖对照17
+8. 时域问题：同轨迹后段回报足以翻转排序20
+9. 从叶状态恢复到完整策略回报22
+10. 统计识别与任务目标：为何后来分成两条路径24
+11. 回到原论文：真正标准与项目适配边界27
+12. 当前终点：论文标准参考已接受，评价契约尚待源码对齐30
+13. 重要失败、误判及必须保留的修正32
+14. 固化协作规则、资源与执行安全34
+15. 资产、实验命名空间、云端与删除台账36
+16. 来源索引、论文定位与公式导航38
+17. 快速接手区41
+文内 [E] 为项目证据，[P] 为论文/方法来源，[S01] 为用户工作流。页码按本次渲染核对；修改内容后请更新目录。
+阅读入口与当前结论
+本交接的终点：历史工程与教师诊断结果已形成证据链；论文标准已经核查，下一步准备对齐“安全—完成—通行效率—搜索开销”的开发评价契约。不是重新做地图，不是继续救旧K13，也不是等待一个秒制容忍度才能开展所有研究。
+本次仅整理证据、核对来源、解释公式并生成交接文件。没有连接AutoDL实时终端，没有启动新的MCTS、状态推进、训练或模型部署。历史报告中的“已独立复算”“测试通过”是对应步骤的执行记录；本交接没有把这些实验全部重跑。当前容器文件的存在性与外层SHA另列在 evidence_inventory.csv/json 中，不等于云端文件的实时存在性。[S01；E03；E29]
+交接字段 | 当前有效内容
+正式仓库 | /root/MineSim-Dynamic；数据与结果优先 /root/autodl-tmp
+最后返回的Git HEAD | 112d2bd0f3412fc83b13d5587d2b41402d2d0f5e；不是本轮实时查询
+Git工作区 | 最近返回快照包含未跟踪项 ?? ^C；“前后未变”不等于clean，不得为整洁删除
+旧神经网络 | Value V3已真实接入根节点评分、排序与门控；未证明优于Pure MCTS
+旧K13 | 局部16→13剪枝有效；稳定、可复现端到端加速不成立；分支冻结关闭
+新诊断网络 | 已验证部分确认排序可学习；新状态泛化及动作排除依据不足；未替换旧Value V3
+教师标签 | 已确认采样分配、覆盖、时域和目标定义均值得处理；不能宣布所有2356条失效
+最新动作价值证据 | 两个C06状态，首动作后由原生B64/H8接管；旧128＋新256条规划模型轨迹
+当前交接Gate | HANDOFF_AND_PAPER_STANDARD_MAPPING_FREEZE；本交接新建管理标识，不冒充已有云端Gate文件
+下一最小Gate | PAPER_ALIGNED_EVALUATION_CONTRACT_PREFLIGHT：只读核对指标定义、源码字段、几何及数据可用性
+下一步资源 | LOW；只读定义与证据核对，不预先开GPU或长仿真
+独立HOLD分支 | 带统计保证的动作排除：任务容忍度、风险限额、统计假设、错误预算与采样上限尚未批准
+一分钟理解本项目的变化
+最初问题是“网络离线训练看起来尚可，为什么接入MCTS及剪枝后收益差”。后续没有直接增加训练轮数，而是沿证据逐层追查：先发现重复状态和低支持Q标签，再发现根访问分配失衡；均衡访问降低了数值波动，但完整排序仍不稳定。独立种子确认提取出可学习的部分关系，然而新状态上的泛化仍可能失败。来源拆分又把局部异常定位到两个相近C06状态，进一步证实4秒搜索截断遗漏的后段回报足以翻转排序。[E06；E11—E19]
+随后建立了完整叶状态恢复、随机数恢复和折扣回报拼接；用明确续接策略获得到配置路线终点的执行回报；再回到原始根状态，强制执行一个动作后由冻结MCTS接管。完整回报虽然不再缺失这批样本的尾段，但不同动作很接近，均值第一名依然随批次变化。因此又区分了“经验比较”“统计保证”和“任务评价目标”：复合奖励不等于两车完成时间，统计置信参数也不等于交通安全限额。[E20—E28]
+最后回查论文，发现论文并未统一要求先给出“最多慢多少秒”。当前恢复为两条清楚的路径：开发评价继续对齐交通安全、完成率、通行时间和搜索开销；有保证的动作删除独立保留HOLD。 这不是降低安全标准，而是不再把某一新增理论分支的前提强加到所有开发研究上。[E29]
+本文如何使用
+第1—4章恢复项目主线、真实执行栈、旧网络和K13；第5—9章按诊断顺序恢复数据、训练、时域及策略回报；第10—12章说明统计与任务目标、论文标准及当前Gate；第13—16章固定失败、工作流、资产和来源；第17章为快速接手区。公式统一编号为F01起，论文为P01起，项目证据为E01起。全文中的“候选”“HOLD”“历史”均有明确边界，不表示已上线。
+1. 权威性、证据截止与状态管理
+1.1 遵循用户工作流，而不是把历史“下一步”当成现在
+用户上传的《MineSim-Dynamic项目统一工作流Skill》是本次组织方式与协作规则的直接依据。项目长期主线固定，但当前阶段、blocker、资源及实验权限必须随最新证据更新。事实优先级为：当前AutoDL/Git/源码/runtime/SHA ＞ frozen result/manifest/START/CAPTURE/bundle ＞ 最新正式交接 ＞ 历史交接 ＞ 计划 ＞ AI记忆。[S01，第1—7、31—42节]
+本交接可访问已上传结果、已生成审计报告、真实源码副本、用户Skill以及可检索历史交接。没有访问实时AutoDL。因此，“最新已返回证据”与“现在云端正在运行什么”严格分开。任何live进程、现存软链接、磁盘清理、当前工作区内容的结论，都需要下一位执行者在开工前做只读preflight。[E30—E32]
+1.2 证据层级与使用范围
+层级 | 本文如何使用 | 不允许的外推
+A：原始结果／源码副本 | 确认对象结构、保存参数、公式实现、SHA和运行快照 | 不能由上传副本证明云端现在仍相同
+B：对应步骤复核报告 | 引用该步核验次数、复算误差、表格与技术测试记录 | 不写成本交接重新执行了全部实验
+C：正式／历史交接与可访问对话 | 恢复较早阶段、已关闭失败与决策顺序 | 不覆盖更新原始证据；缺少原件时保留历史标注
+D：本次提出的契约／下一步 | 明确下一最小Gate、PASS及边界 | 不冒充已执行、已预注册或已云端冻结
+FROZEN表示有冻结证据且原namespace不可覆盖或重跑；HISTORICAL表示内容在当时有效；SUPERSEDED只表示某个当前状态或表述被更新，不否定整份历史；HOLD表示证据或授权尚不足；SCIENTIFIC NEGATIVE是应保留的科研结果，不是必须“修成PASS”的Bug。
+1.3 三个必须显式更正的旧表述
+第一，2026-08-13 README中的A2中途停车是历史blocker；C03摘要中的Value V2 inference准备也是历史状态；8月31日交接中的“汇报/地图视觉资产”又被9月教师诊断主线继续推进。它们只用于来源追溯，不作为当前实验入口。[E01—E03]
+第二，8月31日正式交接沿用了“Value V3使用ROOT_CENTERED_Q”的旧名称。较早V3设计源码已明确把训练目标改为根内归一化加权成对logistic排序；9月审计也按排序模型解释。保留相同12→64→64→16架构，不等于继续用绝对Q回归。 本文将模型版本、训练目标及来源阶段分别记录；历史设计文件当时含1162-root分支，不能冒充本轮重新核验的最终2356-root训练源码。[E03，第7节；E05；
+[摘录至此；不是全文]
+
+===========================================================================
+MineSim_Dynamic_正式交接完整包_论文标准对齐版_V1_20260910/MineSim_Handoff_20260910_V1/README_先读我.txt
+MineSim-Dynamic 正式交接包｜论文标准对齐版 V1
+证据截止：2026-09-10
+
+先读什么
+1. 正式Word：MineSim_Dynamic_正式交接_论文标准对齐版_V1_20260910.docx
+   当前渲染为42页、17章、53组编号公式；含目录、公式/来源索引，末尾为15问快速接手区。
+2. CURRENT_STATE.json：机器可读当前阶段、下一Gate、HOLD与授权边界。
+3. NEXT_GATE_CONTRACT.json：下一步只读评价契约要求；不是已执行实验。
+
+交接终点
+旧Value V3/K13分支的工程结论不改，新诊断模型未替换旧模型；教师、覆盖、时域、完整策略回报及任务指标诊断已串联。当前按用户同意的论文参考，对齐安全—完成—通行效率—搜索代价评价。统计保证分支独立HOLD，ε未定不再阻塞一般开发对照。
+下一最小Gate：PAPER_ALIGNED_EVALUATION_CONTRACT_PREFLIGHT。
+本包不批准直接改奖励、换阈值、重采2356条、重训、上线或恢复剪枝。
+
+其他文件
+同名TXT/Markdown为主文内容镜像；TXT保留公式的文本/LaTeX表示，精细公式排版以Word为准。
+formula_index.json：53组公式的LaTeX与所在章节；含义、来源及适用条件仍须读正文。
+evidence_inventory.csv/json：34个源证据的文件名、当前本地副本、完整SHA、包内副本位置。未包含的大型原始ZIP从原会话附件或云端原目录定位，不重复塞入本包。
+experiment_ledger.csv/json：25项关键实验/技术恢复记录；非全盘START清单，未列出的旧目录也不得自动重跑。
+supporting_reports/：用户原始Skill及小型步骤报告，保留原文；其中历史“下一步”不覆盖本交接。
+historical_sources/：历史Word和设计/过程记录，只用于溯源，禁止把旧Gate当当前Gate。
+document_quality_check.json：本轮实际文档与源副本检查范围。
+SHA256SUMS：本包文件完整性清单，不是AutoDL实时状态证明。
+
+必须分清
+本次仅创建交接文件，没有运行新MCTS/训练/状态推进，没有修改旧数据、Git、软链接或删除科研资产。
+历史报告的核验数量和测试数为原步骤记录，本次未重新执行全部历史实验。
+AutoDL live文件、软链接、进程、删除与当前Git均未实时查询；最近返回的Git快照含?? ^C，未变化不等于clean。
+本Word/包尚未确认上传到AutoDL或Library。不要由sandbox副本推断云端存在。
+所有已消费START命名空间保留，不原名重跑、不为取得PASS换seed或降低阈值。
+
+论文边界
+正文把论文原方法、论文实验配置/观察、项目实际实现、拟采用适配分开。PET/TTC的1.5秒是代理风险参考，0.8/0.6是特定复合风险阈值，均不是碰撞概率；映射未完成前不自动写入当前硬约束。
+Neural A*的规划质量与扩展开销评价可借鉴，但不等于本项目已有最优Q或固定Top13安全证明。
+
+代码交付约定
+后续仅主程序以可下载脚本交付；启动、screen、监控与结果检查用聊天内可复制集成代码。每一步写明论文、公式、项目适配及自定阈值。
+
+[全文]
+
+四、8月24日总包前部读取记录
+{
+  "original_path": "/mnt/data/MineSim_Complete_Handoff_Package_2026-08-24 (1).zip",
+  "original_size": 95535104,
+  "eocd_found": true,
+  "entries": [
+    {
+      "name": "00_交接总文档/ARCHIVE_CONTENT_INDEX.txt",
+      "size": 10131,
+      "compressed_size": 2131,
+      "offset": 0,
+      "data_end": 2205,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 8,
+      "crc_verified": true
+    },
+    {
+      "name": "00_交接总文档/FILE_MANIFEST.csv",
+      "size": 21057,
+      "compressed_size": 5905,
+      "offset": 2205,
+      "data_end": 8176,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 8,
+      "crc_verified": true
+    },
+    {
+      "name": "00_交接总文档/MineSim-Dynamic_全项目超详细阶段性总总结与AI无缝接管手册_2026-08-24.docx",
+      "size": 82073,
+      "compressed_size": 79453,
+      "offset": 8176,
+      "data_end": 87769,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 8,
+      "crc_verified": true
+    },
+    {
+      "name": "00_交接总文档/PACKAGE_COMPLETE_MANIFEST.csv",
+      "size": 21389,
+      "compressed_size": 6085,
+      "offset": 87769,
+      "data_end": 93932,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 8,
+      "crc_verified": true
+    },
+    {
+      "name": "00_交接总文档/README_包说明.txt",
+      "size": 902,
+      "compressed_size": 712,
+      "offset": 93932,
+      "data_end": 94713,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 8,
+      "crc_verified": true
+    },
+    {
+      "name": "00_交接总文档/SHA256SUMS.txt",
+      "size": 20255,
+      "compressed_size": 5551,
+      "offset": 94713,
+      "data_end": 100327,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 8,
+      "crc_verified": true
+    },
+    {
+      "name": "01_原始压缩包/AI接手文档(1).zip",
+      "size": 1010571,
+      "compressed_size": 1010571,
+      "offset": 100327,
+      "data_end": 1110968,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/AI接手文档(2).zip",
+      "size": 1189654,
+      "compressed_size": 1189654,
+      "offset": 1110968,
+      "data_end": 2300692,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/AI接手文档.zip",
+      "size": 1189654,
+      "compressed_size": 1189654,
+      "offset": 2300692,
+      "data_end": 3490413,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/CROSS_SCENE_DYNAMIC_CONCLUSION_V1(1).zip",
+      "size": 6886,
+      "compressed_size": 6886,
+      "offset": 3490413,
+      "data_end": 3497388,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/CROSS_SCENE_DYNAMIC_CONCLUSION_V1.zip",
+      "size": 6886,
+      "compressed_size": 6886,
+      "offset": 3497388,
+      "data_end": 3504360,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/MineSim_云端项目整理最终文档包(1).zip",
+      "size": 53552,
+      "compressed_size": 53552,
+      "offset": 3504360,
+      "data_end": 3558009,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/MineSim_云端项目整理最终文档包.zip",
+      "size": 53552,
+      "compressed_size": 53552,
+      "offset": 3558009,
+      "data_end": 3611655,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/MineSim地图更换.7z",
+      "size": 1043429,
+      "compressed_size": 1043429,
+      "offset": 3611655,
+      "data_end": 4655155,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/PAPER1_V0_OBSERVATIONAL_FREEZE_V1(1).zip",
+      "size": 4542,
+      "compressed_size": 4542,
+      "offset": 4655155,
+      "data_end": 4659786,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/PAPER1_V0_OBSERVATIONAL_FREEZE_V1.zip",
+      "size": 4542,
+      "compressed_size": 4542,
+      "offset": 4659786,
+      "data_end": 4664414,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/PAPER_METHOD_COMPATIBILITY_DECISION_V1(1).zip",
+      "size": 3658,
+      "compressed_size": 3658,
+      "offset": 4664414,
+      "data_end": 4668166,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/PAPER_METHOD_COMPATIBILITY_DECISION_V1.zip",
+      "size": 3658,
+      "compressed_size": 3658,
+      "offset": 4668166,
+      "data_end": 4671915,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/原项目复现.zip",
+      "size": 20644638,
+      "compressed_size": 20644638,
+      "offset": 4671915,
+      "data_end": 25316621,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/可参考论文.7z",
+      "size": 22895976,
+      "compressed_size": 22895976,
+      "offset": 25316621,
+      "data_end": 48212664,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/地图新建相关文件.zip",
+      "size": 9776650,
+      "compressed_size": 9776650,
+      "offset": 48212664,
+      "data_end": 57989391,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/接下来方向.7z",
+      "size": 32351216,
+      "compressed_size": 32351216,
+      "offset": 57989391,
+      "data_end": 90340674,
+      "complete_bytes": true,
+      "flags": 2048,
+      "method": 0
+    },
+    {
+      "name": "01_原始压缩包/蒙特卡洛实现.7z",
+      "size": 27994648,
+      "compressed_size": 27994648,
+      "offset": 90340674,
+      "data_end": 118335392,
+      "complete_bytes": false,
+      "flags": 2048,
+      "method": 0
+    }
+  ]
+}

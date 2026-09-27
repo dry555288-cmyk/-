@@ -1,0 +1,63 @@
+{
+  "status": "PASS_DATA_COLLECTION_AND_MERGED_DATASET_REVIEW_NOT_MODEL_SUCCESS",
+  "archive": "/mnt/data/MineSim_Coverage32_数据封存复核_20260917/minesim_grouped_coverage32_collect256_v1.reassembled.zip",
+  "manifest_review": "MANIFEST_REVIEW.json",
+  "verified_new_cells": 256,
+  "saved_steps_checked": 11592,
+  "recorded_searches_checked": 11336,
+  "window_returns_recomputed_exactly": 256,
+  "max_window_return_absolute_error": 0.0,
+  "reward_formula_relative_tolerance_from_frozen_code": 1e-10,
+  "max_scalar_reward_absolute_error": 0.0,
+  "new_outcomes": {
+    "BOTH_PARKED_AT_OWN_DESTINATIONS": 253,
+    "EVALUATION_CAP_NOT_TASK_TERMINAL": 3
+  },
+  "merged_roots": 32,
+  "merged_observations": 512,
+  "old_observations_reused_unchanged": 256,
+  "merged_outcomes": {
+    "BOTH_PARKED_AT_OWN_DESTINATIONS": 467,
+    "EVALUATION_CAP_NOT_TASK_TERMINAL": 45
+  },
+  "source_groups": {
+    "policy_00": 4,
+    "policy_01": 4,
+    "policy_02": 4,
+    "policy_03": 4,
+    "policy_04": 4,
+    "policy_05": 4,
+    "policy_06": 4,
+    "policy_07": 4
+  },
+  "cross_group_exact_aliases": [],
+  "empirical_gap_max_absolute_error": 0.0,
+  "old_hard_order_known": 6,
+  "old_order_unknown": 10,
+  "new_descriptive_repeated_orders": {
+    "-1": 3,
+    "None": 11,
+    "1": 2
+  },
+  "new_descriptive_coverage_denominator": 16,
+  "new_descriptive_not_safety_labels": true,
+  "cloud_worker_elapsed_seconds": 356.41481153992936,
+  "cloud_start_to_result_seconds": 401.432377,
+  "timing_excludes_final_zip_and_upload": true,
+  "git_before_after_unchanged": true,
+  "git_status": "?? ^C\n",
+  "training_runs_in_recorded_execution": 0,
+  "model_forward_in_recorded_execution": 0,
+  "this_review_simulation_runs": 0,
+  "this_review_mcts_calls": 0,
+  "this_review_training_runs": 0,
+  "this_review_remote_connections": 0,
+  "review_scope": "All supplied recorded state/RNG/action/reward/commit chains and dataset aggregate arithmetic; no re-simulation, no independent physical-road or continuous geometry certification. Live cloud state not queried.",
+  "inherited_from_execution_result": {
+    "parents_unchanged_after": true,
+    "runtime_unchanged_after": true,
+    "postcheck_status": "PASS"
+  },
+  "errors": [],
+  "review_elapsed_seconds": 16.54469003899999
+}

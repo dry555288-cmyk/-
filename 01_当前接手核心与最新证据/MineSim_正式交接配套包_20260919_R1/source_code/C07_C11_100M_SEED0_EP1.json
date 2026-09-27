@@ -1,0 +1,193 @@
+{
+  "episode_uid": "C11_100M_SEED0_EP1",
+  "scene": "C11",
+  "provenance": {
+    "approach_contract_freeze_sha256": "a27653c237118077a939001ae00aa2014bea3d15ec08f8393ba3e6aca7acb314",
+    "collector_module_sha256": "283d2bfb38af5bd3ef1897349f1e366f862ab508250c1f262f15fd0509c4a2a6",
+    "collector_scope": "CURRENT_SEMANTIC_MULTI_EPISODE_V1",
+    "dataset_contract_sha256": "46f2e099fbe9090a02b1f9fe8a983e4f8322a2ffeba89a4700de8e278991dcda",
+    "dynamic_v2v_freeze_sha256": "3bcbbcb3623b07c3e8a162e24c5b63303b866cf9d149a68d083c30b5f7856193",
+    "episode_id": "geojson_full_mine_vector_v2_dev:source11:seed0",
+    "git_commit": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+    "manifest_sha256": "b18dd8b288a37424a94e22122d6a7572f0aa88ae991d97376db5930d1d2ce8bb",
+    "map_id": "geojson_full_mine_vector_v2_dev",
+    "mcts_budget": 64,
+    "mcts_depth": 8,
+    "mcts_dt_s": 0.5,
+    "omega_int_contract_freeze_sha256": "a6b1de3c643c331b9a5d27f6544fa1266d4b3ff155f6de754cc94e8716db32c0",
+    "pair_indicator_semantics": "AND_BOTH_VEHICLES_IN_ZONE",
+    "scenario_sha256": "3d71f2beeec6e0782099b65145ae944ea7560d64e5b934e3b6cdca7f40e4f5ce",
+    "scene_zone_intervals": {
+      "Omega_app": {
+        "A": [
+          147.77075274944568,
+          249.4271188996955
+        ],
+        "B": [
+          186.54748904548518,
+          283.5602919384235
+        ]
+      },
+      "Omega_int": {
+        "A": [
+          160.66442692050848,
+          249.4271188996955
+        ],
+        "B": [
+          244.47786686368198,
+          283.5602919384235
+        ]
+      }
+    },
+    "seed": 0,
+    "source_index": 11
+  },
+  "raw_scenario_sha256": "3d71f2beeec6e0782099b65145ae944ea7560d64e5b934e3b6cdca7f40e4f5ce",
+  "manifest_scenario_pointer_preserved": "1127aeb78308b90a9d59127f9443fea4acd8b98e136cbf86d1201f7593978cc9",
+  "scenario_pointer_matches_raw": false,
+  "route_tokens": {
+    "A": [
+      "path-000246",
+      "path-000249",
+      "path-000242"
+    ],
+    "B": [
+      "path-000243",
+      "path-000263",
+      "path-000265"
+    ]
+  },
+  "conflict_route_s": {
+    "A": 227.77075274944568,
+    "B": 266.5474890454852
+  },
+  "rear_start_pose": {
+    "A": {
+      "x": 2330.265261160505,
+      "y": 1516.767391330972,
+      "yaw": 2.348874169332747
+    },
+    "B": {
+      "x": 2235.225821673801,
+      "y": 1641.5763677581008,
+      "yaw": -0.8523302504438875
+    }
+  },
+  "zones": {
+    "Omega_app": {
+      "A": [
+        147.77075274944568,
+        249.4271188996955
+      ],
+      "B": [
+        186.54748904548518,
+        283.5602919384235
+      ]
+    },
+    "Omega_int": {
+      "A": [
+        160.66442692050848,
+        249.4271188996955
+      ],
+      "B": [
+        244.47786686368198,
+        283.5602919384235
+      ]
+    }
+  },
+  "helper_binding": {
+    "source": "evidence/source/C11_runner_cross_scene_fleet_mcts_c11_start100m_seed0_paper1_neural_collector_retry1_v1.py",
+    "constants": {
+      "LOCATION": "geojson_full_mine_vector_v2_dev",
+      "SIM_DT": 0.1,
+      "MCTS_DT": 0.5,
+      "MCTS_BUDGET": 64,
+      "MCTS_DEPTH": 8,
+      "MAX_SPEED": 15.0,
+      "TARGET_SPEED": 10.5,
+      "INTERNAL_COLLISION_SAMPLE_DT": 0.1,
+      "W_INTERNAL_CLEARANCE": 0.5,
+      "JOINT_ACTION_COUNT": 16
+    },
+    "calls": [
+      {
+        "line": 855,
+        "end_line": 859,
+        "call": "FleetTransitionModel(transition_models, route_geometry_caches=geometry_caches, internal_collision_sample_dt_s=INTERNAL_COLLISION_SAMPLE_DT)"
+      },
+      {
+        "line": 861,
+        "end_line": 870,
+        "call": "FleetRewardModel({token: RewardModel(RewardConfig(), dt=MCTS_DT) for token in ('A', 'B')}, w_internal_clearance=W_INTERNAL_CLEARANCE)"
+      },
+      {
+        "line": 822,
+        "end_line": 828,
+        "call": "TransitionConfig(dt=MCTS_DT, goal_route_s=float(ROUTES[token].length), max_speed=MAX_SPEED)"
+      },
+      {
+        "line": 864,
+        "end_line": 864,
+        "call": "RewardConfig()"
+      }
+    ],
+    "definitions": [
+      {
+        "file": "evidence/source/C11_runner_cross_scene_fleet_mcts_c11_start100m_seed0_paper1_neural_collector_retry1_v1.py",
+        "symbol": "make_line",
+        "line": 461,
+        "end_line": 471,
+        "sha256": "cd67ff34d7667905fe681cc2e7d84bb13c140d6e8069d769fb1fa6e3f030c27c"
+      },
+      {
+        "file": "evidence/source/C11_runner_cross_scene_fleet_mcts_c11_start100m_seed0_paper1_neural_collector_retry1_v1.py",
+        "symbol": "RouteAdapter",
+        "line": 502,
+        "end_line": 554,
+        "sha256": "08afe4f212b941c0fc210ac2d3966fb5be3ee347dd45c112bcd1d13794d64454"
+      }
+    ]
+  },
+  "reward_config": {
+    "w_progress": 1.0,
+    "w_speed": 0.3,
+    "w_safety": 2.0,
+    "w_clearance": 0.0,
+    "w_comfort": 0.3,
+    "collision_penalty": 100.0,
+    "goal_bonus": 30.0,
+    "ttc_safe_s": 3.0,
+    "clearance_safe_m": 3.0,
+    "eps": 1e-06
+  },
+  "transition_config": {
+    "dt": 0.5,
+    "accel_max": 1.0,
+    "decel_max": 3.0,
+    "max_speed": 15.0,
+    "collision_distance": 2.0,
+    "eps": 1e-06
+  },
+  "goal_route_s": "DERIVED_AT_RUNTIME_FROM_EACH_BOUND_ROUTE_POLYLINE_LENGTH_NOT_CONFLICT_POINT",
+  "fleet_config": {
+    "internal_clearance_safe_m": 3.0,
+    "w_internal_clearance": 0.5,
+    "internal_collision_sample_dt_s": 0.1,
+    "internal_safety_margin_m": 0.0
+  },
+  "root_defaults_from_source": {
+    "minimum_clearance_m": "+inf",
+    "prev_action": null,
+    "collision": false,
+    "goal_reached": false
+  },
+  "vehicle_location": "geojson_full_mine_vector_v2_dev",
+  "cache_grid_step_m": 1.0,
+  "runtime_status": "PENDING_NEW_TECHNICAL_PARITY",
+  "state_origin": "EXACT_RAW_RECORD_NOT_SCENARIO_REINITIALIZATION",
+  "original_runner_identity_status": "HOLD_WHERE_ORIGINAL_RUNNER_SHA_NOT_RECORDED",
+  "original_runner_sha_if_recorded": null,
+  "historical_helper_role": "REVIEWED_GEOMETRY_AND_CONFIGURATION_WITH_PRIOR_ONE_STEP_EVIDENCE_NOT_FULL_RUNNER_IDENTITY",
+  "full_map_load_required": false,
+  "external_geometry_wrapper": false
+}

@@ -1,0 +1,31 @@
+test_actual_search_iterations_count (__main__.SubtreeTests.test_actual_search_iterations_count) ... ok
+test_audit_detects_depth_corruption (__main__.SubtreeTests.test_audit_detects_depth_corruption) ... ok
+test_audit_detects_duplicate (__main__.SubtreeTests.test_audit_detects_duplicate) ... ok
+test_audit_detects_q_corruption (__main__.SubtreeTests.test_audit_detects_q_corruption) ... ok
+test_bad_gamma (__main__.SubtreeTests.test_bad_gamma) ... ok
+test_budget_change_fallback (__main__.SubtreeTests.test_budget_change_fallback) ... ok
+test_children_zero_reconstructed (__main__.SubtreeTests.test_children_zero_reconstructed) ... ok
+test_cold_equivalence_seed0 (__main__.SubtreeTests.test_cold_equivalence_seed0) ... ok
+test_cold_equivalence_seed1 (__main__.SubtreeTests.test_cold_equivalence_seed1) ... ok
+test_cold_equivalence_seed9 (__main__.SubtreeTests.test_cold_equivalence_seed9) ... ok
+test_config_change_fallback (__main__.SubtreeTests.test_config_change_fallback) ... ok
+test_continue_until_parked_no_extra_search (__main__.SubtreeTests.test_continue_until_parked_no_extra_search) ... ok
+test_discount_formula (__main__.SubtreeTests.test_discount_formula) ... ok
+test_duplicate_history_is_error (__main__.SubtreeTests.test_duplicate_history_is_error) ... ok
+test_gamma_change_fallback (__main__.SubtreeTests.test_gamma_change_fallback) ... ok
+test_hard_root_not_searched (__main__.SubtreeTests.test_hard_root_not_searched) ... ok
+test_kept_states_no_mutation (__main__.SubtreeTests.test_kept_states_no_mutation) ... ok
+test_mismatch_fresh_rng_not_reset (__main__.SubtreeTests.test_mismatch_fresh_rng_not_reset) ... ok
+test_no_trace_means_error (__main__.SubtreeTests.test_no_trace_means_error) ... ok
+test_nonterminal_length_eight (__main__.SubtreeTests.test_nonterminal_length_eight) ... ok
+test_old_reward_excluded (__main__.SubtreeTests.test_old_reward_excluded) ... ok
+test_promote_horizon_and_count (__main__.SubtreeTests.test_promote_horizon_and_count) ... ok
+test_terminal_root_not_searched (__main__.SubtreeTests.test_terminal_root_not_searched) ... ok
+test_terminal_suffix_no_fictitious_tail (__main__.SubtreeTests.test_terminal_suffix_no_fictitious_tail) ... ok
+test_thirty_two_successive_decisions (__main__.SubtreeTests.test_thirty_two_successive_decisions) ... ok
+test_three_promotions (__main__.SubtreeTests.test_three_promotions) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 1.685s
+
+OK

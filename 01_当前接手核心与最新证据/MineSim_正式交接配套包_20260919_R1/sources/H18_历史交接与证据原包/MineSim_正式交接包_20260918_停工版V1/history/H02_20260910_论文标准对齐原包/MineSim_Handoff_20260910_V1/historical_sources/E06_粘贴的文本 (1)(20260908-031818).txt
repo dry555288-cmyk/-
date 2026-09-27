@@ -1,0 +1,2581 @@
+ChatGPT
+
+
+
+MineSim_Complete_Handoff_Package_2026-08-24 (1)(1).zip
+压缩归档
+
+MineSim_handoff_summary_V1(1).docx
+文档
+
+MineSim地图更换(1).7z
+文件
+
+RADEME(1).txt
+文档
+
+地图新建相关文件(1).zip
+压缩归档
+
+接下来方向(1).7z
+文件
+
+可参考论文(1).7z
+文件
+
+蒙特卡洛实现(1).7z
+文件
+
+蒙特卡洛效果对比(1).7z
+文件
+
+原项目复现(1).zip
+压缩归档
+查看这些文件
+
+思考了 2m 32s
+已经查看并梳理了这批 MineSim 项目文件。我现在对项目的历史、当前状态和后续执行顺序已经建立了完整上下文。
+
+最重要的一点是：不能把 RADEME(1).txt 开头写的 A2 中途停车当成当前进度。 那份 README 是 2026-08-13 的阶段快照，当时主线确实还是 Full-Mine Vector V2 的 7/7 runtime 验收，A2 是 blocker。
+
+ 后续项目已经继续推进。
+
+你现在上传的 MineSim_handoff_summary_V1(1).docx 给出了更晚的接手状态：
+
+C03 one-step smoke 已冻结；
+
+C03 Full Collection 已完成并冻结；
+
+数据为 135 roots、2160 derived actions、8640 shadow expansions；
+
+benchmark_success=True；
+
+collision_or_overlap=False；
+
+当前已经进入 Value V2 inference chain 准备阶段。
+
+
+Value V2 目前也不是“还没开始”。现状是 model freeze、normalization、metric closure、feature mapping 静态检查已经完成，模型结构为 ROOT_CENTERED_Q，12 → 64 → 64 → 16。但真实 C03 Value forward、prediction 和 metrics 尚未执行，因此仍然是 HOLD。
+
+
+因此，当前真正的项目节点可以概括成：
+
+旧地图、新地图、Pure MCTS、Fleet-MCTS、双车冲突场景和 C03 Full Collection 都不要重做；现在应该继续完成 Value V2 的 inference/evaluation chain。
+
+交接摘要也明确规定：MineSim 复现、MCTS 接入、双车冲突验证、C03 Full Collection 都属于“无需重做”的内容。下一步应沿着 feature builder → normalization → checkpoint load → model forward → prediction → metrics 继续。
+
+
+我也已经把这些资料之间的关系理清了：
+
+原项目复现.zip：MineSim 原论文、项目分析、函数说明，以及 Dapai/Jiangtong IDM 复现视频。
+
+蒙特卡洛实现.7z：Pure MCTS / Monte Carlo 接入阶段资料。
+
+蒙特卡洛效果对比.7z：MCTS 与 baseline 的单车实验及效果对比。
+
+接下来方向.7z：双车、多车 benchmark 和进一步研究路线。
+
+MineSim地图更换.7z：Raster / Semantic / Scenario 地图替换过程。
+
+地图新建相关文件.zip：真实地图原始数据，包含 road.geojson、road_boundary.geojson、junction.geojson、lane.geojson 等 8 类 GeoJSON 和预览图。
+
+可参考论文.7z：MCTS、多车规划、交叉口安全、预测等相关论文。
+
+MineSim_Complete_Handoff_Package_2026-08-24...zip：综合交接总包。上述资料在项目自己的资料索引中也有对应说明。
+
+
+另外我检查了 8 月 24 日完整交接包。这个 ZIP 的目录尾部存在异常，我已经从本地头记录中恢复出了可读内容，其中包含 2026-08-24 全项目超详细交接手册、Manifest、SHA256 清单和历史交接文档。它进一步确认：C03 Full Collection 已经是冻结成果，当前工作已经转到 Value V2，而不是地图/A2 阶段。
+
+有一个技术限制需要说明：几个单独上传的 .7z 当前环境没有可用的 7z 解包组件，所以我没有假装“逐文件读完”它们内部的每个成员。不过它们的用途、阶段定位和主要成果已经由完整交接包、README 和阶段总结交叉确认；两个 ZIP（原项目复现、地图新建相关文件）我已经实际展开检查了目录结构。
+
+所以接下来你可以直接把我当成已经接手这个项目。 后续你如果让我继续做实验，我会以 C03 Full Collection frozen → Value V2 inference chain 为起点，不会再让你重复 MineSim、MCTS、地图替换或 A2 的历史过程。
+
+
+
+AI接手文档(1).zip
+压缩归档
+
+AI接手文档2.zip
+压缩归档
+
+AI接手文档3.zip
+压缩归档
+
+CROSS_SCENE_DYNAMIC_CONCLUSION_V1(1).zip
+压缩归档
+
+MineSim_Dynamic_正式交接文档_20260831.docx
+文档
+
+MineSim_ValueV3_ConfidenceGated_MCTS_项目交接文档_剪枝分支启动版_V1.docx
+文档
+
+MineSim_ValueV3_ConfidenceGated_TopKPruning_项目交接文档_K13运行价值评审完成版_V1.docx
+文档
+
+MineSim_云端项目整理最终文档包(1).zip
+压缩归档
+
+PAPER_METHOD_COMPATIBILITY_DECISION_V1(1).zip
+压缩归档
+
+PAPER1_V0_OBSERVATIONAL_FREEZE_V1(1).zip
+压缩归档
+
+MineSim_Dynamic_阶段汇报.docx
+文档
+
+MineSim_Dynamic_阶段汇报.pdf
+PDF
+
+粘贴的 markdown (1)。md(20260906-114800)
+文件
+再看一下这些文档，以及我的项目skill
+
+思考了 1m 22s
+已经重新看过了。这一批资料把项目状态又向后推进了不少，所以我已经把前面“C03 Full Collection → Value V2”的认识更新掉了。
+
+目前在你提供的材料里，最高优先级的正式交接入口是 MineSim_Dynamic_正式交接文档_20260831.docx。它明确给出的最新状态是：Value V3 已完成根节点评分、排序和置信度门控；K13 的 matched runtime 工程价值评估已经结束；局部 Top-K 剪枝机制成立，但“可复现的端到端运行加速”不成立。当前阶段已经从算法实验切换为 HANDOFF_AND_REPORT_PACKAGE_FREEZE。
+
+
+K13 的最终冻结结论尤其重要，我后面不会再把它当作“等待继续验证的方案”：
+
+DIRECT_PRUNING_MECHANISM_VALID=True
+
+NEURAL_GUIDED_LOCAL_ACTION_SPACE_REDUCTION_VALID=True
+
+REPRODUCIBLE_END_TO_END_RUNTIME_ACCELERATION=False
+
+也就是说，剪枝是真的发生了，但没有形成稳定、可复现的系统级加速收益。
+
+
+这也解释了为什么之前那份 MineSim_ValueV3_ConfidenceGated_TopKPruning...K13运行价值评审完成版 现在只能算历史高价值材料。那份文档停在“准备 B16/B32 matched runtime probe”的节点，当时明确还没有 runtime 最终结论。
+
+ 后续真实运行已经把这个问题回答掉了：B16 seed101 表面加速，但 B16 seed102 和 B32 seed101 都反向变慢，所以最终冻结为负工程结论。
+
+
+你现在的阶段汇报 Word/PDF 与这一最终状态也是一致的。它把项目归成三部分：
+
+仿真中间层 → Value V3 神经网络接入 → K13 剪枝。
+
+最终总结是：中间层闭环打通；Value V3 有真实排序信号，confidence gating 相比 naive guidance 有改善，但仍没超过 Pure MCTS；K13 能在高置信 root 上真实从 16 个联合动作减到 13 个，但总体耗时会因为 closed-loop trajectory 和 visited roots 改变而发生反转，因此不支持端到端稳定加速。
+
+
+我也把几个 ZIP 的定位重新梳理了一遍。AI接手文档(1) 主要覆盖 7 月底到 8 月 17 日的 MineSim、Pure MCTS、FullMine、Fleet-MCTS 和 cross-scene 历史；AI接手文档2 主要覆盖 8 月 18–25 日的数据治理、Value 网络和训练阶段；AI接手文档3 覆盖 8 月 26–30 日的 C01 独立评价、Value-guided MCTS、confidence-gated 分支以及进入 Top-K 之前的演进。这些现在都应作为 provenance / 历史故障复盘 使用，而不是拿里面的“当前下一步”覆盖 8 月 31 日状态。正式交接文档也专门把早期 C03/Value V2 summary 和 K13 静态评审文档降级成 HISTORICAL。
+
+
+另外几份专题包我也看过：
+
+CROSS_SCENE_DYNAMIC_CONCLUSION_V1 固化了 C04/C11/C06 的跨场景结论，其中 C04 有 5-seed 场内稳健性，C06 seed0 transfer PASS，而 C11 是“避碰成功但 progress/post-conflict 失败”的真实 scientific negative；因此不能写成跨场景 3/3 全成功。
+
+PAPER_METHOD_COMPATIBILITY_DECISION_V1 的作用是把参考论文与现有 Fleet-MCTS 做结构映射。它支持的是“适配式、route-constrained 实现”，不是逐字复现论文架构。
+
+PAPER1_V0_OBSERVATIONAL_FREEZE_V1 固化的是 SafetyRiskEvaluator V0 纯观测 sidecar。它实现了与 C04 seed0 原结果/log 的 byte-level parity，但当时 paper1_safe_node_decision_available=false，所以不能倒推成已经完成 hard safe-node pruning。
+
+MineSim_云端项目整理最终文档包 则记录了一次历史的安全文件治理过程：以 move/archive/quarantine 为主，不以删除换整洁。这个结论以后仍必须和当前 AutoDL live inventory 区分，不能仅根据历史整理报告断言“现在某文件一定还在/一定已经删除”。
+
+你的项目 Skill
+这一份我也完整看过了，而且它实际上决定了我后面应该怎样与你推进 MineSim。
+
+最关键的不是某个具体算法，而是 Skill 明确禁止把“当前阶段”硬编码进去：长期主线可以固定，但每次实际开工必须重新依据最新证据判断当前 stage 和 gate。
+
+
+证据优先级我会严格按你的 Skill 执行：
+
+**当前 AutoDL / Git / 当前源码 / runtime / SHA
+
+frozen result / manifest / START / CAPTURE
+最新正式交接
+历史交接
+设计计划
+AI 记忆。**
+
+缺直接证据就写 HOLD，不靠常识补 MineSim API、路径、实验状态或结果。
+
+
+以后每个 MineSim 任务，我会先内部确定七件事：项目真正做到哪里、唯一 Gate、最小行动、PASS 标准、失败故障域、资源等级、是否允许进入下一阶段；然后只推进一个最小 Gate。
+
+
+工作顺序继续固定为：
+
+只读 preflight → static/smoke → 短闭环 → 完整实验 → freeze
+
+而不是直接跳到大实验。已经冻结的结果默认不覆盖、不修改、不为了“再确认一次”而重跑。
+
+ 
+
+
+另外我已经把几个特别容易破坏证据链的规则当成硬规则处理：Scientific FAIL 是科研结果，不能为了 PASS 自动调参；one-shot namespace 一旦 START 消费就不能原 namespace 重跑；Git 不做 reset --hard / clean -fd / add .；核心源码优先最小 patch；LOW 能做的事情绝不开高资源。
+
+ 
+
+
+所以，从现在开始我不会再从 Value V2、K13 static review 或 matched runtime probe 继续。
+
+当前根据最新文件恢复出的状态应当是：
+
+当前阶段：Value V3 / K13 运行价值分支已完成并关闭
+当前 Gate：HANDOFF_AND_REPORT_PACKAGE_FREEZE
+当前科学结论：K13 局部剪枝有效，稳定端到端加速不成立
+当前最小行动：AutoDL 只读 inventory，重新绑定真实 FullMine / Polygon21 / A-B 路径与冲突点视觉源文件
+资源：LOW
+禁止：重跑已消费的 B16/B32、为了救结果修改 K/τ、用 AI 绘制内容替代真实地图科研图。
+
+这些也是 8 月 31 日正式交接文件给出的快速接手结论。
+
+
+后面你直接说“继续项目”即可，我会按这套 Skill 从当前唯一 Gate往下走，不再重新讲一遍整个项目历史。
+
+
+先回答我一个问题，目前的神经网络训练尚可，但是运用到蒙特卡洛里，以及加入剪枝之后效果很差是吗，简洁回复
+
+思考了 7s
+是，但更准确地说：
+
+神经网络离线训练/排序能力尚可；接入 MCTS 后，效果没有超过 Pure MCTS；加入 K13 剪枝后，局部确实删掉了动作，但端到端加速不稳定，部分实验反而更慢。 
+
+ 
+
+
+所以当前问题主要不在“网络完全没学到东西”，而在如何把网络信号有效地融入 MCTS。
+
+
+我现在怀疑是训练数据的问题，数据有没有收敛，有没有达到标准，我都不知道，我现在需要你做两件事。1、检查一下神经网络训练数据到底有没有问题。2、告诉我目前的神经网络以及剪枝都是用什么方法，怎么接入，用的什么公式，参考哪篇论文的，生成一个文档或者TXT给我即可，但是一定要详细
+
+
+正在调用工具
+已整理成 20 页详细文档，Word 和 TXT 内容一致：
+
+下载 Word：训练数据审计与 MCTS／剪枝方法详解
+
+MineSim_ValueV3_%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E5%AE%A1%E8%AE%A1%E4%B8%8EMCTS%E5%89%AA%E6%9E%9D%E6%96%B9%E6%B3%95%E8%AF%A6%E8%A7%A3_20260906.txt
+
+
+先给你结论
+你的怀疑有依据。目前不能确认“训练数据没有问题”，也不能确认“训练已经充分收敛”。 我之前把问题主要归于网络接入方式，判断过早。更准确的说法是：模型通过了指定的离线排序评价，但数据覆盖、特征有效性、监督标签可靠性及训练收敛情况，仍有未核验的部分。
+
+1. 查到了一个值得优先检查的特征问题
+8 月 25 日的 2356-root 训练交接文档明确记录：A_accel_mps2、B_accel_mps2 两个加速度输入，在三个训练折中都是零均值、零标准差。
+
+按这份记录，网络没有从这两个输入中学到“加速度变化如何影响动作优劣”。但还需要区分：这是有意的输入约定、采集时没有取得真实加速度，还是训练和在线特征构造不一致。目前不能直接断言是哪一种。 详细分析在报告第 4.5 节。
+
+2. “训练跑完了”不等于“已经收敛”
+取得的历史训练函数固定运行 600 轮，反复更新一个 final_train_loss，训练结束后才计算验证预测；该函数中没有记录逐轮训练／验证曲线。因此，仅凭最终 loss 和执行成功，不能判断是否充分收敛、过拟合或欠拟合。这部分结论目前是 HOLD，而不是已收敛。 
+
+ 
+
+
+3. 离线确实达到过标准，但标准的范围有限
+2356-root 版本的三个场景留一验证，在交接记录中通过了原定离线门槛；后续 C01 独立评价中，模型的中位归一化 regret 为 0.10584，优于即时奖励基线的 0.29520。这支持“模型学到了有用的排序信息”，不等于已经证明数据充分、训练收敛，更不等于闭环剪枝安全或运行更快。报告第 6 节列出了具体结果与判据。
+
+
+方法、公式和论文来源也已详细写入
+报告第 7—11 节分别说明了网络结构、归一化、训练损失、优化器、MCTS 接入位置、置信度门控和 K13 剪枝。
+
+其中一个重要区别是：当前 Value V3 的实际训练目标是“加权成对 logistic 排序损失”，不能直接沿用 Value V2 的 ROOT_CENTERED_Q 回归描述。 文档给出了从历史源码恢复的损失公式，并区分了“论文中的方法”“项目实际实现”和“尚未核验的实现细节”。
+
+
+本次完成的是现有材料、历史源码和论文的审计，不是原始训练数据的逐条复算。 当前仍缺少原始 2356-root NPZ、最终训练脚本及完整训练日志，所以 NaN、重复样本、标签错位、数据泄漏和收敛曲线等，不能宣告全部通过。
+
+下一步应先取得报告第 12 节列出的原始训练证据包，核查这些问题，不需要先重训，也不需要重跑冻结的 MCTS／剪枝实验。
+
+
+那就先检查数据问题，你给我代码，我上传到云端执行后，把你要的东西给你，都放一个压缩包
+
+思考了 17m 53s
+
+已查找可用工具
+资源：LOW，不需要开 GPU。
+当前 Gate：训练数据与训练证据只读审计。
+
+脚本已准备好。它会检查现有数据、收集所需证据，最后自动生成一个 ZIP，不会修改训练集、重训网络、加载模型或运行 MCTS。
+
+1. 下载脚本并上传到云端
+下载：MineSim 训练数据检查与证据打包脚本
+
+上传到：
+
+/root/autodl-tmp/
+
+保持文件名为：
+
+minesim_value_v3_data_audit_v1.py
+
+2. 在 AutoDL 终端执行
+整段复制执行即可：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u /root/autodl-tmp/minesim_value_v3_data_audit_v1.py
+)
+这里使用独立 Python 模式，检查脚本不会导入并执行项目里的训练脚本。
+
+3. 这次会检查和收集什么
+检查对象	具体内容
+训练文件与版本	查找 2356-root NPZ、训练脚本和冻结记录，核对已知 SHA；记录当前 Git 和环境。
+输入特征	检查数组形状、NaN/Inf、恒定列、各列分布，重点核查两个加速度输入是否始终为零。
+样本与身份	按 scene + episode_uid + root_step 检查样本组织、场景比例和重复状态，避免把每个 root 的 16 条动作记录当成 16 个独立状态。
+监督标签	检查动作覆盖、Q 值范围、动作价值全部相同或近似并列的情况，以及相同输入是否对应冲突的最优动作标签。
+训练与在线证据	收集已有训练日志、归一化记录、数据构建和在线特征源码，以及可找到的 C01 数据与评价记录。三个最终 checkpoint 只复制原文件，不加载。
+无法确认字段含义或特征顺序时，脚本会标记 HOLD，不会猜测后继续判定。 收敛情况也不会仅凭“训练完成”或最后一个 loss 自动判为通过；需要依据取回的实际日志判断。
+
+
+较大的日志会保留带来源位置的样本；缺失、截取和大小限制都会写入清单，不会冒充全量检查。
+
+4. 执行完成后，只把结果 ZIP 发回来
+终端末尾会显示：
+
+COLLECTOR_STATUS=PASS 或 HOLD
+ZIP_VERIFIED=True
+BUNDLE=/root/autodl-tmp/minesim_value_v3_data_audit_v1_时间_编号.zip
+把 BUNDLE= 后面路径对应的 ZIP 上传到这里即可，不需要逐个找文件，也不用粘贴长日志。
+
+PASS 仅表示证据采集通过，不代表训练数据已经判定没有问题。出现 HOLD 也照样上传 ZIP，通常表示缺少文件、绑定需要复核或采集范围受限，先不要重跑或修改任何数据。若出现 PACKAGING_FAIL、没有生成 ZIP，就把终端报错发回来，停在这一步。
+
+
+
+201a0b27-2686-4d86-b312-07644647fd1d.zip
+压缩归档
+
+思考了 11m 53s
+
+已查找可用工具
+这次查到了实质性的数据问题。不是训练文件损坏，而是“大量重复状态，对应明显波动的 Q 标签”。你的怀疑现在有了直接证据，但还不能断定它是闭环效果差的唯一原因。
+
+资源：LOW。现有结果包足够继续分析，暂时不用再运行云端代码。
+
+1. 文件、转换和归一化没有发现明显错误
+我核验了压缩包中的 317 个文件校验值，全部一致。2356-root 数据的维度、有限数检查、样本身份均通过；其中有完整原始日志的 2084 个 root，重新提取特征、按动作 ID 排列 Q 标签后，与训练 NPZ 逐项一致。三个训练折及最终模型使用的归一化也匹配。
+
+因此，目前没有证据支持“文件坏了、数据转错了、归一化用错了”。详细来源和复算结果见
+
+MineSim_ValueV3_%E5%8E%9F%E5%A7%8B%E8%AE%AD%E7%BB%83%E6%95%B0%E6%8D%AE%E5%AE%A1%E8%AE%A1%E7%BB%93%E8%AE%BA_20260906.txt
+
+。
+
+2. 真正值得优先处理的是重复状态与标签不稳定
+检查项目	实际结果	含义
+训练记录	2356 个 root，仅 1224 种不同的12维输入	按精确特征去重计数，额外重复记录占 48.05%；这不等于应直接删掉这些记录
+相同输入的标签一致性	79 个重复组的 Q 最高动作不一致	网络收到相同输入，却被要求给出不同排序
+场景分布	C11 占 75.55% 的记录	数据覆盖集中；虽然训练做了场景等权，但不能消除场景内部的重复
+两车同时静止	1207/2356，约51.23%	大量训练记录集中于停车状态
+教师搜索支持	已重建的2084个 root，每个总访问数均为64	不是每个动作搜索64次；16个动作平均仅4次根子节点访问
+一个很具体的例子
+在 C11_80M_SEED0_EP0 的 第660—746步，连续 87 条记录的网络输入完全相同。去掉时间字段后，已记录的根状态也相同，即时奖励向量相同，但是：
+
+87 个 Q 向量全部不同，Q 最高动作出现了10种。
+
+同一个动作 (1,1)，第660步的 Q 约为 −3.0809，下一步却约为 −49.7498；这87条中的范围达到 −98.0953～−2.9642。
+
+这不只是两个接近的分数偶尔交换名次。 它明显提示有限预算搜索标签存在较大波动。不过，时间和未记录的内部条件尚未全部排除，不能把所有波动直接定性为“错误标签”。原始记录和计算明细已放入审计复核与证据包。
+
+3. 加速度问题确认了，但需要修正之前的一种怀疑
+两个加速度特征在2356条训练记录中确实全部为0。 相关采集代码构建根状态时就写了 accel_mps2=0.0，不是归一化把它们变成了零。
+
+但是，我也检查了六个 K13／不剪枝配对运行的 1347 条根状态记录，加速度输入同样全部为0。
+
+所以目前能确认的是：网络没有利用到加速度变化信息。 不能再把这六组运行的问题解释成“训练时加速度为0，上线时突然变成非0”。这项属于状态表示的信息缺失，是否修改需要另行设计，不能直接改输入后继续使用旧模型。上述检查范围见完整报告第六节。
+
+4. 训练是否收敛，仍然没有充分证据
+真实的最终训练代码固定运行 600轮，只反复更新最后一个 loss，没有保存逐轮训练／验证曲线。因此：
+
+训练执行完成：确认。原定离线指标通过：确认。训练已经充分收敛：仍是 HOLD。
+
+九个场景留一验证结果和三个 C01 评价结果，都能从已有预测文件重新算出，原来的离线通过结论没有被推翻。但那证明的是“平均归一化 regret 优于即时奖励基线”，不是证明标签稳定、数据覆盖充分，更不是证明适合直接剪枝。完整复算见报告第七、八节。
+
+当前最优先的问题应从“网络怎么接入”前移到“这些 Q 标签是否足够可靠”。下一步只继续核查标签生成与同状态波动的原因，先不重训、不直接删除重复或停车样本，也不修改冻结的 K13 参数。
+
+
+继续
+
+思考了 14m 46s
+
+已查找可用工具
+资源：LOW，仍然不需要开 GPU。
+
+继续检查后，发现了比“样本重复”更具体的问题：部分训练标签的搜索支持很少，但训练损失却把它们产生的大分差当成较强的排序依据。
+
+这次新增的发现
+第一，2811 个极低 Q 标签，全部只有一次访问。
+在能够逐条核验的 2084 个 root、33344 个根动作标签中，筛出 2811 个 Q＜−90 的标签，它们的根子节点访问数全部为 1。这里的 −90 只是统计分箱，不是删数据阈值。这不能证明每个标签都错，但不能把它们当成经过充分重复验证的稳定答案。
+
+第二，当前搜索机制可能让一次坏估计很难得到复查。
+源码中的 UCT 同时考虑 Q 和探索奖励。在当前总预算 64、c_uct=1.4 下，对只访问一次的根动作，探索补偿最多约 2.86。假如一个动作早期被估到 −98，其他动作仍在 −3 附近，这点补偿很难让它再次被搜索。源码还明确使用随机扩展和随机 rollout，因此这是一个值得优先核查的波动放大机制，而不是已经完成的逐次事件归因。
+
+第三，训练没有依据标签的访问次数或方差降低其权重。
+当前排序损失主要按两个动作的 Q 差距加权，并不读取 visit_count 或回报方差。因此，“一次低支持估计造成的大分差”，也可能成为强监督信号。
+
+完整统计、公式、源码行号及复算脚本已放入：
+下载本次追查报告与复算明细
+
+所以目前应继续检查“训练用的参考答案是否可靠”，而不是直接增加训练轮数。 重复样本和随机搜索本身不等于错误；网络是否收敛、教师 Q 是否稳定，仍是两个需要分别验证的问题。
+
+下一步：只补齐缺少的源码
+目前还缺少节点 q 的实际定义、终止条件、碰撞／几何依赖，以及原 C11 80m 的精确采集 runner。先把这些补齐，才能排除累计值、终止语义或隐藏状态的问题，避免过早把原因全部归给随机性。
+
+这次不需要重新导出整个训练包。
+
+下载：Q 标签生成链源码补齐脚本
+
+将脚本上传到 /root/autodl-tmp/，然后执行：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u /root/autodl-tmp/minesim_q_label_source_closure_v1.py
+)
+脚本只读取、解析和复制源码，核对 SHA，并生成一个 ZIP。不会导入执行项目模块，不会运行 MCTS、训练或模型推理，也不会修改冻结文件。已经做过本地测试，真实 AutoDL 执行尚待这一步完成。
+
+终端末尾会显示：
+
+COLLECTOR_STATUS=PASS 或 HOLD
+ZIP_VERIFIED=True
+BUNDLE=/root/autodl-tmp/minesim_q_label_source_closure_v1_时间_编号.zip
+把 BUNDLE= 对应的 ZIP 发回来即可。 PASS 只表示源码收集与绑定通过，不代表标签已经收敛；出现 HOLD 也上传结果包，先不要修改文件或重跑。
+
+
+
+dfb05b03-3640-43ae-911c-a9a22a34912f.zip
+压缩归档
+
+思考了 14m 45s
+
+正在调用工具
+资源：LOW，不需要开 GPU。
+
+这份结果包已核验：21 项文件校验全部通过，12 个核心源码已取得。 采集器的 HOLD 只来自 C11 80m 历史 runner 的已知路径不存在，不能据此判定文件被删除。下面的分析使用来源完整的 C11 100m 分支，不拿它冒充 80m 分支。
+
+这次查清了什么
+第一，没有发现“Q 忘记除以访问次数”的错误。
+
+源码中的定义确实是：
+
+Q
+=
+累计回报
+访问次数
+Q= 
+访问次数
+累计回报
+​
+ 
+回传使用 即时奖励 + γ × 后续回报。树节点与 rollout 的终止条件也一致。在这条已检查的路径中，没有发现平均值算错、终止惩罚漏算或重复扣罚的问题。
+
+第二，极低 Q 的来源进一步明确了：第一步没有触发硬安全违反，但后续随机模拟产生了大负回报。
+
+在 C11 100m 的已有记录中，1562 个 Q＜−90 的标签全部只有一次访问，而且第一步的硬安全违反标志全部为 False。
+
+按该分支的实际奖励配置推导，没有硬安全惩罚时，8 步折扣回报不会低于约 −8.03。因此，这些单访问的极低 Q 必须包含后续硬安全惩罚，而不是普通速度、进度或舒适性奖励造成的。这是源码和回报下界的推导，尚未逐步重放原 rollout，不能据此定位每次事件，也不能把这些标签全部判错。
+
+所以，当前更具体的问题是：一次后续随机模拟的不利结果，是否被当成了过于确定的动作排序依据。 这值得优先验证，但还不能断言数据是闭环效果差的唯一原因。
+
+下载完整核查、源码依据与复算结果
+
+下一步：固定一个状态，准备检查教师 Q 的稳定性
+不再扩大检索整个项目。我们固定 C11 100m 的第 807 个 root——它是此前已经发现的连续重复状态块中的第一个。
+
+本次先做只读准备：绑定这个状态、真实地图和必要源码，不执行新搜索。 准备通过后，再进入独立的单根节点诊断，避免直接重训或重跑冻结实验。
+
+下载并上传脚本
+下载：单根节点诊断准备脚本
+
+上传到 /root/autodl-tmp/，然后执行：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u /root/autodl-tmp/minesim_c11_root807_prestart_v1.py
+)
+脚本只保存已有状态记录、检查来源和 SHA，并生成一个 ZIP。大地图只做哈希校验，不加载地图、不运行 MCTS、不训练、不改数据或参数。
+
+执行末尾会显示：
+
+COLLECTOR_STATUS=PASS 或 HOLD
+ZIP_VERIFIED=True
+MCTS_RUN=False
+BUNDLE=/root/autodl-tmp/minesim_c11_root807_prestart_v1_时间_编号.zip
+把 BUNDLE= 对应的 ZIP 发回来即可。 PASS 仅表示诊断输入准备通过，不表示教师 Q 已经收敛；出现 HOLD 也上传结果包，先不修改或重跑。
+
+
+
+28ce61ce-9565-4c90-a170-4d3aad0186bc.zip
+压缩归档
+
+思考了 9m 42s
+
+正在调用工具
+资源：LOW，不需要开 GPU。
+当前 Gate：冻结语义地图的路径与 SHA 重绑定。
+
+这份准备包已经核验：33 项文件校验全部通过，root807 原始记录及807—854共48条记录的 SHA 也一致。 但总体仍是 HOLD，唯一未通过项是：冻结语义地图在原入口找不到有效文件。 这不能证明地图被删除，也还不能进入新的 MCTS 诊断。
+
+MineSim_root807%E5%87%86%E5%A4%87%E5%8C%85%E6%A0%B8%E9%AA%8C%E4%B8%8E%E4%B8%8B%E4%B8%80%E6%AD%A5_20260906.txt
+
+
+我从之前的文件整理记录中找到了这个入口历史上指向的源路径。下一步只检查原地图在哪里、是否仍为相同版本，不再重新扫描训练数据。必须先固定地图，因为路线几何和碰撞条件会影响教师 Q，不能随意换一份地图继续验证。
+
+上传并执行这个脚本
+下载：冻结语义地图只读定位脚本
+
+上传到 /root/autodl-tmp/，然后整段执行：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u /root/autodl-tmp/minesim_semantic_map_rebind_v1.py
+)
+脚本会优先检查旧入口和历史源路径；必要时再读取当前路径登记表，在限定的 MineSim 地图目录中查找候选，只有完整 SHA 一致才认定为同一份地图。
+
+它不修改软链接、不替换地图、不恢复归档、不加载大地图 JSON，也不运行 MCTS 或训练。若只在压缩归档里找到相同文件，会记录位置并保持 HOLD，不会自动解包恢复。脚本已通过10项本地合成测试，真实云端执行仍待这一步完成。
+
+执行后上传一个 ZIP
+终端末尾会显示：
+
+COLLECTOR_STATUS=PASS 或 HOLD
+MAP_BINDING=……
+MCTS_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=/root/autodl-tmp/minesim_semantic_map_rebind_v1_时间_编号.zip
+把 BUNDLE= 对应的 ZIP 发回来即可。 PASS 只代表找到并绑定了字节一致的地图，不代表教师 Q 已收敛；出现 HOLD 也上传结果包，先不要修链接、换地图或重跑。
+
+
+
+72d3f41e-0b44-4952-ad05-ab3cdeaa1553.zip
+压缩归档
+
+
+已查找可用工具
+PASS：冻结语义地图已经找到，地图路径问题可以关闭。
+
+这份结果包中，13 项文件校验全部通过。找到的实际地图文件与原冻结 SHA 完全一致，位于：
+
+/root/autodl-tmp/new_map_fullmine_vector_v2_dev/maps/semantic_map/geojson_full_mine_vector_v2_dev_semantic_map.json
+因此，是旧入口不存在，不是已经证明地图丢失。本次没有恢复文件、修改软链接或更换地图。
+
+MineSim_%E5%9C%B0%E5%9B%BE%E9%87%8D%E7%BB%91%E5%AE%9A%E6%A0%B8%E9%AA%8C%E4%B8%8E%E5%8D%95%E6%A0%B9%E4%B8%80%E6%AD%A5%E9%AA%8C%E8%AF%81_20260907.txt
+
+
+下一步：验证固定状态能否准确重建
+当前 Gate：ROOT807_ONE_STEP_RECONSTRUCTION_PARITY。
+
+这次不再寻找文件，而是实际重建 C11 100m 的 root807，对全部 16 个联合动作分别执行一次确定性状态转移，与原日志逐项比较：
+
+两车的路线进度、速度、航向、即时奖励、最小间距和硬安全标志。
+
+先确认这些一致，才能让后续 Q 标签稳定性检查建立在相同的状态、几何和奖励条件上。本步不运行 MCTS 搜索或随机 rollout，不重新计算 Q，也不训练网络。
+
+资源
+下一步使用 HIGH-CPU，至少 8 GiB 可用内存，GPU 禁用。 原因是需要实际解析约 127 MiB 的语义地图 JSON。你这次上传的云端记录显示内存配额为 80 GiB，脚本会再次检查当前可用内存，不需要使用 GPU。
+
+下载并执行
+下载：root807 单步重建与16动作一致性检查脚本
+
+上传到 /root/autodl-tmp/，然后整段执行：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_c11_root807_one_step_parity_v1.py \
+        --run-one-step-parity
+)
+脚本会核对输入 SHA，在新目录的源码副本中执行，不导入运行旧采集 runner，不修改旧地图、训练数据、模型或 K13 参数。已通过 11 项本地测试；真实地图下的一致性仍须由这次云端结果确认。
+
+执行后上传一个 ZIP
+终端末尾会显示：
+
+DIAGNOSTIC_STATUS=PASS 或 HOLD
+MCTS_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=/root/autodl-tmp/minesim_c11_root807_one_step_parity_exec_v1.zip
+把这个 ZIP 发回来即可。 PASS 只表示单步重建一致，不表示 Q 已收敛；出现 HOLD 也上传结果包，先不要修改或重跑。若提示输出目录已存在，保留并上传原结果，不要删除目录后再次执行。
+
+
+
+abf4538d-17ff-46d3-90ce-a95b993244c6.zip
+压缩归档
+
+思考了 14m 34s
+
+已查找可用工具
+PASS：root807 的单步重建已经通过，可以开始检查教师 Q 标签的稳定性。
+
+本次结果包中，55 项文件校验全部通过；16 个动作的 176 项对比全部一致，最大数值误差为 0。运行前后输入文件和 Git 状态未改变。这说明，在已检查字段上，我们能够准确重建这个状态的单步转移与奖励，但还不能说明 Q 标签已经稳定或训练已经收敛。核验记录与诊断协议
+
+本步：固定状态，实际检查 Q 是否稳定
+当前 Gate：ROOT807_FIXED_STATE_TEACHER_Q_BUDGET_STABILITY_DIAGNOSTIC。
+资源：LOW，CPU-only，至少 1 GiB 可用内存。 这次复用已经提取并校验的六条参考路径，不再加载整张大地图。
+
+固定 C11 100m 的 root807，保持状态、时间、路线、奖励和教师搜索算法不变，只比较下面两项：
+
+项目	本次固定设置
+搜索预算	64、256、1024，均指整个根节点的总预算
+随机种子	31000—31015，共16个；不同预算使用相同种子配对
+总运行量	48 次单根节点搜索，不是48次完整闭环
+这次主要回答：同一个状态换随机种子后，Q 值和动作排序变化多大？增加搜索预算后，这种变化有没有减小？
+
+同时保存 Q 最高动作和 Pure MCTS 按访问数优先选出的动作，不再把这两个目标混为一谈。预算和种子在执行前固定，不根据结果临时追加，也不把 B1024 自动当成真值。
+
+下载并执行
+下载：固定 root807 的教师 Q 稳定性检查脚本
+
+上传到 /root/autodl-tmp/，然后整段执行：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_root807_teacher_q_stability_v1.py \
+        --run-fixed-root-diagnostic
+)
+这次会真正运行 MCTS 搜索及其内部随机 rollout，但不会训练网络、加载模型、运行完整闭环或修改旧数据。 它使用新目录，保留所有种子的结果，包括不利结果。
+
+脚本已通过 16 项本地测试，其中包含模拟搜索器驱动的48组流程测试；真实 root807 的新搜索尚未在本地执行，结果由这次云端运行产生。
+
+执行完成后，上传一个 ZIP
+终端末尾会显示类似：
+
+DIAGNOSTIC_STATUS=PASS 或 HOLD
+COMPLETED_SEARCHES=48/48
+TRAINING_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=/root/autodl-tmp/minesim_root807_teacher_q_stability_exec_v1.zip
+把 BUNDLE= 对应的 ZIP 发回来即可。 PASS 表示本次诊断完整执行，不代表教师 Q 已经收敛；出现 HOLD 也上传结果包，先不要重跑。若提示输出目录已存在，保留原目录，不要删除后重新执行。
+
+
+
+bad8230c-b643-4744-8097-38314239f0e9.zip
+压缩归档
+
+思考了 11m 1s
+技术执行 PASS：48/48 次搜索完成，222 项文件校验全部通过。
+
+这次实测进一步确认：在固定的 root807 上，单纯增加 MCTS 总预算，并没有让整套 Q 标签变得稳定。不能把 B1024 当成已经收敛的教师答案。
+
+资源：LOW，仍然不需要 GPU。
+
+1. 这次最关键的结果
+同一个状态、同一套地图和奖励，只改变随机种子，结果如下：
+
+指标	B64	B256	B1024
+16次搜索中，出现过多少种 Q 最高动作	8种	8种	8种
+最常见的 Q 最高动作出现次数	7/16	3/16	3/16
+各动作 Q 跨种子的平均标准差	29.14	25.59	25.65
+仅访问一次的标签数量	32/256	32/256	32/256
+这里的256个标签是“16个种子 × 16个动作”，不是256个独立状态。完整定义和复算见
+
+MineSim_root807_Q%E7%A8%B3%E5%AE%9A%E6%80%A7%E5%AE%9E%E6%B5%8B%E5%A4%8D%E6%A0%B8%E4%B8%8E%E4%B8%8B%E4%B8%80%E6%AD%A5_20260907.txt
+
+。
+
+更重要的是：预算增加了，但很多标签根本没有得到复查
+从 B256 增加到 B1024，256个“种子—动作”条目中，有226个没有获得任何新增访问，Q 值也完全没变。
+
+每个种子新增的768次搜索访问，平均有 98.32% 集中到其中一条根分支。而那32个只访问一次的极低 Q 标签，从 B64 到 B1024，始终是同一批，数值没有更新。
+
+所以，不能把“同一种子下，增加预算后答案不怎么变了”直接理解为收敛——可能只是越来越集中于早期选中的分支，其他动作的估计仍停留在很少的访问上。 逐项计算保存在报告与复算包。
+
+这加强了你的数据质量疑虑，但还不能认定所有标签都错。尤其这个状态两车已经静止，不同制动／保持动作可能产生相同的下一步位置；动作编号不同，也不等于通行策略一定完全不同。
+
+2. 下一步：只检验“根动作访问分配”这个因素
+当前 Gate：ROOT807_BALANCED_ROOT_ALLOCATION_COUNTERFACTUAL_DIAGNOSTIC。
+
+不立即重训，也不把原数据全部改成 B1024 重采。下一步固定同一个 root，做一个仅用于诊断的均衡访问对照：
+
+让16个根动作获得相同数量的访问，深层 UCT、随机 rollout、回传、奖励和状态全部保持原实现。
+
+这样，总预算64、256、1024分别对应每个根动作 4、16、64次访问，检查跨种子的 Q 波动有没有改善。均衡访问不是已经验证的改进方案，也不会自动成为新训练标签。
+
+原来的48组结果只读取，不重跑；新分支运行相同预算和种子的48组单根诊断。
+
+3. 下载脚本，上传后执行
+下载：root807 均衡根节点访问诊断脚本
+
+上传到 /root/autodl-tmp/，然后整段执行：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_root807_balanced_root_diagnostic_v1.py \
+        --run-balanced-root-diagnostic
+)
+脚本使用新目录和诊断派生类，不修改原 MCTS 源文件、旧结果、训练数据或模型。已通过16项本地单元／合成测试；真实均衡访问结果尚待云端执行。
+
+执行完成后，上传：
+
+/root/autodl-tmp/minesim_root807_balanced_root_diagnostic_exec_v1.zip
+PASS 只表示诊断完整、访问分配符合协议，不表示标签已经收敛。出现 HOLD 也上传结果包，先不要修改或重跑；输出目录已存在时，不要删除后再次执行。
+
+
+已查找可用工具
+技术执行 PASS，但教师 Q 在这个固定状态下仍存在明显波动；单纯把总预算提高到1024，没有解决问题。
+
+资源：LOW，当前不需要再开卡或执行云端代码。
+
+本次 222 项文件校验全部通过，48 次搜索完整完成；我从原始 cell 文件重新计算了统计结果，并核对了768条动作记录，与包内汇总一致。完整核验与复算结果
+
+1. 同一个状态，换随机种子，Q 排序仍然变化很大
+固定车辆状态、时间、路线和奖励参数，每档预算使用相同的16个随机种子，结果如下：
+
+检查项	总预算64	总预算256	总预算1024
+出现过多少种“Q最高动作”	8种	8种	8种
+最常见的“Q最高动作”出现次数	7/16	3/16	3/16
+仅访问一次的动作标签	32/256	32/256	32/256
+这里的256是“16个种子×16个动作”，不是256个独立状态；最常见动作的比例也不是任务成功率。
+
+2. 最关键的发现：预算增加了，很多标签却根本没有被重新检查
+B64 中的32个单次访问、极低 Q 标签，到B1024时仍然是同样的32个，访问次数和 Q 数值完全不变。
+
+进一步看，预算从256增加到1024后，226/256个动作标签没有获得新增访问，占88.28%。新增搜索主要集中到少数已经被看好的动作上。
+
+因此，“增加了总预算”不等于“16个动作的参考答案都更可靠了”。 某个 Q 看起来不再变化，也可能只是因为这个动作没有继续被搜索。
+
+一个具体例子：同样是两车刹车动作 (0,0)，同样使用B1024：
+
+seed31002：Q约 −97.56，仅访问 1次。
+
+seed31006：Q约 −6.77，访问 886次。
+
+这不能说明第二个值一定正确，但说明相同动作的估值与采样支持，明显依赖随机搜索过程。上述统计和逐条记录均已保存在复核包中。
+
+3. 现在对“训练数据有问题”的判断可以更明确一些
+至少在这个已验证状态上，单次教师搜索输出的16维 Q，不能当作已经验证稳定的全动作排序答案。 当前更应该优先处理教师标签的采样支持与可靠性，而不是先增加神经网络训练轮数。
+
+但有一个重要限制：root807是两车停车状态。B64和B1024虽然选出的动作ID不同，其最终动作的一步路线进度与速度都对应两车继续静止。 因此，不能仅凭动作ID变化就断言驾驶行为严重冲突，也不能把这个单根结果外推成2356条数据全部失效。网络是否收敛、标签问题对闭环性能下降贡献多少，仍未由这次实验回答。
+
+
+MineSim_root807_%E6%95%99%E5%B8%88Q%E7%A8%B3%E5%AE%9A%E6%80%A7%E8%AF%8A%E6%96%AD%E7%BB%93%E8%AE%BA_20260907.txt
+
+
+下一步只做新的教师标签采集协议设计：明确每个动作的最低采样／复查支持，并记录回报分布与不确定性；先不追加预算、不重训，也不修改原训练集或冻结的 MCTS／K13。
+
+
+
+39b2ecd9-ca8c-486b-ab8a-9f4a43ff0a3b.zip
+压缩归档
+
+思考了 10m 14s
+
+已查找可用工具
+技术执行 PASS：均衡访问明显降低了 root807 的 Q 波动，但还不能认定教师标签已经收敛。
+
+资源：LOW。当前不用再执行云端代码。
+
+这份是均衡根动作访问分支的结果。我核验了 447 项文件校验值，全部通过；48/48 组新搜索完整完成。包内原始 UCT 对照与之前上传的结果逐文件一致，没有被替换。详细核验见
+
+MineSim_root807_%E5%9D%87%E8%A1%A1%E8%AE%BF%E9%97%AE%E8%AF%8A%E6%96%AD%E5%A4%8D%E6%A0%B8%E7%BB%93%E8%AE%BA_20260907.txt
+
+。
+
+1. 均衡访问确实改善了 Q 的重复性
+固定同一个状态，在相同总预算下比较：
+
+总搜索预算	原始 UCT：Q 跨种子波动	均衡根访问：Q 跨种子波动	波动下降
+B64	29.14	15.62	46.38%
+B256	25.59	7.82	69.46%
+B1024	25.65	3.23	87.39%
+这里的“波动”是：每个动作在16个种子下的 Q 标准差，再对16个动作取平均。下降87.39%不等于准确率提高87.39%，也不代表更接近真实最优 Q。上述数值已从原始 cell 文件独立复算，记录在复算与证据包。
+
+这个结果支持：根动作的访问分配，是当前状态下教师 Q 波动的重要影响因素。不是只要增加总预算就能解决。
+
+2. 原来“一次估计后不再复查”的情况被消除了
+原始 UCT 在 B1024 下，仍有 32/256 个动作标签只访问过一次。
+
+均衡分支则保证每个动作获得 64次访问。从 B256 增加到 B1024，全部256个“种子—动作”条目都获得了新增访问；原始分支却有226个没有新增访问。
+
+另外，各预算下原来的32个 Q＜−90 标签，在均衡分支中均降为0个。这只是平均 Q 的统计变化，不能解读成随机模拟中的碰撞或硬安全违反消失。 每次访问的完整回报与事件序列，本轮没有记录。
+
+3. 但现在仍不能直接拿它重训
+在均衡访问的 B1024 下：
+
+16次搜索仍出现8种“Q最高动作”，最常见的只出现3次；120个动作对中，仍有93对在不同种子下出现过排序反转。
+
+所以当前状态是：Q 的数值波动减小了，但完整动作排序还没有被证明稳定。
+
+还要注意，root807是两车已经静止的状态。不同制动／保持动作可能产生相同的一步位置和速度，但加速度字段与舒适性奖励不同。因此，既不能把动作编号变化直接当成驾驶失败，也不能为了提高一致率，把这些动作随意合并。
+
+当前判断与下一步
+你的数据质量疑虑有了更直接的支持：教师搜索对各动作的采样支持不足、分配失衡，至少在这个状态上确实影响标签重复性。 但这还不能证明所有2356条数据都有同样的问题，也不能证明换成均衡标签后，网络或剪枝就一定改善。
+
+下一步只制定“小规模多状态教师标签验证协议”：先固定代表状态和标签质量判据，再决定新采样；不继续盲目增加 root807 的预算，不重训，也不覆盖旧训练集。当前网络训练是否收敛，仍是尚未解决的另一项检查。
+
+下载完整复核包：报告、逐动作统计、原始证据与离线复算脚本
+
+
+那就继续做吧
+
+思考了 19m 24s
+
+正在调用工具
+资源：LOW，不需要开 GPU。
+当前 Gate：多状态教师标签验证协议与输入冻结。
+
+协议和选点已经完成。这一步只把云端输入绑定好，不重训、不改旧数据，也不启动新搜索。
+
+1. 已经固定9个状态，不再只研究 root807
+我从已有训练数据中选取了以下状态，并逐条核对了原始记录与 NPZ：
+
+场景／原始 episode	早期接近	接近冲突参照点、仍有运动	通过参照点或停车
+C04／seed5	step 0	step 94	step 123：两车通过参照点
+C06／seed1	step 0	step 119	step 140：两车通过参照点
+C11／100m、seed0	step 0	step 171	step 180：两车停车
+选点依据是速度、剩余距离和原记录中的区域归属，不按 Q 值或实验表现挑选。 root807及其相同输入、C01评价集、K13校准数据都不进入这组新样本。这里的“通过参照点”不等于已经完成通行任务。
+
+后续比较方案固定为：原始 UCT 对照均衡根访问，预算64／256／1024，每档16个新种子。还要增加逐次回传值和硬安全事件记录，不能继续只看最终平均 Q。具体指标、筛查门槛和结论边界已经写入协议，但本次脚本不会执行这些搜索。
+
+下载完整协议、选点记录与准备代码
+
+2. 现在上传并执行这个脚本
+下载：多状态教师验证只读准备脚本
+
+上传到：
+
+/root/autodl-tmp/
+然后整段执行：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_multiroot_teacher_prestart_v1.py \
+        --freeze-inputs
+)
+脚本已经内置协议，不需要你另外填写路径。它会核对 31项数据、源码、场景和地图绑定，重新核验9个状态，保存必要证据并打包。大地图只计算 SHA，不解析；项目源码只读取，不导入执行。
+
+已通过 20项本地测试，包括真实上传数据的选点核验和模拟环境完整流程测试；真实云端绑定尚待本次执行。
+
+3. 把生成的一个 ZIP 发回来
+执行末尾会显示：
+
+PRESTART_STATUS=PASS 或 HOLD
+SELECTED_ROOTS=9/9
+MCTS_RUN=False
+TRAINING_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=/root/autodl-tmp/minesim_multiroot_teacher_protocol_prestart_v1.zip
+上传 BUNDLE= 对应的 ZIP 即可。 PASS 仅表示输入准备通过，不表示教师标签已经达标；出现 HOLD 也上传结果包，先不要修改或重跑。若提示目录已存在，保留原目录，不要删除后再次执行。
+
+
+
+89ef559b-02e8-4fb0-bc5f-00d0ee51aafc.zip
+压缩归档
+
+思考了 17m
+
+正在调用工具
+PASS：9个状态的输入准备已通过，可以进入重建与日志验证。
+
+包内 51项文件校验全部通过；9条选定原始记录与训练 NPZ 的特征、Q 标签、即时奖励逐项一致。云端记录的31项来源绑定全部通过，前后 Git 状态未改变。这只是输入准备通过，不代表教师标签已经达标。 核验记录与本地测试报告
+
+本步：确认状态能重建，新增日志不干扰搜索
+当前 Gate：NINE_ROOT_ONE_STEP_AND_LOGGER_PARITY。
+
+脚本按顺序完成两个检查：
+
+检查	本次具体执行
+9个状态的单步重建	每个状态检查16个联合动作，共144次确定性转移；与原记录比较进度、速度、航向、奖励、间距和硬安全标志。
+日志无干扰验证	前一项全部通过后，对原始 UCT、均衡根访问分别比较“不开日志／开启日志”，要求 Q、访问数、最终动作和随机数状态完全一致。
+第二项会执行 36次短技术搜索，每次预算64，使用单独固定的技术种子33000。目的是确认“记录每次回传和安全事件”不会改变搜索结果，不是启动后续864组标签验证，也不评价教师收敛。
+
+资源：这次需要 HIGH-CPU，GPU禁用
+这份云端记录显示当前只有2 GiB内存配额。请先切换到高内存实例，再执行下面代码。 脚本要求至少 8 GiB可用内存，因为这次需要实际解析地图并构建路线几何，不再只是计算文件 SHA。
+
+不需要 GPU，不训练网络，也不修改原数据、模型或冻结实验。
+
+下载并执行
+下载：9状态重建与日志无干扰验证脚本
+
+上传到 /root/autodl-tmp/，然后整段执行：
+
+(
+    set -e
+
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_multiroot_one_step_logger_parity_v1.py \
+        --run-technical-parity
+)
+脚本已通过 25项本地测试，包括日志开关前后的调用次数与结果一致性检查；完整9状态的云端验证仍待本次执行。
+
+执行完成后，将这个 ZIP 上传回来：
+
+/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1.zip
+出现 HOLD 也上传结果包，先不要修改或重跑。 输出目录已存在时，不要删除后再次执行。本步通过后再决定启动固定的多状态标签实验，脚本不会自动继续。
+
+
+文件我已经上传了，为什么代码一运行就退出终端了
+
+思考了 6m 15s
+
+已查找可用工具
+先不要重跑实验，也不用重新上传脚本。现在还不能确定是文件、环境还是资源问题。
+
+我刚检查了脚本，需要区分两种情况：
+
+**只是回到 root@…# 提示符：**这是程序结束，不是终端断开。脚本遇到环境不对、输出目录已存在时会直接返回退出码 2；可用内存不足 8 GiB 时也会停止，并把原因写入 error.json。
+
+
+**整个终端窗口关闭或连接断开：**不能直接认定是内存不足。上一段命令使用了 set -e，失败会终止相应执行流程，但完整的圆括号通常将它限制在子 Shell 内；还需要检查当前 Shell 设置和实际错误。我上一版没有把具体失败原因直接展示出来，排错不够直观。 
+
+现在只读取错误，不重新运行实验
+资源：LOW，不需要开 GPU。
+
+重新打开终端，完整复制下面这一段，包括开头的 if ( 和末尾的 fi：
+
+if (
+    printf 'SHELL_FLAGS_BEFORE=%s\n' "$-"
+    set +e
+    set +u
+
+    cd /root/MineSim-Dynamic || echo 'REPO_NOT_FOUND'
+    if [ -r /root/miniconda3/etc/profile.d/conda.sh ]; then
+        source /root/miniconda3/etc/profile.d/conda.sh && conda activate minesim
+        printf 'ENV_ACTIVATION_RC=%s\n' "$?"
+    else
+        echo 'CONDA_INIT_NOT_FOUND'
+    fi
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    printf 'ENV=%s\n' "${CONDA_DEFAULT_ENV:-NOT_ACTIVATED}"
+    command -v python
+    ls -l /root/autodl-tmp/minesim_multiroot_one_step_logger_parity_v1.py
+
+    D=/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1
+    ls -ld "$D" "$D.zip" 2>&1
+
+    for f in error.json worker_error.json SUMMARY.json preflight.json worker_rc.txt worker_stderr.txt worker_stdout.txt; do
+        if [ -f "$D/$f" ]; then
+            printf '\n===== %s =====\n' "$f"
+            tail -n 30 "$D/$f"
+        fi
+    done
+
+    printf '\n===== RELATED_PROCESSES =====\n'
+    ps -eo pid,ppid,stat,etime,args |
+        grep -E '[m]inesim_multiroot_one_step_logger_parity|[d]iagnostic_script.py' || true
+
+    for f in /sys/fs/cgroup/memory.max /sys/fs/cgroup/memory.current /sys/fs/cgroup/memory.events /sys/fs/cgroup/memory/memory.limit_in_bytes /sys/fs/cgroup/memory/memory.usage_in_bytes; do
+        if [ -r "$f" ]; then
+            printf '\n===== %s =====\n' "$f"
+            cat "$f"
+        fi
+    done
+); then
+    echo 'CHECK_FINISHED_NO_EXPERIMENT_RUN'
+else
+    echo 'CHECK_INCOMPLETE_NO_EXPERIMENT_RUN'
+fi
+这段只检查文件、已有日志、相关进程和内存记录，不加载地图、不启动搜索、不修改实验结果。
+
+把输出发回来，并注明刚才是“回到命令提示符”还是“整个连接断开”。先不要删除输出目录，也不要再次执行 --run-technical-parity。
+
+
+
+); then
+    echo 'CHECK_FINISHED_NO_EXPERIMENT_RUN'
+else
+    echo 'CHECK_INCOMPLETE_NO_EXPERIMENT_RUN'
+fi
+SHELL_FLAGS_BEFORE=himBHs
+ENV_ACTIVATION_RC=0
+ENV=minesim
+/root/miniconda3/envs/minesim/bin/python
+-rw-r--r-- 1 root root 51125 Sep  7 21:42 /root/autodl-tmp/minesim_multiroot_one_step_logger_parity_v1.py
+ls: cannot access '/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1.zip': No such file or directory
+drwxr-xr-x 5 root root 4096 Sep  7 21:43 /root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1
+
+===== preflight.json =====
+  "executable": "/root/miniconda3/envs/minesim/bin/python",
+  "cwd": "/root/MineSim-Dynamic",
+  "conda": "minesim",
+  "git": {
+    "head": {
+      "rc": 0,
+      "stdout": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e\n",
+      "stderr": ""
+    },
+    "status": {
+      "rc": 0,
+      "stdout": "?? ^C\n",
+      "stderr": ""
+    }
+  },
+  "memory": {
+    "/sys/fs/cgroup": {
+      "limit": "85899345920",
+      "usage": "407777280"
+    },
+    "/sys/fs/cgroup/memory": {
+      "limit": null,
+      "usage": null
+    },
+    "proc_mem_available": 953827336192,
+    "available_headroom_bytes": 85491568640,
+    "cgroup_cpu_max": "1500000 100000"
+  },
+  "gpu_for_worker": "DISABLED"
+}
+
+===== worker_stderr.txt =====
+Traceback (most recent call last):
+  File "/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1/diagnostic_script.py", line 959, in <module>
+    sys.exit(main())
+  File "/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1/diagnostic_script.py", line 824, in main
+    return worker_entry(Path(args._worker).resolve())
+  File "/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1/diagnostic_script.py", line 807, in worker_entry
+    worker(out)
+  File "/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1/diagnostic_script.py", line 776, in worker
+    contexts[scene] = build_scene(out, scene, protocol, records, api)
+  File "/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1/diagnostic_script.py", line 413, in build_scene
+    caches[t] = api['RouteGeometryCache'](paths[t], footprints[t], grid_step_m=1.0)
+  File "/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1/engine/devkit/sim_engine/planning/planner/mcts/geometry_transition_model.py", line 171, in __init__
+    ego_path.get_state_at_progress(
+  File "/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1/parent/evidence/C11_runner_cross_scene_fleet_mcts_c11_start100m_seed0_paper1_neural_collector_retry1_v1.py", line 538, in get_state_at_progress
+    min(
+KeyboardInterrupt
+
+===== worker_stdout.txt =====
+IMPORT_AND_INPUT_RECHECK=PASS
+MAP_LOAD_BEGIN
+MAP_LOAD_END_PATHS=18
+
+===== RELATED_PROCESSES =====
+
+===== /sys/fs/cgroup/memory.max =====
+85899345920
+
+===== /sys/fs/cgroup/memory.current =====
+377856000
+
+===== /sys/fs/cgroup/memory.events =====
+low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+CHECK_FINISHED_NO_EXPERIMENT_RUN
+(base) root@autodl-container-02b744a905-1841eb5b:~/autodl-tmp# 
+
+思考了 1m 56s
+原因已经很明确了：不是内存不够，也不是代码“自己把终端关了”。
+
+你的程序已经正常启动，环境和资源都没问题：
+
+minesim 环境正确；
+
+Git HEAD 正确；
+
+可用内存约 85 GB；
+
+oom=0 / oom_kill=0，所以绝对不是 OOM；
+
+地图也已经加载完成，日志已经到 MAP_LOAD_END_PATHS=18。
+
+真正停止的位置是：
+
+RouteGeometryCache(...)
+→ get_state_at_progress(...)
+→ min(...)
+→ KeyboardInterrupt
+也就是说，worker 在构建路线几何缓存时收到了 SIGINT，Python 表现为 KeyboardInterrupt。最常见原因就是 Ctrl+C，或者终端/UI向前台进程发送了中断信号。它不是脚本自己的正常退出，也不是内存崩溃。
+
+
+另外，你最后看到：
+
+(base) root@...
+也不是 SSH 终端退出。因为我之前让你用的是：
+
+(
+    conda activate minesim
+    ...
+)
+圆括号会创建一个子 Shell。子 Shell 结束后，自然回到外层原本的 (base) 环境，所以看起来像“minesim退出了”，实际上 SSH 还在。
+
+为什么它在那里看起来像卡死？
+当前9状态脚本会为每个场景构造：
+
+RouteGeometryCache(paths[t], ..., grid_step_m=1.0)
+而冻结 runner 的 RouteAdapter.get_state_at_progress() 在缓存构造过程中被大量调用。你的 traceback 正好停在其中的 min(...)。
+
+
+所以现在真正的故障域是：
+
+RouteGeometryCache 初始化 / RouteAdapter.get_state_at_progress 的构建耗时
+
+还没有进入我们真正要做的36次技术 MCTS 搜索，更没有产生教师标签科学结果。
+
+现在不要再运行刚才那条命令
+因为：
+
+/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_v1
+已经存在，而且脚本已经写了 START.json。按照项目规则，这个 namespace 已经消费，不能删除后原名重跑。脚本本身也明确禁止已有 namespace 再运行。
+
+
+这属于：
+
+Technical FAIL，发生在搜索前；Scientific result = 0。
+
+下一步我会给你做一个 retry1 新 namespace，重点不是改算法，而是先处理这个路线缓存构建问题，并增加明确的进度输出，避免它长时间无输出让人误以为卡死。
+
+在改之前只需要最后确认一下 RouteAdapter 的真实实现。资源 LOW，运行下面这段只读代码，不会启动实验：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python - <<'PY'
+from pathlib import Path
+import ast
+
+D = Path(
+    "/root/autodl-tmp/"
+    "minesim_multiroot_one_step_logger_parity_exec_v1"
+)
+
+print("=== ROUTE ADAPTER ===")
+found = 0
+
+for p in (D / "parent").rglob("*.py"):
+    try:
+        text = p.read_text(encoding="utf-8")
+        tree = ast.parse(text)
+    except Exception:
+        continue
+
+    for n in tree.body:
+        if isinstance(n, ast.ClassDef) and n.name == "RouteAdapter":
+            print("\nFILE:", p)
+            print("LINES:", n.lineno, "-", n.end_lineno)
+            print(ast.get_source_segment(text, n))
+            found += 1
+
+print("\nROUTE_ADAPTER_COUNT=", found)
+
+p = (
+    D / "engine/devkit/sim_engine/planning/planner/mcts/"
+    "geometry_transition_model.py"
+)
+
+print("\n=== ROUTE GEOMETRY CACHE ===")
+if p.is_file():
+    lines = p.read_text(encoding="utf-8").splitlines()
+    for i in range(145, min(190, len(lines)) + 1):
+        print(f"{i:04d}: {lines[i-1]}")
+else:
+    print("GEOMETRY_SOURCE_NOT_FOUND")
+PY
+)
+把输出直接发我。
+
+这一步之后我就能判断究竟是：
+
+原 get_state_at_progress() 每次线性扫描导致初始化极慢；还是
+
+RouteGeometryCache 本身存在更高复杂度；还是
+
+某一条 C04/C06 路线异常长。
+
+然后我给你 retry1 修正版，不动冻结算法和数据。
+
+
+
+粘贴的文本 (1)(20260907-135656).txt
+文档
+
+
+正在调用工具
+看过了，独立的 retry1 脚本已经准备好。
+
+先纠正一点：这里的 min() 只是限制数值范围，不是在搜索整条路线。 每个采样点会调用三次 interpolate()，缓存则按固定采样点数循环构建。从这段代码没有看到无限循环；但目前缺少分路线计时，还不能确定是哪条路线慢，也不能宣布存在异常长路线。 
+
+ 
+
+
+因此，这版不贸然修改几何计算，先让原来的初始化过程可观察，并补上中断后的结果保存。
+
+本次修正
+资源：HIGH-CPU，至少8 GiB可用内存，GPU禁用。
+当前 Gate：9状态重建与日志无干扰验证的技术恢复。
+
+新版增加了三项处理：
+
+修正	你能看到的变化
+逐路线进度	显示当前场景、A/B车辆、路线长度、总采样点数、已完成点数和耗时。
+每10秒心跳	不再长时间没有终端输出。心跳说明进程仍存活，CACHE_PROGRESS 增长才说明缓存构建在推进。
+中断保存与独立目录	先核验旧尝试确实未进入搜索，保存旧失败证据，再使用新目录执行；遇到可处理的中断或超时，停止并保存结果。
+地图、1米缓存间距、插值、奖励、MCTS算法、预算和种子均不改。 仍然先检查144次单步转移，全部通过后才执行原定36次短技术搜索，不启动864组正式诊断。
+
+下载并上传
+下载：retry1 修正版脚本
+
+上传到：
+
+/root/autodl-tmp/
+不要覆盖旧脚本，也不要删除旧结果目录。 新脚本会自己读取并保存旧失败证据。
+
+代码差异、说明与本地测试记录也已打包。21项本地测试通过，包含合成缓存等价、进度输出、中断清理和打包测试；真实9状态验证仍待云端执行。
+
+完整复制执行
+这次保留外层 if … fi，不要只复制中间部分：
+
+if (
+    cd /root/MineSim-Dynamic &&
+    source /root/miniconda3/etc/profile.d/conda.sh &&
+    conda activate minesim &&
+
+    export PYTHONPATH=/root/MineSim-Dynamic &&
+    export PYTHONDONTWRITEBYTECODE=1 &&
+    export CUDA_VISIBLE_DEVICES="" &&
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_multiroot_one_step_logger_parity_retry1_v1.py \
+        --run-technical-parity-retry1
+); then
+    echo 'STEP_FINISHED: upload the printed BUNDLE.'
+else
+    echo 'STEP_STOPPED: upload BUNDLE or send PRESTART_HOLD; do not rerun.'
+fi
+运行时会看到 SCENE_BUILD_BEGIN、ROUTE_CACHE_BEGIN、CACHE_PROGRESS 和 HEARTBEAT。保持终端和实例开启，不要因为暂时没有“完成”提示就重复启动。 仍保留原来的900秒 worker 超时上限，不会无限等待。
+
+执行后上传这一个 ZIP
+/root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_retry1_v1.zip
+PASS或HOLD都上传结果包。 如果在启动前直接显示 PRESTART_HOLD、没有ZIP，把该条消息发回来；如果提示新目录已存在，不要删除后重跑。
+
+
+
+c90ef394-23db-4d5f-8fa0-bbae817cf3dc.zip
+压缩归档
+
+思考了 21m 53s
+
+正在调用工具
+PASS：retry1 已完整通过，9状态重建和日志验证都完成了。现在可以开始原定的多状态教师标签诊断。
+
+本次独立核验结果：
+
+检查项	结果
+文件完整性	428项 SHA 全部一致
+9状态、144次单步转移	1584项对比全部一致，最大误差为0
+36次短技术搜索	全部完成
+日志开启／关闭对照	18对的 Q、访问数、最终动作和随机数状态完全一致
+逐次回传日志	1152条记录复算通过
+另外，六条路线缓存合计只用了约1.35秒，整个 worker 约12.04秒正常完成。这次没有缓存初始化异常耗时的证据，不需要修改几何算法。核验明细见验收与代码测试记录。
+
+本步：运行864组单根教师标签诊断
+资源：LOW，CPU-only，不需要 GPU。
+本轮复用已冻结的18条参考路径，不再解析全矿大地图；脚本要求至少 1 GiB可用内存、1.5 GiB空闲磁盘。
+
+固定设置不变：
+
+项目	设置
+状态	已选定的 C04、C06、C11 共9个状态
+方法	原始 UCT、均衡根动作访问
+总根节点预算	64、256、1024
+随机种子	32000—32015，共16个
+总量	864次单根搜索，不是864次完整闭环
+这次会保存每次回传值、各动作访问数、Q、硬安全事件和终止原因，用来判断均衡访问的改善能否扩展到不同状态，以及哪些状态的标签仍不稳定。不训练网络，不修改原数据，不重跑旧实验。
+
+下载、上传并执行
+下载：多状态教师标签诊断脚本
+
+上传到 /root/autodl-tmp/，然后完整执行：
+
+if (
+    cd /root/MineSim-Dynamic &&
+    source /root/miniconda3/etc/profile.d/conda.sh &&
+    conda activate minesim &&
+
+    export PYTHONPATH=/root/MineSim-Dynamic &&
+    export PYTHONDONTWRITEBYTECODE=1 &&
+    export CUDA_VISIBLE_DEVICES="" &&
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_multiroot_teacher_validation_v1.py \
+        --launch-frozen-matrix
+); then
+    echo 'LAUNCH_RETURNED: check the printed log and final BUNDLE.'
+else
+    echo 'PRESTART_STOPPED: send the error; do not rerun.'
+fi
+这次采用独立后台运行：启动后立即回到命令提示符是正常现象，不是终端退出，也不代表实验已经完成。 保持云端实例开启，不要再次启动同一命令。
+
+启动时会打印 LAUNCH_LOG 和进程号。运行进度保存在：
+
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1/worker_stdout.txt
+其中 CELL_END=完成数/864 表示实际进度。
+
+脚本已通过 23项本地检查，包括使用冻结搜索源码的合成状态测试、预算前缀一致性、压缩日志和中断保存检查；真实864组搜索尚未执行。
+
+完成后，只上传这个 ZIP
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1.zip
+PASS或HOLD都上传结果包。 PASS 仅表示诊断完整执行，教师标签是否达到预定质量标准，还要根据返回数据判断。若启动前显示 PRESTART_HOLD、没有ZIP，把错误或打印出的启动日志发回来；不要删除目录后重跑。
+
+
+
+66786d2a-c758-460b-816c-fbf1aed5daee.log
+文件
+env.sh: No such file or directory
+(base) root@autodl-container-02b744a905-1841eb5b:~# if (
+    cd /root/MineSim-Dynamic &&
+    source /root/miniconda3/etc/profile.d/conda.sh &&
+    conda activate minesim &&
+
+    export PYTHONPATH=/root/MineSim-Dynamic &&
+    export PYTHONDONTWRITEBYTECODE=1 &&
+    export CUDA_VISIBLE_DEVICES="" &&
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_multiroot_teacher_validation_v1.py \
+        --launch-frozen-matrix
+); then
+    echo 'LAUNCH_RETURNED: check the printed log and final BUNDLE.'
+else
+    echo 'PRESTART_STOPPED: send the error; do not rerun.'
+fi
+LAUNCH_STATUS=STARTED_NOT_EXPERIMENT_PASS
+SUPERVISOR_PID=1314
+LAUNCH_LOG=/root/autodl-tmp/minesim_multiroot_teacher_validation_v1_launch_20260907T151631Z_ff1565b6.log
+OUTPUT_DIRECTORY=/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1
+EXPECTED_BUNDLE=/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1.zip
+NO_RERUN: returning to the shell is expected; keep the cloud instance on.
+LAUNCH_RETURNED: check the printed log and final BUNDLE.
+(base) root@autodl-container-02b744a905-1841eb5b:~# 
+
+
+思考了 1m 15s
+这次已经正常启动，不是终端退出，也不是实验失败。
+
+资源：LOW，CPU-only；当前正在执行864组教师标签诊断。
+
+从你上传的这份日志截取可以确认：三个场景的路线缓存都已构建完成；前10组搜索已结束，第11组已经开始，期间心跳记录为 worker_alive=True。因此任务已经真正进入搜索阶段，不再停在地图或缓存初始化上。
+
+
+开头的 env.sh: No such file or directory
+这条提示出现在本次启动命令之前。它没有阻止这次任务启动，后续日志已经显示输入绑定通过并开始搜索；但具体是哪个初始化配置引用了 env.sh，当前输出不能确定。先不要为了这条提示修改环境。 
+
+ 
+
+
+回到 (base) root@…# 也是本次后台启动方式的预期行为，不代表后台任务结束。你看到的 LAUNCH_STATUS=STARTED_NOT_EXPERIMENT_PASS 只表示启动成功，不是实验验收通过。
+
+现在保持实例运行，等待结果包
+不要再次执行 --launch-frozen-matrix，不要删除输出目录，也不要关闭云端实例。
+
+进度日志中的 CELL_END=完成数/864 会继续增加。全部搜索结束后还需要汇总和打包，最终结果文件是：
+
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1.zip
+最终显示 PASS 或 HOLD，都把这个 ZIP 上传回来。 目前这份日志只覆盖开始阶段，还不能判断完整864组是否完成，更不能提前判断教师标签是否达标。
+
+
+你不早说，我都退出终端了、
+
+思考了 6m 17s
+
+正在调用工具
+抱歉，是我刚才没有说清楚：只退出终端，通常不会中断这次任务，不需要因此重跑。
+
+我刚核对了启动代码：这版已经脱离终端独立运行，输入不依赖终端，输出直接写入日志。 所以正确的提醒应该是：可以关闭终端，但不要关闭或重启云端实例。 
+
+
+现在不能仅凭“退出终端”判断任务停止。重新打开终端，执行下面的只读检查即可，资源 LOW，不会重新启动实验：
+
+if (
+    cd /root/MineSim-Dynamic &&
+    source /root/miniconda3/etc/profile.d/conda.sh &&
+    conda activate minesim &&
+
+    export PYTHONPATH=/root/MineSim-Dynamic &&
+    export PYTHONDONTWRITEBYTECODE=1 &&
+    export CUDA_VISIBLE_DEVICES="" &&
+
+    {
+        D=/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1
+        L=/root/autodl-tmp/minesim_multiroot_teacher_validation_v1_launch_20260907T151631Z_ff1565b6.log
+
+        echo '===== 当前相关进程 ====='
+        ps -eo pid,ppid,stat,etime,args |
+            grep '[m]inesim_multiroot_teacher_validation' || true
+
+        echo '===== 最新运行日志 ====='
+        tail -n 15 "$L" 2>&1 || true
+
+        echo '===== 结果压缩包 ====='
+        ls -lh "$D.zip" 2>&1 || true
+    }
+); then
+    echo '只读检查结束，没有重新启动实验。'
+else
+    echo '检查未完成，没有重新启动实验。'
+fi
+把输出发回来即可。即使进程已经结束，也可能是任务正常完成了；先看日志和 ZIP，不要重新执行启动命令或删除目录。
+
+
+
+1.系统盘较小请将大的数据存放于数据盘或文件存储中，重置系统时数据盘和文件存储中的数据不受影响
+2.清理系统盘请参考：https://www.autodl.com/docs/qa1/
+3.终端中长期执行命令请使用screen等工具开后台运行，确保程序不受SSH连接中断影响：https://www.autodl.com/docs/daemon/
+bash: /root/autodl-tmp/codex-env.sh: No such file or directory
+(base) root@autodl-container-02b744a905-1841eb5b:~# if (
+    cd /root/MineSim-Dynamic &&
+    source /root/miniconda3/etc/profile.d/conda.sh &&
+    conda activate minesim &&
+
+    export PYTHONPATH=/root/MineSim-Dynamic &&
+    export PYTHONDONTWRITEBYTECODE=1 &&
+    export CUDA_VISIBLE_DEVICES="" &&
+
+    {
+        D=/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1
+        L=/root/autodl-tmp/minesim_multiroot_teacher_validation_v1_launch_20260907T151631Z_ff1565b6.log
+
+        echo '===== 当前相关进程 ====='
+        ps -eo pid,ppid,stat,etime,args |
+            grep '[m]inesim_multiroot_teacher_validation' || true
+
+        echo '===== 最新运行日志 ====='
+        tail -n 15 "$L" 2>&1 || true
+
+        echo '===== 结果压缩包 ====='
+        ls -lh "$D.zip" 2>&1 || true
+    }
+); then
+    echo '只读检查结束，没有重新启动实验。'
+else
+    echo '检查未完成，没有重新启动实验。'
+fi
+===== 当前相关进程 =====
+===== 最新运行日志 =====
+CELL_BEGIN=34/864 C04_s0000__s32005__b256__BALANCED_ROOT
+CELL_END=34/864 elapsed=30.8s
+CELL_BEGIN=35/864 C04_s0000__s32005__b1024__BALANCED_ROOT
+CELL_END=35/864 elapsed=32.8s
+CELL_BEGIN=36/864 C04_s0000__s32005__b1024__ORIGINAL_UCT
+CELL_END=36/864 elapsed=34.4s
+CELL_BEGIN=37/864 C04_s0000__s32006__b64__ORIGINAL_UCT
+CELL_END=37/864 elapsed=34.5s
+CELL_BEGIN=38/864 C04_s0000__s32006__b64__BALANCED_ROOT
+CELL_END=38/864 elapsed=34.7s
+CELL_BEGIN=39/864 C04_s0000__s32006__b256__BALANCED_ROOT
+CELL_END=39/864 elapsed=35.2s
+CELL_BEGIN=40/864 C04_s0000__s32006__b256__ORIGINAL_UCT
+CELL_END=40/864 elapsed=35.7s
+CELL_BEGIN=41/864 C04_s0000__s32006__b1024__ORIGINAL_UCT
+===== 结果压缩包 =====
+ls: cannot access '/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1.zip': No such file or directory
+只读检查结束，没有重新启动实验。
+(base) root@autodl-container-02b744a905-1841eb5b:~# 
+
+思考了 47s
+你这个结果说明：任务已经停了，确实没有继续在后台跑。 这次是我前面判断失误——虽然脚本用了 start_new_session=True，但 AutoDL 明确建议长期任务用 screen，在这个环境里不能把 start_new_session 当成“SSH 断开后一定存活”的保证。以后长任务我会统一按你的 Skill 用 screen。
+
+当前事实是：
+
+进程已经不存在；
+
+ZIP 没生成；
+
+日志停在 CELL 41/864 开始后；
+
+前 40 个 cell 已经明确完成；
+
+第41个 cell 是否产生了部分结果，需要再检查；
+
+不能原 namespace 重跑，也不能把前40个重新跑一遍当没发生。
+
+原脚本每个 cell 都先创建独立目录和 START.json，搜索完成后才写 result.json；因此这40个已完成 cell 可以保留为真实证据。
+
+
+现在只做一次只读恢复检查
+资源：LOW。不要启动实验。
+
+复制执行：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python - <<'PY'
+from pathlib import Path
+import json
+
+D = Path("/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1")
+cells = D / "cells"
+
+print("=== MATRIX RECOVERY INVENTORY ===")
+print("OUTPUT_EXISTS =", D.is_dir())
+print("PROGRESS_EXISTS =", (D/"progress.jsonl").is_file())
+
+started = []
+completed = []
+partial = []
+
+if cells.is_dir():
+    for p in sorted(cells.iterdir()):
+        if not p.is_dir():
+            continue
+
+        has_start = (p/"START.json").is_file()
+        has_search_started = (p/"SEARCH_CALL_STARTED.json").is_file()
+        has_search_returned = (p/"SEARCH_RETURNED.json").is_file()
+        has_result = (p/"result.json").is_file()
+
+        if has_start:
+            started.append(p.name)
+
+        if has_result:
+            completed.append(p.name)
+        else:
+            partial.append({
+                "cell": p.name,
+                "START": has_start,
+                "SEARCH_CALL_STARTED": has_search_started,
+                "SEARCH_RETURNED": has_search_returned,
+                "RESULT": has_result,
+                "files": sorted(x.name for x in p.iterdir()),
+            })
+
+print("STARTED_CELLS =", len(started))
+print("COMPLETED_RESULT_CELLS =", len(completed))
+print("PARTIAL_CELL_COUNT =", len(partial))
+
+print("\nFIRST_COMPLETED =", completed[:3])
+print("LAST_COMPLETED =", completed[-3:])
+
+print("\nPARTIAL:")
+for x in partial:
+    print(json.dumps(x, ensure_ascii=False))
+
+if (D/"progress.jsonl").is_file():
+    lines = (D/"progress.jsonl").read_text(encoding="utf-8").splitlines()
+    print("\nPROGRESS_ROWS =", len(lines))
+    print("LAST_PROGRESS =", lines[-1] if lines else "NONE")
+
+for f in ["error.json","worker_error.json","SUMMARY.json","CAPTURE.json","rc.txt"]:
+    p = D/f
+    print(f"\n{f}:")
+    if p.is_file():
+        print(p.read_text(encoding="utf-8", errors="replace")[-3000:])
+    else:
+        print("MISSING")
+
+print("\n=== MEMORY EVENTS ===")
+for f in [
+    "/sys/fs/cgroup/memory.events",
+    "/sys/fs/cgroup/memory.current",
+    "/sys/fs/cgroup/memory.max",
+]:
+    p=Path(f)
+    if p.is_file():
+        print(f, "=", p.read_text().strip())
+PY
+)
+把输出发我。
+
+接下来怎么恢复
+如果结果如预期是：
+
+COMPLETED_RESULT_CELLS = 40
+PARTIAL_CELL_COUNT = 1
+那么我会给你一个新的 retry1/resume namespace：
+
+保留并冻结原来40个完成结果；
+
+第41个如果只有 START、没有完整 result，标记为技术中断，不复用；
+
+只运行剩余未完成 cell；
+
+新运行统一通过 screen；
+
+最后把两个 namespace 按固定 schedule 合并成完整864-cell结果；
+
+不改 seed、budget、方法、状态、搜索算法或判据。
+
+原矩阵 schedule 本来就是固定的 9 roots × 16 seeds × 3 budgets × 2 methods = 864 cells。
+
+
+这一步先不重跑任何东西。把上面的只读结果给我，我直接给你恢复脚本。
+
+
+
+print("PARTIAL_CELL_COUNT =", len(partial))
+
+print("\nFIRST_COMPLETED =", completed[:3])
+print("LAST_COMPLETED =", completed[-3:])
+
+print("\nPARTIAL:")
+for x in partial:
+    print(json.dumps(x, ensure_ascii=False))
+
+if (D/"progress.jsonl").is_file():
+)Y      print(f, "=", p.read_text().strip())errors="replace")[-3000:])n","rc.txt"]:
+=== MATRIX RECOVERY INVENTORY ===
+OUTPUT_EXISTS = True
+PROGRESS_EXISTS = True
+STARTED_CELLS = 41
+COMPLETED_RESULT_CELLS = 40
+PARTIAL_CELL_COUNT = 1
+
+FIRST_COMPLETED = ['C04_s0000__s32000__b1024__BALANCED_ROOT', 'C04_s0000__s32000__b1024__ORIGINAL_UCT', 'C04_s0000__s32000__b256__BALANCED_ROOT']
+LAST_COMPLETED = ['C04_s0000__s32006__b256__ORIGINAL_UCT', 'C04_s0000__s32006__b64__BALANCED_ROOT', 'C04_s0000__s32006__b64__ORIGINAL_UCT']
+
+PARTIAL:
+{"cell": "C04_s0000__s32006__b1024__ORIGINAL_UCT", "START": true, "SEARCH_CALL_STARTED": true, "SEARCH_RETURNED": false, "RESULT": false, "files": ["SEARCH_CALL_STARTED.json", "START.json"]}
+
+PROGRESS_ROWS = 40
+LAST_PROGRESS = {"utc": "2026-09-07T15:17:09.554805+00:00", "completed": 40, "total": 864, "cell_id": "C04_s0000__s32006__b256__ORIGINAL_UCT", "result_sha256": "4f282f5b325e243822137b9e6d330c42e0c4aba912c7c376c6a3d014165f93b8"}
+
+error.json:
+MISSING
+
+worker_error.json:
+MISSING
+
+SUMMARY.json:
+MISSING
+
+CAPTURE.json:
+MISSING
+
+rc.txt:
+MISSING
+
+=== MEMORY EVENTS ===
+/sys/fs/cgroup/memory.events = low 0
+high 0
+max 0
+oom 0
+oom_kill 0
+/sys/fs/cgroup/memory.current = 381030400
+/sys/fs/cgroup/memory.max = 85899345920
+(base) root@autodl-container-02b744a905-1841eb5b:~# 
+
+思考了 4m 54s
+这次结果非常清楚，恢复条件已经满足：
+
+40 个 cell 已完整完成并有 result.json
+
+cell 41 只写了 START 和 SEARCH_CALL_STARTED
+
+cell 41 没有 SEARCH_RETURNED、result、CAPTURE
+
+没有 OOM，oom_kill=0
+
+所以这是技术中断，不是 scientific FAIL
+
+我已经按这个事实做了新的 retry1 恢复方案。不会删除或修改旧目录，也不会重跑前40个。
+
+恢复逻辑
+新 namespace：
+
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1
+处理方式是：
+
+旧40个 PASS cell 原样复制并保留来源 → 旧 cell41 单独归档为 technical interruption → 新 namespace 从 cell41 开始，只运行剩余824个搜索 → 最终合并成完整864-cell证据包。
+
+seed、budget、root、方法、MCTS参数全部不变。新的 cell41 还会用旧的 B64/B256 trace prefix 做一致性检查，避免技术重试悄悄改变搜索语义。
+
+下载两个文件
+恢复主脚本
+
+screen 启动脚本
+
+或者直接下载完整包：
+
+完整 retry1 恢复包
+
+上传到云端
+把前两个文件上传到：
+
+/root/autodl-tmp/
+然后只执行：
+
+chmod +x /root/autodl-tmp/launch_minesim_multiroot_teacher_retry1_screen.sh
+
+bash /root/autodl-tmp/launch_minesim_multiroot_teacher_retry1_screen.sh
+这次明确使用 screen
+看到类似：
+
+SCREEN_LAUNCHED=minesim_teacher_retry1_v1
+以后：
+
+你可以直接关闭终端/SSH。
+
+但是：
+
+不要关闭、关机或重启 AutoDL 实例。
+
+查看进度
+以后重新连终端，只读查看：
+
+screen -ls
+以及：
+
+tail -n 20 \
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1/worker_stdout.txt
+最终结果应生成：
+
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1.zip
+完成后把这个 ZIP 上传给我即可。
+
+如果启动脚本显示 PRESTART_HOLD，不要删除任何目录，也不要再次运行，把提示发我。
+
+
+存放于数据盘或文件存储中，重置系统时数据盘和文件存储中的数据不受影响
+2.清理系统盘请参考：https://www.autodl.com/docs/qa1/
+3.终端中长期执行命令请使用screen等工具开后台运行，确保程序不受SSH连接中断影响：https://www.autodl.com/docs/daemon/
+bash: /root/autodl-tmp/codex-env.sh: No such file or directory
+(base) root@autodl-container-02b744a905-1841eb5b:~# chmod +x /root/autodl-tmp/launch_minesim_multiroot_teacher_retry1_screen.sh
+
+bash /root/autodl-tmp/launch_minesim_multiroot_teacher_retry1_screen.sh
+SCREEN_LAUNCHED=minesim_teacher_retry1_v1
+SCREEN_LOG=/root/autodl-tmp/minesim_multiroot_teacher_validation_retry1_v1_screen.log
+OUTPUT_DIRECTORY=/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1
+EXPECTED_BUNDLE=/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1.zip
+TERMINAL_MAY_BE_CLOSED_AFTER_THIS_MESSAGE; KEEP_THE_CLOUD_INSTANCE_RUNNING.
+DO_NOT_RERUN_OR_DELETE_ANY_NAMESPACE.
+MONITOR: tail -n 20 /root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1/worker_stdout.txt
+SCREEN_STATUS: screen -ls
+(base) root@autodl-container-02b744a905-1841eb5b:~# screen -ls
+There are screens on:
+        1326.minesim_teacher_retry1_v1  (09/07/26 23:41:19)     (Detached)
+        1373.paper1_c13_full_v1 (08/23/25 13:31:18)     (Dead ???)
+        1351.confgate_smoke3    (08/23/25 13:31:18)     (Dead ???)
+Remove dead screens with 'screen -wipe'.
+3 Sockets in /run/screen/S-root.
+(base) root@autodl-container-02b744a905-1841eb5b:~# 
+
+
+
+
+思考了 6s
+PASS：这次已经正确用 screen 启动，任务正在后台运行。
+
+资源：LOW / CPU-only
+
+当前状态：
+
+1326.minesim_teacher_retry1_v1 (Detached)
+这说明 screen 会话已经独立存在，现在你可以关闭终端/SSH。只要不要关闭、重启 AutoDL 实例，任务就会继续运行。
+
+codex-env.sh: No such file or directory 是登录环境里的历史提示，没有影响这次 screen 启动。
+
+现在不要再运行启动脚本，也不要 screen -wipe。那两个 Dead ??? 的旧 screen 暂时也不用处理。
+
+之后重新登录，只需要查看：
+
+screen -ls
+进度：
+
+tail -n 20 \
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1/worker_stdout.txt
+如果这个文件暂时还没生成，可以先看：
+
+tail -n 30 \
+/root/autodl-tmp/minesim_multiroot_teacher_validation_retry1_v1_screen.log
+最终等待：
+
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1.zip
+ZIP 生成后直接上传给我即可。中途不用一直开着终端。
+
+
+给我个代码直接挂着查看
+
+思考了 6s
+可以，直接用下面这段挂着看，不会影响后台实验：
+
+while true; do
+    clear
+    echo "===== MineSim 教师标签矩阵实时监控 ====="
+    date
+    echo
+
+    echo "===== SCREEN ====="
+    screen -ls | grep 'minesim_teacher_retry1_v1' || echo "screen 已结束"
+    echo
+
+    D=/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1
+
+    echo "===== 最新进度 ====="
+    if [ -f "$D/worker_stdout.txt" ]; then
+        tail -n 20 "$D/worker_stdout.txt"
+    else
+        echo "worker_stdout.txt 尚未生成"
+        tail -n 20 /root/autodl-tmp/minesim_multiroot_teacher_validation_retry1_v1_screen.log 2>/dev/null || true
+    fi
+
+    echo
+    echo "===== 完成数量 ====="
+    if [ -f "$D/progress.jsonl" ]; then
+        echo -n "已完成 cell: "
+        wc -l < "$D/progress.jsonl"
+        echo "总计: 864"
+    else
+        echo "progress.jsonl 尚未生成"
+    fi
+
+    echo
+    echo "===== 最终 ZIP ====="
+    if [ -f "$D.zip" ]; then
+        ls -lh "$D.zip"
+        echo
+        echo "========== 实验已生成结果包 =========="
+        break
+    else
+        echo "尚未生成"
+    fi
+
+    echo
+    echo "5 秒后刷新；Ctrl+C 只退出监控，不会停止后台实验。"
+    sleep 5
+done
+它会每 5 秒刷新一次。
+
+你随时按：
+
+Ctrl+C
+只会停止这个查看窗口，不会停止 screen 里的实验。
+
+如果最后出现：
+
+========== 实验已生成结果包 ==========
+就把：
+
+/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1.zip
+上传给我。
+
+
+
+66819fe1-99d8-4c8e-bd1b-da85aea3f43b.zip
+压缩归档
+
+
+已查找可用工具
+这次恢复完整通过，864组结果全部齐了。现在的结论是：均衡根动作访问确实改善了教师 Q 的重复性，但还没有达到可以直接替换训练标签的程度。
+
+资源：LOW。当前不需要再执行云端代码。
+
+1. 先确认：前40组保住了，剩余824组全部完成
+本次核验了 7083项文件校验值，全部一致。原40组完整结果按原 SHA 保留，824组新搜索正常完成；387072条回传记录已逐条复算，Q、访问数及预算前缀均通过检查。不是只看文件名或者 PASS 字段得出的结论。完整来源和计算过程见
+
+MineSim_864%E7%BB%84%E6%95%99%E5%B8%88%E6%A0%87%E7%AD%BE%E8%AF%8A%E6%96%AD_%E7%A6%BB%E7%BA%BF%E5%A4%8D%E6%A0%B8%E7%BB%93%E8%AE%BA_20260908.txt
+
+。
+
+2. 好消息：采样分配确实是问题的重要部分
+在相同总预算 B1024 下，均衡访问在 9/9个状态中都降低了 Q 的跨种子波动。按每个场景的三个状态等权平均：
+
+场景	原始 UCT 的平均波动	均衡根访问的平均波动	波动下降
+C04	1.0130	0.1421	85.97%
+C06	0.2801	0.0706	74.79%
+C11	14.9309	1.4871	90.04%
+“波动”指每个动作的 Q 在16个随机种子下的样本标准差，再对动作取平均；下降90%不等于准确率提高90%，也不证明更接近真实最优 Q。
+
+这一结果通过了预先冻结的“访问分配改善”筛查，说明此前 root807 的现象不只是一个孤立例子。
+
+还有一个直接证据：原始 UCT 中，47个极低 Q 标签从B64到B1024始终只访问一次，数值完全没有更新。 均衡分支消除了这种根动作采样不足，但没有消除随机模拟中的硬安全事件。相关逐动作统计见报告第六节。
+
+3. 需要保留的负结果：完整标签稳定性筛查仍是0/9通过
+这不是执行失败，而是按事先冻结的标准，标签还没有全部达标。
+
+最普遍的问题是：从B256增加到B1024后，9个状态的 Q 均值仍有超过预设归一化门槛的漂移。 换句话说，同一预算内的随机波动变小了，但预算改变时，估计结果还在明显变化。
+
+不过，不能把0/9理解成“所有排序信息都没用了”：
+
+6个状态已经通过“明显分离动作对”的排序检查，剩余问题主要是 Q 数值随预算变化；另外 3个状态——C04 step123、C11 step171、C11 step180——仍有较明显的数值波动或排序不稳定。
+
+我还把“所有动作一起升高或降低”与“动作之间的相对差异改变”拆开检查了。部分较稳定状态确实包含共同的数值移动，而共同移动本身不会改变排序。这项补充分析没有被拿来修改原标准，0/9的联合筛查结果仍然保留。 具体结果在报告第五、八节。
+
+4. 现在对训练问题的判断
+你的数据质量怀疑有了更扎实的支持：教师搜索对各动作的采样支持和估值可靠性，确实需要先处理。直接增加神经网络训练轮数，不能解决参考标签本身的不稳定。
+
+但这也不意味着要把部署中的 MCTS 全部改成均衡访问。当前应区分两个目的：在线搜索要选出一个好动作；离线教师要给多个动作提供足够可靠的监督。它们对采样分配的要求不完全一样。
+
+目前仍不能据此断言全部2356条数据失效，或者换标签后网络和剪枝必然改善。网络优化是否充分收敛，本轮也没有评价。
+
+下一步只用现有日志制定新的排序标签候选规范：区分可靠排序、近似并列和不确定排序，避免把不稳定动作对当成强监督；先做静态检查，不追加搜索、不覆盖旧训练集、不重训。
+
+下载完整复核包：详细报告、逐状态／逐动作统计、冻结协议与离线复算代码
+
+
+那就继续
+
+思考了 2m 51s
+资源：LOW。当前 Gate RELATIVE_RANKING_LABEL_SPEC_FROM_FROZEN_TRACES 已完成。
+
+我直接用你刚完成的 864-cell 冻结结果做了静态标签规范，没有再让你跑云端，也没有启动 MCTS、模型或训练。
+
+这次得到的核心结论是：不要再把 B1024 的16个 Q 均值整体当作“绝对真值”训练，而应只提取“方向稳定的动作对”作为监督。 这与前面0/9完整Q重复性筛查不冲突——完整 Q 不稳定，但其中一部分相对排序仍然可靠。
+
+
+当前候选标签分三类：
+
+RELIABLE_ORDER：动作对差异明显，而且 B1024 的16个seed至少15/16方向一致，B256方向一致，前8/后8 seed方向也一致。候选训练时才允许使用。
+
+TIE_UNCERTAIN：两动作差距 ≤ 当前 root 动作范围的10%，暂不强行规定谁更好。
+
+CONFLICT_UNCERTAIN：平均值看起来有差异，但跨seed或预算方向不稳定，禁止作为强监督。
+
+9个状态共 1080 个动作对，静态结果是：
+
+810 个 RELIABLE_ORDER，199 个 TIE_UNCERTAIN，71 个 CONFLICT_UNCERTAIN。
+
+其中前6个较稳定状态通常有 78%–87% 的动作对可作为可靠排序候选；但 C11_s0171 只有 57.5%，C11_s0180 只有 32.5%。这与之前识别出的困难状态完全一致。
+
+
+另外，我检查了可靠动作对构成的偏好图：9个状态都没有出现有向循环。这说明当前提取出的稳定偏好至少在这9个root内部是自洽的，但还不能外推到全部2356个root。
+
+文件
+下载完整候选规范与静态结果包
+
+里面包括：
+
+RELATIVE_RANKING_LABEL_CANDIDATE_SPEC_V1.json
+
+pair_labels_candidate.csv
+
+root_summary.csv
+
+hard_risk_sidecar.csv
+
+MineSim_相对排序标签候选规范_V1_20260908.txt
+
+可复算脚本 minesim_relative_ranking_label_static_check_v1.py
+
+这里的 hard-safety 数据我只保留为 sidecar诊断信息，没有直接变成碰撞标签，因为之前已经确认这些是自适应搜索中的事件记录，不是碰撞概率。
+
+
+下一步 Gate：RELATIVE_RANKING_LABEL_FEASIBILITY_ON_EXISTING_2356_DATA。
+接下来要检查：现有2356条原训练数据里，究竟有多少root拥有足够的多seed/多次搜索证据，可以按照这套规则生成可靠 pair mask。如果大部分2356数据只有一次B64搜索，那就不能直接改标签，必须重新设计教师数据采集协议。
+
+这一步仍然先只读审计，不重训。
+
+
+那就继续做吧，接下来直接给我代码，我上传执行，然后给你压缩包
+
+思考了 16s
+资源：LOW。当前只做只读可行性审计，不运行 MCTS、不训练、不加载模型。
+
+直接下载这份脚本：
+
+下载审计脚本
+
+上传到：
+
+/root/autodl-tmp/
+然后执行：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_relative_ranking_2356_feasibility_audit_v1.py \
+        --run-readonly-audit
+)
+这一步会检查：
+
+2356-root 冻结数据是否按原 SHA 找到；
+
+现有历史证据里，每个 root 有多少次重复搜索结果；
+
+是否存在多个 seed；
+
+是否存在多个 budget；
+
+是否有完整16动作 Q / visit 信息；
+
+哪些 root 只有单次 B64 类标签；
+
+哪些 root 已经具备用现有证据构造“可靠相对排序标签”的基础；
+
+按 C04/C06/C11 分别统计覆盖率；
+
+不明确的 seed/budget 只标记 provenance 不足，不猜。
+
+最终会自动生成：
+
+/root/autodl-tmp/minesim_relative_ranking_2356_feasibility_audit_v1.zip
+终端最后会看到：
+
+AUDIT_STATUS=PASS 或 HOLD
+MCTS_RUN=False
+TRAINING_RUN=False
+MODEL_FORWARD=False
+ZIP_VERIFIED=True
+BUNDLE=...
+把 BUNDLE= 对应的 ZIP 上传给我即可。
+
+这一步的目的只有一个：判断现有2356条训练数据能不能在不重新采样的情况下改造成可靠 pairwise ranking 数据。如果结果显示大部分 root 只有单次搜索证据，我们下一步就不会浪费时间“静态修标签”，而是直接设计新的教师数据采集协议。 
+
+
+
+d37acd24-3441-4cef-8329-aa298123262d.zip
+压缩归档
+
+思考了 56s
+资源：LOW。当前 Gate：NEW_TEACHER_LABEL_PROTOCOL_PILOT_PRESTART。
+
+上一轮审计已经说明：2356条现有训练数据没有足够的多 seed / 多 budget 教师证据，不能直接静态修成可靠 pairwise 标签。 所以下一步不重训，先冻结一个新的小规模教师数据试验集。
+
+直接下载脚本：
+
+下载新教师数据 Pilot 只读准备脚本
+
+上传到：
+
+/root/autodl-tmp/
+然后执行：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_new_teacher_pilot_prestart_v1.py \
+        --freeze-pilot-inputs
+)
+这一步只做三件事：
+
+从原2356条中按6个 episode 均衡选36个 root，不依据 Q 好坏挑状态；
+
+优先覆盖各 episode 的早、中、晚状态，并额外保留重复状态区代表；
+
+找回这36个 root 的原始 root_state、provenance、runner / manifest 来源，确认后面能真实重建。
+
+本步不运行 MCTS、不训练、不加载模型。
+
+最后会生成：
+
+/root/autodl-tmp/minesim_new_teacher_pilot_prestart_v1.zip
+终端会显示：
+
+PRESTART_STATUS=PASS 或 HOLD
+MCTS_RUN=False
+TRAINING_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=...
+把 BUNDLE= 对应 ZIP 上传给我即可。
+
+如果 PASS，下一步我会直接给你真正的教师标签 Pilot 搜索代码：先在这36个代表状态上验证新的 Balanced-root + 多seed + 多budget + relative-ranking 标签方案，验证通过后才考虑重采2356条，避免一上来做大规模无效计算。 
+
+
+
+13372f4b-c05d-488d-8948-1cecfe54fbf9.zip
+压缩归档
+
+思考了 34s
+这次结果是 HOLD，不是失败。36 个 Pilot root 里已经成功绑定 26/36，缺的 10 个全部来自：
+
+C04_FROZEN_EP0：5 个
+
+C06_FROZEN_EP0：5 个
+
+其余 C04 seed5、C06 seed1、C11 80m/100m 的原始 root 记录都已经找到了。当前不能直接跳过这10个，也不应该把 Pilot 改成只用现成26个，因为那会改变刚冻结的抽样设计。
+
+所以当前 Gate 只做一件事：定向找回这10条历史 frozen root 的原始记录。
+
+资源：LOW。不会运行 MCTS、不会训练。
+
+下载脚本：
+
+下载 10 条 frozen root 定向恢复脚本
+
+上传到：
+
+/root/autodl-tmp/
+然后执行：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_missing_frozen_pilot_root_recovery_v1.py \
+        --recover-missing-root-records
+)
+这版会定向检查：
+
+Value V2 / V3 历史目录；
+
+C04 / C06 root diagnostic；
+
+/root/autodl-tmp 中相关 JSON / JSONL；
+
+相关 ZIP / TAR 历史归档中的成员文件；
+
+匹配条件不是文件名，而是：
+
+root_step + 12D float32 feature SHA。
+
+不会自动解压覆盖任何旧目录，也不会把相似状态冒充原记录。
+
+执行结束会生成：
+
+/root/autodl-tmp/minesim_missing_frozen_pilot_root_recovery_v1.zip
+终端最后：
+
+RECOVERY_STATUS=PASS 或 HOLD
+MCTS_RUN=False
+TRAINING_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=...
+把这个 ZIP 上传给我即可。
+
+如果这10条全部找回，下一步我就把 26+10 合并冻结成36-root Pilot，然后直接给你真正的多 seed / 多 budget Balanced-root 教师标签 Pilot 搜索代码。 
+
+
+
+b181ef98-5a52-4f73-9c2b-716981b6d422.zip
+压缩归档
+
+思考了 38s
+PASS：这次10条缺失 frozen root 已全部唯一找回。
+
+结果包里显示：
+
+recovered_unique = 10
+
+unresolved = 0
+
+ambiguous = 0
+
+原因：ALL_10_MISSING_FROZEN_ROOT_RECORDS_RECOVERED_UNIQUELY
+
+所以现在可以把之前的 26条 + 这次10条 合并，正式冻结成 36-root Teacher Pilot。
+
+直接执行下一步代码
+资源：LOW。
+这一步仍然不运行 MCTS、不训练，只做36-root输入合并、逐条校验和冻结。
+
+下载 36-root Pilot 合并冻结脚本
+
+上传到：
+
+/root/autodl-tmp/
+然后执行：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_new_teacher_pilot_36root_freeze_v1.py \
+        --freeze-36-root-pilot
+)
+它会核对：
+
+原2356-root NPZ SHA；
+
+原36条 selection；
+
+之前26条已绑定记录；
+
+这次10条恢复记录；
+
+每条12D feature 与原 NPZ 是否完全一致；
+
+scene / episode / root_step 是否匹配；
+
+36条是否保持 C04/C06/C11各12条、6个episode各6条。
+
+如果通过，会顺带冻结下一阶段的候选协议：
+
+36 roots
+× 8 seeds
+× 2 budgets (256 / 1024)
+= 576 次单根 Teacher 搜索
+这里先只写协议，本次不会执行576次搜索。
+
+最终生成：
+
+/root/autodl-tmp/minesim_new_teacher_pilot_36root_freeze_v1.zip
+终端最后会显示：
+
+FREEZE_STATUS=PASS 或 HOLD
+ROOTS_FROZEN=36/36
+MCTS_RUN=False
+TRAINING_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=...
+把 BUNDLE= 对应 ZIP 上传给我。
+如果 PASS，我下一步直接给你 36-root × 8 seed × B256/B1024 的 Balanced-root Teacher Pilot 真正执行代码，并统一用 screen 后台跑。 
+
+
+
+e2451577-d39e-4c40-9e80-b92d7600181a.zip
+压缩归档
+
+思考了 48s
+这次 36-root Pilot 冻结已经 PASS，结构也符合预期：
+
+36/36 roots 已冻结；
+
+C04 / C06 / C11 各 12 个；
+
+共 6 个 episode，每个 6 个 root；
+
+26 条来自原 prestart，10 条来自恢复结果；
+
+Git 前后状态一致；
+
+没有运行 MCTS 或训练。
+
+下一步我先不直接启动 576 次搜索。原因是这 36 条里包含 C04 seed0/seed5、C06 seed0/seed1、C11 80m/100m 六套 episode context，必须先把各自的 manifest / scenario / runner 精确按 SHA 绑定，避免错误地拿同一场景的另一个 runner 或 manifest 去重建。
+
+资源：LOW。当前 Gate：BIND_36_ROOT_PILOT_EXACT_EPISODE_CONTEXTS。
+
+下载脚本：
+
+下载 36-root Pilot 精确上下文绑定脚本
+
+上传到：
+
+/root/autodl-tmp/
+然后执行：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v1.py \
+        --bind-exact-contexts
+)
+这一步只做：
+
+从36-root冻结 manifest 里提取六个 episode 的 provenance；
+
+按 SHA 找回各自 exact manifest；
+
+按 SHA 找回 exact scenario；
+
+按 SHA 找回 exact parent shadow runner；
+
+绑定当前 MCTS engine 源码；
+
+只记录语义地图 provenance，不运行仿真。
+
+最终会生成：
+
+/root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v1.zip
+终端最后会显示：
+
+BINDING_STATUS=PASS 或 HOLD
+MCTS_RUN=False
+TRAINING_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=...
+把这个 ZIP 上传给我。
+
+如果 PASS，下一步我就给你 36-root 单步重建 + Teacher Pilot 技术 smoke 代码；技术链过了之后，再正式启动那 576 次 Balanced-root 多 seed / 多 budget 教师搜索，并统一使用 screen 后台运行。 
+
+
+
+46d51a31-3515-4b9f-bd72-6387710d83d9.zip
+压缩归档
+
+思考了 1m 12s
+这次是 HOLD，而且原因已经定位清楚：不是36-root数据坏了，而是两个 step0 根状态的 provenance 发生了“同状态跨 episode 误绑定”。
+
+具体是：
+
+C04_FROZEN_EP0 step0 被绑定成了 C04 seed5 的 collector provenance；
+
+C06_FROZEN_EP0 step0 被绑定成了 C06 seed1 的 provenance。
+
+这两个 step0 状态本身与 NPZ 一致，问题只在来源上下文绑定。所以不能改 root 数据，只能修正 episode context。
+
+我已经给你做了 V2 精确上下文绑定脚本。它会：
+
+保证36条 frozen root 字节完全不变；
+
+只修正这两个已知 step0 provenance alias；
+
+用同 episode 其他5条 root 的一致 provenance 作为锚点；
+
+按 SHA 找 exact manifest、scenario、collector；
+
+有 parent runner SHA 的就绑定 runner；
+
+没有 runner SHA 的 episode，要求 exact collector 本身包含 make_line / RouteAdapter，否则 HOLD。
+
+资源：LOW。仍然不运行 MCTS。
+
+下载 V2 精确上下文绑定脚本
+
+上传到：
+
+/root/autodl-tmp/
+然后执行：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v2.py \
+        --bind-exact-contexts-v2
+)
+最终会生成：
+
+/root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v2.zip
+终端最后会显示：
+
+BINDING_V2_STATUS=PASS 或 HOLD
+MCTS_RUN=False
+TRAINING_RUN=False
+ZIP_VERIFIED=True
+BUNDLE=...
+把 ZIP 上传给我即可。
+
+如果这一步 PASS，下一步我就直接给你 36-root 单步重建 + Balanced-root Teacher Pilot 技术 smoke 代码。 
+
+
+
+d017a50f-4978-4da5-afac-08bfa143efc5.zip
+压缩归档
+
+思考了 21s
+这次是纯技术失败，没有运行 MCTS，也没有产生科学结果。原因非常明确：
+
+ValueError: too many values to unpack (expected 2)
+出错点在 V2 脚本的 provenance 修正循环里：rs 实际是 root 字典列表，我错误写成了：
+
+for r,p in rs:
+应该是先遍历 r，再从 r["original_binding"]["provenance"] 取 p。
+
+我已经做了新的 retry1 namespace，不会覆盖刚才已经消费的 V2 目录。
+
+下载修正版
+下载 V2 retry1 修正版
+
+上传到：
+
+/root/autodl-tmp/
+然后执行：
+
+(
+    cd /root/MineSim-Dynamic
+    source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+    conda activate minesim
+
+    export PYTHONPATH=/root/MineSim-Dynamic
+    export PYTHONDONTWRITEBYTECODE=1
+    export CUDA_VISIBLE_DEVICES=""
+
+    python -I -B -u \
+        /root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v2_retry1.py \
+        --bind-exact-contexts-v2
+)
+这版会先核验刚才旧 V2 确实是这个技术错误，然后才进入新 namespace，避免把 retry 当成普通重跑。
+
+最终结果：
+
+/root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v2_retry1.zip
+把这个 ZIP 上传给我即可。
+
+资源仍然是 LOW，本步仍不运行 MCTS、不训练。 
+
+
+
+f3cff083-27da-48ea-bded-f54c5558fba6.zip
+压缩归档
+我希望你在给我代码前仔细审核
+
+思考了 51s
+可以。这个要求合理，而且这次我先不急着给你下一份代码。
+
+我已经把你刚上传的结果包和上一版 retry1 源码重新逐段检查了一遍。这次 retry1 仍然是纯技术 HOLD，没有运行 MCTS、没有训练、没有产生科学结果。
+
+当前直接错误是：
+
+FileNotFoundError:
+.../bound_sources/collector__283d2bfb38af5bd3.py
+原因很明确：脚本执行
+
+shutil.copy2(chosen, dest)
+之前，我漏掉了：
+
+(OUT / "bound_sources").mkdir(...)
+这是我代码审核不到位造成的。
+
+但我这次没有只停在这个报错。重新审核后还发现了一个更重要的潜在逻辑风险：
+
+上一版把 collector_module 当成“没有 parent runner 时的 route-helper fallback”。
+
+这并不够严谨。collector_module_sha256=283d... 对应的是诊断 collector，它未必就是定义 make_line / RouteAdapter 的真实场景 runner。即使把 bound_sources 目录创建好，下一步仍可能因为上下文来源语义绑定不严谨而继续 HOLD，甚至更糟的是误绑定。
+
+所以我不会现在只给你一个“加 mkdir 的 retry2”让你继续试错。
+
+后面我给代码前会固定做这 5 项审核
+语法检查
+
+py_compile
+数据结构检查
+我会逐项核对实际对象类型，避免再出现：
+
+for r,p in rs
+这种结构假设错误。
+
+目录生命周期检查
+所有写入目标必须确认：
+
+parent exists
+namespace absent
+mkdir ordering
+partial ZIP
+来源语义检查
+明确区分：
+
+collector
+runner
+manifest
+scenario
+route helper
+engine source
+不因为一个文件“看起来能用”就把它当另一种 provenance。
+
+合成 dry-run / failure-path 测试
+至少覆盖：
+
+PASS 路径
+文件缺失
+多副本同 SHA
+parent runner=null
+alias root
+输出目录不存在
+已消费 namespace
+HOLD 后打包
+都通过后我才给你云端执行代码。
+
+目前好的部分也确认了：两个 step0 provenance alias 的修正逻辑已经实际跑过去了。C04 frozen step0 已恢复到 seed0 context，C06 frozen step0 也恢复到 seed0 context；36条 root 本身没有被修改。当前失败发生在后面的 source-copy 阶段。
+
+所以现在先停在：
+
+Gate：EXACT_EPISODE_CONTEXT_BINDING technical HOLD
+Scientific result：无
+MCTS：0
+Training：0
+旧 V2 / retry1：都不再重跑
+
+下一份代码我会按上面这套审核标准重新做，而不是继续给你小修小补的试错脚本。
+
+
+继续
+

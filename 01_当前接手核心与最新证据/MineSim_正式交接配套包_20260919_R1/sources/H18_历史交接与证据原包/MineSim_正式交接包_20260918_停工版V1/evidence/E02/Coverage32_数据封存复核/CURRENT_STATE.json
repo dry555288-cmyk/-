@@ -1,0 +1,66 @@
+{
+  "evidence_cutoff": "Supplied collect256 RESULT/CAPTURE finished 2026-09-17T10:11:32Z; reviewed after receipt of all four parts. No live cloud query.",
+  "current_stage": "Coverage32 fixed-window development data collection and merge CLOSED",
+  "current_status": "PASS_DATA_COLLECTION_AND_MERGED_DATASET_REVIEW_NOT_MODEL_SUCCESS",
+  "current_dataset": {
+    "roots": 32,
+    "observations": 512,
+    "source_groups": 8,
+    "roots_per_group": 4,
+    "target_id": "DUAL_STOP_FIXED_WINDOW64_STOPPED_RETURN_V1",
+    "dataset_sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+    "cloud_recorded_path": "/root/autodl-tmp/minesim_grouped_coverage32_collect256_v1/DATASET32.json"
+  },
+  "frozen_observation_counts": {
+    "new": 256,
+    "reused_unchanged": 256,
+    "new_both_parked": 253,
+    "new_cap": 3,
+    "combined_both_parked": 467,
+    "combined_cap": 45
+  },
+  "next_minimal_action": "Use the preregistered future fitting contract on the frozen 512 observations; no more collection in this scope.",
+  "next_gate_from_prior_contract": "COVERAGE32_FUTURE_HELD_SOURCE_REGRESSION_PREREGISTERED_NOT_AUTHORIZED",
+  "future_fitting_plan_not_execution": {
+    "folds": 8,
+    "models": [
+      "linear26_to_1",
+      "mlp26_64_64_16_pair03_30"
+    ],
+    "fits": 16,
+    "updates_per_fit": 2000,
+    "seed": 78003,
+    "learning_rate": 0.001,
+    "training_baseline": "constant mean calculated on the training roots only",
+    "train_roots_per_fold": 28,
+    "holdout_roots_per_fold": 4,
+    "resource": "LOW / small CPU; no GPU required"
+  },
+  "execution_authorization": {
+    "new_training": false,
+    "new_collection": false,
+    "automatic_retry": false,
+    "pruning": false,
+    "deployment": false
+  },
+  "do_not_repeat": [
+    "Window16 existing frozen fits",
+    "Coverage32 selection freeze and technical smoke",
+    "collect256 completed namespace (any launcher version)"
+  ],
+  "scientific_boundaries": [
+    "Same route pair development, not independent unseen-route validation.",
+    "A completed finite-window return is not necessarily completed driving task.",
+    "CAP full-task tails remain unknown, not replaced by zero.",
+    "Original six relations and original ten unknown preserved; new five descriptive relations out of sixteen kept separate.",
+    "Data integrity success does not imply neural model advantage.",
+    "No Controller/KBM tracking, production road-free-space or continuous physical safety guarantee established by this review."
+  ],
+  "local_remote_boundary": "Only copied/reviewed uploads in this container. No AutoDL writes, deletion, Git commit/tag or new scientific run.",
+  "review_files": [
+    "REVIEW.json",
+    "MANIFEST_REVIEW.json",
+    "REASSEMBLY.json",
+    "CELL_REVIEW.json"
+  ]
+}

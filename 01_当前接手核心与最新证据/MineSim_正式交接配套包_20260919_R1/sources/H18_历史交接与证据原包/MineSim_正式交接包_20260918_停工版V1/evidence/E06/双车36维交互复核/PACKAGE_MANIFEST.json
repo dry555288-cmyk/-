@@ -1,0 +1,102 @@
+{
+  "review/REPORT.md": {
+    "size": 3137,
+    "sha256": "79e3aa47fe8d2888f7d414cf5d1f62a4ef9decb71352afd709dafa0c1729e5f8"
+  },
+  "review/CURRENT_STATE.json": {
+    "size": 923,
+    "sha256": "9169764b09bc41255120e56b02a34ab1f3b6f3a1e711e104c68a9c663b18a5d7"
+  },
+  "review/review_current.py": {
+    "size": 9671,
+    "sha256": "1c30924e487729680741bd6db73f7318f4975dceeeb2faebacb3e26f2e1a8c6a"
+  },
+  "review/analysis/REVIEW.json": {
+    "size": 989,
+    "sha256": "fb04220099781bc65e7c24c3daea13b1daba2adea41f762602146316fdfcb464"
+  },
+  "review/analysis/FOLD_MECHANISM.json": {
+    "size": 27969,
+    "sha256": "93c3c9687ca11f2005ee82990c423ef3ea5886e61e7c7c94aa5abc970dcb27c2"
+  },
+  "review/analysis/FEATURE_SCALES.json": {
+    "size": 7266,
+    "sha256": "6037a3ee3625ede4d2cd3fd58d0ba4b29213450b9c323647d8aebeb5761e3673"
+  },
+  "review/original/RESULT.json": {
+    "size": 28219,
+    "sha256": "88ba32261844856f479b964bee41734b484dece8ed6c55960a28c721a08a826e"
+  },
+  "review/original/METRICS.json": {
+    "size": 6144,
+    "sha256": "561ac74cea67ac2e6b79eef797d4d82d61d506a83305bfea9189f1694895aaab"
+  },
+  "review/original/TIMING.json": {
+    "size": 136,
+    "sha256": "55547dca8d850f1a0914caf9465d9e9f25056d18d601a11fa80b13bd4d2c5e3a"
+  },
+  "review/original/EXECUTION_PROTOCOL.json": {
+    "size": 6021,
+    "sha256": "aa7bf9110a4b555ce2a675bd56fcb1ff26c6be7cf78bbe017e3d64c169643fdb"
+  },
+  "review/original/PAIRED_FEATURE_COMPARISON.json": {
+    "size": 20821,
+    "sha256": "8b6194b89afbeb7bbcba1c2d475ce967c70bf78906a32b7ba515703d11b15d34"
+  },
+  "next_unexecuted/runner.py": {
+    "size": 17307,
+    "sha256": "bb038280b282d8ac0cc3835ac56581b89efcf1a1029f0c47876987432cea9953"
+  },
+  "next_unexecuted/scaled_ridge.py": {
+    "size": 2427,
+    "sha256": "12087b8025bdcbaf62c2175c905377cfab411bfa9c1526abc3add2d22ecbf2a0"
+  },
+  "next_unexecuted/io_helpers.py": {
+    "size": 40168,
+    "sha256": "6fcf7e669fb4a9b716f40d34f9070fdd19f37bce34a65c20e0cac7129e3573d5"
+  },
+  "next_unexecuted/process_checks.py": {
+    "size": 2553,
+    "sha256": "5ba911f894485db6051934ce0be419f008cce009c30176ec979c101dd39b4ee3"
+  },
+  "next_unexecuted/PROTOCOL.json": {
+    "size": 2407,
+    "sha256": "f316742cf8081da393d9df04b156c83c3b5bb6710a05aa7a4b92b099acde980d"
+  },
+  "next_unexecuted/SOURCE_BINDINGS.json": {
+    "size": 1523,
+    "sha256": "2127a88bdd1907f7a2c288b39034731a70634648ce7b497626eb7efe93bca5ae"
+  },
+  "next_unexecuted/METHOD_PROVENANCE.json": {
+    "size": 630,
+    "sha256": "77515fa45a4866fe4457f3ef7dc66bc88d5a28f7eca38ebae03134ace661c77c"
+  },
+  "next_unexecuted/TEST_SUMMARY.json": {
+    "size": 687,
+    "sha256": "4538a95c4c3390b3ecd73e2ad121c3ad84dc8da3ff2500b185fa654bfc246692"
+  },
+  "next_unexecuted/TEST_RUN.log": {
+    "size": 4488,
+    "sha256": "cc6dc9e508ac8b93b76350350756cc4e0aba25e3dcb8c3c0d81f52590672bf02"
+  },
+  "next_unexecuted/LAUNCHER_TESTS.json": {
+    "size": 521,
+    "sha256": "1f5fe8532814a96ceb9ce70786e01b0e8f7a72297b8f2fda3154511e5323a00c"
+  },
+  "next_unexecuted/README.md": {
+    "size": 1642,
+    "sha256": "473049c748fe8561da39dbb10c5d2b831da382bc842ab58efe17467796ec051a"
+  },
+  "next_unexecuted/test_scaled_ridge.py": {
+    "size": 10471,
+    "sha256": "e1db1c89a525552599eb33e0145ff2eb030eb04673a23f603869e358fddc9abd"
+  },
+  "next_unexecuted/minesim_dual32_scaledridge_release_v1.zip": {
+    "size": 28363,
+    "sha256": "c16d34302660397e0664b1bbcdf93ba3ff08a463eef03967d7ae49b63f24c14a"
+  },
+  "next_unexecuted/run_dual32_scaledridge.sh": {
+    "size": 43513,
+    "sha256": "eb8d38891ef76a9a9e467b5acbd47746e2190b5a90ec8ed230a2cec51ca27497"
+  }
+}

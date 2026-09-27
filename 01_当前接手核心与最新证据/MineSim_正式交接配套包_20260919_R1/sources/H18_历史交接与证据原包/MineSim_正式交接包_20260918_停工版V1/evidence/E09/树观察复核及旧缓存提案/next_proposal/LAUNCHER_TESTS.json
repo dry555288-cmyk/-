@@ -1,0 +1,15 @@
+{
+  "passed": 8,
+  "checks": [
+    "bash_syntax",
+    "reject_args_[]",
+    "reject_args_['--wrong-flag']",
+    "reject_args_['--authorize-reportcache-once', 'extra']",
+    "payload_hash",
+    "payload_member_hashes",
+    "correct_dispatch",
+    "create_only_installer"
+  ],
+  "cloud_executed": false,
+  "real_MCTS_calls": 0
+}

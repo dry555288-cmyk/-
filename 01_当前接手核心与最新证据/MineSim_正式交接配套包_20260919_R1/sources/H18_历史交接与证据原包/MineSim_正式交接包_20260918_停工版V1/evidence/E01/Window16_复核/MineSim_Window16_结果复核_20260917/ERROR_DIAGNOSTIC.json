@@ -1,0 +1,424 @@
+{
+  "design_timing": "POST_RESULT_DESCRIPTIVE_DIAGNOSTIC_NOT_PREREGISTERED_EVALUATION",
+  "coordinate_range_tolerance": 1e-12,
+  "interpretation_limit": "Coordinate extrema and input-nearness are descriptive clues, not proof of unique failure cause or full multivariate support.",
+  "per_state_range_check": [
+    {
+      "root_id": "contrast_00",
+      "source_run": "policy_00",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "contrast_01",
+      "source_run": "policy_01",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "contrast_02",
+      "source_run": "policy_02",
+      "outside_training_coordinate_ranges": [
+        {
+          "column": 16,
+          "vehicle": "B",
+          "feature": "speed",
+          "value": 0.03333333507180214,
+          "train_min": 0.0833333358168602,
+          "train_max": 0.9333333373069763
+        }
+      ]
+    },
+    {
+      "root_id": "newroot_00",
+      "source_run": "policy_02",
+      "outside_training_coordinate_ranges": [
+        {
+          "column": 10,
+          "vehicle": "A",
+          "feature": "previous_decel",
+          "value": 1.0,
+          "train_min": 0.0,
+          "train_max": 0.0
+        },
+        {
+          "column": 13,
+          "vehicle": "B",
+          "feature": "route_progress",
+          "value": 0.36580514907836914,
+          "train_min": 0.36850684881210327,
+          "train_max": 0.6691452264785767
+        },
+        {
+          "column": 14,
+          "vehicle": "B",
+          "feature": "distance_to_goal_lower",
+          "value": 0.6333943605422974,
+          "train_min": 0.33005431294441223,
+          "train_max": 0.6306926608085632
+        },
+        {
+          "column": 15,
+          "vehicle": "B",
+          "feature": "distance_to_goal_upper",
+          "value": 0.6341948509216309,
+          "train_min": 0.3308548033237457,
+          "train_max": 0.6314931511878967
+        }
+      ]
+    },
+    {
+      "root_id": "newroot_01",
+      "source_run": "policy_02",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "contrast_03",
+      "source_run": "policy_03",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "newroot_02",
+      "source_run": "policy_03",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "newroot_03",
+      "source_run": "policy_03",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "contrast_04",
+      "source_run": "policy_04",
+      "outside_training_coordinate_ranges": [
+        {
+          "column": 0,
+          "vehicle": "A",
+          "feature": "route_progress",
+          "value": 0.3804567754268646,
+          "train_min": 0.38678017258644104,
+          "train_max": 0.661278247833252
+        },
+        {
+          "column": 1,
+          "vehicle": "A",
+          "feature": "distance_to_goal_lower",
+          "value": 0.6185314655303955,
+          "train_min": 0.3377099931240082,
+          "train_max": 0.6122080683708191
+        },
+        {
+          "column": 2,
+          "vehicle": "A",
+          "feature": "distance_to_goal_upper",
+          "value": 0.619543194770813,
+          "train_min": 0.33872175216674805,
+          "train_max": 0.6132198572158813
+        },
+        {
+          "column": 6,
+          "vehicle": "A",
+          "feature": "braking_margin",
+          "value": 0.5951771140098572,
+          "train_min": 0.262841135263443,
+          "train_max": 0.5916360020637512
+        }
+      ]
+    },
+    {
+      "root_id": "contrast_05",
+      "source_run": "policy_05",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "contrast_06",
+      "source_run": "policy_06",
+      "outside_training_coordinate_ranges": [
+        {
+          "column": 19,
+          "vehicle": "B",
+          "feature": "braking_margin",
+          "value": 0.6169673800468445,
+          "train_min": 0.27855536341667175,
+          "train_max": 0.6160334348678589
+        }
+      ]
+    },
+    {
+      "root_id": "newroot_04",
+      "source_run": "policy_06",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "newroot_05",
+      "source_run": "policy_06",
+      "outside_training_coordinate_ranges": [
+        {
+          "column": 0,
+          "vehicle": "A",
+          "feature": "route_progress",
+          "value": 0.661278247833252,
+          "train_min": 0.3804567754268646,
+          "train_max": 0.6607091426849365
+        },
+        {
+          "column": 1,
+          "vehicle": "A",
+          "feature": "distance_to_goal_lower",
+          "value": 0.3377099931240082,
+          "train_min": 0.3382790982723236,
+          "train_max": 0.6185314655303955
+        },
+        {
+          "column": 2,
+          "vehicle": "A",
+          "feature": "distance_to_goal_upper",
+          "value": 0.33872175216674805,
+          "train_min": 0.3392908573150635,
+          "train_max": 0.619543194770813
+        },
+        {
+          "column": 3,
+          "vehicle": "A",
+          "feature": "speed",
+          "value": 1.0,
+          "train_min": 0.18333333730697632,
+          "train_max": 0.9333333373069763
+        },
+        {
+          "column": 6,
+          "vehicle": "A",
+          "feature": "braking_margin",
+          "value": 0.262841135263443,
+          "train_min": 0.2731904089450836,
+          "train_max": 0.5951771140098572
+        }
+      ]
+    },
+    {
+      "root_id": "contrast_07",
+      "source_run": "policy_07",
+      "outside_training_coordinate_ranges": []
+    },
+    {
+      "root_id": "newroot_06",
+      "source_run": "policy_07",
+      "outside_training_coordinate_ranges": [
+        {
+          "column": 3,
+          "vehicle": "A",
+          "feature": "speed",
+          "value": 0.18333333730697632,
+          "train_min": 0.23333333432674408,
+          "train_max": 1.0
+        },
+        {
+          "column": 13,
+          "vehicle": "B",
+          "feature": "route_progress",
+          "value": 0.43144628405570984,
+          "train_min": 0.36580514907836914,
+          "train_max": 0.41583651304244995
+        },
+        {
+          "column": 14,
+          "vehicle": "B",
+          "feature": "distance_to_goal_lower",
+          "value": 0.5677531957626343,
+          "train_min": 0.5833629965782166,
+          "train_max": 0.6333943605422974
+        },
+        {
+          "column": 15,
+          "vehicle": "B",
+          "feature": "distance_to_goal_upper",
+          "value": 0.5685537457466125,
+          "train_min": 0.58416348695755,
+          "train_max": 0.6341948509216309
+        },
+        {
+          "column": 16,
+          "vehicle": "B",
+          "feature": "speed",
+          "value": 0.6833333373069763,
+          "train_min": 0.03333333507180214,
+          "train_max": 0.6666666865348816
+        },
+        {
+          "column": 19,
+          "vehicle": "B",
+          "feature": "braking_margin",
+          "value": 0.5405194759368896,
+          "train_min": 0.5753412842750549,
+          "train_max": 0.6169673800468445
+        }
+      ]
+    },
+    {
+      "root_id": "newroot_07",
+      "source_run": "policy_07",
+      "outside_training_coordinate_ranges": [
+        {
+          "column": 13,
+          "vehicle": "B",
+          "feature": "route_progress",
+          "value": 0.6691452264785767,
+          "train_min": 0.36580514907836914,
+          "train_max": 0.41583651304244995
+        },
+        {
+          "column": 14,
+          "vehicle": "B",
+          "feature": "distance_to_goal_lower",
+          "value": 0.33005431294441223,
+          "train_min": 0.5833629965782166,
+          "train_max": 0.6333943605422974
+        },
+        {
+          "column": 15,
+          "vehicle": "B",
+          "feature": "distance_to_goal_upper",
+          "value": 0.3308548033237457,
+          "train_min": 0.58416348695755,
+          "train_max": 0.6341948509216309
+        },
+        {
+          "column": 16,
+          "vehicle": "B",
+          "feature": "speed",
+          "value": 0.9333333373069763,
+          "train_min": 0.03333333507180214,
+          "train_max": 0.6666666865348816
+        },
+        {
+          "column": 19,
+          "vehicle": "B",
+          "feature": "braking_margin",
+          "value": 0.27855536341667175,
+          "train_min": 0.5753412842750549,
+          "train_max": 0.6169673800468445
+        }
+      ]
+    }
+  ],
+  "two_largest_mlp_errors": [
+    {
+      "root_id": "newroot_07",
+      "source_run": "policy_07",
+      "observed_mean_gap": -0.5733042989719195,
+      "two_block_mean_gaps": [
+        -0.34314564158269434,
+        -0.8034629563611375
+      ],
+      "mlp_predicted_gap": 204.97778776925952,
+      "mlp_absolute_error": 205.55109206823144,
+      "original_order_label": null,
+      "B_route_s": 417.95373625599984,
+      "training_B_route_s_min": 228.48498899308078,
+      "training_B_route_s_max": 259.73498625599984
+    },
+    {
+      "root_id": "newroot_06",
+      "source_run": "policy_07",
+      "observed_mean_gap": -1.2716853233049648,
+      "two_block_mean_gaps": [
+        -1.2662221459122378,
+        -1.2771485006976917
+      ],
+      "mlp_predicted_gap": 155.0504710685984,
+      "mlp_absolute_error": 156.32215639190338,
+      "original_order_label": null,
+      "B_route_s": 269.48498625599984,
+      "training_B_route_s_min": 228.48498899308078,
+      "training_B_route_s_max": 259.73498625599984
+    }
+  ],
+  "two_largest_mlp_absolute_error_fraction": 0.5051298124455875,
+  "all_state_two_block_gap_absolute_difference": {
+    "mean": 12.776926130389668,
+    "per_state": [
+      {
+        "root_id": "contrast_00",
+        "block_gap_difference": 0.4990238707461643,
+        "known_order_sign_unchanged": 1
+      },
+      {
+        "root_id": "contrast_01",
+        "block_gap_difference": 0.5323509219915792,
+        "known_order_sign_unchanged": -1
+      },
+      {
+        "root_id": "contrast_02",
+        "block_gap_difference": 1.2034641680584812,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "contrast_03",
+        "block_gap_difference": 19.11567915260821,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "contrast_04",
+        "block_gap_difference": 50.53420728728283,
+        "known_order_sign_unchanged": 1
+      },
+      {
+        "root_id": "contrast_05",
+        "block_gap_difference": 16.460859753223787,
+        "known_order_sign_unchanged": 1
+      },
+      {
+        "root_id": "contrast_06",
+        "block_gap_difference": 12.513583655198548,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "contrast_07",
+        "block_gap_difference": 32.4882718160831,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "newroot_00",
+        "block_gap_difference": 34.084766966789864,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "newroot_01",
+        "block_gap_difference": 2.3049112464371646,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "newroot_02",
+        "block_gap_difference": 32.05623322055829,
+        "known_order_sign_unchanged": -1
+      },
+      {
+        "root_id": "newroot_03",
+        "block_gap_difference": 1.5221766129303376,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "newroot_04",
+        "block_gap_difference": 0.32582066982607216,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "newroot_05",
+        "block_gap_difference": 0.31822507493639307,
+        "known_order_sign_unchanged": 1
+      },
+      {
+        "root_id": "newroot_06",
+        "block_gap_difference": 0.010926354785453896,
+        "known_order_sign_unchanged": null
+      },
+      {
+        "root_id": "newroot_07",
+        "block_gap_difference": 0.4603173147784432,
+        "known_order_sign_unchanged": null
+      }
+    ]
+  },
+  "no_new_hard_labels": true,
+  "no_row_dropped_or_reweighted": true,
+  "training": false,
+  "mcts_calls": 0
+}

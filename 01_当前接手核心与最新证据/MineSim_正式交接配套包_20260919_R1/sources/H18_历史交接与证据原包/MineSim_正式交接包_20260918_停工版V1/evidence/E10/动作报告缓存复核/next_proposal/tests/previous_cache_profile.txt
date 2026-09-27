@@ -1,0 +1,33 @@
+         847522 function calls (715442 primitive calls) in 0.245 seconds
+
+   Ordered by: cumulative time
+   List reduced from 48 to 25 due to restriction <25>
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+     1040    0.005    0.000    0.245    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/release/action_cache.py:57(report)
+55120/2080    0.049    0.000    0.108    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/release/action_cache.py:16(identity)
+80080/1040    0.049    0.000    0.096    0.000 /usr/lib/python3.13/copy.py:119(deepcopy)
+     1040    0.002    0.000    0.094    0.000 /usr/lib/python3.13/copy.py:201(_deepcopy_tuple)
+     4160    0.016    0.000    0.084    0.000 /usr/lib/python3.13/copy.py:218(_deepcopy_dict)
+     6240    0.002    0.000    0.071    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/release/action_cache.py:29(<genexpr>)
+    23920    0.010    0.000    0.040    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/release/action_cache.py:28(<genexpr>)
+     2080    0.009    0.000    0.039    0.000 {built-in method builtins.sorted}
+    10400    0.004    0.000    0.031    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/release/action_cache.py:31(<genexpr>)
+     1785    0.009    0.000    0.024    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py:126(validate)
+      149    0.002    0.000    0.020    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py:180(action_report)
+    12501    0.010    0.000    0.015    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py:34(finite)
+   159120    0.014    0.000    0.014    0.000 {method 'get' of 'dict' objects}
+      596    0.001    0.000    0.012    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py:174(profile)
+    91568    0.010    0.000    0.010    0.000 {built-in method builtins.isinstance}
+    24960    0.010    0.000    0.010    0.000 {method 'hex' of 'float' objects}
+    91520    0.007    0.000    0.007    0.000 {built-in method builtins.id}
+     2080    0.004    0.000    0.007    0.000 /usr/lib/python3.13/dataclasses.py:1308(fields)
+    74880    0.004    0.000    0.004    0.000 /usr/lib/python3.13/copy.py:173(_deepcopy_atomic)
+    35229    0.004    0.000    0.004    0.000 {built-in method builtins.getattr}
+      596    0.001    0.000    0.004    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py:55(__post_init__)
+     5200    0.002    0.000    0.003    0.000 /usr/lib/python3.13/copy.py:232(_keep_alive)
+     5200    0.002    0.000    0.003    0.000 /usr/lib/python3.13/dataclasses.py:1331(is_dataclass)
+    48210    0.003    0.000    0.003    0.000 /mnt/data/minesim_reportcache_review_current/raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py:29(need)
+     9360    0.002    0.000    0.003    0.000 /usr/lib/python3.13/enum.py:199(__get__)
+
+

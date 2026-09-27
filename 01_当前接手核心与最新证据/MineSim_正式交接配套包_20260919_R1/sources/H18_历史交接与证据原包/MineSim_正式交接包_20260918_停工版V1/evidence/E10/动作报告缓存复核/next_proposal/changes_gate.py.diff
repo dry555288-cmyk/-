@@ -1,0 +1,57 @@
+--- frozen_parent/gate.py
++++ candidate_flat/gate.py
+@@ -19,8 +19,8 @@
+ import zipfile
+ from datetime import datetime, timezone
+ 
+-NAME='minesim_dual_reportcache_v1'
+-PARENT='minesim_dual_treeprobe_v1'
++NAME='minesim_dual_reportcache_flat_v1'
++PARENT='minesim_dual_reportcache_v1'
+ DATA=Path('/root/autodl-tmp')
+ REPO=Path('/root/MineSim-Dynamic')
+ 
+@@ -152,7 +152,7 @@
+         for rel,b in bindings['members'].items():
+             if rel!='MANIFEST.json':check(manifest.get(rel)==b,'PARENT_MANIFEST_BINDING:'+rel)
+         result=parse(contents['RESULT.json'])
+-        check(contents['RC.txt']==b'0\n' and result['rc']==0 and result['status']=='PASS_DUAL_TREE_REUSE_OBSERVATIONAL_PROBE','PARENT_STATUS')
++        check(contents['RC.txt']==b'0\n' and result['rc']==0 and result['status']=='PASS_DUAL_ACTION_REPORT_CACHE_EQUIVALENCE_SMOKE','PARENT_STATUS')
+         return contents,locations
+     finally:
+         if archive is not None:archive.close()
+@@ -195,7 +195,7 @@
+     try:
+         out=claim(data)
+         put(out/'REQUEST.json',{'time':utc(),'scope':'2 fixed roots x 2 steps x baseline/cached = at most 8 technical searches; no Q/visits reuse',
+-                              'authorization':'--authorize-reportcache-once','collection':False,'training':False})
++                              'authorization':'--authorize-flatcache-once','collection':False,'training':False})
+         stage='RELEASE';rm=verify_release(release)
+         for n in list(rm)+['RELEASE_MANIFEST.json']:put(out/'release'/n,read_stable(release/n),raw=True)
+         bindings=parse(read_stable(release/'SOURCE_BINDINGS.json'));protocol=parse(read_stable(release/'PROTOCOL.json'))
+@@ -214,7 +214,7 @@
+         for rel,raw in src.items():put(out/'parent_sources'/rel,raw,raw=True)
+         state['sources_verified']=len(src)
+         check(verify_release(out/'release')==rm,'CAPTURED_RELEASE_DRIFT')
+-        spec=importlib.util.spec_from_file_location('reportcache_native',out/'release/experiment.py')
++        spec=importlib.util.spec_from_file_location('reportcache_flat_native',out/'release/experiment.py')
+         mod=importlib.util.module_from_spec(spec);spec.loader.exec_module(mod)
+         stage='TECHNICAL_PROBE';put(out/'TECHNICAL_START.json',{'time':utc(),'max_mcts_calls':8,
+             'teacher_sample':False,'new_Y64_returns':0,'benchmark_run':False});state['technical_start']=True
+@@ -223,7 +223,7 @@
+             row={'time':utc(),'event':event,'counters':dict(counts),'where':where}
+             with (out/'EVENTS.jsonl').open('ab') as f:f.write(canon(row));f.flush();os.fsync(f.fileno())
+             if event=='SEARCH_AND_ONE_STEP_SAVED':print('SEARCHES_COMPLETED='+str(counts['search_completed'])+'/8',flush=True)
+-        result=mod.run(out/'parent_sources/parent_sources/runtime',out/'native',protocol,progress,local_test=local_test)
++        result=mod.run(out/'parent_sources/parent_sources/parent_sources/runtime',out/'native',protocol,progress,local_test=local_test)
+         state['native_result']=result;state['status']=result['status'];rc=0
+     except BaseException as e:
+         state['status']='HOLD_'+stage;state['errors'].append({'stage':stage,'type':type(e).__name__,'message':str(e)})
+@@ -262,6 +262,6 @@
+     return rc
+ 
+ def main():
+-    p=argparse.ArgumentParser();p.add_argument('--authorize-reportcache-once',action='store_true',required=True);p.parse_args()
++    p=argparse.ArgumentParser();p.add_argument('--authorize-flatcache-once',action='store_true',required=True);p.parse_args()
+     return execute(Path(__file__).resolve().parent)
+ if __name__=='__main__':sys.exit(main())

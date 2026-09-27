@@ -1,0 +1,139 @@
+MineSim 叶节点续算契约与技术验证 V1
+日期：2026-09-09
+Gate：TEACHER_TARGET_CONTRACT_AND_SERIALIZED_LEAF_CONTINUATION_SMOKE
+主程序：minesim_leaf_continuation_contract_v1.py
+主程序 SHA256：47dc91c51208b9e4067458b19d1c8cfc88d8e1f3aefc3f1a101701e0440b3439
+
+一、本次推进目标与不做的事情
+
+先验证“在计算窗口处停下，保存叶状态，再继续仿真并正确拼接回报”的技术链，不直接修改旧H8教师、网络、奖励或剪枝。
+上一轮从既有H12/H16日志分段求和，已证明后段奖励能够改变两个C06状态的动作排序。本次不是再次对旧日志做相同加法：本次实际调用冻结状态转移和奖励，从写入JSON并重新读取的完整叶状态恢复仿真，逐步比较不中断轨迹、分段轨迹、随机数状态和回报；另与原生_rollout组件的回报和随机数状态核对。
+
+本次正式云端运行尚未执行。本报告中的128例真实输入结果为本地专用种子技术测试，不能冒充AutoDL验收。程序不运行MCTS.search、不构树、不调用树回传，不训练、不加载网络、不产生可直接训练的新标签，也不对动作给出“最优/可删除”结论。
+
+二、论文依据与适配边界
+
+[R1] Kocsis, L.; Szepesvari, C. Bandit Based Monte-Carlo Planning. ECML 2006, pp.282–293. DOI:10.1007/11871842_29.
+公开论文：https://www.lri.fr/~sebag/Examens_2008/UCT_ecml06.pdf
+依据：第2.1节讨论rollout-based planning和均匀动作采样的vanilla MC；Figure 1区分Terminal(state)返回0与Leaf(state,depth)调用Evaluate(state)，使用r+gamma*后续回报。
+本项目只借用固定策略采样与折扣递推的定义。本轮固定均匀参考策略，不执行自适应UCT，也不声称验证UCT的最优性或收敛定理。
+
+[R2] Pardo, F.; Tavakoli, A.; Levdik, V.; Kormushev, P. Time Limits in Reinforcement Learning. ICML 2018, PMLR 80:4045–4054.
+官方论文：https://proceedings.mlr.press/v80/pardo18a.html
+PDF：https://proceedings.mlr.press/v80/pardo18a/pardo18a.pdf
+依据：第2节讨论固定有限时域目标及剩余时间（式3/4）；第3节讨论人为截断继续任务时的价值续接（式5/6）。
+适配：本项目把总参考剩余步数和计算分段明确记录，并区分模拟器终止、段边界和最终参考时间限制。不是直接复现论文的强化学习更新，也尚未实现无限/完整任务价值估计。
+
+[R3] Burges, C. et al. Learning to Rank using Gradient Descent. ICML 2005, pp.89–96. DOI:10.1145/1102351.1102363.
+论文：https://www.microsoft.com/en-us/research/wp-content/uploads/2005/08/icml_ranking.pdf
+依据：第2/3节以输出差构造成对损失，共同偏移不改变关系。
+适配限制：现有排序输出不能未经绝对回报校准当作叶节点尾值。对同一状态加共同常数c，L(f+c*1,y)=L(f,y)，不能由排序损失确定累计奖励的绝对零点。并非声称任意缩放也保持损失不变。
+
+三、明确“本次估计什么”：有限参考策略价值，不是最优任务价值
+
+1. 技术参考策略
+在每个非终止状态s，使用冻结active_joint_actions(s)返回的真实有序动作集合A_active(s)。
+pi_ref(a|s)=1/|A_active(s)|。
+实现为原生random.Random.choice；第一步强制指定16个联合动作之一，不消耗RNG；从第二步起按pi_ref选动作。若某车已达到其配置路线终点，其可用动作仍按冻结实现约束为KEEP，不强行扩成16个动作。
+
+选择均匀参考策略，是为了先隔离并检验续算接口，并对齐原生随机rollout组件的规则。不是认为随机驾驶优于Pure MCTS，不是把随机策略作为最终部署策略，不是给旧Balanced-root完整树搜索换名字。
+
+2. 有限技术参考目标
+T=16步、dt=0.5秒，因此最多8秒。gamma=0.99保持冻结实现。tau表示首次模拟器真实终止的到达步数。
+Q_T^pi_ref(s,a)=E[sum_(k=0)^(min(T,tau)-1) gamma^k*r_k | s_0=s, a_0=a, a_(k>=1)~pi_ref]。
+
+同样定义尾部剩余m步的策略价值：
+V_m^pi_ref(s)=E[sum_(j=0)^(min(m,tau_s)-1) gamma^j*r_j | 从s起所有动作~pi_ref]。
+
+状态s_L的未来价值必须带剩余步数m=T-L。本轮不能把V_(T-L)写成不说明时域的V(s_L)，更不能写成V*。
+T16和分段h8/h12是项目技术对照选择，不是论文给出的最优时域。本轮达到T后未真实终止，记录REFERENCE_TIME_LIMIT_NOT_TASK_COMPLETION；T之后的回报明确NOT_ESTIMATED。绝不把“4秒截断改成8秒截断”描述为已经解决完整任务尾值问题。
+
+四、对同一条真实生成轨迹验证回报拼接
+
+取计算分段h为8或12，实际前段长度l=min(h,tau)。对于同一随机数流和同一生成路径：
+G_T = G_prefix(l) + 1_(前段未真实终止)*gamma^l*G_suffix(T-l)。
+G_prefix(l)=sum_(k=0)^(l-1) gamma^k*r_k。
+G_suffix(T-l)=sum_(j=0)^(min(T-l,tau_leaf)-1) gamma^j*r_(l+j)。
+
+尾段在其局部时间从gamma^0开始，拼回根节点时乘gamma^l。进入叶节点的那条边已经计入前段；尾部从叶节点后的下一条转移开始，不能重算那条边、重扣硬安全惩罚或重加目标奖励。
+
+若将来需要估计策略尾值，可写Vhat_m=(1/M)*sum_(u=1)^M G_suffix^(u)。本步仅用M=1的配对续算验证计算恒等式，4个种子用来覆盖接口路径，不作为统计精度达标依据；本次不报告置信度、动作排名或“已收敛”。
+
+五、真实终止与人工截断的实际源码语义
+
+冻结逻辑的真实终止：state.hard_safety_violation 或 state.all_goals_reached。
+all_goals_reached指两车均达到当前配置的路线终点，不等于独立验证的benchmark post-conflict success。“已经通过冲突参照点”不是本轮新增终止条件。
+人工中间分段：已到h8/h12且未真实终止，必须允许在相同上下文中继续至总T。
+最终参考限制：到T16但未真实终止，明确记录时间限制，不宣称任务完成。
+终止优先于时间限制；若在恰好h/T的到达边发生真实终止，优先记录该真实终止，不再续算。终止后的尾部为0，但终止到达边的既有奖励保留一次。
+
+六、完整叶状态序列化
+
+不能只保存网络的12维输入。本版按冻结dataclass完整保存：
+每车time_s、route_s、speed_mps、accel_mps2、lead_distance_m、lead_rel_speed_mps、target_speed_mps、minimum_clearance_m、prev_action、collision、goal_reached；FleetState的两车顺序、internal_collision、minimum_internal_clearance_m、conflicting_pairs、internal_safety_violation、safety_violating_pairs。
+连续浮点用float.hex精确序列化，合法正无穷净距显式编码；拒绝NaN、负无穷和非规范字段。额外保存上下文SHA、策略ID、实际深度、剩余步数、前段奖励、真实终止原因及random.Random的完整内部状态。
+
+恢复用setstate，不用“再调用同一个seed”代替。仅同seed无法保证已经消耗了相同数量的随机数。程序逐步比较action_id、前后状态、奖励、终止标志、最终RNG，并核查仿真时间不重置。
+
+七、云端固定技术矩阵
+
+固定两条既有C06记录：
+NEW24__C06__C06_FROZEN_EP0__step76
+NEW24__C06__C06_SEED1_EP1__step73
+
+2根状态 × 16个强制第一动作 × 4个技术seed(44000—44003) = 128例。
+每例比较：
+A. 不间断运行到总16步或真实终止；
+B. 运行到8步，写JSON，重新读取完整状态/RNG，再运行剩余8步；
+C. 运行到12步，写JSON，重新读取完整状态/RNG，再运行剩余4步；
+D. 固定第一步之后调用冻结FleetMCTSSearch._rollout组件，核对原生后续累计回报和最终RNG。
+
+B/C遇到提前真实终止时不补造后段。D会实例化搜索类但不调用search，不创建树节点/执行树扩展或backup；故MCTS_RUN=False、NATIVE_ROLLOUT_COMPONENT_RUN=True。128是技术用例数，不是128次完整驾驶闭环，也不是128个独立状态。
+
+八、来源锁定与运行保护
+
+父namespace：/root/autodl-tmp/minesim_c06_horizon_sensitivity_v1
+父清单SHA256：63248ebe9ecc8be2f818aa810f5afe59daf5a79d4fc37934e40a3a2d71491599
+父清单1297项在本地本轮审阅中均重新核验通过；云端新脚本仅读取并核验需要的来源子集，不重复读取全部历史搜索日志。
+实际复制657项runtime来源文件；按已有清单再次检查当前仓库17个引擎文件SHA。其余关键pin详见SOURCE_AUDIT.json、脚本常量及云端SOURCE_BINDINGS.json。
+依赖版本按父实验SEARCH_ENVIRONMENT锁定，云端Python3.9；本地环境与云端不同，不能以本地结果替代云端。
+仅加载必要18条参考路径，不读入全矿大JSON。
+新输出：/root/autodl-tmp/minesim_leaf_continuation_contract_v1
+不触碰旧namespace，已存在的目录/ZIP/partial/done一律不覆盖、不删、不重跑。
+输入前置、后置hash检查；Git前后完整状态比较，不要求通过删除文件获得clean。
+工作进程有one-shot授权token；监管器回收其自有子进程后再打包。超时900秒是保护上限，不是预计耗时。
+可捕获异常/中断保存HOLD。SIGKILL/实例关机/磁盘写失败不能保证结果包完成，不以trap冒充强制终止恢复保证。
+
+九、验收标准
+
+技术PASS要求：128/128用例完整；256组分段轨迹与RNG完全一致；128组原生rollout比较通过；折扣回报绝对误差<=1e-8；完整叶状态读写一致；未在真实终止后继续；case身份、政策、T、cuts、seed符合协议；源文件与Git未改变；ZIP验证通过。
+1e-8是项目数值容差，非安全距离/碰撞概率/置信阈值。
+即使PASS，TEACHER_QUALITY_STATUS仍NOT_EVALUATED，READY_FOR_TEACHER_LABELS=False，DEPLOYMENT_APPROVED=False。
+科学结果不在本轮授予PASS/FAIL；没有重新训练或替换标签的自动下一步。
+
+十、交付前实际测试结果（本地，非云端）
+
+最终主程序AST/Python3.9语法检查及py_compile通过。
+45项Python测试通过，覆盖完整状态/RNG、字段缺失、JSON重复键、非有限数、折扣幂次、真实终止、路线目标终止的合成用例、时间预算重置、已有目录保护、原始SHA变化、输入缺失HOLD打包、正常完成及监管器超时/子进程回收等。
+8项启动/监控模拟测试通过，使用screen测试替身，不冒充真实AutoDL后台连接验证；包括PASS、HOLD、已有输出、无完整done标记、消失会话、脚本SHA错误和损坏done。
+
+最终真实输入技术测试：
+本地专用seed：99083—99086（未使用云端44000—44003）。
+128例全部通过；256组分段对照、128组原生rollout对照通过。
+最大回报误差：2.842170943040401e-14。
+本地进程执行耗时约17.27秒，仅供记录，非AutoDL耗时保证。
+62例到参考时域截止仍未真实终止；66例在模拟器硬安全终止。
+这128例没有真实“两车均达到路线终点”的用例；该分支仅由合成单元测试覆盖。不能宣称完成真实通行验收。
+没有运行新MCTS.search、网络推理、教师质量对照、训练或剪枝。
+
+十一、结果包与下一步
+
+云端完成后上传：/root/autodl-tmp/minesim_leaf_continuation_contract_v1.zip
+PASS或HOLD都保存。不存在ZIP时提交screen log；不删除、不重复执行。
+本次PASS后只能说：在既定技术参考策略和有限总时域下，完整叶状态恢复与续算记账通过。下一Gate须单独决定任务适合的续接策略及停止条件，并评价估计方差/偏差、动作关系稳定性和成本。
+均匀随机策略并未被批准为最终教师；T16未被批准为最终任务时域；排序网络未被批准为尾值；旧H8作为有限时域基线保留。不得因本次通过就批量重采2356条、混合Q目标、直接训练或恢复K13。
+
+十二、审核包结构
+
+主程序和本协议；CONTRACT.json（正式云端技术种子与边界）；SOURCE_AUDIT.json（真实源码SHA/符号行号）；evidence/关键引擎源码；TEST_VALIDATION_SUMMARY.json；tests/实际测试代码及日志；local_real/最终真实输入本地测试摘要与128例技术记录；启动与监控_复制到终端.txt供审阅；SHA256_MANIFEST.json。
+审核包不是AutoDL输入依赖。用户只上传主程序，启动/监控直接复制回复中的集成代码。

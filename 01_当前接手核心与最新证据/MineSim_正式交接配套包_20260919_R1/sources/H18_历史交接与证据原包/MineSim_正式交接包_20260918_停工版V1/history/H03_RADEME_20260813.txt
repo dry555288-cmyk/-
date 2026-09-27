@@ -1,0 +1,1175 @@
+# MineSim-Dynamic
+
+**露天矿无人矿卡闭环规划复现、Pure MCTS / Multi-Vehicle MCTS 与 Full-Mine 新地图接入项目**
+
+> 当前状态日期：**2026-08-13**
+> 正式仓库：`/root/MineSim-Dynamic`
+> Conda 环境：`minesim`
+> Python：`3.9.25`
+> 当前工程主线：**完成 Full-Mine Vector V2 targeted closed-loop runtime 7/7 验收**
+> 当前最高优先级 blocker：**A2 场景中途停车，需复现 IDM leading-object selection**
+
+---
+
+## 1. 项目简介
+
+MineSim-Dynamic 是面向露天矿非结构化道路自动驾驶矿卡的场景化闭环规划仿真项目。本项目不是单纯“实现一个 MCTS”，而是在原始 MineSim 工程上逐步完成以下主线：
+
+**MineSim 原项目复现 → Pure MCTS 接入 → 单车闭环 → 多车 / Fleet MCTS → 双车冲突 benchmark → 真实 GeoJSON 新地图 → Full-Mine Vector V2 → 全矿 targeted runtime 验收。**
+
+当前项目已经越过早期“能否复现”“MCTS 能否接进去”“单车能否跑通”的阶段。Pure MCTS、Multi/Fleet MCTS、J117 双车 benchmark、Full-Mine Semantic 和基础运行链都已有实际闭环证据；目前工程重点是把 **Vector V2 新地图的 7 个 targeted 场景全部正式跑通并冻结版本**。
+
+项目研究问题主要包括：
+
+* 多步 MCTS 是否能比传统反应式 IDM 在复杂冲突中获得更好的安全与任务完成能力；
+* 两辆受控矿卡能否通过联合搜索自主形成时序分离，而不是依赖固定优先级；
+* 如何建立公平、可解释的多规划器 benchmark；
+* 如何把真实矿区 GIS / GeoJSON 数据转换成 MineSim 可加载、可搜索、可闭环运行的地图；
+* 如何让全部实验具备版本、配置、日志、随机种子和结果可追溯性。
+
+---
+
+# 2. 当前状态总览
+
+截至最新材料，项目状态如下。旧 Word 中诸如“Pure MCTS 尚未开始”“J117 双车尚未运行”等描述均属于当时的历史快照，不能覆盖后续进展；接手时的事实优先级始终是：
+
+**当前 AutoDL / Git / 源码 / 运行结果 > `/root/autodl-tmp` 中的结果与 manifest > 最新交接文档 > 旧阶段文档 > 研究计划。**
+
+| 阶段                               | 状态                | 当前结论                                                  |
+| -------------------------------- | ----------------- | ----------------------------------------------------- |
+| MineSim 原项目复现                    | ✅ PASS            | Dapai / Jiangtong IDM + Replay 闭环复现完成                 |
+| IDM baseline 冻结                  | ✅ PASS            | `2521aa4` / `idm-replay-autodl-baseline`              |
+| Pure MCTS 接入                     | ✅ PASS            | 已进入真实 MineSim online closed-loop                      |
+| Pure MCTS 单车                     | ✅ PASS            | Dapai / Jiangtong 均有正式闭环结果                            |
+| 五 Planner 比较                     | ✅ PASS            | MCTS / IDM / Frenet / Adapted Maneuver / Simple 已形成结果 |
+| MCTS Budget 消融                   | ✅ PASS            | 50 / 100 / 200 / 300 已完成                              |
+| Multi/Fleet MCTS                 | ✅ PASS            | FleetState、16 联合动作和双车几何耦合已实现                          |
+| Dapai 双车机制                       | ✅ PASS            | A-B-only 已形成 B 先、A 后时序分离证据                            |
+| Jiangtong 第二冲突场景                 | ✅ 负筛选             | Traj26 有空间交叉但无近同时冲突，不适合作为天然 benchmark                 |
+| J117 真实地图 Pilot                  | ✅ PASS            | GeoJSON→Map API→Scenario→单车完整闭环                       |
+| J117 双车 Pure MCTS                | ✅ PASS            | 5 seed benchmark 和 swept safety 全通过                   |
+| Full-Mine V1                     | ✅ PASS            | Semantic + DEV mask + single/dual runtime             |
+| Full-Mine Vector V2 Semantic     | ✅ PASS            | 100 effective roads / 553 reference paths             |
+| Vector V2 基础 single/dual runtime | ✅ PASS            | 1-step / 5 s 已通过                                      |
+| 15 条重点 Lane 静态验证                 | ✅ PASS            | 中心线及物理 footprint 已完成重点审计                              |
+| 7 个 targeted planner route       | ✅ PASS            | route token、顺序、refline 7/7                            |
+| C / D / E targeted runtime       | ✅ PASS            | CollisionLookup 修复和 candidate v2 后全部通过                |
+| A1 goal / termination            | ✅ CLOSED          | IDM route-end 虚拟 lead bug 已定位并修复                      |
+| A2 targeted runtime              | 🔴 当前 blocker     | path-000299 中段提前停车                                    |
+| B1 / B2 fixed-IDM shadow         | ⏳ 未运行             | 等 A2 blocker 关闭后再跑                                    |
+| candidate v3                     | ⏳ 未构建             | 必须等 A1/A2/B1/B2 真实轨迹稳定                                |
+| 新地图正式 7/7                        | ⏳ 3/7 formal PASS | C/D/E 已过，A/B 四场景未最终验收                                 |
+| Production drivable mask         | ⚠️ BLOCKED        | 缺少权威 production drivability 数据                        |
+| Neural-MCTS                      | ⛔ NOT STARTED     | 有专家数据，但没有正式 Value/Policy/PUCT 结果                      |
+
+最新 2026-08-13 交接文档已经将 **A2 中途停车**确定为当前最近 blocker，而不是此前 8 月 12 日文档中的 C/D/E CollisionLookup 问题。
+
+---
+
+# 3. 环境与快速接手
+
+以后所有终端命令都必须先进入正式项目并激活 `minesim` 环境。不要假设新的 shell 已经处于正确环境。最新工作规范明确要求每一段可执行代码都先完成这一动作。
+
+```bash
+cd /root/MineSim-Dynamic
+source /root/miniconda3/etc/profile.d/conda.sh 2>/dev/null || true
+conda activate minesim
+
+export PYTHONPATH=/root/MineSim-Dynamic
+export CUDA_VISIBLE_DEVICES=""
+
+echo "ENV=$CONDA_DEFAULT_ENV"
+python --version
+pwd
+
+git branch --show-current
+git rev-parse HEAD
+git status --short --branch
+```
+
+其中：
+
+* 正式仓库只有 `/root/MineSim-Dynamic`；
+* `/root/autodl-tmp/MineSim-Dynamic` 等同名目录不作为正式开发仓库；
+* 大地图、实验结果、日志、临时脚本、harness、模型和 bundle 优先放 `/root/autodl-tmp`；
+* `/root/datasets/maps` 中原始 Dapai / Jiangtong 成品地图只作为 production 行为对照，不应修改；
+* 静态分析默认关闭 GPU；
+* 只有 MineSim runtime / shadow closed-loop 等必要任务才开卡；
+* 内存和 CPU 真值优先看 cgroup，而不是 `free -h` 或 `nproc` 显示的宿主机资源。
+
+---
+
+# 4. Git 与版本安全
+
+稳定 IDM baseline：
+
+`autodl-idm-baseline`
+Commit：`2521aa41a69a6e734c04c15a715e9530c8095ac3`
+Tag：`idm-replay-autodl-baseline`
+
+Pure MCTS 正式结果与专家数据的重要历史节点：
+
+`94693dc799fe5f325a75e8fc6d7d5e88764b4799`
+
+J117 / Full-Mine 的主要节点包括：
+
+| Commit       | 含义                                       |
+| ------------ | ---------------------------------------- |
+| `4bd2bff...` | J117 production Map API 注册               |
+| `ec1c958...` | J117 minimal Scenario / 单车闭环基础           |
+| `da4105b...` | J117 dual-ego + Pure MCTS                |
+| `32fb429...` | Full-Mine semantic node lookup O(1) 性能修复 |
+| `d81c571...` | Full-Mine V1 独立 DEV map 注册               |
+
+`d81c571...` 是 **P0 接手时最后确认的历史锚点**，不是可以直接假定的当前 HEAD。2026-08-13 之后存在尚未提交的本地源码修改，因此任何接手者都必须先看实时 `git status / diff`，禁止为了“恢复干净”而 reset。
+
+当前明确禁止：
+
+* `git reset --hard`
+* `git clean -fd`
+* `git add .`
+* 未审计就 `git checkout` 覆盖已有修改
+* 批量删除 `.bak`、untracked 文件或历史 harness
+* 原地修改已经冻结的 bitmap
+* 在不知道文件来源时执行 `rm -rf`
+
+项目历史上已经存在重要的未跟踪脚本、测试和备份，因此“工作树脏”并不等于“应该清理”。
+
+---
+
+# 5. MineSim 闭环架构
+
+当前项目真实闭环可概括为：
+
+**Scenario / Map → Planner → Trajectory → Controller → Vehicle Model → Observation → Metrics / History → 下一帧**
+
+更具体地：
+
+`ScenarioFileBaseInfo / MineSimDynamicScenario`
+→ `get_maps_api / MineSimMap`
+→ `Planner.initialize()`
+→ 每帧 `compute_trajectory()`
+→ `TwoStageController`
+→ `iLQR / LQR tracker`
+→ `Kinematic Bicycle Model`
+→ 更新 EgoState
+→ 更新其他 actor / observation
+→ collision / boundary / goal / metrics
+→ 下一 iteration。
+
+需要特别注意：**Planner 输出的是未来轨迹，而不是下一帧车辆位置。** Controller 根据当前车辆状态和规划轨迹计算控制量，车辆模型再积分得到实际下一状态。因此搜索层、轨迹层、控制层和车辆动力学层必须分开诊断。
+
+---
+
+# 6. IDM Baseline
+
+IDMPlanner 是当前工程的重要对照、回归基座和部分 MCTS 接口基础。
+
+其基本流程是：
+
+当前 EgoState
+→ Global Route
+→ surrounding-object occupancy map
+→ 扩展自车前方 route corridor
+→ 找到最近 leading object
+→ IDMPolicy 根据距离、相对速度、headway 等计算纵向加速度
+→ 沿 route 生成未来状态
+→ `InterpolatedTrajectory`
+→ Controller / KBM。
+
+历史公共参数大致为：
+
+* `target_velocity = 10.0 m/s`
+* `min_gap = 1.0 m`
+* `headway = 1.5 s`
+* `accel_max = 1.0 m/s²`
+* `decel_max = 3.0 m/s²`
+* 16 个轨迹点
+* 0.5 s 采样间隔
+
+当前 targeted runtime 中，IDMPlanner initialize 后实际目标速度会调整到约 `10.5 m/s`。
+
+---
+
+# 7. Pure MCTS
+
+Pure MCTS 没有重写整个 MineSim 执行栈，而是在既有 Planner / route / trajectory 接口之上，将反应式纵向决策替换为多步树搜索。
+
+当前核心动作空间：
+
+| Action |       加速度 |
+| ------ | --------: |
+| BRAKE  | -3.0 m/s² |
+| DECEL  | -1.5 m/s² |
+| KEEP   |         0 |
+| ACCEL  | +1.0 m/s² |
+
+历史正式核心参数：
+
+* Search Budget：300
+* `max_depth = 8`
+* `tree_dt = 0.5 s`
+* `c_uct = 1.4`
+* `gamma = 0.99`
+* 障碍预测：CV / CTRV
+* 物理碰撞 buffer：约 0.5 m
+* 连续净距安全阈值：约 3.0 m
+
+每帧执行：
+
+Selection → Expansion → Rollout → Backup → 根节点动作选择。
+
+只执行搜索得到的第一步动作，下一仿真帧根据最新观测重新规划，因此属于 **receding-horizon MCTS**。
+
+已经形成 448 条 strict MCTS expert samples，动作分布大致为：
+
+`ACCEL 322 / KEEP 51 / DECEL 41 / BRAKE 34`
+
+这些数据足以证明数据管线和训练 schema 的可行性，但样本来自连续时间序列且只有少数场景，不能直接随机逐行拆成 train / val，也不能据此宣称 Neural-MCTS 已完成。当前没有正式 Value Network、Policy Network、Policy-Value 或 PUCT 训练结果。
+
+---
+
+# 8. Multi / Fleet MCTS
+
+多车阶段将两个受控车辆共同放入联合状态：
+
+`controlled A + controlled B + external actors`
+→ `FleetState`
+→ 16 个联合动作
+→ `FleetTransitionModel`
+→ `FleetRewardModel`
+→ best joint action
+→ 两车 Controller / vehicle model 闭环执行。
+
+FleetRewardModel 同时包含：
+
+* per-vehicle progress / safety / efficiency；
+* A-B 内部真实车辆几何；
+* internal clearance soft penalty；
+* hard collision / safety penalty；
+* 外部 actor 的 CV / CTRV 几何预测。
+
+Dapai A-B-only 实验已经形成了明确的联合时序机制证据：B 先通过，A 后通过；但加入外部 `object1` 后目标交互会被提前打断，因此 `object1` 被认定为 benchmark confounder。正确做法不是不断调整 reward 逼 full-external 场景成功，而是重新设计更干净的 benchmark。
+
+Jiangtong V22 中，Traj26 虽然存在真实空间交点，但 actor 到达时间与 ego 最早可达 ETA 相差约 `+9.496 s`，并非天然近同时冲突，因此已经作为**负筛选结果**封存，不能通过修改 StartTime、速度、route、reward、budget 或 seed 人为把它包装成天然冲突。
+
+---
+
+# 9. 历史五 Planner 实验
+
+已经运行或工程适配过：
+
+* Pure MCTS
+* IDM
+* Frenet
+* Adapted Maneuver / SPPMM
+* Simple Planner
+
+历史两场景统一结果中：
+
+| 场景        | Planner          | 碰撞帧 | 越界帧 | 进入 Goal | 结论               |
+| --------- | ---------------- | --: | --: | ------- | ---------------- |
+| Dapai     | MCTS             |   0 |   0 | 是       | Safe Goal        |
+| Dapai     | IDM              |  21 |   0 | 否       | 冲突失败             |
+| Dapai     | Frenet           |   0 |   0 | 否       | 安全但未完成           |
+| Dapai     | Adapted Maneuver |   0 |   0 | 否       | 安全但进度不足          |
+| Dapai     | Simple           |   0 |   0 | 否       | 下限参考             |
+| Jiangtong | MCTS             |   0 |   0 | 是       | Safe Goal        |
+| Jiangtong | IDM              |   0 |   0 | 是       | Safe Goal，且更快更平顺 |
+| Jiangtong | Frenet           |   0 |   0 | 否       | 安全但未完成           |
+| Jiangtong | Adapted Maneuver |  30 |   0 | 否       | 长期停车后碰撞          |
+| Jiangtong | Simple           |   0 |  90 | 否       | 明显越界             |
+
+这些结果不能直接写成“五算法完全公平排名”。历史实验中 MCTS / IDM 使用 CURRENT_OBSERVATION，而部分 Frenet / Maneuver 版本使用 replay future truth oracle，Simple 只使用 ego 信息，因此旧表更准确的定义是：
+
+**统一仿真和评价协议下的异构规划能力评估。**
+
+目前能够严谨地说的是：在已评估场景中，MCTS 展现了多步冲突决策价值；不能由此推导“在所有矿山场景全面优于所有规划器”。
+
+---
+
+# 10. Search Budget 消融
+
+Pure MCTS 已进行 Budget：
+
+`50 / 100 / 200 / 300`
+
+的对照。
+
+主要现象：
+
+* Dapai 对搜索预算明显敏感，历史固定时限下只有 Budget 300 成功进入目标；
+* Jiangtong 在较低预算下已经接近饱和；
+* 固定对所有状态使用高 Budget 存在明显计算冗余。
+
+因此后续合理研究方向包括：
+
+**adaptive budget、tree reuse、value guidance / Value Network。**
+
+但这些不应抢在当前新地图 runtime 7/7 验收之前。
+
+---
+
+# 11. J117：真实地图 Constructed Benchmark
+
+为了摆脱 Dapai 外部 actor 混杂和 Jiangtong 缺少天然时间冲突的问题，项目从真实 Full-Mine GeoJSON 中选择 **Junction 117（J117）** 作为 pilot。
+
+J117 的意义不是“随便造一个新地图”，而是首先证明完整链路：
+
+**真实 GeoJSON → Raster/Semantic → MineSim Map API → Scenario → Planner → Controller → Runtime → Multi-Ego MCTS**
+
+真实路线：
+
+Route A：
+
+`6670 → 6674 → 5690`
+
+Route B：
+
+`5691 → 6546 → 6523`
+
+J117 Phase 4C 单车闭环结果：
+
+* 423 steps
+* 42.3 s
+* 距离约 398.998 m
+* min clearance ≈ 1.599 m
+* goal reached
+* 全程 drivable
+* 无异常
+
+随后 Phase 5 已完成双受控车辆与 Pure MCTS：
+
+* NO-MCTS aligned baseline：crossing gap ≈ `0.00070 s`，minimum clearance = 0，发生真实几何冲突；
+* Pure MCTS seed 0：crossing gap ≈ `1.561 s`；
+* swept minimum clearance ≈ `0.594 m`；
+* 5-seed robustness：`5/5 PASS`；
+* 5-seed swept safety：`5/5 PASS`。
+
+因此 J117 已经是一个冻结的 real-map constructed benchmark / 回归区域。除非生产源码发生可能影响 Map API、Planner、Controller 或车辆几何的修改，否则不需要重新调 J117 MCTS。
+
+---
+
+# 12. 新地图原始数据
+
+原始地图资料包含 8 类 GeoJSON 和一张普通预览图：
+
+| 文件                      | Feature 数 | 用途                            |
+| ----------------------- | --------: | ----------------------------- |
+| `road.geojson`          |        94 | road polygon                  |
+| `road_boundary.geojson` |       100 | road 两侧边界                     |
+| `junction.geojson`      |        35 | junction polygon              |
+| `lane.geojson`          |       553 | reference path / topology / Z |
+| `rgn_boundary.geojson`  |        84 | 作业区 / junction 边界             |
+| `rng_load.geojson`      |        36 | loading region                |
+| `rgn_unload.geojson`    |         7 | unloading region              |
+| `rgn_auxiliary.geojson` |         6 | auxiliary region              |
+| `1.png`                 | 1799×1050 | 普通视觉预览，无地理参考                  |
+
+全部 GeoJSON 声明 EPSG:4326。
+
+项目采用坐标链：
+
+**WGS84 → UTM Zone 46N / EPSG:32646 → MineSim local**
+
+固定 local origin：
+
+`E0 = 409200.0`
+`N0 = 4916800.0`
+
+即：
+
+`x_local = UTM_E - E0`
+`y_local = UTM_N - N0`。
+
+---
+
+# 13. Full-Mine V1
+
+Full-Mine V1 首先建立了保守但可运行的结构基线：
+
+* node：400,744
+* polygon：177
+* road：93
+* intersection：35
+* loading_area：36
+* unloading_area：7
+* auxiliary_area：6
+* dubins_pose：565
+* reference_path：540
+* borderline：388
+
+主要解决过三个系统级问题：
+
+**共享 topology endpoint 不完全一致。**
+同一 topo ID 建立 deterministic canonical XY，只 snap path 首尾。
+
+**source coverage validator 漏 layer。**
+明确建立 road / junction / loading / unloading / auxiliary 的 source→semantic mapping。
+
+**boundary parent 错挂。**
+不再跨类别只按 object ID 搜索，而是以 `rgn_type + rgn_objectid` 联合判断。
+
+Full-Mine V1 同时发现，官方 MineSim 并未公开“原始 GIS → production bitmap”的制作工具，而官方 Dapai / Jiangtong 成品地图中 polygon 内也存在大量 non-drivable 区域，因此不能简单使用：
+
+`whole polygon = drivable`
+
+V1 最终采用：
+
+**3.5 m lane-centered half-width + parent polygon clipping + 10 px/m**
+
+生成明确标记为：
+
+`DEV_ONLY_NOT_PRODUCTION_VALIDATED`
+
+的可行驶 mask。
+
+---
+
+# 14. Full-Mine Vector V2 Semantic
+
+Vector V2 的目标是尽可能利用原始源数据，同时严格保留 provenance。
+
+V2 不修改 source inventory，而是在 source 和 effective geometry 之间建立明确分离。
+
+Source road 仍为：
+
+`94`
+
+Effective road：
+
+`100`
+
+共形成 8 条 repair records：
+
+* road 339：boundary-derived missing road
+* road 340：boundary-derived missing road
+* road 353：boundary-derived missing road
+* road 356：boundary-derived missing road
+* road 357：boundary-derived missing road
+* road 360：boundary-derived missing road
+* road 332：`make_valid → keep largest polygon`
+* road 484：使用 boundary-derived effective geometry，同时保留旧 source provenance
+
+最终 Vector V2 Semantic：
+
+| Layer          |      数量 |
+| -------------- | ------: |
+| polygon        |     184 |
+| road           |     100 |
+| intersection   |      35 |
+| loading_area   |      36 |
+| unloading_area |       7 |
+| auxiliary_area |       6 |
+| reference_path |     553 |
+| dubins_pose    |     565 |
+| borderline     |     402 |
+| waypoint       | 314,692 |
+
+V1 的 540 条 reference path 全部保留，V2 新增 13 条，removed=0；共享路径内部 XY / yaw 无漂移。
+
+---
+
+# 15. 高程与 Topology 政策
+
+Vector V2 已将 `lane.geojson` 的 raw Z 写入：
+
+`reference_path waypoint[3]`
+
+但：
+
+* elevation datum 尚未权威确认；
+* `waypoint[4] slope` 当前仍为 `0.0`；
+* boundary Z 存在明显异常，暂不作为 elevation truth；
+* lane6713 存在约 `+0.519 m` 单步 seam，当前策略是**保留 raw Z + QA 标记**，不凭空平滑；
+* 不同 topo ID 即使 XY 相同也不能自动 merge；
+* 约 50 条 `gear=-1` lane 的实际运营方向仍没有权威业务解释。
+
+因此：
+
+**Topo ID 是首要拓扑事实，距离相近不能代替 topology identity。**
+
+---
+
+# 16. Vector V2 Bitmap 与候选版本
+
+当前 bitmap 是研究/软件联调用的 DEV mask，不是 production-authoritative map。
+
+关键版本：
+
+### P0 Frozen Baseline
+
+SHA256：
+
+`d2afc84e7286d72f7fcd9a9b2000ca3701e322e06831dc11d0d0ac63325fccef`
+
+这是 2026-08-13 P0 接手时的**冻结基线**，禁止原地修改。
+
+### Candidate v1
+
+SHA256：
+
+`7c586421a53a65fe3f49b5b56807522fe042e2051295cc282c0d47f0ddf20e73`
+
+相对 d2af：
+
+`+112 pixels = 1.12 m²`
+
+### Candidate v2
+
+SHA256：
+
+`57514c52203aeca5c970d5a30086a58ddda7c1e179166ee3a26ff0435ed9bbd5`
+
+相对 v1：
+
+`+6 pixels`
+
+相对 d2af：
+
+`+118 pixels = 1.18 m²`
+
+所有 map patch 必须遵守：
+
+**additive-only**
+
+即：
+
+`REMOVED = 0`
+`OTHER_CHANGED = 0`
+
+d2af / candidate v1 / candidate v2 均应视为 immutable artifact。未来 candidate v3 必须建立新目录、新 manifest、新 SHA，不能覆盖旧版本。
+
+---
+
+# 17. CollisionLookup 修复
+
+C / D / E targeted runtime 曾暴露出两个不同问题：
+
+第一类是真实 bitmap interface gap。
+
+第二类是 MineSim `CollisionLookup` 自身车辆几何与标准 CarFootprint 不一致。
+
+标准 XG90G：
+
+* reference point：rear axle
+* vehicle length：9 m
+* width：4 m
+* rear axle → head：+6.5 m
+* rear axle → rear：-2.5 m
+* rear axle → geometric center：+2 m
+
+旧 CollisionLookup 中：
+
+* `collision_lrear = 6.5`
+* `collision_lhead = 2.5`
+
+前后悬语义反置，同时一个角点使用 `-lrear/2`，使 lookup polygon 甚至不是标准矩形。
+
+修复包括：
+
+* `lrear: 6.5 → 2.5`
+* `lhead: 2.5 → 6.5`
+* 修复矩形 p1 角点
+* lookup 黑像素命中后增加真实 XG90G footprint 与 0.1 m pixel 的精确 SAT 相交复核，用来过滤离散 lookup 的侧向假阳性，同时保留真实碰撞
+
+最终 `collision_lookup.py` SHA：
+
+`10c1d1339e742ca893fedb4aa51402addfba82e16e08f68339ea35d35ba3043b`
+
+修复后结合 candidate v2：
+
+* C：78 steps，goal=True，drivable=True，PASS
+* D：75 steps，goal=True，drivable=True，PASS
+* E：55 steps，goal=True，drivable=True，PASS
+
+因此 **C/D/E blocker 已正式关闭**。
+
+该修改是全局行为变化，最终提交之前还必须补 Dapai / Jiangtong / NTE200 相关回归。
+
+---
+
+# 18. Targeted Runtime：7 个正式场景
+
+由于 `GlobalRoutePathPlanner.search_route_path(..., target_depth=5)` 的 BFS 深度限制，一条自动搜索 route 最多覆盖 6 个 path token。
+
+因此没有为了地图测试去修改 global planner，而是把长 A/B route 拆成 depth-safe 场景。
+
+最终 7 个 scenario：
+
+| Scenario            | Lane route                    | 当前状态                                |
+| ------------------- | ----------------------------- | ----------------------------------- |
+| A1_RECOVERED_EAST_1 | 5182→5164→5185→5181→5168→5166 | goal blocker CLOSED；final mask OPEN |
+| A2_RECOVERED_EAST_2 | 5170→5172→5174→5186→5177→5179 | **当前主 blocker**                     |
+| B1_RECOVERED_WEST_1 | 5121→5178→5176→5175→5173→5171 | fixed-IDM shadow 未跑                 |
+| B2_RECOVERED_WEST_2 | 5169→5165→5167→5180→5184→5163 | fixed-IDM shadow 未跑                 |
+| C_ROAD332           | 5043→5050→5051                | strict PASS                         |
+| D_ROAD484_FORWARD_A | 6952→6942→6943                | strict PASS                         |
+| E_ROAD484_FORWARD_B | 6988→6989→6990                | strict PASS                         |
+
+Planner route preflight 已经：
+
+* `SCENARIO_COUNT = 7`
+* `PASS = 7`
+* exact route = 7/7
+* target ordered = 7/7
+* start / goal path expected = 7/7
+* `refline_smooth` = 7/7
+
+因此不应再重新设计 route。
+
+---
+
+# 19. A1 Route-End IDM Bug
+
+A1 在 shadow runtime 中曾出现：
+
+* 所有 target 均正确访问；
+* route 基本正确；
+* 车辆最终却停在 goal 前约 `4.8369 m`；
+* goal=False。
+
+最终根因并不是地图，也不是 goal polygon，而是 `AbstractIDMPlanner` 在“没有真实 leading object”时把 route endpoint 当成一个具有：
+
+`length_rear = ego_length / 2 = 4.5 m`
+
+的虚拟前车。
+
+结合：
+
+* virtual lead half length = 4.5 m
+* IDM min_gap = 1 m
+* rear axle → center = 2 m
+* goal 距 route end = 3 m
+
+理论提前误差约：
+
+`4.5 + 1 + 2 - 3 = 4.5 m`
+
+与实测 4.8369 m 高度一致。
+
+最终把 free-road virtual endpoint 的：
+
+`length_rear`
+
+改成：
+
+`0.0`
+
+即将 route endpoint 正确解释为**零长度停止点，而不是一辆实体前车**。
+
+当前 `abstract_idm_planner.py` SHA：
+
+`0c64f7aeae858d6e456aeeabb867d72640382913f8ed090461eb40f49ea0b3a1`
+
+A1 fixed shadow：
+
+* trajectory states：252
+* last step：251
+* targets/order：TRUE
+* goal reached：TRUE
+* exception：None
+
+因此：
+
+**A1 goal / termination blocker = CLOSED。**
+
+---
+
+# 20. 当前最高优先级：A2 中途停车
+
+这是现在真正应该继续的位置。
+
+A2 fixed-IDM shadow：
+
+* trajectory：1401 states
+* `MAX_T = 140 s`
+* target 5172：step 22
+* target 5186：step 94
+* target 5179：**未访问**
+* goal=False
+* 约 step 250 起持续停车
+* step 300 后 speed≈0，一直到 step 1400
+
+停车投影：
+
+* `STOP_STEP = 250`
+* `STOP_TOKEN = path-000299`
+* local station ≈ `40.0497 m`
+* route station ≈ `356.6382 m`
+* route end remaining ≈ `274.4383 m`
+* 未访问的下一 target `path-000301`
+* 下一 target 起点仍在前方约 `242.6145 m`
+
+因此 A2 **不是 route endpoint 问题**。
+
+同时 shadow 模式已经忽略 bitmap failure raise，但车辆仍然持续停车，所以：
+
+**A2 停车不能归因于 bitmap。**
+
+当前最可能的直接原因是 IDM occupancy / leading-object selection。
+
+---
+
+# 21. A2 当前唯一下一步
+
+下一步先做 **CPU-only leading-object probe**，不要开卡，不要改地图，不要构建 candidate v3。
+
+建议复现：
+
+`decision iteration 229–259`
+
+重点：
+
+`240–250`
+
+需要按真实源码复现：
+
+`_construct_occupancy_map`
+→ `_get_expanded_ego_path`
+→ `occupancy_map.intersects`
+→ insert ego
+→ `get_nearest_entry_to`
+→ `_get_leading_idm_agent`
+
+需要记录：
+
+* decision iteration
+* resulting shadow step
+* ego x / y / yaw / speed
+* ego center route progress
+* 与 expanded route 相交的 object 数量
+* 最终 selected object token
+* tracked object type
+* relative distance
+* lead projected velocity
+* lead center / heading
+* ego 与该 object 的真实相对位置
+* 若没有 object，明确记录 `FREE_ROAD_VIRTUAL_LEAD`
+* 判断被选 object 是否确实在 ego 前方
+* 判断是否是 `truck_lateral_expansion_factor=1.3` 或 square-cap 将旁侧/后方 object 错纳入
+
+时间对应关系已经确认：
+
+**shadow step N = iteration N 的车辆状态；产生 step N 的 planner decision 使用 iteration N-1 的 observation。**
+
+---
+
+# 22. A2 之后的执行顺序
+
+A2 blocker 关闭后，严格按以下顺序继续：
+
+1. 重新运行 A2 fixed-IDM 单场景 shadow，确认能访问 5179 并到达 goal。
+2. 单独运行 B1 fixed-IDM shadow。
+3. 单独运行 B2 fixed-IDM shadow。
+4. 收集 A1/A2/B1/B2 **修复后真实闭环轨迹**。
+5. 基于标准 XG90G CarFootprint 统计四场景真实 missing-pixel union。
+6. 构建新的 additive-only **candidate v3**。
+7. CPU 静态验证所有真实 footprint gap = 0。
+8. 再开最低可稳定运行的 GPU 卡执行 A/B strict runtime。
+9. 达成 targeted new-map **7/7 PASS**。
+10. 对 CollisionLookup 和 AbstractIDMPlanner 的全局修改执行 Dapai / Jiangtong / NTE200 回归。
+11. 审 `git diff`，精确 stage。
+12. freeze Vector V2：semantic SHA + final bitmap SHA + scenarios + runtime JSON + manifest + commit/tag/bundle。
+13. 完成新地图后，再回到 J117 双车基线/MCTS扩展、Jiangtong temporal debt 和 Neural-MCTS。
+
+当前文档明确要求：**A2 未定案前不要先跑 B1/B2，也不要构建 candidate v3。**
+
+---
+
+# 23. 地图验收原则
+
+地图问题和 Planner / Engine 问题必须严格分层。
+
+| 诊断结果                                       | 解释                                 | 正确动作                        |
+| ------------------------------------------ | ---------------------------------- | --------------------------- |
+| Standard CarFootprint bad > 0              | 真实 map gap                         | 根据真实轨迹做最小 additive patch    |
+| Standard bad = 0，但 CollisionLookup bad > 0 | lookup false positive 候选           | 检查 CollisionLookup 几何/栅格    |
+| shadow 忽略 mask 后仍停车                        | Planner / goal / occupancy blocker | 不继续补 mask                   |
+| route endpoint 很远仍停车                       | leading-object / occupancy 优先      | 不继续改 endpoint               |
+| 固定外推扫描不闭合                                  | 外推不可信                              | 获取真实 closed-loop trajectory |
+| 多场景进程硬死                                    | 资源/生命周期问题                          | 一场景一 Python 进程              |
+
+地图 patch 的真值必须来自**真实物理 CarFootprint**，而不是为了满足 CollisionLookup sampled occupancy 就不断把 bitmap 涂宽。
+
+---
+
+# 24. Runtime 与长任务规范
+
+已经出现过四场景共用一个 Python shadow 进程时，A1 跑完后 A2 初始化阶段进程硬终止，同时 trap 未执行，runtime bitmap symlink 残留在 candidate v2。
+
+此后必须：
+
+* 一场景一 Python 进程；
+* 每场景独立 JSON；
+* 每场景退出后释放资源；
+* 每次开始前检查 runtime bitmap SHA；
+* 临时切换 bitmap 使用 symlink 原子切换；
+* 结束后验证 restore；
+* 不依赖 trap 处理 SIGKILL；
+* 长输出写 log / JSON；
+* 终端只 `tail` / `grep` 必要字段。
+
+这已经成为当前项目正式工作流的一部分。
+
+---
+
+# 25. 实验与可复现性规范
+
+正式实验必须能够回答：
+
+**哪段代码、哪份配置、哪个场景、哪个 seed、什么参数、运行在哪里、结果是什么。**
+
+每次实验至少记录：
+
+* experiment_id
+* datetime
+* git_commit
+* branch
+* method
+* config / resolved config
+* scenario
+* seed
+* search_budget
+* max_depth
+* gamma
+* c_uct
+* reward_version
+* result_path
+* metrics
+* status
+* notes
+
+原则：
+
+**一个实验一个目录。**
+
+推荐长期维护：
+
+* `AI_HANDOFF.md`
+* `PROJECT_STATUS.md`
+* `EXPERIMENT_LOG.md` / `experiments.csv`
+* `tests/`
+* `metrics/` / `evaluation/`
+* resolved config snapshots
+* seed protocol
+* dataset manifest
+* checkpoint metadata
+
+Word 文档负责长期稳定知识；实时 Git HEAD、当前 blocker、最新运行和下一步不应该只写在 Word 中，而应该有短小的项目状态文件。
+
+---
+
+# 26. 测试阶梯
+
+项目改动不应该“一改完就直接跑完整仿真”。
+
+推荐测试顺序：
+
+| 层级 | 检查                             |
+| -- | ------------------------------ |
+| T0 | `py_compile` / import          |
+| T1 | Transition / Reward / TTC 等纯函数 |
+| T2 | Node / UCB / Backup / seed     |
+| T3 | Planner 接口与 trajectory 类型      |
+| T4 | 单场景闭环                          |
+| T5 | IDM baseline 回归                |
+| T6 | metrics 固定输出回归                 |
+| T7 | planner latency / performance  |
+
+如果低层失败，应停在该层解决，而不是继续向完整 runtime 推进。
+
+---
+
+# 27. 统一评价指标
+
+建议统一 evaluator 至少记录：
+
+**安全**
+
+* collision frames / episodes
+* road-boundary frames / episodes
+* min clearance
+* min TTC
+* unsafe TTC ratio
+
+**任务**
+
+* Safe Goal Success
+* goal reached
+* completion time
+* route progress
+* final / minimum distance to goal
+
+**效率**
+
+* mean speed
+* distance travelled
+
+**舒适性 / 稳定性**
+
+* acceleration
+* jerk / jerk RMS
+* action switch count
+
+**计算**
+
+* planner latency mean
+* median
+* P95
+* max
+* deadline miss rate
+
+**模型可信度**
+
+* one-step transition error
+
+指标定义必须被冻结。例如 TTC 是按车辆 footprint 还是中心距离、collision 如何合并 episode、completion_time 起止点是什么，都不能由不同 AI 或不同实验临时改变。
+
+---
+
+# 28. AI / 人机协作原则
+
+项目最重要的开发纪律之一是：
+
+**不允许根据通用自动驾驶框架经验编造 MineSim API。**
+
+任何修改必须以当前仓库真实源码为依据。
+
+标准流程：
+
+**观察 → 计划 → 最小修改 → 静态验证 → 单测 → smoke → runtime → diff → freeze**
+
+AI 的职责：
+
+* 阅读真实源码；
+* 找最小根因；
+* 提供小范围修改；
+* 给明确 PASS/FAIL 标准；
+* 分析真实 traceback / log；
+* 说明假设与风险。
+
+AutoDL 终端的职责：
+
+* 提供事实；
+* 执行代码；
+* 产生真实日志；
+* 验证 hash / Git / runtime；
+* 保存版本。
+
+**AI 说“应该可以”不算完成，AutoDL 实际运行结果和 Git diff 才是事实。**
+
+修改已有核心文件时优先使用小 patch，而不是重写整个文件；一次只改一个明确问题。
+
+---
+
+# 29. 当前地图的真实性边界
+
+当前 Full-Mine Vector V2 应准确称为：
+
+**Full-Mine Vector V2 DEV / Research Map**
+
+可以说：
+
+* 来自真实 GeoJSON；
+* Semantic 有明确 source provenance；
+* 100 effective roads；
+* 553 reference paths；
+* 8 条 repaired-road provenance；
+* Map API 可加载；
+* single / dual runtime 基础链已走通；
+* targeted route preflight 已 7/7；
+* C/D/E 已实际 closed-loop PASS。
+
+不能说：
+
+* “已经得到官方 production HD Map”；
+* “bitmap 与 Dapai / Jiangtong production mask 同级”；
+* “whole road/junction polygon 都是可行驶面”；
+* “road484 boundary-derived polygon 就是官方最终 drivable surface”。
+
+Production drivable mask 当前真正缺失的是至少一种权威输入：
+
+* official production mask；
+* drivable surface；
+* terrain classification；
+* internal obstacle / restricted polygons；
+* 官方或地图提供方 mask authoring rule。
+
+现有 GeoJSON 无法唯一恢复这些内部 exclusions。
+
+---
+
+# 30. 当前研究结论的表达边界
+
+当前可以严谨表述：
+
+**Pure MCTS 已成功接入 MineSim online closed-loop。**
+
+**在已经测试的 Dapai / Jiangtong 场景中，MCTS 均实现 Safe Goal，而 Dapai 展现了其多步冲突规划价值。**
+
+**J117 双受控 benchmark 中，Pure MCTS 已形成 5-seed 冲突消解证据。**
+
+**Full-Mine Vector V2 已走通 Semantic、Map API、基础 single/dual runtime 和 targeted route preflight。**
+
+不能写成：
+
+* MCTS 在所有矿区场景普遍最优；
+* MCTS 已证明全场景安全；
+* 五 Planner 旧结果是完全同条件公平排名；
+* Neural-MCTS 已完成；
+* 当前 448 条样本足以证明神经网络泛化；
+* Vector V2 是官方 production 地图；
+* 新矿区真实车型一定是 XG90G；
+* slope / altitude datum 已全部权威恢复。
+
+---
+
+# 31. Neural-MCTS 后续方向
+
+Neural-MCTS 当前**没有正式开始训练**。
+
+合理路线仍然是：
+
+Pure MCTS stable
+→ 扩展多场景、多 seed `(s, π, z)` 数据
+→ Value Network
+→ Value-guided MCTS
+→ Policy + Value
+→ PUCT
+→ Neural-MCTS
+
+在进入网络阶段之前必须先固定：
+
+* state schema
+* action order
+* normalization
+* value target
+* root visit target
+* scenario / episode split
+* dataset manifest
+* seed
+* model config
+* checkpoint metadata
+* git commit
+
+尤其不能把同一 episode 的相邻 frame 随机拆到 train 和 validation，这会造成严重时序泄漏。
+
+当前更实际的研究方向是：在更多 benchmark 建立后研究 **adaptive MCTS budget / tree reuse / value guidance**，而不是立即训练大型网络。
+
+---
+
+# 32. 资料包索引
+
+本项目资料已经形成从“原项目”到“当前 Vector V2”的连续证据链。
+
+| 资料               | 作用                                             |
+| ---------------- | ---------------------------------------------- |
+| `原项目复现.zip`      | MineSim 原项目、论文分析、Dapai/Jiangtong IDM 复现及视频     |
+| `蒙特卡洛实现.7z`      | Pure MCTS 实现与 MineSim 接入                       |
+| `蒙特卡洛效果对比.7z`    | MCTS / baseline 单车效果及实验结果                      |
+| `接下来方向.7z`       | 双车、多车 benchmark 与后续研究路线                        |
+| `MineSim地图更换.7z` | Raster / Semantic / Scenario 地图替换过程            |
+| `地图新建相关文件.zip`   | 8 类真实 GeoJSON + 预览 PNG                         |
+| `可参考论文.7z`       | MCTS、多车规划、交叉口安全、搜索、预测等参考论文                     |
+| 2026-07-26 系列手册  | baseline、AI/AutoDL 工作流、风险与项目治理                 |
+| 2026-08-06 全景手册  | Pure MCTS、五 Planner 和正式结果阶段                    |
+| 2026-08-09 云端交接  | Multi-MCTS、J117 Phase1–4C                      |
+| 2026-08-11 新地图交接 | Full-Mine V1                                   |
+| 2026-08-12 超级手册  | Vector V2 Semantic / Bitmap / targeted runtime |
+| 2026-08-13 技术总览  | 当前最新 blocker、CollisionLookup / IDM 修复、A2 下一步   |
+
+最新材料明确将这些压缩包作为项目历史来源，并规定当前工程结论优先以实际云端源码、runtime、结果 JSON、Git 和最新交接状态为准。
+
+---
+
+# 33. 当前关键资产
+
+当前接手时应重点保护：
+
+`/root/autodl-tmp/minesim_p0_preflight/`
+
+其中包括：
+
+* P0 前脏源码 snapshot
+* C/D/E exact failure states
+* CollisionLookup sparse diagnostic
+* CollisionLookup final patch + SHA
+* C12/D67 dynamic corridor scan
+* candidate v2 manifest
+* C/D strict acceptance log
+* A1 before/after IDM fix shadow JSON
+* A2 fixed-IDM shadow JSON
+* A1 mask truth
+* IDM route-end patch + SHA
+* 单场景 shadow runner
+
+以及：
+
+`/root/autodl-tmp/fullmine_vector_v2_targeted_runtime/`
+
+包含：
+
+* Vector V2 Semantic
+* runtime bitmap symlink
+* 7 场景 manifest
+* formal runtime harness
+* shadow runtime harness
+* targeted scenario inputs
+* route preflight / runtime outputs
+
+这些资产是继续当前工作时比重新扫描历史压缩包更重要的事实入口。
+
+---
+
+# 34. 当前项目的完成标准
+
+只有同时满足以下条件，才能宣布 **Full-Mine Vector V2 targeted runtime 阶段完成**：
+
+**7 个 scenario 全部正式 PASS。**
+
+A1/A2/B1/B2/C/D/E 的实际 route 与预期一致。
+
+所有 target lane 按顺序真实访问。
+
+所有场景到达各自 goal。
+
+整个真实闭环 trajectory 使用标准 CarFootprint 检查时均为 drivable。
+
+没有未解释异常。
+
+最终 bitmap 为独立 immutable artifact，有新 SHA 和 manifest。
+
+不存在任何从旧 candidate 原地覆盖出来的不可追溯修改。
+
+CollisionLookup / AbstractIDMPlanner 全局修改完成旧地图回归。
+
+Git diff 完整审计，只提交授权 production 文件。
+
+形成明确 commit / tag / bundle / validation manifest。
+
+之后才能把当前工程主线从：
+
+**“接入新地图”**
+
+正式推进到：
+
+**“新地图上的更广泛 MCTS / 双车 / Neural-MCTS 研究”。**
+
+---
+
+# 35. 当前一句话交接
+
+> **当前不要回去重做 MineSim 复现、Pure MCTS、Dapai/Jiangtong 单车、J117 或 C/D/E。当前唯一最高优先级是使用 CPU 复现 A2 step≈250 附近的 IDM leading-object selection，确认为什么车辆在 path-000299 中段提前停车；A2 定案后再运行 B1/B2，基于四场景真实 fixed-IDM trajectory 构建 additive-only candidate v3，最终完成新地图 targeted runtime 7/7。**
+
+---
+
+## Project Status
+
+**Current:** Full-Mine Vector V2 targeted runtime acceptance
+**Passed:** C / D / E = 3/3
+**Main blocker:** A2 mid-route IDM stop
+**Next action:** CPU leading-object probe
+**Do not:** widen mask / build v3 / run B1-B2 before A2 diagnosis
+**Final current milestone:** New-map targeted runtime 7/7
+**After that:** global regressions → Vector V2 freeze → J117 dual baseline/MCTS extension → broader benchmark → Neural-MCTS

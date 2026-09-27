@@ -1,0 +1,16 @@
+{
+  "checks_passed": 8,
+  "checks": [
+    "bash_syntax",
+    "embedded_payload_integrity",
+    "missing_authorization_rejected",
+    "old_flag_rejected",
+    "temporary_install_only",
+    "same_release_reused",
+    "changed_release_refused",
+    "no_tee"
+  ],
+  "real_environment_activated": false,
+  "new_MCTS_calls": 0,
+  "cloud_executed": false
+}

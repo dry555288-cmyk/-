@@ -1,0 +1,8 @@
+{
+  "passed": [
+    "isolated_installer_creates_exact_release",
+    "existing_identical_release_reused_unchanged",
+    "different_existing_release_refused_not_overwritten"
+  ],
+  "source": "isolated temporary directory; no AutoDL or real policy execution"
+}

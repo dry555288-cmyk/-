@@ -1,0 +1,2725 @@
+{
+  "status": "POST_OUTCOME_DESCRIPTIVE_NO_NEW_FITS",
+  "basis": "Saved outer-fold predictions; all32 states; the same saved per-action means used to construct targets.",
+  "definition": "max(mean_Y64_03, mean_Y64_30) - mean_Y64_chosen; choose03 if saved gap >=0 otherwise30",
+  "tie_rule": "Exact predicted zero selects03 for this descriptive calculation only. Existing hard-order correctness retains +/-1e-6 convention.",
+  "scope": "Two forced first actions followed by native MCTS continuation; not full16 action selection or closed-loop neural control.",
+  "unknown_rows": "Kept in empirical loss calculation, not assigned accuracy labels. Original6 and new5 relations reported separately.",
+  "selection_warning": "Reporting both fixed baselines is not authorization to select or deploy either based on this same data.",
+  "original_MAE_RMSE_fail_unchanged": true,
+  "models": {
+    "scaled_ridge36": {
+      "mean_empirical_choice_loss": 11.673090091774618,
+      "choices": {
+        "3,0": 14,
+        "0,3": 18
+      },
+      "old16": {
+        "known": 6,
+        "correct": 1,
+        "unknown": 10
+      },
+      "new16_descriptive": {
+        "known": 5,
+        "correct": 4,
+        "unknown": 11
+      },
+      "per_state": [
+        {
+          "root_id": "contrast_00",
+          "source_run": "policy_00",
+          "predicted_gap": -21.082626923346663,
+          "choice": "3,0",
+          "observed_gap": 61.054964873098236,
+          "empirical_choice_loss": 61.054964873098236,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_01",
+          "source_run": "policy_01",
+          "predicted_gap": 1.6977517715542692,
+          "choice": "0,3",
+          "observed_gap": -70.07194049516491,
+          "empirical_choice_loss": 70.07194049516491,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_02",
+          "source_run": "policy_02",
+          "predicted_gap": -4.595336857905006,
+          "choice": "3,0",
+          "observed_gap": 1.4245153217214437,
+          "empirical_choice_loss": 1.4245153217214437,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_03",
+          "source_run": "policy_03",
+          "predicted_gap": 4.905468331618384,
+          "choice": "0,3",
+          "observed_gap": -45.099503144721155,
+          "empirical_choice_loss": 45.099503144721155,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_04",
+          "source_run": "policy_04",
+          "predicted_gap": -3.348725233202124,
+          "choice": "3,0",
+          "observed_gap": 35.98326588192243,
+          "empirical_choice_loss": 35.98326588192243,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_05",
+          "source_run": "policy_05",
+          "predicted_gap": -15.439214796181563,
+          "choice": "3,0",
+          "observed_gap": 49.00275126525988,
+          "empirical_choice_loss": 49.00275126525988,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_06",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4757226888266788,
+          "choice": "3,0",
+          "observed_gap": -31.03158152738138,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_07",
+          "source_run": "policy_07",
+          "predicted_gap": -13.236210796085748,
+          "choice": "3,0",
+          "observed_gap": 18.63411789540224,
+          "empirical_choice_loss": 18.63411789540224,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_00",
+          "source_run": "policy_02",
+          "predicted_gap": 5.642201957335502,
+          "choice": "0,3",
+          "observed_gap": -39.69864669946578,
+          "empirical_choice_loss": 39.69864669946578,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_01",
+          "source_run": "policy_02",
+          "predicted_gap": 0.38914995115018125,
+          "choice": "0,3",
+          "observed_gap": 2.024806194758767,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_02",
+          "source_run": "policy_03",
+          "predicted_gap": 5.87889517329179,
+          "choice": "0,3",
+          "observed_gap": -37.74488024101463,
+          "empirical_choice_loss": 37.74488024101463,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_03",
+          "source_run": "policy_03",
+          "predicted_gap": 0.12385923591513912,
+          "choice": "0,3",
+          "observed_gap": 1.4904059216852161,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_04",
+          "source_run": "policy_06",
+          "predicted_gap": -58.80357876756901,
+          "choice": "3,0",
+          "observed_gap": 1.946141720825345,
+          "empirical_choice_loss": 1.946141720825345,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_05",
+          "source_run": "policy_06",
+          "predicted_gap": 1.9049774611329298,
+          "choice": "0,3",
+          "observed_gap": 1.0776855041834494,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "newroot_06",
+          "source_run": "policy_07",
+          "predicted_gap": 5.445094233594247,
+          "choice": "0,3",
+          "observed_gap": -1.2716853233049648,
+          "empirical_choice_loss": 1.2716853233049648,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_07",
+          "source_run": "policy_07",
+          "predicted_gap": 2.1597952587241247,
+          "choice": "0,3",
+          "observed_gap": -0.5733042989719195,
+          "empirical_choice_loss": 0.5733042989719195,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0065",
+          "source_run": "policy_00",
+          "predicted_gap": -3.6553557672723724,
+          "choice": "3,0",
+          "observed_gap": -0.25161083850538546,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_00__step0040",
+          "source_run": "policy_00",
+          "predicted_gap": 1.5620473431528357,
+          "choice": "0,3",
+          "observed_gap": -0.16691203226265117,
+          "empirical_choice_loss": 0.16691203226265117,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0028",
+          "source_run": "policy_00",
+          "predicted_gap": 2.066361452086088,
+          "choice": "0,3",
+          "observed_gap": -0.9407940622378845,
+          "empirical_choice_loss": 0.9407940622378845,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_01__step0059",
+          "source_run": "policy_01",
+          "predicted_gap": -0.3846997526493321,
+          "choice": "3,0",
+          "observed_gap": -0.03990803667782927,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0014",
+          "source_run": "policy_01",
+          "predicted_gap": 7.662658791140994,
+          "choice": "0,3",
+          "observed_gap": -8.376565341027458,
+          "empirical_choice_loss": 8.376565341027458,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0040",
+          "source_run": "policy_01",
+          "predicted_gap": 2.2475994282172707,
+          "choice": "0,3",
+          "observed_gap": 1.7738404133033328,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_02__step0063",
+          "source_run": "policy_02",
+          "predicted_gap": 1.9696500311967107,
+          "choice": "0,3",
+          "observed_gap": 0.9708569943149357,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_03__step0061",
+          "source_run": "policy_03",
+          "predicted_gap": -0.16581829253471247,
+          "choice": "3,0",
+          "observed_gap": 0.48995472341696455,
+          "empirical_choice_loss": 0.48995472341696455,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0061",
+          "source_run": "policy_04",
+          "predicted_gap": -0.8659926344862006,
+          "choice": "3,0",
+          "observed_gap": 0.02741193512684248,
+          "empirical_choice_loss": 0.02741193512684248,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0038",
+          "source_run": "policy_04",
+          "predicted_gap": -4.754724073253113,
+          "choice": "3,0",
+          "observed_gap": -0.042290948706238396,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0017",
+          "source_run": "policy_04",
+          "predicted_gap": 4.617571617964409,
+          "choice": "0,3",
+          "observed_gap": -0.7238748951846219,
+          "empirical_choice_loss": 0.7238748951846219,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0066",
+          "source_run": "policy_05",
+          "predicted_gap": 0.5341261716699359,
+          "choice": "0,3",
+          "observed_gap": -0.23407369296785419,
+          "empirical_choice_loss": 0.23407369296785419,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0040",
+          "source_run": "policy_05",
+          "predicted_gap": -1.07418051841972,
+          "choice": "3,0",
+          "observed_gap": -1.0729956655742043,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_05__step0011",
+          "source_run": "policy_05",
+          "predicted_gap": 1.7451463151579187,
+          "choice": "0,3",
+          "observed_gap": 21.351045214585206,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_06__step0050",
+          "source_run": "policy_06",
+          "predicted_gap": 0.29209271113774715,
+          "choice": "0,3",
+          "observed_gap": 0.8510353090260097,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_07__step0065",
+          "source_run": "policy_07",
+          "predicted_gap": -0.04281527928177743,
+          "choice": "3,0",
+          "observed_gap": 0.07357909369056159,
+          "empirical_choice_loss": 0.07357909369056159,
+          "repeated_sign": null,
+          "known_order_correct": null
+        }
+      ]
+    },
+    "training_fold_constant": {
+      "mean_empirical_choice_loss": 11.117342951953791,
+      "choices": {
+        "3,0": 24,
+        "0,3": 8
+      },
+      "old16": {
+        "known": 6,
+        "correct": 0,
+        "unknown": 10
+      },
+      "new16_descriptive": {
+        "known": 5,
+        "correct": 3,
+        "unknown": 11
+      },
+      "per_state": [
+        {
+          "root_id": "contrast_00",
+          "source_run": "policy_00",
+          "predicted_gap": -3.5307084614621544,
+          "choice": "3,0",
+          "observed_gap": 61.054964873098236,
+          "empirical_choice_loss": 61.054964873098236,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_01",
+          "source_run": "policy_01",
+          "predicted_gap": 1.341085159954245,
+          "choice": "0,3",
+          "observed_gap": -70.07194049516491,
+          "empirical_choice_loss": 70.07194049516491,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_02",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13877574257776304,
+          "choice": "3,0",
+          "observed_gap": 1.4245153217214437,
+          "empirical_choice_loss": 1.4245153217214437,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_03",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4892797771352,
+          "choice": "0,3",
+          "observed_gap": -45.099503144721155,
+          "empirical_choice_loss": 45.099503144721155,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_04",
+          "source_run": "policy_04",
+          "predicted_gap": -2.657453605500229,
+          "choice": "3,0",
+          "observed_gap": 35.98326588192243,
+          "empirical_choice_loss": 35.98326588192243,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_05",
+          "source_run": "policy_05",
+          "predicted_gap": -3.8646755750768222,
+          "choice": "3,0",
+          "observed_gap": 49.00275126525988,
+          "empirical_choice_loss": 49.00275126525988,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_06",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4288382138393366,
+          "choice": "3,0",
+          "observed_gap": -31.03158152738138,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_07",
+          "source_run": "policy_07",
+          "predicted_gap": -2.0009605838451403,
+          "choice": "3,0",
+          "observed_gap": 18.63411789540224,
+          "empirical_choice_loss": 18.63411789540224,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_00",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13877574257776304,
+          "choice": "3,0",
+          "observed_gap": -39.69864669946578,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_01",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13877574257776304,
+          "choice": "3,0",
+          "observed_gap": 2.024806194758767,
+          "empirical_choice_loss": 2.024806194758767,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_02",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4892797771352,
+          "choice": "0,3",
+          "observed_gap": -37.74488024101463,
+          "empirical_choice_loss": 37.74488024101463,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_03",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4892797771352,
+          "choice": "0,3",
+          "observed_gap": 1.4904059216852161,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_04",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4288382138393366,
+          "choice": "3,0",
+          "observed_gap": 1.946141720825345,
+          "empirical_choice_loss": 1.946141720825345,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_05",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4288382138393366,
+          "choice": "3,0",
+          "observed_gap": 1.0776855041834494,
+          "empirical_choice_loss": 1.0776855041834494,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_06",
+          "source_run": "policy_07",
+          "predicted_gap": -2.0009605838451403,
+          "choice": "3,0",
+          "observed_gap": -1.2716853233049648,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_07",
+          "source_run": "policy_07",
+          "predicted_gap": -2.0009605838451403,
+          "choice": "3,0",
+          "observed_gap": -0.5733042989719195,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0065",
+          "source_run": "policy_00",
+          "predicted_gap": -3.5307084614621544,
+          "choice": "3,0",
+          "observed_gap": -0.25161083850538546,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_00__step0040",
+          "source_run": "policy_00",
+          "predicted_gap": -3.5307084614621544,
+          "choice": "3,0",
+          "observed_gap": -0.16691203226265117,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0028",
+          "source_run": "policy_00",
+          "predicted_gap": -3.5307084614621544,
+          "choice": "3,0",
+          "observed_gap": -0.9407940622378845,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_01__step0059",
+          "source_run": "policy_01",
+          "predicted_gap": 1.341085159954245,
+          "choice": "0,3",
+          "observed_gap": -0.03990803667782927,
+          "empirical_choice_loss": 0.03990803667782927,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0014",
+          "source_run": "policy_01",
+          "predicted_gap": 1.341085159954245,
+          "choice": "0,3",
+          "observed_gap": -8.376565341027458,
+          "empirical_choice_loss": 8.376565341027458,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0040",
+          "source_run": "policy_01",
+          "predicted_gap": 1.341085159954245,
+          "choice": "0,3",
+          "observed_gap": 1.7738404133033328,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_02__step0063",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13877574257776304,
+          "choice": "3,0",
+          "observed_gap": 0.9708569943149357,
+          "empirical_choice_loss": 0.9708569943149357,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_03__step0061",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4892797771352,
+          "choice": "0,3",
+          "observed_gap": 0.48995472341696455,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0061",
+          "source_run": "policy_04",
+          "predicted_gap": -2.657453605500229,
+          "choice": "3,0",
+          "observed_gap": 0.02741193512684248,
+          "empirical_choice_loss": 0.02741193512684248,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0038",
+          "source_run": "policy_04",
+          "predicted_gap": -2.657453605500229,
+          "choice": "3,0",
+          "observed_gap": -0.042290948706238396,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0017",
+          "source_run": "policy_04",
+          "predicted_gap": -2.657453605500229,
+          "choice": "3,0",
+          "observed_gap": -0.7238748951846219,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0066",
+          "source_run": "policy_05",
+          "predicted_gap": -3.8646755750768222,
+          "choice": "3,0",
+          "observed_gap": -0.23407369296785419,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0040",
+          "source_run": "policy_05",
+          "predicted_gap": -3.8646755750768222,
+          "choice": "3,0",
+          "observed_gap": -1.0729956655742043,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_05__step0011",
+          "source_run": "policy_05",
+          "predicted_gap": -3.8646755750768222,
+          "choice": "3,0",
+          "observed_gap": 21.351045214585206,
+          "empirical_choice_loss": 21.351045214585206,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_06__step0050",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4288382138393366,
+          "choice": "3,0",
+          "observed_gap": 0.8510353090260097,
+          "empirical_choice_loss": 0.8510353090260097,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_07__step0065",
+          "source_run": "policy_07",
+          "predicted_gap": -2.0009605838451403,
+          "choice": "3,0",
+          "observed_gap": 0.07357909369056159,
+          "empirical_choice_loss": 0.07357909369056159,
+          "repeated_sign": null,
+          "known_order_correct": null
+        }
+      ]
+    },
+    "fixed03": {
+      "mean_empirical_choice_loss": 7.416892726349027,
+      "choices": {
+        "0,3": 32
+      },
+      "old16": {
+        "known": 6,
+        "correct": 4,
+        "unknown": 10
+      },
+      "new16_descriptive": {
+        "known": 5,
+        "correct": 2,
+        "unknown": 11
+      },
+      "per_state": [
+        {
+          "root_id": "contrast_00",
+          "source_run": "policy_00",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 61.054964873098236,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "contrast_01",
+          "source_run": "policy_01",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -70.07194049516491,
+          "empirical_choice_loss": 70.07194049516491,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_02",
+          "source_run": "policy_02",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 1.4245153217214437,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_03",
+          "source_run": "policy_03",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -45.099503144721155,
+          "empirical_choice_loss": 45.099503144721155,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_04",
+          "source_run": "policy_04",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 35.98326588192243,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "contrast_05",
+          "source_run": "policy_05",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 49.00275126525988,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "contrast_06",
+          "source_run": "policy_06",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -31.03158152738138,
+          "empirical_choice_loss": 31.03158152738138,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_07",
+          "source_run": "policy_07",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 18.63411789540224,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_00",
+          "source_run": "policy_02",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -39.69864669946578,
+          "empirical_choice_loss": 39.69864669946578,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_01",
+          "source_run": "policy_02",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 2.024806194758767,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_02",
+          "source_run": "policy_03",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -37.74488024101463,
+          "empirical_choice_loss": 37.74488024101463,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_03",
+          "source_run": "policy_03",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 1.4904059216852161,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_04",
+          "source_run": "policy_06",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 1.946141720825345,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_05",
+          "source_run": "policy_06",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 1.0776855041834494,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "newroot_06",
+          "source_run": "policy_07",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -1.2716853233049648,
+          "empirical_choice_loss": 1.2716853233049648,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_07",
+          "source_run": "policy_07",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -0.5733042989719195,
+          "empirical_choice_loss": 0.5733042989719195,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0065",
+          "source_run": "policy_00",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -0.25161083850538546,
+          "empirical_choice_loss": 0.25161083850538546,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_00__step0040",
+          "source_run": "policy_00",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -0.16691203226265117,
+          "empirical_choice_loss": 0.16691203226265117,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0028",
+          "source_run": "policy_00",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -0.9407940622378845,
+          "empirical_choice_loss": 0.9407940622378845,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_01__step0059",
+          "source_run": "policy_01",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -0.03990803667782927,
+          "empirical_choice_loss": 0.03990803667782927,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0014",
+          "source_run": "policy_01",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -8.376565341027458,
+          "empirical_choice_loss": 8.376565341027458,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0040",
+          "source_run": "policy_01",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 1.7738404133033328,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_02__step0063",
+          "source_run": "policy_02",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 0.9708569943149357,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_03__step0061",
+          "source_run": "policy_03",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 0.48995472341696455,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0061",
+          "source_run": "policy_04",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 0.02741193512684248,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0038",
+          "source_run": "policy_04",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -0.042290948706238396,
+          "empirical_choice_loss": 0.042290948706238396,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0017",
+          "source_run": "policy_04",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -0.7238748951846219,
+          "empirical_choice_loss": 0.7238748951846219,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0066",
+          "source_run": "policy_05",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -0.23407369296785419,
+          "empirical_choice_loss": 0.23407369296785419,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0040",
+          "source_run": "policy_05",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": -1.0729956655742043,
+          "empirical_choice_loss": 1.0729956655742043,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_05__step0011",
+          "source_run": "policy_05",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 21.351045214585206,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_06__step0050",
+          "source_run": "policy_06",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 0.8510353090260097,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_07__step0065",
+          "source_run": "policy_07",
+          "predicted_gap": 1.0,
+          "choice": "0,3",
+          "observed_gap": 0.07357909369056159,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        }
+      ]
+    },
+    "fixed30": {
+      "mean_empirical_choice_loss": 6.193011820697527,
+      "choices": {
+        "3,0": 32
+      },
+      "old16": {
+        "known": 6,
+        "correct": 2,
+        "unknown": 10
+      },
+      "new16_descriptive": {
+        "known": 5,
+        "correct": 3,
+        "unknown": 11
+      },
+      "per_state": [
+        {
+          "root_id": "contrast_00",
+          "source_run": "policy_00",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 61.054964873098236,
+          "empirical_choice_loss": 61.054964873098236,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_01",
+          "source_run": "policy_01",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -70.07194049516491,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "contrast_02",
+          "source_run": "policy_02",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 1.4245153217214437,
+          "empirical_choice_loss": 1.4245153217214437,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_03",
+          "source_run": "policy_03",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -45.099503144721155,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_04",
+          "source_run": "policy_04",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 35.98326588192243,
+          "empirical_choice_loss": 35.98326588192243,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_05",
+          "source_run": "policy_05",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 49.00275126525988,
+          "empirical_choice_loss": 49.00275126525988,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_06",
+          "source_run": "policy_06",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -31.03158152738138,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_07",
+          "source_run": "policy_07",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 18.63411789540224,
+          "empirical_choice_loss": 18.63411789540224,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_00",
+          "source_run": "policy_02",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -39.69864669946578,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_01",
+          "source_run": "policy_02",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 2.024806194758767,
+          "empirical_choice_loss": 2.024806194758767,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_02",
+          "source_run": "policy_03",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -37.74488024101463,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "newroot_03",
+          "source_run": "policy_03",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 1.4904059216852161,
+          "empirical_choice_loss": 1.4904059216852161,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_04",
+          "source_run": "policy_06",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 1.946141720825345,
+          "empirical_choice_loss": 1.946141720825345,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_05",
+          "source_run": "policy_06",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 1.0776855041834494,
+          "empirical_choice_loss": 1.0776855041834494,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_06",
+          "source_run": "policy_07",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -1.2716853233049648,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_07",
+          "source_run": "policy_07",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -0.5733042989719195,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0065",
+          "source_run": "policy_00",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -0.25161083850538546,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_00__step0040",
+          "source_run": "policy_00",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -0.16691203226265117,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0028",
+          "source_run": "policy_00",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -0.9407940622378845,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_01__step0059",
+          "source_run": "policy_01",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -0.03990803667782927,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0014",
+          "source_run": "policy_01",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -8.376565341027458,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0040",
+          "source_run": "policy_01",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 1.7738404133033328,
+          "empirical_choice_loss": 1.7738404133033328,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_02__step0063",
+          "source_run": "policy_02",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 0.9708569943149357,
+          "empirical_choice_loss": 0.9708569943149357,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_03__step0061",
+          "source_run": "policy_03",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 0.48995472341696455,
+          "empirical_choice_loss": 0.48995472341696455,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0061",
+          "source_run": "policy_04",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 0.02741193512684248,
+          "empirical_choice_loss": 0.02741193512684248,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0038",
+          "source_run": "policy_04",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -0.042290948706238396,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0017",
+          "source_run": "policy_04",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -0.7238748951846219,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0066",
+          "source_run": "policy_05",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -0.23407369296785419,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0040",
+          "source_run": "policy_05",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": -1.0729956655742043,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_05__step0011",
+          "source_run": "policy_05",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 21.351045214585206,
+          "empirical_choice_loss": 21.351045214585206,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_06__step0050",
+          "source_run": "policy_06",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 0.8510353090260097,
+          "empirical_choice_loss": 0.8510353090260097,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_07__step0065",
+          "source_run": "policy_07",
+          "predicted_gap": -1.0,
+          "choice": "3,0",
+          "observed_gap": 0.07357909369056159,
+          "empirical_choice_loss": 0.07357909369056159,
+          "repeated_sign": null,
+          "known_order_correct": null
+        }
+      ]
+    },
+    "mlp36_8_1_l2_saved26": {
+      "mean_empirical_choice_loss": 11.117342951953791,
+      "choices": {
+        "3,0": 24,
+        "0,3": 8
+      },
+      "old16": {
+        "known": 6,
+        "correct": 0,
+        "unknown": 10
+      },
+      "new16_descriptive": {
+        "known": 5,
+        "correct": 3,
+        "unknown": 11
+      },
+      "per_state": [
+        {
+          "root_id": "contrast_00",
+          "source_run": "policy_00",
+          "predicted_gap": -5.580594123530601,
+          "choice": "3,0",
+          "observed_gap": 61.054964873098236,
+          "empirical_choice_loss": 61.054964873098236,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_01",
+          "source_run": "policy_01",
+          "predicted_gap": 1.3415994457092753,
+          "choice": "0,3",
+          "observed_gap": -70.07194049516491,
+          "empirical_choice_loss": 70.07194049516491,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_02",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13732633123945104,
+          "choice": "3,0",
+          "observed_gap": 1.4245153217214437,
+          "empirical_choice_loss": 1.4245153217214437,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_03",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4901024040043322,
+          "choice": "0,3",
+          "observed_gap": -45.099503144721155,
+          "empirical_choice_loss": 45.099503144721155,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_04",
+          "source_run": "policy_04",
+          "predicted_gap": -2.633402117140838,
+          "choice": "3,0",
+          "observed_gap": 35.98326588192243,
+          "empirical_choice_loss": 35.98326588192243,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_05",
+          "source_run": "policy_05",
+          "predicted_gap": -4.3602367272517455,
+          "choice": "3,0",
+          "observed_gap": 49.00275126525988,
+          "empirical_choice_loss": 49.00275126525988,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_06",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4282085996092869,
+          "choice": "3,0",
+          "observed_gap": -31.03158152738138,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_07",
+          "source_run": "policy_07",
+          "predicted_gap": -2.0000801322883337,
+          "choice": "3,0",
+          "observed_gap": 18.63411789540224,
+          "empirical_choice_loss": 18.63411789540224,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_00",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13732595788462443,
+          "choice": "3,0",
+          "observed_gap": -39.69864669946578,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_01",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13732632941686548,
+          "choice": "3,0",
+          "observed_gap": 2.024806194758767,
+          "empirical_choice_loss": 2.024806194758767,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_02",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4901024050678506,
+          "choice": "0,3",
+          "observed_gap": -37.74488024101463,
+          "empirical_choice_loss": 37.74488024101463,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_03",
+          "source_run": "policy_03",
+          "predicted_gap": 1.490101229790808,
+          "choice": "0,3",
+          "observed_gap": 1.4904059216852161,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_04",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4282090116761987,
+          "choice": "3,0",
+          "observed_gap": 1.946141720825345,
+          "empirical_choice_loss": 1.946141720825345,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_05",
+          "source_run": "policy_06",
+          "predicted_gap": -0.42820900657178074,
+          "choice": "3,0",
+          "observed_gap": 1.0776855041834494,
+          "empirical_choice_loss": 1.0776855041834494,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_06",
+          "source_run": "policy_07",
+          "predicted_gap": -2.000080109414015,
+          "choice": "3,0",
+          "observed_gap": -1.2716853233049648,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_07",
+          "source_run": "policy_07",
+          "predicted_gap": -2.0000801086499242,
+          "choice": "3,0",
+          "observed_gap": -0.5733042989719195,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0065",
+          "source_run": "policy_00",
+          "predicted_gap": -3.228324988567846,
+          "choice": "3,0",
+          "observed_gap": -0.25161083850538546,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_00__step0040",
+          "source_run": "policy_00",
+          "predicted_gap": -2.730050306283437,
+          "choice": "3,0",
+          "observed_gap": -0.16691203226265117,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0028",
+          "source_run": "policy_00",
+          "predicted_gap": -2.738174368556819,
+          "choice": "3,0",
+          "observed_gap": -0.9407940622378845,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_01__step0059",
+          "source_run": "policy_01",
+          "predicted_gap": 1.3415987837816195,
+          "choice": "0,3",
+          "observed_gap": -0.03990803667782927,
+          "empirical_choice_loss": 0.03990803667782927,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0014",
+          "source_run": "policy_01",
+          "predicted_gap": 1.3415988003415338,
+          "choice": "0,3",
+          "observed_gap": -8.376565341027458,
+          "empirical_choice_loss": 8.376565341027458,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0040",
+          "source_run": "policy_01",
+          "predicted_gap": 1.3415987947712666,
+          "choice": "0,3",
+          "observed_gap": 1.7738404133033328,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_02__step0063",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13732574421027244,
+          "choice": "3,0",
+          "observed_gap": 0.9708569943149357,
+          "empirical_choice_loss": 0.9708569943149357,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_03__step0061",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4901012070014426,
+          "choice": "0,3",
+          "observed_gap": 0.48995472341696455,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0061",
+          "source_run": "policy_04",
+          "predicted_gap": -2.59308974028654,
+          "choice": "3,0",
+          "observed_gap": 0.02741193512684248,
+          "empirical_choice_loss": 0.02741193512684248,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0038",
+          "source_run": "policy_04",
+          "predicted_gap": -2.6140092186994632,
+          "choice": "3,0",
+          "observed_gap": -0.042290948706238396,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0017",
+          "source_run": "policy_04",
+          "predicted_gap": -2.628549261282984,
+          "choice": "3,0",
+          "observed_gap": -0.7238748951846219,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0066",
+          "source_run": "policy_05",
+          "predicted_gap": -3.5608576110300105,
+          "choice": "3,0",
+          "observed_gap": -0.23407369296785419,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0040",
+          "source_run": "policy_05",
+          "predicted_gap": -3.7233406929892654,
+          "choice": "3,0",
+          "observed_gap": -1.0729956655742043,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_05__step0011",
+          "source_run": "policy_05",
+          "predicted_gap": -3.61079488155844,
+          "choice": "3,0",
+          "observed_gap": 21.351045214585206,
+          "empirical_choice_loss": 21.351045214585206,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_06__step0050",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4282085946034672,
+          "choice": "3,0",
+          "observed_gap": 0.8510353090260097,
+          "empirical_choice_loss": 0.8510353090260097,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_07__step0065",
+          "source_run": "policy_07",
+          "predicted_gap": -2.000079701107454,
+          "choice": "3,0",
+          "observed_gap": 0.07357909369056159,
+          "empirical_choice_loss": 0.07357909369056159,
+          "repeated_sign": null,
+          "known_order_correct": null
+        }
+      ]
+    },
+    "mlp36_8_1_l2_saved36": {
+      "mean_empirical_choice_loss": 11.117342951953791,
+      "choices": {
+        "3,0": 24,
+        "0,3": 8
+      },
+      "old16": {
+        "known": 6,
+        "correct": 0,
+        "unknown": 10
+      },
+      "new16_descriptive": {
+        "known": 5,
+        "correct": 3,
+        "unknown": 11
+      },
+      "per_state": [
+        {
+          "root_id": "contrast_00",
+          "source_run": "policy_00",
+          "predicted_gap": -5.953407787847217,
+          "choice": "3,0",
+          "observed_gap": 61.054964873098236,
+          "empirical_choice_loss": 61.054964873098236,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_01",
+          "source_run": "policy_01",
+          "predicted_gap": 1.3413176723211084,
+          "choice": "0,3",
+          "observed_gap": -70.07194049516491,
+          "empirical_choice_loss": 70.07194049516491,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_02",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13818407902836527,
+          "choice": "3,0",
+          "observed_gap": 1.4245153217214437,
+          "empirical_choice_loss": 1.4245153217214437,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_03",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4896916418265713,
+          "choice": "0,3",
+          "observed_gap": -45.099503144721155,
+          "empirical_choice_loss": 45.099503144721155,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_04",
+          "source_run": "policy_04",
+          "predicted_gap": -2.6822359297317284,
+          "choice": "3,0",
+          "observed_gap": 35.98326588192243,
+          "empirical_choice_loss": 35.98326588192243,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_05",
+          "source_run": "policy_05",
+          "predicted_gap": -4.610324960604064,
+          "choice": "3,0",
+          "observed_gap": 49.00275126525988,
+          "empirical_choice_loss": 49.00275126525988,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_06",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4283428037602649,
+          "choice": "3,0",
+          "observed_gap": -31.03158152738138,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_07",
+          "source_run": "policy_07",
+          "predicted_gap": -2.481975520890229,
+          "choice": "3,0",
+          "observed_gap": 18.63411789540224,
+          "empirical_choice_loss": 18.63411789540224,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_00",
+          "source_run": "policy_02",
+          "predicted_gap": -0.13818414184027625,
+          "choice": "3,0",
+          "observed_gap": -39.69864669946578,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_01",
+          "source_run": "policy_02",
+          "predicted_gap": -0.1381840775281549,
+          "choice": "3,0",
+          "observed_gap": 2.024806194758767,
+          "empirical_choice_loss": 2.024806194758767,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_02",
+          "source_run": "policy_03",
+          "predicted_gap": 1.489691642639711,
+          "choice": "0,3",
+          "observed_gap": -37.74488024101463,
+          "empirical_choice_loss": 37.74488024101463,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_03",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4896907433570619,
+          "choice": "0,3",
+          "observed_gap": 1.4904059216852161,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_04",
+          "source_run": "policy_06",
+          "predicted_gap": -0.428343181193667,
+          "choice": "3,0",
+          "observed_gap": 1.946141720825345,
+          "empirical_choice_loss": 1.946141720825345,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_05",
+          "source_run": "policy_06",
+          "predicted_gap": -0.42834317634175956,
+          "choice": "3,0",
+          "observed_gap": 1.0776855041834494,
+          "empirical_choice_loss": 1.0776855041834494,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_06",
+          "source_run": "policy_07",
+          "predicted_gap": -1.78479218073801,
+          "choice": "3,0",
+          "observed_gap": -1.2716853233049648,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_07",
+          "source_run": "policy_07",
+          "predicted_gap": -1.7792120075945543,
+          "choice": "3,0",
+          "observed_gap": -0.5733042989719195,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0065",
+          "source_run": "policy_00",
+          "predicted_gap": -2.8683077881354753,
+          "choice": "3,0",
+          "observed_gap": -0.25161083850538546,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_00__step0040",
+          "source_run": "policy_00",
+          "predicted_gap": -2.493169379020795,
+          "choice": "3,0",
+          "observed_gap": -0.16691203226265117,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0028",
+          "source_run": "policy_00",
+          "predicted_gap": -2.63000421648829,
+          "choice": "3,0",
+          "observed_gap": -0.9407940622378845,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_01__step0059",
+          "source_run": "policy_01",
+          "predicted_gap": 1.341317206867439,
+          "choice": "0,3",
+          "observed_gap": -0.03990803667782927,
+          "empirical_choice_loss": 0.03990803667782927,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0014",
+          "source_run": "policy_01",
+          "predicted_gap": 1.3413172186088227,
+          "choice": "0,3",
+          "observed_gap": -8.376565341027458,
+          "empirical_choice_loss": 8.376565341027458,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0040",
+          "source_run": "policy_01",
+          "predicted_gap": 1.3413172146519217,
+          "choice": "0,3",
+          "observed_gap": 1.7738404133033328,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_02__step0063",
+          "source_run": "policy_02",
+          "predicted_gap": -0.1381841752651246,
+          "choice": "3,0",
+          "observed_gap": 0.9708569943149357,
+          "empirical_choice_loss": 0.9708569943149357,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_03__step0061",
+          "source_run": "policy_03",
+          "predicted_gap": 1.4896907252950402,
+          "choice": "0,3",
+          "observed_gap": 0.48995472341696455,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0061",
+          "source_run": "policy_04",
+          "predicted_gap": -2.5628454307099826,
+          "choice": "3,0",
+          "observed_gap": 0.02741193512684248,
+          "empirical_choice_loss": 0.02741193512684248,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0038",
+          "source_run": "policy_04",
+          "predicted_gap": -2.5740430501985596,
+          "choice": "3,0",
+          "observed_gap": -0.042290948706238396,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0017",
+          "source_run": "policy_04",
+          "predicted_gap": -2.6775680035781986,
+          "choice": "3,0",
+          "observed_gap": -0.7238748951846219,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0066",
+          "source_run": "policy_05",
+          "predicted_gap": -3.373457283443751,
+          "choice": "3,0",
+          "observed_gap": -0.23407369296785419,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0040",
+          "source_run": "policy_05",
+          "predicted_gap": -3.490668217378197,
+          "choice": "3,0",
+          "observed_gap": -1.0729956655742043,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_05__step0011",
+          "source_run": "policy_05",
+          "predicted_gap": -3.8364951804923892,
+          "choice": "3,0",
+          "observed_gap": 21.351045214585206,
+          "empirical_choice_loss": 21.351045214585206,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_06__step0050",
+          "source_run": "policy_06",
+          "predicted_gap": -0.42834279864332375,
+          "choice": "3,0",
+          "observed_gap": 0.8510353090260097,
+          "empirical_choice_loss": 0.8510353090260097,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_07__step0065",
+          "source_run": "policy_07",
+          "predicted_gap": -1.7795197316065066,
+          "choice": "3,0",
+          "observed_gap": 0.07357909369056159,
+          "empirical_choice_loss": 0.07357909369056159,
+          "repeated_sign": null,
+          "known_order_correct": null
+        }
+      ]
+    },
+    "ridge36_saved26": {
+      "mean_empirical_choice_loss": 11.053428346353908,
+      "choices": {
+        "3,0": 15,
+        "0,3": 17
+      },
+      "old16": {
+        "known": 6,
+        "correct": 1,
+        "unknown": 10
+      },
+      "new16_descriptive": {
+        "known": 5,
+        "correct": 4,
+        "unknown": 11
+      },
+      "per_state": [
+        {
+          "root_id": "contrast_00",
+          "source_run": "policy_00",
+          "predicted_gap": -13.545602983712532,
+          "choice": "3,0",
+          "observed_gap": 61.054964873098236,
+          "empirical_choice_loss": 61.054964873098236,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_01",
+          "source_run": "policy_01",
+          "predicted_gap": 1.5331512360166135,
+          "choice": "0,3",
+          "observed_gap": -70.07194049516491,
+          "empirical_choice_loss": 70.07194049516491,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_02",
+          "source_run": "policy_02",
+          "predicted_gap": -0.6138759343047778,
+          "choice": "3,0",
+          "observed_gap": 1.4245153217214437,
+          "empirical_choice_loss": 1.4245153217214437,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_03",
+          "source_run": "policy_03",
+          "predicted_gap": 2.950112433423304,
+          "choice": "0,3",
+          "observed_gap": -45.099503144721155,
+          "empirical_choice_loss": 45.099503144721155,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_04",
+          "source_run": "policy_04",
+          "predicted_gap": -2.7294936604866558,
+          "choice": "3,0",
+          "observed_gap": 35.98326588192243,
+          "empirical_choice_loss": 35.98326588192243,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_05",
+          "source_run": "policy_05",
+          "predicted_gap": -10.374211218705408,
+          "choice": "3,0",
+          "observed_gap": 49.00275126525988,
+          "empirical_choice_loss": 49.00275126525988,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_06",
+          "source_run": "policy_06",
+          "predicted_gap": -0.4790290533779685,
+          "choice": "3,0",
+          "observed_gap": -31.03158152738138,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_07",
+          "source_run": "policy_07",
+          "predicted_gap": -8.716073951280881,
+          "choice": "3,0",
+          "observed_gap": 18.63411789540224,
+          "empirical_choice_loss": 18.63411789540224,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_00",
+          "source_run": "policy_02",
+          "predicted_gap": -0.5461290985019663,
+          "choice": "3,0",
+          "observed_gap": -39.69864669946578,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_01",
+          "source_run": "policy_02",
+          "predicted_gap": 0.9239774495926796,
+          "choice": "0,3",
+          "observed_gap": 2.024806194758767,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_02",
+          "source_run": "policy_03",
+          "predicted_gap": 2.982277485903823,
+          "choice": "0,3",
+          "observed_gap": -37.74488024101463,
+          "empirical_choice_loss": 37.74488024101463,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_03",
+          "source_run": "policy_03",
+          "predicted_gap": 0.30895606366527784,
+          "choice": "0,3",
+          "observed_gap": 1.4904059216852161,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_04",
+          "source_run": "policy_06",
+          "predicted_gap": -1.2634420769558479,
+          "choice": "3,0",
+          "observed_gap": 1.946141720825345,
+          "empirical_choice_loss": 1.946141720825345,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_05",
+          "source_run": "policy_06",
+          "predicted_gap": 0.8167477531397502,
+          "choice": "0,3",
+          "observed_gap": 1.0776855041834494,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "newroot_06",
+          "source_run": "policy_07",
+          "predicted_gap": 0.7759911784361078,
+          "choice": "0,3",
+          "observed_gap": -1.2716853233049648,
+          "empirical_choice_loss": 1.2716853233049648,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_07",
+          "source_run": "policy_07",
+          "predicted_gap": 0.9632351160458728,
+          "choice": "0,3",
+          "observed_gap": -0.5733042989719195,
+          "empirical_choice_loss": 0.5733042989719195,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0065",
+          "source_run": "policy_00",
+          "predicted_gap": -3.3868460003865506,
+          "choice": "3,0",
+          "observed_gap": -0.25161083850538546,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_00__step0040",
+          "source_run": "policy_00",
+          "predicted_gap": 0.3332879703310636,
+          "choice": "0,3",
+          "observed_gap": -0.16691203226265117,
+          "empirical_choice_loss": 0.16691203226265117,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0028",
+          "source_run": "policy_00",
+          "predicted_gap": 0.24001542873438655,
+          "choice": "0,3",
+          "observed_gap": -0.9407940622378845,
+          "empirical_choice_loss": 0.9407940622378845,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "coverage_policy_01__step0059",
+          "source_run": "policy_01",
+          "predicted_gap": 1.552018040843158,
+          "choice": "0,3",
+          "observed_gap": -0.03990803667782927,
+          "empirical_choice_loss": 0.03990803667782927,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0014",
+          "source_run": "policy_01",
+          "predicted_gap": 2.2847740074189002,
+          "choice": "0,3",
+          "observed_gap": -8.376565341027458,
+          "empirical_choice_loss": 8.376565341027458,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0040",
+          "source_run": "policy_01",
+          "predicted_gap": 1.9076008880976962,
+          "choice": "0,3",
+          "observed_gap": 1.7738404133033328,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_02__step0063",
+          "source_run": "policy_02",
+          "predicted_gap": 0.6770753508552811,
+          "choice": "0,3",
+          "observed_gap": 0.9708569943149357,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_03__step0061",
+          "source_run": "policy_03",
+          "predicted_gap": 1.2211749476944946,
+          "choice": "0,3",
+          "observed_gap": 0.48995472341696455,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0061",
+          "source_run": "policy_04",
+          "predicted_gap": -1.5738280804254303,
+          "choice": "3,0",
+          "observed_gap": 0.02741193512684248,
+          "empirical_choice_loss": 0.02741193512684248,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0038",
+          "source_run": "policy_04",
+          "predicted_gap": -2.1044020927592784,
+          "choice": "3,0",
+          "observed_gap": -0.042290948706238396,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0017",
+          "source_run": "policy_04",
+          "predicted_gap": -2.6517211566495953,
+          "choice": "3,0",
+          "observed_gap": -0.7238748951846219,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0066",
+          "source_run": "policy_05",
+          "predicted_gap": -0.6033636225711667,
+          "choice": "3,0",
+          "observed_gap": -0.23407369296785419,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0040",
+          "source_run": "policy_05",
+          "predicted_gap": -3.087463573753641,
+          "choice": "3,0",
+          "observed_gap": -1.0729956655742043,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_05__step0011",
+          "source_run": "policy_05",
+          "predicted_gap": -1.4575227693462325,
+          "choice": "3,0",
+          "observed_gap": 21.351045214585206,
+          "empirical_choice_loss": 21.351045214585206,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_06__step0050",
+          "source_run": "policy_06",
+          "predicted_gap": 1.3627368920662055,
+          "choice": "0,3",
+          "observed_gap": 0.8510353090260097,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_07__step0065",
+          "source_run": "policy_07",
+          "predicted_gap": 0.26359131051662055,
+          "choice": "0,3",
+          "observed_gap": 0.07357909369056159,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        }
+      ]
+    },
+    "ridge36_saved36": {
+      "mean_empirical_choice_loss": 11.031343334814219,
+      "choices": {
+        "3,0": 15,
+        "0,3": 17
+      },
+      "old16": {
+        "known": 6,
+        "correct": 1,
+        "unknown": 10
+      },
+      "new16_descriptive": {
+        "known": 5,
+        "correct": 5,
+        "unknown": 11
+      },
+      "per_state": [
+        {
+          "root_id": "contrast_00",
+          "source_run": "policy_00",
+          "predicted_gap": -13.963205136538164,
+          "choice": "3,0",
+          "observed_gap": 61.054964873098236,
+          "empirical_choice_loss": 61.054964873098236,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_01",
+          "source_run": "policy_01",
+          "predicted_gap": 1.9882551202103522,
+          "choice": "0,3",
+          "observed_gap": -70.07194049516491,
+          "empirical_choice_loss": 70.07194049516491,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_02",
+          "source_run": "policy_02",
+          "predicted_gap": -0.5716243917275137,
+          "choice": "3,0",
+          "observed_gap": 1.4245153217214437,
+          "empirical_choice_loss": 1.4245153217214437,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_03",
+          "source_run": "policy_03",
+          "predicted_gap": 3.459087110021095,
+          "choice": "0,3",
+          "observed_gap": -45.099503144721155,
+          "empirical_choice_loss": 45.099503144721155,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_04",
+          "source_run": "policy_04",
+          "predicted_gap": -3.965743196727498,
+          "choice": "3,0",
+          "observed_gap": 35.98326588192243,
+          "empirical_choice_loss": 35.98326588192243,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_05",
+          "source_run": "policy_05",
+          "predicted_gap": -11.116848626049158,
+          "choice": "3,0",
+          "observed_gap": 49.00275126525988,
+          "empirical_choice_loss": 49.00275126525988,
+          "repeated_sign": 1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "contrast_06",
+          "source_run": "policy_06",
+          "predicted_gap": -0.1311160257613655,
+          "choice": "3,0",
+          "observed_gap": -31.03158152738138,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "contrast_07",
+          "source_run": "policy_07",
+          "predicted_gap": -8.900479096934822,
+          "choice": "3,0",
+          "observed_gap": 18.63411789540224,
+          "empirical_choice_loss": 18.63411789540224,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_00",
+          "source_run": "policy_02",
+          "predicted_gap": -0.15231347376987758,
+          "choice": "3,0",
+          "observed_gap": -39.69864669946578,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_01",
+          "source_run": "policy_02",
+          "predicted_gap": 1.1100082961934707,
+          "choice": "0,3",
+          "observed_gap": 2.024806194758767,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_02",
+          "source_run": "policy_03",
+          "predicted_gap": 3.509761673837501,
+          "choice": "0,3",
+          "observed_gap": -37.74488024101463,
+          "empirical_choice_loss": 37.74488024101463,
+          "repeated_sign": -1,
+          "known_order_correct": false
+        },
+        {
+          "root_id": "newroot_03",
+          "source_run": "policy_03",
+          "predicted_gap": 0.37016427082864456,
+          "choice": "0,3",
+          "observed_gap": 1.4904059216852161,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_04",
+          "source_run": "policy_06",
+          "predicted_gap": -1.0132120868353465,
+          "choice": "3,0",
+          "observed_gap": 1.946141720825345,
+          "empirical_choice_loss": 1.946141720825345,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_05",
+          "source_run": "policy_06",
+          "predicted_gap": 1.1460836627049376,
+          "choice": "0,3",
+          "observed_gap": 1.0776855041834494,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "newroot_06",
+          "source_run": "policy_07",
+          "predicted_gap": 0.4649965916421577,
+          "choice": "0,3",
+          "observed_gap": -1.2716853233049648,
+          "empirical_choice_loss": 1.2716853233049648,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "newroot_07",
+          "source_run": "policy_07",
+          "predicted_gap": 1.18251654374264,
+          "choice": "0,3",
+          "observed_gap": -0.5733042989719195,
+          "empirical_choice_loss": 0.5733042989719195,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0065",
+          "source_run": "policy_00",
+          "predicted_gap": -2.8757465395444792,
+          "choice": "3,0",
+          "observed_gap": -0.25161083850538546,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_00__step0040",
+          "source_run": "policy_00",
+          "predicted_gap": 0.8948432347417518,
+          "choice": "0,3",
+          "observed_gap": -0.16691203226265117,
+          "empirical_choice_loss": 0.16691203226265117,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_00__step0028",
+          "source_run": "policy_00",
+          "predicted_gap": -0.1340823802827268,
+          "choice": "3,0",
+          "observed_gap": -0.9407940622378845,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_01__step0059",
+          "source_run": "policy_01",
+          "predicted_gap": 0.8664364101795987,
+          "choice": "0,3",
+          "observed_gap": -0.03990803667782927,
+          "empirical_choice_loss": 0.03990803667782927,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0014",
+          "source_run": "policy_01",
+          "predicted_gap": 3.4271863375694185,
+          "choice": "0,3",
+          "observed_gap": -8.376565341027458,
+          "empirical_choice_loss": 8.376565341027458,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_01__step0040",
+          "source_run": "policy_01",
+          "predicted_gap": 2.065744127547865,
+          "choice": "0,3",
+          "observed_gap": 1.7738404133033328,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_02__step0063",
+          "source_run": "policy_02",
+          "predicted_gap": 0.05124717636484453,
+          "choice": "0,3",
+          "observed_gap": 0.9708569943149357,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_03__step0061",
+          "source_run": "policy_03",
+          "predicted_gap": 0.5459555562464058,
+          "choice": "0,3",
+          "observed_gap": 0.48995472341696455,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0061",
+          "source_run": "policy_04",
+          "predicted_gap": -1.0291200767855266,
+          "choice": "3,0",
+          "observed_gap": 0.02741193512684248,
+          "empirical_choice_loss": 0.02741193512684248,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0038",
+          "source_run": "policy_04",
+          "predicted_gap": -1.38833308442147,
+          "choice": "3,0",
+          "observed_gap": -0.042290948706238396,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_04__step0017",
+          "source_run": "policy_04",
+          "predicted_gap": -3.841855444699769,
+          "choice": "3,0",
+          "observed_gap": -0.7238748951846219,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0066",
+          "source_run": "policy_05",
+          "predicted_gap": 0.1705165810909931,
+          "choice": "0,3",
+          "observed_gap": -0.23407369296785419,
+          "empirical_choice_loss": 0.23407369296785419,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_05__step0040",
+          "source_run": "policy_05",
+          "predicted_gap": -1.9768006050216016,
+          "choice": "3,0",
+          "observed_gap": -1.0729956655742043,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": -1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_05__step0011",
+          "source_run": "policy_05",
+          "predicted_gap": -3.057353901876212,
+          "choice": "3,0",
+          "observed_gap": 21.351045214585206,
+          "empirical_choice_loss": 21.351045214585206,
+          "repeated_sign": null,
+          "known_order_correct": null
+        },
+        {
+          "root_id": "coverage_policy_06__step0050",
+          "source_run": "policy_06",
+          "predicted_gap": 1.0133727440862057,
+          "choice": "0,3",
+          "observed_gap": 0.8510353090260097,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": 1,
+          "known_order_correct": true
+        },
+        {
+          "root_id": "coverage_policy_07__step0065",
+          "source_run": "policy_07",
+          "predicted_gap": 0.4465272484859742,
+          "choice": "0,3",
+          "observed_gap": 0.07357909369056159,
+          "empirical_choice_loss": 0.0,
+          "repeated_sign": null,
+          "known_order_correct": null
+        }
+      ]
+    }
+  },
+  "new_fits": 0,
+  "new_samples": 0,
+  "mcts_calls": 0
+}

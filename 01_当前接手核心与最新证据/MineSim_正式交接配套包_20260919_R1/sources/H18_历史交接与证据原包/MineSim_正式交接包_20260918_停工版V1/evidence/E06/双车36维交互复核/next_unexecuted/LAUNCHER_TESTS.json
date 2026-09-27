@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "count": 8,
+  "checks": [
+    "bash_n",
+    "missing_authorization_refused",
+    "payload_exact",
+    "embedded_manifest_and_crc",
+    "temp_install_readback",
+    "identical_install_reuse",
+    "different_existing_runner_refused",
+    "symlink_install_refused"
+  ],
+  "cloud_run": false,
+  "real_dataset_new_fits": 0,
+  "launcher_sha256": "eb8d38891ef76a9a9e467b5acbd47746e2190b5a90ec8ed230a2cec51ca27497",
+  "release_sha256": "c16d34302660397e0664b1bbcdf93ba3ff08a463eef03967d7ae49b63f24c14a"
+}

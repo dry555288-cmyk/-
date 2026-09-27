@@ -1,0 +1,104 @@
+{
+  "schema_version": "1.0",
+  "EVIDENCE_CUTOFF": "2026-09-10; current uploaded artifacts, available historical handoffs, supplied Skill, and latest user-approved paper-reference direction",
+  "CURRENT_STAGE": "教师/排序/策略回报诊断已形成证据链；论文标准已核查；准备安全—完成—效率—搜索代价评价定义对齐",
+  "CURRENT_GATE": "HANDOFF_AND_PAPER_STANDARD_MAPPING_FREEZE",
+  "CURRENT_STATUS": "HANDOFF_PACKAGE_FROZEN_DOCUMENTS_ONLY; no new scientific execution",
+  "GATE_IDENTIFIER_ORIGIN": "本次交接新建管理标识，不代表已有AutoDL目录或此前冻结Gate名称",
+  "NEXT_GATE": "PAPER_ALIGNED_EVALUATION_CONTRACT_PREFLIGHT",
+  "NEXT_GATE_IDENTIFIER_ORIGIN": "handoff-proposed; not yet executed",
+  "LATEST_GIT_HEAD": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+  "GIT_STATUS_SCOPE": "最近已返回快照，非本轮live query",
+  "LAST_RETURNED_GIT_STATUS": "?? ^C\n",
+  "GIT_CLEAN_CLAIM": false,
+  "REPO": "/root/MineSim-Dynamic",
+  "DATA_ROOT": "/root/autodl-tmp",
+  "CURRENT_EVIDENCE_ROOT": [
+    "/root/autodl-tmp/minesim_root_action_policy_return_v1",
+    "/root/autodl-tmp/minesim_root_policy_return_replication_v1"
+  ],
+  "CURRENT_EVIDENCE_ROOT_LIVE_VERIFIED": false,
+  "LATEST_SCIENTIFIC_DATA": {
+    "old_batch": {
+      "seeds": [
+        46000,
+        46001,
+        46002,
+        46003
+      ],
+      "trajectories": 128,
+      "source_id": "E31"
+    },
+    "new_batch": {
+      "seeds": [
+        47000,
+        47001,
+        47002,
+        47003,
+        47004,
+        47005,
+        47006,
+        47007
+      ],
+      "trajectories": 256,
+      "source_id": "E32"
+    },
+    "layer": "frozen planning-model execution, not full Controller/vehicle-runtime closed-loop"
+  },
+  "LATEST_DESIGN_REFERENCE": "E29: MineSim_paper_standards_verified_20260910.txt",
+  "NEXT_MINIMAL_ACTION": "只读建立论文指标—现有源码/字段—几何—单位/时间/分母—可计算性映射；缺失标HOLD/N/A，不填零；不采样不训练不改阈值",
+  "PASS_STANDARD": [
+    "各指标有原文出处、现有实现或缺失证据",
+    "明确执行/想象轨迹、终止/时间截断、失败/缺失的区分",
+    "明确物理碰撞/道路边界与PET/TTC代理指标不混同",
+    "论文配置/观察值/诊断参照/项目硬阈值分别标注",
+    "记录实际root expansion、visited roots、forward与wall-time，不复用误义字段",
+    "保留冻结输入和负结果，未授权下一科学步骤"
+  ],
+  "RESOURCE_REQUIRED": "LOW for this handoff and next readonly evaluation-contract gate; reassess later CPU/GPU stages",
+  "DO_NOT_REPEAT": [
+    "旧K13 B16/B32已消费matched实验及技术retry",
+    "旧864矩阵、36-root和24-root教师搜索",
+    "已完成12/6/36组训练和来源消融",
+    "H8/H12/H16时域实验",
+    "叶节点契约、策略续行、原始根动作128/256条回报",
+    "任何写入START的原namespace"
+  ],
+  "HOLD_ITEMS": [
+    "原Value V3是否充分优化收敛",
+    "新诊断网络独立全矿泛化与部署",
+    "新剪枝实际安全与端到端加速",
+    "论文V2V/V2H/V2R数值阈值的完整项目映射",
+    "PET/TTC几何和预测字段的当前可计算性",
+    "production-authoritative地图与正式可视化live状态",
+    "AutoDL实时文件/删除/软链接清理状态",
+    "保证分支的epsilon_t、risk_limits、delta、iid假设、检查点和采样预算"
+  ],
+  "STATISTICAL_GUARANTEE_BRANCH": {
+    "status": "HOLD_SPECIFICATION",
+    "blocks_general_development_evaluation": false,
+    "epsilon_t_seconds": null,
+    "hard_safety_risk_limit": null,
+    "noncompletion_risk_limit": null,
+    "delta": null,
+    "approved_new_sampling_budget": null
+  },
+  "APPROVALS": {
+    "new_sampling": false,
+    "new_training": false,
+    "new_pruning": false,
+    "old_value_v3_replacement": false,
+    "production_safety_certification": false,
+    "paper_reference_direction": true
+  },
+  "FAIL_STOP_DOMAIN": "当前metric-definition/provenance/geometry接口；不得扩大到改地图/奖励/模型/MCTS",
+  "CODE_DELIVERY": "Only main .py as download; launch/screen/monitor/checks integrated copyable chat code",
+  "LATEST_HANDOFF": "MineSim_Dynamic_正式交接_论文标准对齐版_V1_20260910.docx",
+  "CLOUD_UPLOAD_STATUS": "NOT_VERIFIED; generated in current conversation only",
+  "DOCUMENT_QA": "document_quality_check.json: PASS_DOCUMENT_QA",
+  "LATEST_FROZEN_RESULT": {
+    "latest_raw_strategy_return_batch": "E32 / minesim_root_policy_return_replication_v1; status from returned experiment evidence",
+    "latest_offline_interface": "E28 / time-safety decision interface; guarantee branch HOLD",
+    "latest_paper_standard_review": "E29; paper-reference direction accepted, numeric threshold mapping not installed"
+  }
+}

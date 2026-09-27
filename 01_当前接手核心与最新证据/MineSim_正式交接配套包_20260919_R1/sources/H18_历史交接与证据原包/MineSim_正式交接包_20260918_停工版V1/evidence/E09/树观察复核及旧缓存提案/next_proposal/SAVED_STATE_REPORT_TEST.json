@@ -1,0 +1,68 @@
+{
+  "status": "PASS_SCALAR_REPORT_PARITY_ON_SAVED_TREE_NODES",
+  "vehicle_states_checked": 520,
+  "cached_calls": 1040,
+  "source": "260 node snapshots / 4 observed searches; each node has A/B; not independent scenes",
+  "new_MCTS_searches": 0,
+  "new_teacher_samples": 0,
+  "new_training_runs": 0,
+  "local_python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "cloud_test_done": false,
+  "full_search_parity_tested": false,
+  "cases": [
+    {
+      "case": "coverage_policy_01__step0014",
+      "vehicle_cache_counters": {
+        "A": {
+          "requests": 260,
+          "full_report_evaluations": 30,
+          "hits": 230,
+          "cross_decision_hits": 34,
+          "evictions": 0,
+          "config_invalidations": 0,
+          "additional_validation_calls": 260,
+          "entries": 30,
+          "decision": 1
+        },
+        "B": {
+          "requests": 260,
+          "full_report_evaluations": 35,
+          "hits": 225,
+          "cross_decision_hits": 34,
+          "evictions": 0,
+          "config_invalidations": 0,
+          "additional_validation_calls": 260,
+          "entries": 35,
+          "decision": 1
+        }
+      }
+    },
+    {
+      "case": "coverage_policy_05__step0011",
+      "vehicle_cache_counters": {
+        "A": {
+          "requests": 260,
+          "full_report_evaluations": 43,
+          "hits": 217,
+          "cross_decision_hits": 34,
+          "evictions": 0,
+          "config_invalidations": 0,
+          "additional_validation_calls": 260,
+          "entries": 43,
+          "decision": 1
+        },
+        "B": {
+          "requests": 260,
+          "full_report_evaluations": 41,
+          "hits": 219,
+          "cross_decision_hits": 34,
+          "evictions": 0,
+          "config_invalidations": 0,
+          "additional_validation_calls": 260,
+          "entries": 41,
+          "decision": 1
+        }
+      }
+    }
+  ]
+}

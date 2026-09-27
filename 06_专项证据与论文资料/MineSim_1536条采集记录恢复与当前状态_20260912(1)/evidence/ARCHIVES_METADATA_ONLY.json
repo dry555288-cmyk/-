@@ -1,0 +1,44 @@
+[
+  {
+    "full_archive_copied": false,
+    "full_archive_integrity": "NOT_CHECKED_METADATA_ONLY",
+    "matches_prior_inventory": true,
+    "observed": {
+      "ctime_ns": 1789127319246620982,
+      "dev": 2304,
+      "inode": 10847328226,
+      "mode": 33188,
+      "mtime_ns": 1789127316646689579,
+      "size": 85059607
+    },
+    "path": "minesim_discovery_remaining390_parallel_v1.zip"
+  },
+  {
+    "full_archive_copied": false,
+    "full_archive_integrity": "NOT_CHECKED_METADATA_ONLY",
+    "matches_prior_inventory": true,
+    "observed": {
+      "ctime_ns": 1789132217500249575,
+      "dev": 2304,
+      "inode": 10847330231,
+      "mode": 33188,
+      "mtime_ns": 1789132217468250630,
+      "size": 1131404
+    },
+    "path": "minesim_discovery_cell377_tail_continuation_v1.zip"
+  },
+  {
+    "full_archive_copied": false,
+    "full_archive_integrity": "NOT_CHECKED_METADATA_ONLY",
+    "matches_prior_inventory": true,
+    "observed": {
+      "ctime_ns": 1789140748734329458,
+      "dev": 2304,
+      "inode": 10845127986,
+      "mode": 33188,
+      "mtime_ns": 1789140744894539738,
+      "size": 132348877
+    },
+    "path": "minesim_confirmation768_parallel_v1.zip"
+  }
+]

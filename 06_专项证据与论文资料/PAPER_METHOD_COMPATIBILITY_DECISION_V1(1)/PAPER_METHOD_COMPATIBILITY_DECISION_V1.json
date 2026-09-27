@@ -1,0 +1,48 @@
+{
+  "type": "PAPER_METHOD_COMPATIBILITY_DECISION_V1",
+  "paper1": {
+    "decision": "FEASIBLE_AS_ADAPTED_ROUTE_CONSTRAINED_METHOD",
+    "primary_route": [
+      "explicit_safety_risk_evaluator",
+      "safe_node_filtering",
+      "dataset_contract",
+      "current_semantics_recollection",
+      "value_network",
+      "value_guided_rollout",
+      "cooperation_deadlock_handling",
+      "tree_reuse"
+    ],
+    "not_directly_present": [
+      "probabilistic_V2H",
+      "tree_internal_V2R",
+      "dynamic_safety_threshold",
+      "waiting_aware_cooperation",
+      "learned_value_predictor",
+      "hybrid_value_random_safe_rollout",
+      "tree_reuse"
+    ]
+  },
+  "paper2": {
+    "decision": "PARTIALLY_FEASIBLE_AS_RISK_EVALUATION_IDEA",
+    "adapt_now": [
+      "simulation_evaluation_search",
+      "vehicle_risk",
+      "boundary_risk_after_tree_hook"
+    ],
+    "hold": [
+      "terrain_risk_without_authoritative_input",
+      "passing_order_tree",
+      "RA_MVSFM",
+      "lane_free_lateral_search",
+      "OCP"
+    ]
+  },
+  "do_not_guess": [
+    "paper_reward_weights",
+    "paper_safety_thresholds",
+    "rollout_mixing_alpha",
+    "human_uncertainty_sigma",
+    "network_architecture",
+    "network_hidden_size"
+  ]
+}

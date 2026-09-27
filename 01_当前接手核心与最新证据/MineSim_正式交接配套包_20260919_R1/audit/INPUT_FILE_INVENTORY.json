@@ -1,0 +1,170 @@
+[
+  {
+    "filename": "MineSim_资料阅读与接续状态核对_20260919.md",
+    "bytes": 9528,
+    "sha256": "e5ebeed0d47e49716f38470e634ea702b05edbecb4c5b577657bc182b3b41257",
+    "role": "prior_generated_reading_note"
+  },
+  {
+    "filename": "MineSim_正式交接与接续证据_20260918_停工版V1.zip",
+    "bytes": 7886495,
+    "sha256": "52aff4201a1cb612bc36c7a979985048dc36fb12cc4bccdcf723671999732a2a",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "粘贴的 markdown (1)。md(1)",
+    "bytes": 24882,
+    "sha256": "0d16a325ff3a79eb81e9c2b65e2a98e7b70002b2b301de36c590c17c896dc64f",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "AI接手文档.zip",
+    "bytes": 1189654,
+    "sha256": "0d84f9cadc2e1250b2f6434edb62c865a4abe3726d9888b75156ef8437a70a13",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim_handoff_summary_V1.docx",
+    "bytes": 38468,
+    "sha256": "24d5392af05f332e182413e589ee50d8226d9b71333325285d6b275740724ba3",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "AI接手文档（截至9月12）.zip",
+    "bytes": 4457939,
+    "sha256": "53ccb83dba93b7fff0097fa223e8c6967972dd239ad164c72515f53b0dc002fc",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "AI接手文档4.zip",
+    "bytes": 1240685,
+    "sha256": "c60924eaf0bda8ab5675594c8040a837edb94cef6a649388085fb5b0789d61d2",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim_正式交接_截至20260913_停工版V1.docx",
+    "bytes": 78897,
+    "sha256": "76da5790380919b876cf98177cb0e4621e10c1c9144a97cec3cafcaf232c2f47",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "PAPER_METHOD_COMPATIBILITY_DECISION_V1.zip",
+    "bytes": 3658,
+    "sha256": "2c2f85767b60e139bd9d6b56a6b24d7b3a0afd95c5ca802b81ad882acb67cb41",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "PAPER1_V0_OBSERVATIONAL_FREEZE_V1.zip",
+    "bytes": 4542,
+    "sha256": "714698023347899f2b3f52e13965d6507eac7c325ad681ee48167b266521460d",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim地图更换.7z",
+    "bytes": 1043429,
+    "sha256": "e66b8e2154b43a05a58590eae9376497f68e1c8426bf2cbd8e876c7a64664114",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim_Dynamic_正式交接_截至20260918_H8子树小试后停工版V1.docx",
+    "bytes": 81171,
+    "sha256": "872e70b2635b48d9ae3bcc90ff6a62efac146660b4d7f2e34e35d84b834195a6",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "可参考论文.7z",
+    "bytes": 22895976,
+    "sha256": "79a0707d2dfdd42b04c8622b505b371885ec558af1183db3db67f1e6af5b6f5c",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "RADEME.txt",
+    "bytes": 41285,
+    "sha256": "6ffd910cbbe9fb6b56af4b37153b96120dd3ea0dbd74d141732e601fc7935ac8",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim_1536条采集记录恢复与当前状态_20260912.zip",
+    "bytes": 3587774,
+    "sha256": "64a69eaff2354cf6cb23c86757531c6c81247a80d00f721a5a5a96ba8633589a",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "蒙特卡洛效果对比.7z",
+    "bytes": 1651563,
+    "sha256": "4c719ebbc86304b26e3d598e57aaa557ec2b0d79dd3dcc488620acc4247aa3ee",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim_Complete_Handoff_Package_2026-08-24 (1).zip",
+    "bytes": 95535104,
+    "sha256": "b0265796b52356cb96f4385afb215077eb11c7e215007dd8f7db7a9cb930b275",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "AI接手文档3.zip",
+    "bytes": 1126908,
+    "sha256": "243f06894ebd3e754ec3794eec9b4f00ba79c6075b0817a462b603c4221c2308",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim_Dynamic_正式交接完整包_论文标准对齐版_V1_20260910.zip",
+    "bytes": 1436537,
+    "sha256": "9b0f1cbaa787695c95fd2b2d6b455e720e1d1dc71cc019b269aeb84901646c37",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "蒙特卡洛实现.7z",
+    "bytes": 27994648,
+    "sha256": "719bed9d7fe82d453eb0cded6bb60f0b5ddb06419724c0a2d4fe3674e3387bd9",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim_H8四条策略验证_交接补充V1.1_20260918.docx",
+    "bytes": 41390,
+    "sha256": "5929f8752513de032e8a6c0d87d0e2be8e784b9a5b0e890bce361ef0746a9eb4",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "接下来方向.7z",
+    "bytes": 32351216,
+    "sha256": "43b15ae6b089887f99efdd18ff04681793e5f693e0f0592ae76ef2dbdbd60c69",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "地图新建相关文件.zip",
+    "bytes": 9776650,
+    "sha256": "1e499fd92d3d76ae7167960d492e8760fc8aa7b73180458c0e90aefa07e1a44d",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "CROSS_SCENE_DYNAMIC_CONCLUSION_V1.zip",
+    "bytes": 6886,
+    "sha256": "2dde3d66652097ab8319ac44693f2c035435f838799e24ff6147facc6565ca0b",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "MineSim_云端项目整理最终文档包.zip",
+    "bytes": 53552,
+    "sha256": "b421fae9b0f36b948b5fda716f874f09256a670846a6e8fa41752b4620240251",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "粘贴的文本 (1)(20260919-141810).txt",
+    "bytes": 271324,
+    "sha256": "76cccf451dd44237879aa6438d4cb82378ac21fac8d7bb6ca68f9c3317a4cab9",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "AI接手文档2.zip",
+    "bytes": 834529,
+    "sha256": "08ae0b5c269891ffc7b750354b60b28fe418148d8642111e4c69f67c44baaa0f",
+    "role": "user_uploaded"
+  },
+  {
+    "filename": "原项目复现.zip",
+    "bytes": 20644638,
+    "sha256": "bee262cbdc9aa366ae22af6dc6b7565707bd00534e9426ea5bb0a62d81d27516",
+    "role": "user_uploaded"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "manifest_entries": 13430,
+  "matched": 13430,
+  "mismatches": [],
+  "uncompressed_bytes_checked": 807312160,
+  "zip_crc_checked_for_manifest_files": true,
+  "duplicate_archive_names": [],
+  "unlisted_files_excluding_manifest": [],
+  "elapsed_seconds": 4.202909116000001,
+  "method": "Read every manifest member using zipfile CRC checks, compare recorded size and SHA256; no source execution."
+}

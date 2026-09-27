@@ -1,0 +1,133 @@
+{
+  "review_status": "PASS_SAVED_ARTIFACT_INTEGRITY_AND_RECOMPUTATION",
+  "reviewed_utc": "2026-09-18T03:43:07.112440+00:00",
+  "input_zip": "/mnt/data/bee7eb3b-ba0d-4f0e-ac72-9daa097d2712.zip",
+  "input_zip_sha256": "b2e1f9dc19e448883404120cb4cdf2d53d6abfe3513dada989ff4b1ff7066bca",
+  "execution_status": "COMPLETE_DUAL_FLAT_CACHE_FIXED_TIMING",
+  "execution_rc": 0,
+  "zip_file_members": 182,
+  "manifest_verified": 181,
+  "source_bindings_verified": 69,
+  "release_files_verified": 6,
+  "zip_crc_errors": 0,
+  "saved_search_records_verified": 40,
+  "semantic_pairs_verified_including_warmup": 20,
+  "state_rng_chains_verified": 20,
+  "measured_pairs": 16,
+  "measured_searches": 32,
+  "warmup_searches": 8,
+  "aggregate_recomputed": {
+    "cpu": {
+      "baseline_total_ms": 8621.965495999997,
+      "cached_total_ms": 9205.880999,
+      "baseline_mean_ms": 538.8728434999998,
+      "cached_mean_ms": 575.3675624375,
+      "cached_over_baseline": 1.0677241753369229,
+      "relative_reduction": -0.06772417533692288,
+      "pairs_lower": 7,
+      "pairs": 16,
+      "blocks_lower": 1,
+      "blocks": 4
+    },
+    "wall": {
+      "baseline_total_ms": 8621.806170791388,
+      "cached_total_ms": 9205.725707113743,
+      "baseline_mean_ms": 538.8628856744617,
+      "cached_mean_ms": 575.3578566946089,
+      "cached_over_baseline": 1.067725894639169,
+      "relative_reduction": -0.067725894639169,
+      "pairs_lower": 7,
+      "pairs": 16,
+      "blocks_lower": 1,
+      "blocks": 4
+    }
+  },
+  "measured_cache_counts": {
+    "action_report_requests": 29344,
+    "cache_hits": 20448,
+    "full_reports_computed": 8896,
+    "baseline_full_reports_computed": 29344,
+    "cross_decision_hits": 4708,
+    "hit_rate": 0.6968375136314068
+  },
+  "block_analysis": [
+    {
+      "block_id": "warmup",
+      "role": "warmup",
+      "root_order": "original",
+      "nr_throttled_delta": 0,
+      "throttled_usec_delta": 0,
+      "elapsed_including_setup_io_s": 7.207778729498386,
+      "cpu_cached_over_baseline": 0.9383202021919351,
+      "wall_cached_over_baseline": 0.9383132263606868
+    },
+    {
+      "block_id": "measure_01",
+      "role": "measured",
+      "root_order": "original",
+      "nr_throttled_delta": 0,
+      "throttled_usec_delta": 0,
+      "elapsed_including_setup_io_s": 7.099309626966715,
+      "cpu_cached_over_baseline": 1.01274505899368,
+      "wall_cached_over_baseline": 1.0127660161552983
+    },
+    {
+      "block_id": "measure_02",
+      "role": "measured",
+      "root_order": "reverse",
+      "nr_throttled_delta": 0,
+      "throttled_usec_delta": 0,
+      "elapsed_including_setup_io_s": 6.747844215482473,
+      "cpu_cached_over_baseline": 1.0691189666516934,
+      "wall_cached_over_baseline": 1.0691203979070538
+    },
+    {
+      "block_id": "measure_03",
+      "role": "measured",
+      "root_order": "original",
+      "nr_throttled_delta": 0,
+      "throttled_usec_delta": 0,
+      "elapsed_including_setup_io_s": 4.77916469424963,
+      "cpu_cached_over_baseline": 0.9842798861478134,
+      "wall_cached_over_baseline": 0.9842872995509838
+    },
+    {
+      "block_id": "measure_04",
+      "role": "measured",
+      "root_order": "reverse",
+      "nr_throttled_delta": 0,
+      "throttled_usec_delta": 0,
+      "elapsed_including_setup_io_s": 6.623307518661022,
+      "cpu_cached_over_baseline": 1.1962122822539802,
+      "wall_cached_over_baseline": 1.1961873868663164
+    }
+  ],
+  "duration_technical_start_to_capture_seconds": 32.54301,
+  "recorded_effective_cpu": 16.0,
+  "all_recorded_windows_have_zero_new_cgroup_throttling": true,
+  "environment_note": "Cgroup quota and counters were recorded in the uploaded run, not checked live here; zero new throttling does not establish CPU isolation or a fixed clock.",
+  "git_pre_post_identical": true,
+  "git_status_recorded": "?? ^C\n",
+  "method_note": "Baseline and candidate both use the saved counting wrapper. Primary timing is full system.search including wrapper/cache access; model/context setup, cache installation, outer advance, disk I/O and full Controller/KBM are excluded.",
+  "observed_conclusion": "MIXED_OR_NO_REPRODUCIBLE_DIRECTION_ON_FIXED_INPUTS",
+  "scientific_interpretation": "Measured cached search time increased about 6.77%; only 1/4 blocks and 7/16 measured decision pairs improved. No stable speedup demonstrated on the fixed fixtures. Do not claim significance, fleet-wide slowdown, or that all caching/tree reuse is ineffective.",
+  "review_activity": {
+    "MCTS_calls": 0,
+    "training_runs": 0,
+    "model_forwards": 0,
+    "simulation_advances": 0,
+    "cloud_access": false,
+    "original_artifacts_modified": false
+  },
+  "preserved_run_boundaries": {
+    "new_teacher_traces": 0,
+    "training_runs": 0,
+    "model_forward_calls": 0,
+    "tree_reuse_executed": false,
+    "tree_statistics_reuse_executed": false,
+    "pruning_authorized": false,
+    "deployable": false,
+    "full_controller_kbm_tested": false,
+    "dataset32_512_written": false
+  }
+}

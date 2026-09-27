@@ -1,0 +1,155 @@
+[
+  {
+    "id": "T01",
+    "original_filename": "粘贴的文本 (1)(20260919-141810).txt",
+    "package_path": "sources/T01_原始完整对话.txt",
+    "bytes": 271324,
+    "sha256": "76cccf451dd44237879aa6438d4cb82378ac21fac8d7bb6ca68f9c3317a4cab9",
+    "role": "主要叙事来源；保留到最后重试文字，最新结果为阶段式H16/H8。",
+    "cloud_presence": "NOT_CHECKED"
+  },
+  {
+    "id": "S01",
+    "original_filename": "粘贴的 markdown (1)。md(1)",
+    "package_path": "sources/S01_用户统一工作流原件.md",
+    "bytes": 24882,
+    "sha256": "0d16a325ff3a79eb81e9c2b65e2a98e7b70002b2b301de36c590c17c896dc64f",
+    "role": "最新上传42节工作流；不是新的科研结果。",
+    "cloud_presence": "NOT_CHECKED"
+  },
+  {
+    "id": "H18",
+    "original_filename": "MineSim_正式交接与接续证据_20260918_停工版V1.zip",
+    "package_path": "sources/H18_历史交接与证据原包.zip",
+    "bytes": 7886495,
+    "sha256": "52aff4201a1cb612bc36c7a979985048dc36fb12cc4bccdcf723671999732a2a",
+    "role": "历史原包，含E01-E13、DATASET32、原policy4方案。包内当前状态已过时，禁自动运行。",
+    "cloud_presence": "NOT_CHECKED"
+  },
+  {
+    "id": "A18",
+    "original_filename": "MineSim_H8四条策略验证_交接补充V1.1_20260918.docx",
+    "package_path": "sources/A18_H8策略结果补充原件.docx",
+    "bytes": 41390,
+    "sha256": "5929f8752513de032e8a6c0d87d0e2be8e784b9a5b0e890bce361ef0746a9eb4",
+    "role": "H8 policy4已返回的文档依据，非本次原始policy4数据。",
+    "cloud_presence": "NOT_CHECKED"
+  },
+  {
+    "id": "R19",
+    "original_filename": "MineSim_资料阅读与接续状态核对_20260919.md",
+    "package_path": "sources/R19_上一轮阅读记录.md",
+    "bytes": 9528,
+    "sha256": "e5ebeed0d47e49716f38470e634ea702b05edbecb4c5b577657bc182b3b41257",
+    "role": "上一轮阅读记录，所有其自称核验数不是本次新增工作。",
+    "cloud_presence": "NOT_CHECKED"
+  },
+  {
+    "id": "D32",
+    "original_archive": "H18",
+    "original_member": "MineSim_正式交接包_20260918_停工版V1/frozen_data/DATASET32.json",
+    "package_path": "frozen_data/DATASET32.json",
+    "bytes": 488232,
+    "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+    "role": "冻结聚合数据精确副本；仅核对字节、结构，不重算512条轨迹。"
+  },
+  {
+    "id": "H18M",
+    "original_archive": "H18",
+    "original_member": "MineSim_正式交接包_20260918_停工版V1/HANDOFF.md",
+    "package_path": "sources/H18_历史主文.md",
+    "bytes": 60550,
+    "sha256": "27222895555782c3cd8960e97a23462dd5db92b673687077daf21850d5b11e57",
+    "role": "9月18日历史主文，不作为当前停点。"
+  },
+  {
+    "id": "H10",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/history/H02_20260910_论文标准对齐原包.zip",
+    "original_member": "MineSim_Handoff_20260910_V1/MineSim_Dynamic_正式交接_论文标准对齐版_V1_20260910.md",
+    "package_path": "sources/H10_论文标准对齐历史主文.md",
+    "bytes": 104921,
+    "sha256": "8e0573c20d2f60984f112baa92513da7293cf81aea748f8e06f269f9a73c28a8",
+    "role": "旧神经、K13和来源诊断；旧当前Gate已被取代。"
+  },
+  {
+    "id": "C01",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "original_member": "minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_search.py",
+    "package_path": "source_code/C01_fleet_search.py",
+    "bytes": 7431,
+    "sha256": "e96c82d60b75c6d2b3311b9fd9d569cab1404c5c2ba4c729cb25c8e605d6ec94",
+    "role": "仅作为历史绑定源码/配置阅读；未执行，不代表最新V5发布源。"
+  },
+  {
+    "id": "C02",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "original_member": "minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py",
+    "package_path": "source_code/C02_dual_stop_motion_v1.py",
+    "bytes": 13473,
+    "sha256": "e9d024a6f56b6279de41b6f0889a188a201eeef07acca425e2ea69c4ef9c0626",
+    "role": "仅作为历史绑定源码/配置阅读；未执行，不代表最新V5发布源。"
+  },
+  {
+    "id": "C03",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "original_member": "minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_adapter_v1.py",
+    "package_path": "source_code/C03_dual_stop_adapter_v1.py",
+    "bytes": 16614,
+    "sha256": "04710705edeea28bf38560fc4e3ce8ee319fc0b6679dbf00bd4c61d897cd4961",
+    "role": "仅作为历史绑定源码/配置阅读；未执行，不代表最新V5发布源。"
+  },
+  {
+    "id": "C04",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "original_member": "minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_reward.py",
+    "package_path": "source_code/C04_fleet_reward.py",
+    "bytes": 3700,
+    "sha256": "bd2cefa0e6eac0980d009882aa5a4a0aa7f0b6701b6534ccb3af18634ad6213c",
+    "role": "仅作为历史绑定源码/配置阅读；未执行，不代表最新V5发布源。"
+  },
+  {
+    "id": "C05",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "original_member": "minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/teacher_cell_core.py",
+    "package_path": "source_code/C05_teacher_cell_core.py",
+    "bytes": 16731,
+    "sha256": "58c3e5d217189b5d4f7e108b57f3d3700f3e11216d1eab02d1d25c5e0885cba0",
+    "role": "仅作为历史绑定源码/配置阅读；未执行，不代表最新V5发布源。"
+  },
+  {
+    "id": "C06",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "original_member": "minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/reward.py",
+    "package_path": "source_code/C06_reward.py",
+    "bytes": 7651,
+    "sha256": "d225ca754b2e5f6a650a35a946819276d50c027eaf66449667973c45f98ed5a5",
+    "role": "仅作为历史绑定源码/配置阅读；未执行，不代表最新V5发布源。"
+  },
+  {
+    "id": "C07",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "original_member": "minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/inputs/contexts/C11_100M_SEED0_EP1.json",
+    "package_path": "source_code/C07_C11_100M_SEED0_EP1.json",
+    "bytes": 5959,
+    "sha256": "a13f2fc0b735d310d3bcd80fc44d09d366bd3474e284090b247654bc5ba5f911",
+    "role": "仅作为历史绑定源码/配置阅读；未执行，不代表最新V5发布源。"
+  },
+  {
+    "id": "C08",
+    "original_archive": "H18!MineSim_正式交接包_20260918_停工版V1/evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "original_member": "minesim_dual_subtree_h8_smoke_v1/release/subtree_reuse.py",
+    "package_path": "source_code/C08_subtree_reuse.py",
+    "bytes": 14097,
+    "sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532",
+    "role": "仅作为历史绑定源码/配置阅读；未执行，不代表最新V5发布源。"
+  },
+  {
+    "id": "H18L",
+    "original_archive": "H18",
+    "original_member": "MineSim_正式交接包_20260918_停工版V1/EXPERIMENT_LEDGER.json",
+    "package_path": "sources/H18_原实验台账.json",
+    "bytes": 22854,
+    "sha256": "e9cc2fa4dc27efd24f02c536d542dbc98978c84cbe0419981edc89fa2240b227",
+    "role": "精确历史台账，L30待执行状态已过时；根台账另有更新注释，旧文件不改。"
+  }
+]

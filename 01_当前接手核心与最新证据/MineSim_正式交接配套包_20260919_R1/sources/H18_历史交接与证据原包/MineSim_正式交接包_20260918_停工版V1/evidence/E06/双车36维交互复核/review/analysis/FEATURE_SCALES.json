@@ -1,0 +1,290 @@
+[
+  {
+    "index": 0,
+    "name": "base26_00",
+    "min": 0.36958056688308716,
+    "max": 0.9159209132194519,
+    "std32_descriptive_not_training": 0.1958314267121585,
+    "train_fold_std_min": 0.19409045926281507
+  },
+  {
+    "index": 1,
+    "name": "base26_01",
+    "min": 0.08306732028722763,
+    "max": 0.6294077038764954,
+    "std32_descriptive_not_training": 0.19583142896779285,
+    "train_fold_std_min": 0.19409046192083595
+  },
+  {
+    "index": 2,
+    "name": "base26_02",
+    "min": 0.0840790644288063,
+    "max": 0.6304194331169128,
+    "std32_descriptive_not_training": 0.1958314311674862,
+    "train_fold_std_min": 0.19409046542441025
+  },
+  {
+    "index": 3,
+    "name": "base26_03",
+    "min": 0.18333333730697632,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.2548482756235633,
+    "train_fold_std_min": 0.24316914702274461
+  },
+  {
+    "index": 4,
+    "name": "base26_04",
+    "min": -1.0,
+    "max": 0.3333333432674408,
+    "std32_descriptive_not_training": 0.5220558605554942,
+    "train_fold_std_min": 0.4871870215178034
+  },
+  {
+    "index": 5,
+    "name": "base26_05",
+    "min": 0.699999988079071,
+    "max": 0.699999988079071,
+    "std32_descriptive_not_training": 0.0,
+    "train_fold_std_min": 0.0
+  },
+  {
+    "index": 6,
+    "name": "base26_06",
+    "min": 0.022615769878029823,
+    "max": 0.5951771140098572,
+    "std32_descriptive_not_training": 0.21862804579899497,
+    "train_fold_std_min": 0.21650687561814905
+  },
+  {
+    "index": 7,
+    "name": "base26_07",
+    "min": 0.0,
+    "max": 0.0,
+    "std32_descriptive_not_training": 0.0,
+    "train_fold_std_min": 0.0
+  },
+  {
+    "index": 8,
+    "name": "base26_08",
+    "min": 0.0,
+    "max": 0.0,
+    "std32_descriptive_not_training": 0.0,
+    "train_fold_std_min": 0.0
+  },
+  {
+    "index": 9,
+    "name": "base26_09",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.41339864235384227,
+    "train_fold_std_min": 0.3829930462415574
+  },
+  {
+    "index": 10,
+    "name": "base26_10",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.17399263633843817,
+    "train_fold_std_min": 0.0
+  },
+  {
+    "index": 11,
+    "name": "base26_11",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.4496092053105675,
+    "train_fold_std_min": 0.3829930462415574
+  },
+  {
+    "index": 12,
+    "name": "base26_12",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.4990224819584785,
+    "train_fold_std_min": 0.4948716593053935
+  },
+  {
+    "index": 13,
+    "name": "base26_13",
+    "min": 0.35109594464302063,
+    "max": 0.9249054193496704,
+    "std32_descriptive_not_training": 0.1800448297991713,
+    "train_fold_std_min": 0.1701936809638025
+  },
+  {
+    "index": 14,
+    "name": "base26_14",
+    "min": 0.0742940604686737,
+    "max": 0.6481035351753235,
+    "std32_descriptive_not_training": 0.18004483285309553,
+    "train_fold_std_min": 0.17019368766093537
+  },
+  {
+    "index": 15,
+    "name": "base26_15",
+    "min": 0.0750945657491684,
+    "max": 0.648904025554657,
+    "std32_descriptive_not_training": 0.18004483124190535,
+    "train_fold_std_min": 0.17019368549251693
+  },
+  {
+    "index": 16,
+    "name": "base26_16",
+    "min": 0.03333333507180214,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.2958548799138143,
+    "train_fold_std_min": 0.2829829754491073
+  },
+  {
+    "index": 17,
+    "name": "base26_17",
+    "min": -1.0,
+    "max": 0.3333333432674408,
+    "std32_descriptive_not_training": 0.5030290236382599,
+    "train_fold_std_min": 0.46153028923674044
+  },
+  {
+    "index": 18,
+    "name": "base26_18",
+    "min": 0.699999988079071,
+    "max": 0.699999988079071,
+    "std32_descriptive_not_training": 0.0,
+    "train_fold_std_min": 0.0
+  },
+  {
+    "index": 19,
+    "name": "base26_19",
+    "min": 0.015056950971484184,
+    "max": 0.61948561668396,
+    "std32_descriptive_not_training": 0.19776400052092552,
+    "train_fold_std_min": 0.187488865197632
+  },
+  {
+    "index": 20,
+    "name": "base26_20",
+    "min": 0.0,
+    "max": 0.0,
+    "std32_descriptive_not_training": 0.0,
+    "train_fold_std_min": 0.0
+  },
+  {
+    "index": 21,
+    "name": "base26_21",
+    "min": 0.0,
+    "max": 0.0,
+    "std32_descriptive_not_training": 0.0,
+    "train_fold_std_min": 0.0
+  },
+  {
+    "index": 22,
+    "name": "base26_22",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.3630921887069453,
+    "train_fold_std_min": 0.30929478706587094
+  },
+  {
+    "index": 23,
+    "name": "base26_23",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.33071891388307384,
+    "train_fold_std_min": 0.25753937681885636
+  },
+  {
+    "index": 24,
+    "name": "base26_24",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.33071891388307384,
+    "train_fold_std_min": 0.30929478706587094
+  },
+  {
+    "index": 25,
+    "name": "base26_25",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.4911323014219285,
+    "train_fold_std_min": 0.47915742374995496
+  },
+  {
+    "index": 26,
+    "name": "A_signed_distance_to_reference_over_own_goal",
+    "min": -0.4550307095050812,
+    "max": 0.09130966663360596,
+    "std32_descriptive_not_training": 0.19583142854088784,
+    "train_fold_std_min": 0.19409046248970915
+  },
+  {
+    "index": 27,
+    "name": "B_signed_distance_to_reference_over_own_goal",
+    "min": -0.49816209077835083,
+    "max": 0.07564739137887955,
+    "std32_descriptive_not_training": 0.18004482986535167,
+    "train_fold_std_min": 0.1701936838486147
+  },
+  {
+    "index": 28,
+    "name": "A_has_passed_reference_point",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.4990224819584785,
+    "train_fold_std_min": 0.49872285870603356
+  },
+  {
+    "index": 29,
+    "name": "B_has_passed_reference_point",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.49607837082461076,
+    "train_fold_std_min": 0.48838551182776224
+  },
+  {
+    "index": 30,
+    "name": "A_reference_eta_over_64_plus_eta",
+    "min": 0.0,
+    "max": 0.1132427379488945,
+    "std32_descriptive_not_training": 0.0352400341637101,
+    "train_fold_std_min": 0.03236007339016045
+  },
+  {
+    "index": 31,
+    "name": "B_reference_eta_over_64_plus_eta",
+    "min": 0.0,
+    "max": 0.40384241938591003,
+    "std32_descriptive_not_training": 0.08056351753874795,
+    "train_fold_std_min": 0.051907156807379465
+  },
+  {
+    "index": 32,
+    "name": "A_reference_eta_is_defined",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.4990224819584785,
+    "train_fold_std_min": 0.49872285870603356
+  },
+  {
+    "index": 33,
+    "name": "B_reference_eta_is_defined",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.49607837082461076,
+    "train_fold_std_min": 0.48838551182776224
+  },
+  {
+    "index": 34,
+    "name": "signed_A_minus_B_eta_over_64_plus_absolute_gap",
+    "min": -0.24218644201755524,
+    "max": 0.09927697479724884,
+    "std32_descriptive_not_training": 0.0478948113884741,
+    "train_fold_std_min": 0.023204207584535785
+  },
+  {
+    "index": 35,
+    "name": "both_reference_etas_defined",
+    "min": 0.0,
+    "max": 1.0,
+    "std32_descriptive_not_training": 0.4911323014219285,
+    "train_fold_std_min": 0.48838551182776235
+  }
+]

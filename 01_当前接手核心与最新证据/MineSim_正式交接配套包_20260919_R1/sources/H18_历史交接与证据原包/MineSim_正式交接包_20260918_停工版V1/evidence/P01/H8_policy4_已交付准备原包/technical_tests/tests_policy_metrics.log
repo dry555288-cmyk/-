@@ -1,0 +1,16 @@
+test_bad_time (__main__.PolicyMetrics.test_bad_time) ... ok
+test_cap_not_speed_gain (__main__.PolicyMetrics.test_cap_not_speed_gain) ... ok
+test_clearance_regression_visible (__main__.PolicyMetrics.test_clearance_regression_visible) ... ok
+test_cpu_only_is_not_wall_gain (__main__.PolicyMetrics.test_cpu_only_is_not_wall_gain) ... ok
+test_hard_failure_not_gain (__main__.PolicyMetrics.test_hard_failure_not_gain) ... ok
+test_longer_trip_not_joint_gain (__main__.PolicyMetrics.test_longer_trip_not_joint_gain) ... ok
+test_native_parity_ignores_only_timing_and_reuse (__main__.PolicyMetrics.test_native_parity_ignores_only_timing_and_reuse) ... ok
+test_native_parity_rejects_different_action (__main__.PolicyMetrics.test_native_parity_rejects_different_action) ... ok
+test_no_samples (__main__.PolicyMetrics.test_no_samples) ... ok
+test_percentile (__main__.PolicyMetrics.test_percentile) ... ok
+test_strict_joint (__main__.PolicyMetrics.test_strict_joint) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.000s
+
+OK

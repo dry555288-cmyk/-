@@ -1,0 +1,84 @@
+"""Exact memoization of longitudinal action reports, not MCTS statistics.
+
+Every request still validates the full vehicle state. Only successful pure
+reports are cached. Returned dictionaries are fresh copies. Configuration,
+state types, float bit-representations, and action mappings are in the key.
+No geometry, collision sampling, reward, RNG, Q, visits or horizon is changed.
+"""
+from __future__ import annotations
+from collections import OrderedDict
+from dataclasses import fields, is_dataclass
+from enum import Enum
+import copy
+import math
+
+
+def identity(x):
+    """Type-sensitive, exact key; no rounded coordinates or time buckets."""
+    typ=(type(x).__module__, type(x).__qualname__)
+    if isinstance(x, Enum): return ('enum',typ,identity(x.value))
+    if x is None: return ('none',)
+    if type(x) is bool: return ('bool',x)
+    if type(x) is int: return ('int',x)
+    if type(x) is float:
+        if math.isnan(x): raise ValueError('NAN_CACHE_KEY')
+        return ('float',x.hex())
+    if type(x) is str: return ('str',x)
+    if is_dataclass(x) and not isinstance(x,type):
+        return ('dataclass',typ,tuple((f.name,identity(getattr(x,f.name))) for f in fields(x)))
+    if type(x) in (tuple,list):return (typ,tuple(identity(v) for v in x))
+    if type(x) is dict:
+        return ('dict',tuple(sorted(((identity(k),identity(v)) for k,v in x.items()),key=repr)))
+    raise TypeError('UNSUPPORTED_EXACT_KEY:'+repr(typ))
+
+
+class ExactReportCache:
+    def __init__(self,model,*,enabled,capacity=4096):
+        if type(enabled) is not bool or type(capacity) is not int or capacity<1:
+            raise ValueError('CACHE_CONFIG')
+        self.model=model; self.enabled=enabled; self.capacity=capacity
+        self.original=model.action_report
+        self.had_override='action_report' in model.__dict__
+        self.previous_override=model.__dict__.get('action_report')
+        self.entries=OrderedDict(); self.config_key=None; self.decision=-1
+        self.stats={'requests':0,'full_report_evaluations':0,'hits':0,
+                    'cross_decision_hits':0,'evictions':0,'config_invalidations':0,
+                    'additional_validation_calls':0}
+        self._installed=False
+    def install(self):
+        if self._installed:raise RuntimeError('CACHE_ALREADY_INSTALLED')
+        self.model.action_report=self.report;self._installed=True
+    def close(self):
+        if self._installed:
+            if self.had_override:self.model.action_report=self.previous_override
+            else:del self.model.__dict__['action_report']
+        self._installed=False;self.entries.clear()
+    def begin_decision(self,n):self.decision=n
+    def report(self,state):
+        self.stats['requests']+=1
+        if not self.enabled:
+            self.stats['full_report_evaluations']+=1
+            return self.original(state)
+        # Invalid inputs are never hidden by a previous successful cache entry.
+        self.stats['additional_validation_calls']+=1
+        self.model.validate(state)
+        module_globals=self.original.__func__.__globals__
+        config=identity((self.model.cfg,self.model.goal_window_m,
+                         self.model.action_to_accel,module_globals['ACTION_ACCEL'],
+                         module_globals['VERSION']))
+        if config!=self.config_key:
+            if self.config_key is not None:self.stats['config_invalidations']+=1
+            self.entries.clear();self.config_key=config
+        key=identity(state)
+        if key in self.entries:
+            saved,epoch=self.entries.pop(key);self.entries[key]=(saved,epoch)
+            self.stats['hits']+=1
+            if epoch<self.decision:self.stats['cross_decision_hits']+=1
+            return copy.deepcopy(saved)
+        self.stats['full_report_evaluations']+=1
+        report=self.original(state)  # Do not cache exceptions or invalid records.
+        self.entries[key]=(copy.deepcopy(report),self.decision)
+        if len(self.entries)>self.capacity:
+            self.entries.popitem(last=False);self.stats['evictions']+=1
+        return report
+    def snapshot(self):return dict(self.stats,entries=len(self.entries),decision=self.decision)

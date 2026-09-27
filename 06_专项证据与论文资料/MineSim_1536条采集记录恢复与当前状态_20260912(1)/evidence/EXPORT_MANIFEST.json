@@ -1,0 +1,450 @@
+{
+  "ARCHIVES_METADATA_ONLY.json": {
+    "sha256": "2421787ef605521b59e8a605e2f90fbc8a7dfb9a95f8808ddb33501a24ef7590",
+    "size": 1182
+  },
+  "EXPORT_PLAN.json": {
+    "sha256": "1d4c7367228455996d6e7120f2399167e5affd0dfc19ea55b5ded2b9e97a65ff",
+    "size": 18193
+  },
+  "RC.txt": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2
+  },
+  "README.txt": {
+    "sha256": "91a0be90c21060b986cd2eda7cd163b09939d936953c8d1137accca55568ba37",
+    "size": 342
+  },
+  "REQUEST.json": {
+    "sha256": "cb3cdc551b5ec94d930e77bd5713e4fa482b403d937cd7c2864f984a62b39790",
+    "size": 256
+  },
+  "RESULT.json": {
+    "sha256": "5f40749f7adf692f371205419cc0a8bddc0e2b92fcff7c0480c6e8171f8f4810",
+    "size": 679
+  },
+  "SOURCE_CAPTURE_MANIFEST.json": {
+    "sha256": "30bfd6182e6c182256aa5fb99401cf70cdb0ae81e282e7b00ab092ffbe1a29bf",
+    "size": 105725
+  },
+  "exporter_source.py": {
+    "sha256": "4fa99b834bd52099871f5e583423f349e07a8b84954c46263448c7db7c3b1cf1",
+    "size": 33083
+  },
+  "sources/data/minesim_confirmation768_parallel_v1.screen.log": {
+    "sha256": "36fe82cc38630dddf7e1dd9b25b0c65695e973a742d85db7e04ae3f049245a0a",
+    "size": 19959
+  },
+  "sources/data/minesim_confirmation768_parallel_v1.screen_rc.txt": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/AUTHORIZATION.json": {
+    "sha256": "b7fe8ce5aecfc27c34d32f43935798d759a6612a005a9742f4c69f0e90674a1e",
+    "size": 1562
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/CAPTURE.json": {
+    "sha256": "d28202b746a8adb55d6e7e074943e70e1b36968f182db53b9863ffcbe9b43d58",
+    "size": 156
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/COLLECTION_AUDIT.json": {
+    "sha256": "5fdaf32740702c1e8a563ed26c5daab6838a1a0b4279b1d4637f9f04f80276cc",
+    "size": 162994
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/IMPORT_PROBE.stderr.txt": {
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/IMPORT_PROBE.stdout.txt": {
+    "sha256": "7191da282c0e32a8c83d88ca12b8dab866d8a1b6c49d84e11b260ae5c7c0696e",
+    "size": 2977
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/MANIFEST.json": {
+    "sha256": "6ef869b9e79653b5888ebdd9ddba34510725898682972a9279554b5e040f7da5",
+    "size": 845760
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/POSTCHECK.json": {
+    "sha256": "7489f0d25d5eee67c80d3e56e313a768ba1a062a823d53b7766d71d8945898df",
+    "size": 282915
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/PREFLIGHT.json": {
+    "sha256": "e7fb2e010db917f2499c08a56f037d3b2cf135e009309190891b76d00bc5b6aa",
+    "size": 284791
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/RC.txt": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/RESULT.json": {
+    "sha256": "56c32fc7520532ae4df6cca0cbd66b56dc9212adae0c52a4a303cb44a4e7bf86",
+    "size": 1040
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/SCHEDULE.json": {
+    "sha256": "c46cca0abff73537dfb393c48521ccd7b12c7f6ce5f54485d405c48f256ebb52",
+    "size": 379572
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/SEED_LEASE.json": {
+    "sha256": "d54760696b0fd2cd232e06bb0ad6c222c0e3df5907c94d8cd0f944f322df2a54",
+    "size": 427
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/START.json": {
+    "sha256": "4c0844ed8a9ba0f20c2e1d49110a53f4620dcb2bf0755c90af6c81fec71979d5",
+    "size": 266
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/BINDINGS_LIVE_FILES.json": {
+    "sha256": "e8f92f8cad7617012773970d2c78cccc5869ff62c1403993c3ab649f7a01a0fd",
+    "size": 238350
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SCHEDULE.json": {
+    "sha256": "c46cca0abff73537dfb393c48521ccd7b12c7f6ce5f54485d405c48f256ebb52",
+    "size": 379572
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/CONFIRMATION_SPEC.json": {
+    "sha256": "e1e7f5077cbef11fa76e4b9736e77b9693d3203fcf39258ff50c70f21d324296",
+    "size": 20361
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/EXECUTION_PAYLOAD_MANIFEST.json": {
+    "sha256": "fb14ca6faedf7623b58f35e37f4feb7b9da3de3d366d64fa6cdf86a1adcb644b",
+    "size": 16337
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/PAYLOAD_MANIFEST.json": {
+    "sha256": "2023daf5477c712c027a9d559ef73f67073f2915a5db9973c684a0cea900d7e4",
+    "size": 14483
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/RELEASE_PROTOCOL.json": {
+    "sha256": "7663f7080c0a6eb215068dc9a11c98fa95ce71693287ee7dc6a15080ccb49a11",
+    "size": 396512
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/REVIEWED_COLLECTORS.json": {
+    "sha256": "4b7495fdd50f0239c58b02c0c23704ee0bf0e1c0a3a667fa6c1a7917207a0610",
+    "size": 688
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/SOURCE_BINDINGS.json": {
+    "sha256": "69d052671f8fbf09efaa530e95de5c34749792a9ae6a66c126ff0747dcb25ca0",
+    "size": 19435
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/WORKER_ASSIGNMENTS.json": {
+    "sha256": "b7567aad020887a47fdc3dfd9b870eda48927b89b243ce3e260450d5a2ce810d",
+    "size": 25370
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/ALL_PAIRS_1440.json": {
+    "sha256": "43bc556321f735c5e4dddaba68c03a979a3a894fe4883dffac94e531f8c7a66a",
+    "size": 1015182
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_FREEZE.json": {
+    "sha256": "55f361244034f2cf52458fa24cd17616dc3c0aa6eec38e580978d04f08b18cad",
+    "size": 2034
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/CANDIDATE_LIMITATIONS_AND_SPLIT_SUPPORT.json": {
+    "sha256": "c613634728bf825f75ed8b67a0dadb848d891821853c67ddfc74366e4cc632c0",
+    "size": 3527
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/CONFIRMATION_HANDOFF.json": {
+    "sha256": "24f646250edda850e74d86bd87bc46b6e073cba1e1c8ad54c5c593343babfeed",
+    "size": 1331
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/DISCOVERY_CANDIDATES.json": {
+    "sha256": "8fec4366c6988f2c539534b8b04c55bd9133f05101082190fb77c47fab6c9446",
+    "size": 193904
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/EPISODE_SPLITS_DESIGN.json": {
+    "sha256": "7edb2ee0dff2666e9f5bc54279de6eb3b627251facdf9773dc5ad886430584c7",
+    "size": 4382
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/OBSERVATIONS_768.json": {
+    "sha256": "f01471cf9c2609995fa221868df4f0376eda2cca669972e93dc36f6248d76294",
+    "size": 896221
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/PLANNED_CELLS_1536.csv": {
+    "sha256": "bdbeddbdbea68dec9980d419b07b7cd0d43a14595ca182a045d3c901be65fa39",
+    "size": 138116
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/PROTOCOL.json": {
+    "sha256": "6e4d327e3a109e9e6e979ac902f23c0aaaf7bf5317f10085058d3e9383fe397b",
+    "size": 15581
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/SELECTED_12_ROOTS_DESIGN.json": {
+    "sha256": "52b1294141230f4b927473f22451b0e8e49d615761cb9ed5fcd48b70cb58c5b3",
+    "size": 11377
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/prior_DISCOVERY_LEDGER_768.json": {
+    "sha256": "efc04e51e2328351f3c7035a94a28baa2852af17004de98ffcea56e1928465f4",
+    "size": 853788
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/bundle/frozen/protocol_reference_frozen.py": {
+    "sha256": "9767fa134c7478ae7a48232e8431c32e8cd3bd6be62ae2d19520d9ac32955a49",
+    "size": 8444
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/PHASE_RESULT.json": {
+    "sha256": "41168ec26d1c3d858a75f36090bdaa9d6ee5b080e6c768147b71a1a44b92a179",
+    "size": 189
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/PROCESSES.json": {
+    "sha256": "67e6c3691497022d7adf6387be8079e069212bc1530e235d87139951059150aa",
+    "size": 379684
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl": {
+    "sha256": "3b7a8c841203d43733c9f9749708fe185e621ce15f8e5b7568911f982bbb3ecb",
+    "size": 35096
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_0/RESULT.json": {
+    "sha256": "da6ef8cdaaa774d81b9fe5f4baecbdecdd12cacd92c5c420f8ea5bc547775103",
+    "size": 6534
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_0/START.json": {
+    "sha256": "6c1291b11d0f02a13878a35867454b334a65f2fa9d14e1039e7a1048f0b5545d",
+    "size": 95016
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl": {
+    "sha256": "add402e4b52be221cdda3b63773f667ce5ad92631aed761e3b662b22a6525340",
+    "size": 35087
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_1/RESULT.json": {
+    "sha256": "95bdbb12b3a41bf18dfd2b09d1b32ba534255cdfa8cadedaf5e3461fcee310e5",
+    "size": 6534
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_1/START.json": {
+    "sha256": "583686f8dc7411f7ba52b9184c8a05fc4fafa4da94c184f418373ab7f40c05b7",
+    "size": 95016
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl": {
+    "sha256": "c2fe2c409ac7bee3b1911e19d5d215c6a8d846a8812e3a7c4dba0636810c5273",
+    "size": 35088
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_2/RESULT.json": {
+    "sha256": "81f938b5bd6662ff6df1f78b101de3974d8c25a4c8d380ed6be6aac13093f8d1",
+    "size": 6533
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_2/START.json": {
+    "sha256": "f4df62f62c62c9c357fa724bf949764f11c6654e0f22778cb82ee3aba7693924",
+    "size": 95017
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl": {
+    "sha256": "a9f19ea67b33b3fdcd2acc3b377a6a7abedf062f2e116a9acbb518cb7c51b68d",
+    "size": 35106
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_3/RESULT.json": {
+    "sha256": "a677a99eb8922d6f391c2268a4737d6df068f7cd547e6517e6e327d329f03ddd",
+    "size": 6533
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/parallel/workers/worker_3/START.json": {
+    "sha256": "183c914934db991def1531cd349f26cde08f9105f35674a5a62886dc3d5bebff",
+    "size": 95017
+  },
+  "sources/data/minesim_confirmation768_parallel_v1/runner.py.txt": {
+    "sha256": "92e95de0558783ab5678687d51aba207f8c4d1cbd4d3850f037243fd4faaa37e",
+    "size": 1590799
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1.screen.log": {
+    "sha256": "922ae1407bf6043b80ee5e7bca29912b0720c8c0fcd0d51ca5281635d1d4ca31",
+    "size": 8232
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1.screen_rc.txt": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/AUTHORIZATION.json": {
+    "sha256": "5a384511b4f0e4545f04c17adb396cdfe5d3df736a7267b6dfd118ddbeed39f0",
+    "size": 1164
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/CAPTURE.json": {
+    "sha256": "adee012ddaead53145dbc7a1544fc87743e679ec350dcc8662d94a545db0a199",
+    "size": 290
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/JOIN_VALIDATION.json": {
+    "sha256": "a8920ffd3aae96d2c28f78a4555f1781ceae45fa7133f0647b1fe08352b6ba13",
+    "size": 661
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/MANIFEST.json": {
+    "sha256": "b2e4a0e6eb25f45867ed04d9f7f80175d2b71a4042e3e02d9c8dda664e2229be",
+    "size": 18419
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/POSTCHECK.json": {
+    "sha256": "1ab7ab3a95b8b969d3d361a17733737e8d38370b1f0ebbba0173d6c5f8432a33",
+    "size": 199
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/PREFLIGHT.json": {
+    "sha256": "9cdefe319531b2a486509ecc62ec3d24ef131c65c3f970a6644db091bf54f64d",
+    "size": 7580
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/PROGRESS.jsonl": {
+    "sha256": "bfbcd5c6606b4b9ffb57b0e23864a3921c600eb212e5a7f6a5197ae88b9891fc",
+    "size": 5972
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/RC.txt": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/RECONSTRUCTED_CONTEXT.json": {
+    "sha256": "4a387771453b8bac21c86efa31867d5d4f0f432e0ad682ff5433a7a21228c140",
+    "size": 884
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/REQUEST.json": {
+    "sha256": "94c696f2d86ea3f794df3787a59f2dc15f8254a998a483bc4c97ff4e453842f5",
+    "size": 253
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/RESULT.json": {
+    "sha256": "27ed371824ed5d129e8e03006198d1660d38869128c3d92f962e5ee4a53ec4dc",
+    "size": 881
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/START.json": {
+    "sha256": "800099f99ccb0b94659bbbe6f7f358534c1ead2b34df572f1f9aaef7faa1310b",
+    "size": 447
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/STATIC_INPUT_CHECK.json": {
+    "sha256": "bed31b3ae49ae1a1513410cfedf53f09171203a813ec955e70d896c781267ccb",
+    "size": 1163
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/CELL_START.json": {
+    "sha256": "cdd6c9ca9f39ccccb1f3e2f19ac83389b4904f9621a41d6594d3c170c8d98b4d",
+    "size": 565
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/COMMIT.json": {
+    "sha256": "3992732f4201e8327259a220e508d00fce9a5a1421acd049b8cad7c494861a9c",
+    "size": 1162
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/RESOLVED_CONTEXT.json": {
+    "sha256": "4ead99e9617aa1ca66d6eee052de7d36cf737c9b84ca05d14cfda3625d8246d7",
+    "size": 884
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/events.jsonl": {
+    "sha256": "4a896f817da9779e4170c9015688baa72518afcee92ff5b0899aa0e5f66650f7",
+    "size": 263767
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/metric_view.json": {
+    "sha256": "e103f7af5e017ec3939cab0cd6da5118cb7fb4ca574a6853172097f9acce4f16",
+    "size": 191877
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/metrics.json": {
+    "sha256": "21adf0dfba3952219f5c758c32b87721264c8422c49a58f6e1da8f04c07a38db",
+    "size": 4450
+  },
+  "sources/data/minesim_discovery_cell377_tail_continuation_v1/cell/trace.json": {
+    "sha256": "da523d091966f27b60b67866bac79b5271b65ff2f0b067a8880556018e6ada7d",
+    "size": 219533
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1.screen.log": {
+    "sha256": "7f7157a3cb35d42c5390cc5f4dd7daa59a0accdf832f62fe1d43c827a150783e",
+    "size": 25131
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1.screen_rc.txt": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/AUTHORIZATION.json": {
+    "sha256": "1fef964c90d103b19abe69d3841b28222a35f3a48d7aa3670cb9198129197314",
+    "size": 1623
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/CAPTURE.json": {
+    "sha256": "beb7405b2a101db190a74e3be2c588fb78d8223ee46a77d82b99c2359a3ab3c3",
+    "size": 166
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/CELL_LEASE.json": {
+    "sha256": "496fd9756bfa95427cbcc8ad794072b4ceb836a0eab6b20023f357eb057329c4",
+    "size": 12064
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/COLLECTION_AUDIT.json": {
+    "sha256": "70cfc0d08a92faaa6473180f91edee914df310f5096ae6f817b39e120a46b6bb",
+    "size": 82350
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/MANIFEST.json": {
+    "sha256": "f2cdbc0fbd1fc663977fa9cdceaa501f73a9a25e36947d02cb239e579848c76e",
+    "size": 425224
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/POSTCHECK.json": {
+    "sha256": "635990545c8eed99c7b8fb842db9a3d6e2ab2ec5a45bf2a8563b4ff213986076",
+    "size": 3121
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/PREFLIGHT.json": {
+    "sha256": "8930e0766d768bab83b0f10bbebe08ff48fc6d4d67737cd6bfcfc1ea56c267f9",
+    "size": 3416
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/RC.txt": {
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa",
+    "size": 2
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/RESULT.json": {
+    "sha256": "21099e6f846e5a05e904edee79bd264011dd1c8c2931c29accb2ed9e29c19e88",
+    "size": 928
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/SCHEDULE.json": {
+    "sha256": "0aea1f06607d462e08cc80a61d4e644d8c44d608265c26add95558458a61b8a4",
+    "size": 191368
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/START.json": {
+    "sha256": "0bbec6f7fcf44587c9c2717e7cb8d39fb1bdbe4f2b7e4cd2959201bb13fbcbcc",
+    "size": 292
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/bundle/BOUNDARY.json": {
+    "sha256": "55520800929ab5e6d67aa711f3e5ea6df1f9cecf5871851e2f5717eb51092b13",
+    "size": 427315
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/bundle/MANIFEST.json": {
+    "sha256": "fbb54ace5620585b43117be4c1b33f921ddcffa02d3b42bd19f2a50e5ab7de76",
+    "size": 10463
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/bundle/PROTOCOL.json": {
+    "sha256": "00434567b3fbe351922300b8ded2f4728cc0b86f9dc2ce8ce7ef6ad6edc216ba",
+    "size": 210021
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/PHASE_RESULT.json": {
+    "sha256": "a33ab9637d17826564dbc2f2acec23d80d7f0c22cf103069151e27185c30543f",
+    "size": 185
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/PROCESSES.json": {
+    "sha256": "4bec9eb8ed81bcab7561bb60aa15a50da33f1c308cd38c62de84870ac1f05377",
+    "size": 191480
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/PROGRESS.jsonl": {
+    "sha256": "09f3459a29fcc63572f0324c47fdb3a426cb48bf60120a63de72982a1e2662df",
+    "size": 17599
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/RESULT.json": {
+    "sha256": "b7a54e58ab6ce434180cbc818aa5d9b62173fdaae1e6adab4e927230b40014ed",
+    "size": 3103
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_0/START.json": {
+    "sha256": "7054a045b7df5578a88e13749bfb757f87a57748c97569e8bda11e15cb739dc2",
+    "size": 47718
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/PROGRESS.jsonl": {
+    "sha256": "7bbed2fad45df116f1e704d461087a3d4e4470cadf7007659bdfbdfca395702e",
+    "size": 17584
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/RESULT.json": {
+    "sha256": "4bf7597616487a7932520f2aae47d018b363896fa92f5d765f129776c5195256",
+    "size": 3104
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_1/START.json": {
+    "sha256": "da83898e96d01ab6204058f95047f1ebb1f1b718227e92a7103cc1d161f602f9",
+    "size": 47718
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/PROGRESS.jsonl": {
+    "sha256": "86546ac8f79be8059d5e1ce5a83bebae61881815b74441402cb259709bac5af0",
+    "size": 17744
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/RESULT.json": {
+    "sha256": "747495ea242070efe65545305621ca5ff4335ebfb2f6104c077ef4a05ab194b2",
+    "size": 3134
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_2/START.json": {
+    "sha256": "fcc700973778ad9eb952337fd7c5c970f291591dcf499ef739a7b7603a7e0fe5",
+    "size": 48207
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/PROGRESS.jsonl": {
+    "sha256": "4853044de5020e48ab5434a983534f50bb5444138af188269a643e4ebf77b2ea",
+    "size": 17768
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/RESULT.json": {
+    "sha256": "765775dadd46d1f74701fc23838bbfd0324ffdfc460a0029e007f1a563662c26",
+    "size": 3134
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/parallel/workers/worker_3/START.json": {
+    "sha256": "ba35024e65f0baf2553c775c5f1bbaa04bd60482a4358a3e78de8bd1d4c9c532",
+    "size": 48207
+  },
+  "sources/data/minesim_discovery_remaining390_parallel_v1/runner.py.txt": {
+    "sha256": "6b48aee4276f498d611f11cabf1c23ae0e1ee17ec50d9acc2e9a3a8b8c7241b1",
+    "size": 1183244
+  }
+}

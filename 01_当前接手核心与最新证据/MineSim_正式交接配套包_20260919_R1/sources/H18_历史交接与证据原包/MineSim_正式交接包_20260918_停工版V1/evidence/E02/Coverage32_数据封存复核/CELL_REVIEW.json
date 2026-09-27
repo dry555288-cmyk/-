@@ -1,0 +1,2562 @@
+[
+  {
+    "cell_id": "coverage_policy_00__step0028__a03__r82000",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 53,
+    "searches": 52,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.52806235851671,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a03__r82001",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 54,
+    "searches": 53,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.36353800695347,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a03__r82002",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 52,
+    "searches": 51,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.63871787320471,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a03__r82003",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 52,
+    "searches": 51,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.75240249667121,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a03__r82004",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 55,
+    "searches": 54,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 56.98386308957286,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a03__r82005",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 53,
+    "searches": 52,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.69427707261334,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a03__r82006",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 53,
+    "searches": 52,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.368608571127794,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a03__r82007",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 56,
+    "searches": 55,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 56.23099987958817,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a30__r82000",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.51123314554614,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a30__r82001",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.89258487442217,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a30__r82002",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.40434997678055,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a30__r82003",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.89579689747358,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a30__r82004",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.3668055948048,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a30__r82005",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.289099913764815,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a30__r82006",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 52,
+    "searches": 51,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.76685114311177,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0028__a30__r82007",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0028",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.960100300247504,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a03__r82000",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 39,
+    "searches": 38,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.46309841320873,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a03__r82001",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 40,
+    "searches": 39,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.685128089438436,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a03__r82002",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 39,
+    "searches": 38,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.70486104497568,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a03__r82003",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 39,
+    "searches": 38,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.801561300111295,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a03__r82004",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 39,
+    "searches": 38,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.686163133993986,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a03__r82005",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 39,
+    "searches": 38,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.562634637101006,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a03__r82006",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 39,
+    "searches": 38,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.621193104026545,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a03__r82007",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 40,
+    "searches": 39,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.240862629616004,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a30__r82000",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 38,
+    "searches": 37,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.873008626368204,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a30__r82001",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 38,
+    "searches": 37,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.79293952476013,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a30__r82002",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 38,
+    "searches": 37,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.65741959244278,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a30__r82003",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 38,
+    "searches": 37,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.49692089558562,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a30__r82004",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 37,
+    "searches": 36,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.16075631194114,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a30__r82005",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 37,
+    "searches": 36,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.2448364491002,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a30__r82006",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 38,
+    "searches": 37,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.481665941602884,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0040__a30__r82007",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0040",
+    "steps": 38,
+    "searches": 37,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.393251268771934,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a03__r82000",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 33.9655504495746,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a03__r82001",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 13,
+    "searches": 12,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 33.86962258425317,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a03__r82002",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 13,
+    "searches": 12,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 33.86962258425317,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a03__r82003",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 13,
+    "searches": 12,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 33.731118358353875,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a03__r82004",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 13,
+    "searches": 12,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 33.86962258425317,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a03__r82005",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.07252354399851,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a03__r82006",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 13,
+    "searches": 12,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 33.86962258425317,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a03__r82007",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.07252354399851,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a30__r82000",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.17761250457501,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a30__r82001",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.17761250457501,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a30__r82002",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.089805408956224,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a30__r82003",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.17761250457501,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a30__r82004",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.17761250457501,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a30__r82005",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.17761250457501,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a30__r82006",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.17761250457501,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_00__step0065__a30__r82007",
+    "source_run": "policy_00",
+    "root_id": "coverage_policy_00__step0065",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.17761250457501,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a03__r82000",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 69,
+    "searches": 68,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 55.89692349344023,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a03__r82001",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 74,
+    "searches": 73,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.42893013468634,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a03__r82002",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 74,
+    "searches": 73,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.4225260107028,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a03__r82003",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 80,
+    "searches": 79,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 51.267958113834865,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a03__r82004",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 70,
+    "searches": 69,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 55.83650896478285,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a03__r82005",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 128,
+    "searches": 127,
+    "outcome": "EVALUATION_CAP_NOT_TASK_TERMINAL",
+    "window_return": -17.322606909093444,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a03__r82006",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 67,
+    "searches": 66,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.37485099064744,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a03__r82007",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 69,
+    "searches": 68,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 56.21633534337116,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a30__r82000",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 80,
+    "searches": 79,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.05643656540396,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a30__r82001",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 85,
+    "searches": 84,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.80930398842952,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a30__r82002",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 83,
+    "searches": 82,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 55.90522131346887,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a30__r82003",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 80,
+    "searches": 79,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.193747500296716,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a30__r82004",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 94,
+    "searches": 93,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 49.83594992859614,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a30__r82005",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 98,
+    "searches": 97,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 49.740958746187566,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a30__r82006",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 79,
+    "searches": 78,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.365414703991725,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0014__a30__r82007",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0014",
+    "steps": 87,
+    "searches": 86,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.22691612421741,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a03__r82000",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 66,
+    "searches": 65,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.6867347224001,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a03__r82001",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 70,
+    "searches": 69,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.82947215540237,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a03__r82002",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 74,
+    "searches": 73,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.04558868904479,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a03__r82003",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 67,
+    "searches": 66,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.830373131500444,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a03__r82004",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 69,
+    "searches": 68,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.94983824787494,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a03__r82005",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 70,
+    "searches": 69,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.57543087648241,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a03__r82006",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 67,
+    "searches": 66,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.46761166570252,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a03__r82007",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 68,
+    "searches": 67,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.59527058793729,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a30__r82000",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 80,
+    "searches": 79,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 49.77578579378498,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a30__r82001",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 72,
+    "searches": 71,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.943579738264404,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a30__r82002",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 73,
+    "searches": 72,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.56977054893949,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a30__r82003",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 71,
+    "searches": 70,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.92611663143759,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a30__r82004",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 75,
+    "searches": 74,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.37778604956842,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a30__r82005",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 71,
+    "searches": 70,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.29103077470371,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a30__r82006",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 69,
+    "searches": 68,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.03421953733563,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0040__a30__r82007",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0040",
+    "steps": 75,
+    "searches": 74,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 51.871307695883985,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a03__r82000",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.738202136025066,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a03__r82001",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 49,
+    "searches": 48,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.818838471031235,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a03__r82002",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 49,
+    "searches": 48,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 48.013961404305434,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a03__r82003",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 52,
+    "searches": 51,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.23936279681383,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a03__r82004",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 53,
+    "searches": 52,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.12233171068298,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a03__r82005",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 49,
+    "searches": 48,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.720718231947096,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a03__r82006",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.76431080702594,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a03__r82007",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.51769846582995,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a30__r82000",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 48.0762766446794,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a30__r82001",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.60869713657685,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a30__r82002",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.77746059255627,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a30__r82003",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.961791417641265,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a30__r82004",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.96914646604391,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a30__r82005",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 52,
+    "searches": 51,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.363651186416995,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a30__r82006",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 53,
+    "searches": 52,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.00871046418825,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_01__step0059__a30__r82007",
+    "source_run": "policy_01",
+    "root_id": "coverage_policy_01__step0059",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.48895440898121,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a03__r82000",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.15070774716906,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a03__r82001",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.35704822329726,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a03__r82002",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.55475191647631,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a03__r82003",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.64958398963414,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a03__r82004",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.11675899893492,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a03__r82005",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.25653934975747,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a03__r82006",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.37763255844469,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a03__r82007",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 50,
+    "searches": 49,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.60785500164783,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a30__r82000",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 54,
+    "searches": 53,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 45.96231317259637,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a30__r82001",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 53,
+    "searches": 52,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.22598320971185,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a30__r82002",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 53,
+    "searches": 52,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.30621320679561,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a30__r82003",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.92566410173098,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a30__r82004",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 54,
+    "searches": 53,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 45.92945281734383,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a30__r82005",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 52,
+    "searches": 51,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.537878715774596,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a30__r82006",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 51,
+    "searches": 50,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.93090792864097,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_02__step0063__a30__r82007",
+    "source_run": "policy_02",
+    "root_id": "coverage_policy_02__step0063",
+    "steps": 52,
+    "searches": 51,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.48560867824798,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a03__r82000",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.98152162707004,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a03__r82001",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.69016178438729,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a03__r82002",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.94226361634017,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a03__r82003",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.97120722621379,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a03__r82004",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.734407383028596,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a03__r82005",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.8147316309212,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a03__r82006",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.86160405968325,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a03__r82007",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.51262545096779,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a30__r82000",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 46,
+    "searches": 45,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.381210058950515,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a30__r82001",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 47,
+    "searches": 46,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.45478648973286,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a30__r82002",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.11224973676467,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a30__r82003",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 47,
+    "searches": 46,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.40965074726767,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a30__r82004",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.21809548100104,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a30__r82005",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.028076974960044,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a30__r82006",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 46,
+    "searches": 45,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.55794991301135,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_03__step0061__a30__r82007",
+    "source_run": "policy_03",
+    "root_id": "coverage_policy_03__step0061",
+    "steps": 46,
+    "searches": 45,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.42686558958829,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a03__r82000",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 72,
+    "searches": 71,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.906931675031885,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a03__r82001",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 59,
+    "searches": 58,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.38696520672911,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a03__r82002",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 59,
+    "searches": 58,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.43092988666692,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a03__r82003",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 61,
+    "searches": 60,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.18708128403767,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a03__r82004",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 59,
+    "searches": 58,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.74794005402383,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a03__r82005",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 59,
+    "searches": 58,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.23084224890017,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a03__r82006",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 62,
+    "searches": 61,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 56.970892039986936,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a03__r82007",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 60,
+    "searches": 59,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.78700107304443,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a30__r82000",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 59,
+    "searches": 58,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.08758259285291,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a30__r82001",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 58,
+    "searches": 57,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.46013984208559,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a30__r82002",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 60,
+    "searches": 59,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.407565422922225,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a30__r82003",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 61,
+    "searches": 60,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.101020967900745,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a30__r82004",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 59,
+    "searches": 58,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.78371923617671,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a30__r82005",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 59,
+    "searches": 58,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.658887622044986,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a30__r82006",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 58,
+    "searches": 57,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 58.11803876878109,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0017__a30__r82007",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0017",
+    "steps": 59,
+    "searches": 58,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.822628177133694,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a03__r82000",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 51.709916427570185,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a03__r82001",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.52930378509491,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a03__r82002",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.13355175888136,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a03__r82003",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.087750537001384,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a03__r82004",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.42326185064807,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a03__r82005",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 37,
+    "searches": 36,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.12238930328061,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a03__r82006",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 51.99486179603334,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a03__r82007",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.649689160224334,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a30__r82000",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.021562588779645,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a30__r82001",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.205020274554805,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a30__r82002",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 35,
+    "searches": 34,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.439911960442366,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a30__r82003",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.365881313018406,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a30__r82004",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.41156801171287,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a30__r82005",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.233787855655535,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a30__r82006",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.020948483024355,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0038__a30__r82007",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0038",
+    "steps": 36,
+    "searches": 35,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.29037172119616,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a03__r82000",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.163432221496656,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a03__r82001",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.03911780131015,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a03__r82002",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.220724477340895,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a03__r82003",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.03911780131015,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a03__r82004",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.220724477340895,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a03__r82005",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.163432221496656,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a03__r82006",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.163432221496656,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a03__r82007",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.03911780131015,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a30__r82000",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.10372544276093,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a30__r82001",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.10372544276093,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a30__r82002",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.10372544276093,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a30__r82003",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.10372544276093,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a30__r82004",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.10372544276093,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a30__r82005",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.10372544276093,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a30__r82006",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.10372544276093,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_04__step0061__a30__r82007",
+    "source_run": "policy_04",
+    "root_id": "coverage_policy_04__step0061",
+    "steps": 12,
+    "searches": 11,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 34.10372544276093,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a03__r82000",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 70,
+    "searches": 69,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.62841005060366,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a03__r82001",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 64,
+    "searches": 63,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.93098052660515,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a03__r82002",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 77,
+    "searches": 76,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.062954873742356,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a03__r82003",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 65,
+    "searches": 64,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.6336860474827,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a03__r82004",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 65,
+    "searches": 64,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 57.56521086276505,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a03__r82005",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 62,
+    "searches": 61,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 59.886487012251635,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a03__r82006",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 79,
+    "searches": 78,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 51.86943009867568,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a03__r82007",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 73,
+    "searches": 72,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.63740529495981,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a30__r82000",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 98,
+    "searches": 97,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.63289954083377,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a30__r82001",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 90,
+    "searches": 89,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 51.283236997290594,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a30__r82002",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 128,
+    "searches": 127,
+    "outcome": "EVALUATION_CAP_NOT_TASK_TERMINAL",
+    "window_return": -19.65237266423712,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a30__r82003",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 86,
+    "searches": 85,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.38933138886912,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a30__r82004",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 87,
+    "searches": 86,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.30670453388969,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a30__r82005",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 128,
+    "searches": 127,
+    "outcome": "EVALUATION_CAP_NOT_TASK_TERMINAL",
+    "window_return": -17.650033524160214,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a30__r82006",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 89,
+    "searches": 88,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 52.08880496110676,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0011__a30__r82007",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0011",
+    "steps": 85,
+    "searches": 84,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.00763181681178,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a03__r82000",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.225870605247785,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a03__r82001",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.55680535342262,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a03__r82002",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 46,
+    "searches": 45,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.28933021206948,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a03__r82003",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.22252965282249,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a03__r82004",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 47,
+    "searches": 46,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.8801449549768,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a03__r82005",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 49,
+    "searches": 48,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.09884244455894,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a03__r82006",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 47,
+    "searches": 46,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 53.38648706918931,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a03__r82007",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 46,
+    "searches": 45,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.044129398038756,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a30__r82000",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 44,
+    "searches": 43,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.71960508363476,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a30__r82001",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 44,
+    "searches": 43,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.45871534461774,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a30__r82002",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 44,
+    "searches": 43,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.72104935736873,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a30__r82003",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 44,
+    "searches": 43,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.504456188026744,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a30__r82004",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 44,
+    "searches": 43,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.87954721076811,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a30__r82005",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 44,
+    "searches": 43,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.739040987073786,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a30__r82006",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.49731912228381,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0040__a30__r82007",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0040",
+    "steps": 44,
+    "searches": 43,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 54.76837172114614,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a03__r82000",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.47289259084654,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a03__r82001",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 19,
+    "searches": 18,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.24916531367362,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a03__r82002",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.51404893743955,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a03__r82003",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.45755727550534,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a03__r82004",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 19,
+    "searches": 18,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.238422591907344,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a03__r82005",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 19,
+    "searches": 18,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.19386002706226,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a03__r82006",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 19,
+    "searches": 18,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.06907868515264,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a03__r82007",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.472604412043545,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a30__r82000",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.445458076747606,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a30__r82001",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.444575957047604,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a30__r82002",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.59057675899949,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a30__r82003",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.59029146198452,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a30__r82004",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.48190427890885,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a30__r82005",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.68169059187028,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a30__r82006",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.62374636293007,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_05__step0066__a30__r82007",
+    "source_run": "policy_05",
+    "root_id": "coverage_policy_05__step0066",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.68197588888525,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a03__r82000",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.07315765327212,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a03__r82001",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.214374150760754,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a03__r82002",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.88591866521294,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a03__r82003",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.861093978827746,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a03__r82004",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.01278784086882,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a03__r82005",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.14096336600488,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a03__r82006",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.87560219833294,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a03__r82007",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 45,
+    "searches": 44,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 47.11914781231823,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a30__r82000",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 52,
+    "searches": 51,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 45.204829053541694,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a30__r82001",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 47,
+    "searches": 46,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.46952120568616,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a30__r82002",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 47,
+    "searches": 46,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.40795047640486,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a30__r82003",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.19812044628227,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a30__r82004",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 49,
+    "searches": 48,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.05270366652644,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a30__r82005",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 47,
+    "searches": 46,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.41820905822702,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a30__r82006",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.30432037726535,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_06__step0050__a30__r82007",
+    "source_run": "policy_06",
+    "root_id": "coverage_policy_06__step0050",
+    "steps": 48,
+    "searches": 47,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 46.3191089094566,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a03__r82000",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 35.99331143499169,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a03__r82001",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 35.99281399312799,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a03__r82002",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.47993178372253,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a03__r82003",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 18,
+    "searches": 17,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 35.923159002060466,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a03__r82004",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.41698546973804,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a03__r82005",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.47993178372253,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a03__r82006",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.479643604919524,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a03__r82007",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.38064274658085,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a30__r82000",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 35.89029245324137,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a30__r82001",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.43949784786506,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a30__r82002",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.38098587786506,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a30__r82003",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.44037996756506,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a30__r82004",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 35.940518417489706,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a30__r82005",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.153339266471974,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a30__r82006",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 36.44008887786506,
+    "reward_formula_max_absolute_error": 0.0
+  },
+  {
+    "cell_id": "coverage_policy_07__step0065__a30__r82007",
+    "source_run": "policy_07",
+    "root_id": "coverage_policy_07__step0065",
+    "steps": 17,
+    "searches": 16,
+    "outcome": "BOTH_PARKED_AT_OWN_DESTINATIONS",
+    "window_return": 35.87268436097579,
+    "reward_formula_max_absolute_error": 0.0
+  }
+]

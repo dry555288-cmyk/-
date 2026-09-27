@@ -1,0 +1,175 @@
+{
+  "source_zip": "/mnt/data/c52820de-e363-488d-bf00-a33d2aabd956.zip",
+  "source_sha256": "182a02856a376101c25afaef30817b415d28329bca440b94b134a33ce309eda8",
+  "review_resource": "LOW",
+  "verification": {
+    "zip_crc": "PASS",
+    "unique_zip_members": 63,
+    "manifest_entries_verified": 62,
+    "source_bindings_verified": 10,
+    "parent_manifest_links_verified": 9,
+    "source_bytes_matched_separate_parent_zip": 10,
+    "models_read_and_checked": 8,
+    "held_predictions_recomputed": 32,
+    "train_predictions_recomputed": 224,
+    "scalers_recomputed_from_training_only": 8,
+    "objectives_and_stationarity_checked": 8,
+    "saved_observations_read": 512,
+    "targets_recomputed_from_saved_observations": 32,
+    "max_prediction_absolute_difference_reward_units": 0.0,
+    "max_objective_absolute_difference": 4.336808689942018e-19,
+    "max_stationarity_norm": 1.390534448704314e-16
+  },
+  "execution_record": {
+    "rc": 0,
+    "status": "COMPLETE_DUAL32_SCALING_ABLATION_NOT_ACCELERATION_PROOF",
+    "fits_completed": 8,
+    "time_seconds": 0.0998006509616971,
+    "time_scope": "solves and model readback only; excludes preflight packaging upload",
+    "new_teacher_traces": 0,
+    "mcts_calls": 0,
+    "neural_fits": 0,
+    "automatic_retry": false,
+    "git_before_after_equal": true,
+    "git_status": "?? ^C\n"
+  },
+  "data": {
+    "states": 32,
+    "observations": 512,
+    "groups": 8,
+    "features": 36,
+    "saved_outcomes": {
+      "BOTH_PARKED_AT_OWN_DESTINATIONS": 467,
+      "EVALUATION_CAP_NOT_TASK_TERMINAL": 45
+    },
+    "data_sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+    "no_raw_rollout_replay_this_review": true
+  },
+  "metrics": {
+    "prediction": {
+      "mae": 18.68050239111369,
+      "rmse": 30.877791119103932
+    },
+    "constant": {
+      "mae": 14.968534476055464,
+      "rmse": 25.630806743833702
+    },
+    "saved_raw36_ridge": {
+      "mae": 15.491746382136741,
+      "rmse": 27.47028311997866
+    },
+    "saved_raw26_ridge": {
+      "mae": 15.350510426014772,
+      "rmse": 27.148876004895598
+    }
+  },
+  "folds": [
+    {
+      "group": "policy_00",
+      "training_states": 28,
+      "held_states": 4,
+      "training_mae": 11.453819518350942,
+      "stationarity_norm": 1.390534448704314e-16,
+      "constant_columns": 6,
+      "constant_columns_varying_in_held": [],
+      "mae": 22.569362903737833,
+      "constant_mae": 18.454620446485233
+    },
+    {
+      "group": "policy_01",
+      "training_states": 28,
+      "held_states": 4,
+      "training_mae": 12.22735654763505,
+      "stationarity_norm": 5.775197000591265e-17,
+      "constant_columns": 6,
+      "constant_columns_varying_in_held": [],
+      "mae": 22.156866782443267,
+      "constant_mae": 20.736106151520506
+    },
+    {
+      "group": "policy_02",
+      "training_states": 28,
+      "held_states": 4,
+      "training_mae": 14.159014657903995,
+      "stationarity_norm": 8.02803760156193e-17,
+      "constant_columns": 7,
+      "constant_columns_varying_in_held": [
+        10
+      ],
+      "mae": 13.498787529229523,
+      "constant_mae": 11.099094173854114
+    },
+    {
+      "group": "policy_03",
+      "training_states": 28,
+      "held_states": 4,
+      "training_mae": 12.094836270771934,
+      "stationarity_norm": 9.384138639894527e-17,
+      "constant_columns": 6,
+      "constant_columns_varying_in_held": [],
+      "mae": 23.912766648091928,
+      "constant_mae": 21.70584853456861
+    },
+    {
+      "group": "policy_04",
+      "training_states": 28,
+      "held_states": 4,
+      "training_mae": 13.552886700936845,
+      "stationarity_norm": 1.1865560022535468e-16,
+      "constant_columns": 6,
+      "constant_columns_varying_in_held": [],
+      "mae": 12.569818830608375,
+      "constant_mae": 11.468581598789832
+    },
+    {
+      "group": "policy_05",
+      "training_states": 28,
+      "held_states": 4,
+      "training_mae": 12.04076022251804,
+      "stationarity_norm": 7.385518530263863e-17,
+      "constant_columns": 6,
+      "constant_columns_varying_in_held": [],
+      "mae": 21.20431241958801,
+      "constant_mae": 21.126357355402583
+    },
+    {
+      "group": "policy_06",
+      "training_states": 28,
+      "held_states": 4,
+      "training_mae": 12.699679049194396,
+      "stationarity_norm": 1.0526173771460482e-16,
+      "constant_columns": 6,
+      "constant_columns_varying_in_held": [],
+      "mae": 23.1729534704467,
+      "constant_mae": 8.941030122273713
+    },
+    {
+      "group": "policy_07",
+      "training_states": 28,
+      "held_states": 4,
+      "training_mae": 13.56456982423802,
+      "stationarity_norm": 8.899447595504989e-17,
+      "constant_columns": 6,
+      "constant_columns_varying_in_held": [],
+      "mae": 10.359150544763896,
+      "constant_mae": 6.216637425549122
+    }
+  ],
+  "scientific_conclusion": "Fixed-lambda training-only scaling did not beat the constant or preceding unscaled36 ridge. Scientific negative preserved; not an execution failure.",
+  "local_actions": {
+    "new_fits": 0,
+    "optimizer_updates": 0,
+    "mcts_calls": 0,
+    "new_samples": 0,
+    "used_saved_model_forward_only": true,
+    "connected_to_AutoDL": false,
+    "cloud_write": false,
+    "deletions": 0
+  },
+  "limitations": [
+    "Current cloud process/resource status not observed.",
+    "No safety, deployment, speedup or cross-route generalization claim.",
+    "Only sampled fixed64s returns are available; not Q* or task-complete returns for CAP cases.",
+    "Additional action-choice-loss calculation is post-outcome descriptive, not a new holdout protocol or calibrated accuracy."
+  ]
+}

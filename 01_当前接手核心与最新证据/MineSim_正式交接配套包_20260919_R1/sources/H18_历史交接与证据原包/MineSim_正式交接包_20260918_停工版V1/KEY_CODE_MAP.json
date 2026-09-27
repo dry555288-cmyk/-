@@ -1,0 +1,897 @@
+[
+  {
+    "path": "pending_policy4/release/experiment.py",
+    "sha256": "a59438b0a3337101aecb19d37e0da90561c33cab593585e185d0f02c62dec5ca",
+    "definitions": [
+      {
+        "name": "need",
+        "line": 16,
+        "end_line": 18
+      },
+      {
+        "name": "canon",
+        "line": 21,
+        "end_line": 22
+      },
+      {
+        "name": "read",
+        "line": 25,
+        "end_line": 26
+      },
+      {
+        "name": "write",
+        "line": 29,
+        "end_line": 34
+      },
+      {
+        "name": "tuples",
+        "line": 37,
+        "end_line": 38
+      },
+      {
+        "name": "clone",
+        "line": 41,
+        "end_line": 42
+      },
+      {
+        "name": "semantic",
+        "line": 45,
+        "end_line": 46
+      },
+      {
+        "name": "cold_parity",
+        "line": 49,
+        "end_line": 52
+      },
+      {
+        "name": "cpu_stat",
+        "line": 55,
+        "end_line": 64
+      },
+      {
+        "name": "percentile",
+        "line": 67,
+        "end_line": 70
+      },
+      {
+        "name": "summarize",
+        "line": 73,
+        "end_line": 106
+      },
+      {
+        "name": "compare_pair",
+        "line": 109,
+        "end_line": 124
+      },
+      {
+        "name": "run",
+        "line": 127,
+        "end_line": 263
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "pending_policy4/release/gate.py",
+    "sha256": "3f3ea7f7a6874782e2252cfad535b5a7099e16d9f68d06ad4b9512d81773e32f",
+    "definitions": [
+      {
+        "name": "check",
+        "line": 27,
+        "end_line": 28
+      },
+      {
+        "name": "canon",
+        "line": 30,
+        "end_line": 30
+      },
+      {
+        "name": "sha",
+        "line": 31,
+        "end_line": 31
+      },
+      {
+        "name": "utc",
+        "line": 32,
+        "end_line": 32
+      },
+      {
+        "name": "parse",
+        "line": 34,
+        "end_line": 40
+      },
+      {
+        "name": "safe_rel",
+        "line": 42,
+        "end_line": 45
+      },
+      {
+        "name": "no_symlink",
+        "line": 47,
+        "end_line": 48
+      },
+      {
+        "name": "read_stable",
+        "line": 50,
+        "end_line": 56
+      },
+      {
+        "name": "put",
+        "line": 58,
+        "end_line": 60
+      },
+      {
+        "name": "git_state",
+        "line": 62,
+        "end_line": 69
+      },
+      {
+        "name": "related",
+        "line": 71,
+        "end_line": 79
+      },
+      {
+        "name": "proc",
+        "line": 81,
+        "end_line": 87
+      },
+      {
+        "name": "processes",
+        "line": 89,
+        "end_line": 104
+      },
+      {
+        "name": "resources",
+        "line": 106,
+        "end_line": 121
+      },
+      {
+        "name": "claim",
+        "line": 123,
+        "end_line": 130
+      },
+      {
+        "name": "source_contents",
+        "line": 132,
+        "end_line": 158
+      },
+      {
+        "name": "verify_release",
+        "line": 160,
+        "end_line": 165
+      },
+      {
+        "name": "bundle",
+        "line": 167,
+        "end_line": 187
+      },
+      {
+        "name": "execute",
+        "line": 189,
+        "end_line": 271
+      },
+      {
+        "name": "main",
+        "line": 273,
+        "end_line": 275
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "pending_policy4/release/subtree_reuse.py",
+    "sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532",
+    "definitions": [
+      {
+        "name": "require",
+        "line": 17,
+        "end_line": 19
+      },
+      {
+        "name": "discounted",
+        "line": 22,
+        "end_line": 28
+      },
+      {
+        "name": "Sample",
+        "line": 32,
+        "end_line": 40,
+        "methods": []
+      },
+      {
+        "name": "HorizonRebasedSearch",
+        "line": 43,
+        "end_line": 269,
+        "methods": [
+          {
+            "name": "__init__",
+            "line": 44,
+            "end_line": 61
+          },
+          {
+            "name": "_is_absorbing",
+            "line": 63,
+            "end_line": 64
+          },
+          {
+            "name": "_nodes",
+            "line": 66,
+            "end_line": 74
+          },
+          {
+            "name": "_rollout",
+            "line": 76,
+            "end_line": 92
+          },
+          {
+            "name": "_backup",
+            "line": 94,
+            "end_line": 116
+          },
+          {
+            "name": "_validate_sample",
+            "line": 118,
+            "end_line": 126
+          },
+          {
+            "name": "_accumulate_saved",
+            "line": 128,
+            "end_line": 136
+          },
+          {
+            "name": "_fallback",
+            "line": 138,
+            "end_line": 144
+          },
+          {
+            "name": "_prepare",
+            "line": 146,
+            "end_line": 210
+          },
+          {
+            "name": "search",
+            "line": 212,
+            "end_line": 250
+          },
+          {
+            "name": "audit",
+            "line": 252,
+            "end_line": 269
+          }
+        ]
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "pending_policy4/release/verify_audit.py",
+    "sha256": "3c4f00ec3e15f8f04f54cc72b28ccda6c36f0ac55ebcd6049178055efb477659",
+    "definitions": [
+      {
+        "name": "check",
+        "line": 5,
+        "end_line": 7
+      },
+      {
+        "name": "verify",
+        "line": 10,
+        "end_line": 45
+      },
+      {
+        "name": "verify_rebase",
+        "line": 48,
+        "end_line": 61
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "E13 ZIP member: minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/teacher_cell_core.py",
+    "sha256": "58c3e5d217189b5d4f7e108b57f3d3700f3e11216d1eab02d1d25c5e0885cba0",
+    "definitions": [
+      {
+        "name": "need",
+        "line": 22,
+        "end_line": 24
+      },
+      {
+        "name": "canonical",
+        "line": 27,
+        "end_line": 29
+      },
+      {
+        "name": "sha",
+        "line": 32,
+        "end_line": 33
+      },
+      {
+        "name": "objsha",
+        "line": 36,
+        "end_line": 37
+      },
+      {
+        "name": "strict_json",
+        "line": 40,
+        "end_line": 58
+      },
+      {
+        "name": "read",
+        "line": 61,
+        "end_line": 62
+      },
+      {
+        "name": "write",
+        "line": 65,
+        "end_line": 70
+      },
+      {
+        "name": "rng_json",
+        "line": 73,
+        "end_line": 74
+      },
+      {
+        "name": "tuplify",
+        "line": 77,
+        "end_line": 78
+      },
+      {
+        "name": "saved_status",
+        "line": 81,
+        "end_line": 93
+      },
+      {
+        "name": "return_summary",
+        "line": 96,
+        "end_line": 109
+      },
+      {
+        "name": "verify_diag",
+        "line": 112,
+        "end_line": 120
+      },
+      {
+        "name": "reward_check",
+        "line": 123,
+        "end_line": 155
+      },
+      {
+        "name": "technical_spec",
+        "line": 158,
+        "end_line": 167
+      },
+      {
+        "name": "verify_cell",
+        "line": 170,
+        "end_line": 216
+      },
+      {
+        "name": "run_cell",
+        "line": 219,
+        "end_line": 303
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "E13 ZIP member: minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_search.py",
+    "sha256": "e96c82d60b75c6d2b3311b9fd9d569cab1404c5c2ba4c729cb25c8e605d6ec94",
+    "definitions": [
+      {
+        "name": "active_joint_actions",
+        "line": 18,
+        "end_line": 37
+      },
+      {
+        "name": "_joint_action_key",
+        "line": 40,
+        "end_line": 46
+      },
+      {
+        "name": "_joint_action_id",
+        "line": 49,
+        "end_line": 55
+      },
+      {
+        "name": "FleetMCTSSearch",
+        "line": 58,
+        "end_line": 295,
+        "methods": [
+          {
+            "name": "__init__",
+            "line": 59,
+            "end_line": 81
+          },
+          {
+            "name": "search",
+            "line": 83,
+            "end_line": 164
+          },
+          {
+            "name": "_select_uct",
+            "line": 166,
+            "end_line": 199
+          },
+          {
+            "name": "_expand",
+            "line": 201,
+            "end_line": 230
+          },
+          {
+            "name": "_rollout",
+            "line": 232,
+            "end_line": 271
+          },
+          {
+            "name": "_backup",
+            "line": 273,
+            "end_line": 295
+          }
+        ]
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "E13 ZIP member: minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_state.py",
+    "sha256": "1b7efe18e2a77e96a9beb94070500ff811dd584754c03d57cb1e2e8a985c9d21",
+    "definitions": [
+      {
+        "name": "_validate_token",
+        "line": 9,
+        "end_line": 13
+      },
+      {
+        "name": "FleetVehicleState",
+        "line": 17,
+        "end_line": 36,
+        "methods": [
+          {
+            "name": "__post_init__",
+            "line": 29,
+            "end_line": 36
+          }
+        ]
+      },
+      {
+        "name": "FleetState",
+        "line": 40,
+        "end_line": 181,
+        "methods": [
+          {
+            "name": "__post_init__",
+            "line": 55,
+            "end_line": 86
+          },
+          {
+            "name": "from_states",
+            "line": 89,
+            "end_line": 108
+          },
+          {
+            "name": "vehicle_count",
+            "line": 111,
+            "end_line": 112
+          },
+          {
+            "name": "controlled_tokens",
+            "line": 115,
+            "end_line": 119
+          },
+          {
+            "name": "controlled_token_set",
+            "line": 122,
+            "end_line": 123
+          },
+          {
+            "name": "state_for",
+            "line": 125,
+            "end_line": 134
+          },
+          {
+            "name": "any_collision",
+            "line": 137,
+            "end_line": 141
+          },
+          {
+            "name": "hard_safety_violation",
+            "line": 144,
+            "end_line": 148
+          },
+          {
+            "name": "all_goals_reached",
+            "line": 151,
+            "end_line": 155
+          },
+          {
+            "name": "minimum_clearance_m",
+            "line": 158,
+            "end_line": 165
+          },
+          {
+            "name": "transition_cache_key",
+            "line": 167,
+            "end_line": 181
+          }
+        ]
+      },
+      {
+        "name": "validate_controlled_external_partition",
+        "line": 184,
+        "end_line": 217
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "E13 ZIP member: minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_adapter_v1.py",
+    "sha256": "04710705edeea28bf38560fc4e3ce8ee319fc0b6679dbf00bd4c61d897cd4961",
+    "definitions": [
+      {
+        "name": "action_id",
+        "line": 29,
+        "end_line": 30
+      },
+      {
+        "name": "DualStopFleetTransition",
+        "line": 33,
+        "end_line": 196,
+        "methods": [
+          {
+            "name": "__init__",
+            "line": 34,
+            "end_line": 47
+          },
+          {
+            "name": "validate_fleet",
+            "line": 49,
+            "end_line": 60
+          },
+          {
+            "name": "_geometry",
+            "line": 62,
+            "end_line": 72
+          },
+          {
+            "name": "bind_initial_geometry",
+            "line": 74,
+            "end_line": 82
+          },
+          {
+            "name": "active_joint_actions",
+            "line": 84,
+            "end_line": 89
+          },
+          {
+            "name": "step_with_diagnostics",
+            "line": 91,
+            "end_line": 127
+          },
+          {
+            "name": "step",
+            "line": 129,
+            "end_line": 130
+          },
+          {
+            "name": "pack",
+            "line": 132,
+            "end_line": 153
+          },
+          {
+            "name": "unpack",
+            "line": 155,
+            "end_line": 196
+          }
+        ]
+      },
+      {
+        "name": "CandidateSystem",
+        "line": 199,
+        "end_line": 243,
+        "methods": [
+          {
+            "name": "__init__",
+            "line": 205,
+            "end_line": 213
+          },
+          {
+            "name": "new_search",
+            "line": 215,
+            "end_line": 219
+          },
+          {
+            "name": "search",
+            "line": 221,
+            "end_line": 237
+          },
+          {
+            "name": "advance",
+            "line": 239,
+            "end_line": 243
+          }
+        ]
+      },
+      {
+        "name": "episode_status",
+        "line": 246,
+        "end_line": 262
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "E13 ZIP member: minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py",
+    "sha256": "e9d024a6f56b6279de41b6f0889a188a201eeef07acca425e2ea69c4ef9c0626",
+    "definitions": [
+      {
+        "name": "ContractError",
+        "line": 21,
+        "end_line": 22,
+        "methods": []
+      },
+      {
+        "name": "TerminalInfeasible",
+        "line": 25,
+        "end_line": 26,
+        "methods": []
+      },
+      {
+        "name": "need",
+        "line": 29,
+        "end_line": 31
+      },
+      {
+        "name": "finite",
+        "line": 34,
+        "end_line": 38
+      },
+      {
+        "name": "MotionPoint",
+        "line": 42,
+        "end_line": 45,
+        "methods": []
+      },
+      {
+        "name": "BoundedMotion",
+        "line": 49,
+        "end_line": 84,
+        "methods": [
+          {
+            "name": "__post_init__",
+            "line": 55,
+            "end_line": 58
+          },
+          {
+            "name": "zero_time",
+            "line": 61,
+            "end_line": 67
+          },
+          {
+            "name": "at",
+            "line": 69,
+            "end_line": 84
+          }
+        ]
+      },
+      {
+        "name": "DualOnlyState",
+        "line": 88,
+        "end_line": 102,
+        "methods": [
+          {
+            "name": "transition_cache_key",
+            "line": 101,
+            "end_line": 102
+          }
+        ]
+      },
+      {
+        "name": "DestinationStopTransition",
+        "line": 105,
+        "end_line": 263,
+        "methods": [
+          {
+            "name": "__init__",
+            "line": 107,
+            "end_line": 116
+          },
+          {
+            "name": "window",
+            "line": 119,
+            "end_line": 120
+          },
+          {
+            "name": "is_parked_position",
+            "line": 122,
+            "end_line": 124
+          },
+          {
+            "name": "validate",
+            "line": 126,
+            "end_line": 145
+          },
+          {
+            "name": "convert_legacy",
+            "line": 147,
+            "end_line": 172
+          },
+          {
+            "name": "profile",
+            "line": 174,
+            "end_line": 178
+          },
+          {
+            "name": "action_report",
+            "line": 180,
+            "end_line": 224
+          },
+          {
+            "name": "actions",
+            "line": 226,
+            "end_line": 230
+          },
+          {
+            "name": "step_with_diagnostics",
+            "line": 232,
+            "end_line": 260
+          },
+          {
+            "name": "step",
+            "line": 262,
+            "end_line": 263
+          }
+        ]
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "E13 ZIP member: minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_search.py",
+    "sha256": "e96c82d60b75c6d2b3311b9fd9d569cab1404c5c2ba4c729cb25c8e605d6ec94",
+    "definitions": [
+      {
+        "name": "active_joint_actions",
+        "line": 18,
+        "end_line": 37
+      },
+      {
+        "name": "_joint_action_key",
+        "line": 40,
+        "end_line": 46
+      },
+      {
+        "name": "_joint_action_id",
+        "line": 49,
+        "end_line": 55
+      },
+      {
+        "name": "FleetMCTSSearch",
+        "line": 58,
+        "end_line": 295,
+        "methods": [
+          {
+            "name": "__init__",
+            "line": 59,
+            "end_line": 81
+          },
+          {
+            "name": "search",
+            "line": 83,
+            "end_line": 164
+          },
+          {
+            "name": "_select_uct",
+            "line": 166,
+            "end_line": 199
+          },
+          {
+            "name": "_expand",
+            "line": 201,
+            "end_line": 230
+          },
+          {
+            "name": "_rollout",
+            "line": 232,
+            "end_line": 271
+          },
+          {
+            "name": "_backup",
+            "line": 273,
+            "end_line": 295
+          }
+        ]
+      }
+    ],
+    "executed": false
+  },
+  {
+    "path": "E13 ZIP member: minesim_dual_subtree_h8_smoke_v1/parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_state.py",
+    "sha256": "1b7efe18e2a77e96a9beb94070500ff811dd584754c03d57cb1e2e8a985c9d21",
+    "definitions": [
+      {
+        "name": "_validate_token",
+        "line": 9,
+        "end_line": 13
+      },
+      {
+        "name": "FleetVehicleState",
+        "line": 17,
+        "end_line": 36,
+        "methods": [
+          {
+            "name": "__post_init__",
+            "line": 29,
+            "end_line": 36
+          }
+        ]
+      },
+      {
+        "name": "FleetState",
+        "line": 40,
+        "end_line": 181,
+        "methods": [
+          {
+            "name": "__post_init__",
+            "line": 55,
+            "end_line": 86
+          },
+          {
+            "name": "from_states",
+            "line": 89,
+            "end_line": 108
+          },
+          {
+            "name": "vehicle_count",
+            "line": 111,
+            "end_line": 112
+          },
+          {
+            "name": "controlled_tokens",
+            "line": 115,
+            "end_line": 119
+          },
+          {
+            "name": "controlled_token_set",
+            "line": 122,
+            "end_line": 123
+          },
+          {
+            "name": "state_for",
+            "line": 125,
+            "end_line": 134
+          },
+          {
+            "name": "any_collision",
+            "line": 137,
+            "end_line": 141
+          },
+          {
+            "name": "hard_safety_violation",
+            "line": 144,
+            "end_line": 148
+          },
+          {
+            "name": "all_goals_reached",
+            "line": 151,
+            "end_line": 155
+          },
+          {
+            "name": "minimum_clearance_m",
+            "line": 158,
+            "end_line": 165
+          },
+          {
+            "name": "transition_cache_key",
+            "line": 167,
+            "end_line": 181
+          }
+        ]
+      },
+      {
+        "name": "validate_controlled_external_partition",
+        "line": 184,
+        "end_line": 217
+      }
+    ],
+    "executed": false
+  }
+]

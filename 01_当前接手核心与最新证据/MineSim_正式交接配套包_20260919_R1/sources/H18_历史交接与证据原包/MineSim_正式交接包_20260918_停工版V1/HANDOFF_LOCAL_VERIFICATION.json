@@ -1,0 +1,42 @@
+{
+  "latest_manifest": {
+    "count": 98,
+    "bad": []
+  },
+  "latest_parent_sources": {
+    "count": 62,
+    "bad": []
+  },
+  "pending_package_manifest": {
+    "count": 31,
+    "bad": []
+  },
+  "pending_release": {
+    "count": 6,
+    "bad": []
+  },
+  "pending_inputs_present_exact_in_latest_raw": {
+    "count": 63,
+    "bad": []
+  },
+  "skill_identical": true,
+  "script_identical_in_package": true,
+  "current_run_this_handoff": {
+    "training": 0,
+    "mcts": 0,
+    "forward": 0,
+    "cloud_connection": false,
+    "rerun_tests": false,
+    "file_and_static_reads_only": true
+  },
+  "scope": "本次只做交接、源码静态读取、必要内容身份核对；历史实验与历史大规模审计不重跑。",
+  "live_cloud_state": "NOT_QUERIED",
+  "policy4_result_received": false,
+  "pending_launcher_payload": {
+    "sha256": "04393be789c50fea64e1cb78704f162eb1b6fdf7adae5a4cbe742345b11e120b",
+    "matches_embedded_sha": true,
+    "members": 7,
+    "matches_release": true,
+    "executed": false
+  }
+}

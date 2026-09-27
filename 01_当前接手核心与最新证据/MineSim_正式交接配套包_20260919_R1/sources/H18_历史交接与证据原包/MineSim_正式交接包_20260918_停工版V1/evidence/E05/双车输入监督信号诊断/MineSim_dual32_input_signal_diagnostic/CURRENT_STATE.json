@@ -1,0 +1,34 @@
+{
+  "as_of_evidence": "2026-09-17 uploaded saved result bundles; not a live AutoDL inventory",
+  "current_gate": "FIXED512_INPUT_SIGNAL_DIAGNOSTIC_COMPLETE",
+  "last_scientific_model_run": "DUAL32 regularized nested grouped development; neither model beats constant in both MAE and RMSE",
+  "this_step": "COMPLETE_FIXED512_INPUT_SIGNAL_DIAGNOSTIC_NOT_MODEL_VALIDATION",
+  "data_status": "32 states / 8 groups / 512 observed Y64 returns FROZEN; no recollection",
+  "next_minimal_step": "Freeze root-only explicit interaction-feature comparison design, then separately authorize one model run. No additional cloud diagnosis is needed for the analysis just completed.",
+  "priority": "dual vehicle first; single vehicle deferred",
+  "resource": "LOW",
+  "training_in_this_step": 0,
+  "MCTS_calls": 0,
+  "new_samples": 0,
+  "pruning_authorized": false,
+  "deployment_authorized": false,
+  "do_not_repeat": [
+    "collect256",
+    "Window16",
+    "Coverage32 original fit16",
+    "dual32 regularized nested fits",
+    "cloud input restoration and selection smoke"
+  ],
+  "preserve": [
+    "all original 512 returns including 45 CAP",
+    "old6 confirmed and old10 unknown labels",
+    "new16 original repeated-direction annotations",
+    "all prior scientific negatives"
+  ],
+  "hold": [
+    "prospective benefit of explicit interaction features",
+    "true instantaneous clearance not reconstructed in this diagnostic",
+    "cross-route generalization",
+    "online speed advantage and safe pruning"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "gate": "DUAL_ACTION_REPORT_CACHE_EQUIVALENCE_SMOKE_V1",
+  "root_ids": [
+    "coverage_policy_01__step0014",
+    "coverage_policy_05__step0011"
+  ],
+  "source_protocol": "DUAL_TREE_REUSE_OBSERVATIONAL_PROBE_V1",
+  "max_search_calls": 8,
+  "max_outer_advances": 8,
+  "steps_per_case": 2,
+  "mcts_config": {
+    "budget": 64,
+    "max_depth": 8,
+    "c_uct": 1.4,
+    "gamma": 0.99,
+    "dt": 0.5
+  },
+  "candidate": "Cache only DestinationStopTransition.action_report; full exact state/config key; validate every hit; copy returned records; no geometry cache",
+  "models_unchanged": [
+    "UCT",
+    "reward",
+    "motion",
+    "geometry sampling",
+    "termination",
+    "action domains",
+    "random seed and state",
+    "visits and Q"
+  ],
+  "cache_capacity_per_vehicle": 4096,
+  "case_order": [
+    [
+      "baseline",
+      "cached"
+    ],
+    [
+      "cached",
+      "baseline"
+    ]
+  ],
+  "statistics_reuse": false,
+  "new_Y64": 0,
+  "training": false,
+  "production_install": false,
+  "auto_retry": false,
+  "resource": "LOW",
+  "pass": "All sources exact; 4 baseline/cached decisions identical excluding timing; parent recorded states/actions/visits/RNG reproduced; original methods restored; file postchecks pass. No speed threshold.",
+  "timing": "No cProfile; includes validation/key/copy cost in full system.search CPU and wall time. 4 pairs only, possibly throttled CPU: not an end-to-end speed benchmark.",
+  "failure": "Keep original artifacts and counter values; no automatic retry; no permanent code modification."
+}

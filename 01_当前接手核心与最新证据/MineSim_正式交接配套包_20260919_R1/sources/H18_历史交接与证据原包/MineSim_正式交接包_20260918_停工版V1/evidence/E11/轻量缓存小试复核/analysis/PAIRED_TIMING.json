@@ -1,0 +1,62 @@
+[
+  {
+    "root_id": "coverage_policy_01__step0014",
+    "decision": 0,
+    "requests": 1862,
+    "hits": 1253,
+    "full_reports_baseline": 1862,
+    "full_reports_cached": 609,
+    "cross_decision_hits": 0,
+    "baseline_cpu_ms": 1391.278301,
+    "cached_cpu_ms": 1127.8829889999997,
+    "cpu_cached_over_baseline": 0.8106810752308281,
+    "baseline_wall_ms": 2941.442348062992,
+    "cached_wall_ms": 2389.3381650559604,
+    "wall_cached_over_baseline": 0.812301545406591
+  },
+  {
+    "root_id": "coverage_policy_01__step0014",
+    "decision": 1,
+    "requests": 1850,
+    "hits": 1335,
+    "full_reports_baseline": 1850,
+    "full_reports_cached": 515,
+    "cross_decision_hits": 665,
+    "baseline_cpu_ms": 1152.344979,
+    "cached_cpu_ms": 1587.9768519999998,
+    "cpu_cached_over_baseline": 1.378039459483773,
+    "baseline_wall_ms": 2369.440983980894,
+    "cached_wall_ms": 6678.648111061193,
+    "wall_cached_over_baseline": 2.8186598257621114
+  },
+  {
+    "root_id": "coverage_policy_05__step0011",
+    "decision": 0,
+    "requests": 1862,
+    "hits": 1259,
+    "full_reports_baseline": 1862,
+    "full_reports_cached": 603,
+    "cross_decision_hits": 0,
+    "baseline_cpu_ms": 1151.5492639999998,
+    "cached_cpu_ms": 1137.6436719999995,
+    "cpu_cached_over_baseline": 0.9879244488840208,
+    "baseline_wall_ms": 2408.8418079772964,
+    "cached_wall_ms": 2434.9467310821638,
+    "wall_cached_over_baseline": 1.010837126380992
+  },
+  {
+    "root_id": "coverage_policy_05__step0011",
+    "decision": 1,
+    "requests": 1762,
+    "hits": 1265,
+    "full_reports_baseline": 1762,
+    "full_reports_cached": 497,
+    "cross_decision_hits": 512,
+    "baseline_cpu_ms": 1596.1730599999999,
+    "cached_cpu_ms": 1031.355219,
+    "cpu_cached_over_baseline": 0.6461424796882614,
+    "baseline_wall_ms": 6486.78918404039,
+    "cached_wall_ms": 2196.2235120590776,
+    "wall_cached_over_baseline": 0.3385686585071242
+  }
+]

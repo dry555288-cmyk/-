@@ -1,0 +1,112 @@
+MineSim 576-cell Teacher Pilot 独立复核与下一步协议
+日期：2026-09-08
+
+一、证据与适用范围
+本报告依据本轮真实上传的 113e21f4-476e-4f51-a679-459176182e2e.zip 进行静态复算。
+上传 ZIP SHA256：c55963bb0f6a8d2d1691c4b3c039107605fa44dfe9fbafb723551a8e917058cf
+内部根目录：minesim_teacher_pilot_balanced_matrix_v1
+SHA256_MANIFEST.json SHA256：d74fc33089726e9637482105d70daa5838e341cacd2b09b30fbf4e0fc3f6e3df
+本地只读审核原结果；未重跑旧576次搜索，未训练、推理或闭环驾驶。
+复核代码：independent_audit.py；输出：recomputed/。
+
+二、技术验收
+6280/6280项文件 SHA、字节数全部一致；ZIP CRC检查通过；不存在重复ZIP成员或未列入清单的结果文件。
+576/576个 cell 的身份、seed、budget、CAPTURE及结果/trace哈希一致。
+每动作每种子访问支持：B256为16次；B1024为64次。
+368640条回传记录均独立核对：迭代编号、子节点访问数连续性、累计回报连续性、rollout折扣回报、deep-to-root回传、最终Q均值和安全事件标志。
+重建回报/Q最大绝对误差：2.2737367544323206e-13，小于冻结的1e-8容差。
+288/288组B256日志与对应B1024前256条记录逐字节一致。
+四张原汇总CSV（pair、root、action、adaptive hard events）均从原始数据独立复算通过。
+包内GIT_BEFORE.json与GIT_AFTER.json逐字节一致。这是包内记录，不是当前云端实时Git检查。
+上述PASS均是执行/完整性结论，不是教师标签已收敛的结论。
+
+三、候选排序覆盖
+规则完全沿用原PROTOCOL.json relative_pair_screen，不修改门槛：
+R(s)=max(range(mean_seed Q_B1024(s,a)),1e-12)。
+对每对动作(a,b)，d_seed=Q(a)-Q(b)。
+|mean_seed d_B1024|/R <=0.10：TIE_UNCERTAIN。
+否则，需要B1024方向8/8严格一致、B256平均方向一致、B1024前4/后4平均方向一致，才为RELIABLE_ORDER_CANDIDATE。
+其余为CONFLICT_UNCERTAIN。
+36条记录×120动作对=4320条“记录—动作对”条目：
+可靠排序候选2857条（66.1343%）；近似并列/不确定849条（19.6528%）；冲突不确定614条（14.2130%）。
+这些不是4320个独立状态，也不是2857个已经证实正确的标签。
+
+场景    记录数  可靠候选 / 1440    覆盖率       tie    conflict
+C04       12      1098           76.25%       266      76
+C06       12      1175           81.60%       218      47
+C11       12       584           40.56%       365     491
+C11仍是主要薄弱项。最少的C11_80M step356只有26/120个候选；不删除该记录，不根据覆盖率重新选点。
+
+四、Q波动与旧标签对照
+本轮只包含Balanced-root，不能从这576次直接声称与相同预算Original-UCT完成新配对比较。
+在Balanced-root内部，B256→B1024，36/36条记录的跨seed平均动作Q样本标准差下降。
+按每场景12条记录等权：
+C04：1.3031355461→0.5180657344（下降60.24%）；
+C06：1.3157565024→0.4496941545（下降65.82%）；
+C11：4.9990700288→2.2681841650（下降54.63%）。
+这衡量重复性，不是准确率，不是接近Q*的证明。
+2857个新候选中，与相应原始单次B64 Q方向相同2412个、方向相反445个（15.5758%）。
+新候选也不是绝对真值，不能将445直接称为已证实的错误标签。
+
+五、重复输入与解释边界
+36条记录只有33组精确12维float32输入。三个重复组及其全部成员列于AUDIT_SUMMARY.json。
+重复组候选分类和方向在本轮一致；未发现相同输入的相反可靠候选。
+按每个精确输入组取协议顺序的首条，只用于描述性计数：2625可靠、775近似并列、560冲突，总3960对。
+没有修改36-root设计，也没有依据特征相同就合并运行上下文。
+全部候选偏好图无环，但候选方向本来就由同一个root的平均Q大小规定，因此“无环”不能作为额外独立正确性证据。
+前4/后4同方向在已满足8/8严格同方向时也是自动成立，不能当成第二次独立验证。
+安全事件来自自适应搜索，不能当成IID样本或校准碰撞概率。
+
+六、必须纠正的验收表述
+原PROTOCOL.json的scientific_quality_pass_fail_threshold明确为：
+"NOT_ASSIGNED; report descriptive coverage and conflicts."
+所以原576次只冻结了候选分类规则，没有冻结全局“可训练通过率”阈值。
+不能现在依据已看到的结果补一个全局阈值，然后声称原实验通过该阈值。
+当前8个seed同时参与了筛选候选，因此8/8是样本内筛选结果，尚不是独立新seed复验。
+目前不授权全量2356条重采、不批准生产模型重训、也不批准闭环MCTS/K13改动。
+33组输入不足以单凭动作对数量宣称获得了广泛的状态覆盖。
+
+七、下一步：锁定候选，独立seed复验
+Gate：FROZEN_PAIR_DIRECTIONS_INDEPENDENT_SEED_CONFIRMATION_V1。
+保留原36条记录及全部上下文；仅在新namespace运行：
+36 records × 8 new seeds (36000–36007) × B1024 = 288次单根搜索。
+每动作每seed64次访问；总294912次根迭代。
+旧576次、旧技术搜索和B256均不重跑。不加载大地图，只用已校验18条参考路径。
+原状态、时间、几何、奖励、Balanced-root根分配、深层UCT、rollout、backup、深度8、gamma0.99、c_uct1.4、dt0.5不改。
+新seed与原发现seed34000–34007不相交。这是同状态新随机种子的复验，不是新场景或新状态泛化。
+
+锁定2857个候选动作对及方向、原root归一化尺度；锁定内容canonical SHA：
+0acb0aac1b032a4122d1b51c0c11b92efc55b11fa004d4333416ab893f2f2e4f
+不将原849+614个不确定对临时提升为候选。
+独立复验规则（在新seed产生结果之前固定）：
+1. CONFIRMED_DIRECTION_AND_MARGIN：8/8新seed严格支持原方向，且新seed平均有向差距/原冻结归一化尺度 >0.10；
+2. DIRECTION_ONLY_MARGIN_WEAK：8/8方向支持，但平均差距未过上述原尺度的10%；
+3. REVERSED_MEAN：新seed平均值反向；
+4. NOT_CONFIRMED_SEED_DISAGREEMENT：其余未确认情形。
+仅第1类进入新PAIR_MASK_CANDIDATE，其余监督mask=0。mask=0不是“相等标签”。
+不在新数据上重新定义归一化尺度，不按结果追加seed/预算，不自动补救失败root。
+技术执行PASS只表示完整执行。没有统计置信水平承诺、没有全局训练自动批准、没有把B1024当真值。
+过滤后得到的是新标签候选集；未来模型训练/泛化仍需按场景/episode和重复输入分组，不能把本次复验直接当模型测试集。
+
+八、已实际完成的本地代码审核
+主脚本：minesim_teacher_pilot_pair_confirmation_v1.py
+主脚本SHA256：3e80af50e4aec7654e99b7dcf6446ada4707cae9fa1248ab30e4e61be8ddd9a0
+Python语法编译通过，AST按Python3.9语法检查通过。
+50项Python测试最终通过：真实候选锁、源清单、288-cell合成汇总、路径/同名/父目录保护、坏JSON/CSV、SHA、已消费namespace、HOLD打包、超时及单次中断子进程回收等。
+8项启动/监控流程模拟测试通过；这些是screen桩测试，不冒充真实云端screen会话测试。
+使用真实返回的引擎、六套context、36条记录成功建立本地上下文；选C04 step50和C11 100m step711，使用本地专用seed99121/99122、budget256，运行新旧wrapper各一次，共8次真实本地搜索、4组配对。
+全部4组的Q、访问数、最终动作、随机数状态、每条回传日志完全一致，2048条迭代日志已比较。
+未在本地使用正式复验seed36000–36007。未执行云端288-cell矩阵。
+本地Python/依赖版本与云端不同；云端运行时强制核对原环境版本，不能拿本地通过替代云端验收。
+首轮中断测试的fault injection曾持续替换全局time.sleep，使子进程清理也不断被人工中断；已将测试改为单次中断后恢复真实sleep。首次日志保留，最终50项通过；不是删除失败测试冒充通过。
+
+九、交付和操作
+只上传主.py脚本；启动/后台/监控用回复中的集成代码，不需要上传其他启动脚本。
+资源LOW、CPU-only，至少1GiB可用内存、2GiB可用磁盘。
+新namespace：/root/autodl-tmp/minesim_teacher_pilot_pair_confirmation_v1
+最终ZIP：/root/autodl-tmp/minesim_teacher_pilot_pair_confirmation_v1.zip
+先核对当前父manifest、锁候选、保存PROTOCOL/AUTHORIZATION，再开始新搜索。
+任何PASS/HOLD均保留结果并返回ZIP；无ZIP返回启动日志。已消费namespace不可删除重跑。
+启动后screen可独立于查看终端运行；必须保持AutoDL实例开启。
+监控读done.json或退出码后自动结束，不使用永久tail -f。
+本报告及代码不修改历史数据或运行结果。

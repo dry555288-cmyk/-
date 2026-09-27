@@ -1,0 +1,92 @@
+MineSim｜36-root技术验证返回包复核与Teacher Pilot执行说明
+形成日期：2026-09-08
+
+一、任务和证据范围
+本次输入文件：fae60915-1fa1-4233-879c-1c9dfd30d684.zip。
+ZIP SHA256：8a77a28455f84d12a8f9bbb830b8a1c0fc916e06e0c6f1127502da7c73ef34bd
+包内顶层目录：minesim_teacher_pilot_36root_technical_parity_v1。
+顶层SHA256_MANIFEST.json SHA256：af48ec4c42504c0c4c5d0e6c09cf8dd54e939de9c3c52074dc8230780287fef4
+本报告直接处理该ZIP中的真实文件；不是仅根据历史对话或SUMMARY里的PASS判断。
+这里只复核本次技术验证，未重新计算2356条原训练集，未访问当前AutoDL实时进程。
+
+二、独立复核结果：技术验收PASS
+1. ZIP成员无重名、CRC通过，1264项清单文件的完整SHA和大小全部一致。
+2. 658项复制记录均能定位到包内对应复制件，字节校验一致。
+3. SOURCE_POSTCHECK中的675项记录均为unchanged=True；Git前后记录完全一致。
+   这些是此次返回包中的运行时记录，不等于对现在云端状态的实时查询。
+4. 36条Pilot原始记录的SHA与选择清单一致，6个episode各6条。
+5. 从one_step/*/checks.json与pair_feature_checks.json重新检查12,456项actual/expected比较；
+   涵盖576次已保存单步转移，最大误差8.881784197001252e-16，小于固定绝对容差1e-8。
+6. 72个技术结果均有PASS capture；B64下每个动作访问4次，seed=35000；
+   chosen_action符合访问次数、Q及动作序的原选取规则。
+7. 36组日志关闭/开启的Q、访问数、即时奖励、净距、最终动作和RNG状态哈希完全一致；
+   比较明确排除elapsed_ms，不作任何运行加速结论。
+8. 从36份iteration_returns.jsonl重新构建2304条rollout折扣和、回传、value_sum、visits与Q。
+   最大回传或Q复算误差：2.842170943040401e-14。
+9. 此独立审计没有执行新的MCTS、地图加载、模型推理或网络训练。
+
+结论边界：此次通过的是状态重建与日志无干扰技术验证，不能据此判断教师Q已收敛、
+网络已收敛、全部2356条监督可靠，或者新标签必然改善闭环MCTS/K13。
+
+三、这一步关闭后直接执行什么
+采用既有候选协议中的36条root、8个seed（34000—34007）、总根预算256和1024、
+BALANCED_ROOT方法。共有576次新的单根搜索，合计368640次根迭代；不是576次完整闭环。
+每个动作在B256中获得16次访问，在B1024中获得64次访问。
+固定depth=8、gamma=0.99、c_uct=1.4、tree_dt=0.5s及原状态、奖励和几何。
+只改变用于教师采样的根访问分配，深层UCT、扩展、rollout及回传仍使用冻结实现。
+同一root与seed的B256和B1024均从头构建新搜索，核查前256条完整trace逐字段相同。
+不将B1024假设为真值，不修改在线MCTS/K13，不覆盖原2356数据，不重新选root。
+36条记录有33种精确12维输入；保留冻结抽样及episode上下文，不称为36个独立状态。
+
+四、8-seed相对排序候选规则：本次执行前明确的新Pilot筛查规则
+这不是把原来的15/16判据偷偷改为7/8，也不声称已经满足16-seed标准。
+定义归一化尺度=max(16个动作B1024跨8seed均值的极差,1e-12)。
+动作对的均值差不超过该尺度10%时，输出TIE_UNCERTAIN。
+其余动作对只有B1024方向8/8严格一致、B256均值方向一致、B1024前4/后4seed均值方向
+一致时，输出RELIABLE_ORDER_CANDIDATE；其他输出CONFLICT_UNCERTAIN。
+保留全部原始Q和逐次回报，输出均值、seed间标准差、预算漂移、共同偏移和去共同偏移诊断。
+该规则是经验性候选筛查，不是置信下界、显著性检验或剪枝安全保证。
+不使用同一次自适应树搜索中的回报数量冒充独立重复次数。
+安全事件只输出自适应搜索计数，不解释为真实碰撞概率。
+候选偏好图检查有向环；所有候选输出都标记training_approved=False。
+这轮没有预设“必须多少root通过”的总体科学成功阈值；完整执行PASS不代表标签质量PASS。
+
+五、新代码实际审核与测试
+主脚本：minesim_teacher_pilot_balanced_matrix_v1.py
+SHA256：6136440809a6c2e619238d479fb9641b5e99b295550588793246d3e82d4954a3
+语法：Python语法编译以及Python3.9语法解析通过。
+46项Python单元/异常路径测试通过，含重复namespace、损坏JSON/ZIP、SHA变化、空结果拒绝、
+原始技术收据核查、候选规则、预算前缀、supervisor超时与子进程回收、HOLD后打包。
+11项集成启动与监控模拟测试通过。screen使用测试替身，不冒充真实SSH断开实验。
+另完成576-cell合成文件集成测试的6项断言：4320动作对、规则计数、共同偏移分解、
+完整矩阵汇总、禁止训练授权、篡改结果触发HOLD。此项没有运行MCTS。
+真实引擎测试：使用返回包内真实引擎、36条输入、18条参考路径。
+36条重建root的完整状态SHA与云端技术测试START中的SHA一致；6套context contract一致。
+在C04 step0、C06 seed1 step62、C11 100m step711、C11 80m step703各测试B256/B1024，
+共8次真实本地搜索，使用测试seed99171；全部通过，4组预算前缀逐行一致，保留5120条trace。
+另用seed99172模拟第3次回传后的中断，成功保存3条已完成trace及HOLD capture。
+这些本地测试没有使用34000—34007执行真实搜索，没有代替云端576-cell科学Pilot。
+本地版本与云端不同，本地测试放宽版本一致性开关仅存在内部测试接口；
+云端CLI必须验证Python3.9和上次返回的numpy/shapely/scipy/omegaconf精确版本。
+
+六、执行、资源和输出约定
+LOW CPU-only，GPU禁用；脚本要求至少1GiB可用内存及2GiB空闲磁盘。
+只复制和使用输入快照，读取live仓库相关17个源码文件的SHA，不执行原runner main。
+不再次执行旧576次单步或72次技术搜索，只核对已有技术收据及新重建root/context哈希。
+运行目录：/root/autodl-tmp/minesim_teacher_pilot_balanced_matrix_v1
+结果ZIP：/root/autodl-tmp/minesim_teacher_pilot_balanced_matrix_v1.zip
+完成标记：同路径.done.json；主任务先完成ZIP校验，再写该标记。
+主脚本通过screen启动；集成代码自带监控，PASS/HOLD或异常退出后自动结束。
+重新粘贴集成代码时，已有会话/输出只进入监控，不重新启动同一namespace。
+Ctrl+C只停止当前前台监控；不要关闭或重启实例；screen不能抵御实例关机、资源强杀或重置。
+搜索异常/可捕获中断/超时后保留已完成cell并尝试打包；SIGKILL、磁盘写满等不保证完成打包。
+不自动恢复、不自动重跑已消费cell；遇到HOLD仍上传结果，缺ZIP时上传启动日志。
+
+七、结果说明
+PILOT_EXECUTION_STATUS=PASS：576个cell完整、访问支持和预算前缀等技术检查通过。
+TEACHER_QUALITY_STATUS=CANDIDATE_ONLY_NOT_TRAINING_APPROVED：候选统计可供复核，未批准重训。
+科学效果需要在新结果返回后根据真实数据评价，所有负结果和不确定排序都保留。
+
+复算入口：audit_technical_return.py；测试代码、原始测试日志、预先冻结协议附于审核ZIP。
+审核包中的测试脚本路径指向本地复核环境，不是供用户额外上云执行的入口。
+用户只需上传主程序.py；启动和监控使用回复中的集成代码。

@@ -1,0 +1,227 @@
+{
+  "scope": "本次新做H18外层44项清单大小/SHA与外层CRC；没有重做E01-E13科学复核。",
+  "count": 44,
+  "all_matched": true,
+  "checks": [
+    {
+      "path": "ARTIFACT_SCOPE.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "CURRENT_STATE.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "DOCUMENT_QA.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "EVIDENCE_INDEX.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "EXPERIMENT_LEDGER.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "HANDOFF.md",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "HANDOFF_LOCAL_VERIFICATION.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "HISTORY_ASSET_INDEX.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "KEY_CODE_MAP.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "MineSim_Dynamic_正式交接_截至20260918_H8子树小试后停工版V1.docx",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "NEXT_GATE_CONTRACT.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "START_HERE.md",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E01/Window16_复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E02/Coverage32_数据封存复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E03/Coverage32_无正则拟合复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E04/双车26维正则复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E05/双车输入监督信号诊断.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E06/双车36维交互复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E07/双车标准化岭回归复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E08/双动作偏好与论文机制对照.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E09/树观察复核及旧缓存提案.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E10/动作报告缓存复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E11/轻量缓存小试复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E12/轻量缓存固定计时复核.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E13/PRIOR_REVIEW.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "evidence/P01/H8_policy4_已交付准备原包.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "frozen_data/DATASET32.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "history/H01_20260913_正式交接原件.docx",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "history/H02_20260910_论文标准对齐原包.zip",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "history/H03_RADEME_20260813.txt",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "history/H04_第一批资料目录.txt",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "history/H05_第二批资料目录.txt",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/DO_NOT_RUN_WITHOUT_NEW_AUTHORIZATION.md",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/release/PROTOCOL.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/release/RELEASE_MANIFEST.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/release/SOURCE_BINDINGS.json",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/release/experiment.py",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/release/gate.py",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/release/subtree_reuse.py",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/release/verify_audit.py",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "pending_policy4/run_dual_subtree_policy4.sh",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "workflow/SESSION_DECISIONS.txt",
+      "size_match": true,
+      "sha_match": true
+    },
+    {
+      "path": "workflow/USER_SKILL_ORIGINAL.md",
+      "size_match": true,
+      "sha_match": true
+    }
+  ]
+}

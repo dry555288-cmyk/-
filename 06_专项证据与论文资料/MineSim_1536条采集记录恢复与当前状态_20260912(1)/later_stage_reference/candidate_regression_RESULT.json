@@ -1,0 +1,36 @@
+{
+  "gate": "DUAL_ONLY_CANDIDATE_ADAPTER_AND_SYNTHETIC_REGRESSION",
+  "status": "PASS_ISOLATED_NATIVE_INTERFACE_SYNTHETIC_REGRESSION_ONLY",
+  "resource": "LOW",
+  "test_result": {
+    "tests_run": 76,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "counts": {
+      "native_search_calls_synthetic": 4,
+      "candidate_fleet_steps_synthetic": 1410,
+      "fraction_motion_comparisons": 1464,
+      "fraction_action_comparisons": 196
+    },
+    "python": "3.13.5",
+    "elapsed_s": 0.9012554399999999,
+    "synthetic_only": true,
+    "real_scene_searches": 0,
+    "cloud_access": false
+  },
+  "frozen_original_modules": 11,
+  "new_modules": 2,
+  "active_python_files_checked": 16,
+  "real_route_mcts_calls": 0,
+  "new_scientific_trajectories": 0,
+  "model_forward_calls": 0,
+  "training_updates": 0,
+  "cloud_changes": 0,
+  "development_native_search_calls_synthetic_total": 16,
+  "pending": "Real route and Python3.9 AutoDL smoke; controller/KBM and road free space not certified",
+  "old_1536_results_preserved": true,
+  "old_111_relations_not_relabelled": true,
+  "old_K13_negative_unchanged": true
+}

@@ -1,0 +1,22 @@
+{
+  "status": "DESIGN_PROPOSAL_ONLY_NOT_AUTHORIZED",
+  "resource": "LOW",
+  "question": "Can an explicitly regularized low-capacity predictor reduce held-source errors without collecting additional states?",
+  "possible_model": "Ridge-regularized linear regression on the same frozen26 input features",
+  "model_and_regularization_not_yet_frozen": true,
+  "reason": "Current MLP fits each28-state training set closely but is worse than constant on held32; current unregularized linear is also worse. This motivates testing regularization, not a claim that it will work.",
+  "data_reuse": "Same32 states and512 returns; no new simulator data; preserve old16 and original unknown ordering.",
+  "before_execution": [
+    "Freeze model definition, regularization and numerical solution policy without optimizing on held-source outcomes",
+    "Reuse source-group holdout and training-only baseline, report old16 and new16 separately",
+    "Record this as post-outcome development; no independent validation claim",
+    "Obtain separate authorization for any new fitting"
+  ],
+  "prohibited": [
+    "Choosing a model or lambda by inspecting these held errors and calling it an independent test",
+    "Increasing collection automatically",
+    "Replacing current frozen negative results",
+    "Full32 refit or deployment without approval"
+  ],
+  "alternative_outcome": "If another fixed method is not approved, this branch can close with the present negative result; existing MCTS engineering outcomes remain separate."
+}

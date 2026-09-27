@@ -1,0 +1,210 @@
+[
+  {
+    "id": "S01",
+    "role": "本次上传完整42节Skill",
+    "original_local_path": "/mnt/data/粘贴的 markdown (1)。md(6)",
+    "package_path": "workflow/USER_SKILL_ORIGINAL.md",
+    "size": 24882,
+    "sha256": "0d16a325ff3a79eb81e9c2b65e2a98e7b70002b2b301de36c590c17c896dc64f",
+    "note": "原字节复制；与md(4)相同；不覆盖历史文件。"
+  },
+  {
+    "id": "H01",
+    "role": "9月13日正式历史交接",
+    "original_local_path": "/mnt/data/MineSim_正式交接_截至20260913_停工版V1.docx",
+    "package_path": "history/H01_20260913_正式交接原件.docx",
+    "size": 78897,
+    "sha256": "76da5790380919b876cf98177cb0e4621e10c1c9144a97cec3cafcaf232c2f47",
+    "note": "本文不再沿用其中Window16未开始的旧当前状态；保留历史数据/模型定义。"
+  },
+  {
+    "id": "H02",
+    "role": "旧神经网络与早期主线锚点",
+    "original_local_path": "/mnt/data/MineSim_Dynamic_正式交接完整包_论文标准对齐版_V1_20260910.zip",
+    "package_path": "history/H02_20260910_论文标准对齐原包.zip",
+    "size": 1436537,
+    "sha256": "9b0f1cbaa787695c95fd2b2d6b455e720e1d1dc71cc019b269aeb84901646c37",
+    "note": ""
+  },
+  {
+    "id": "H03",
+    "role": "早期工程与版本索引",
+    "original_local_path": "/mnt/data/RADEME.txt",
+    "package_path": "history/H03_RADEME_20260813.txt",
+    "size": 41285,
+    "sha256": "6ffd910cbbe9fb6b56af4b37153b96120dd3ea0dbd74d141732e601fc7935ac8",
+    "note": "A2/3of7/Neural尚未开始均为旧快照。"
+  },
+  {
+    "id": "H04",
+    "role": "此前已形成的资料目录与摘录",
+    "original_local_path": "/mnt/data/MineSim_本批资料目录与关键摘录.txt",
+    "package_path": "history/H04_第一批资料目录.txt",
+    "size": 103484,
+    "sha256": "cd85f6b9843e6622529c5823d460bc90c699f55fad971cb4b61ef8158e11d8ea",
+    "note": "继承前次阅读与坏包记录；不是新实验。"
+  },
+  {
+    "id": "H05",
+    "role": "第二批目录与去重记录",
+    "original_local_path": "/mnt/data/MineSim_第二批资料目录与关键摘录.txt",
+    "package_path": "history/H05_第二批资料目录.txt",
+    "size": 303870,
+    "sha256": "eb34b9ad0025ceb6dee57e6577564c6ed1a43c4098a38a2f0ea1f0befe95aa3d",
+    "note": "摘要文档，不替代原实验。"
+  },
+  {
+    "id": "E01",
+    "role": "Window1616次拟合及覆盖诊断",
+    "original_local_path": "/mnt/data/MineSim_Window16_结果复核与接续状态_20260917.zip",
+    "package_path": "evidence/E01/Window16_复核.zip",
+    "size": 18416,
+    "sha256": "0f9c2f2d86df231c12d83b80dfc03929522f265d698eed78fe7d5907a16cfd52",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E02",
+    "role": "32状态512条数据与原256补采摘要",
+    "original_local_path": "/mnt/data/MineSim_Coverage32_数据采集完成与512条核验.zip",
+    "package_path": "evidence/E02/Coverage32_数据封存复核.zip",
+    "size": 816656,
+    "sha256": "fbe16fce66ea467d0e091cac0a953c5b04599e1e7098a7b5d7ad4a24da24ca70",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E03",
+    "role": "线性与26-64-64-16模型负结果",
+    "original_local_path": "/mnt/data/MineSim_Coverage32_16次拟合结果与复核.zip",
+    "package_path": "evidence/E03/Coverage32_无正则拟合复核.zip",
+    "size": 114938,
+    "sha256": "ee950eb1e8fa19aac0f680a3b7e779bb95688e1bf25407048af1a4b848ab64ed",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E04",
+    "role": "336内拟合及16外层模型摘要",
+    "original_local_path": "/mnt/data/MineSim_双车正则模型结果与复核_20260917.zip",
+    "package_path": "evidence/E04/双车26维正则复核.zip",
+    "size": 219637,
+    "sha256": "48eb017a74e85abbcc12378ec2cef365248def6c40355d80ba9803593f3f4cd4",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E05",
+    "role": "已有数据输入/噪声描述性诊断",
+    "original_local_path": "/mnt/data/MineSim_双车输入与监督信号诊断_20260917.zip",
+    "package_path": "evidence/E05/双车输入监督信号诊断.zip",
+    "size": 112949,
+    "sha256": "0225825b20f9ed4bce57fb497955db602e3880a265e226ae399794f25a6c5a0b",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E06",
+    "role": "36维正则模型结果与旧下一步提案",
+    "original_local_path": "/mnt/data/MineSim_双车交互结果与8折快速对照_20260917.zip",
+    "package_path": "evidence/E06/双车36维交互复核.zip",
+    "size": 127733,
+    "sha256": "02f0b1d2dd91949c6789af073a1a380bfe36db238e36f64221d759e7bc0db9bb",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E07",
+    "role": "固定lambda1标准化负结果",
+    "original_local_path": "/mnt/data/MineSim_双车标准化8折结果与决策诊断_20260917.zip",
+    "package_path": "evidence/E07/双车标准化岭回归复核.zip",
+    "size": 282198,
+    "sha256": "bf1996ba87637fe621f20c00627a6d98c7dcd37e235688a1ed1992f27e49e25c",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E08",
+    "role": "偏好负结果与既有论文阅读摘要",
+    "original_local_path": "/mnt/data/MineSim_本轮偏好效果与参考论文效率对照_20260917.zip",
+    "package_path": "evidence/E08/双动作偏好与论文机制对照.zip",
+    "size": 22813,
+    "sha256": "da6c503a3dc6af9ac8af751114ae249247ed440fe91261b38f45af7a11b37e2b",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E09",
+    "role": "8次观察小试/时间分解",
+    "original_local_path": "/mnt/data/MineSim_双车树复用观察复核与计算缓存小试.zip",
+    "package_path": "evidence/E09/树观察复核及旧缓存提案.zip",
+    "size": 71041,
+    "sha256": "0b690dea9677647770df6addbcb194e48c0df670eaff75748106e4b56ee1c0c8",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E10",
+    "role": "首个报告缓存等价但变慢",
+    "original_local_path": "/mnt/data/MineSim_双车缓存结果复核与轻量化小试.zip",
+    "package_path": "evidence/E10/动作报告缓存复核.zip",
+    "size": 904398,
+    "sha256": "d03d31fe2b4cbeb9a6c1c430cd925dac03a06e14e2c91a89e50cdb1bab4ff871",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E11",
+    "role": "4对小试混合计时结果",
+    "original_local_path": "/mnt/data/MineSim_轻量缓存结果复核与固定计时验证.zip",
+    "package_path": "evidence/E11/轻量缓存小试复核.zip",
+    "size": 82673,
+    "sha256": "f44a07a4ccbba6d070b9767421ea9f076bf6f6b0362ca51b09b5370cfa6c3357",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E12",
+    "role": "40次搜索中32次正式计时；负结果",
+    "original_local_path": "/mnt/data/MineSim_轻量缓存固定计时结果与复核_20260918.zip",
+    "package_path": "evidence/E12/轻量缓存固定计时复核.zip",
+    "size": 1367907,
+    "sha256": "e9fe11611a58c9ee8c86d20ecfece7c896d163e03bce9179debc563c1f1ed90d",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "E13",
+    "role": "当前最后已返回原始执行结果",
+    "original_local_path": "/mnt/data/2de0f8ec-2eb4-411c-92d8-9fbc61613670.zip",
+    "package_path": "evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+    "size": 948911,
+    "sha256": "5e8cd447847cce2e435ebc8c0376dfc723552b73caf86f1dde424f0982ab3478",
+    "note": "本次直接校验98项文件及62份绑定；不重跑搜索。"
+  },
+  {
+    "id": "P01",
+    "role": "下一步骤原发布物，非执行结果",
+    "original_local_path": "/mnt/data/MineSim_H8子树小试复核与4条策略验证准备.zip",
+    "package_path": "evidence/P01/H8_policy4_已交付准备原包.zip",
+    "size": 990172,
+    "sha256": "a38baff7ec4770cb719684d9fc513eb905eb0e3d68870daa2fc6f763d781d31c",
+    "note": "各原包可能含过时CURRENT_STATE/下一步；统一以本交接根目录CURRENT_STATE为入口。"
+  },
+  {
+    "id": "R13",
+    "role": "上一轮对H8原结果的独立算术复核",
+    "original_local_path": "/mnt/data/minesim_subtree_h8_review_20260918/REVIEW.json",
+    "package_path": "evidence/E13/PRIOR_REVIEW.json",
+    "size": 3212,
+    "sha256": "10998163fde0a6d49036b7cc313fe4d4c53eae01c36afd95725d58ea0e1f41de",
+    "note": "此前已完成；本交接继承其复算结论，不重复算新科研样本。"
+  },
+  {
+    "id": "P02",
+    "role": "已交付原始启动器",
+    "original_local_path": "/mnt/data/run_dual_subtree_policy4.sh",
+    "package_path": "pending_policy4/run_dual_subtree_policy4.sh",
+    "size": 34502,
+    "sha256": "fbdd654772f176a0a5d773139b7ecdb1d35ab951791204d7ed3c3b6c2488c975",
+    "note": "归档不等于执行授权；当前停工，不运行。"
+  },
+  {
+    "id": "D01",
+    "role": "冻结32状态512条聚合数据",
+    "original_archive": "MineSim_Coverage32_数据采集完成与512条核验.zip",
+    "original_member": "original/DATASET32.json",
+    "package_path": "frozen_data/DATASET32.json",
+    "size": 488232,
+    "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+    "note": "精确字节副本，不含256条新增轨迹全部逐步原件；未改变数值或标签。"
+  }
+]

@@ -1,0 +1,14 @@
+{
+  "handoff_id": "H20260919-R1",
+  "type": "SOURCE_GROUNDED_DOCUMENTATION_AND_SELECTED_EVIDENCE",
+  "not_a_latest_executable_release": true,
+  "not_full_disaster_recovery": true,
+  "contains_original_sources": true,
+  "contains_font_files": false,
+  "contains_rendered_qa_pdf_or_png": false,
+  "cloud_access_performed": false,
+  "latest_scientific_results_evidence_class": "original_transcript_reported",
+  "current_source_scan_limit": "top-levelZIP + nested<=5,<50MB; not7z",
+  "local_scientific_execution": 0,
+  "original_uploaded_files_modified": false
+}

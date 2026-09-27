@@ -1,0 +1,23 @@
+{
+  "requested_output": "Formal Word handoff per uploaded Skill",
+  "stop": true,
+  "new_mcts": 0,
+  "new_training": 0,
+  "new_forward": 0,
+  "cloud_read_or_write": false,
+  "cloud_process_stop_or_poweroff": false,
+  "git_commit_or_tag": false,
+  "original_input_modified": false,
+  "all_scientific_results_are_supplied_or_inherited": true,
+  "word_layout_QA_only": true,
+  "reference_papers": "Inherited prior supplied review, not newly browsed",
+  "exclusions": [
+    "Full ~179.8MB collection ZIP/splits",
+    "All prior raw teacher trajectories",
+    "Complete geojson/bitmap/runtime installations",
+    "All videos",
+    "All old model weights"
+  ],
+  "no_experiment_scripts_generated_this_handoff": true,
+  "existing_policy4_launcher_archived_unchanged": true
+}

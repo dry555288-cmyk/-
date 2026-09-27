@@ -1,0 +1,258 @@
+[
+  {
+    "root_id": "contrast_00",
+    "other_source_nearest_root": "newroot_02",
+    "physical_normalized26_Euclidean_distance": 0.12319685082969652,
+    "gap": 61.054964873098236,
+    "other_gap": -37.74488024101463,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "contrast_01",
+    "other_source_nearest_root": "contrast_03",
+    "physical_normalized26_Euclidean_distance": 0.2265143819699768,
+    "gap": -70.07194049516491,
+    "other_gap": -45.099503144721155,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "contrast_02",
+    "other_source_nearest_root": "newroot_03",
+    "physical_normalized26_Euclidean_distance": 0.4728615653783605,
+    "gap": 1.4245153217214437,
+    "other_gap": 1.4904059216852161,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "contrast_03",
+    "other_source_nearest_root": "contrast_07",
+    "physical_normalized26_Euclidean_distance": 0.09187358854315755,
+    "gap": -45.099503144721155,
+    "other_gap": 18.63411789540224,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "contrast_04",
+    "other_source_nearest_root": "coverage_policy_06__step0050",
+    "physical_normalized26_Euclidean_distance": 1.2059148360439418,
+    "gap": 35.98326588192243,
+    "other_gap": 0.8510353090260097,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "contrast_05",
+    "other_source_nearest_root": "contrast_01",
+    "physical_normalized26_Euclidean_distance": 1.5127220595994841,
+    "gap": 49.00275126525988,
+    "other_gap": -70.07194049516491,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "contrast_06",
+    "other_source_nearest_root": "newroot_00",
+    "physical_normalized26_Euclidean_distance": 1.5014954606769473,
+    "gap": -31.03158152738138,
+    "other_gap": -39.69864669946578,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "contrast_07",
+    "other_source_nearest_root": "contrast_03",
+    "physical_normalized26_Euclidean_distance": 0.09187358854315755,
+    "gap": 18.63411789540224,
+    "other_gap": -45.099503144721155,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "newroot_00",
+    "other_source_nearest_root": "contrast_06",
+    "physical_normalized26_Euclidean_distance": 1.5014954606769473,
+    "gap": -39.69864669946578,
+    "other_gap": -31.03158152738138,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "newroot_01",
+    "other_source_nearest_root": "coverage_policy_01__step0040",
+    "physical_normalized26_Euclidean_distance": 0.1572424618964485,
+    "gap": 2.024806194758767,
+    "other_gap": 1.7738404133033328,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "newroot_02",
+    "other_source_nearest_root": "contrast_00",
+    "physical_normalized26_Euclidean_distance": 0.12319685082969652,
+    "gap": -37.74488024101463,
+    "other_gap": 61.054964873098236,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "newroot_03",
+    "other_source_nearest_root": "contrast_02",
+    "physical_normalized26_Euclidean_distance": 0.4728615653783605,
+    "gap": 1.4904059216852161,
+    "other_gap": 1.4245153217214437,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "newroot_04",
+    "other_source_nearest_root": "contrast_02",
+    "physical_normalized26_Euclidean_distance": 1.510080362813425,
+    "gap": 1.946141720825345,
+    "other_gap": 1.4245153217214437,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "newroot_05",
+    "other_source_nearest_root": "newroot_01",
+    "physical_normalized26_Euclidean_distance": 0.16727609543292601,
+    "gap": 1.0776855041834494,
+    "other_gap": 2.024806194758767,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "newroot_06",
+    "other_source_nearest_root": "coverage_policy_00__step0028",
+    "physical_normalized26_Euclidean_distance": 0.3577251935161696,
+    "gap": -1.2716853233049648,
+    "other_gap": -0.9407940622378845,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "newroot_07",
+    "other_source_nearest_root": "coverage_policy_00__step0040",
+    "physical_normalized26_Euclidean_distance": 0.17620400508047385,
+    "gap": -0.5733042989719195,
+    "other_gap": -0.16691203226265117,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_00__step0065",
+    "other_source_nearest_root": "coverage_policy_04__step0061",
+    "physical_normalized26_Euclidean_distance": 1.4529870195383547,
+    "gap": -0.25161083850538546,
+    "other_gap": 0.02741193512684248,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_00__step0040",
+    "other_source_nearest_root": "newroot_07",
+    "physical_normalized26_Euclidean_distance": 0.17620400508047385,
+    "gap": -0.16691203226265117,
+    "other_gap": -0.5733042989719195,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_00__step0028",
+    "other_source_nearest_root": "newroot_06",
+    "physical_normalized26_Euclidean_distance": 0.3577251935161696,
+    "gap": -0.9407940622378845,
+    "other_gap": -1.2716853233049648,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_01__step0059",
+    "other_source_nearest_root": "coverage_policy_03__step0061",
+    "physical_normalized26_Euclidean_distance": 0.21582726290244886,
+    "gap": -0.03990803667782927,
+    "other_gap": 0.48995472341696455,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_01__step0014",
+    "other_source_nearest_root": "coverage_policy_05__step0011",
+    "physical_normalized26_Euclidean_distance": 0.12209660446103338,
+    "gap": -8.376565341027458,
+    "other_gap": 21.351045214585206,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_01__step0040",
+    "other_source_nearest_root": "newroot_01",
+    "physical_normalized26_Euclidean_distance": 0.1572424618964485,
+    "gap": 1.7738404133033328,
+    "other_gap": 2.024806194758767,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_02__step0063",
+    "other_source_nearest_root": "coverage_policy_06__step0050",
+    "physical_normalized26_Euclidean_distance": 1.7439623008395362,
+    "gap": 0.9708569943149357,
+    "other_gap": 0.8510353090260097,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_03__step0061",
+    "other_source_nearest_root": "coverage_policy_01__step0059",
+    "physical_normalized26_Euclidean_distance": 0.21582726290244886,
+    "gap": 0.48995472341696455,
+    "other_gap": -0.03990803667782927,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_04__step0061",
+    "other_source_nearest_root": "coverage_policy_07__step0065",
+    "physical_normalized26_Euclidean_distance": 0.15632330364301802,
+    "gap": 0.02741193512684248,
+    "other_gap": 0.07357909369056159,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_04__step0038",
+    "other_source_nearest_root": "coverage_policy_06__step0050",
+    "physical_normalized26_Euclidean_distance": 0.7726130539242948,
+    "gap": -0.042290948706238396,
+    "other_gap": 0.8510353090260097,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_04__step0017",
+    "other_source_nearest_root": "coverage_policy_06__step0050",
+    "physical_normalized26_Euclidean_distance": 1.317850269961858,
+    "gap": -0.7238748951846219,
+    "other_gap": 0.8510353090260097,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_05__step0066",
+    "other_source_nearest_root": "coverage_policy_07__step0065",
+    "physical_normalized26_Euclidean_distance": 0.035956753658728045,
+    "gap": -0.23407369296785419,
+    "other_gap": 0.07357909369056159,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_05__step0040",
+    "other_source_nearest_root": "newroot_03",
+    "physical_normalized26_Euclidean_distance": 0.9968914993860472,
+    "gap": -1.0729956655742043,
+    "other_gap": 1.4904059216852161,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_05__step0011",
+    "other_source_nearest_root": "coverage_policy_01__step0014",
+    "physical_normalized26_Euclidean_distance": 0.12209660446103338,
+    "gap": 21.351045214585206,
+    "other_gap": -8.376565341027458,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_06__step0050",
+    "other_source_nearest_root": "coverage_policy_04__step0038",
+    "physical_normalized26_Euclidean_distance": 0.7726130539242948,
+    "gap": 0.8510353090260097,
+    "other_gap": -0.042290948706238396,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  },
+  {
+    "root_id": "coverage_policy_07__step0065",
+    "other_source_nearest_root": "coverage_policy_05__step0066",
+    "physical_normalized26_Euclidean_distance": 0.035956753658728045,
+    "gap": 0.07357909369056159,
+    "other_gap": -0.23407369296785419,
+    "scope": "Descriptive nearest neighbour chosen using input only; not fitted model or prospective evaluation."
+  }
+]

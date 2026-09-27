@@ -1,0 +1,79 @@
+{
+  "review_scope": "Local file, saved record, arithmetic verification only; no MCTS, no training, no new simulation; no connection to cloud",
+  "source_zip": {
+    "filename": "263c0d6b-bdce-4571-a7ad-abaec07963e1.zip",
+    "sha256": "b6eaebb6ea02ffeedba0299e17a879a627f9d13a408c2ed94ce531e789169646"
+  },
+  "review_created_utc": "2026-09-18T02:56:50.870784+00:00",
+  "archive_members_including_manifest": 94,
+  "manifest_entries_verified": 93,
+  "bound_parent_files_verified": 64,
+  "release_files_verified": 5,
+  "saved_record_count": 8,
+  "fresh_pair_equivalence_verified": 4,
+  "historical_baseline_equivalence_verified": 4,
+  "recorded_result_status": "PASS_DUAL_FLAT_REPORT_CACHE_EQUIVALENCE_SMOKE",
+  "rc": 0,
+  "git_unchanged": true,
+  "git_clean": false,
+  "git_status": "?? ^C\n",
+  "sources_unchanged_as_reported": true,
+  "resources_as_reported": {
+    "affinity": 128,
+    "cpu_max_raw": "50000 100000",
+    "effective_cpu": 0.5,
+    "free_disk_bytes": 31080091648,
+    "gpu_needed": false,
+    "memory_available_bytes": 1733857280,
+    "resource": "LOW"
+  },
+  "mcts_calls_in_original_experiment": 8,
+  "mcts_calls_in_this_review": 0,
+  "training_in_this_review": 0,
+  "new_teacher_traces": 0,
+  "cache_totals": {
+    "requests": 7336,
+    "hits": 5112,
+    "hit_rate": 0.6968375136314068,
+    "full_reports_baseline": 7336,
+    "full_reports_cached": 2224,
+    "cross_decision_hits": 1177
+  },
+  "timing": {
+    "cpu": {
+      "baseline_mean_ms": 1322.836401,
+      "cached_mean_ms": 1221.2146829999997,
+      "baseline_sum_ms": 5291.345604,
+      "cached_sum_ms": 4884.858731999999,
+      "ratio_of_sums_cached_over_baseline": 0.9231789222588831,
+      "relative_reduction": 0.0768210777411169,
+      "pairs_lower": 3,
+      "pairs_total": 4,
+      "paired_ratios": [
+        0.8106810752308281,
+        1.378039459483773,
+        0.9879244488840208,
+        0.6461424796882614
+      ]
+    },
+    "wall": {
+      "baseline_mean_ms": 3551.628581015393,
+      "cached_mean_ms": 3424.7891298145987,
+      "baseline_sum_ms": 14206.514324061573,
+      "cached_sum_ms": 13699.156519258395,
+      "ratio_of_sums_cached_over_baseline": 0.9642869606695946,
+      "relative_reduction": 0.03571303933040537,
+      "pairs_lower": 2,
+      "pairs_total": 4,
+      "paired_ratios": [
+        0.812301545406591,
+        2.8186598257621114,
+        1.010837126380992,
+        0.3385686585071242
+      ]
+    }
+  },
+  "scientific_conclusion": "Exact saved behavior parity in four pairs. Descriptive aggregate CPU and wall reductions, but mixed per-pair effects and 0.5 effective CPU. No stable or production speedup established. Cache, not tree-statistics reuse.",
+  "safety_scope": "Outer saved geometry samples and counts match; unchanged collision/geometry source binding checked, but no complete controller/KBM/continuous-safety proof.",
+  "next_proposal_not_executed": "Only fixed-code, balanced timing characterization on non-half-core-quota CPU; no candidate retuning or teacher recollection; new explicit authorization required."
+}

@@ -1,0 +1,46 @@
+{
+  "parent_namespace": "minesim_dual32_interaction_fit_v1",
+  "source_count": 10,
+  "files": {
+    "MANIFEST.json": {
+      "size": 434870,
+      "sha256": "db740be6f83f862d4f6d52f332d2adca21ed12a14f8ffe30656db042d6fa5f3b"
+    },
+    "RC.txt": {
+      "size": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "RESULT.json": {
+      "size": 28219,
+      "sha256": "88ba32261844856f479b964bee41734b484dece8ed6c55960a28c721a08a826e"
+    },
+    "GIT_BEFORE.json": {
+      "size": 152,
+      "sha256": "b22efa6b0c704fc588cc1cf4ffc79af727222b8d4e83e22061b92b70bbb09b31"
+    },
+    "POSTCHECK_GIT.json": {
+      "size": 152,
+      "sha256": "b22efa6b0c704fc588cc1cf4ffc79af727222b8d4e83e22061b92b70bbb09b31"
+    },
+    "FEATURE36_MATRIX_AND_AUDIT.json": {
+      "size": 61115,
+      "sha256": "270f86a2a41f187162c077f42c85b8114d6a8cfdc338cdad7e81c5b3363b09ef"
+    },
+    "EXECUTION_PROTOCOL.json": {
+      "size": 6021,
+      "sha256": "aa7bf9110a4b555ce2a675bd56fcb1ff26c6be7cf78bbe017e3d64c169643fdb"
+    },
+    "OUTER_INNER_SPLIT_PLAN.json": {
+      "size": 53304,
+      "sha256": "5d726f4314ef2b163ef81ccf47cca4538ead38e5d1e16eeb8d392a2012a24ba6"
+    },
+    "PAIRED_FEATURE_COMPARISON.json": {
+      "size": 20821,
+      "sha256": "8b6194b89afbeb7bbcba1c2d475ce967c70bf78906a32b7ba515703d11b15d34"
+    },
+    "sources/parent/sources/sources/DATASET32.json": {
+      "size": 488232,
+      "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1"
+    }
+  }
+}

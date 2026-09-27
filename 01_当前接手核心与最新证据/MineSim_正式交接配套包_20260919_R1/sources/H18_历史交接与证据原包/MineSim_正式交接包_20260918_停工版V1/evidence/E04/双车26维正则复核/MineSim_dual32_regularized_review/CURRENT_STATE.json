@@ -1,0 +1,39 @@
+{
+  "evidence_cutoff": "uploaded run ending 2026-09-17T13:46:28.174894+00:00; not live cloud inventory",
+  "current_stage": "Dual-vehicle fixed512 regularized models nested-source-group development completed",
+  "execution": "COMPLETE; RC=0; 336 inner fits and 16 outer fits",
+  "review": "PASS file/hash/CRC, 352 saved model prediction/objective replay, nested split and lambda selection audit",
+  "data_status": "FROZEN: 32 states, 8 source groups, 512 observations; no recollection",
+  "scientific_result": "Neither tested model has both MAE and RMSE lower than train-only constant baseline. MLP MAE better by 0.00671666 reward units but RMSE worse; 5/8 outer MLP models predict almost constants across held states. Old six confirmed preference checks: ridge1/6, MLP0/6, fixed03 4/6.",
+  "next_proposal_only": {
+    "name": "DUAL32_FEATURE_SIGNAL_MATCH_DIAGNOSIS_READONLY_PROPOSAL",
+    "purpose": "Inspect whether saved physical/relational state information and repeated return signal support differentiating action preference before another model change.",
+    "inputs": "Existing DATASET32 and full_state, current/previous saved predictions, feature26 source. No new simulator rollout.",
+    "questions": [
+      "What existing state information is not explicitly represented by feature26?",
+      "Do similar cross-group feature states carry consistently different observed gaps?",
+      "How large is within-state repeated return variation relative to target differences?"
+    ],
+    "limits": "Post-outcome descriptive diagnosis; no label rewriting; no additional hyperparameter search; no best-checkpoint selection; no proof that adding a feature will improve accuracy.",
+    "executed": false,
+    "resource": "LOW",
+    "new_fits": 0,
+    "new_samples": 0,
+    "mcts_calls": 0,
+    "deployment_authorized": false,
+    "single_vehicle_authorized": false
+  },
+  "do_not_repeat": [
+    "collect256",
+    "coverage32 fit16",
+    "dual32 regularized nested comparison"
+  ],
+  "held_boundaries": [
+    "full16 action quality",
+    "independent route generalization",
+    "safety pruning",
+    "MCTS acceleration",
+    "controller deployment",
+    "single vehicle experiments"
+  ]
+}

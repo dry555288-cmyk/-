@@ -1,0 +1,69 @@
+{
+  "status": "PASS_SAVED_SCALAR_REPORT_EQUIVALENCE",
+  "saved_vehicle_state_records": 520,
+  "direct_cached_value_and_mutation_isolation": true,
+  "new_mcts_calls": 0,
+  "new_teacher_records": 0,
+  "new_training_runs": 0,
+  "local_python": "3.13.5 (main, Jul 15 2026, 20:25:40) [GCC 14.2.0]",
+  "cloud_executed": false,
+  "microbenchmark_only": {
+    "requests_per_repeat": 1040,
+    "repeat_count": 6,
+    "order": "rotating original/previous_cache/flat_cache",
+    "cpu_ms": {
+      "original": [
+        25.61502,
+        27.262712,
+        25.899952,
+        26.96412,
+        27.058409,
+        25.70948
+      ],
+      "previous_cache": [
+        63.381281,
+        63.744249,
+        62.331834,
+        62.883442,
+        58.770076,
+        61.379444
+      ],
+      "flat_cache": [
+        21.061199,
+        20.011693,
+        19.602217,
+        19.759379,
+        20.679083,
+        19.653803
+      ]
+    },
+    "median_cpu_ms": {
+      "original": 26.432036,
+      "previous_cache": 62.607638,
+      "flat_cache": 19.885536000000002
+    },
+    "cache_counts": {
+      "original": {
+        "requests": 0,
+        "hits": 0,
+        "full_report_evaluations": 0
+      },
+      "previous_cache": {
+        "requests": 1040,
+        "hits": 891,
+        "full_report_evaluations": 149
+      },
+      "flat_cache": {
+        "requests": 1040,
+        "hits": 891,
+        "full_report_evaluations": 149
+      }
+    },
+    "limitations": [
+      "saved explicit tree node order, not original rollout sequence",
+      "local Python/environment, no extrapolation to complete search speed",
+      "not a statistical benchmark",
+      "no vehicle advancement"
+    ]
+  }
+}

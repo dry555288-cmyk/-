@@ -1,0 +1,86 @@
+{
+  "CURRENT_STATE.json": {
+    "size": 1541,
+    "sha256": "59ca778924fbe78faccf4b2e8b779c73c9e9e269a9dd164123d6a2eda87c3624"
+  },
+  "DESCRIPTIVE_DIAGNOSTIC.json": {
+    "size": 26362,
+    "sha256": "ccc5a3672ee86b3501433c7ddb3e6510e955d3031df147f99aac755c85bd08ae"
+  },
+  "HELD_PREDICTIONS_RECOMPUTED.json": {
+    "size": 57922,
+    "sha256": "c5ab91524cdd34ac585c66076fda4da171ab724ef6544bd288b5b4d5b526dc19"
+  },
+  "METRICS_SUMMARY.csv": {
+    "size": 245,
+    "sha256": "0104a54980fc4fda87371fedbdfe3284f7dff4fe2ad3a47afc5f19ef66c5a0fc"
+  },
+  "NEXT_METHOD_PROPOSAL.json": {
+    "size": 1515,
+    "sha256": "7781a8c78567ca889d9f8c2cb208a09582e885e1b46b78630207c3103810c770"
+  },
+  "README.md": {
+    "size": 4153,
+    "sha256": "3f0203a8c3b72e199569849017dbada99dc9754e7eeb81db50301dbb3821e686"
+  },
+  "RECOMPUTED_METRICS.json": {
+    "size": 5819,
+    "sha256": "2a59249a532812bb6624e59a449e1a1b31ad38f2e76f8c36bad8f1f11fb21d71"
+  },
+  "REVIEW.json": {
+    "size": 8130,
+    "sha256": "1aed9a078a98afd570236b0a2b437dad559e947f8113c6bdc8be95bcc1152344"
+  },
+  "TRAIN_FIT_SUMMARY.json": {
+    "size": 3588,
+    "sha256": "124bf461b4d1ecffbee6f7185e3454353b3d257e6023f54b852708f83dbf1dcc"
+  },
+  "original/EXECUTION_PROTOCOL.json": {
+    "size": 2655,
+    "sha256": "750073738e8d4bbe0c21fbc6e23b168235b042cbdece554470bdb1ae3a9b7dfe"
+  },
+  "original/FOLDS.json": {
+    "size": 8186,
+    "sha256": "61f1e114397d50261f03af0ac8f586c55ec98c4f009712b891758726790aa3c3"
+  },
+  "original/INPUT_VALIDATION.json": {
+    "size": 471,
+    "sha256": "9ff2b8b6c05c99b605bfc019c779207deb30f7b679ca5b43b2d60e8e82aec8d1"
+  },
+  "original/MANIFEST.json": {
+    "size": 18965,
+    "sha256": "2a15f84011dc1468ca7af8f289b91219241ad214d6c15f76c9f59c00446a8d68"
+  },
+  "original/METRICS.json": {
+    "size": 4498,
+    "sha256": "3a0c1fcbdb178a7b8e8ca65eb52450ffa49eacd545bc8e60d638025344bca687"
+  },
+  "original/POSTCHECK_GIT.json": {
+    "size": 152,
+    "sha256": "b22efa6b0c704fc588cc1cf4ffc79af727222b8d4e83e22061b92b70bbb09b31"
+  },
+  "original/RESULT.json": {
+    "size": 5578,
+    "sha256": "bbb7a232640944d3fa6cd2e600c9a3a80856dba8cef19f2404160b0077338dff"
+  },
+  "original/TIMING.json": {
+    "size": 132,
+    "sha256": "d0314dbc459b3aa17b6af9319b616cb40b61c93330fb807dc325ac81f00c5fa4"
+  },
+  "original/release/PREREGISTERED_FITTING_CONTRACT.json": {
+    "size": 1580,
+    "sha256": "392ffb8c2e0678c1236ddd4bbb4b4040968140323fb8dc09c0239b4f747f2e8f"
+  },
+  "original/sources/DATASET32.json": {
+    "size": 488232,
+    "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1"
+  },
+  "original/sources/runtime/inputs/OLD_DATASET16.json": {
+    "size": 226469,
+    "sha256": "44a7567bec8c55a2c321e898de01455166a09769514987069cc0894f954176ff"
+  },
+  "review_fit16.py": {
+    "size": 19939,
+    "sha256": "27f496aad2038743379603c1b3744b94c731cd0cc83e8decc31d941d0fc315e7"
+  }
+}

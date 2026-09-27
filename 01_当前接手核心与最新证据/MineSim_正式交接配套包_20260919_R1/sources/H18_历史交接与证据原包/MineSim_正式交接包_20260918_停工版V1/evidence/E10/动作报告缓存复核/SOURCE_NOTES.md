@@ -1,0 +1,1 @@
+原始RESULT/native记录及MANIFEST见raw/minesim_dual_reportcache_v1。旧缓存开销见release/action_cache.py的identity()与report()；新表示及差异见next_proposal/release与changes_*.diff。本地微负载使用09bb8435-54da-4d72-b7d0-536d562ff483.zip中的4份observed树节点记录，只复算标量action_report，不运行搜索。

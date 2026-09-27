@@ -1,0 +1,294 @@
+[
+  {
+    "name": "原项目复现.zip",
+    "local_exists": true,
+    "size": 20644638,
+    "sha256": "bee262cbdc9aa366ae22af6dc6b7565707bd00534e9426ea5bb0a62d81d27516",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "蒙特卡洛实现.7z",
+    "local_exists": true,
+    "size": 27994648,
+    "sha256": "719bed9d7fe82d453eb0cded6bb60f0b5ddb06419724c0a2d4fe3674e3387bd9",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "蒙特卡洛效果对比.7z",
+    "local_exists": true,
+    "size": 1651563,
+    "sha256": "4c719ebbc86304b26e3d598e57aaa557ec2b0d79dd3dcc488620acc4247aa3ee",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "MineSim地图更换.7z",
+    "local_exists": true,
+    "size": 1043429,
+    "sha256": "e66b8e2154b43a05a58590eae9376497f68e1c8426bf2cbd8e876c7a64664114",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "地图新建相关文件.zip",
+    "local_exists": true,
+    "size": 9776650,
+    "sha256": "1e499fd92d3d76ae7167960d492e8760fc8aa7b73180458c0e90aefa07e1a44d",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "接下来方向.7z",
+    "local_exists": true,
+    "size": 32351216,
+    "sha256": "43b15ae6b089887f99efdd18ff04681793e5f693e0f0592ae76ef2dbdbd60c69",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "可参考论文.7z",
+    "local_exists": true,
+    "size": 22895976,
+    "sha256": "79a0707d2dfdd42b04c8622b505b371885ec558af1183db3db67f1e6af5b6f5c",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "AI接手文档.zip",
+    "local_exists": true,
+    "size": 1189654,
+    "sha256": "0d84f9cadc2e1250b2f6434edb62c865a4abe3726d9888b75156ef8437a70a13",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "AI接手文档2.zip",
+    "local_exists": true,
+    "size": 834529,
+    "sha256": "08ae0b5c269891ffc7b750354b60b28fe418148d8642111e4c69f67c44baaa0f",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "AI接手文档3.zip",
+    "local_exists": true,
+    "size": 1126908,
+    "sha256": "243f06894ebd3e754ec3794eec9b4f00ba79c6075b0817a462b603c4221c2308",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "AI接手文档4.zip",
+    "local_exists": true,
+    "size": 1240685,
+    "sha256": "c60924eaf0bda8ab5675594c8040a837edb94cef6a649388085fb5b0789d61d2",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "AI接手文档（截至9月12）.zip",
+    "local_exists": true,
+    "size": 4457939,
+    "sha256": "53ccb83dba93b7fff0097fa223e8c6967972dd239ad164c72515f53b0dc002fc",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "MineSim_Complete_Handoff_Package_2026-08-24 (1).zip",
+    "local_exists": true,
+    "size": 95535104,
+    "sha256": "b0265796b52356cb96f4385afb215077eb11c7e215007dd8f7db7a9cb930b275",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "CROSS_SCENE_DYNAMIC_CONCLUSION_V1.zip",
+    "local_exists": true,
+    "size": 6886,
+    "sha256": "2dde3d66652097ab8319ac44693f2c035435f838799e24ff6147facc6565ca0b",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "PAPER_METHOD_COMPATIBILITY_DECISION_V1.zip",
+    "local_exists": true,
+    "size": 3658,
+    "sha256": "2c2f85767b60e139bd9d6b56a6b24d7b3a0afd95c5ca802b81ad882acb67cb41",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "PAPER1_V0_OBSERVATIONAL_FREEZE_V1.zip",
+    "local_exists": true,
+    "size": 4542,
+    "sha256": "714698023347899f2b3f52e13965d6507eac7c325ad681ee48167b266521460d",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "MineSim_云端项目整理最终文档包.zip",
+    "local_exists": true,
+    "size": 53552,
+    "sha256": "b421fae9b0f36b948b5fda716f874f09256a670846a6e8fa41752b4620240251",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "MineSim_项目PPT.pptx",
+    "local_exists": true,
+    "size": 8216783,
+    "sha256": "27ece5f3123aa6a8bb92e8281a9b62e3f3ec72883e1235ac289851cbfce44d37",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "面向复杂露天矿场的异构无人矿车群体协同控制系统_项目计划书.docx",
+    "local_exists": true,
+    "size": 17530130,
+    "sha256": "37584706ba219cd462c5c8b6e523c261ed0d94563dc0ec5d93698e4fff1f72bf",
+    "packaged": false,
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "0824_zip_status",
+    "current_read_open_error": "BadZipFile: File is not a zip file",
+    "note": "当前BadZipFile；前次保留的前部6份摘录可查H04，不重做恢复。"
+  },
+  {
+    "name": "8549ae08-e001-40f7-a0c3-717c4171869c.zip",
+    "local_exists": true,
+    "size": 2432584,
+    "sha256": "67b03c5d216f38fffcaa30c78239fdb3ad0ceff7b9e86a61fb80ca8493500176",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "f77a974f-90b4-4e16-9ac5-510c7720b09a.zip",
+    "local_exists": true,
+    "size": 2120051,
+    "sha256": "e26b0a32cd4cfbe12e5eb74e8527b1ebb74bbceb3d01fdba44a11c37e4e18aab",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "b398dad7-9e40-440a-820b-b62e0ca71c20.zip",
+    "local_exists": true,
+    "size": 1177851,
+    "sha256": "df55be508feb3258aa43ab33e5ac691ce5b291c806547f88346b3af92b95b2a4",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "3a347563-319f-4720-ae5e-8385b5342905.zip",
+    "local_exists": true,
+    "size": 4957,
+    "sha256": "41bf6e2ebbe1af50ac95b0370d30bf167b30f670a78d908a4ee43f8957d9508f",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "30a2a0eb-e8b3-4d38-8c5a-2bc0bae32202.zip",
+    "local_exists": true,
+    "size": 2855670,
+    "sha256": "3229ac1ff117384cd28b14b74c4501e0c4daedc14d0317c27d00327c71fe7f97",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "e48bb570-3924-411d-89e0-81f4e0376e36.zip",
+    "local_exists": true,
+    "size": 4879401,
+    "sha256": "8cf25384e50a7cfc3f26f3618e160e29f23d3eb91697da393b53bbb2319f14ab",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "6e732d05-11e0-466b-8442-b22a9d65fb57.zip",
+    "local_exists": true,
+    "size": 1978944,
+    "sha256": "6dd6ffe5b8c6295cd4b50d244119a7c338c25f3e7add2e7dfaad192f36ad0146",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "29eb52f0-03f5-4951-894b-6f08b39acf68.zip",
+    "local_exists": true,
+    "size": 3247050,
+    "sha256": "ba96d17d2387fd45294be78bfe28572f34659d332f92b3947f2c6ad65b5c057e",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "a0c63dc1-87f0-4d9d-97ca-5eca6d9f5f4f.zip",
+    "local_exists": true,
+    "size": 3738026,
+    "sha256": "0627cfcff9090a3c2f550c7360a6a7b4a15c95a9e72ae5ff5832abbcbdf322bc",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "c52820de-e363-488d-bf00-a33d2aabd956.zip",
+    "local_exists": true,
+    "size": 284440,
+    "sha256": "182a02856a376101c25afaef30817b415d28329bca440b94b134a33ce309eda8",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "ded00c4b-92e2-40fb-a361-f7ebe3f093f2.zip",
+    "local_exists": true,
+    "size": 193558,
+    "sha256": "e6d3d724cd572f11ebfc233b6af099335e5753f3e8f6c598d5c3fd65f2bcc7a8",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "09bb8435-54da-4d72-b7d0-536d562ff483.zip",
+    "local_exists": true,
+    "size": 861467,
+    "sha256": "773ca3a14723f56698af221072bf39fc90d38a0b836f307ae1e43d76c26adf8a",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "4bb5fc89-fd14-4d31-b859-509fbff22b08.zip",
+    "local_exists": true,
+    "size": 824217,
+    "sha256": "7af09588d77a4d107cd01fd380ec7b478f08adaca8421ff90b5c326cee1079ec",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "263c0d6b-bdce-4571-a7ad-abaec07963e1.zip",
+    "local_exists": true,
+    "size": 812210,
+    "sha256": "b6eaebb6ea02ffeedba0299e17a879a627f9d13a408c2ed94ce531e789169646",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  },
+  {
+    "name": "bee7eb3b-ba0d-4f0e-ac72-9daa097d2712.zip",
+    "local_exists": true,
+    "size": 1408755,
+    "sha256": "b2e1f9dc19e448883404120cb4cdf2d53d6abfe3513dada989ff4b1ff7066bca",
+    "packaged": false,
+    "role": "对应历史原始运行包；主要复核摘要已在E01—E12内",
+    "live_cloud_present": "UNKNOWN"
+  }
+]

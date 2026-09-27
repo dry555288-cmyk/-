@@ -1,0 +1,28 @@
+{
+  "parts": [
+    {
+      "file": "minesim_grouped_coverage32_collect256_v1.zip(1).001",
+      "size": 52428800,
+      "sha256": "96ac8dfa328f319515975b6e43053279ed1eec918e21421b92929d5f24127f3a"
+    },
+    {
+      "file": "minesim_grouped_coverage32_collect256_v1.zip(1).002",
+      "size": 52428800,
+      "sha256": "3cfe628dff24b667ba9e47727117f24e334ce4f4202283212311f27932f717b3"
+    },
+    {
+      "file": "minesim_grouped_coverage32_collect256_v1.zip(1).003",
+      "size": 52428800,
+      "sha256": "0953f7466ff579edb870d3ea15ed71ee18ca189c25166ca9ae982931a434fb76"
+    },
+    {
+      "file": "minesim_grouped_coverage32_collect256_v1.zip(1).004",
+      "size": 22486970,
+      "sha256": "99c6ade77fcc51734c09a8e4607c9be73b6a24b73b4c7be27bcbf4eff5a3ada9"
+    }
+  ],
+  "reassembled_file": "/mnt/data/MineSim_Coverage32_数据封存复核_20260917/minesim_grouped_coverage32_collect256_v1.reassembled.zip",
+  "size": 179773370,
+  "sha256": "67875bee5351a4a147640f9e9fb405aa5fd9aeb3d62981f54a9a2e4ed9d3ce8f",
+  "transfer_manifest_provided": false
+}

@@ -1,0 +1,80 @@
+MineSim：原始记录重绑定结果复核与三项冻结来源定向补齐
+日期：2026-09-08
+当前 Gate：THREE_MISSING_FREEZE_ARTIFACTS_EXACT_SHA_CLOSURE
+资源：LOW / CPU-only。不得运行 MCTS、模型 forward、训练或576次 Pilot。
+
+一、实际检查对象与范围
+当前用户上传：e6deec87-a019-4ea9-ab23-bde88a188e39.zip。
+包内根目录：minesim_teacher_pilot_raw_rebind_v1/。
+同时复用前一份已经上传的90ad1ca4-54e3-4e1e-a78e-3441750a178b.zip中的原始JSONL、NPZ和旧Pilot记录，不请求云端再次执行2356条数据审计。
+本报告的文件核验和逐项复算在当前本地容器完成，没有连接当前AutoDL实例，没有执行任何MineSim源码。
+
+二、本地独立核验结果
+1. 当前ZIP可正常读取，全部成员CRC检查通过。
+2. 当前SHA256_MANIFEST.json列出116项文件；116/116原字节SHA及大小一致。ZIP共117个文件，另1项是清单自身。成员集合无未列明文件。
+3. 上一份证据包的161项文件也重新校验通过。
+4. 根据原始JSONL重建特征，并以冻结4×4动作编号顺序整理Q与即时奖励：2356/2356行与NPZ的float32字节一致；每行16个动作的visit总和为64。
+5. 新36-root记录均与各自正确episode的原始记录相同。C04/C06/C11各12条，6个episode各6条，选点未变。
+6. 其中34条相对旧36-root文件字节完全不变。C04_FROZEN_EP0 step0和C06_FROZEN_EP0 step0这2条使用正确原始日志的完整行，而不是手改provenance；两条的完整root_state与旧记录一致。
+7. 这2条恢复后的seed都是0。旧记录分别误取seed5与seed1；两条各有16个Q值不同，visit不同的动作数分别15、12。这些差异属于此前Pilot记录绑定错误，而不是原2356条NPZ转换错误。
+8. 包内GIT_BEFORE与GIT_AFTER完全相同；SOURCE_POSTCHECK记录331/331 unchanged=true。后者是云端采集器的已返回记录，不等于本模型此刻直接访问云端复查了331个源文件。
+9. 12项已找到的exact_sources内容SHA分别与原provenance绑定一致。
+10. CAPTURE记载返回码2、没有中断、没有新搜索、没有科学结果。START→CAPTURE时间差15.582463秒；该差值不是性能benchmark，也不包含所有打包尾部工作。用户持续显示的tail -f本身不会因被查看的程序结束而退出。
+
+三、仍缺的三项来源
+（1）dynamic_v2v_freeze_sha256
+3bcbbcb3623b07c3e8a162e24c5b63303b866cf9d149a68d083c30b5f7856193
+涉及六个episode。
+历史清单候选：PAPER1_DYNAMIC_V2V_SIDECAR_V1_FREEZE.zip。
+（2）approach_contract_freeze_sha256
+a27653c237118077a939001ae00aa2014bea3d15ec08f8393ba3e6aca7acb314
+涉及C06与C11的四个episode。
+历史清单候选：PAPER1_V2V_HEADING_APPROACH_CONTRACT_V1_FREEZE.zip。
+（3）omega_int_contract_freeze_sha256
+a6b1de3c643c331b9a5d27f6544fa1266d4b3ff155f6de754cc94e8716db32c0
+涉及C06与C11的四个episode。
+历史清单候选：PAPER1_OMEGA_INT_CONTRACT_V1_FREEZE.zip。
+
+上述文件名只提供定位线索，不证明其现在仍在，也不证明这些候选ZIP的完整字节SHA一定就是目标SHA。本次本地没有取得这三类ZIP原字节，仍需云端定向读取后确认。
+
+四、上版查找为何漏掉这一类资产
+这是查找范围设计不充分，需要明确纠正，而不是让用户把同一脚本再跑一遍。
+executed_script.py的collect_sources只接受后缀.py和.json；SOURCE_SCAN_SCOPE明确archives_read=false。列出的扫描根目录也没有99_OLD_TOPLEVEL_PACKAGES_20260830与90_MineSim_ARCHIVE。
+因此，12/15并不能说明另外3项已丢失。
+上一份证据包已经保留历史archive_scan_inventory.json，其中确实列出三类FREEZE.zip及DELIVERY.zip、两个归档副本。该历史清单中的matches=0表示当时“查找缺失root记录”未匹配，不表示冻结包损坏，更不表示本轮目标SHA不匹配。
+本次代码只核对该历史清单中已实际出现的8个非回收站路径，不做全盘扫描、不读取.Trash、不按文件名授予来源角色。
+
+五、新脚本做什么
+1. 核对当前原始记录重绑定证据包的116项SHA，并原样复制到新namespace的parent目录；不重跑NPZ或原始JSONL审计，不重新修正36条root。
+2. 验证原历史归档清单SHA，确认8个候选路径来自该清单，而不是猜测。
+3. 优先对原ZIP完整字节计算SHA。必要时检查DELIVERY ZIP内部原始成员，保留外部包→内部成员的链，不把文件内容重新序列化或重新打包来冒充原SHA。
+4. 检查ZIP成员路径、重复成员、符号链接、加密标志、大小限额和CRC；不向旧目录解压恢复，不执行任何成员源码。
+5. 精确匹配的原文件及相关小型文本成员只复制到新的证据目录，保存原路径/成员名和SHA。
+6. 3项均精确匹配并通过检查时，报告15/15来源字节闭合；否则HOLD并保留缺项明细。
+7. 无论来源是否全部找到，runtime_context_status仍为NOT_CERTIFIED，ready_for_36_root_smoke仍为false；不把来源文件收集完成冒充运行上下文证书。
+8. 生成ZIP后再逐项核验ZIP内SHA与CRC，完成后写done.json。监控脚本读完成标记或wrapper退出码后自动退出，不再用无限等待的tail -f作为默认查看方式。
+
+六、输出与运行边界
+新的输出目录：/root/autodl-tmp/minesim_teacher_pilot_freeze_archive_closure_v1
+新的ZIP：/root/autodl-tmp/minesim_teacher_pilot_freeze_archive_closure_v1.zip
+screen会话：minesim_pilot_freeze_archives_v1
+旧raw_rebind、V2、retry目录及模型、训练集均不覆盖。
+新目录或ZIP等已存在时停止，不删除后重跑。启动锁也保留。
+SIGINT/SIGTERM的可处理退出会保存HOLD证据；SIGKILL或实例关机不能保证完成打包，应保留现场，而不是重跑原namespace。
+
+七、本地测试及其边界
+38项Python unittest通过：包括真实返回包116项parent核验，合成三来源PASS流程，缺失一项/三项HOLD打包、SHA不符、历史清单不符、旧目录/旧ZIP保护、nested ZIP、同名异内容不匹配、同SHA多副本、重复/穿越/符号链接/加密ZIP、CRC损坏、读取限额、原文件前后变化、FIFO非阻塞拒绝、非法/重复键/非有限JSON、复制故障、中断保存、Git后检查故障仍打包。
+8项shell桩测试通过：启动器校验及HOLD退出记录、脚本SHA不符拒绝、旧ZIP保护、已有screen拒绝、screen启动失败保留锁，以及监控遇到完成标记、worker退出、会话缺失时退出。
+AST按Python3.9语法检查通过；py_compile与两个shell的bash -n通过。
+本地成功路径使用合成冻结ZIP，不是云端三个真实冻结包。screen测试使用桩命令，不是AutoDL上真实SSH断线试验。未执行任何36-root几何重建、技术搜索或576次Pilot。
+
+八、科学结论保持不变
+本轮仅解决记录身份与冻结来源证据问题，不新增神经网络效果结果，不证明教师Q收敛，不证明旧训练数据标签质量已经达标，不证明均衡采样后剪枝或闭环性能必然改善。
+新训练/搜索仍未授权。
+
+九、可复算材料
+OFFLINE_AUDIT.json：当前与前次包的核验计数、2356行核验结果摘要。
+PILOT_RECORD_RECHECK.json：36条逐条重绑定复核。
+recompute_raw_rebind_audit.py：原始日志/NPZ独立复算脚本；其中使用本会话解包路径，作为本地审阅复算材料，不是云端执行入口。
+python_tests.log、shell_tests.log：实际测试输出。
+云端只上传并运行执行脚本、screen启动脚本与监控脚本，测试夹具不上传。

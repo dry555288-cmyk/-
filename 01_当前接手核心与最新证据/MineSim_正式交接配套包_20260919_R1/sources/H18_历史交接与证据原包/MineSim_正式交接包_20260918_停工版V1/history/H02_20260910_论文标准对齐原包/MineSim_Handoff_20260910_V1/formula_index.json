@@ -1,0 +1,320 @@
+[
+  {
+    "id": "F01",
+    "chapter": "3. 统一符号、真实搜索与奖励实现",
+    "latex": "i(a)=4a_A+a_B,\\qquad (a_A,a_B)\\in\\{0,1,2,3\\}^2.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F02",
+    "chapter": "3. 统一符号、真实搜索与奖励实现",
+    "latex": "\\operatorname{UCT}(s,a)=\\widehat Q(s,a)+c\\sqrt{\\frac{\\log(N(s)+1)}{N(s,a)}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F03",
+    "chapter": "3. 统一符号、真实搜索与奖励实现",
+    "latex": "G_j=\\sum_{k=0}^{L_j-1}\\gamma^kr_{j,k},\\qquad\\widehat Q(s,a)=\\frac{S_Q(s,a)}{N(s,a)}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F04",
+    "chapter": "3. 统一符号、真实搜索与奖励实现",
+    "latex": "a_{\\mathrm{exec}}=\\underset{a}{\\operatorname{lexargmax}}\\bigl(N(s,a),\\widehat Q(s,a),-i(a)\\bigr).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F05",
+    "chapter": "3. 统一符号、真实搜索与奖励实现",
+    "latex": "r_{\\mathrm{prog}}=\\frac12\\sum_{v\\in\\mathcal V_{\\mathrm{active}}}\\frac{\\max(0,\\Delta s_v)}{v_{\\mathrm{ref}}\\Delta t},\\qquad\nr_{\\mathrm{speed}}=-\\frac12\\sum_v0.3\\frac{\\operatorname{abs}(v'_v-v_{\\mathrm{ref}})}{v_{\\mathrm{ref}}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F06",
+    "chapter": "3. 统一符号、真实搜索与奖励实现",
+    "latex": "r_{\\mathrm{TTC}}=-\\frac12\\sum_v2\\max\\left(0,\\frac{3-\\mathrm{TTC}_v}{3}\\right),\\qquad\nr_{\\mathrm{comfort}}=-\\frac12\\sum_v0.3\\frac{\\operatorname{abs}(a'_v-a_v)}{10\\Delta t}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F07",
+    "chapter": "3. 统一符号、真实搜索与奖励实现",
+    "latex": "r_{\\mathrm{int}}=-0.5\\operatorname{clip}_{01}\\left(\\frac{3-d_{AB}}{3}\\right)^2,\n\\qquad r_{\\mathrm{hard}}=-100\\,\\mathbf1_{\\mathrm{hard}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F08",
+    "chapter": "3. 统一符号、真实搜索与奖励实现",
+    "latex": "r=r_{\\mathrm{prog}}+r_{\\mathrm{speed}}+r_{\\mathrm{TTC}}+r_{\\mathrm{ext}}+r_{\\mathrm{comfort}}+r_{\\mathrm{goal}}+r_{\\mathrm{int}}+r_{\\mathrm{hard}},\\quad G=\\sum_cG_c.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F09",
+    "chapter": "4. Value V2、Value V3与K13：方法及冻结结论",
+    "latex": "z_j=\\frac{x_j-\\mu_{j,\\mathrm{train}}}{\\widetilde\\sigma_{j,\\mathrm{train}}},\\qquad\nf_\\theta(x)=W_3\\operatorname{ReLU}\\!\\left(W_2\\operatorname{ReLU}(W_1z+b_1)+b_2\\right)+b_3.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F10",
+    "chapter": "4. Value V2、Value V3与K13：方法及冻结结论",
+    "latex": "y_{ij}=\\operatorname{sign}(d_{ij}),\\qquad\nw_{ij}=\\frac{\\operatorname{abs}(d_{ij})}{\\max(q_{\\max}-q_{\\min},10^{-12})}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F11",
+    "chapter": "4. Value V2、Value V3与K13：方法及冻结结论",
+    "latex": "\\ell_s^{\\mathrm{V3}}=\n\\frac{\\sum_{i<j}w_{ij}\\operatorname{softplus}[-y_{ij}(f_i-f_j)]}{\\sum_{i<j}w_{ij}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F12",
+    "chapter": "4. Value V2、Value V3与K13：方法及冻结结论",
+    "latex": "\\widehat a_s=\\arg\\max_af_\\theta(x_s)_a,\\qquad\n\\operatorname{NR}(s)=\\frac{q_{\\max}(s)-q(s,\\widehat a_s)}{\\max(q_{\\max}(s)-q_{\\min}(s),10^{-12})}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F13",
+    "chapter": "4. Value V2、Value V3与K13：方法及冻结结论",
+    "latex": "m(x)=f_{(1)}(x)-f_{(2)}(x).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F14",
+    "chapter": "4. Value V2、Value V3与K13：方法及冻结结论",
+    "latex": "\\begin{aligned}\nm<\\tau_o &\\Rightarrow M_0,\\\\\n\\tau_o\\le m<\\tau_p &\\Rightarrow M_1,\\\\\nm\\ge\\tau_p &\\Rightarrow M_2.\n\\end{aligned}",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F15",
+    "chapter": "4. Value V2、Value V3与K13：方法及冻结结论",
+    "latex": "\\operatorname{Retention}_{K,\\tau}\n=\\frac{\\sum_{s:m_s\\ge\\tau}\\mathbf1\\{a_s^{\\mathrm{teacher}}\\in\\operatorname{TopK}(f_s)\\}}\n{\\operatorname{card}\\{s:m_s\\ge\\tau\\}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F16",
+    "chapter": "4. Value V2、Value V3与K13：方法及冻结结论",
+    "latex": "T_{\\mathrm{episode}}\\approx\\sum_{s\\in\\mathrm{visited\\ roots}}\n\\bigl(T_{\\mathrm{feature}}+T_{\\mathrm{forward}}+T_{\\mathrm{search}}+T_{\\mathrm{other}}\\bigr).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F17",
+    "chapter": "5. 训练数据审计：从文件正确到教师可靠",
+    "latex": "1.4\\sqrt{\\log(64+1)}\\approx2.86.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F18",
+    "chapter": "5. 训练数据审计：从文件正确到教师可靠",
+    "latex": "N_B(s,a)=B/16\\in\\{4,16,64\\}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F19",
+    "chapter": "6. 相对排序候选、36-root Pilot与来源修复",
+    "latex": "D_z^{(B)}(s;i,j)=\\widehat Q_{B,z}(s,i)-\\widehat Q_{B,z}(s,j).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F20",
+    "chapter": "6. 相对排序候选、36-root Pilot与来源修复",
+    "latex": "\\mathcal C(s)=\\{a:\\nexists b\\text{，使当前确认关系中 }b\\succ a\\}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F21",
+    "chapter": "6. 相对排序候选、36-root Pilot与来源修复",
+    "latex": "\\operatorname{UnsupportedDrop}(s)=\\frac{\\operatorname{card}(D_{13}(s)\\cap\\mathcal C(s))}{3}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F22",
+    "chapter": "7. 新诊断网络：可学习性、泛化与覆盖对照",
+    "latex": "\\ell_s^{\\mathrm{mask}}=\n\\frac{\\sum_{i<j}m_{sij}\\operatorname{softplus}[-y_{sij}(f_i-f_j)]}{\\sum_{i<j}m_{sij}},\n\\qquad \\mathcal L=\\operatorname{mean}_{\\mathrm{scene}}\\operatorname{mean}_{s\\mid\\mathrm{scene}}\\ell_s^{\\mathrm{mask}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F23",
+    "chapter": "7. 新诊断网络：可学习性、泛化与覆盖对照",
+    "latex": "A_s=\\frac{\\sum_{i<j}m_{sij}\\mathbf1\\{y_{sij}(f_i-f_j)>0\\}}{\\sum_{i<j}m_{sij}},\\qquad\n\\operatorname{Coverage}_s=\\frac{\\sum_{i<j}m_{sij}}{120}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F24",
+    "chapter": "7. 新诊断网络：可学习性、泛化与覆盖对照",
+    "latex": "x_{t+1}=\\arg\\max_{x\\in\\mathcal A_t}\\min_{y\\in L\\cup S_t}d(x,y),\\qquad\nd(x,y)=\\sqrt{\\frac1d\\sum_{j=1}^{d}\\left(\\frac{x_j-y_j}{\\sigma_j}\\right)^2}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F25",
+    "chapter": "7. 新诊断网络：可学习性、泛化与覆盖对照",
+    "latex": "\\Delta_{\\mathrm{same}}=M_{10}-M_{00},\\quad\n\\Delta_{\\mathrm{other}}=M_{01}-M_{00},\\quad\nI=M_{11}-M_{10}-M_{01}+M_{00}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F26",
+    "chapter": "8. 时域问题：同轨迹后段回报足以翻转排序",
+    "latex": "G_{16}(\\tau)=G_8(\\tau)+\\gamma^8G^{\\mathrm{local}}_{8:16}(\\tau),\\qquad\nG_h(\\tau)=\\sum_{k=0}^{\\min(h,\\tau_{\\mathrm{term}})-1}\\gamma^kr_k.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F27",
+    "chapter": "8. 时域问题：同轨迹后段回报足以翻转排序",
+    "latex": "Y=\\sum_{k=0}^{L-1}\\gamma^kr_k+\n\\mathbf1_{\\{\\mathrm{not\\ terminal}\\}}\\gamma^L\\widehat V_{\\mathrm{tail}}(s_L).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F28",
+    "chapter": "8. 时域问题：同轨迹后段回报足以翻转排序",
+    "latex": "\\mathcal L(f+c\\mathbf1,y)=\\mathcal L(f,y).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F29",
+    "chapter": "9. 从叶状态恢复到完整策略回报",
+    "latex": "G_T=G_l+\\mathbf1_{\\{\\mathrm{not\\ terminal\\ at}\\ l\\}}\\gamma^lG_{T-l}^{\\mathrm{tail}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F30",
+    "chapter": "9. 从叶状态恢复到完整策略回报",
+    "latex": "\\pi_{\\mathrm{random}}(a\\mid s)=1/\\operatorname{card}(\\mathcal A_{\\mathrm{active}}(s)).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F31",
+    "chapter": "9. 从叶状态恢复到完整策略回报",
+    "latex": "V_m^\\pi(s)=\\mathbb E_\\pi\\left[\\sum_{j=0}^{\\min(m,\\tau)-1}\\gamma^jr_j\\right].",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F32",
+    "chapter": "9. 从叶状态恢复到完整策略回报",
+    "latex": "Q_T^\\pi(s,a)=\\mathbb E\\left[r_0+\\gamma V_{T-1}^\\pi(s_1)\\right],\\qquad\nY_z(s,a)=\\sum_{k=0}^{\\min(T,\\tau_z)-1}\\gamma^kr_{z,k}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F33",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "D_z(a,b)=Y_z(a)-Y_z(b),\\quad\n\\overline D=\\frac1n\\sum_zD_z,\\quad\ns_D^2=\\frac1{n-1}\\sum_z(D_z-\\overline D)^2,\\quad\n\\mathrm{SE}_D=s_D/\\sqrt n.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F34",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "c_n^{\\mathrm H}=(u-\\ell)\\sqrt{\\frac{\\log(2M/\\delta)}{2n}},\\quad M=32.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F35",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "c_n^{\\mathrm{EB}}=\\sqrt{\\frac{2s_n^2\\log(4/\\alpha)}{n}}+\n\\frac{7(u-\\ell)\\log(4/\\alpha)}{3(n-1)},\\quad n\\ge2.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F36",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "L_a=\\max(\\ell,\\overline Y_a-c_n),\\qquad U_a=\\min(u,\\overline Y_a+c_n).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F37",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "\\alpha_{a,k}=\\frac{\\delta}{32k(k+1)},\\qquad\n\\sum_{a=1}^{32}\\sum_{k=1}^{\\infty}\\alpha_{a,k}\\le\\delta.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F38",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "R_Q^{\\mathrm{ub}}(a)=\\max\\left(0,\\max_{b\\ne a}(U_b-L_a)\\right),\\qquad\n\\max_b\\mu_b-\\mu_a\\le R_Q^{\\mathrm{ub}}(a).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F39",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "T_{\\mathrm{all}}=\\max(T_A,T_B),\\qquad T_{\\mathrm{sum}}=T_A+T_B.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F40",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "G_{\\mathrm{goal}}=15\\gamma^{n_A-1}+15\\gamma^{n_B-1}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F41",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "C_{64}=\\min(T_{\\mathrm{ok}},64\\mathrm{s}),\\qquad J_T(s,a)=\\mathbb E[C_{64}\\mid s,a,\\pi].",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F42",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "\\min_a J_T(s,a),\\quad\np_H(s,a)\\le\\eta_H,\\qquad p_F(s,a)\\le\\eta_F.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F43",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "R_T^{\\mathrm{ub}}(a)=\\max\\left(0,\\max_{b\\ne a}(U_a-L_b)\\right),\\qquad\nJ_T(a)-\\min_bJ_T(b)\\le R_T^{\\mathrm{ub}}(a).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F44",
+    "chapter": "10. 统计识别与任务目标：为何后来分成两条路径",
+    "latex": "\\sum_{j=0}^{x}{n\\choose j}p_U^j(1-p_U)^{n-j}=\\alpha,\\qquad\nx=0\\Rightarrow p_U=1-\\alpha^{1/n}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F45",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "\\operatorname{Safe}(n)=\n\\bigl[Q_{\\mathrm{risk}}^{V2V}\\le Q_{\\mathrm{th}}^{V2V}\\bigr]\n\\land\\bigl[Q_{\\mathrm{risk}}^{V2H}\\le Q_{\\mathrm{th}}^{V2H}\\bigr]\n\\land[d_{V2R}\\ge d_{\\min}].",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F46",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "d_{\\mathrm{safe}}=\\max\\{d_{\\mathrm{base}},\\kappa_v\\operatorname{abs}(\\Delta v_{ij})\\}\\prod_{k=1}^{3}\\alpha_k,\n\\qquad \\alpha_3=1+I_{\\Omega_{\\mathrm{app}}}+I_{\\Omega_{\\mathrm{int}}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F47",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "\\alpha_1=1+\\beta_1\\frac{\\operatorname{abs}(\\Delta v_{ij})}{v_{\\mathrm{ref}}},\\qquad\n\\alpha_2=1+\\beta_2\\frac{\\operatorname{abs}(\\Delta\\theta_{ij})}{\\pi}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F48",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "r_{ij}=\\exp\\left(-\\frac{d_{ij}^{\\min}}{d_{\\mathrm{safe}}}\\right)\n\\left(1+\\lambda_v\\frac{\\operatorname{norm}(\\Delta v_{ij})}{v_{\\max}}\\right),\\qquad\n\\rho(d,d_s)=\\left[\\max\\left(0,1-\\frac{d}{d_s}\\right)\\right]^2",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F49",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "R_{T_p}=\\frac1{T_p}\\sum_{t=1}^{T_p}\\frac{\\rho(d_{ij}(t),d_{\\mathrm{safe}}(t))}{1+t},\\qquad\nQ_{\\mathrm{risk}}^{V2V}=w_1^{V2V}r_{ij}+w_2^{V2V}R_{T_p}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F50",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "C_{ih}=\\int_{\\widehat s_h\\in\\mathcal S_h^t}\\psi(\\widehat s_i,\\widehat s_h)\n\\mathcal N(f_{\\mathrm{IDM}}(s_h,\\eta_h),\\Sigma_h(t,\\eta_h))\\,d\\widehat s_h,\\qquad\nQ_{\\mathrm{risk}}^{V2H}=w_1r+w_2R_{T_p}+w_3C_{ih}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F51",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "\\operatorname{PET}_{A\\to B}=t_{B,\\mathrm{enter}}-t_{A,\\mathrm{exit}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F52",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "\\operatorname{MMTTC}=\\min_{t,\\ i<j}\\operatorname{TTC}_{ij}(t).",
+    "status": "read_full_document_for_source_and_conditions"
+  },
+  {
+    "id": "F53",
+    "chapter": "11. 回到原论文：真正标准与项目适配边界",
+    "latex": "E_{\\mathrm{red}}=\\max\\left(100\\frac{E_{\\mathrm{Astar}}-E_{\\mathrm{model}}}{E_{\\mathrm{Astar}}},0\\right),\\qquad\n\\operatorname{Hmean}=\\frac{2\\operatorname{Opt}E_{\\mathrm{red}}}{\\operatorname{Opt}+E_{\\mathrm{red}}}.",
+    "status": "read_full_document_for_source_and_conditions"
+  }
+]

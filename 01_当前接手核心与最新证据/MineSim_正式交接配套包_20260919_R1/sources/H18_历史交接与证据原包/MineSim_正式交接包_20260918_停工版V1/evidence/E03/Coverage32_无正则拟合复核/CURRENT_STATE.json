@@ -1,0 +1,30 @@
+{
+  "evidence_source": "6e732d05-11e0-466b-8442-b22a9d65fb57.zip",
+  "evidence_cutoff_utc": "2026-09-17T11:25:39.206098+00:00",
+  "current_stage": "Completed fixed512 held-source fit16 and saved-model review",
+  "execution_status": "COMPLETE_COVERAGE32_FIT16_DEVELOPMENT_NOT_GENERALIZATION",
+  "data_status": "FROZEN_32_STATES_512_RETURNS_8_SOURCE_GROUPS_NO_FURTHER_COLLECTION",
+  "review_status": "PASS_FILE_IDENTITY_SOURCE_SPLITS_SAVED_FORWARD_AND_METRICS",
+  "scientific_result": "Neither current model beats training-only constant on all32 primary MAE or RMSE",
+  "fits_completed": 16,
+  "updates_per_fit": 2000,
+  "counts_warning": "512 repeated return observations form32 state-level targets;28 train/4 held states per fold, same route.",
+  "resource": "LOW; CPU-only, no GPU required for this review",
+  "do_not_repeat": [
+    "collect256 variants",
+    "fit16 one-time run",
+    "old failed freeze/recovery namespaces"
+  ],
+  "current_permissions": {
+    "new_collection": false,
+    "new_training": false,
+    "full32_refit": false,
+    "deployment": false,
+    "pruning": false,
+    "auto_retry": false
+  },
+  "next_minimal_action_proposal": "Design a regularized low-capacity comparison using the existing frozen512 data. Freeze model/parameters/metrics before new training. This is a new development design, not a technical retry.",
+  "proposal_not_yet_authorized": true,
+  "live_cloud_checked": false,
+  "historical_source_scope": "Current uploaded bundle and targeted frozen parent identity only; no whole-project re-audit."
+}

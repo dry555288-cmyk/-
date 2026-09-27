@@ -1,0 +1,79 @@
+{
+  "gate": "DUAL_FIXED_FLAT_CACHE_BALANCED_TIMING_V1",
+  "purpose": "Fixed-code timing characterization following an equivalence smoke, not new candidate tuning or rerunning a consumed namespace. All timing repeats are retained.",
+  "root_ids": [
+    "coverage_policy_01__step0014",
+    "coverage_policy_05__step0011"
+  ],
+  "unchanged_parent_sha": "b6eaebb6ea02ffeedba0299e17a879a627f9d13a408c2ed94ce531e789169646",
+  "max_search_calls": 40,
+  "warmup_search_calls": 8,
+  "measured_search_calls": 32,
+  "measured_paired_decisions": 16,
+  "timing_repetitions": 4,
+  "warmup_blocks": 1,
+  "steps_per_case": 2,
+  "repetitions_are_independent_scenes": false,
+  "blocks": [
+    {
+      "block_id": "warmup",
+      "role": "warmup",
+      "root_order": "original"
+    },
+    {
+      "block_id": "measure_01",
+      "role": "measured",
+      "root_order": "original"
+    },
+    {
+      "block_id": "measure_02",
+      "role": "measured",
+      "root_order": "reverse"
+    },
+    {
+      "block_id": "measure_03",
+      "role": "measured",
+      "root_order": "original"
+    },
+    {
+      "block_id": "measure_04",
+      "role": "measured",
+      "root_order": "reverse"
+    }
+  ],
+  "mcts_config": {
+    "budget": 64,
+    "max_depth": 8,
+    "c_uct": 1.4,
+    "gamma": 0.99,
+    "dt": 0.5
+  },
+  "cache_capacity_per_vehicle": 4096,
+  "candidate_changed": false,
+  "cache_module_sha256": "69b68b346ad6ae9e275f2b5b3f781e431f3dcb7fcb25b1a573c557519ef38933",
+  "search_harness_sha256": "a7bf7d2bde675df863a083f763ca6c969e9e60e543fdc6d0314aed41565502df",
+  "cpu_requirement": {
+    "effective_cpu_min": 2,
+    "memory_available_bytes_min": 2147483648,
+    "free_disk_bytes_min": 1073741824,
+    "workers": 1,
+    "library_threads": 1,
+    "GPU": false
+  },
+  "timing_scope": "Full system.search CPU and wall time including per-request validation, key construction, report copy and cache bookkeeping. Excludes model context initialization, cache installation, outer advance, disk I/O and full Controller/KBM.",
+  "warmup_policy": "Run and save eight warmup searches once; never count them in the primary measured metric. Each baseline/candidate sequence starts with fresh contexts and caches; retain cache across its two decisions only.",
+  "equivalence": "All fresh paired actions, Q, visits, states, RNG, transition call counts and outer sampled-geometry details match. Baseline matches saved parent; warmup and measured repeats retained. Any failure stops, no automatic retry.",
+  "primary_metric": "Ratio of summed candidate system.search time to summed baseline time; report CPU and wall separately, all four blocks and sixteen decision pairs. Never drop slow successful trials.",
+  "interpretation": "Within-fixed-fixture directional improvement only when CPU and wall are lower in each of all four measured blocks and aggregated, with resource checks and no recorded cgroup throttling. Otherwise retain mixed/non-improving or timing-environment-limited result. No statistical or production speedup claim.",
+  "no_recovery_by_retuning": true,
+  "same_old512": true,
+  "new_teacher_traces": 0,
+  "training_runs": 0,
+  "model_forward_calls": 0,
+  "tree_statistics_reuse": false,
+  "pruning": false,
+  "deployment": false,
+  "collection_authorized": false,
+  "auto_retry": false,
+  "stop_rule": "Finish fixed forty calls and freeze regardless of timing outcome. No extra repetitions, changed seeds, cache tuning, or teacher acquisition are authorized."
+}

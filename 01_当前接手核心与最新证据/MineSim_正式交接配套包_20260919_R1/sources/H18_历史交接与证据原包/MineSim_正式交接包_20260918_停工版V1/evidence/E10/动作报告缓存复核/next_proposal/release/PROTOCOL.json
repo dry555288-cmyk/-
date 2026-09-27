@@ -1,0 +1,70 @@
+{
+  "gate": "DUAL_FLAT_ACTION_REPORT_CACHE_EQUIVALENCE_SMOKE_V1",
+  "root_ids": [
+    "coverage_policy_01__step0014",
+    "coverage_policy_05__step0011"
+  ],
+  "source_protocol": "DUAL_ACTION_REPORT_CACHE_EQUIVALENCE_SMOKE_V1",
+  "max_search_calls": 8,
+  "max_outer_advances": 8,
+  "steps_per_case": 2,
+  "mcts_config": {
+    "budget": 64,
+    "max_depth": 8,
+    "c_uct": 1.4,
+    "gamma": 0.99,
+    "dt": 0.5
+  },
+  "candidate": "Optimize only cache representation: full flat dataclass typed float.hex keys; prepared schema accessors; EVERY-call state validation and config/mapping check; fresh independent dict rows with immutable builtin values. No geometry, no MCTS statistics cache.",
+  "models_unchanged": [
+    "UCT",
+    "reward",
+    "motion",
+    "geometry sampling",
+    "termination",
+    "action domains",
+    "random seed and state",
+    "visits and Q"
+  ],
+  "cache_capacity_per_vehicle": 4096,
+  "case_order": [
+    [
+      "baseline",
+      "cached"
+    ],
+    [
+      "cached",
+      "baseline"
+    ]
+  ],
+  "statistics_reuse": false,
+  "new_Y64": 0,
+  "training": false,
+  "production_install": false,
+  "auto_retry": false,
+  "resource": "LOW",
+  "pass": "4 fresh baseline/candidate decisions exact except timing, including Q/visits/RNG/geometry; reproduce bound previous baseline; all source and postchecks pass. No speed threshold. If slower, retain negative and do not auto-retry.",
+  "timing": "No cProfile; includes validation/key/copy cost in full system.search CPU and wall time. 4 pairs only, possibly throttled CPU: not an end-to-end speed benchmark.",
+  "failure": "Keep original artifacts and counter values; no automatic retry; no permanent code modification.",
+  "reason": "Previous memoization matched decisions but increased paired CPU and elapsed time. Test implementation overhead reduction; preserve old negative result.",
+  "fixed_parent_negative": {
+    "paired_cpu_ratio": 1.7082079450498369,
+    "paired_elapsed_ratio": 2.731889863110783,
+    "pairs": 4,
+    "speed_claim": false
+  },
+  "runtime_changes": [
+    "cache key representation",
+    "flat immutable report dictionary copying",
+    "OrderedDict hit move_to_end"
+  ],
+  "scope_excludes": [
+    "new collection",
+    "model training",
+    "tree promotion",
+    "Q/visits reuse",
+    "budget changes",
+    "production installation",
+    "timing-threshold pass manipulation"
+  ]
+}

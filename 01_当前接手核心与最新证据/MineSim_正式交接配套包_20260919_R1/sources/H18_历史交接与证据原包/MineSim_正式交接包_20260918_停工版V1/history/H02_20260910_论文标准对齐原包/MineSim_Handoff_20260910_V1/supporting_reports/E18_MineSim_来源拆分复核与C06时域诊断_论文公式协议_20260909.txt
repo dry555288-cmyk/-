@@ -1,0 +1,132 @@
+MineSim 来源拆分复核与C06时域敏感性诊断协议 V1
+日期：2026-09-09
+本文件区分：上传结果复算、既有日志机制线索、新实验协议、论文原方法、项目设置。
+
+一、当前上传包与技术验收
+输入：7138f047-0784-43b6-a6bb-e414550dd63c.zip
+ZIP SHA256：cadc5411c4daa2cba94aba7cf06640e58aba5b7215bc90bf82487bc53ecf5a8a
+命名空间：minesim_coverage_source_ablation_v1
+清单 SHA：499f7c3013c6e4915760dadb9ae662e8ed82f0f170756d5928d8d168b0edddf5
+技术结论PASS：714项清单SHA及大小一致，ZIP CRC通过，命名空间文件集合一致。
+旧parent中的375个文件与c4bcbc3e-91c1-4865-9c95-0845aa17eeaf.zip逐字节一致。
+本次新训练36个模型，加复用旧36个模型，共72个检查点：以torch.load(weights_only=True)读取state_dict，
+重建12→64 ReLU→64 ReLU→16网络，所有57输入预测逐元素一致，最大预测误差0。
+18组“同折同seed四种配置”均共享同一初始化与基础组归一化，训练/留出episode、分组身份复算通过。
+本次21636行逐轮日志及复用21636行完成epoch结构、有限loss、initial/final一致性检查；
+独立复算末轮loss、确认排序和动作关系指标。没有重新训练，没有声称逐轮重建全部历史参数。
+输入57个唯一特征组、4385确认动作对。Git前后状态一致，来源后置检查PASS。
+复算文件：audit/INDEPENDENT_AUDIT.json、model_metrics_recomputed.csv、state_metrics_recomputed.csv。
+
+二、来源拆分结果
+每折4个留出新状态先等权，三个初始化seed再等权。以下不是驾驶成功率或安全率。
+episode | base | same-only | other-only | all
+C04_FROZEN_EP0 | 72.0384% | 74.3821% | 77.5008% | 68.7923%
+C04_SEED5_EP1 | 64.4992% | 64.2191% | 92.4960% | 87.7216%
+C06_FROZEN_EP0 | 85.3559% | 61.8783% | 88.0417% | 63.9953%
+C06_SEED1_EP1 | 72.3957% | 65.9620% | 75.7104% | 71.7870%
+C11_100M_SEED0_EP1 | 92.8571% | 97.9762% | 98.8333% | 99.1667%
+C11_80M_SEED0_EP0 | 89.0716% | 97.3074% | 96.1431% | 98.7494%
+六折总均值：base79.3697%，same76.9542%，other88.1209%，all81.7020%。
+最高分动作与确认关系矛盾次数（分母各72）：27、14、8、11。
+假设Top13删除项缺少排除依据数（分母各216）：23、36、9、23。
+这些只是经验确认关系上的静态审查，并非历史K13重跑或实际碰撞证明。
+
+C06_FROZEN_EP0折：只增加同场景4组后85.3559%→61.8783%；仅加异场景16组为88.0417%。
+这定位的是本次具体来源包的作用，不证明其他场景天生更有价值；4组与16组数量不同，场景内部权重也会变化。
+OTHER_SCENES_ONLY在18组配对seed指标均高于base，但这是已经多次查看的开发集，不用于选取上线最优模型。
+不得按此次结果删除同场景数据、丢弃低分seed、改训练轮数或修改既有mask。
+
+三、两个局部状态上的相反排序
+A：NEW24__C06__C06_FROZEN_EP0__step76
+ feature SHA：f9db955f3adc889810352f61148bba9c4e99c3dc4c7cf399dd194751d26bd55d
+B：NEW24__C06__C06_SEED1_EP1__step73
+ feature SHA：87cca5161fb4b26131b9ba6207b8a4d92358bddba3df00b594e8c53375e143f0
+A速度约10.20/9.65m/s，剩余距离约42.37/45.22m；B速度约9.30/9.50m/s，剩余距离约50.26/49.22m。
+两者并非相同输入、相同物理状态，不能称为严格重复样本错标。
+两者共有52个已确认动作对，全部方向相反；A共69已确认对，B共84。
+A作为留出状态时，三个seed平均确认排序一致率：base91.79%、same0%、other97.10%、all1.93%。
+B作为留出状态时：base99.21%、same38.10%、other98.81%、all30.16%。
+这支持优先检查局部状态—动作排序边界，但不足以区分表示信息缺失、正确陡峭边界、教师偏差和网络平滑。
+
+四、既有H8教师轨迹的额外只读检查
+来源：5c075446-3b52-4a53-a480-6e09b4e3664c.zip，minesim_new24_teacher_decision_validation_v1。
+其SHA256_MANIFEST.json SHA：1c30144dcc1ecb87ba0f4a44a71da7a8cffce2331f5529cc84eea44ea0789f5f。
+仅核验本问题所需两个root、原16个seed、B1024，共32个已完成cell；每个result/CAPTURE/trace均匹配原清单。
+重新从32768行日志恢复rollout折扣值、逐层backup、根动作访问/Q和首次硬安全标志深度，未运行MCTS。
+A：16384迭代中1217次包含硬安全事件；1192次首次发生在depth8、25次在depth7。
+B：16384迭代中仅3次包含硬安全事件，首次均在depth8。
+A的(3,3)动作：16seed平均Q≈-14.56046，1024次该动作根访问中217次含硬安全事件。
+B的(3,3)动作：平均Q≈5.01254，1024次根访问中3次含硬安全事件。
+原max_depth=8，tree_dt=0.5s，完整搜索窗口4秒。
+“1192/1217≈97.95%集中在末层”是时域边缘效应的机制线索，不是因果证明。
+这些是自适应树搜索迭代事件，不是16384次独立驾驶试验，不是校准碰撞概率。
+同一物理事件可能在多次树访问出现，不能把计数直接转成道路安全率。
+
+五、本轮唯一新Gate
+C06_TWO_STATE_HORIZON_SENSITIVITY_DIAGNOSTIC
+问题：固定这两个输入与B1024，扩大有限搜索时域后，事件位置与动作相对排序如何变化？
+不将两个状态强行合并、不改标签、不调整奖励、不改c_uct/gamma、不训练、不前向网络、不剪枝。
+1. H8/4s：只读取上述32个冻结cell，绝不重跑。
+2. H12/6s与H16/8s：两个状态×16相同seed×两个新H=64次新单根搜索。
+3. seed块：40000—40007与41000—41007，保留原块身份；此处属于机制敏感性配对，不冒称新独立测试。
+4. B1024为整个根节点迭代预算，16根动作各64次。深层仍为冻结UCT与随机rollout。
+5. 先做技术检查：两状态×H12/H16×日志关/开，budget64、技术seed43000，共8次。
+   四组的Q、访问数、最终动作、随机数状态必须一致；即时奖励与原H8一致才允许进入64cell。
+6. 合计72次新search调用，其中8次仅技术smoke。正式对照含旧32+新64=96cell、98304条回传记录。
+7. 不同H不做轨迹前缀一致性强制要求；同seed不保证相同随机动作序列，不能用预算前缀检查替代时域检查。
+8. 新depth改变了截断和深层自适应采样。因此这是整体时域敏感性，不是“固定后续动作序列只延长尾部”的纯截断实验。
+9. B相等只表示根迭代数相等，不表示耗时或深层采样支持相等。H16不是自动真值、生产默认或新标签源。
+
+六、论文与公式
+[P1] Kocsis L, Szepesvári C. Bandit Based Monte-Carlo Planning. ECML 2006:282–293.
+ DOI:10.1007/11871842_29
+ https://www.lri.fr/~sebag/Examens_2008/UCT_ecml06.pdf
+ 原论文Section2.1讨论终止/深度截断，Fig1 line11是q=reward+γ*search(nextstate,depth+1)，line8叶节点Evaluate。
+ 本项目遵循回传递推，使用冻结源fleet_search.py的_rollout(约232—271行)与_backup(273行以后)。
+ 源码depth>=H停止，未加入新的叶节点价值网络，截断后追加价值=0。
+ 定义L_j=min(H,第j次模拟实际终止深度)，G_H,j=Σ[k=0..L_j-1]γ^k*r_j,k。
+ Qhat_H,B(s,a)=Σ[j:根动作为a]G_H,j / N_B(s,a)，本项目N_B=B/16=64，γ=0.99。
+ delta_H(s;i,j)=(1/16)Σ_seed[Qhat_H,B(s,i)-Qhat_H,B(s,j)]。
+ 重点比较相对差值和seed方向，而非仅比较随时域累积长度变化的绝对Q。
+ 论文分析对回报范围、探索常数和采样有具体假设，本项目不自动继承其收敛/置信界保证。
+ Balanced-root、H12/H16、B1024、选中两个root、8/16seed、容差1e-8均是工程/诊断选择，不是论文规定。
+
+[P2] Wang Z, Dai Z, Póczos B, Carbonell J. Characterizing and Avoiding Negative Transfer. CVPR 2019.
+ 官方：https://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Characterizing_and_Avoiding_Negative_Transfer_CVPR_2019_paper.html
+ 作者版：https://www.cs.cmu.edu/~./jgc/publication/Avoiding%20Negative%20Transfer.pdf
+ Section3，Eq(3)以同一算法A比较有/无来源数据的目标风险；Eq(4)定义NTG。
+ 本项目上一Gate对应的经验诊断为Rhat=1-确认排序一致率，DeltaRhat=Rhat_same-Rhat_base。
+ C06原始episode上DeltaRhat约+0.23478，表示这一次受控配置下目标开发集误差增加。
+ 这不是总体风险估计的统计保证，不是该文判别器门控算法，也不证明来源样本标签错误。
+
+七、冻结指标与判断边界
+输出每个root/H/seed/action的Q、首次硬安全事件深度直方图、末层/8步之前/8步之后计数、截止原因。
+每个root/H的16动作Q均值与样本标准差；全部120对平均差值、正/负/零方向seed数，原两seed块分别均值。
+在原69/84对上只做“16/16保持、16/16相反、混合或零”描述；该计数不是置信度或训练mask。
+同时跟踪两root原52个共同相反对在H12/H16下的均值方向关系。
+没有“改善才PASS”阈值；执行、身份和回传闭合为技术PASS，不论结论有利/不利都保留。
+无自动追加时域/预算/seed，无label replacement，无参数筛选、剪枝或上线授权。
+
+八、主程序审核与本地测试（实际执行）
+主脚本：minesim_c06_horizon_sensitivity_v1.py
+SHA256：5cce683a517323910990f29d1a9c0b4bf2c5352209ba1bebf11eb20d9f428c88
+39项Python单元/错误路径测试通过。包括重复JSON键、NaN、路径越界/软链接、SHA不符、源变动、
+旧namespace、半成品ZIP保护、缺文件、错误预算/深度/安全标志、可捕获中断保存、worker超时回收、
+启动前资源HOLD完整打包与非法worker token。
+8项shell启动/监控桩测试通过：PASS、HOLD、SHA错误、已有目录、退出无done、ZIP SHA错误、二次只读、旧HOLD。
+这8项使用screen桩，不冒充真实AutoDL断连试验。
+真实冻结引擎：本地seed99131，两root×H12/H16×日志关/开，B64共8次，4组逐字段一致。
+本地seed99132，两root×H12/H16，B1024共4次，4096回传记录复算通过。
+本地测试均不使用正式矩阵seed或云端技术seed43000，未执行正式64cell。
+96cell合成数据全量落盘/回传/统计/打包流程通过，共98304合成行；明确非真实搜索结果。
+本地环境为当前分析容器；云端需重新核对Python3.9与冻结numpy/shapely/scipy/omegaconf。
+
+九、执行与输出
+只把主程序上传/root/autodl-tmp，回复中的集成代码完成screen启动和监控。
+来源读取限定两个已知namespace及SHA清单所列文件；不扫描其他历史目录，不解析127MiB整矿地图。
+读取768条已绑定来源（本地实际数），构建两个C06上下文；只使用已有18条参考路径摘录与冻结引擎。
+所需资源：CPU-only、至少1GiB有效可用内存和2GiB空闲磁盘。7200秒worker安全上限不是预计时间。
+输出：/root/autodl-tmp/minesim_c06_horizon_sensitivity_v1.zip
+正常结束HORIZON_DIAGNOSTIC_STATUS=PASS/COMPLETED_CELLS=64/REUSED_H8_CELLS=32。
+TRAINING_RUN=False、MODEL_FORWARD=False、PRUNING_EXECUTED=False、LABEL_REPLACEMENT=False。
+HOLD照样打包上传；不要删除目录或重复启动，程序不会从旧namespace暗中恢复或挑选结果。

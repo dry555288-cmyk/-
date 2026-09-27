@@ -1,0 +1,68 @@
+{
+  "gate": "DUAL_H8_SUFFIX_REBASED_SUBTREE_REUSE_SMOKE_V1",
+  "root_ids": [
+    "coverage_policy_01__step0014",
+    "coverage_policy_05__step0011"
+  ],
+  "baseline_relative": "native/measure_01/native",
+  "runtime_relative": "parent_sources/parent_sources/parent_sources/parent_sources/runtime",
+  "max_search_calls": 8,
+  "decisions_per_case": 2,
+  "arms": [
+    "unchanged_native_search",
+    "sample_rebased_subtree_candidate"
+  ],
+  "mcts": {
+    "root_sample_target": 64,
+    "horizon": 8,
+    "c_uct": 1.4,
+    "gamma": 0.99,
+    "dt": 0.5,
+    "seed": "same fixed seed and saved starting RNG as prior fixtures"
+  },
+  "new_method": "Execution-compatible subtree plus recorded sample suffixes, one native-random tail transition for nonterminal suffixes, rebuild visit/value sums before fresh iterations.",
+  "design_origin": "New project adaptation; not a verbatim paper replication or a theoretical equivalence theorem.",
+  "promotion_guards": [
+    "one actual action only",
+    "full immutable state and codec equal",
+    "route/model/scalar config compatible",
+    "retained action domains equal",
+    "sample provenance exact"
+  ],
+  "return_semantics": {
+    "root": "sum gamma^k * r[k], k=0..H-1 or earlier absorbing terminal",
+    "nonroot": "includes incoming edge reward, matching native backup convention",
+    "horizon_correction": "drop old r0, retain old suffix, append one native rollout transition unless absorbing terminal; never substitute zero for a missing nonterminal tail",
+    "old_Q_policy": "old value sums and visit counts zeroed and recomputed from corrected sample records; no direct old Q copying",
+    "budget": "m inherited corrected sample contributions + (64-m) NEW tree iterations =64 root contributions; inherited samples are historical/adaptive, not new independent observations",
+    "root_edge_note": "promoted root may include a root-only prior rollout; root child counts can sum to63 while root count64; explicitly record rather than force fake visits"
+  },
+  "changed_behavior": "Cold first search must equal native. Reused second action, RNG, visits, and Q may legitimately differ; each returned action still passes native feasibility checks.",
+  "uncertainty": "Retained rollouts reflect the old adaptive policy; horizon correction aligns return length, not unbiasedness, optimal Q, safety, or general improvement.",
+  "guards_failure": "Exact state/config/domain mismatch falls back to a fresh native-semantic root at unchanged budget; corrupt/missing sample evidence raises HOLD without silent fabricated values.",
+  "disabled": [
+    "neural_network",
+    "new_teacher_collection",
+    "single_vehicle_branch",
+    "action_report_cache",
+    "action_pruning",
+    "production_repo_patch",
+    "automatic_retry"
+  ],
+  "pass": "Eight searches completed, first-call exact parity, two guarded promotions on unchanged fixtures, independent full-reward/statistics reconstruction, fixed H8; safety negatives or fallback-only separately classified",
+  "resources": {
+    "label": "LOW",
+    "workers": 1,
+    "effective_cpu_min": 0.5,
+    "memory_available_bytes_min": 536870912,
+    "free_disk_bytes_min": 536870912,
+    "GPU": false
+  },
+  "timing": "Full system.search includes trace capture, identity checks, suffix tail calls, retained-statistic rebuilding and in-search snapshot overhead; full debug export, IO, init and outer propagation excluded. Report totals for both calls. Technical two-pair smoke not a stable speed benchmark.",
+  "fixed_stop": "At most2 fixtures x2 decisions x2 arms. True terminal stops local sequence; never change seeds or rerun to reach8. Preserve failure/negative results.",
+  "next_stage_authorized": false,
+  "new_teacher_traces": 0,
+  "training_runs": 0,
+  "dataset32_512_written": false,
+  "deployable": false
+}

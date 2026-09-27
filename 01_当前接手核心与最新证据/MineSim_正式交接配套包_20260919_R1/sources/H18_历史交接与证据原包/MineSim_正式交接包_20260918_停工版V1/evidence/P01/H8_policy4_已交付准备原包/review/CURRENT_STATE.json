@@ -1,0 +1,34 @@
+{
+  "current_gate": "DUAL_H8_SUBTREE_REBASE_SEMANTICS",
+  "current_status": "PASS_SMOKE_ONLY",
+  "data_32states_512returns": "FROZEN_NOT_RECOLLECT",
+  "passed_real_searches": 8,
+  "cpu_total_descriptive_change_percent": -5.064601275892344,
+  "wall_total_descriptive_change_percent": 24.912404583757986,
+  "latest_effective_cpu": 0.5,
+  "next_gate": "DUAL_H8_SUBTREE_POLICY4_CONTINUATION_V1",
+  "next_gate_status": "PREPARED_NOT_EXECUTED",
+  "next_resource": {
+    "label": "HIGH-CPU",
+    "workers": 1,
+    "effective_cpu_min": 2,
+    "memory_available_bytes_min": 2147483648,
+    "free_disk_bytes_min": 2147483648,
+    "gpu": false
+  },
+  "next_max_policy_runs": 4,
+  "next_max_search_calls": 512,
+  "next_entry_file": "run_dual_subtree_policy4.sh",
+  "next_authorization_flag": "--authorize-subtree-policy4-once",
+  "new_teacher_traces": 0,
+  "new_neural_training": 0,
+  "deployment_authorized": false,
+  "do_not_repeat": [
+    "original treeprobe",
+    "reportcache",
+    "flatcache timing",
+    "H8 two-step smoke",
+    "collect256",
+    "all32-state NN experiments"
+  ]
+}

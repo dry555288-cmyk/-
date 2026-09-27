@@ -1,0 +1,61 @@
+{
+  "gate": "DUAL32_FIXED512_TRAIN_ONLY_SCALING_RIDGE_ABLATION_V1",
+  "status": "PROPOSED_FIXED_BEFORE_NEW_FITS_POST_OUTCOME_DEVELOPMENT",
+  "resource": "LOW",
+  "dataset_sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+  "feature_matrix_sha256": "270f86a2a41f187162c077f42c85b8114d6a8cfdc338cdad7e81c5b3363b09ef",
+  "rows": 32,
+  "observations": 512,
+  "features": 36,
+  "groups": 8,
+  "fits": 8,
+  "inner_fits": 0,
+  "optimizer_updates": 0,
+  "lambda": 1.0,
+  "lambda_rationale": "Preserve the same lambda selected in every one of the 8 preceding raw36 ridge folds; this ablation does not select lambda. Prior development exposure retained.",
+  "only_method_change": "For each fold, center and population-standardize columns using the 28 training states only. Columns with training std <=1e-12 are set to zero on both train and held rows. No clipping of nonconstant held values.",
+  "scaler_sd_floor": 1e-12,
+  "target": "Original empirical mean(Y64|03)-mean(Y64|30), divided by100",
+  "objective": "0.5*mean((Z w+b-y)^2)+0.5*lambda*sum(w^2), intercept not penalized",
+  "solver": "same ridge normal-equation solve as preceding release",
+  "outer": "8 unchanged source-run folds, 28 train and4 held; same row order",
+  "forbidden": [
+    "new data",
+    "outcome-based filtering",
+    "new features",
+    "lambda search",
+    "MLP training",
+    "old-model refit",
+    "full32 refit",
+    "MCTS calls",
+    "pruning",
+    "deployment",
+    "single-vehicle work",
+    "automatic retry"
+  ],
+  "comparators": [
+    "same-fold training-only constant",
+    "saved raw36 ridge predictions",
+    "saved raw26 ridge predictions; contextual only"
+  ],
+  "primary": [
+    "all32 MAE",
+    "all32 RMSE",
+    "per-source errors"
+  ],
+  "secondary": [
+    "old16/new16 errors separately",
+    "original6 confirmed and10 unknown unchanged",
+    "new16 descriptive relations separately",
+    "raw-vs-scaled per-root paired errors",
+    "constant-column held extrapolation flags"
+  ],
+  "numerical_advantage": "Both all32 MAE and RMSE strictly below constant AND saved raw36 ridge; numerical description, not significance or safety evidence",
+  "execution_authorization_flag": "--authorize-scale8-once",
+  "new_samples": 0,
+  "MCTS_calls": 0,
+  "deployment_authorized": false,
+  "pruning_authorized": false,
+  "runtime_fit_limit_s": 120,
+  "same_route_development_not_new_blind_test": true
+}

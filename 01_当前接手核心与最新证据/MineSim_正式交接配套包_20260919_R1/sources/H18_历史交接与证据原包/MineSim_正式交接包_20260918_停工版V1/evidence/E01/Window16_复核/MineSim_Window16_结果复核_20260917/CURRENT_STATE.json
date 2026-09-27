@@ -1,0 +1,46 @@
+{
+  "EVIDENCE_CUTOFF": "2026-09-17T03:06:02.407473+00:00",
+  "CURRENT_STAGE": "Window16 fixed-window empirical return-gap grouped development diagnostic completed; saved-result review completed",
+  "CURRENT_GATE": "GROUPED_INPUT_COVERAGE_SELECTION_PROTOCOL_DESIGN_ONLY",
+  "CURRENT_STATUS": "TECHNICAL_COMPLETE_SCIENTIFIC_NO_ADVANTAGE_DEVELOPMENT_NEGATIVE",
+  "LATEST_GIT_HEAD": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+  "LATEST_RECORDED_GIT_STATUS": "?? ^C\n",
+  "CURRENT_EVIDENCE_ROOT": "/root/autodl-tmp/minesim_window16_return_gap_recovery_v1",
+  "SOURCE_BUNDLE_SHA256": "3229ac1ff117384cd28b14b74c4501e0c4daedc14d0317c27d00327c71fe7f97",
+  "LATEST_RESULT": {
+    "fits": 16,
+    "each_updates": 2000,
+    "states": 16,
+    "saved_returns": 256,
+    "source_runs": 8,
+    "constant_mae": 27.421922197803028,
+    "linear_mae": 61.63788625592291,
+    "mlp_mae": 44.77478357346952,
+    "known_order": {
+      "linear": "2/6",
+      "mlp": "3/6",
+      "fixed03": "4/6"
+    },
+    "unknown_order_preserved": 10
+  },
+  "NEXT_MINIMAL_ACTION": "Design and freeze an input-only, source-group-aware development-state coverage selection protocol using existing exact behavior records, before any new teacher calls. This proposal does not select a deployable model or authorize collection.",
+  "RESOURCE_REQUIRED": "LOW; no GPU; analysis/protocol design only",
+  "DO_NOT_REPEAT": [
+    "Consumed Window16 original recovery experiment",
+    "Current16 refits or altered seed/epochs to improve reported metrics",
+    "Old six-state experiment",
+    "Existing frozen teacher collection"
+  ],
+  "HOLD_ITEMS": [
+    "New data collection and its size/protocol",
+    "New training",
+    "Full16-action network decisions/pruning",
+    "Cross-route generalization",
+    "Unique causal attribution of model error",
+    "Current live cloud state after uploaded CAPTURE"
+  ],
+  "LOCAL_REVIEW_ONLY": true,
+  "REVIEW_WRITTEN_TO_CLOUD": false,
+  "OLD_INPUT_BINDING_BLOCKER": "Closed for this successful run by recorded five-file alias rebinding; old script/path bytes not overwritten",
+  "NO_AUTOMATIC_SAMPLING_OR_REFIT": true
+}

@@ -1,0 +1,22 @@
+{
+  "unit_and_synthetic_tests": 49,
+  "suites": {
+    "subtree_toy_algorithm_tests": 26,
+    "lifecycle_synthetic_runner_tests": 12,
+    "policy_metric_tests": 11
+  },
+  "launcher_checks": {
+    "bash_syntax": "PASS",
+    "missing_authorization_rejected": "PASS",
+    "wrong_authorization_rejected": "PASS",
+    "payload_members_sha_and_current_sources": "PASS",
+    "isolated_installer_tests": 3
+  },
+  "real_minesim_search_calls_in_preparation": 0,
+  "real_policy_continuations_started": 0,
+  "neural_training_runs": 0,
+  "candidate_algorithm_unchanged_sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532",
+  "frozen_before_cloud_run": true,
+  "limits": "Toy algorithm tests are not vehicle experiments. No physical geometry/controller or stable timing claim.",
+  "development_note": "An initial local launcher payload-check found the template retained an old decoder argument; this was fixed and the final embedded payload SHA/current-source identity and installer tested before release."
+}

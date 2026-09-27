@@ -1,0 +1,134 @@
+{
+  "README.md": {
+    "size": 2015,
+    "sha256": "e95c1c05f952da9f12787ecb4fe229bb7e1c622c0705c75108e80fc9c4ede466"
+  },
+  "CURRENT_STATE.json": {
+    "size": 2764,
+    "sha256": "8aad1bb2f23b46d8b17a7387321ed9347f1c2ae2b8cbe4c767044032139fbe99"
+  },
+  "REVIEW.json": {
+    "size": 2250,
+    "sha256": "4f218ea3a26f004a8f8896d2198bbd37de36fe5a7d99f40e92be0c163fd51d42"
+  },
+  "MANIFEST_REVIEW.json": {
+    "size": 400,
+    "sha256": "43e6df94536bbf5a1b1d422337d44cfa403aa51b2879f3a86844845952e5390c"
+  },
+  "REASSEMBLY.json": {
+    "size": 1055,
+    "sha256": "db7f97f31747cd869ff6c4555480a2fed26164e09a68c439418d34164d02a2ae"
+  },
+  "CELL_REVIEW.json": {
+    "size": 81740,
+    "sha256": "61aa26f23e35999effec8ec60bf1644c2aeeda9c0afd0ecf46363e9704cba9c3"
+  },
+  "review_saved_records.py": {
+    "size": 16850,
+    "sha256": "7210eae920d76adba8a7bd3ce88d8f7bc702ea7b0a1e575ea17ecc2be5181232"
+  },
+  "original/CAPTURE.json": {
+    "size": 95,
+    "sha256": "0b37e5e5376a2eaffdc28591c7124698937f7a0514dc59b26d971e7ca47ed4c3"
+  },
+  "original/COLLECTION_AUDIT.json": {
+    "size": 220275,
+    "sha256": "3f0c4e721113ae3f00850093058bc4d00d764b7aff62c5700589d7a6e1711040"
+  },
+  "original/COLLECTION_TIMING.json": {
+    "size": 368,
+    "sha256": "87267a75cae12cc4b2bc1f20f42a169f86807194fbc9628c3556bda80f0d8ed0"
+  },
+  "original/COMBINED32_INPUTS.json": {
+    "size": 81407,
+    "sha256": "3c7bd73410f1a48b1adfb135cbecab036edb7f43cbd3cc5758b53960aa127b72"
+  },
+  "original/DATASET32.json": {
+    "size": 488232,
+    "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1"
+  },
+  "original/EFFECTIVE_COLLECTION_PROTOCOL.json": {
+    "size": 3744,
+    "sha256": "8dc400a36b35df044f73d0b7c56f3a8906c88d4d85fd9ae12878b169dd43af79"
+  },
+  "original/ENVIRONMENT.json": {
+    "size": 186,
+    "sha256": "4f9aba7698efd6a13d86fcfe8ca0823cc58ef5d60292095d16f3c38368e16281"
+  },
+  "original/EXECUTION_LAYOUT.json": {
+    "size": 970,
+    "sha256": "6375d6d5760db12fa7d525b8b4bc172d511ee688c61211d89a6e379da12b3531"
+  },
+  "original/FUTURE_256_TASKS_NOT_AUTHORIZED.json": {
+    "size": 181736,
+    "sha256": "3fceeecbca058abe457cbac25da6e5051a0fa352ba8abe6165f6535b15de0b49"
+  },
+  "original/FUTURE_FITTING_CONTRACT_NOT_AUTHORIZED.json": {
+    "size": 1580,
+    "sha256": "392ffb8c2e0678c1236ddd4bbb4b4040968140323fb8dc09c0239b4f747f2e8f"
+  },
+  "original/FUTURE_TEACHER_PROTOCOL.json": {
+    "size": 5150,
+    "sha256": "9a29c64df4f31bd1375f9658c0c51b2f11dcf745f2481cbe06152cace3fb93b2"
+  },
+  "original/GIT_AFTER.json": {
+    "size": 152,
+    "sha256": "b22efa6b0c704fc588cc1cf4ffc79af727222b8d4e83e22061b92b70bbb09b31"
+  },
+  "original/GIT_BEFORE.json": {
+    "size": 152,
+    "sha256": "b22efa6b0c704fc588cc1cf4ffc79af727222b8d4e83e22061b92b70bbb09b31"
+  },
+  "original/MANIFEST.json": {
+    "size": 2092768,
+    "sha256": "56381839fad83298895c824b1861d1a2af35a3522bbd9d7de29c44ca3e2285ea"
+  },
+  "original/NEW16_REPEAT_DIAGNOSTIC.json": {
+    "size": 8785,
+    "sha256": "995a0b11f756ae03e43204c06d671feb3487bf8f4849e5791d34024c6c9f0050"
+  },
+  "original/NEW256_OBSERVATIONS.json": {
+    "size": 220096,
+    "sha256": "9054e38957c8ac846cebab4a2e27e5f13f716b7a103e011a239649707327f1a3"
+  },
+  "original/OLD_DATASET16.json": {
+    "size": 226469,
+    "sha256": "44a7567bec8c55a2c321e898de01455166a09769514987069cc0894f954176ff"
+  },
+  "original/PARENT_BINDINGS.json": {
+    "size": 311,
+    "sha256": "d684a8a8571ca264e9c63b0d6a05cfc26db35bfdcd99e55b097d9b2ffff8d924"
+  },
+  "original/RC.txt": {
+    "size": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "original/RESOURCES.json": {
+    "size": 275,
+    "sha256": "9e4a2864f8d8a1332e9e4cd86bca3db436f5626d5cbfe4f48148f26956ff2c3a"
+  },
+  "original/RESULT.json": {
+    "size": 1218,
+    "sha256": "e212ae036b1051f375325e0e6ae44b9c74f34dd49f3198ead7f02f6834d045d7"
+  },
+  "original/SELECTED_NEW16.json": {
+    "size": 43654,
+    "sha256": "bea017514307e503a88d115113402e614d4ce66425f298f7477ce1ab6bfb5667"
+  },
+  "original/START.json": {
+    "size": 587,
+    "sha256": "328ae46bcefe51411f400292061d9b83b0d4f60943155d305bce370cfc271e17"
+  },
+  "original/SUPERVISOR_FINAL.json": {
+    "size": 477,
+    "sha256": "acb4ab26ff70be54c01ee9e1db300d8fda3769eb529393dca7d806b78498a2d7"
+  },
+  "original/coverage32_cell_core.py": {
+    "size": 16219,
+    "sha256": "f01f279783db821a8585260080d9cde780af35aea3f9eadb922b3de98c683f4f"
+  },
+  "original/release_source.py": {
+    "size": 39513,
+    "sha256": "5a5f2adbcd6c440a1b813e5cd4d532675c1026355fecd7d22f18028b2dc56ed2"
+  }
+}

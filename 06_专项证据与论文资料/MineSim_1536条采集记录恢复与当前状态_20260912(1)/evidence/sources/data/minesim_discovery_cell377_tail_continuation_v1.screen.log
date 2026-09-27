@@ -1,0 +1,74 @@
+PREFLIGHT_PASS; TAIL_START_WRITTEN=True; RESTORING_AFTER_20_STEPS
+TAIL_STEP_STARTED index=20 /127
+TAIL_PROGRESS {"completed_original_steps": 21, "new_tail_steps": 1, "original_cap": 128, "remaining_original_steps": 107, "rng_sha256": "bdce5266e036b96469aaf95141c917fabc5c4a5498ca56d37d99bc921600ac61"}
+TAIL_STEP_STARTED index=21 /127
+TAIL_PROGRESS {"completed_original_steps": 22, "new_tail_steps": 2, "original_cap": 128, "remaining_original_steps": 106, "rng_sha256": "0ea2297d95518396eca7621ebc9c19eb5ba77f062a47bb0c8f8bcc8c898d7307"}
+TAIL_STEP_STARTED index=22 /127
+TAIL_PROGRESS {"completed_original_steps": 23, "new_tail_steps": 3, "original_cap": 128, "remaining_original_steps": 105, "rng_sha256": "d5c971c9dc4a138db32a9fb417691233c9ad381501e086b31d26bca5bb047ba4"}
+TAIL_STEP_STARTED index=23 /127
+TAIL_PROGRESS {"completed_original_steps": 24, "new_tail_steps": 4, "original_cap": 128, "remaining_original_steps": 104, "rng_sha256": "c946e5853bc1ba419c49ba361dcb9d6857e414f6ec04372ac7c16c98d7135688"}
+TAIL_STEP_STARTED index=24 /127
+TAIL_PROGRESS {"completed_original_steps": 25, "new_tail_steps": 5, "original_cap": 128, "remaining_original_steps": 103, "rng_sha256": "9bac89af0df73b4669dfa28f8bc5dd9c49431045bb2a65d1400c9aa668630a1e"}
+TAIL_STEP_STARTED index=25 /127
+TAIL_PROGRESS {"completed_original_steps": 26, "new_tail_steps": 6, "original_cap": 128, "remaining_original_steps": 102, "rng_sha256": "4da75822b06c2feb402cfeaf2bbcc524d1e6c2e9f972deed5cac4b5317f3e3a7"}
+TAIL_STEP_STARTED index=26 /127
+TAIL_PROGRESS {"completed_original_steps": 27, "new_tail_steps": 7, "original_cap": 128, "remaining_original_steps": 101, "rng_sha256": "6dd0bdaa2b47526cc840d61e4c2f4de99d81d4b864fb38fbd0abceb327a78395"}
+TAIL_STEP_STARTED index=27 /127
+TAIL_PROGRESS {"completed_original_steps": 28, "new_tail_steps": 8, "original_cap": 128, "remaining_original_steps": 100, "rng_sha256": "32a6cfeb72f6ceb8842cdd3bacf24c84d4c7f9b89bce708de3b6ea309eeedb24"}
+TAIL_STEP_STARTED index=28 /127
+TAIL_PROGRESS {"completed_original_steps": 29, "new_tail_steps": 9, "original_cap": 128, "remaining_original_steps": 99, "rng_sha256": "d1d99dd64de556100540ddf078c356214f950e2b2c78c33afe916066bfbeafb8"}
+TAIL_STEP_STARTED index=29 /127
+TAIL_PROGRESS {"completed_original_steps": 30, "new_tail_steps": 10, "original_cap": 128, "remaining_original_steps": 98, "rng_sha256": "c4c9964784414e13b8ef36c2a20ee0a3fbc1e9656abab5ea0b7bc22fb7eeda6f"}
+TAIL_STEP_STARTED index=30 /127
+TAIL_PROGRESS {"completed_original_steps": 31, "new_tail_steps": 11, "original_cap": 128, "remaining_original_steps": 97, "rng_sha256": "6b94bbb46e8b308119be04da769cab60e1dcc9c835866741275b701b186a18c5"}
+TAIL_STEP_STARTED index=31 /127
+TAIL_PROGRESS {"completed_original_steps": 32, "new_tail_steps": 12, "original_cap": 128, "remaining_original_steps": 96, "rng_sha256": "19751ad3c705892a2da2ee2f893e61cb0bd08c0b297535704c97c4300a4311f5"}
+TAIL_STEP_STARTED index=32 /127
+TAIL_PROGRESS {"completed_original_steps": 33, "new_tail_steps": 13, "original_cap": 128, "remaining_original_steps": 95, "rng_sha256": "fe800384c030b682bcd07968e2e01947604d1c690bc8b4f79445a8e71b1fc70a"}
+TAIL_STEP_STARTED index=33 /127
+TAIL_PROGRESS {"completed_original_steps": 34, "new_tail_steps": 14, "original_cap": 128, "remaining_original_steps": 94, "rng_sha256": "72bbfcaeee1d2d4615e3075be5d5b8429e89cdbc93d0cd62e9112b62556f1597"}
+TAIL_STEP_STARTED index=34 /127
+TAIL_PROGRESS {"completed_original_steps": 35, "new_tail_steps": 15, "original_cap": 128, "remaining_original_steps": 93, "rng_sha256": "1e3efa932eca628d32d62f5bebde6a7a2803e0dd86bf4887fd916a6713026386"}
+TAIL_STEP_STARTED index=35 /127
+TAIL_PROGRESS {"completed_original_steps": 36, "new_tail_steps": 16, "original_cap": 128, "remaining_original_steps": 92, "rng_sha256": "8cb61d84e5814d04cecdff0ec1fcfaccac9a72daab0cadd93ace97ef08b15bd8"}
+TAIL_STEP_STARTED index=36 /127
+TAIL_PROGRESS {"completed_original_steps": 37, "new_tail_steps": 17, "original_cap": 128, "remaining_original_steps": 91, "rng_sha256": "6ddedc3ea0eebc79a8b1ca7a5971aec423e44d91a27266057fc7c83a33c928f8"}
+TAIL_STEP_STARTED index=37 /127
+TAIL_PROGRESS {"completed_original_steps": 38, "new_tail_steps": 18, "original_cap": 128, "remaining_original_steps": 90, "rng_sha256": "daa5aec8f1d44121119d7941c583380b5c91b0204195a69234d2474d660218da"}
+TAIL_STEP_STARTED index=38 /127
+TAIL_PROGRESS {"completed_original_steps": 39, "new_tail_steps": 19, "original_cap": 128, "remaining_original_steps": 89, "rng_sha256": "79fd4eb1a5f154d58478882a5072b9aa08d56aa5d4fd2b6ff099dc2cd421775c"}
+TAIL_STEP_STARTED index=39 /127
+TAIL_PROGRESS {"completed_original_steps": 40, "new_tail_steps": 20, "original_cap": 128, "remaining_original_steps": 88, "rng_sha256": "1b1d49a3bfa4f5020f1d3471423c4da0f8f4c47e034e3a01aaea4c572e0473aa"}
+TAIL_STEP_STARTED index=40 /127
+TAIL_PROGRESS {"completed_original_steps": 41, "new_tail_steps": 21, "original_cap": 128, "remaining_original_steps": 87, "rng_sha256": "26cc8fa5db9b2fc834302e0cd6e24aee4f5f14bc1aefc49764466f601df944e8"}
+TAIL_STEP_STARTED index=41 /127
+TAIL_PROGRESS {"completed_original_steps": 42, "new_tail_steps": 22, "original_cap": 128, "remaining_original_steps": 86, "rng_sha256": "1839ca1ed779d415c56fb977de542537e99e0e6434e76af02e3f00c2aa39124c"}
+TAIL_STEP_STARTED index=42 /127
+TAIL_PROGRESS {"completed_original_steps": 43, "new_tail_steps": 23, "original_cap": 128, "remaining_original_steps": 85, "rng_sha256": "5cc87fb8b9b14a493b95d832bd786415ed248f4588a68fd2a094af0df1a70071"}
+TAIL_STEP_STARTED index=43 /127
+TAIL_PROGRESS {"completed_original_steps": 44, "new_tail_steps": 24, "original_cap": 128, "remaining_original_steps": 84, "rng_sha256": "fd57c90eb7a1cd04c63881e1c1174e2f20af9ca0191d5d958476650d131887d8"}
+TAIL_STEP_STARTED index=44 /127
+TAIL_PROGRESS {"completed_original_steps": 45, "new_tail_steps": 25, "original_cap": 128, "remaining_original_steps": 83, "rng_sha256": "b9bad0e6945737a250c560f84d8f1cbe802cae598877ba4075eb03d3834e2134"}
+TAIL_STEP_STARTED index=45 /127
+TAIL_PROGRESS {"completed_original_steps": 46, "new_tail_steps": 26, "original_cap": 128, "remaining_original_steps": 82, "rng_sha256": "2667361e33eced983c10e1d63a3fd1b7b1a6f74d136b29cf931d21baaf666381"}
+TAIL_STEP_STARTED index=46 /127
+TAIL_PROGRESS {"completed_original_steps": 47, "new_tail_steps": 27, "original_cap": 128, "remaining_original_steps": 81, "rng_sha256": "3bda58b9d969d5b1a750020fd00b1618e89ee7b55ab5acee1df548c676957279"}
+TAIL_STEP_STARTED index=47 /127
+TAIL_PROGRESS {"completed_original_steps": 48, "new_tail_steps": 28, "original_cap": 128, "remaining_original_steps": 80, "rng_sha256": "324b17e71d74074be4fe941561ede096062bb99d63ce85e58f838ae6b2e5d094"}
+TAIL_STEP_STARTED index=48 /127
+TAIL_PROGRESS {"completed_original_steps": 49, "new_tail_steps": 29, "original_cap": 128, "remaining_original_steps": 79, "rng_sha256": "cba4e778bb1e96d8948e1e77b537d0d96b7ff59dbca8bfe0a1be30445604af5f"}
+TAIL_STEP_STARTED index=49 /127
+TAIL_PROGRESS {"completed_original_steps": 50, "new_tail_steps": 30, "original_cap": 128, "remaining_original_steps": 78, "rng_sha256": "c49eeab0b55e8e7d26a8475d039ee2b29a4965d94de466504f0a5c98240b4242"}
+TAIL_STEP_STARTED index=50 /127
+TAIL_PROGRESS {"completed_original_steps": 51, "new_tail_steps": 31, "original_cap": 128, "remaining_original_steps": 77, "rng_sha256": "ded0ce2e4e314f7fa39b9e4df9294b171209ecca837b5b2c146846dbc2e6c1f3"}
+TAIL_STEP_STARTED index=51 /127
+TAIL_PROGRESS {"completed_original_steps": 52, "new_tail_steps": 32, "original_cap": 128, "remaining_original_steps": 76, "rng_sha256": "d9dcd9ae0da4beaf5d57ebbf37cc776d37396c5ea9c48a39d339b50991b2cdc1"}
+TAIL_STEP_STARTED index=52 /127
+TAIL_PROGRESS {"completed_original_steps": 53, "new_tail_steps": 33, "original_cap": 128, "remaining_original_steps": 75, "rng_sha256": "4a543d94c4dde4c023a0ba43d36917ab468361eb55bf0346d96021e3db3f1c10"}
+CONTINUATION_STATUS=COMPLETE_CELL377_CONTINUATION_PENDING_EXTERNAL_REVIEW
+PREFIX_PRESERVED_STEPS=20
+NEW_TAIL_STEPS=33
+ORIGINAL768_COMPLETE_CERTIFIED=False; CONFIRMATION_STARTED=False; TRAINING_STARTED=False
+ZIP_VERIFIED=True
+BUNDLE=/root/autodl-tmp/minesim_discovery_cell377_tail_continuation_v1.zip
+BUNDLE_SHA256=f483ddfdb28cce09fb8cfa42b657a1870fc91c68b3e875ddd6837c0b838b55a9

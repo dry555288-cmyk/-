@@ -1,0 +1,282 @@
+{
+  "parent_namespace": "minesim_dual_reportcache_flat_v1",
+  "source_uploaded_zip_sha256": "b6eaebb6ea02ffeedba0299e17a879a627f9d13a408c2ed94ce531e789169646",
+  "members": {
+    "MANIFEST.json": {
+      "size": 14913,
+      "sha256": "856b1d136c6130f182862be2167fbbe46a4cf266b2fca3ca57a956e13907e3bb"
+    },
+    "RC.txt": {
+      "size": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "RESULT.json": {
+      "size": 3104,
+      "sha256": "211c135632c133129fcdbf0462e843c2a2dc1a30b6041c1ff0d2b83b9148d742"
+    },
+    "RESOURCES.json": {
+      "size": 168,
+      "sha256": "36b6c65b4a2c32df281a9721afc9287d815e1a61b2c0b36f09cd83be20959c9d"
+    },
+    "release/PROTOCOL.json": {
+      "size": 2380,
+      "sha256": "4cfbbc67f447ff41a4d99038103ca4aad9206ef11eeb26b0f7b5a771f7f16bea"
+    },
+    "release/action_cache.py": {
+      "size": 5642,
+      "sha256": "69b68b346ad6ae9e275f2b5b3f781e431f3dcb7fcb25b1a573c557519ef38933"
+    },
+    "release/experiment.py": {
+      "size": 9523,
+      "sha256": "a7bf7d2bde675df863a083f763ca6c969e9e60e543fdc6d0314aed41565502df"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/EXPECTED_IMPORT.json": {
+      "size": 461,
+      "sha256": "16a2e5be0929960c99dbb89e594845ae61052413d33ad9e0cfe10e5f56f302f9"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/__init__.py": {
+      "size": 85,
+      "sha256": "7d35678f99c3e6c37e62b6bb9d91cc6f7be616d2c1a5a9d0fc164137eb8172cd"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/action_space.py": {
+      "size": 649,
+      "sha256": "03ccff1923f0ed19de4765d2329489d505cfc68bfbeb0335e575cf1519953633"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_adapter_v1.py": {
+      "size": 16614,
+      "sha256": "04710705edeea28bf38560fc4e3ce8ee319fc0b6679dbf00bd4c61d897cd4961"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py": {
+      "size": 13473,
+      "sha256": "e9d024a6f56b6279de41b6f0889a188a201eeef07acca425e2ea69c4ef9c0626"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_collision.py": {
+      "size": 4500,
+      "sha256": "41e1707c626c1f9e80ad28a46484fd984ebf5677d42c3c3cd9709688a11ef076"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_node.py": {
+      "size": 1460,
+      "sha256": "fe61be3c0732a65e4bac250b0d0ff647240a0a9cc9778f98009378ec6cc0184c"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_reward.py": {
+      "size": 3700,
+      "sha256": "bd2cefa0e6eac0980d009882aa5a4a0aa7f0b6701b6534ccb3af18634ad6213c"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_search.py": {
+      "size": 7431,
+      "sha256": "e96c82d60b75c6d2b3311b9fd9d569cab1404c5c2ba4c729cb25c8e605d6ec94"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_state.py": {
+      "size": 5748,
+      "sha256": "1b7efe18e2a77e96a9beb94070500ff811dd584754c03d57cb1e2e8a985c9d21"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/fleet_transition.py": {
+      "size": 5013,
+      "sha256": "006cd1ba4f64c5780da0bfb8de0b48555cb385655ed929b7c9d9fd269d4d77a2"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/joint_action.py": {
+      "size": 3513,
+      "sha256": "918f5e6e90631d28cdf6b6f8bdefb38d572c402a983b4cb622340408a968854e"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/reward.py": {
+      "size": 7651,
+      "sha256": "d225ca754b2e5f6a650a35a946819276d50c027eaf66449667973c45f98ed5a5"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/state.py": {
+      "size": 1366,
+      "sha256": "d0b7ab348ac02181eefc2481309945b3c281f8216df3667ff75d2ea03ae4d409"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/candidate_mcts/transition_model.py": {
+      "size": 2689,
+      "sha256": "9971189f68c64978b406482f2dde326cae774948a4fde025aae26dc0af64cb0c"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/definitions/frozen_codec.py": {
+      "size": 5598,
+      "sha256": "e5edc00e93003e834c71258d1561affbebfbde55e5637f0574ed5399247c0b43"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/definitions/route_helpers.py": {
+      "size": 1392,
+      "sha256": "1c10c16b8056ccd25a27cb8a12078d55d20e2457152df7361c3856ca96b0246c"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/__init__.py": {
+      "size": 39,
+      "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/common/__init__.py": {
+      "size": 39,
+      "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/__init__.py": {
+      "size": 39,
+      "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/car_footprint.py": {
+      "size": 3806,
+      "sha256": "0ec6b4fcb53345d64c5773071d991bc90f80b1a1bdd3c4683e5d98ad72e7a4ff"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/oriented_box.py": {
+      "size": 11274,
+      "sha256": "bdd88f0cf476308a498c42455c1e95ffc0e421c07378ef438bae5c3139322115"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/state_representation.py": {
+      "size": 18200,
+      "sha256": "b48042d0d917918969c08e97a6cddd9ab8f433f3b6b4d9adfb5e6b58b25def6e"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/vehicle_parameters.py": {
+      "size": 11274,
+      "sha256": "e14a32f88bca707de5a6d9661188259be7a9112bbefb1b0d90bd4d22358c4977"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/common/geometry/__init__.py": {
+      "size": 39,
+      "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/common/geometry/transform.py": {
+      "size": 5318,
+      "sha256": "061b037a7a93a426b92ad426962af599123359cfd3c288ce1836e3ae70922c01"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/__init__.py": {
+      "size": 39,
+      "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/__init__.py": {
+      "size": 39,
+      "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/__init__.py": {
+      "size": 39,
+      "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/__init__.py": {
+      "size": 39,
+      "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/action_space.py": {
+      "size": 649,
+      "sha256": "03ccff1923f0ed19de4765d2329489d505cfc68bfbeb0335e575cf1519953633"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_collision.py": {
+      "size": 4500,
+      "sha256": "41e1707c626c1f9e80ad28a46484fd984ebf5677d42c3c3cd9709688a11ef076"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_node.py": {
+      "size": 1460,
+      "sha256": "fe61be3c0732a65e4bac250b0d0ff647240a0a9cc9778f98009378ec6cc0184c"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_reward.py": {
+      "size": 3700,
+      "sha256": "bd2cefa0e6eac0980d009882aa5a4a0aa7f0b6701b6534ccb3af18634ad6213c"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_search.py": {
+      "size": 7431,
+      "sha256": "e96c82d60b75c6d2b3311b9fd9d569cab1404c5c2ba4c729cb25c8e605d6ec94"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_state.py": {
+      "size": 5748,
+      "sha256": "1b7efe18e2a77e96a9beb94070500ff811dd584754c03d57cb1e2e8a985c9d21"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_transition.py": {
+      "size": 5013,
+      "sha256": "006cd1ba4f64c5780da0bfb8de0b48555cb385655ed929b7c9d9fd269d4d77a2"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/geometry_transition_model.py": {
+      "size": 17781,
+      "sha256": "8ac6513912c18e761426f86d532ee89774075e0f0e9d2f6bb8aa759e7960976d"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/joint_action.py": {
+      "size": 3513,
+      "sha256": "918f5e6e90631d28cdf6b6f8bdefb38d572c402a983b4cb622340408a968854e"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/reward.py": {
+      "size": 7651,
+      "sha256": "d225ca754b2e5f6a650a35a946819276d50c027eaf66449667973c45f98ed5a5"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/state.py": {
+      "size": 1366,
+      "sha256": "d0b7ab348ac02181eefc2481309945b3c281f8216df3667ff75d2ea03ae4d409"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/transition_model.py": {
+      "size": 2689,
+      "sha256": "9971189f68c64978b406482f2dde326cae774948a4fde025aae26dc0af64cb0c"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/feature_projection.py": {
+      "size": 11943,
+      "sha256": "1b48576201960a73cf6a6205a411cd65d65f087d990f37010a217199eb8ea439"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/inputs/SELECTED_NEW16.json": {
+      "size": 43654,
+      "sha256": "bea017514307e503a88d115113402e614d4ce66425f298f7477ce1ab6bfb5667"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/inputs/contexts/C11_100M_SEED0_EP1.json": {
+      "size": 5959,
+      "sha256": "a13f2fc0b735d310d3bcd80fc44d09d366bd3474e284090b247654bc5ba5f911"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/inputs/contexts/C11_80M_SEED0_EP0.json": {
+      "size": 5957,
+      "sha256": "9298558b84b0dd19e13396a0fcc6eeeb033b7a080f4b2a76ca708ae2dba21878"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/inputs/resolved/policy_01.json": {
+      "size": 1142,
+      "sha256": "2874c4ae0a6a4a7c770745cd855a1ed8c56ef7ec51e74bac47e80ff03254e66b"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/inputs/resolved/policy_05.json": {
+      "size": 1141,
+      "sha256": "cd9c5ae2c7ad58efdca44300d40fb3ab4f6b524cafd0aa65542068035e0901c8"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/inputs/steps/coverage_policy_01__step0014.json": {
+      "size": 23993,
+      "sha256": "55da5d1adc5945715618cd7b1d73022ed29c3b57a992a7713e9bcfa96d523aa0"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/inputs/steps/coverage_policy_05__step0011.json": {
+      "size": 23988,
+      "sha256": "960f30227f2530c374b45c0fbf56e33f8cc584a2be2db32e7622a96c30f7f9ca"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/realroute_smoke.py": {
+      "size": 23644,
+      "sha256": "568479648e506d80b0a06d74e2a56b75677c92b6e010d9a98219042b461ea225"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/reference_paths.json": {
+      "size": 2440735,
+      "sha256": "5a8bd32d831b7d75cc90e8db45ac9d0880dcfe10bf5c5f0db93a8a31fb0e306f"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/teacher_cell_core.py": {
+      "size": 16731,
+      "sha256": "58c3e5d217189b5d4f7e108b57f3d3700f3e11216d1eab02d1d25c5e0885cba0"
+    },
+    "parent_sources/parent_sources/parent_sources/runtime/teacher_runner_smoke.py": {
+      "size": 12814,
+      "sha256": "6f90596ec54815b1e548624748fb4a09f47e27f51368ff915fdb739d17883c2a"
+    },
+    "native/coverage_policy_01__step0014/baseline_0.json": {
+      "size": 25268,
+      "sha256": "98eef3572be1b3bb47184e6fa56176784adecb68229e566cc71e2be098d7e107"
+    },
+    "native/coverage_policy_01__step0014/baseline_1.json": {
+      "size": 25287,
+      "sha256": "8bd0566c6575bcca5eeee46386430c5448f0081c57bc46616513a0e8bc925b0b"
+    },
+    "native/coverage_policy_01__step0014/cached_0.json": {
+      "size": 25286,
+      "sha256": "ce4cdae61c9321f35f42ece3766fdde2d2c6c563e0b6c54e8c1e93b0e6c5e7cf"
+    },
+    "native/coverage_policy_01__step0014/cached_1.json": {
+      "size": 25321,
+      "sha256": "c516141c5d960a7d1f1d3ebdfde2f6fb6bdd08c5d4361b58ecb8b2e6f885ca47"
+    },
+    "native/coverage_policy_05__step0011/baseline_0.json": {
+      "size": 25268,
+      "sha256": "c3d4afe1f7af92f6674f8391ac7d82a9ea36ba2fc956fb2e76ed53dc34d13039"
+    },
+    "native/coverage_policy_05__step0011/baseline_1.json": {
+      "size": 25265,
+      "sha256": "da5b3285c0493aed68f8200061d7407a68c022248c7050ab06984994824567fe"
+    },
+    "native/coverage_policy_05__step0011/cached_0.json": {
+      "size": 25279,
+      "sha256": "a7ee54a9f3731d0f158e2129f5e49ed0942a1fd0322f5305ce174537088946dd"
+    },
+    "native/coverage_policy_05__step0011/cached_1.json": {
+      "size": 25289,
+      "sha256": "b209f17633ed6dab5dc85fce3afa60dd3cfe267f3fb7c58771af8340f0987f57"
+    }
+  }
+}

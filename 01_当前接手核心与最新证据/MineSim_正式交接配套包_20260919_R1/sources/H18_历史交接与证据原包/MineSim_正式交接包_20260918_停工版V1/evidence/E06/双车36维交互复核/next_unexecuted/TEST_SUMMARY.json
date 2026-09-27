@@ -1,0 +1,20 @@
+{
+  "status": "PASS_LOCAL_TECHNICAL_TESTS_NOT_CLOUD_RUN",
+  "unittest_cases": 34,
+  "test_log_sha256": "cc6dc9e508ac8b93b76350350756cc4e0aba25e3dcb8c3c0d81f52590672bf02",
+  "scope": [
+    "synthetic linear algebra/reference solve",
+    "train-only scaling and constant-column handling",
+    "saved model roundtrip",
+    "real frozen file validation without fitting",
+    "source SHA/missing/symlink/archives",
+    "outer partition rejection",
+    "authorization/duplicate namespace",
+    "synthetic prestart/runtime HOLD packaging",
+    "synthetic eightfold pipeline"
+  ],
+  "actual32_state_new_model_fits": 0,
+  "new_MCTS_calls": 0,
+  "data_collection": 0,
+  "cloud_execution": false
+}

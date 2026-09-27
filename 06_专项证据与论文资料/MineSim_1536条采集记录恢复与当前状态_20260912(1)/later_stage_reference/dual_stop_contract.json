@@ -1,0 +1,58 @@
+{
+  "version": "DUAL_ONLY_DESTINATION_STOP_CANDIDATE_V1",
+  "user_approval": "可以，现在先用这个逻辑",
+  "adoption": "PROVISIONAL_DEVELOPMENT_SETTINGS",
+  "controlled_tokens": [
+    "A",
+    "B"
+  ],
+  "external_traffic": "CONFIRMED_NONE",
+  "rear_axle_goal_window_relative_to_route_end_m": [
+    -0.5,
+    0
+  ],
+  "parked_speed_mps": 0,
+  "position_snapping": false,
+  "near_zero_velocity_snapping": false,
+  "parked_body_retained": true,
+  "dt_s": 0.5,
+  "max_speed_mps": 15,
+  "action_accelerations_mps2": [
+    -3,
+    -1.5,
+    0,
+    1
+  ],
+  "motion": "constant acceleration until speed boundary then hold that boundary",
+  "admissibility": "s_next + v_next^2/(2*3) <= own_goal_upper",
+  "bounds_numerics": "near boundary uses exact rational comparison of supplied binary float values; no physical allowance",
+  "integration_locations": [
+    "search root",
+    "tree expansion",
+    "rollout",
+    "outer advance",
+    "0.1s sampled collision positions"
+  ],
+  "search": {
+    "budget": 64,
+    "horizon": 8,
+    "c_uct": 1.4,
+    "gamma": 0.99
+  },
+  "search_algorithm_source_unchanged": true,
+  "reward_source_and_weights_unchanged": true,
+  "command_vs_actual_acceleration_logged_separately": true,
+  "no_feasible_action": "explicit TerminalInfeasible; no fallback/full action recovery, no fake collision reward",
+  "simulator_terminal_precedence": [
+    "past_or_current_hard_safety_failure",
+    "both_parked",
+    "evaluation_cap",
+    "running"
+  ],
+  "road_free_space": "HOLD",
+  "controller_tracking": "NOT_TESTED",
+  "continuous_collision_guarantee": false,
+  "old_teacher_labels_compatible_with_new_version": false,
+  "deployed": false,
+  "cloud_modified": false
+}

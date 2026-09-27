@@ -1,0 +1,2754 @@
+[
+  {
+    "root_id": "contrast_00",
+    "source_run": "policy_00",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": false,
+    "empirical_mean_gap": 61.054964873098236,
+    "block_mean_gaps": [
+      61.30447680847132,
+      60.80545293772516
+    ],
+    "absolute_block_difference": 0.4990238707461643,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": 1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 11.192344637747457,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 58.1279221141444,
+        "sample_sd": 0.893779300833545,
+        "min": 56.84258683873082,
+        "max": 59.1546344870674,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 58.1279221141444,
+            "sample_sd": 0.893779300833545,
+            "min": 56.84258683873082,
+            "max": 59.1546344870674
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": -2.92704275895384,
+        "sample_sd": 31.64411140295008,
+        "min": -20.42119570868242,
+        "max": 49.61779080955264,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 2,
+            "mean": 48.327251291971635,
+            "sample_sd": 1.8250984885414905,
+            "min": 47.036711774390625,
+            "max": 49.61779080955264
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 6,
+            "mean": -20.011807442595664,
+            "sample_sd": 0.39423287366039345,
+            "min": -20.42119570868242,
+            "max": -19.555438418484695
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 53.51805032696806,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 36.62499999999986,
+      "B": 31.125000052404403
+    },
+    "speed_mps": {
+      "A": 8.0,
+      "B": 9.0
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 4.578124999999982,
+      "B": 3.4583333391560447
+    },
+    "time_difference_A_minus_B_s": 1.1197916608439376,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "contrast_01",
+    "source_run": "policy_01",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": false,
+    "empirical_mean_gap": -70.07194049516491,
+    "block_mean_gaps": [
+      -70.33811595616069,
+      -69.80576503416911
+    ],
+    "absolute_block_difference": 0.5323509219915792,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": -1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.957248435352171,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": -22.49136467462617,
+        "sample_sd": 0.4747392056961957,
+        "min": -23.319312768613667,
+        "max": -22.023338404218396,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 8,
+            "mean": -22.49136467462617,
+            "sample_sd": 0.4747392056961957,
+            "min": -23.319312768613667,
+            "max": -22.023338404218396
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 47.58057582053873,
+        "sample_sd": 2.6655617086176004,
+        "min": 42.64656538448585,
+        "max": 51.15215299434508,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 47.58057582053873,
+            "sample_sd": 2.6655617086176004,
+            "min": 42.64656538448585,
+            "max": 51.15215299434508
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 28.5766563942288,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 19.249999999999858,
+      "B": 24.562500052404403
+    },
+    "speed_mps": {
+      "A": 5.0,
+      "B": 3.75
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 3.8499999999999717,
+      "B": 6.550000013974508
+    },
+    "time_difference_A_minus_B_s": -2.700000013974536,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "contrast_02",
+    "source_run": "policy_02",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": false,
+    "empirical_mean_gap": 1.4245153217214437,
+    "block_mean_gaps": [
+      2.0262474057506807,
+      0.8227832376921995
+    ],
+    "absolute_block_difference": 1.2034641680584812,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.6659260401536098,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 53.102460800179394,
+        "sample_sd": 1.3380572673144833,
+        "min": 51.652083822837106,
+        "max": 55.17152005271064,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 53.102460800179394,
+            "sample_sd": 1.3380572673144833,
+            "min": 51.652083822837106,
+            "max": 55.17152005271064
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 51.67794547845795,
+        "sample_sd": 1.3256178472788582,
+        "min": 49.87043807766681,
+        "max": 53.0874284468745,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 51.67794547845795,
+            "sample_sd": 1.3256178472788582,
+            "min": 49.87043807766681,
+            "max": 53.0874284468745
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 1.1723657628398592,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -22.000000000000142,
+      "B": 21.677083385737745
+    },
+    "speed_mps": {
+      "A": 9.0,
+      "B": 0.5
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": 43.35416677147549
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "contrast_03",
+    "source_run": "policy_03",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": false,
+    "empirical_mean_gap": -45.099503144721155,
+    "block_mean_gaps": [
+      -54.65734272102525,
+      -35.54166356841704
+    ],
+    "absolute_block_difference": 19.11567915260821,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 12.825824859845083,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 4.656763447545055,
+        "sample_sd": 36.224738406184244,
+        "min": -21.947375496446714,
+        "max": 50.441904694081614,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 3,
+            "mean": 48.37320746772818,
+            "sample_sd": 2.4041836625597512,
+            "min": 45.73559096596346,
+            "max": 50.441904694081614
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 5,
+            "mean": -21.573102964564818,
+            "sample_sd": 0.402994017839445,
+            "min": -21.947375496446714,
+            "max": -20.956467626559633
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 49.75626659226621,
+        "sample_sd": 1.9448892222647443,
+        "min": 46.55350417836238,
+        "max": 52.30756453995294,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 49.75626659226621,
+            "sample_sd": 1.9448892222647443,
+            "min": 46.55350417836238,
+            "max": 52.30756453995294
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 41.44028337985855,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 27.249999999999858,
+      "B": 29.750000052404403
+    },
+    "speed_mps": {
+      "A": 7.5,
+      "B": 6.0
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 3.633333333333314,
+      "B": 4.958333342067401
+    },
+    "time_difference_A_minus_B_s": -1.3250000087340865,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "contrast_04",
+    "source_run": "policy_04",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": false,
+    "empirical_mean_gap": 35.98326588192243,
+    "block_mean_gaps": [
+      10.716162238281015,
+      61.25036952556385
+    ],
+    "absolute_block_difference": 50.53420728728283,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": 1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 12.592077743596802,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 60.07335145041691,
+        "sample_sd": 0.8138404273502379,
+        "min": 58.19758477597214,
+        "max": 60.8833193621543,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 60.07335145041691,
+            "sample_sd": 0.8138404273502379,
+            "min": 58.19758477597214,
+            "max": 60.8833193621543
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 24.09008556849448,
+        "sample_sd": 35.60647467757933,
+        "min": -19.0624800040293,
+        "max": 53.03934842691486,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 5,
+            "mean": 49.83428542879063,
+            "sample_sd": 3.0701194716150932,
+            "min": 45.60069169004269,
+            "max": 53.03934842691486
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 3,
+            "mean": -18.81691419866577,
+            "sample_sd": 0.31122273703353837,
+            "min": -19.0624800040293,
+            "max": -18.466903066061384
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 61.296953058103234,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 39.74999999999977,
+      "B": 36.375002789485364
+    },
+    "speed_mps": {
+      "A": 8.5,
+      "B": 10.0
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 4.676470588235268,
+      "B": 3.6375002789485364
+    },
+    "time_difference_A_minus_B_s": 1.0389703092867313,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "contrast_05",
+    "source_run": "policy_05",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": false,
+    "empirical_mean_gap": 49.00275126525988,
+    "block_mean_gaps": [
+      40.77232138864798,
+      57.23318114187177
+    ],
+    "absolute_block_difference": 16.460859753223787,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": 1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 12.941403956842917,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 52.90452398162973,
+        "sample_sd": 1.5911412912204215,
+        "min": 50.47238248052608,
+        "max": 55.31390973028816,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 52.90452398162973,
+            "sample_sd": 1.5911412912204215,
+            "min": 50.47238248052608,
+            "max": 55.31390973028816
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 3.9017727163698495,
+        "sample_sd": 36.569218755462764,
+        "min": -23.27741356062872,
+        "max": 48.538559731436905,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 3,
+            "mean": 48.05778115469095,
+            "sample_sd": 0.7103485724793078,
+            "min": 47.2418624886751,
+            "max": 48.538559731436905
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 5,
+            "mean": -22.591832346622812,
+            "sample_sd": 0.5767024191415395,
+            "min": -23.27741356062872,
+            "max": -21.89607750881188
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 31.459162192375913,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 23.499999999999773,
+      "B": 22.062502789485364
+    },
+    "speed_mps": {
+      "A": 3.5,
+      "B": 6.25
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 6.71428571428565,
+      "B": 3.530000446317658
+    },
+    "time_difference_A_minus_B_s": 3.1842852679679914,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "contrast_06",
+    "source_run": "policy_06",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": false,
+    "empirical_mean_gap": -31.03158152738138,
+    "block_mean_gaps": [
+      -37.288373354980656,
+      -24.774789699782108
+    ],
+    "absolute_block_difference": 12.513583655198548,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 12.668176694636399,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 23.44017214097941,
+        "sample_sd": 35.76512259470588,
+        "min": -19.883280044629945,
+        "max": 51.76497386424004,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 5,
+            "mean": 49.33356346021983,
+            "sample_sd": 1.8963683763822565,
+            "min": 46.555076586962514,
+            "max": 51.76497386424004
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 3,
+            "mean": -19.715480057754633,
+            "sample_sd": 0.16368761979241936,
+            "min": -19.883280044629945,
+            "max": -19.55624076396987
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 54.47175366836079,
+        "sample_sd": 2.172006426760536,
+        "min": 50.58450514084254,
+        "max": 56.583723068790434,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 54.47175366836079,
+            "sample_sd": 2.172006426760536,
+            "min": 50.58450514084254,
+            "max": 56.583723068790434
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 54.47244592853924,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 33.24999999999977,
+      "B": 36.062502789485364
+    },
+    "speed_mps": {
+      "A": 9.5,
+      "B": 7.25
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 3.499999999999976,
+      "B": 4.974138315791085
+    },
+    "time_difference_A_minus_B_s": -1.4741383157911088,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "contrast_07",
+    "source_run": "policy_07",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": false,
+    "empirical_mean_gap": 18.63411789540224,
+    "block_mean_gaps": [
+      34.8782538034438,
+      2.389981987360695
+    ],
+    "absolute_block_difference": 32.4882718160831,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 16.04752428684376,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 41.85729114954382,
+        "sample_sd": 26.103142560921405,
+        "min": -22.214742715978552,
+        "max": 54.77108916290231,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 7,
+            "mean": 51.01043884461844,
+            "sample_sd": 3.603980395130507,
+            "min": 43.84235129576467,
+            "max": 54.77108916290231
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 1,
+            "mean": -22.214742715978552,
+            "sample_sd": null,
+            "min": -22.214742715978552,
+            "max": -22.214742715978552
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 23.223173254141578,
+        "sample_sd": 37.132334081483975,
+        "min": -23.828479207111833,
+        "max": 52.12397635052574,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 5,
+            "mean": 50.09131905529485,
+            "sample_sd": 2.1584213541356325,
+            "min": 47.01659575433545,
+            "max": 52.12397635052574
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 3,
+            "mean": -21.557069747780556,
+            "sample_sd": 1.9671966743134102,
+            "min": -23.828479207111833,
+            "max": -20.401691267200828
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 48.54306654850707,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 31.624999999999773,
+      "B": 31.312502789485364
+    },
+    "speed_mps": {
+      "A": 7.0,
+      "B": 7.25
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 4.51785714285711,
+      "B": 4.318965901997982
+    },
+    "time_difference_A_minus_B_s": 0.1988912408591288,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "newroot_00",
+    "source_run": "policy_02",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": false,
+    "empirical_mean_gap": -39.69864669946578,
+    "block_mean_gaps": [
+      -56.74103018286072,
+      -22.656263216070855
+    ],
+    "absolute_block_difference": 34.084766966789864,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 13.133827617432727,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 14.075142210904938,
+        "sample_sd": 37.063824999299044,
+        "min": -20.98504031481063,
+        "max": 51.280298554948764,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 4,
+            "mean": 48.719796805577644,
+            "sample_sd": 2.139125599054991,
+            "min": 46.04353632255567,
+            "max": 51.280298554948764
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 4,
+            "mean": -20.56951238376777,
+            "sample_sd": 0.33938876019505976,
+            "min": -20.98504031481063,
+            "max": -20.250842858891584
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 53.77378891037072,
+        "sample_sd": 2.500459857075183,
+        "min": 48.82388867070565,
+        "max": 57.59461478152048,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 53.77378891037072,
+            "sample_sd": 2.500459857075183,
+            "min": 48.82388867070565,
+            "max": 57.59461478152048
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 56.41380768534947,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 32.37499999999986,
+      "B": 38.0625000524044
+    },
+    "speed_mps": {
+      "A": 9.5,
+      "B": 8.25
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 3.40789473684209,
+      "B": 4.613636369988413
+    },
+    "time_difference_A_minus_B_s": -1.2057416331463227,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "newroot_01",
+    "source_run": "policy_02",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": false,
+    "empirical_mean_gap": 2.024806194758767,
+    "block_mean_gaps": [
+      0.8723505715401885,
+      3.177261817977353
+    ],
+    "absolute_block_difference": 2.3049112464371646,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.4647643413710255,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 53.381828727295684,
+        "sample_sd": 0.9705597044026106,
+        "min": 51.177459980041256,
+        "max": 54.4565915792827,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 53.381828727295684,
+            "sample_sd": 0.9705597044026106,
+            "min": 51.177459980041256,
+            "max": 54.4565915792827
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 51.35702253253692,
+        "sample_sd": 0.8866008144989842,
+        "min": 49.87277617642708,
+        "max": 52.7760646844582,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 51.35702253253692,
+            "sample_sd": 0.8866008144989842,
+            "min": 49.87277617642708,
+            "max": 52.7760646844582
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 69.7059030956168,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -98.75000000000014,
+      "B": 15.343750052404431
+    },
+    "speed_mps": {
+      "A": 14.0,
+      "B": 3.5
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": 4.383928586401266
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "newroot_02",
+    "source_run": "policy_03",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": false,
+    "empirical_mean_gap": -37.74488024101463,
+    "block_mean_gaps": [
+      -53.772996851293776,
+      -21.716763630735485
+    ],
+    "absolute_block_difference": 32.05623322055829,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": -1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 12.878477996728552,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 13.435547858239495,
+        "sample_sd": 36.38770079443648,
+        "min": -21.39783839550664,
+        "max": 49.84168319138407,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 4,
+            "mean": 47.45473299509473,
+            "sample_sd": 1.7430540743004774,
+            "min": 45.84184652396346,
+            "max": 49.84168319138407
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 4,
+            "mean": -20.58363727861574,
+            "sample_sd": 0.547421901635334,
+            "min": -21.39783839550664,
+            "max": -20.224005576420026
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 51.18042809925412,
+        "sample_sd": 1.6663718049517768,
+        "min": 48.223233417195985,
+        "max": 53.62892116016528,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 51.18042809925412,
+            "sample_sd": 1.6663718049517768,
+            "min": 48.223233417195985,
+            "max": 53.62892116016528
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 50.51759588709782,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 31.374999999999858,
+      "B": 33.1250000524044
+    },
+    "speed_mps": {
+      "A": 9.0,
+      "B": 7.5
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 3.486111111111095,
+      "B": 4.41666667365392
+    },
+    "time_difference_A_minus_B_s": -0.9305555625428252,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "newroot_03",
+    "source_run": "policy_03",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": false,
+    "empirical_mean_gap": 1.4904059216852161,
+    "block_mean_gaps": [
+      2.251494228150378,
+      0.7293176152200402
+    ],
+    "absolute_block_difference": 1.5221766129303376,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.5003259618984246,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 54.21614444399113,
+        "sample_sd": 0.5166037236737784,
+        "min": 53.26317271143558,
+        "max": 54.84186090427577,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 54.21614444399113,
+            "sample_sd": 0.5166037236737784,
+            "min": 53.26317271143558,
+            "max": 54.84186090427577
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 52.72573852230592,
+        "sample_sd": 1.317470735114468,
+        "min": 49.73763379735574,
+        "max": 53.901263043517766,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 52.72573852230592,
+            "sample_sd": 1.317470735114468,
+            "min": 49.73763379735574,
+            "max": 53.901263043517766
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 60.7626227442721,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -86.25000000000014,
+      "B": 10.291666719071088
+    },
+    "speed_mps": {
+      "A": 13.5,
+      "B": 4.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": 2.572916679767772
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "newroot_04",
+    "source_run": "policy_06",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": false,
+    "empirical_mean_gap": 1.946141720825345,
+    "block_mean_gaps": [
+      1.783231385912309,
+      2.109052055738381
+    ],
+    "absolute_block_difference": 0.32582066982607216,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.8770533668989392,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 55.480252437766445,
+        "sample_sd": 1.797562441435052,
+        "min": 51.92516138789861,
+        "max": 57.188759159215934,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 55.480252437766445,
+            "sample_sd": 1.797562441435052,
+            "min": 51.92516138789861,
+            "max": 57.188759159215934
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 53.5341107169411,
+        "sample_sd": 1.7095467634002228,
+        "min": 51.262162903899615,
+        "max": 56.39790432984383,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 53.5341107169411,
+            "sample_sd": 1.7095467634002228,
+            "min": 51.262162903899615,
+            "max": 56.39790432984383
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 21.325967453815487,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 8.562499999999773,
+      "B": 26.562502789485364
+    },
+    "speed_mps": {
+      "A": 10.75,
+      "B": 1.25
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 0.7965116279069556,
+      "B": 21.25000223158829
+    },
+    "time_difference_A_minus_B_s": -20.453490603681335,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "newroot_05",
+    "source_run": "policy_06",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": false,
+    "empirical_mean_gap": 1.0776855041834494,
+    "block_mean_gaps": [
+      1.236798041651646,
+      0.9185729667152529
+    ],
+    "absolute_block_difference": 0.31822507493639307,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": 1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.15528503341620992,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 54.69896933837161,
+        "sample_sd": 0.22288296059911933,
+        "min": 54.45120441570806,
+        "max": 55.07446395995328,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 54.69896933837161,
+            "sample_sd": 0.22288296059911933,
+            "min": 54.45120441570806,
+            "max": 55.07446395995328
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 53.62128383418816,
+        "sample_sd": 0.3784583447344752,
+        "min": 52.84663737635565,
+        "max": 54.035394427594696,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 53.62128383418816,
+            "sample_sd": 0.3784583447344752,
+            "min": 52.84663737635565,
+            "max": 54.035394427594696
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 75.7184107209863,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -99.03125000000026,
+      "B": 6.812502789485336
+    },
+    "speed_mps": {
+      "A": 15.0,
+      "B": 5.75
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": 1.1847830938235366
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "newroot_06",
+    "source_run": "policy_07",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": false,
+    "empirical_mean_gap": -1.2716853233049648,
+    "block_mean_gaps": [
+      -1.2662221459122378,
+      -1.2771485006976917
+    ],
+    "absolute_block_difference": 0.010926354785453896,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.40931431175322425,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 55.20952257353857,
+        "sample_sd": 0.8747394321925784,
+        "min": 53.96107069627414,
+        "max": 56.74716387744248,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 55.20952257353857,
+            "sample_sd": 0.8747394321925784,
+            "min": 53.96107069627414,
+            "max": 56.74716387744248
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 56.481207896843536,
+        "sample_sd": 0.7583775921106388,
+        "min": 55.10130819760446,
+        "max": 57.47407512153422,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 56.481207896843536,
+            "sample_sd": 0.7583775921106388,
+            "min": 55.10130819760446,
+            "max": 57.47407512153422
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 3.4352551870544876,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 18.562499999999773,
+      "B": -2.937497210514664
+    },
+    "speed_mps": {
+      "A": 2.75,
+      "B": 10.25
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 6.749999999999917,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "newroot_07",
+    "source_run": "policy_07",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": false,
+    "empirical_mean_gap": -0.5733042989719195,
+    "block_mean_gaps": [
+      -0.34314564158269434,
+      -0.8034629563611375
+    ],
+    "absolute_block_difference": 0.4603173147784432,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.1516749268760852,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 51.32609833837013,
+        "sample_sd": 0.2642698645275634,
+        "min": 51.034397014323304,
+        "max": 51.786489365029034,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 51.32609833837013,
+            "sample_sd": 0.2642698645275634,
+            "min": 51.034397014323304,
+            "max": 51.786489365029034
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 51.89940263734205,
+        "sample_sd": 0.3379403885976189,
+        "min": 51.17637814201568,
+        "max": 52.28736528635029,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 51.89940263734205,
+            "sample_sd": 0.3379403885976189,
+            "min": 51.17637814201568,
+            "max": 52.28736528635029
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 171.7464248704563,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -40.625000000000256,
+      "B": -151.40624721051466
+    },
+    "speed_mps": {
+      "A": 9.0,
+      "B": 14.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_00__step0065",
+    "source_run": "policy_00",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": true,
+    "empirical_mean_gap": -0.25161083850538546,
+    "block_mean_gaps": [
+      -0.2966822365616082,
+      -0.20653944044916983
+    ],
+    "absolute_block_difference": 0.09014279611243836,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": -1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.042463829003380485,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 33.91502577911727,
+        "sample_sd": 0.11602436569057761,
+        "min": 33.731118358353875,
+        "max": 34.07252354399851,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 33.91502577911727,
+            "sample_sd": 0.11602436569057761,
+            "min": 33.731118358353875,
+            "max": 34.07252354399851
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 34.16663661762266,
+        "sample_sd": 0.031044496374169415,
+        "min": 34.089805408956224,
+        "max": 34.17761250457501,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 34.16663661762266,
+            "sample_sd": 0.031044496374169415,
+            "min": 34.089805408956224,
+            "max": 34.17761250457501
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 499.88261644116164,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -216.37500000000014,
+      "B": -308.31249994759565
+    },
+    "speed_mps": {
+      "A": 15.0,
+      "B": 15.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_00__step0040",
+    "source_run": "policy_00",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": true,
+    "empirical_mean_gap": -0.16691203226265117,
+    "block_mean_gaps": [
+      -0.041409947855648,
+      -0.29241411666965433
+    ],
+    "absolute_block_difference": 0.25100416881400633,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.12795741857599757,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 53.59568779405896,
+        "sample_sd": 0.17554483596651702,
+        "min": 53.240862629616004,
+        "max": 53.801561300111295,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 53.59568779405896,
+            "sample_sd": 0.17554483596651702,
+            "min": 53.240862629616004,
+            "max": 53.801561300111295
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 53.76259982632161,
+        "sample_sd": 0.316494578649545,
+        "min": 53.393251268771934,
+        "max": 54.2448364491002,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 53.76259982632161,
+            "sample_sd": 0.316494578649545,
+            "min": 53.393251268771934,
+            "max": 54.2448364491002
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 135.8916858539867,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -36.87500000000014,
+      "B": -121.2812499475956
+    },
+    "speed_mps": {
+      "A": 11.0,
+      "B": 15.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_00__step0028",
+    "source_run": "policy_00",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": true,
+    "empirical_mean_gap": -0.9407940622378845,
+    "block_mean_gaps": [
+      -0.8553110397190835,
+      -1.0262770847566856
+    ],
+    "absolute_block_difference": 0.17096604503760204,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": -1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.2213459037036116,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 57.32005866853103,
+        "sample_sd": 0.5035720805905773,
+        "min": 56.23099987958817,
+        "max": 57.75240249667121,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 57.32005866853103,
+            "sample_sd": 0.5035720805905773,
+            "min": 56.23099987958817,
+            "max": 57.75240249667121
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 58.26085273076892,
+        "sample_sd": 0.3719774621406854,
+        "min": 57.76685114311177,
+        "max": 58.89579689747358,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 58.26085273076892,
+            "sample_sd": 0.3719774621406854,
+            "min": 57.76685114311177,
+            "max": 58.89579689747358
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 10.169122247175594,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 11.999999999999858,
+      "B": -33.4999999475956
+    },
+    "speed_mps": {
+      "A": 5.5,
+      "B": 14.5
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 2.181818181818156,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_01__step0059",
+    "source_run": "policy_01",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": true,
+    "empirical_mean_gap": -0.03990803667782927,
+    "block_mean_gaps": [
+      -0.15346524581955379,
+      0.07364917246390235
+    ],
+    "absolute_block_difference": 0.22711441828345613,
+    "block_mean_sign_changed": true,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.16691391919798185,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 47.61692800295769,
+        "sample_sd": 0.3029927757470484,
+        "min": 47.12233171068298,
+        "max": 48.013961404305434,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 47.61692800295769,
+            "sample_sd": 0.3029927757470484,
+            "min": 47.12233171068298,
+            "max": 48.013961404305434
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 47.65683603963552,
+        "sample_sd": 0.36204617001335915,
+        "min": 47.00871046418825,
+        "max": 48.0762766446794,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 47.65683603963552,
+            "sample_sd": 0.36204617001335915,
+            "min": 47.00871046418825,
+            "max": 48.0762766446794
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 234.00905097539544,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -206.06250000000014,
+      "B": -48.08333328092891
+    },
+    "speed_mps": {
+      "A": 15.0,
+      "B": 10.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_01__step0014",
+    "source_run": "policy_01",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": true,
+    "empirical_mean_gap": -8.376565341027458,
+    "block_mean_gaps": [
+      -2.2370929037337106,
+      -14.516037778321206
+    ],
+    "absolute_block_difference": 12.278944874587495,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 9.124186264337984,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 45.89017826779653,
+        "sample_sd": 25.61250290512066,
+        "min": -17.322606909093444,
+        "max": 57.37485099064744,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 7,
+            "mean": 54.920576150209385,
+            "sample_sd": 2.0538307391820148,
+            "min": 51.267958113834865,
+            "max": 57.37485099064744
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 1,
+            "mean": -17.322606909093444,
+            "sample_sd": null,
+            "min": -17.322606909093444,
+            "max": -17.322606909093444
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 54.26674360882399,
+        "sample_sd": 3.1632095766574237,
+        "min": 49.740958746187566,
+        "max": 57.365414703991725,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 54.26674360882399,
+            "sample_sd": 3.1632095766574237,
+            "min": 49.740958746187566,
+            "max": 57.365414703991725
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 76.95143695986945,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 45.12499999999986,
+      "B": 47.2500000524044
+    },
+    "speed_mps": {
+      "A": 11.0,
+      "B": 10.5
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 4.102272727272714,
+      "B": 4.500000004990896
+    },
+    "time_difference_A_minus_B_s": -0.3977272777181815,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_01__step0040",
+    "source_run": "policy_01",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": true,
+    "empirical_mean_gap": 1.7738404133033328,
+    "block_mean_gaps": [
+      2.0442289964803066,
+      1.5034518301263589
+    ],
+    "absolute_block_difference": 0.5407771663539478,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.49472767015974384,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 54.24754000954311,
+        "sample_sd": 0.599707190442992,
+        "min": 53.04558868904479,
+        "max": 54.830373131500444,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 54.24754000954311,
+            "sample_sd": 0.599707190442992,
+            "min": 53.04558868904479,
+            "max": 54.830373131500444
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 52.473699596239776,
+        "sample_sd": 1.2642764834894618,
+        "min": 49.77578579378498,
+        "max": 54.03421953733563,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 52.473699596239776,
+            "sample_sd": 1.2642764834894618,
+            "min": 49.77578579378498,
+            "max": 54.03421953733563
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 37.8664953747241,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -66.68750000000014,
+      "B": 15.29166671907106
+    },
+    "speed_mps": {
+      "A": 13.25,
+      "B": 2.5
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": 6.116666687628424
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_02__step0063",
+    "source_run": "policy_02",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": true,
+    "empirical_mean_gap": 0.9708569943149357,
+    "block_mean_gaps": [
+      1.0729795464354908,
+      0.8687344421943806
+    ],
+    "absolute_block_difference": 0.2042451042411102,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": 1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.15398824024553348,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 47.38385972317021,
+        "sample_sd": 0.2044708029081075,
+        "min": 47.11675899893492,
+        "max": 47.64958398963414,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 47.38385972317021,
+            "sample_sd": 0.2044708029081075,
+            "min": 47.11675899893492,
+            "max": 47.64958398963414
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 46.413002728855275,
+        "sample_sd": 0.38456561966645303,
+        "min": 45.92945281734383,
+        "max": 46.93090792864097,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 46.413002728855275,
+            "sample_sd": 0.38456561966645303,
+            "min": 45.92945281734383,
+            "max": 46.93090792864097
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 245.34597615666192,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -224.87500000000014,
+      "B": -39.28124994759554
+    },
+    "speed_mps": {
+      "A": 13.5,
+      "B": 10.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_03__step0061",
+    "source_run": "policy_03",
+    "condition": "C11_100M_SEED0_EP1",
+    "new_state": true,
+    "empirical_mean_gap": 0.48995472341696455,
+    "block_mean_gaps": [
+      0.556814305323897,
+      0.42309514151003214
+    ],
+    "absolute_block_difference": 0.13371916381386484,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.08666881172480895,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 46.81356534732652,
+        "sample_sd": 0.16212510174558278,
+        "min": 46.51262545096779,
+        "max": 46.98152162707004,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 46.81356534732652,
+            "sample_sd": 0.16212510174558278,
+            "min": 46.51262545096779,
+            "max": 46.98152162707004
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 46.32361062390955,
+        "sample_sd": 0.18386765563934152,
+        "min": 46.028076974960044,
+        "max": 46.55794991301135,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 46.32361062390955,
+            "sample_sd": 0.18386765563934152,
+            "min": 46.028076974960044,
+            "max": 46.55794991301135
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 260.0814033653563,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -216.56250000000014,
+      "B": -66.20833328092891
+    },
+    "speed_mps": {
+      "A": 15.0,
+      "B": 13.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_04__step0061",
+    "source_run": "policy_04",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": true,
+    "empirical_mean_gap": 0.02741193512684248,
+    "block_mean_gaps": [
+      0.011872632603527222,
+      0.042951237650157736
+    ],
+    "absolute_block_difference": 0.031078605046630514,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.02821580578093905,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 34.131137377887775,
+        "sample_sd": 0.07980635041737837,
+        "min": 34.03911780131015,
+        "max": 34.220724477340895,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 34.131137377887775,
+            "sample_sd": 0.07980635041737837,
+            "min": 34.03911780131015,
+            "max": 34.220724477340895
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 34.10372544276093,
+        "sample_sd": 0.0,
+        "min": 34.10372544276093,
+        "max": 34.10372544276093,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 34.10372544276093,
+            "sample_sd": 0.0,
+            "min": 34.10372544276093,
+            "max": 34.10372544276093
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 499.8607495792774,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -217.75000000000026,
+      "B": -306.62499721051466
+    },
+    "speed_mps": {
+      "A": 15.0,
+      "B": 15.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_04__step0038",
+    "source_run": "policy_04",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": true,
+    "empirical_mean_gap": -0.042290948706238396,
+    "block_mean_gaps": [
+      -0.14296340706184196,
+      0.058381509649358065
+    ],
+    "absolute_block_difference": 0.20134491671120003,
+    "block_mean_sign_changed": true,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.12317498307106262,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 52.20634057734178,
+        "sample_sd": 0.30833374216827103,
+        "min": 51.709916427570185,
+        "max": 52.649689160224334,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 52.20634057734178,
+            "sample_sd": 0.30833374216827103,
+            "min": 51.709916427570185,
+            "max": 52.649689160224334
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 52.248631526048015,
+        "sample_sd": 0.1621940660966444,
+        "min": 52.020948483024355,
+        "max": 52.439911960442366,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 52.248631526048015,
+            "sample_sd": 0.1621940660966444,
+            "min": 52.020948483024355,
+            "max": 52.439911960442366
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 167.7744061595891,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -55.812500000000256,
+      "B": -134.12499721051466
+    },
+    "speed_mps": {
+      "A": 11.25,
+      "B": 15.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_04__step0017",
+    "source_run": "policy_04",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": true,
+    "empirical_mean_gap": -0.7238748951846219,
+    "block_mean_gaps": [
+      -1.0361001933239748,
+      -0.41164959704528314
+    ],
+    "absolute_block_difference": 0.6244505962786917,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.6712138180105122,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 57.20607293355262,
+        "sample_sd": 1.8171530732669374,
+        "min": 52.906931675031885,
+        "max": 58.43092988666692,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 57.20607293355262,
+            "sample_sd": 1.8171530732669374,
+            "min": 52.906931675031885,
+            "max": 58.43092988666692
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 57.92994782873724,
+        "sample_sd": 0.5497077625634514,
+        "min": 57.101020967900745,
+        "max": 58.78371923617671,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 57.92994782873724,
+            "sample_sd": 0.5497077625634514,
+            "min": 57.101020967900745,
+            "max": 58.78371923617671
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 24.153620656738855,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 26.562499999999773,
+      "B": 11.750002789485364
+    },
+    "speed_mps": {
+      "A": 3.25,
+      "B": 10.5
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 8.173076923076852,
+      "B": 1.119047884712892
+    },
+    "time_difference_A_minus_B_s": 7.054029038363961,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_05__step0066",
+    "source_run": "policy_05",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": true,
+    "empirical_mean_gap": -0.23407369296785419,
+    "block_mean_gaps": [
+      -0.09430953432853784,
+      -0.37383785160716343
+    ],
+    "absolute_block_difference": 0.2795283172786256,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.06814237745241095,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 36.33345372920385,
+        "sample_sd": 0.16576163943463343,
+        "min": 36.06907868515264,
+        "max": 36.51404893743955,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 36.33345372920385,
+            "sample_sd": 0.16576163943463343,
+            "min": 36.06907868515264,
+            "max": 36.51404893743955
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 36.56752742217171,
+        "sample_sd": 0.09833690930102151,
+        "min": 36.444575957047604,
+        "max": 36.68197588888525,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 36.56752742217171,
+            "sample_sd": 0.09833690930102151,
+            "min": 36.444575957047604,
+            "max": 36.68197588888525
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 457.3838760508647,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -170.82291666666688,
+      "B": -311.15624721051466
+    },
+    "speed_mps": {
+      "A": 15.0,
+      "B": 15.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_05__step0040",
+    "source_run": "policy_05",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": true,
+    "empirical_mean_gap": -1.0729956655742043,
+    "block_mean_gaps": [
+      -1.0273225375213997,
+      -1.118668793627009
+    ],
+    "absolute_block_difference": 0.09134625610560931,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": -1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.16341597025794377,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 53.588017461290775,
+        "sample_sd": 0.43602567436031553,
+        "min": 53.09884244455894,
+        "max": 54.28933021206948,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 53.588017461290775,
+            "sample_sd": 0.43602567436031553,
+            "min": 53.09884244455894,
+            "max": 54.28933021206948
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 54.66101312686498,
+        "sample_sd": 0.15336181396095117,
+        "min": 54.45871534461774,
+        "max": 54.87954721076811,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 54.66101312686498,
+            "sample_sd": 0.15336181396095117,
+            "min": 54.45871534461774,
+            "max": 54.87954721076811
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 109.09020818355991,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -11.416666666666885,
+      "B": -116.15624721051466
+    },
+    "speed_mps": {
+      "A": 7.5,
+      "B": 15.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_05__step0011",
+    "source_run": "policy_05",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": true,
+    "empirical_mean_gap": 21.351045214585206,
+    "block_mean_gaps": [
+      22.150734058919376,
+      20.551356370251035
+    ],
+    "absolute_block_difference": 1.5993776886683406,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 11.653675496723878,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 55.77682059588575,
+        "sample_sd": 2.92412783630128,
+        "min": 51.86943009867568,
+        "max": 59.886487012251635,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 55.77682059588575,
+            "sample_sd": 2.92412783630128,
+            "min": 51.86943009867568,
+            "max": 59.886487012251635
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 34.42577538130055,
+        "sample_sd": 32.83161124679245,
+        "min": -19.65237266423712,
+        "max": 54.38933138886912,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 6,
+            "mean": 52.118101539800286,
+            "sample_sd": 2.488231534162324,
+            "min": 47.63289954083377,
+            "max": 54.38933138886912
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 2,
+            "mean": -18.651203094198667,
+            "sample_sd": 1.4158675841836204,
+            "min": -19.65237266423712,
+            "max": -17.650033524160214
+          }
+        }
+      }
+    },
+    "has_CAP_observation": true,
+    "prior_transition_sampled_min_clearance_m": 68.16253571243404,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": 40.49999999999977,
+      "B": 42.250002789485364
+    },
+    "speed_mps": {
+      "A": 9.5,
+      "B": 9.5
+    },
+    "both_upstream_of_source_reference": true,
+    "constant_current_speed_time_to_reference_s": {
+      "A": 4.2631578947368185,
+      "B": 4.44736871468267
+    },
+    "time_difference_A_minus_B_s": -0.18421081994585187,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_06__step0050",
+    "source_run": "policy_06",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": true,
+    "empirical_mean_gap": 0.8510353090260097,
+    "block_mean_gaps": [
+      0.9385308165396467,
+      0.7635398015123656
+    ],
+    "absolute_block_difference": 0.1749910150272811,
+    "block_mean_sign_changed": false,
+    "stored_repeated_order_sign_unchanged": 1,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.1537291334247679,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 47.02288070819981,
+        "sample_sd": 0.13582275825444362,
+        "min": 46.861093978827746,
+        "max": 47.214374150760754,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 47.02288070819981,
+            "sample_sd": 0.13582275825444362,
+            "min": 46.861093978827746,
+            "max": 47.214374150760754
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 46.1718453991738,
+        "sample_sd": 0.41305368906280904,
+        "min": 45.204829053541694,
+        "max": 46.46952120568616,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 46.1718453991738,
+            "sample_sd": 0.41305368906280904,
+            "min": 45.204829053541694,
+            "max": 46.46952120568616
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 260.0814033653563,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -216.78125000000026,
+      "B": -65.06249721051466
+    },
+    "speed_mps": {
+      "A": 15.0,
+      "B": 12.25
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  },
+  {
+    "root_id": "coverage_policy_07__step0065",
+    "source_run": "policy_07",
+    "condition": "C11_80M_SEED0_EP0",
+    "new_state": true,
+    "empirical_mean_gap": 0.07357909369056159,
+    "block_mean_gaps": [
+      -0.19048498315846984,
+      0.33764317053960013
+    ],
+    "absolute_block_difference": 0.52812815369807,
+    "block_mean_sign_changed": true,
+    "stored_repeated_order_sign_unchanged": null,
+    "original_training_mask_unchanged": 0,
+    "descriptive_independent_repeat_gap_SE": 0.12799858645606813,
+    "SE_scope": "Plug-in summary assuming independent repeats within this fixed model; n=8 each; not a confidence bound, label, safety threshold, or proven noise floor.",
+    "actions": {
+      "0,3": {
+        "count": 8,
+        "mean": 36.26830247735795,
+        "sample_sd": 0.25060041158366075,
+        "min": 35.923159002060466,
+        "max": 36.47993178372253,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 36.26830247735795,
+            "sample_sd": 0.25060041158366075,
+            "min": 35.923159002060466,
+            "max": 36.47993178372253
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      },
+      "3,0": {
+        "count": 8,
+        "mean": 36.19472338366739,
+        "sample_sd": 0.26128248849111996,
+        "min": 35.87268436097579,
+        "max": 36.44037996756506,
+        "outcome_mixture": {
+          "BOTH_PARKED_AT_OWN_DESTINATIONS": {
+            "count": 8,
+            "mean": 36.19472338366739,
+            "sample_sd": 0.26128248849111996,
+            "min": 35.87268436097579,
+            "max": 36.44037996756506
+          },
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": {
+            "count": 0,
+            "mean": null,
+            "sample_sd": null,
+            "min": null,
+            "max": null
+          }
+        }
+      }
+    },
+    "has_CAP_observation": false,
+    "prior_transition_sampled_min_clearance_m": 461.3406582339382,
+    "source_conflict_reference_s_m": {
+      "A": 227.77075274944568,
+      "B": 266.5474890454852
+    },
+    "signed_distance_to_source_reference_m": {
+      "A": -179.12500000000026,
+      "B": -307.15624721051466
+    },
+    "speed_mps": {
+      "A": 15.0,
+      "B": 15.0
+    },
+    "both_upstream_of_source_reference": false,
+    "constant_current_speed_time_to_reference_s": {
+      "A": null,
+      "B": null
+    },
+    "time_difference_A_minus_B_s": null,
+    "reference_scope": "Saved C11 route reference, not recomputed collision region. d/v ignores acceleration, vehicle length, interaction and uncertainty; not TTC, safety permission or a tested policy."
+  }
+]

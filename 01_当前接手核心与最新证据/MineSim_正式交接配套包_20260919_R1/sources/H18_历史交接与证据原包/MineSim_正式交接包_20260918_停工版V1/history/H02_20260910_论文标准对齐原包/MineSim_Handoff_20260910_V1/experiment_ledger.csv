@@ -1,0 +1,26 @@
+﻿phase,recorded_default_namespace,scope,evidence,settings,status,live_verified_this_handoff,original_namespace_rerun_authorized
+root807教师稳定性,/root/autodl-tmp/minesim_root807_teacher_q_stability_exec_v1,"2,356-root audit branch; 1 root x 16 seeds x 3 budgets",E06,31000-31015; B64/256/1024,historical completed; no original-namespace rerun,False,False
+root807均衡根对照,/root/autodl-tmp/minesim_root807_balanced_root_diagnostic_exec_v1,48 new searches,E06,same seeds and budgets; balanced root,historical completed,False,False
+9-root矩阵原尝试,/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1,"40 complete, cell41 technical interruption",E06,32000-32015; 864-cell schedule,"consumed; preserved, not replaced",False,False
+9-root矩阵恢复,/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1,40 reused + 824 new = 864,E06,same frozen schedule,completed; no rerun,False,False
+36-root冻结,/root/autodl-tmp/minesim_new_teacher_pilot_36root_freeze_v1,36 records / 6 episodes,E07,selection not by Q,historical input binding amended in later namespace,False,False
+V2来源绑定失败,/root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v2,dictionary unpacking technical failure,E07,no science,consumed technical failure,False,False
+V2 retry1失败,/root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v2_retry1,destination mkdir omission,E07,no science,consumed technical failure,False,False
+36-root原始记录重绑定,/root/autodl-tmp/minesim_teacher_pilot_raw_rebind_v1,34 unchanged + 2 correct original seed0 records,E08,no searches,completed,False,False
+三个冻结归档闭合,/root/autodl-tmp/minesim_teacher_pilot_freeze_archive_closure_v1,3/3 missing source hashes recovered; total15/15,E09,readonly,completed,False,False
+运行副本采集,/root/autodl-tmp/minesim_teacher_pilot_runtime_snapshot_v1,17 engine files match old technical copy,E30,readonly,completed,False,False
+36-root技术验证,/root/autodl-tmp/minesim_teacher_pilot_36root_technical_parity_v1,576 transitions and72 technical searches,E10,35000 B64,completed technical only,False,False
+36-root教师Pilot,/root/autodl-tmp/minesim_teacher_pilot_balanced_matrix_v1,576 root searches,E11,34000-34007 B256/B1024,completed,False,False
+36-root独立确认,/root/autodl-tmp/minesim_teacher_pilot_pair_confirmation_v1,288 searches,E12,36000-36007 B1024,completed,False,False
+33组可学习性,/root/autodl-tmp/minesim_masked_ranking_learning_pilot_v1,12 fits x600 epochs,E13,37000-37002; FIT_ALL/3LOSO,"completed, not deployed",False,False
+C11跨episode,/root/autodl-tmp/minesim_c11_episode_transfer_learning_v1,6 fits x600 epochs,E14,3 frozen paired initializations,"completed, not deployed",False,False
+24-state覆盖与重建,/root/autodl-tmp/minesim_new_state_coverage_parity_v1,24 new groups;384 transitions,E15,no scientific search,completed,False,False
+24-state教师与模型评价,/root/autodl-tmp/minesim_new24_teacher_decision_validation_v1,384 discovery+192 confirmation;18 frozen models,E16,40000-40007;41000-41007,completed,False,False
+覆盖增补成对训练,/root/autodl-tmp/minesim_coverage_paired_episode_learning_v1,36 fits;6episode x2groups x3initializations,E17,42000-42002;600 epochs,"completed, not deployed",False,False
+来源拆分训练,/root/autodl-tmp/minesim_coverage_source_ablation_v1,36 new fits +36 reused,E18,same paired seeds;600 epochs,completed,False,False
+C06时域对照,/root/autodl-tmp/minesim_c06_horizon_sensitivity_v1,64 new +32 H8 reused +8 technical,E19,"H12/H16 B1024, old16seed pairing",completed,False,False
+叶续算契约,/root/autodl-tmp/minesim_leaf_continuation_contract_v1,"128 cases,256 splits",E21,44000-44003,completed technical,False,False
+叶续接策略,/root/autodl-tmp/minesim_leaf_policy_comparison_v1,256 trajectories;32leaves x4seeds x2policies,E22,45000-45003; maximum16 steps,completed,False,False
+叶轨迹终止续行,/root/autodl-tmp/minesim_leaf_policy_terminal_extension_v1,27 terminal reused +229 extended,E23,same RNG streams; total128 steps,completed,False,False
+原始根动作策略回报,/root/autodl-tmp/minesim_root_action_policy_return_v1,128 trajectories;2roots x16actions x4seeds,E24,46000-46003;native B64/H8;T128,completed,False,False
+根动作回报独立复验,/root/autodl-tmp/minesim_root_policy_return_replication_v1,256 new trajectories;old128 readonly,E25,47000-47007;native B64/H8;T128,completed,False,False

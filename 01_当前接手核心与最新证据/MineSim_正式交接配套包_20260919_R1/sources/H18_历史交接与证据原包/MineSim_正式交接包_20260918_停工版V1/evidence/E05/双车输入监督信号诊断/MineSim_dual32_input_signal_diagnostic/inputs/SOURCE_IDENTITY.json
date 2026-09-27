@@ -1,0 +1,105 @@
+{
+  "scope": "Only these ten selected source members verified; old full audits not repeated.",
+  "files": [
+    {
+      "archive": "29eb52f0-03f5-4951-894b-6f08b39acf68.zip",
+      "archive_sha256": "ba96d17d2387fd45294be78bfe28572f34659d332f92b3947f2c6ad65b5c057e",
+      "member": "minesim_dual32_regularized_fit_v1/sources/sources/DATASET32.json",
+      "parent_manifest_member": "minesim_dual32_regularized_fit_v1/MANIFEST.json",
+      "copy": "DATASET32.json",
+      "size": 488232,
+      "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "29eb52f0-03f5-4951-894b-6f08b39acf68.zip",
+      "archive_sha256": "ba96d17d2387fd45294be78bfe28572f34659d332f92b3947f2c6ad65b5c057e",
+      "member": "minesim_dual32_regularized_fit_v1/sources/sources/runtime/inputs/COMBINED32_INPUTS.json",
+      "parent_manifest_member": "minesim_dual32_regularized_fit_v1/MANIFEST.json",
+      "copy": "COMBINED32_INPUTS.json",
+      "size": 81407,
+      "sha256": "3c7bd73410f1a48b1adfb135cbecab036edb7f43cbd3cc5758b53960aa127b72",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "29eb52f0-03f5-4951-894b-6f08b39acf68.zip",
+      "archive_sha256": "ba96d17d2387fd45294be78bfe28572f34659d332f92b3947f2c6ad65b5c057e",
+      "member": "minesim_dual32_regularized_fit_v1/release/parent_core.py",
+      "parent_manifest_member": "minesim_dual32_regularized_fit_v1/MANIFEST.json",
+      "copy": "parent_core.py",
+      "size": 5141,
+      "sha256": "789f34e4277ef89ceb8de852fa37e283323fc5de22e44ac6cae27750d2d554f0",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "29eb52f0-03f5-4951-894b-6f08b39acf68.zip",
+      "archive_sha256": "ba96d17d2387fd45294be78bfe28572f34659d332f92b3947f2c6ad65b5c057e",
+      "member": "minesim_dual32_regularized_fit_v1/release/PROTOCOL.json",
+      "parent_manifest_member": "minesim_dual32_regularized_fit_v1/MANIFEST.json",
+      "copy": "ORIGINAL_FIT_PROTOCOL.json",
+      "size": 4641,
+      "sha256": "6c27ed868371095cd1136126a647dbc2f63a70e72882662d27c106b4c6ac6c58",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "29eb52f0-03f5-4951-894b-6f08b39acf68.zip",
+      "archive_sha256": "ba96d17d2387fd45294be78bfe28572f34659d332f92b3947f2c6ad65b5c057e",
+      "member": "minesim_dual32_regularized_fit_v1/RESULT.json",
+      "parent_manifest_member": "minesim_dual32_regularized_fit_v1/MANIFEST.json",
+      "copy": "ORIGINAL_FIT_RESULT.json",
+      "size": 6245,
+      "sha256": "4bb113b6d5ab878c7d434f242b33e212c2f1943d12406336303379b5b900371f",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "f77a974f-90b4-4e16-9ac5-510c7720b09a.zip",
+      "archive_sha256": "e26b0a32cd4cfbe12e5eb74e8527b1ebb74bbceb3d01fdba44a11c37e4e18aab",
+      "member": "minesim_grouped_coverage32_collector_smoke_v1/release/runtime/candidate_mcts/dual_stop_adapter_v1.py",
+      "parent_manifest_member": "minesim_grouped_coverage32_collector_smoke_v1/MANIFEST.json",
+      "copy": "dual_stop_adapter_v1.py",
+      "size": 16614,
+      "sha256": "04710705edeea28bf38560fc4e3ce8ee319fc0b6679dbf00bd4c61d897cd4961",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "f77a974f-90b4-4e16-9ac5-510c7720b09a.zip",
+      "archive_sha256": "e26b0a32cd4cfbe12e5eb74e8527b1ebb74bbceb3d01fdba44a11c37e4e18aab",
+      "member": "minesim_grouped_coverage32_collector_smoke_v1/runtime/inputs/contexts/C11_100M_SEED0_EP1.json",
+      "parent_manifest_member": "minesim_grouped_coverage32_collector_smoke_v1/MANIFEST.json",
+      "copy": "C11_100M_SEED0_EP1.json",
+      "size": 5959,
+      "sha256": "a13f2fc0b735d310d3bcd80fc44d09d366bd3474e284090b247654bc5ba5f911",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "f77a974f-90b4-4e16-9ac5-510c7720b09a.zip",
+      "archive_sha256": "e26b0a32cd4cfbe12e5eb74e8527b1ebb74bbceb3d01fdba44a11c37e4e18aab",
+      "member": "minesim_grouped_coverage32_collector_smoke_v1/runtime/inputs/contexts/C11_80M_SEED0_EP0.json",
+      "parent_manifest_member": "minesim_grouped_coverage32_collector_smoke_v1/MANIFEST.json",
+      "copy": "C11_80M_SEED0_EP0.json",
+      "size": 5957,
+      "sha256": "9298558b84b0dd19e13396a0fcc6eeeb033b7a080f4b2a76ca708ae2dba21878",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "f77a974f-90b4-4e16-9ac5-510c7720b09a.zip",
+      "archive_sha256": "e26b0a32cd4cfbe12e5eb74e8527b1ebb74bbceb3d01fdba44a11c37e4e18aab",
+      "member": "minesim_grouped_coverage32_collector_smoke_v1/native/RESOLVED_CONTEXTS/C11_100M_SEED0_EP1.json",
+      "parent_manifest_member": "minesim_grouped_coverage32_collector_smoke_v1/MANIFEST.json",
+      "copy": "RESOLVED_C11_100M_SEED0_EP1.json",
+      "size": 1141,
+      "sha256": "75670bbb98485dbed32e6ecf97e6f0846f02fd67a6263bc8626c70cfb0669f66",
+      "matches_parent_manifest": true
+    },
+    {
+      "archive": "f77a974f-90b4-4e16-9ac5-510c7720b09a.zip",
+      "archive_sha256": "e26b0a32cd4cfbe12e5eb74e8527b1ebb74bbceb3d01fdba44a11c37e4e18aab",
+      "member": "minesim_grouped_coverage32_collector_smoke_v1/native/RESOLVED_CONTEXTS/C11_80M_SEED0_EP0.json",
+      "parent_manifest_member": "minesim_grouped_coverage32_collector_smoke_v1/MANIFEST.json",
+      "copy": "RESOLVED_C11_80M_SEED0_EP0.json",
+      "size": 1140,
+      "sha256": "8e4f422d7ceb4ac4beb30d20f7141f41969fc13dbbc09641aa979403894da069",
+      "matches_parent_manifest": true
+    }
+  ]
+}

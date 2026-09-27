@@ -1,0 +1,130 @@
+[
+  {
+    "model": "linear26_to_1",
+    "source_group": "policy_00",
+    "train_mae": 10.887821056994532,
+    "final_loss": 0.013390852778396672,
+    "initial_loss": 0.027676834229757863,
+    "parameters_count": 27
+  },
+  {
+    "model": "mlp26_64_64_16_pair03_30",
+    "source_group": "policy_00",
+    "train_mae": 0.0197037422613386,
+    "final_loss": 8.688387203328032e-08,
+    "initial_loss": 0.2282104255045761,
+    "parameters_count": 6928
+  },
+  {
+    "model": "linear26_to_1",
+    "source_group": "policy_01",
+    "train_mae": 12.825332331603112,
+    "final_loss": 0.01886235753155534,
+    "initial_loss": 0.025436286377310855,
+    "parameters_count": 27
+  },
+  {
+    "model": "mlp26_64_64_16_pair03_30",
+    "source_group": "policy_01",
+    "train_mae": 0.008395248671140058,
+    "final_loss": 4.7012105037372326e-08,
+    "initial_loss": 0.18254153142165402,
+    "parameters_count": 6928
+  },
+  {
+    "model": "linear26_to_1",
+    "source_group": "policy_02",
+    "train_mae": 13.567497963891864,
+    "final_loss": 0.02175230138732905,
+    "initial_loss": 0.031508317800584294,
+    "parameters_count": 27
+  },
+  {
+    "model": "mlp26_64_64_16_pair03_30",
+    "source_group": "policy_02",
+    "train_mae": 0.2403547351229832,
+    "final_loss": 7.25493254037696e-06,
+    "initial_loss": 0.22170652480364986,
+    "parameters_count": 6928
+  },
+  {
+    "model": "linear26_to_1",
+    "source_group": "policy_03",
+    "train_mae": 13.239823147678425,
+    "final_loss": 0.020000240711520133,
+    "initial_loss": 0.02815466005656451,
+    "parameters_count": 27
+  },
+  {
+    "model": "mlp26_64_64_16_pair03_30",
+    "source_group": "policy_03",
+    "train_mae": 0.03787041908401106,
+    "final_loss": 1.0415306651051003e-07,
+    "initial_loss": 0.14833449005456698,
+    "parameters_count": 6928
+  },
+  {
+    "model": "linear26_to_1",
+    "source_group": "policy_04",
+    "train_mae": 14.649091189474344,
+    "final_loss": 0.02317611672681272,
+    "initial_loss": 0.03202212536981471,
+    "parameters_count": 27
+  },
+  {
+    "model": "mlp26_64_64_16_pair03_30",
+    "source_group": "policy_04",
+    "train_mae": 0.21845671224328986,
+    "final_loss": 7.510559528856112e-06,
+    "initial_loss": 0.2317487877167716,
+    "parameters_count": 6928
+  },
+  {
+    "model": "linear26_to_1",
+    "source_group": "policy_05",
+    "train_mae": 13.195211736806725,
+    "final_loss": 0.021694517885607948,
+    "initial_loss": 0.029231016592706254,
+    "parameters_count": 27
+  },
+  {
+    "model": "mlp26_64_64_16_pair03_30",
+    "source_group": "policy_05",
+    "train_mae": 0.3070471924830206,
+    "final_loss": 2.072642213796195e-05,
+    "initial_loss": 0.2398140670744676,
+    "parameters_count": 6928
+  },
+  {
+    "model": "linear26_to_1",
+    "source_group": "policy_06",
+    "train_mae": 12.539029320212974,
+    "final_loss": 0.01935481366682051,
+    "initial_loss": 0.03260549996177961,
+    "parameters_count": 27
+  },
+  {
+    "model": "mlp26_64_64_16_pair03_30",
+    "source_group": "policy_06",
+    "train_mae": 0.3583204923236563,
+    "final_loss": 9.97109185537652e-06,
+    "initial_loss": 0.23230633011941623,
+    "parameters_count": 6928
+  },
+  {
+    "model": "linear26_to_1",
+    "source_group": "policy_07",
+    "train_mae": 13.842494214252913,
+    "final_loss": 0.02272405258026355,
+    "initial_loss": 0.03371166167932905,
+    "parameters_count": 27
+  },
+  {
+    "model": "mlp26_64_64_16_pair03_30",
+    "source_group": "policy_07",
+    "train_mae": 0.15341278093602534,
+    "final_loss": 1.4245526897606181e-06,
+    "initial_loss": 0.2171152794642973,
+    "parameters_count": 6928
+  }
+]

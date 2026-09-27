@@ -1,0 +1,11 @@
+{
+  "tests_run": 31,
+  "failures": 0,
+  "errors": 0,
+  "successful": true,
+  "local_scope": "Static checks, arithmetic tests and synthetic/replayed lifecycle only. Forty mocked counter callbacks are not executed MCTS searches. Source files checked byte-for-byte.",
+  "actual_mcts_calls": 0,
+  "actual_model_fits": 0,
+  "teacher_samples": 0,
+  "cloud_executed": false
+}

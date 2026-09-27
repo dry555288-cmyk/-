@@ -1,0 +1,106 @@
+{
+  "source_zip": "/mnt/data/2de0f8ec-2eb4-411c-92d8-9fbc61613670.zip",
+  "source_zip_sha256": "5e8cd447847cce2e435ebc8c0376dfc723552b73caf86f1dde424f0982ab3478",
+  "zip_crc": "PASS",
+  "manifest_verified": 98,
+  "source_bindings_verified": 62,
+  "rc": 0,
+  "status": "PASS_DUAL_H8_SUBTREE_REBASE_SEMANTICS",
+  "saved_search_records": 8,
+  "search_calls_this_review": 0,
+  "training_runs_this_review": 0,
+  "reward_stat_arithmetic": [
+    {
+      "file": "native/coverage_policy_01__step0014/tree_0.json",
+      "samples": 64,
+      "nodes": 65,
+      "max_value_sum_error": 1.1368683772161603e-13
+    },
+    {
+      "file": "native/coverage_policy_01__step0014/tree_1.json",
+      "samples": 64,
+      "nodes": 64,
+      "max_value_sum_error": 2.2737367544323206e-13
+    },
+    {
+      "file": "native/coverage_policy_05__step0011/tree_0.json",
+      "samples": 64,
+      "nodes": 65,
+      "max_value_sum_error": 1.1368683772161603e-13
+    },
+    {
+      "file": "native/coverage_policy_05__step0011/tree_1.json",
+      "samples": 64,
+      "nodes": 64,
+      "max_value_sum_error": 9.094947017729282e-13
+    }
+  ],
+  "cases": [
+    {
+      "root_id": "coverage_policy_01__step0014",
+      "baseline_actions": [
+        "2,1",
+        "1,1"
+      ],
+      "reuse_actions": [
+        "2,1",
+        "0,0"
+      ],
+      "cold_equal": true,
+      "second_state_equal": true,
+      "inherited_samples": 9,
+      "tail_transitions": 8,
+      "all_four_advances_no_hard_violation": true,
+      "two_step_cpu_reduction_percent": 7.166280206944942,
+      "second_cpu_reduction_percent": 9.334100739684592
+    },
+    {
+      "root_id": "coverage_policy_05__step0011",
+      "baseline_actions": [
+        "1,3",
+        "0,0"
+      ],
+      "reuse_actions": [
+        "1,3",
+        "0,1"
+      ],
+      "cold_equal": true,
+      "second_state_equal": true,
+      "inherited_samples": 8,
+      "tail_transitions": 8,
+      "all_four_advances_no_hard_violation": true,
+      "two_step_cpu_reduction_percent": 2.856591523029983,
+      "second_cpu_reduction_percent": 4.63492355026095
+    }
+  ],
+  "timing": {
+    "cpu": {
+      "baseline_total_ms": 2659.5544379999997,
+      "candidate_total_ms": 2524.85861,
+      "baseline_mean_ms": 664.8886094999999,
+      "candidate_mean_ms": 631.2146525,
+      "change_percent": -5.064601275892344
+    },
+    "wall": {
+      "baseline_total_ms": 5757.573701441288,
+      "candidate_total_ms": 7191.923756152391,
+      "baseline_mean_ms": 1439.393425360322,
+      "candidate_mean_ms": 1797.9809390380979,
+      "change_percent": 24.912404583757986
+    }
+  },
+  "max_root_contributions": 64,
+  "horizon": 8,
+  "inherited_total_second_round": 17,
+  "tail_transitions": 16,
+  "fresh_search_iterations_baseline_four_calls": 256,
+  "fresh_search_iterations_candidate_four_calls": 239,
+  "transition_calls_baseline": 1828,
+  "transition_calls_candidate": 1701,
+  "environment_effective_cpu": 0.5,
+  "git_unchanged": true,
+  "git_clean": false,
+  "no_stable_speedup_claim": true,
+  "only_two_successful_promotions_no_long_policy_test": true,
+  "next_proposal": "Fixed two prior input states x baseline/rebased, up to128 outer steps per arm; no new teacher dataset, no parameter changes."
+}

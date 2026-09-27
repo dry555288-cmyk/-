@@ -1,0 +1,77 @@
+{
+  "record_version": "RECOVERED_CURRENT_STATE_20260912_V1",
+  "review_scope": "Uploaded artifacts only; no live AutoDL access.",
+  "new_export_timestamp_utc": "2026-09-12T15:04:57.869487+00:00",
+  "latest_direct_experiment_attempt_utc": "2026-09-12T09:13:21.462309+00:00",
+  "resource_this_review": "LOW",
+  "recovery_gate": "RECENT_STAGE_EVIDENCE_REVIEW",
+  "recovery_status": "PASS_CAPTURED_RECORDS_AND_ACCOUNTING_ONLY",
+  "full_raw_dataset_restored": false,
+  "old_model_collection": {
+    "discovery": 768,
+    "confirmation": 768,
+    "total": 1536,
+    "discovery_segments": {
+      "ORIGINAL_SERIAL_PRESERVED": 377,
+      "RECOVERED_PREFIX20_PLUS_TAIL33": 1,
+      "PARALLEL_REMAINING390": 390
+    },
+    "discovery_outcomes": {
+      "BOTH_CONFIGURED_ROUTE_ENDS": 420,
+      "EXECUTED_HARD_SAFETY_TERMINAL": 201,
+      "EVALUATION_CAP_NOT_TASK_TERMINAL": 147
+    },
+    "confirmation_outcomes": {
+      "BOTH_CONFIGURED_ROUTE_ENDS": 425,
+      "EXECUTED_HARD_SAFETY_TERMINAL": 193,
+      "EVALUATION_CAP_NOT_TASK_TERMINAL": 150
+    },
+    "confirmed_raw_records_here": "Discovery ledger + observations; confirmation schedule/audit/worker progress; cell377 raw trace. Not all 1536 raw trajectories.",
+    "candidate_relations_before_confirmation": 273,
+    "historical_111_relations": "Referenced by later candidate regression only. Final 111-relation table not restored/reverified in this review.",
+    "old_labels_compatible_with_new_dual_stop_model": false
+  },
+  "new_dual_stop_branch": {
+    "candidate_synthetic_regression": "PASS_ISOLATED_NATIVE_INTERFACE_SYNTHETIC_REGRESSION_ONLY",
+    "realroute_smoke": "PASS_REAL_ROUTE_CANDIDATE_TECHNICAL_SMOKE_ONLY",
+    "policy4_original_attempt": "HOLD_PRESTART",
+    "policy4_START_WRITTEN": false,
+    "policy4_cause": "CPU_QUOTA_LOW_OR_UNKNOWN",
+    "policy4_four_trace_scientific_results": "NOT_OBSERVED_IN_RECOVERED_EVIDENCE",
+    "later_attempt_absence_globally_proven": false
+  },
+  "next_minimal_action_recommendation": "Prepare a narrowly scoped policy4 prestart technical-recovery contract, preserving original tasks/seeds/payload and consumed namespace. Do not launch based only on missing search results.",
+  "next_step_not_executed": true,
+  "actual_execution_resource_requirement_from_existing_protocol": {
+    "class": "HIGH-CPU",
+    "minimum_effective_cpu_cores": 2,
+    "minimum_available_memory_bytes": 2147483648,
+    "GPU_disabled": true
+  },
+  "before_any_new_execution": [
+    "Explicit authority for new namespace; no automatic retry.",
+    "Fresh source/input/payload/environment and active-process checks.",
+    "Resolve duplicate-execution risk; limited file search is not proof of global seed non-use."
+  ],
+  "do_not_repeat": [
+    "377 preserved discovery observations",
+    "390 completed supplementary observations",
+    "cell377 completed continuation",
+    "768 completed confirmation observations",
+    "passed realroute smoke"
+  ],
+  "source_git_snapshots": {
+    "HEAD": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+    "status": "?? ^C\n",
+    "unchanged_in_captured_pre_post": true,
+    "live_state_verified": false
+  },
+  "limitations": [
+    "Collection completeness is not autonomous driving success.",
+    "Old route-end results are not both-parked results.",
+    "Hard-safety terminal is not equivalent to collision-only count.",
+    "No full Controller/KBM or continuous physical safety certification.",
+    "Candidate count273 is not final confirmed-label count.",
+    "No new experiments, training, model forward, label extraction, or cloud writes in this review."
+  ]
+}

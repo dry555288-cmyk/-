@@ -1,0 +1,142 @@
+MineSim：此前论文采用的指标、阈值与本项目适用边界
+核查日期：2026-09-10
+本轮只查阅原文；未运行MineSim、MCTS、训练或修改冻结文件。
+
+一、核查范围与来源
+1. 用户上传《可参考论文(4).7z》内：
+   A. 362388.pdf：Lin et al., Safety-Critical Multi-Agent MCTS for Mixed Traffic Coordination at Unsignalized Intersections. IEEE TITS, 2025. DOI 10.1109/TITS.2025.3598727.
+      官方元数据：https://eprints.gla.ac.uk/362388/
+      注：不是同作者的“Unsignalized Roundabout”文章；本报告按用户上传的Intersections版本核查。
+   B. 1-s2.0-S0968090X26003761-main.pdf：Bu et al., Risk-aware unsignalized intersection management in unstructured mixed-traffic environment: a real-time hierarchical safety evaluation method. Transportation Research Part C 192 (2026) 105890. DOI 10.1016/j.trc.2026.105890.
+      本文内容依据用户上传原PDF。出版社网页此次未成功获取，不声称做过全文网络交叉核验。
+2. 用户上传《接下来方向(4).7z》内：
+   C. Path Planning using Neural A* Search, ICML 2021，与PMLR原文对照。
+      https://proceedings.mlr.press/v139/yonetani21a/yonetani21a.pdf
+   D. FusionPlanner: A Multi-task Motion Planner for Mining Trucks via Multi-sensor Fusion，按上传版本（22页）核查。
+3. 最近讨论明确引用的原文：
+   E. Jamieson & Nowak (2014), Best-arm Identification Algorithms for Multi-Armed Bandits in the Fixed Confidence Setting.
+      https://nowak.ece.wisc.edu/bestArmSurvey.pdf
+   F. Achiam et al. (2017), Constrained Policy Optimization，正文和补充材料。
+      https://proceedings.mlr.press/v70/achiam17a/achiam17a.pdf
+      https://proceedings.mlr.press/v70/achiam17a/achiam17a-supp.pdf
+   G. Maurer & Pontil (2009), Empirical Bernstein Bounds and Sample Variance Penalization.
+      https://arxiv.org/pdf/0907.3740
+   H. Pardo et al. (2018), Time Limits in Reinforcement Learning.
+      https://proceedings.mlr.press/v80/pardo18a.html
+以下页码均为PDF页码，不是另一个版本的页码。
+
+二、最直接的安全MCTS论文标准：Lin et al., 2025
+原文位置：第7页式(22)；第10页Table I和IV-E；第11—13页评价。
+
+1. 安全节点判据（式22）：
+   safe(n) 当且仅当：
+   Q_risk^(v2v) <= Q_th^(v2v)
+   且 Q_risk^(v2h) <= Q_th^(v2h)
+   且 d_v2r >= d_min。
+   数值：Q_th^(v2v)=0.8，Q_th^(v2h)=0.6，d_min=1.0 m。
+   超出判据的节点标为unsafe并被剪除。
+   解释：0.8/0.6是原文复合风险分数阈值，不是80%/60%碰撞概率。
+   原文是风险节点筛除，不是“神经网络得分最低的3个动作一律剪除”。
+
+2. 动态安全距离（第4页式7—8）：
+   d_safe = max{d_base, kappa_v |Delta v_ij|} * product(alpha_k), k=1,2,3。
+   Table I：d_base=1.5，kappa_v=0.3，beta1=beta2=0.2。
+   Table I另列d_safe=2；第13页动态阈值消融明确将固定d_safe=2.0 m作为对照。
+   不应把2.0 m写成所有情况下固定的完整方法安全距离。
+   不能把这些距离直接移植到车辆尺寸、参考点、道路边界定义不同的矿卡模型。
+
+3. PET评价：
+   原文把PET低于1.5 s列为违例（第11页V-A，Figures 10/12）。
+   PET是先后经过同一冲突区域的时间间隔，和TTC不是同一指标。
+   “PET违例”不等同于“已发生车辆几何碰撞”。
+
+4. 搜索配置与作者的收敛观察：
+   K=1000最大MCTS迭代；d_max=8；gamma_r=0.95；c_exp=1.0。
+   IV-E作者报告通常300—600迭代趋稳，末段价值标准差低于0.05。
+   这是其具体算法、风险/回报尺度与实验的报告，不是本项目“16动作跨seed Q都收敛”的判据。
+   也不是神经网络训练600轮或loss<0.05的依据。
+
+5. 效果评价与实际结果，不是可接受风险限额：
+   Table II/III报告平均到达率、平均碰撞率、平均仿真时间。
+   混合交通Table III（第13页）：本方法d_max=8，到达率92.6±3.3%，碰撞率1.7±0.6%。
+   2.8%是该混合交通实验的PET违例比例。
+   不得把这些结果当作“允许1.7%碰撞”的部署阈值。
+   原文没有给出“相对最快动作允许慢epsilon_t秒”的统一上限。
+
+三、风险感知矿区交叉口论文：Bu et al., 2026
+原文位置：第16页Table 2；第19页7.2.3；第22页安全比较。
+
+1. MMTTC：整个场景、所有时刻、所有车辆对的最小TTC。
+   可用数学记号概括其定义：MMTTC=min_(t,i<j) TTC_ij(t)。
+   第19页以1.5 s作为临界值，低于此值为危险警戒。
+   这是预测安全代理指标，不是碰撞概率、不是允许的通行延误。
+
+2. TTT：连续1000辆混合交通车辆全部通过交叉口所需总时间。
+   论文以较低TTT、较高安全裕度评价权衡；不是固定“允许多慢1秒/2秒”的可接受损失检验。
+   本项目双车完成时间可以借鉴效率评价思路，但并不等于论文1000车辆TTT定义。
+
+3. Table 2中T_f=38 s表示traverse stage时长。
+   它不是epsilon_t，不是1.5 s安全裕量，也不是MineSim当前64 s上限的出处。
+   参数来自该文场景，不能无映射地迁移。
+
+四、网络与搜索联合评价：Neural A* (ICML 2021)
+原文位置：第6页Section 4.3，Table 1在第8页。
+
+1. Opt：预测结果属于最短路径的百分比。
+2. Exp：相对标准A*减少的节点扩展比例：
+   Exp=max(100*(E_Astar-E_model)/E_Astar,0)，再按规定对问题平均。
+3. Hmean：Opt和Exp的调和平均。
+4. 训练时按验证集最高Hmean保存权重，然后用于测试集评价。
+5. 报告bootstrap均值与95%置信界。
+含义：同时评价搜索输出质量和搜索效率，不以训练loss/离线分类准确率单独宣布网络搜索有效。
+边界：原文没有给出MineSim全动作排序必须100%、固定Top13保留率99%或统一epsilon_t秒数。
+节点扩展下降也不自动等于本项目端到端wall-clock加速；后者仍需本项目独立计时。
+
+五、矿卡扰动恢复任务：FusionPlanner上传版本
+原文位置：第12页4.1，第17页7.2（Disturbance tasks）。
+扰动恢复任务初始设置：航向扰动[-10°,10°]，横向偏移[-1m,1m]。
+成功定义：20 s内回到参考线/安全状态；发生碰撞或超时未恢复判失败。
+导航任务：无人工接管完成整个转向过程算成功。
+这是扰动恢复/导航任务标准，不是两车完成时间允许慢20 s。
+它表明“任务完成标准”要绑定具体任务定义，不能跨任务复制数值。
+
+六、最佳臂识别：Jamieson & Nowak (CISS 2014)
+原文位置：第1页I；第2页II式(1)；第5页IV-A实验设置。
+
+1. 目标：在相应独立、次高斯等采样假设下，选择错误动作的概率不超过delta。
+2. 固定置信度方法按数据难度调整样本量；并非固定4或8个种子就宣布通过。
+3. 典型停止条件（回报越大越好）：
+   muhat_h - C_h > muhat_l + C_l，l为最强竞争动作。
+   即领先动作下界超过竞争动作上界。
+4. 该文采样策略比较实验使用input confidence delta=0.1；有限LIL参数epsilon=0.01。
+   重要：此epsilon是LIL界的调节参数，不是允许损失0.01秒或0.01回报；delta是统计识别误差参数，不是交通事故概率。
+5. 原文聚焦唯一最佳臂；本项目epsilon近优、秒制成本最小化与安全可行竞争者是后续适配，不是逐字复现。
+
+七、CPO (ICML 2017)：成本上限，不是统一车辆碰撞限额
+原文位置：正文第2页CMDP定义；supplement第7页10.3.2参数表。
+公式：max_pi J(pi)，subject to J_Ci(pi)<=d_i。
+补充材料实际最大constraint value d：
+   Point-Circle=5；Ant-Circle=10；Humanoid-Circle=10；Point-Gather=0.1；Ant-Gather=0.2。
+这些是各自定义下的期望约束成本；Circle为越界成本，Gather为触碰bomb成本等，并非通用道路事故概率。
+同页delta_KL=0.01是策略KL信赖域步长，不是统计delta，也不是epsilon_t。
+不可以直接把0.1当作MineSim允许10%碰撞，或把0.01当作允许延误0.01秒。
+
+八、其他近期理论依据的真实作用
+1. Maurer & Pontil (2009)，Theorem 4：有界独立同分布样本的均值置信界。
+   单侧原式（[0,1]）：
+   EZ - mean(Z) <= sqrt(2 V_n log(2/delta)/n) + 7 log(2/delta)/(3(n-1))。
+   delta为输入置信参数。没有给出车辆时间容忍度、强制95%标准、统一训练loss标准。
+   本项目双侧缩放、跨动作跨检查点错误预算是项目推导。
+2. Pardo et al. (2018)：真实有限时域任务须表示剩余时间；人工采样截断而非任务终止时应考虑末端bootstrap。
+   没有MineSim统一64 s上限、没有epsilon_t秒数标准。
+
+九、对目前项目推进的结论
+A. 可以明确借鉴的论文层面基线：
+   安全：准确实现PET/TTC/几何安全指标后，报告1.5 s临界值对应的代理风险统计；实际碰撞/越界另记。
+   完成与效率：到达/完成率、通行时间分布、实际规划耗时和搜索开销，同时报告。
+   神经网络：验证集选模、独立留出测试、输出质量与搜索效率联合评价，不以训练拟合替代闭环。
+   带统计保证的动作排除：满足模型与采样假设后再应用置信判据，不能由经验排序自动授予。
+B. 不能直接照搬：1 m道路边距、0.8/0.6风险阈值、20/38/64 s任务时长、论文经验成功率。
+C. 这次核查未发现上述论文给出可直接用于本项目的统一epsilon_t秒数。
+D. epsilon_t是本项目新增“秒制近优保证”分支的规格，不是所有论文式开发对照、标签分析和网络泛化实验都必须先满足的共同门槛。此前把这一待定项表述为全部研究暂停的必要原因，应修正。
+E. 本轮只核查标准；不批准自动换阈值、不修改冻结实验、不启动搜索或训练、不恢复剪枝。

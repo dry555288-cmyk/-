@@ -1,0 +1,68 @@
+{
+  "contract_id": "PAPER_ALIGNED_EVALUATION_CONTRACT_PREFLIGHT",
+  "status": "PROPOSED_READONLY_NEXT_GATE",
+  "new_experiment_authorized": false,
+  "new_thresholds_installed": false,
+  "paper_reference_user_accepted": true,
+  "comparability_fields": [
+    "scenario_sha",
+    "map_and_geometry_sha",
+    "vehicle_footprint",
+    "root/full_state_provenance",
+    "policy_version",
+    "reward_and_terminal_rules",
+    "input_information_available",
+    "search_budget",
+    "seed_schedule",
+    "deadline_and_horizon",
+    "timing_boundary"
+  ],
+  "metrics": [
+    {
+      "name": "executed_hard_safety",
+      "paper": "P14/P15",
+      "scope": "actual executed trajectory, separate from imagined search events",
+      "current": "recorded model flag available in local C06 data",
+      "next_check": "exact geometry/swept and priority semantics"
+    },
+    {
+      "name": "PET",
+      "paper": "P14",
+      "paper_reference_seconds": 1.5,
+      "current": "HOLD_DEFINITION_AND_GEOMETRY_MAPPING",
+      "hard_constraint_adopted": false
+    },
+    {
+      "name": "TTC_MMTTC",
+      "paper": "P15",
+      "paper_reference_seconds": 1.5,
+      "current": "HOLD_PREDICTION_AND_FIELD_MAPPING",
+      "hard_constraint_adopted": false
+    },
+    {
+      "name": "V2V_V2H_V2R",
+      "paper": "P14",
+      "paper_values": {
+        "Qv2v": 0.8,
+        "Qv2h": 0.6,
+        "d_v2r_m": 1.0
+      },
+      "current": "REFERENCE_ONLY_NOT_INSTALLED",
+      "missing_field_policy": "HOLD_OR_EXPLICIT_NOT_APPLICABLE_NEVER_IMPUTE_ZERO_RISK"
+    },
+    {
+      "name": "completion_and_time",
+      "paper": "P14/P15 plus project F39/F41",
+      "current": "configuration-route completion available, not stopped-transport completion",
+      "next_check": "failure,timeout,N/A denominators; max vs sum time distinction"
+    },
+    {
+      "name": "planning_quality_and_search_cost",
+      "paper": "P16",
+      "current": "project-specific adaptation required; no exact-optimal oracle",
+      "next_check": "actual expansions,visited roots,forward count,MCTS elapsed,episode wall; retain negative speed changes"
+    }
+  ],
+  "guaranteed_elimination_branch": "SEPARATE_HOLD_DOES_NOT_BLOCK_GENERAL_DEVELOPMENT",
+  "stop_on_failure": "metric/provenance/geometry domain only"
+}

@@ -1,0 +1,430 @@
+{
+  "scope": "本轮文档和副本交付检查，不是科研实验复核",
+  "docx": "MineSim_Dynamic_正式交接_算法演进与最新效果_20260919_R1.docx",
+  "docx_sha256": "3228e740e2f30e5b37f7995168e968ba26120e71891f893b8cd67c2607a10c1d",
+  "render_pages": 46,
+  "visually_inspected_pages": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "visual_result": "PASS;46页均完整、可读，无表格溢出、缺字、重叠或空白溢出页",
+  "table_count": 56,
+  "clickable_navigation_links": 10,
+  "clickable_navigation_targets_valid": true,
+  "tracked_changes_or_comments": 0,
+  "embedded_font_files": 0,
+  "accessibility_report": "audit/DOCX_ACCESSIBILITY.json",
+  "json_valid": true,
+  "ledger_entries": 49,
+  "algorithm_registry_entries": 13,
+  "uploaded_files_unchanged": 28,
+  "source_entries_byte_verified": 17,
+  "scientific_reexecution": 0,
+  "page_checks": [
+    {
+      "page": 2,
+      "title": "当前状态与交接结论",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 513.0047607421875
+    },
+    {
+      "page": 3,
+      "title": "目录与阅读路径",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 535.3047485351562
+    },
+    {
+      "page": 4,
+      "title": "怎样使用证据，怎样避免版本混淆",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 471.7047424316406
+    },
+    {
+      "page": 5,
+      "title": "MineSim复现与Pure MCTS接入",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 555.0048217773438
+    },
+    {
+      "page": 6,
+      "title": "原生Fleet-MCTS：状态、动作与回传",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 528.0048217773438
+    },
+    {
+      "page": 7,
+      "title": "双车冲突构建、J117与FullMine输入",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 561.40478515625
+    },
+    {
+      "page": 8,
+      "title": "FullMine后续验收与关键工程失败",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 602.40478515625
+    },
+    {
+      "page": 9,
+      "title": "Fleet-MCTS跨场景及原生可视化",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 556.0048217773438
+    },
+    {
+      "page": 10,
+      "title": "云端文件、旧交接和删除状态",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 549.7047729492188
+    },
+    {
+      "page": 11,
+      "title": "Value V2/V3与K13的实际算法",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 544.8047485351562
+    },
+    {
+      "page": 12,
+      "title": "K13负结果与教师可靠性审计",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 550.5048217773438
+    },
+    {
+      "page": 13,
+      "title": "新停稳模型与冻结奖励",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 490.1047668457031
+    },
+    {
+      "page": 14,
+      "title": "C11策略验证与1536／768条数据",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 584.0048217773438
+    },
+    {
+      "page": 15,
+      "title": "从关系拟合到固定64秒窗口目标",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 500.80474853515625
+    },
+    {
+      "page": 16,
+      "title": "数据已收口，模型对照仍无优势",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 581.40478515625
+    },
+    {
+      "page": 17,
+      "title": "输入诊断、选择损失与关闭边界",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 555.3047485351562
+    },
+    {
+      "page": 18,
+      "title": "搜索观察、动作报告缓存与H8重建",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 520.90478515625
+    },
+    {
+      "page": 19,
+      "title": "H8小试通过，policy4科学目标未达到",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 509.80474853515625
+    },
+    {
+      "page": 20,
+      "title": "转向协同rollout：动机与迁移边界",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 556.2047729492188
+    },
+    {
+      "page": 21,
+      "title": "全后缀通行引导：任务完成但未建立优势",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 601.90478515625
+    },
+    {
+      "page": 22,
+      "title": "仅冲突引导：明确删除FREE巡航",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 590.5048217773438
+    },
+    {
+      "page": 23,
+      "title": "无条件Q优先：实际测试过，不采用",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 565.5048217773438
+    },
+    {
+      "page": 24,
+      "title": "V2扩展32条：有任务完成增量证据",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 590.1047973632812
+    },
+    {
+      "page": 25,
+      "title": "400毫秒首轮：预算与数值校验同时暴露问题",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 578.7047729492188
+    },
+    {
+      "page": 26,
+      "title": "运行器修正版V2：精确回传、先留现场",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 549.6047973632812
+    },
+    {
+      "page": 27,
+      "title": "修正版V2完整32条：13/16对14/16",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 630.1047973632812
+    },
+    {
+      "page": 28,
+      "title": "V3：模拟内部检查，使用本次完整前缀",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 497.80474853515625
+    },
+    {
+      "page": 29,
+      "title": "V3完整32条：自然中断有效，仍有3次迟到",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 596.8047485351562
+    },
+    {
+      "page": 30,
+      "title": "V4：将暂存准备与集中写回分开",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 576.3047485351562
+    },
+    {
+      "page": 31,
+      "title": "V5精简：同工作量CPU减少18.22%",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 630.1047973632812
+    },
+    {
+      "page": 32,
+      "title": "V5共同运行器：零超时批次与V2反例同时保留",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 635.40478515625
+    },
+    {
+      "page": 33,
+      "title": "V2为何仍停车：两个阶段，不是一个根因",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 561.3047485351562
+    },
+    {
+      "page": 34,
+      "title": "两停车状态：短窗口偏等待，长窗口偏起步",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 558.0048217773438
+    },
+    {
+      "page": 35,
+      "title": "8条恢复评价：更长前瞻有局部作用",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 562.5048217773438
+    },
+    {
+      "page": 36,
+      "title": "当前位置保持让行：通行改善，任务仍CAP",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 582.2047729492188
+    },
+    {
+      "page": 37,
+      "title": "最新已返回：阶段式候选没有真正执行H8",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 604.90478515625
+    },
+    {
+      "page": 38,
+      "title": "同样H16也会分叉：模拟数、RNG与解释边界",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 550.7047729492188
+    },
+    {
+      "page": 39,
+      "title": "直接隔离后段：输入已被登记，原件仍需核对",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 622.65478515625
+    },
+    {
+      "page": 40,
+      "title": "算法与效果总表：哪些成立，哪些不成立",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 559.3047485351562
+    },
+    {
+      "page": 41,
+      "title": "实验登记、负结果与不应重启的支线",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 597.8047485351562
+    },
+    {
+      "page": 42,
+      "title": "环境、源码边界与关键SHA",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 690.90478515625
+    },
+    {
+      "page": 43,
+      "title": "后续协作、执行与异常留档",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 585.90478515625
+    },
+    {
+      "page": 44,
+      "title": "本次交接包的证据范围与核验记录",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 588.40478515625
+    },
+    {
+      "page": 45,
+      "title": "快速接手区：先回答这8个问题",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 678.7047729492188
+    },
+    {
+      "page": 46,
+      "title": "快速接手区：最小行动与停止位置",
+      "title_matched": true,
+      "source_footer_present": true,
+      "visual_inspection": "PASS",
+      "body_bottom_pt": 690.40478515625
+    }
+  ],
+  "rendered_pdf_and_png_delivered": false
+}

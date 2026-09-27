@@ -1,0 +1,140 @@
+MineSim：三项冻结来源补齐复核与运行依赖快照说明
+日期：2026-09-08
+
+一、结论与当前阶段
+本轮上传的冻结来源补齐包通过文件完整性和三项目标归档 SHA 检查。
+本步可关闭 THREE_MISSING_FREEZE_ARTIFACTS_EXACT_SHA_CLOSURE。
+通过范围是历史来源字节绑定，并不是36-root真实状态重建、教师采样质量或神经网络收敛验收。
+下一步限定为36-root静态上下文复核与运行依赖源码快照；不启动576次教师搜索。
+
+二、本次独立复核的输入和结果
+输入文件：9e667727-a172-4168-a895-b934153e79b8.zip
+ZIP SHA256：81810a3cf7f01eb96231e61ddc4ae52bddd9f14b724672dc0cb79f8ae593765c
+ZIP内部根目录：minesim_teacher_pilot_freeze_archive_closure_v1/
+SHA256_MANIFEST.json 的SHA：a0dcedf9716f8e24be55fb22692aa965ad40c22ed9305d9f8576197d58bbacc1
+
+1. 外层ZIP CRC通过；167个文件成员中，166个被清单逐项列出，剩余一个是清单自身。
+   166项字节长度和SHA全部一致；不是167项清单记录，也不是仅查看SUMMARY的PASS字段。
+2. 当前包parent/下117个文件与上一轮e6deec87-a019-4ea9-ab23-bde88a188e39.zip中的对应文件逐字节一致。
+   包含修正后的36条Pilot原始记录；没有重新修改两条step0或其余34条记录。
+3. COMBINED_EXACT_SOURCE_BINDINGS.json的15项唯一来源均与复制件SHA一致。
+4. 三个目标ZIP各自完整原始字节的SHA匹配，且其ZIP CRC均通过。
+5. SOURCE_POSTCHECK.json记录的121项来源均为unchanged=True。
+   这是该次云端执行保存的后检证据，不表示我此刻直接访问了AutoDL实时文件系统。
+6. GIT_BEFORE.json与GIT_AFTER.json一致。HEAD为112d2bd0f3412fc83b13d5587d2b41402d2d0f5e。
+   status为“?? ^C”，因此应写“Git状态前后未改变”，不能写“Git clean”。
+
+三、三项冻结来源实际找到的位置
+共同目录：/root/autodl-tmp/99_OLD_TOPLEVEL_PACKAGES_20260830/
+
+A. PAPER1_DYNAMIC_V2V_SIDECAR_V1_FREEZE.zip
+角色：dynamic_v2v_freeze_sha256
+大小：63080字节
+SHA：3bcbbcb3623b07c3e8a162e24c5b63303b866cf9d149a68d083c30b5f7856193
+
+B. PAPER1_V2V_HEADING_APPROACH_CONTRACT_V1_FREEZE.zip
+角色：approach_contract_freeze_sha256
+大小：754428字节
+SHA：a27653c237118077a939001ae00aa2014bea3d15ec08f8393ba3e6aca7acb314
+
+C. PAPER1_OMEGA_INT_CONTRACT_V1_FREEZE.zip
+角色：omega_int_contract_freeze_sha256
+大小：867100字节
+SHA：a6b1de3c643c331b9a5d27f6544fa1266d4b3ff155f6de754cc94e8716db32c0
+
+三项不需要再查找；没有将其恢复到历史旧路径或修改软链接。
+上述15项是上一轮定义的15个不同provenance目标，不等于已包含运行需要的全部Python依赖。
+
+四、36-root区域语义的静态复算
+本地使用已绑定collector和冻结dynamic sidecar中的实际区间定义，检查36个已记录根状态，
+以及每个根状态的16个已记录子状态；共36+36×16=612个状态快照。
+
+检查：
+- A/B分别是否属于Omega_app、Omega_int；
+- pair_indicator_AND是否要求两车同时处于相应区域；
+- alpha3是否等于1+I_Omega_app_AND+I_Omega_int_AND。
+
+612/612通过；36条float32特征摘要和16维Q摘要也与修正后的Pilot清单一致。
+注意：这是利用“已经记录的路线进度”复算区域归属，不是新执行576次状态转移。
+本轮没有重新生成位置、速度、奖励、碰撞几何，也没有重新逐条读取2356条全量NPZ。
+全量2356转换一致性是此前已完成的证据，本次对它的父包传递做了字节一致性复核。
+
+区域边界按实际采集实现lo<=s<=hi处理，不擅自换成早期合同中的半开区间，也不四舍五入。
+C04的一些边界进度存在极小浮点差异；不能先把数值打印取整，再据此修改区域标志。
+C11从80m改为100m初始接近距离，并不自动把实际日志中的Omega_app区域改为100m。
+
+五、需要保留的manifest引用差异
+C11_100M_SEED0_EP1的manifest SHA：
+b18dd8b288a37424a94e22122d6a7572f0aa88ae991d97376db5930d1d2ce8bb
+它记录100m的初始进度，但scenario_sha256仍指向旧80m场景：
+1127aeb78308b90a9d59127f9443fea4acd8b98e136cbf86d1201f7593978cc9
+
+实际原始采集记录的scenario_sha256指向100m场景：
+3d71f2beeec6e0782099b65145ae944ea7560d64e5b934e3b6cdca7f40e4f5ce
+
+这是需明确处理的来源引用差异，不能仅跟随manifest字段就重建另一个场景。
+本轮不修改manifest或原始provenance，不把差异直接定性为训练数据损坏，
+也不据此自动替换runner。两个引用均写入SEMANTIC_NOTES_NOT_AUTOMATIC_FIXES.json。
+
+六、为什么下一步还需要运行依赖快照
+最新包已经提供历史collector、候选runner、scenario、manifest和冻结合同；
+但本地可访问材料尚未包含完整的实际FleetTransitionModel、FleetRewardModel、FleetMCTSSearch
+及其依赖，亦没有已通过的9-root technical parity整套运行副本。
+仅依据类名、交接描述、候选runner或一个RouteAdapter，不能凭空补写这些API。
+
+下一脚本只读取：
+1. 已通过的本轮父包及36条记录，重新校验固定SHA；
+2. /root/MineSim-Dynamic的相关真实源码，以AST解析追踪devkit静态导入；
+3. 固定历史目录
+   /root/autodl-tmp/minesim_multiroot_one_step_logger_parity_exec_retry1_v1
+   中的源码、JSON、短文本证据及已提取路径数据；
+4. 五个已经明确命名的历史技术脚本（存在时复制）。
+
+只在这几个已知入口内读取，不递归查找整个/root/autodl-tmp，不再扫描历史压缩包。
+不加载大语义地图、不导入执行项目模块、不运行旧runner、不重跑旧9-root实验。
+旧副本只是按规定后缀选择的证据子集，不把子集复制冒充旧包完整重新验收。
+当前源码与旧副本的相同/不同/缺失分别列出，不将当前HEAD相同自动当作源码内容相同。
+
+边界：源码单文件2MiB，普通证据文件16MiB，复制总量160MiB，AST文件图180项，
+旧副本最多1600个选定文件。采集阶段有300秒读取时限检查；后检与打包另行完成，
+不把这个读取时限宣传为整个任务的绝对运行时长上限。
+
+七、执行和结果解释
+资源：LOW/CPU-only，标准库脚本，无GPU要求。
+新namespace：/root/autodl-tmp/minesim_teacher_pilot_runtime_snapshot_v1
+启动器采用screen，主脚本由screen内的前台worker执行；不会再另起不受监管的脱离进程。
+启动打印REQUEST_ACCEPTED_NOT_A_PASS，仅表示screen启动请求被接受。
+
+监控检查主脚本.finished.json和wrapper退出码；PASS或HOLD结束均自动退出。
+未检测到会话且无结束标记时，会停止并提示提交日志，不自行重启，不宣布通过。
+Ctrl+C只停止用户另开的监控脚本；不是向screen内部worker发停止指令。
+实例关机、重启、SIGKILL或磁盘故障不属于“screen保证任务继续”的情况。
+
+主脚本只写新namespace、经校验的结果ZIP和最终回执；不会修改旧记录和项目源码。
+已有输出、ZIP、partial或最终回执会拒绝执行。不要删除目录后再跑。
+捕获到可处理错误或中断时保存HOLD证据；无法打包或外部强杀时保留目录并提交日志。
+
+预期结果字段：
+RUNTIME_SNAPSHOT_STATUS=PASS/HOLD
+RUNTIME_CONTEXT_STATUS=NOT_CERTIFIED
+READY_FOR_36_ROOT_SMOKE=False
+MCTS_RUN=False
+TRAINING_RUN=False
+MODEL_FORWARD=False
+ZIP_VERIFIED=True
+BUNDLE=/root/autodl-tmp/minesim_teacher_pilot_runtime_snapshot_v1.zip
+
+NOT_CERTIFIED明确表示本步没有执行真实36-root重建。
+
+八、本地测试与尚未验证事项
+Python测试46项通过，包含严格JSON、类型/路径/同名隔离、原输出保护、SHA、
+已有36条真实输入静态复算、源码只读AST、不完整来源、异常/中断后HOLD打包等。
+集成测试使用真实临时Git仓库、真实本轮输入，搭配合成引擎/旧运行副本。
+Bash启动/监控21项模拟测试通过；screen、Conda和worker由测试桩替代。
+另通过Python3.9语法AST检查、py_compile和两个shell脚本的bash -n。
+
+这些测试不代表真正的AutoDL执行，不代表测试了实际SSH断线，不代表MCTS数值正确。
+真实运行上下文重建、日志无干扰、576次教师质量试验及网络收敛均尚未由本轮验证。
+
+完整复核包包含审计脚本、OFFLINE_VERIFICATION.json、117项父文件字节一致性明细、
+36条静态结果、6套上下文、运行脚本及实际测试日志。旧实验与候选576调用协议不变。

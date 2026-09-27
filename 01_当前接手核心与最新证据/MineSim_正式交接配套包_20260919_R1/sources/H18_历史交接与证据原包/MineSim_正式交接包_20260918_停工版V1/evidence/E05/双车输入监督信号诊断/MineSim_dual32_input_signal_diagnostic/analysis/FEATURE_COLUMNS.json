@@ -1,0 +1,210 @@
+[
+  {
+    "index": 0,
+    "name": "A_route_fraction",
+    "unique_values": 32,
+    "min": 0.36958056688308716,
+    "max": 0.9159209132194519,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 1,
+    "name": "A_remaining_to_goal_lower_fraction",
+    "unique_values": 32,
+    "min": 0.08306732028722763,
+    "max": 0.6294077038764954,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 2,
+    "name": "A_remaining_to_goal_upper_fraction",
+    "unique_values": 32,
+    "min": 0.0840790644288063,
+    "max": 0.6304194331169128,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 3,
+    "name": "A_speed_div15",
+    "unique_values": 18,
+    "min": 0.18333333730697632,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 4,
+    "name": "A_command_accel_div3",
+    "unique_values": 4,
+    "min": -1.0,
+    "max": 0.3333333432674408,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 5,
+    "name": "A_target_speed_div15",
+    "unique_values": 1,
+    "min": 0.699999988079071,
+    "max": 0.699999988079071,
+    "constant_in_this_dataset": true
+  },
+  {
+    "index": 6,
+    "name": "A_braking_margin_fraction",
+    "unique_values": 30,
+    "min": 0.022615769878029823,
+    "max": 0.5951771140098572,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 7,
+    "name": "A_goal_reached",
+    "unique_values": 1,
+    "min": 0.0,
+    "max": 0.0,
+    "constant_in_this_dataset": true
+  },
+  {
+    "index": 8,
+    "name": "A_prev_none",
+    "unique_values": 1,
+    "min": 0.0,
+    "max": 0.0,
+    "constant_in_this_dataset": true
+  },
+  {
+    "index": 9,
+    "name": "A_prev_brake",
+    "unique_values": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 10,
+    "name": "A_prev_decel",
+    "unique_values": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 11,
+    "name": "A_prev_keep",
+    "unique_values": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 12,
+    "name": "A_prev_accel",
+    "unique_values": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 13,
+    "name": "B_route_fraction",
+    "unique_values": 32,
+    "min": 0.35109594464302063,
+    "max": 0.9249054193496704,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 14,
+    "name": "B_remaining_to_goal_lower_fraction",
+    "unique_values": 32,
+    "min": 0.0742940604686737,
+    "max": 0.6481035351753235,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 15,
+    "name": "B_remaining_to_goal_upper_fraction",
+    "unique_values": 32,
+    "min": 0.0750945657491684,
+    "max": 0.648904025554657,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 16,
+    "name": "B_speed_div15",
+    "unique_values": 22,
+    "min": 0.03333333507180214,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 17,
+    "name": "B_command_accel_div3",
+    "unique_values": 4,
+    "min": -1.0,
+    "max": 0.3333333432674408,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 18,
+    "name": "B_target_speed_div15",
+    "unique_values": 1,
+    "min": 0.699999988079071,
+    "max": 0.699999988079071,
+    "constant_in_this_dataset": true
+  },
+  {
+    "index": 19,
+    "name": "B_braking_margin_fraction",
+    "unique_values": 31,
+    "min": 0.015056950971484184,
+    "max": 0.61948561668396,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 20,
+    "name": "B_goal_reached",
+    "unique_values": 1,
+    "min": 0.0,
+    "max": 0.0,
+    "constant_in_this_dataset": true
+  },
+  {
+    "index": 21,
+    "name": "B_prev_none",
+    "unique_values": 1,
+    "min": 0.0,
+    "max": 0.0,
+    "constant_in_this_dataset": true
+  },
+  {
+    "index": 22,
+    "name": "B_prev_brake",
+    "unique_values": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 23,
+    "name": "B_prev_decel",
+    "unique_values": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 24,
+    "name": "B_prev_keep",
+    "unique_values": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  },
+  {
+    "index": 25,
+    "name": "B_prev_accel",
+    "unique_values": 2,
+    "min": 0.0,
+    "max": 1.0,
+    "constant_in_this_dataset": false
+  }
+]

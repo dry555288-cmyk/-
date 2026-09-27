@@ -1,0 +1,39 @@
+{
+  "gate": "GROUPED_INPUT_COVERAGE_SELECTION_PROTOCOL_DESIGN_ONLY",
+  "status": "PROPOSAL_ONLY_NOT_EXECUTED_NOT_COLLECTION_AUTHORIZATION",
+  "resource": "LOW",
+  "gpu_required": false,
+  "source_scope": {
+    "behavior_index_records": 744,
+    "exact_serialized_states": 728,
+    "all16_actions_valid": 500,
+    "source_runs": 8,
+    "route_groups": 1,
+    "behavior_index_sha256": "02d60013e9f685102766fabd500fdabc7330e4de480d87a65dd204083d97050c",
+    "window16_dataset_sha256": "44a7567bec8c55a2c321e898de01455166a09769514987069cc0894f954176ff"
+  },
+  "objective": "Create an auditable candidate-selection plan that addresses joint state coverage across source runs without using outcome/model-score driven picking or reusing old evaluations as blind tests.",
+  "allowed": [
+    "Read existing saved full states, valid-action masks, input features, source-run identity and source hashes",
+    "Deduplicate exact state identities while preserving run provenance; do not equate serialized SHA uniqueness with independent physical states",
+    "Design input-only stratification / selection and verify cross-source coverage before fixing candidate count",
+    "Reference already collected returns only to avoid duplicate collection, not to choose favorable candidates"
+  ],
+  "not_allowed": [
+    "No new MCTS calls or state transitions",
+    "No training or hyperparameter search",
+    "No new hard labels for the10UNKNOWN states",
+    "No model deployment or pruning",
+    "No rewriting old results or paths",
+    "No claiming the development pool is an independent route test"
+  ],
+  "pass_standard": [
+    "Selection algorithm, candidate count, tie rules, masks, grouping, duplicate handling and input hashes are explicitly frozen BEFORE reading any future teacher returns",
+    "Source records and full-state identities trace to exact known inputs",
+    "Both vehicles' route progress/speed configurations are represented across the declared source groups, with remaining uncovered regions reported rather than hidden",
+    "Future data identified as post-result same-route development; historical metrics remain immutable"
+  ],
+  "hold_standard": "Any missing source identity, ambiguous model/action semantics, or unresolved selection rule remains HOLD; do not compensate with fabricated data or unapproved collection.",
+  "future_sampling_authorized": false,
+  "future_training_authorized": false
+}

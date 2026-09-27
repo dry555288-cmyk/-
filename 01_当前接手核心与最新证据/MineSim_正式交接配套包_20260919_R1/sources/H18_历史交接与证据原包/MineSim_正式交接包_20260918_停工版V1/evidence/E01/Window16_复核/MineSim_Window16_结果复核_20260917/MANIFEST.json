@@ -1,0 +1,42 @@
+{
+  "BEHAVIOR_POOL_COVERAGE.json": {
+    "size": 10437,
+    "sha256": "888247aa995f6a85e763e063f9ec5d3a8ddc1a71db30660ac80fd4acb955d835"
+  },
+  "CURRENT_STATE.json": {
+    "size": 2111,
+    "sha256": "8cf3a46ad9e8661dbb5cf07ae474dcce8f1743a3dabb0886a49150998018ed15"
+  },
+  "ERROR_DIAGNOSTIC.json": {
+    "size": 12015,
+    "sha256": "fe42ffe60b1f27ffac3b2286aa8d094c7e9c0b488755be28f6cf21b517bc78c5"
+  },
+  "NEXT_GATE_PROPOSAL.json": {
+    "size": 2406,
+    "sha256": "a44d437e1b6ee14d86b200fa1048d1f0d7dabeafff372b78e489bd707f9fab3a"
+  },
+  "PER_STATE_ERRORS.csv": {
+    "size": 3259,
+    "sha256": "ea969a228b80a9387b347654a30155cdf65d725280038a6e0e68f67b3aa86b96"
+  },
+  "README.md": {
+    "size": 4651,
+    "sha256": "15ccfea1f03834fdb7542e83e52bf7a494ed49095cc680f72a449981354255a5"
+  },
+  "REVIEW.json": {
+    "size": 7314,
+    "sha256": "382e7e228eb305e9e512061d3fdd8e80e71d1d9339b794623dd1eb7f86e78671"
+  },
+  "original/FOLDS.json": {
+    "size": 762,
+    "sha256": "b8716e913894087ba56da2832522ef54bd09f0a1406040edb7850040bdd9d57e"
+  },
+  "original/PROTOCOL.json": {
+    "size": 2175,
+    "sha256": "bbea7a2991b93bf7349e1f83de15142109d0b4a998d1b2b656651ea8baf00d19"
+  },
+  "original/RESULT.json": {
+    "size": 2099,
+    "sha256": "92bc7b82ad2dea9a3ea4d6b16e35225943633f697228f822934fd6693e7c839a"
+  }
+}

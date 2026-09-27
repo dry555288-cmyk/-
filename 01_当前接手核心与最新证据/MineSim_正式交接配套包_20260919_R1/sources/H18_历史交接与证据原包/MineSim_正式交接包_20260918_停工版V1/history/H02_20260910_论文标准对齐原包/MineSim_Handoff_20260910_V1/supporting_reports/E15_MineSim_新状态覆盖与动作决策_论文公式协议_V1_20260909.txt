@@ -1,0 +1,192 @@
+MineSim 新状态覆盖与动作决策验证：论文—公式—代码协议 V1
+日期：2026-09-09
+当前 Gate：LABEL_BLIND_NEW_STATE_COVERAGE_AND_ONE_STEP_PARITY
+资源：LOW / CPU-only；至少1 GiB可用内存、1 GiB空闲磁盘；GPU禁用。
+主程序：minesim_new_state_coverage_parity_v1.py
+
+一、本次实际执行边界
+本次一次完成“按状态选24条新开发记录—原始来源逐条绑定—384次确定性单步重建”，不是再次收集历史交接资料。
+不运行MCTS搜索或随机rollout，不训练，不模型forward，不执行动作剪枝，不修改生产源码、原训练集或冻结模型。
+对原33组诊断输入之外的候选进行选择；来源仍为原2356条数据、原六个episode。因此不能称为新场景、独立最终测试，或者旧Value V3从未见过的数据。
+本程序仅给出可重建状态和下一阶段判定框架；没有为新搜索选择随机种子、批准搜索矩阵或授权上线。
+
+二、为什么先补状态覆盖，而不是继续训练600轮
+项目直接证据：上一轮6次C11跨episode拟合在确认动作对上达到100%，但C11只确认422/1320对，低速9种输入只确认232/1080对。
+来源：MineSim_C11跨episode复核与动作证据审查_20260909.txt，第六至八节；原返回包7e4afb79-f4de-4adc-8128-b618d6f17b3f.zip。
+这说明当前mask下的排序可学习，不证明未知关系、唯一最佳动作或固定Top-13删除合理。
+
+外部文献[P2]讨论序列决策中，观测分布会受先前动作影响，不能直接沿用普通独立同分布监督学习的假设。
+用本项目记号概括研究动机：
+  R_data(f) = E_{s~d_data}[ell(f,s)]
+  R_pi(f)   = E_{s~d_pi}[ell(f,s)]
+两种分布不同，前者低不自动推出后者低。这是对动机的数学表达，不是本项目已经满足论文全部假设的定理。
+本轮仍在历史池中选点，未运行当前策略采集新轨迹，因而不是DAgger，不继承DAgger的no-regret保证。
+最终仍需要新episode和闭环实验证据；不能用这一轮取代。
+
+三、步骤1：使用标签盲的覆盖选点
+论文依据：[P1]第4.3节，公式(5)、Algorithm 1，PDF第6页。
+令L为原33个不同的诊断输入，U为过滤后的候选池，S为新增状态集合。覆盖目标为：
+  rho(L ∪ S; U) = max_{x in U} min_{y in L ∪ S} d(x,y)
+  min_{S, |S| <= b} rho(L ∪ S; U)                               (A1)
+论文的greedy方法每次取最远点：
+  x_new = argmax_{x in U\S} min_{y in L∪S} d(x,y).               (A2)
+
+项目适配：本次每次只在“当前episode配额、当前状态层、排除条件”许可的集合A_t中选最远点：
+  x_t = argmax_{x in A_t} min_{y in L∪S_t} d(x,y).               (A3)
+这不是原论文的完整无约束k-center算法。这里加入了配额、状态分层和时序约束，不能直接宣称原算法2近似保证，也不能套用论文CNN泛化界。
+
+距离只用于选点，不改变现有12维网络结构/输入/归一化。
+从冻结的12维输入中取7维物理子向量phi：
+  [v_A, v_B, remaining_A, remaining_B, |delta_heading|,
+   I_Omega_app_AND, I_Omega_int_AND]
+选择这7维是为了避免把恒定加速度列以及速度差、航向/pi、alpha3等派生重复信息反复计入距离。
+仅使用L的33组输入计算均值mu和标准差sigma(ddof=0)，sigma<1e-8时scale=1：
+  z_j(x) = (phi_j(x)-mu_j)/scale_j
+  d(x,y) = sqrt((1/7) sum_{j=1..7} ((phi_j(x)-phi_j(y))/scale_j)^2).  (A4)
+这里是冻结物理坐标距离，不是论文CNN嵌入；7维选择和scale规则都是项目设计。
+
+预先固定的候选排除条件：
+(a) 排除原33组输入的精确float32特征哈希及已列明的9-root/root807诊断输入。
+(b) 排除与原33组输入的最小标准化RMS距离<=0.05的记录。
+(c) 排除同episode中距旧pilot/已列明诊断root不超过10个step的记录。
+(d) 本轮重点补运动和低速非零状态，排除max(v_A,v_B)<=1e-8的完全静止状态。
+(e) 新选状态之间也要求精确输入不重复、距离>0.05、同episode step间隔>10。
+10个step对应历史SIM_DT=0.1s下的1s；它只能减少相邻复制，不证明统计独立。0.05也不是安全或泛化阈值。
+
+分层条件：
+  LOW_NONZERO:    1e-8 < max(v_A,v_B) <= 1.0 m/s
+  MOVING_INT:    max(v_A,v_B) > 1.0，且任一车辆的原始Omega_int归属为True
+  MOVING_NOT_INT:max(v_A,v_B) > 1.0，且两车Omega_int归属均为False
+注意：MOVING_INT采用任一车辆的原始区域归属，距离向量中的区域特征则保留原网络AND语义；两者用途不同。
+LOW_NONZERO仅是低速转换候选，不能仅凭阈值把它写成“已经证明正在刹车”。
+
+每个episode取4条，按episode标识排序；优先从可用的三个层各选一个，再从剩余可行候选中按A3补齐。
+没有某种状态层时记录缺项，不伪造补齐；若某episode不足4条可行输入则HOLD，不自动降低排除阈值或换状态。
+距离并列时按12位舍入、root_step、原行号确定性解平局。
+
+每episode4条、合计24、阈值1m/s、0.05、10step、分层顺序都属于本次开发协议的固定选择；没有论文规定这些数值最优。
+本轮不做通过结果调参；敏感性分析需另立协议。
+
+标签盲约束的实际实现：
+select_roots()只收到状态字段，不收到Q、即时奖励、visit、mask或模型分数。
+原始记录中的旧B64标签只在选点完成后用于身份核对和来源保全，不作为新监督、不用于替换选点。
+即使某点的重建/标签核验失败，也停止并保留该点，不换成“容易通过”的点。
+
+四、步骤2：准确保存原始身份，而不是仅匹配状态值
+每条记录用episode_uid+root_step+完整provenance绑定，再检查12维float32特征SHA。
+其16动作的原Q/即时奖励与对应NPZ行按动作ID排列后检查float32字节一致，visit总数检查为历史64。
+这防止再次发生“同输入值但来自不同seed搜索记录”的混用。
+完整SHA、目录不可覆盖等是工程证据完整性规则，不是算法创新，也不需要伪造一篇论文来规定某个文件路径。
+输入来源清单、旧模型18个文件哈希一并冻结；本轮仅计算模型文件哈希，绝不加载权重。
+
+五、步骤3：检验相同状态、动力学与奖励是否可重建
+论文依据：[P3]将规划置于有限时域/折扣MDP框架。项目冻结的确定性模型可记为：
+  s_(t+1) = F(s_t,a_t)
+  r_t = R(s_t,a_t,s_(t+1))
+  G_t = sum_{k=0..H-1} gamma^k r_(t+k).                       (B1)
+如果F或R重建错误，后续G/Q比较就会比较不同问题；因此先做确定性单步检查。
+本次验证的是F/R，不重新计算G或Q，也不复跑旧搜索。
+
+对24个状态分别检查16个联合动作，共384次状态转移。重建输出y包含已有车辆运动量、奖励、最小净距、硬安全标志及区域/派生特征。
+数值验收：
+  max_{s,a,k} |y_new(s,a,k)-y_original(s,a,k)| <= 1e-8.        (B2)
+布尔标志、动作身份、区域归属须完全一致；不能用数值容差吞掉布尔错误。
+1e-8为工程数值容差，不是碰撞安全裕度，也不是[P3]提出的阈值。
+本次只用已冻结18条路径摘录与17个引擎源码，不解析全矿大JSON，不运行旧runner入口。
+C11 100m直接从正确原始root重建，不跟随manifest中已发现的旧80m初始化引用。
+
+六、下一阶段教师与排序证据的数学边界（本脚本不执行）
+若未来复用Balanced-root，在预算B下每个根动作得到N_a=B/16次访问：
+  Qhat_(B,z)(s,a) = (1/N_a) sum_{i=1..N_a} G_(z,a,i)          (C1)
+  Qbar_B(s,a) = (1/K) sum_{z=1..K} Qhat_(B,z)(s,a).           (C2)
+B是整个根节点总预算，不是每动作预算；z代表独立初始化搜索的随机种子。
+Balanced-root是项目对根分配的诊断改动；深层仍用冻结UCT，它不等于原始UCT、Sequential Halving或AlphaZero。
+
+树逐渐生长、深层动作分配改变时，单次搜索中的G_(z,a,i)不能未经证明当成同一固定分布的独立样本。
+固定预算下跨独立seed的Qhat重复性，只评价该搜索器/预算的输出分布；mu_B=E_z[Qhat_(B,z)]不能直接叫Q*。
+已有8/8方向一致是经验筛查，不是“置信度100%”；本轮不把它追溯改成95%统计保证。
+本程序的风险/硬安全记录是模型事件，不是标定过的真实碰撞概率。
+
+七、步骤4的预备规范：从排序变成动作决策证据（本次只写协议）
+论文依据：[P4]Section II的Action Elimination与式(1)。它要求独立、固定均值的次高斯样本，并构造有效置信界。
+在这些假设满足且[L_a,U_a]是同时有效的置信区间时：
+  若 U_a < max_{b != a} L_b，则a不能是期望回报最优动作。      (D1)
+这是根据有效上下界直接推导的淘汰条件，体现“证据足够后再排除”，不是本项目当前已经实现的PAC保证。
+不应把树内自适应rollout样本直接套入该区间；若未来要统计保证，需另行确定采样单位、估计对象、回报界和多重比较控制。
+即使D1成立，它排除的是给定回报定义下的最优性，不证明物理安全。
+
+对当前经验确认mask，更诚实的做法是只声明“相对于该偏序的可排除性”：
+  b ≻_M a：mask中有经确认的b优于a的关系；可计算传递闭包，但必须先检查无环。
+  C_M(s) = {a: 不存在b使b ≻_M a}.                           (D2)
+C_M叫“依据现有关系尚不能排除的动作集合”，不是确定最优集合，更不是安全集合。
+没有关系即未知，不能因为没被选为top1就标为差动作。
+对拟删除集合D(s)，新增报告指标：
+  unsupported_count(s) = |D(s) ∩ C_M(s)|
+  unsupported_rate(s)  = |D(s) ∩ C_M(s)| / max(1,|D(s)|).      (D3)
+本轮将(D2,D3)写入预备协议，而不删除动作、不执行K13。
+若以后要求零“无现有排序依据的删除”，且|C_M|=14，固定保留13就不满足该要求。
+这与[P4]的“证据后淘汰”思想有关，但D2/D3是项目的证据审查指标，不是论文中的置信区间淘汰算法。
+
+还应报告网络top1是否在C_M、C_M大小、pair覆盖率。top1在C_M仅说明尚未被这些标签反驳，不等于选对了唯一最优动作。
+若无确认边，C_M为全部16动作；若出现有向循环，则证据一致性HOLD，不按模型分数强行破环。
+
+八、后续网络损失的来源（本轮不重训）
+论文依据：[P5]Section3，公式(1)—(3)：用输出差的logistic概率和成对交叉熵学习排序。
+项目记号为：
+  P_ij(s)=sigmoid(f_i(s)-f_j(s)).                             (E1)
+令y_sij∈{-1,+1}为确认方向，m_sij∈{0,1}为确认mask，
+  ell_s = sum_{i<j} m_sij*log(1+exp[-y_sij(f_i-f_j)])
+          / sum_{i<j} m_sij
+  L = sum_s w_s ell_s.                                       (E2)
+w_s包含本项目原训练协议的状态/场景权重；mask和权重是项目适配，而不是原始RankNet指定。
+空mask状态不作为已监督样本；未知动作对m=0，不能替换成并列目标0.5。
+本次冻结旧18个诊断模型，不改变其损失、权重、归一化或参数。
+网络输出仅是排序分数，不经校准不能代替物理单位Q或碰撞概率。
+满足部分E2方向不唯一决定所有16动作顺序；这解释了上一轮确认对100%仍不能支持所有Top-13删除。
+
+九、验收、结果和中断规则
+技术PASS要求：三个父清单全部核验，当前17个引擎文件与冻结版本一致；24条唯一新开发输入与来源正确；每episode4条；排除条件成立；384次单步重建全部通过；输入SHA和Git前后不变；ZIP校验完成。
+不足24、来源变化、引擎变化或重建不一致都HOLD，不自动增加预算、降低阈值、重新选点或重跑旧实验。
+SOURCE_POSTCHECK会逐个复查读过的1590个来源路径（本地实测）；数量不是“独立实验”数量。
+已有namespace一律不复用。可捕获的中断/900秒超时保留HOLD结果；SIGKILL/断电可能只保留部分目录，不能保证打包，不能删除后重跑。
+完成标记用完整写入后原子发布，监控不把正在写的JSON当完成。
+
+本地测试：36项Python单元/集成检查、10项screen启动/监控模拟检查通过；Python3.9 AST、py_compile、bash -n通过。
+使用最终交付脚本在新的隔离本地目录实际读取本次上传的完整原始数据、冻结引擎、路径摘录，完成24根/384转移/8304比较，最大误差8.881784197001252e-16。
+这不是云端验收；云端将再次检查准确环境与来源绑定。不宣称模拟screen测试就是实际AutoDL断线测试。
+本地脚本没有运行MCTS、随机rollout、模型forward或训练。
+
+十、参考文献（原始文献/作者正式版本）
+[P1] Sener, O.; Savarese, S. Active Learning for Convolutional Neural Networks: A Core-Set Approach. ICLR 2018.
+     Section4.3, Eq.(5), Algorithm1，PDF第6页。
+     https://openreview.net/forum?id=H1aIuk-RW
+     https://arxiv.org/pdf/1708.00489
+[P2] Ross, S.; Gordon, G.; Bagnell, D. A Reduction of Imitation Learning and Structured Prediction to No-Regret Online Learning. AISTATS 2011, PMLR15:627–635.
+     https://proceedings.mlr.press/v15/ross11a.html
+[P3] Kocsis, L.; Szepesvári, C. Bandit Based Monte-Carlo Planning. ECML 2006, LNCS4212:282–293.
+     DOI:10.1007/11871842_29
+     https://link.springer.com/chapter/10.1007/11871842_29
+[P4] Jamieson, K.; Nowak, R. Best-arm identification algorithms for multi-armed bandits in the fixed confidence setting. CISS2014:1–6.
+     DOI:10.1109/CISS.2014.6814096；SectionII，Action Elimination和式(1)。
+     https://nowak.ece.wisc.edu/bestArmSurvey.pdf
+[P5] Burges, C.; Shaked, T.; Renshaw, E.; Lazier, A.; Deeds, M.; Hamilton, N.; Hullender, G. Learning to Rank using Gradient Descent. ICML2005:89–96.
+     DOI:10.1145/1102351.1102363；Section3，Eq.(1)—(3)。
+     https://www.microsoft.com/en-us/research/wp-content/uploads/2005/08/icml_ranking.pdf
+
+本报告中的项目公式A3/A4、B2、D2/D3、E2中的mask/权重以及数值阈值均明确为项目适配，不将其包装为上述论文原定理。
+
+十一、本地确定性选点清单（云端应重新核验，不用于替代云端结果）
+C04_FROZEN_EP0：step125 [MOVING_INT], step114 [MOVING_INT], step89 [MOVING_INT], step61 [MOVING_INT]
+C04_SEED5_EP1：step134 [MOVING_INT], step70 [MOVING_INT], step147 [MOVING_INT], step105 [MOVING_INT]
+C06_FROZEN_EP0：step145 [MOVING_INT], step98 [MOVING_INT], step134 [MOVING_INT], step76 [MOVING_INT]
+C06_SEED1_EP1：step155 [MOVING_INT], step105 [MOVING_INT], step48 [MOVING_INT], step73 [MOVING_INT]
+C11_100M_SEED0_EP1：step145 [LOW_NONZERO], step110 [MOVING_INT], step35 [MOVING_NOT_INT], step99 [MOVING_INT]
+C11_80M_SEED0_EP0：step145 [LOW_NONZERO], step104 [MOVING_INT], step11 [MOVING_NOT_INT], step91 [MOVING_INT]
+
+本地状态池：2356条；过滤后422种输入；原33组覆盖半径1.8502400188893244；加入24组后0.3663057191445697。该半径仅相对固定过滤池与冻结7维距离成立，不等于预测正确率改善。
+
+主脚本SHA256：2a98c9ff7b1a64cec290b58226ac87f133c08cea24057733a1f4c98692382d96
+新输出目录：/root/autodl-tmp/minesim_new_state_coverage_parity_v1
+结果ZIP：/root/autodl-tmp/minesim_new_state_coverage_parity_v1.zip
+
+当前云端Gate通过后，下一步才是在这24个冻结状态上建立独立教师证据并评价冻结模型。搜索/统计假设、具体新种子、预算和验收条件将在该步执行前分别固定；本轮不会自动继续。

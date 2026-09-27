@@ -1,0 +1,39 @@
+{
+  "cases": [
+    {
+      "case": "synthetic_success",
+      "rc": 0,
+      "status": "SYNTHETIC_GATE_ONLY_NOT_MCTS",
+      "bundle_saved": true,
+      "new_mcts_calls": 0,
+      "log": "STATUS=SYNTHETIC_GATE_ONLY_NOT_MCTS\nMCTS_CALLS=0/8; NEW_TEACHER_TRACES=0; TRAINING_RUNS=0; TREE_REUSE_EXECUTED=False\nBUNDLE=/tmp/tmpy0u8cpbz/data/minesim_dual_reportcache_flat_v1.zip\nZIP_VERIFIED=True; MANIFEST_ITEMS=84\nHOLD=EXISTING_NAMESPACE_NO_RETRY:/tmp/tmpy0u8cpbz/data/minesim_dual_reportcache_flat_v1\n"
+    },
+    {
+      "case": "missing_source",
+      "rc": 2,
+      "status": "HOLD_INPUT_BINDING",
+      "bundle_saved": true,
+      "new_mcts_calls": 0,
+      "log": "STATUS=HOLD_INPUT_BINDING\nMCTS_CALLS=0/8; NEW_TEACHER_TRACES=0; TRAINING_RUNS=0; TREE_REUSE_EXECUTED=False\nBUNDLE=/tmp/tmpvw99te0y/data/minesim_dual_reportcache_flat_v1.zip\nZIP_VERIFIED=True; MANIFEST_ITEMS=17\n"
+    },
+    {
+      "case": "bad_sha",
+      "rc": 2,
+      "status": "HOLD_INPUT_BINDING",
+      "bundle_saved": true,
+      "new_mcts_calls": 0,
+      "log": "STATUS=HOLD_INPUT_BINDING\nMCTS_CALLS=0/8; NEW_TEACHER_TRACES=0; TRAINING_RUNS=0; TREE_REUSE_EXECUTED=False\nBUNDLE=/tmp/tmpl1ly73ah/data/minesim_dual_reportcache_flat_v1.zip\nZIP_VERIFIED=True; MANIFEST_ITEMS=17\n"
+    },
+    {
+      "case": "related_process",
+      "rc": 2,
+      "status": "HOLD_POSTCHECK",
+      "bundle_saved": true,
+      "new_mcts_calls": 0,
+      "log": "STATUS=HOLD_POSTCHECK\nMCTS_CALLS=0/8; NEW_TEACHER_TRACES=0; TRAINING_RUNS=0; TREE_REUSE_EXECUTED=False\nBUNDLE=/tmp/tmpdxno16xv/data/minesim_dual_reportcache_flat_v1.zip\nZIP_VERIFIED=True; MANIFEST_ITEMS=17\n"
+    }
+  ],
+  "cases_passed": 4,
+  "synthetic_runner_only": true,
+  "real_MCTS_calls": 0
+}

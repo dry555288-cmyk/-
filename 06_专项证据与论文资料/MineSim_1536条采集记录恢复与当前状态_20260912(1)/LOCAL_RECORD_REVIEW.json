@@ -1,0 +1,491 @@
+{
+  "status": "PASS_CAPTURED_RECORDS_AND_ACCOUNTING_ONLY",
+  "reviewed_at_utc": "2026-09-12T15:13:45.856315+00:00",
+  "checks": [
+    {
+      "name": "export_manifest",
+      "passed": true,
+      "entries": 112
+    },
+    {
+      "name": "all_104_source_copies",
+      "passed": true
+    },
+    {
+      "name": "source_capture_integrity_and_stability",
+      "passed": true
+    },
+    {
+      "name": "export_scope",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:original_manifest_captured_subset",
+      "passed": true,
+      "present": 28,
+      "total_entries": 2834
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:RC",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:saved_git_snapshot_unchanged",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:no_retry_training_pruning",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:schedule_audit_count_ids",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:ordinal_identity",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:committed_only",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:outcomes",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:forced_first_search_accounting",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:declared_commit_hashes_match_original_manifest",
+      "passed": true,
+      "note": "Metadata cross-check; uncaptured COMMIT bytes were not hashed."
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_0",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_audit_0",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_1",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_audit_1",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_2",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_audit_2",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_3",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_audit_3",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:worker_partition",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:phase_complete",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:runner_source_hash",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_remaining390_parallel_v1:schedule_hash",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_cell377_tail_continuation_v1:original_manifest_captured_subset",
+      "passed": true,
+      "present": 19,
+      "total_entries": 136
+    },
+    {
+      "name": "minesim_discovery_cell377_tail_continuation_v1:RC",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_cell377_tail_continuation_v1:saved_git_snapshot_unchanged",
+      "passed": true
+    },
+    {
+      "name": "minesim_discovery_cell377_tail_continuation_v1:no_retry_training_pruning",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:original_manifest_captured_subset",
+      "passed": true,
+      "present": 48,
+      "total_entries": 5519
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:RC",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:saved_git_snapshot_unchanged",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:no_retry_training_pruning",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:schedule_audit_count_ids",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:ordinal_identity",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:committed_only",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:outcomes",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:forced_first_search_accounting",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:declared_commit_hashes_match_original_manifest",
+      "passed": true,
+      "note": "Metadata cross-check; uncaptured COMMIT bytes were not hashed."
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_0",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_audit_0",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_1",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_audit_1",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_2",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_audit_2",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_3",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_audit_3",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:worker_partition",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:phase_complete",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:runner_source_hash",
+      "passed": true
+    },
+    {
+      "name": "minesim_confirmation768_parallel_v1:schedule_hash",
+      "passed": true
+    },
+    {
+      "name": "cell377:actual_COMMIT_files",
+      "passed": true,
+      "entries": 6
+    },
+    {
+      "name": "cell377:steps_and_state_chain",
+      "passed": true
+    },
+    {
+      "name": "cell377:forced_first_and_52_searches",
+      "passed": true
+    },
+    {
+      "name": "cell377:return_sum_and_join",
+      "passed": true
+    },
+    {
+      "name": "cell377:event_hash_chain",
+      "passed": true
+    },
+    {
+      "name": "cell377:events_match_trace",
+      "passed": true
+    },
+    {
+      "name": "cell377:terminal_record",
+      "passed": true
+    },
+    {
+      "name": "discovery:full_ledger_identity_768",
+      "passed": true
+    },
+    {
+      "name": "discovery:ledger_observations_agree",
+      "passed": true
+    },
+    {
+      "name": "discovery:segments",
+      "passed": true
+    },
+    {
+      "name": "discovery:ledger390_matches_audit",
+      "passed": true
+    },
+    {
+      "name": "discovery:joined377_hash_matches_ledger",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze:ALL_PAIRS_1440.json",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze:DISCOVERY_CANDIDATES.json",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze:OBSERVATIONS_768.json",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze:prior_DISCOVERY_LEDGER_768.json",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze:PROTOCOL.json",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze:273_of_1440_record_partition",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze:not_training_labels",
+      "passed": true
+    },
+    {
+      "name": "candidate_freeze:bound_before_confirmation",
+      "passed": true
+    }
+  ],
+  "checks_passed": 72,
+  "checks_total": 72,
+  "original_manifest_subsets": {
+    "minesim_discovery_remaining390_parallel_v1": {
+      "present_entries": 28,
+      "original_entries": 2834,
+      "full_original_archive_reverified": false
+    },
+    "minesim_discovery_cell377_tail_continuation_v1": {
+      "present_entries": 19,
+      "original_entries": 136,
+      "full_original_archive_reverified": false
+    },
+    "minesim_confirmation768_parallel_v1": {
+      "present_entries": 48,
+      "original_entries": 5519,
+      "full_original_archive_reverified": false
+    }
+  },
+  "stages": {
+    "minesim_discovery_remaining390_parallel_v1": {
+      "status": "COMPLETE_REMAINING390_COLLECTION_NOT_LABEL_CERTIFICATION",
+      "start": {
+        "at_utc": "2026-09-11T11:20:23.276693+00:00",
+        "authority_sha256": "1fef964c90d103b19abe69d3841b28222a35f3a48d7aa3670cb9198129197314",
+        "gate": "REMAINING_390_DISCOVERY_PARALLEL_EXECUTION",
+        "new_discovery_cells_authorized": 390,
+        "one_shot_consumed": true,
+        "original_complete_batch_claim_allowed": false
+      },
+      "capture": {
+        "at_utc": "2026-09-11T11:48:31.115724+00:00",
+        "new_commit_file_count": 390,
+        "rc_before_packaging": 0,
+        "status": "COMPLETE_REMAINING390_COLLECTION_NOT_LABEL_CERTIFICATION"
+      },
+      "source_result": "sources/data/minesim_discovery_remaining390_parallel_v1/RESULT.json",
+      "outcomes": {
+        "BOTH_CONFIGURED_ROUTE_ENDS": 109,
+        "EXECUTED_HARD_SAFETY_TERMINAL": 137,
+        "EVALUATION_CAP_NOT_TASK_TERMINAL": 144
+      },
+      "worker_assignments": [
+        97,
+        97,
+        98,
+        98
+      ],
+      "new_searches": 37376,
+      "new_transitions": 37766,
+      "by_scene": {
+        "C06": {
+          "BOTH_CONFIGURED_ROUTE_ENDS": 70,
+          "EXECUTED_HARD_SAFETY_TERMINAL": 64
+        },
+        "C11": {
+          "EXECUTED_HARD_SAFETY_TERMINAL": 73,
+          "BOTH_CONFIGURED_ROUTE_ENDS": 39,
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": 144
+        }
+      }
+    },
+    "minesim_discovery_cell377_tail_continuation_v1": {
+      "status": "COMPLETE_CELL377_CONTINUATION_PENDING_EXTERNAL_REVIEW",
+      "start": {
+        "at_utc": "2026-09-11T13:09:58.869448+00:00",
+        "authority_sha256": "5a384511b4f0e4545f04c17adb396cdfe5d3df736a7267b6dfd118ddbeed39f0",
+        "checkpoint_sha256": "0ebc9dbc611c212d767d0e5192aaa538419d90e590d6566c15486040ad90efb5",
+        "first_new_step_index": 20,
+        "gate": "DISCOVERY_CELL377_TAIL_CONTINUATION",
+        "max_new_transitions": 108,
+        "old_prefix_reexecution": false,
+        "one_shot_consumed": true,
+        "preserved_prefix_steps": 20,
+        "source_cell_id": "discovery_0377__a32__s51001"
+      },
+      "capture": {
+        "at_utc": "2026-09-11T13:10:17.101971+00:00",
+        "automatic_retry": false,
+        "counters": {
+          "last_returned_step_index": 52,
+          "search_calls_returned": 33,
+          "search_calls_started": 33,
+          "transitions_returned": 33,
+          "transitions_started": 33
+        },
+        "gate": "DISCOVERY_CELL377_TAIL_CONTINUATION",
+        "rc": 0,
+        "start_written": true
+      },
+      "source_result": "sources/data/minesim_discovery_cell377_tail_continuation_v1/RESULT.json",
+      "preserved_steps": 20,
+      "new_steps": 33,
+      "total_steps": 53,
+      "final_recorded_speeds_mps": {
+        "A": 15.0,
+        "B": 0.0
+      },
+      "full_return": 61.73287376681323,
+      "return_join_error": -7.105427357601002e-15,
+      "whole_sample_wall_status": "HOLD_INTERRUPTED_SAMPLE_NOT_CONTIGUOUS_TIMING"
+    },
+    "minesim_confirmation768_parallel_v1": {
+      "status": "COMPLETE_CONFIRMATION768_COLLECTION_PENDING_REVIEW",
+      "start": {
+        "at_utc": "2026-09-11T15:05:15.581146+00:00",
+        "authority_sha256": "b7fe8ce5aecfc27c34d32f43935798d759a6612a005a9742f4c69f0e90674a1e",
+        "gate": "CONFIRMATION768_PARALLEL_EXECUTION",
+        "labels_certified": false,
+        "new_confirmation_cells_authorized": 768,
+        "one_shot_consumed": true
+      },
+      "capture": {
+        "at_utc": "2026-09-11T15:32:16.700020+00:00",
+        "commit_file_count": 768,
+        "rc_before_packaging": 0,
+        "status": "COMPLETE_CONFIRMATION768_COLLECTION_PENDING_REVIEW"
+      },
+      "source_result": "sources/data/minesim_confirmation768_parallel_v1/RESULT.json",
+      "outcomes": {
+        "BOTH_CONFIGURED_ROUTE_ENDS": 425,
+        "EXECUTED_HARD_SAFETY_TERMINAL": 193,
+        "EVALUATION_CAP_NOT_TASK_TERMINAL": 150
+      },
+      "worker_assignments": [
+        192,
+        192,
+        192,
+        192
+      ],
+      "new_searches": 55612,
+      "new_transitions": 56380,
+      "by_scene": {
+        "C04": {
+          "BOTH_CONFIGURED_ROUTE_ENDS": 252,
+          "EXECUTED_HARD_SAFETY_TERMINAL": 4
+        },
+        "C06": {
+          "EXECUTED_HARD_SAFETY_TERMINAL": 124,
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": 4,
+          "BOTH_CONFIGURED_ROUTE_ENDS": 128
+        },
+        "C11": {
+          "EVALUATION_CAP_NOT_TASK_TERMINAL": 146,
+          "BOTH_CONFIGURED_ROUTE_ENDS": 45,
+          "EXECUTED_HARD_SAFETY_TERMINAL": 65
+        }
+      }
+    }
+  },
+  "discovery_segments": {
+    "ORIGINAL_SERIAL_PRESERVED": 377,
+    "RECOVERED_PREFIX20_PLUS_TAIL33": 1,
+    "PARALLEL_REMAINING390": 390
+  },
+  "discovery_outcomes": {
+    "BOTH_CONFIGURED_ROUTE_ENDS": 420,
+    "EXECUTED_HARD_SAFETY_TERMINAL": 201,
+    "EVALUATION_CAP_NOT_TASK_TERMINAL": 147
+  },
+  "confirmation_outcomes": {
+    "BOTH_CONFIGURED_ROUTE_ENDS": 425,
+    "EXECUTED_HARD_SAFETY_TERMINAL": 193,
+    "EVALUATION_CAP_NOT_TASK_TERMINAL": 150
+  },
+  "combined_outcomes": {
+    "BOTH_CONFIGURED_ROUTE_ENDS": 845,
+    "EXECUTED_HARD_SAFETY_TERMINAL": 394,
+    "EVALUATION_CAP_NOT_TASK_TERMINAL": 297
+  },
+  "discovery_candidates": 273,
+  "candidate_by_scene": {
+    "C04": 141,
+    "C06": 119,
+    "C11": 13
+  },
+  "discovery_pair_reasons": {
+    "DISCOVERY_CANDIDATE_NOT_CONFIRMED": 273,
+    "UNKNOWN_OVERLAPPING_RETURNS": 718,
+    "UNKNOWN_TAIL_CENSORED": 449
+  },
+  "uncaptured_confirmation_raw_cells": 768,
+  "limits": [
+    "All 1536 raw trajectory files were NOT exported or independently recomputed.",
+    "Most COMMIT hashes were compared as metadata, not from raw COMMIT bytes.",
+    "No geometry/safety certification, final confirmation-label extraction, training, experiment, or retry authorization."
+  ]
+}

@@ -1,0 +1,282 @@
+{
+  "source_zip_sha256": "969afc4a26b196290d8a5d6b10cd534b42890be24afcd1592c30ed7d179013a9",
+  "index_sha256": "02d60013e9f685102766fabd500fdabc7330e4de480d87a65dd204083d97050c",
+  "indexed_records": 744,
+  "indexed_source_step_files_checked": 744,
+  "exact_serialized_states": 728,
+  "all16_valid_records": 500,
+  "source_runs": 8,
+  "source_groups": [
+    {
+      "source_run": "policy_00",
+      "full_behavior_records": 77,
+      "all16_actions_valid_records": 66,
+      "A_route_s_range": [
+        127.77075274944583,
+        444.1457527494458
+      ],
+      "B_route_s_range": [
+        166.54748899308078,
+        574.8599889930808
+      ]
+    },
+    {
+      "source_run": "policy_01",
+      "full_behavior_records": 111,
+      "all16_actions_valid_records": 62,
+      "A_route_s_range": [
+        127.77075274944583,
+        448.0832527494458
+      ],
+      "B_route_s_range": [
+        166.54748899308078,
+        325.1308223264141
+      ]
+    },
+    {
+      "source_run": "policy_02",
+      "full_behavior_records": 113,
+      "all16_actions_valid_records": 64,
+      "A_route_s_range": [
+        127.77075274944583,
+        452.6457527494458
+      ],
+      "B_route_s_range": [
+        166.54748899308078,
+        305.8287389930807
+      ]
+    },
+    {
+      "source_run": "policy_03",
+      "full_behavior_records": 106,
+      "all16_actions_valid_records": 62,
+      "A_route_s_range": [
+        127.77075274944583,
+        444.3332527494458
+      ],
+      "B_route_s_range": [
+        166.54748899308078,
+        332.7558223264141
+      ]
+    },
+    {
+      "source_run": "policy_04",
+      "full_behavior_records": 73,
+      "all16_actions_valid_records": 62,
+      "A_route_s_range": [
+        147.7707527494459,
+        445.52075274944593
+      ],
+      "B_route_s_range": [
+        186.54748625599981,
+        573.1724862559998
+      ]
+    },
+    {
+      "source_run": "policy_05",
+      "full_behavior_records": 85,
+      "all16_actions_valid_records": 67,
+      "A_route_s_range": [
+        147.7707527494459,
+        398.59366941611256
+      ],
+      "B_route_s_range": [
+        186.54748625599981,
+        577.7037362559998
+      ]
+    },
+    {
+      "source_run": "policy_06",
+      "full_behavior_records": 97,
+      "all16_actions_valid_records": 51,
+      "A_route_s_range": [
+        147.7707527494459,
+        444.55200274944593
+      ],
+      "B_route_s_range": [
+        186.54748625599981,
+        331.60998625599984
+      ]
+    },
+    {
+      "source_run": "policy_07",
+      "full_behavior_records": 82,
+      "all16_actions_valid_records": 66,
+      "A_route_s_range": [
+        147.7707527494459,
+        406.89575274944593
+      ],
+      "B_route_s_range": [
+        186.54748625599981,
+        573.7037362559998
+      ]
+    }
+  ],
+  "physical4_distance_definition": "Euclidean on frozen-scale [s_A/goal_A,s_B/goal_B,v_A/15,v_B/15], descriptive post-outcome diagnostic only; not a training-feature change or a causal metric.",
+  "nearest_input_examples_not_selected_training_set": [
+    {
+      "root_id": "contrast_00",
+      "reference_source": "policy_00",
+      "input_nearest_other_source_record": "policy_04__step0010",
+      "candidate_source_run": "policy_04",
+      "candidate_state_sha256": "75a74bc5e4ec633acf7aac456090b37ab9e9b450e399a618d7bec391fbb71357",
+      "normalized_physical4_distance": 0.03315349330512338,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "contrast_01",
+      "reference_source": "policy_01",
+      "input_nearest_other_source_record": "policy_02__step0021",
+      "candidate_source_run": "policy_02",
+      "candidate_state_sha256": "3ea57c2f3b71ab66641ce97b49cc80c10e3dee43acc8207c96789cd14ffb8e7a",
+      "normalized_physical4_distance": 0.03360681016516146,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "contrast_02",
+      "reference_source": "policy_02",
+      "input_nearest_other_source_record": "policy_03__step0032",
+      "candidate_source_run": "policy_03",
+      "candidate_state_sha256": "2f51ec8661a782f3372ec8eddb9768e68967ab17e5b878b854ed9e261a3eb288",
+      "normalized_physical4_distance": 0.033350889952239844,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "contrast_03",
+      "reference_source": "policy_03",
+      "input_nearest_other_source_record": "policy_01__step0018",
+      "candidate_source_run": "policy_01",
+      "candidate_state_sha256": "dc852970188ffa8c2f1f19706578d057d61958b8d7205054e058dd36bdf3cd4e",
+      "normalized_physical4_distance": 0.052815220064700436,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "contrast_04",
+      "reference_source": "policy_04",
+      "input_nearest_other_source_record": "policy_05__step0012",
+      "candidate_source_run": "policy_05",
+      "candidate_state_sha256": "a4eeba2f57bc1604f7ec1d496a85e9e6e9047bb3bd3ebafbdddeaed80bf4776b",
+      "normalized_physical4_distance": 0.018435154975165267,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "contrast_05",
+      "reference_source": "policy_05",
+      "input_nearest_other_source_record": "policy_07__step0016",
+      "candidate_source_run": "policy_07",
+      "candidate_state_sha256": "20704792307395ebd127426dc692cc3ae7ea40815a5c148c42d8d42592c264de",
+      "normalized_physical4_distance": 0.10557505925395427,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "contrast_06",
+      "reference_source": "policy_06",
+      "input_nearest_other_source_record": "policy_03__step0018",
+      "candidate_source_run": "policy_03",
+      "candidate_state_sha256": "7242d9979f42595f78b7a96c28a7bdcde399d99c83968cd4caea637c0bfae128",
+      "normalized_physical4_distance": 0.03775448717653519,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "contrast_07",
+      "reference_source": "policy_07",
+      "input_nearest_other_source_record": "policy_05__step0014",
+      "candidate_source_run": "policy_05",
+      "candidate_state_sha256": "bc9c4ef72325a751122c09f4001df78473bf728715458d38cb545a36bc134a6c",
+      "normalized_physical4_distance": 0.03800135722334557,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "newroot_00",
+      "reference_source": "policy_02",
+      "input_nearest_other_source_record": "policy_06__step0012",
+      "candidate_source_run": "policy_06",
+      "candidate_state_sha256": "d962e7ee7601820f7f2a198eab520fd2609806a798a863223acacb52e63a451c",
+      "normalized_physical4_distance": 0.020389957153800427,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "newroot_01",
+      "reference_source": "policy_02",
+      "input_nearest_other_source_record": "policy_01__step0042",
+      "candidate_source_run": "policy_01",
+      "candidate_state_sha256": "94e290ff723c711051f1bcc2c0d10f4d8f2036871dba9ddcf4cec61dae015860",
+      "normalized_physical4_distance": 0.04115262988574604,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "newroot_02",
+      "reference_source": "policy_03",
+      "input_nearest_other_source_record": "policy_01__step0017",
+      "candidate_source_run": "policy_01",
+      "candidate_state_sha256": "0a83985bc96e3e912ca9a3ce56fcab471dd2a201561e8d73d1de2b2a3052ce17",
+      "normalized_physical4_distance": 0.01707011994486638,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "newroot_03",
+      "reference_source": "policy_03",
+      "input_nearest_other_source_record": "policy_01__step0042",
+      "candidate_source_run": "policy_01",
+      "candidate_state_sha256": "94e290ff723c711051f1bcc2c0d10f4d8f2036871dba9ddcf4cec61dae015860",
+      "normalized_physical4_distance": 0.039287253051090855,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "newroot_04",
+      "reference_source": "policy_06",
+      "input_nearest_other_source_record": "policy_03__step0034",
+      "candidate_source_run": "policy_03",
+      "candidate_state_sha256": "248687490b9734d2b978d7ab26ce0fc528a84e8417f610e9a478de38e20c2264",
+      "normalized_physical4_distance": 0.08484354531336953,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "newroot_05",
+      "reference_source": "policy_06",
+      "input_nearest_other_source_record": "policy_03__step0046",
+      "candidate_source_run": "policy_03",
+      "candidate_state_sha256": "940998be54d55e6568e1e95c6127af1687c8de6c495dee25579608194235b9a0",
+      "normalized_physical4_distance": 0.024783790087434716,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "newroot_06",
+      "reference_source": "policy_07",
+      "input_nearest_other_source_record": "policy_04__step0017",
+      "candidate_source_run": "policy_04",
+      "candidate_state_sha256": "b043c7ae1f262cf91af67357c9600337789f81f9a6afc4024decfb88886a2c0c",
+      "normalized_physical4_distance": 0.046945483562391366,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    },
+    {
+      "root_id": "newroot_07",
+      "reference_source": "policy_07",
+      "input_nearest_other_source_record": "policy_05__step0044",
+      "candidate_source_run": "policy_05",
+      "candidate_state_sha256": "55cb7e686e95346c5962e31964d3e5d3786008a2602ca7490acf39627427db8a",
+      "normalized_physical4_distance": 0.07185690306890082,
+      "teacher_return_available_from_behavior_index": false,
+      "new_label_generated": false
+    }
+  ],
+  "scope": "Existing same-route development behavior. Not an unseen evaluation pool; no teacher labels inferred from behavior actions.",
+  "new_simulation": 0,
+  "new_training": 0,
+  "selection_or_collection_authorized": false
+}

@@ -1,0 +1,56 @@
+{
+  "status": "PASS_LOCAL_ARTIFACT_AND_SAVED_MODEL_REVIEW",
+  "upload_name": "29eb52f0-03f5-4951-894b-6f08b39acf68.zip",
+  "upload_sha256": "ba96d17d2387fd45294be78bfe28572f34659d332f92b3947f2c6ad65b5c057e",
+  "zip_crc": "PASS",
+  "manifest_items": 2908,
+  "manifest_size_sha_pass": 2908,
+  "source_binding_files": 12,
+  "source_bindings_pass": 12,
+  "original_rc": 0,
+  "original_status": "COMPLETE_DUAL32_REGULARIZED_DEVELOPMENT_NOT_ACCELERATION_PROOF",
+  "counts": {
+    "('outer', 'mlp26_8_1_l2')": 8,
+    "('inner', 'mlp26_8_1_l2')": 168,
+    "('outer', 'ridge26')": 8,
+    "('inner', 'ridge26')": 168
+  },
+  "saved_models_replayed": 352,
+  "saved_validation_predictions_replayed": 1408,
+  "outer_selection_choices_recomputed": 16,
+  "max_abs_scaled_prediction_error": 0.0,
+  "max_abs_loss_or_train_mae_error": 0.0,
+  "max_ridge_stationarity_gradient_norm": 2.2462987326765123e-16,
+  "observation_rows_checked_from_saved_returns": 512,
+  "max_abs_return_mean_gap_error": 0,
+  "original_outcomes": {
+    "BOTH_PARKED_AT_OWN_DESTINATIONS": 467,
+    "EVALUATION_CAP_NOT_TASK_TERMINAL": 45
+  },
+  "outer_group_splits_match_frozen_parent": true,
+  "inner_splits_exclude_outer_groups": true,
+  "chosen_lambdas_match_inner_scores": true,
+  "local_new_fits": 0,
+  "local_new_samples": 0,
+  "local_mcts_calls": 0,
+  "remote_connection": false,
+  "full_trajectory_replay": false,
+  "inputs_and_previous_results_modified": false,
+  "git_before_after_same": true,
+  "git_status_saved": {
+    "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "head": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+    "status": "?? ^C\n"
+  },
+  "timing_as_reported_by_cloud": {
+    "excludes_preflight_package_upload": true,
+    "fit_selection_readback_seconds": 402.2981760430848,
+    "numeric_threads": 1,
+    "worker_processes": 1
+  },
+  "numeric_comparison_tolerance": {
+    "rtol": 1e-10,
+    "atol": 1e-10
+  },
+  "note": "SHA and CRC are byte checks. Prediction/objective replay does not retrain or prove correctness of physical modeling. Full old collection audit not repeated. Selection/fold identities and saved input roles independently checked."
+}

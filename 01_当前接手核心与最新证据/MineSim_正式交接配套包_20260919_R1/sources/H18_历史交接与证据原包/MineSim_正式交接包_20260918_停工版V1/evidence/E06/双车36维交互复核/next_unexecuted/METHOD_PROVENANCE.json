@@ -1,0 +1,9 @@
+{
+  "base_io_helper": "byte-identical parent_runner.py included by completed interaction release",
+  "base_io_helper_sha256": "6fcf7e669fb4a9b716f40d34f9070fdd19f37bce34a65c20e0cac7129e3573d5",
+  "process_check_origin": "ancestor-aware functions from completed interaction runner.py; only new scaledridge token added",
+  "method_change": "Train-only population standardization before same lambda1 ridge solve; eight unchanged held-source folds.",
+  "previous_ridge_lambda": "all8 previously selected1.0; retained without new tuning",
+  "no_real_fits_done_in_preparation": true,
+  "synthetic_tests_are_not_scientific_data": true
+}

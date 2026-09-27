@@ -1,0 +1,205 @@
+{
+  "review_scope": "Uploaded archive and its saved sources, saved initial/final model forward and metrics only; no training, no MCTS, no cloud access",
+  "source_zip_sha256": "3229ac1ff117384cd28b14b74c4501e0c4daedc14d0317c27d00327c71fe7f97",
+  "manifest_verified": 265,
+  "sources_verified": 157,
+  "source_records_verified": 256,
+  "saved_models_final": 16,
+  "saved_models_initial": 16,
+  "new_training_runs": 0,
+  "new_samples": 0,
+  "mcts_calls": 0,
+  "held_forward_max_abs_difference": 4.440892098500626e-14,
+  "dataset_outcomes": {
+    "BOTH_PARKED_AT_OWN_DESTINATIONS": 214,
+    "EVALUATION_CAP_NOT_TASK_TERMINAL": 42
+  },
+  "source_record_steps_historical": 20792,
+  "fit_checks": [
+    {
+      "fit": "fold00_linear26_to_1",
+      "train_roots": 15,
+      "held_roots": 1,
+      "initial_loss_verified": 0.04988733382874748,
+      "final_loss_verified": 0.012160361719870559,
+      "final_train_mae": 10.402297809748763,
+      "held_mae": 78.13784956053684
+    },
+    {
+      "fit": "fold00_mlp26_64_64_16_pair03_30",
+      "train_roots": 15,
+      "held_roots": 1,
+      "initial_loss_verified": 0.39211720242855913,
+      "final_loss_verified": 5.099480154634292e-07,
+      "final_train_mae": 0.0681750535392926,
+      "held_mae": 10.420782270179174
+    },
+    {
+      "fit": "fold01_linear26_to_1",
+      "train_roots": 15,
+      "held_roots": 1,
+      "initial_loss_verified": 0.04594610679840524,
+      "final_loss_verified": 0.02324431044122875,
+      "final_train_mae": 15.297769526645052,
+      "held_mae": 20.46609868583117
+    },
+    {
+      "fit": "fold01_mlp26_64_64_16_pair03_30",
+      "train_roots": 15,
+      "held_roots": 1,
+      "initial_loss_verified": 0.29929877294644763,
+      "final_loss_verified": 8.843688433560684e-07,
+      "final_train_mae": 0.11816762706042402,
+      "held_mae": 19.226161760732133
+    },
+    {
+      "fit": "fold02_linear26_to_1",
+      "train_roots": 13,
+      "held_roots": 3,
+      "initial_loss_verified": 0.06581460480954747,
+      "final_loss_verified": 0.024118025900032383,
+      "final_train_mae": 14.781566268307548,
+      "held_mae": 57.59666958936584
+    },
+    {
+      "fit": "fold02_mlp26_64_64_16_pair03_30",
+      "train_roots": 13,
+      "held_roots": 3,
+      "initial_loss_verified": 0.4286697725694004,
+      "final_loss_verified": 5.946151230145562e-05,
+      "final_train_mae": 0.6401975954747309,
+      "held_mae": 5.981609164055592
+    },
+    {
+      "fit": "fold03_linear26_to_1",
+      "train_roots": 13,
+      "held_roots": 3,
+      "initial_loss_verified": 0.05858864002368791,
+      "final_loss_verified": 0.004201234858378837,
+      "final_train_mae": 7.156177394410967,
+      "held_mae": 50.80451558869453
+    },
+    {
+      "fit": "fold03_mlp26_64_64_16_pair03_30",
+      "train_roots": 13,
+      "held_roots": 3,
+      "initial_loss_verified": 0.26595603502962206,
+      "final_loss_verified": 4.969002608472254e-07,
+      "final_train_mae": 0.0912920588209057,
+      "held_mae": 46.90950756569523
+    },
+    {
+      "fit": "fold04_linear26_to_1",
+      "train_roots": 15,
+      "held_roots": 1,
+      "initial_loss_verified": 0.05799704486916793,
+      "final_loss_verified": 0.02210560338104385,
+      "final_train_mae": 14.787573369986056,
+      "held_mae": 59.860131062713414
+    },
+    {
+      "fit": "fold04_mlp26_64_64_16_pair03_30",
+      "train_roots": 15,
+      "held_roots": 1,
+      "initial_loss_verified": 0.40600910166815074,
+      "final_loss_verified": 4.491173925595292e-08,
+      "final_train_mae": 0.024640896620268152,
+      "held_mae": 99.39899810379492
+    },
+    {
+      "fit": "fold05_linear26_to_1",
+      "train_roots": 15,
+      "held_roots": 1,
+      "initial_loss_verified": 0.05430879750904858,
+      "final_loss_verified": 0.023164942576048984,
+      "final_train_mae": 15.873526400898868,
+      "held_mae": 128.71225944608605
+    },
+    {
+      "fit": "fold05_mlp26_64_64_16_pair03_30",
+      "train_roots": 15,
+      "held_roots": 1,
+      "initial_loss_verified": 0.4033594072810779,
+      "final_loss_verified": 0.00015206569995409696,
+      "final_train_mae": 1.0725610132111478,
+      "held_mae": 7.085692399272105
+    },
+    {
+      "fit": "fold06_linear26_to_1",
+      "train_roots": 13,
+      "held_roots": 3,
+      "initial_loss_verified": 0.06817692676363661,
+      "final_loss_verified": 0.024624903489379638,
+      "final_train_mae": 15.539021318303735,
+      "held_mae": 18.7842357972807
+    },
+    {
+      "fit": "fold06_mlp26_64_64_16_pair03_30",
+      "train_roots": 13,
+      "held_roots": 3,
+      "initial_loss_verified": 0.44682675457597376,
+      "final_loss_verified": 5.56971311627245e-08,
+      "final_train_mae": 0.013918623880513655,
+      "held_mae": 12.833129907895254
+    },
+    {
+      "fit": "fold07_linear26_to_1",
+      "train_roots": 13,
+      "held_roots": 3,
+      "initial_loss_verified": 0.07055666412753471,
+      "final_loss_verified": 0.015704088893380486,
+      "final_train_mae": 10.505949172122486,
+      "held_mae": 105.8245261378586
+    },
+    {
+      "fit": "fold07_mlp26_64_64_16_pair03_30",
+      "train_roots": 13,
+      "held_roots": 3,
+      "initial_loss_verified": 0.41607352913698326,
+      "final_loss_verified": 0.00014652317762160833,
+      "final_train_mae": 0.9997974612395725,
+      "held_mae": 127.69738757619855
+    }
+  ],
+  "recomputed_metrics": {
+    "linear26_to_1": {
+      "mean_gap_mae": 61.63788625592291,
+      "mean_gap_rmse": 78.55349689053148,
+      "run_macro_mae": 65.02328573354589,
+      "constant_mae": 27.421922197803028,
+      "constant_rmse": 36.629279244660054,
+      "constant_run_macro_mae": 38.07857332381015,
+      "known_order_correct": 2,
+      "known_denominator": 6,
+      "unknown_preserved": 10,
+      "beats_constant_by_root_mae": 2,
+      "beats_constant_by_group_mae": 1
+    },
+    "mlp26_64_64_16_pair03_30": {
+      "mean_gap_mae": 44.77478357346952,
+      "mean_gap_rmse": 73.44757905966804,
+      "run_macro_mae": 41.19415859347787,
+      "constant_mae": 27.421922197803028,
+      "constant_rmse": 36.629279244660054,
+      "constant_run_macro_mae": 38.07857332381015,
+      "known_order_correct": 3,
+      "known_denominator": 6,
+      "unknown_preserved": 10,
+      "beats_constant_by_root_mae": 8,
+      "beats_constant_by_group_mae": 4
+    }
+  },
+  "execution_status": "COMPLETE_WINDOW16_RETURN_GAP_DEVELOPMENT_NOT_GENERALIZATION",
+  "scientific_conclusion": "Both fitted models worse than training-only constant baseline on preregistered primary held-state mean-gap MAE; development negative, not new blind generalization claim",
+  "git_snapshot": {
+    "diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "head": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+    "status": "?? ^C\n"
+  },
+  "next_gate": "GROUPED_INPUT_COVERAGE_SELECTION_PROTOCOL_DESIGN_ONLY",
+  "successful_review_pass_forward_batches": 32,
+  "local_review_attempts": 2,
+  "total_local_saved_parameter_forward_batches": 64,
+  "local_review_retry_reason": "First local review reached JSON saving but failed on NumPy int64 serialization; fixed only local report serialization and reran saved-artifact verification. Neither attempt trained any model.",
+  "error_and_coverage_review": "Completed as post-result descriptive analysis in the local conversation container; no cloud work."
+}

@@ -1,0 +1,17 @@
+test_bad_input_sha (__main__.Lifecycle.test_bad_input_sha) ... ok
+test_bad_release_sha (__main__.Lifecycle.test_bad_release_sha) ... ok
+test_complete_and_bundle (__main__.Lifecycle.test_complete_and_bundle) ... ok
+test_known_parent_zip_only (__main__.Lifecycle.test_known_parent_zip_only) ... ok
+test_missing_input_packaged_before_start (__main__.Lifecycle.test_missing_input_packaged_before_start) ... ok
+test_no_gpu_or_training_side_effects_in_scope (__main__.Lifecycle.test_no_gpu_or_training_side_effects_in_scope) ... ok
+test_other_process_blocks (__main__.Lifecycle.test_other_process_blocks) ... ok
+test_process_prefix (__main__.Lifecycle.test_process_prefix) ... ok
+test_resource_prestart_hold (__main__.Lifecycle.test_resource_prestart_hold) ... ok
+test_runtime_exception_saved (__main__.Lifecycle.test_runtime_exception_saved) ... ok
+test_second_run_refused (__main__.Lifecycle.test_second_run_refused) ... ok
+test_symlink_input_refused (__main__.Lifecycle.test_symlink_input_refused) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.888s
+
+OK

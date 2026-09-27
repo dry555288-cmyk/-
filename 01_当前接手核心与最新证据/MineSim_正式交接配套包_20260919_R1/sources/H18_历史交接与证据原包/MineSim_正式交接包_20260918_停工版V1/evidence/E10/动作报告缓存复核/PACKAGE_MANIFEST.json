@@ -1,0 +1,482 @@
+{
+  "REPORT.md": {
+    "size": 4457,
+    "sha256": "91ebad565cdb922e3d7ebdeeb0f1e475c82984f3c8be756c6d95ebec18acd16c"
+  },
+  "SOURCE_NOTES.md": {
+    "size": 350,
+    "sha256": "5d6ff19369aa02bfc214c41163fac649ab974d2cf6f34dd7567339223f24d7af"
+  },
+  "analysis/REVIEW.json": {
+    "size": 3920,
+    "sha256": "102707df27454e6627e6596d18b9fdf2edf736aa9d38d8c693a2251bd31b6be6"
+  },
+  "next_proposal/CURRENT_STATE.json": {
+    "size": 1118,
+    "sha256": "29d9f6b82f7ff7251c2f6a30a42b1674303152227d15d86cb2bb2574f184f2bc"
+  },
+  "next_proposal/LAUNCHER_IDENTITY.json": {
+    "size": 378,
+    "sha256": "f4b80f0605443d82b66e944f093ec3680798535bd3a0d8bf356f46608daef28d"
+  },
+  "next_proposal/changes_action_cache.py.diff": {
+    "size": 9663,
+    "sha256": "a32982359f06172a8987f23b198404283a6adbef2841322c7931116a0bf48da8"
+  },
+  "next_proposal/changes_experiment.py.diff": {
+    "size": 2935,
+    "sha256": "f9f67fee9b5aca1bdf007471944e7cfe6faa2e47c8f35f7d38a0feefd3ce9a92"
+  },
+  "next_proposal/changes_gate.py.diff": {
+    "size": 3614,
+    "sha256": "1d37957ac652681c3429851327ee355a9c7fc33ffc6f33439a0e11ed9820c539"
+  },
+  "next_proposal/release/PROTOCOL.json": {
+    "size": 2380,
+    "sha256": "4cfbbc67f447ff41a4d99038103ca4aad9206ef11eeb26b0f7b5a771f7f16bea"
+  },
+  "next_proposal/release/RELEASE_MANIFEST.json": {
+    "size": 633,
+    "sha256": "19e9800a0d59244e87c9a598239bd1885c839345321ff437c5f3713ad4e43f28"
+  },
+  "next_proposal/release/SOURCE_BINDINGS.json": {
+    "size": 12388,
+    "sha256": "2d5c989659c6a01090d53f06f6949a15c84247132a3c4b34c89ce64789ae2769"
+  },
+  "next_proposal/release/action_cache.py": {
+    "size": 5642,
+    "sha256": "69b68b346ad6ae9e275f2b5b3f781e431f3dcb7fcb25b1a573c557519ef38933"
+  },
+  "next_proposal/release/experiment.py": {
+    "size": 9523,
+    "sha256": "a7bf7d2bde675df863a083f763ca6c969e9e60e543fdc6d0314aed41565502df"
+  },
+  "next_proposal/release/gate.py": {
+    "size": 15345,
+    "sha256": "fe27eebfe37caad6be1b8aa96791de165b5c0b55095b270768b693bd005b5a74"
+  },
+  "next_proposal/release_payload.zip": {
+    "size": 16195,
+    "sha256": "a13f23c9607d57f8ce4755f083a8c6861a57321507e537e8ba363d528f4100fd"
+  },
+  "next_proposal/run_dual_reportcache_flat.sh": {
+    "size": 24749,
+    "sha256": "beb9918050b8b155eb3b981e3bbfb16a7ebc05db0b7af04f8ab3816b281f7689"
+  },
+  "next_proposal/tests/GATE_FLOW_RESULT.json": {
+    "size": 1728,
+    "sha256": "63b499ae0137bf8f128c71f879209fd587e176fbab3367e256ec41cca194f0f5"
+  },
+  "next_proposal/tests/LAUNCHER_TESTS.json": {
+    "size": 350,
+    "sha256": "3dcd4dd6dedc8ad8104168cb53672070382033f35d246057325fcc329bb1138b"
+  },
+  "next_proposal/tests/SAVED_REPORT_TEST.json": {
+    "size": 1673,
+    "sha256": "fa81480f87b8aa6e142b91bd62f815cffba3c370a80824f18047f5e4cc4a75b5"
+  },
+  "next_proposal/tests/UNIT_TEST_LOG.txt": {
+    "size": 2543,
+    "sha256": "5f07ccf120c8b884f99a5f30745b47477ba0a0a0e7ec03608176d8f770c1e4e9"
+  },
+  "next_proposal/tests/UNIT_TEST_RESULT.json": {
+    "size": 115,
+    "sha256": "a1a348033040b95092276312f417bb76ae22877e177cda8a3f67f3594fe7ce89"
+  },
+  "next_proposal/tests/check_saved_reports.py": {
+    "size": 4598,
+    "sha256": "497ca88b197a120e795f5096621ea2d4015b63200f0bc52f0382cf8e14b855a0"
+  },
+  "next_proposal/tests/previous_cache_profile.txt": {
+    "size": 3540,
+    "sha256": "221e9f8442cf02f359148d64b5db38301dcd999363dbf65ac462d2f9e5f62fe2"
+  },
+  "next_proposal/tests/test_candidate.py": {
+    "size": 8985,
+    "sha256": "a78b5bfa1a64c3868b56787e832299ef22eb48ec38d7210fc1663a099d19b75e"
+  },
+  "next_proposal/tests/test_gate_flow.py": {
+    "size": 2991,
+    "sha256": "75196d99cb4daa052233257ba8205231c7b1bb276d972206613875af6a58d7bc"
+  },
+  "raw/minesim_dual_reportcache_v1/CAPTURE.json": {
+    "size": 118,
+    "sha256": "3bf80a4009e744300dc2bb11eeba7982091db5083ea8b1ebae590b7ad9235c90"
+  },
+  "raw/minesim_dual_reportcache_v1/ENVIRONMENT.json": {
+    "size": 205,
+    "sha256": "7548d6a3943c8d390ce9717ee8ac4c1e166ed233fdb7cd80575b8e5b40b63462"
+  },
+  "raw/minesim_dual_reportcache_v1/EVENTS.jsonl": {
+    "size": 10176,
+    "sha256": "ef63788c31ec51356ed7b56fbb3c26609857bb9c66d4ebad032657187a1caffc"
+  },
+  "raw/minesim_dual_reportcache_v1/GIT_AFTER.json": {
+    "size": 249,
+    "sha256": "77f448358ba32ef2364f7e4886c686642472f1d46800762bf21a9e0368ae0016"
+  },
+  "raw/minesim_dual_reportcache_v1/GIT_BEFORE.json": {
+    "size": 249,
+    "sha256": "77f448358ba32ef2364f7e4886c686642472f1d46800762bf21a9e0368ae0016"
+  },
+  "raw/minesim_dual_reportcache_v1/MANIFEST.json": {
+    "size": 14248,
+    "sha256": "4b68015d730c5caeae46fb678b496d3a443dcd1729ab6393a790227c2e64ae28"
+  },
+  "raw/minesim_dual_reportcache_v1/PROCESSES_AFTER.json": {
+    "size": 1130,
+    "sha256": "e3fcffb99fab5e9079bbe1e9bb3148119e5f1b745954b5cb19d8539554c28e20"
+  },
+  "raw/minesim_dual_reportcache_v1/PROCESSES_BEFORE.json": {
+    "size": 1130,
+    "sha256": "e3fcffb99fab5e9079bbe1e9bb3148119e5f1b745954b5cb19d8539554c28e20"
+  },
+  "raw/minesim_dual_reportcache_v1/RC.txt": {
+    "size": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "raw/minesim_dual_reportcache_v1/REQUEST.json": {
+    "size": 229,
+    "sha256": "1beda9520c27915c3895eba0d529233ded82c1fdeda8fa00972821030235997b"
+  },
+  "raw/minesim_dual_reportcache_v1/RESOURCES.json": {
+    "size": 168,
+    "sha256": "3757b0e10d99ed6f9941ee8b5b6c08e039ad1543577c4a421cc2be0cbd378c6c"
+  },
+  "raw/minesim_dual_reportcache_v1/RESULT.json": {
+    "size": 3047,
+    "sha256": "73d7d43418d112dc4ad304386b00b6381a001b191d881cf3155a59d5dc304e83"
+  },
+  "raw/minesim_dual_reportcache_v1/SOURCE_PROVENANCE.json": {
+    "size": 12927,
+    "sha256": "0f081384c0c38c4997f4596f146d71e0e246f090c7bdaae29690b5dccae4e9fc"
+  },
+  "raw/minesim_dual_reportcache_v1/TECHNICAL_START.json": {
+    "size": 128,
+    "sha256": "27e1197f7e5c438d7aa7da074203ffda9b8fc2a2548f64207b116992067b0710"
+  },
+  "raw/minesim_dual_reportcache_v1/native/IMPORTS.json": {
+    "size": 495,
+    "sha256": "76416fa5f375d5013bd2bcf6b06a7a2b55b0214a12372df61e36ec1829cf2213"
+  },
+  "raw/minesim_dual_reportcache_v1/native/RESULT.json": {
+    "size": 2384,
+    "sha256": "2e1baeeb14d2c9144da4f9376896d27a30729f3acd562031bf08ed723d9fd298"
+  },
+  "raw/minesim_dual_reportcache_v1/native/coverage_policy_01__step0014/baseline_0.json": {
+    "size": 25266,
+    "sha256": "c286a814b32384ed3ad25006385c15698fef1133eea8305a7e9b54fe28ab4a63"
+  },
+  "raw/minesim_dual_reportcache_v1/native/coverage_policy_01__step0014/baseline_1.json": {
+    "size": 25294,
+    "sha256": "955b87e9f630e0a8b9d941e4f4d6919ac31280db6d4f984de5699f9e73c5e3b9"
+  },
+  "raw/minesim_dual_reportcache_v1/native/coverage_policy_01__step0014/cached_0.json": {
+    "size": 25284,
+    "sha256": "ffe26374fcd91025eee83f1fefef3a04acfd968ab530d42940e0d95f70eb767f"
+  },
+  "raw/minesim_dual_reportcache_v1/native/coverage_policy_01__step0014/cached_1.json": {
+    "size": 25321,
+    "sha256": "f46a7f00f238ef5fd6da475929b07a09b90a2ccf996e84e601787aba00750db8"
+  },
+  "raw/minesim_dual_reportcache_v1/native/coverage_policy_05__step0011/baseline_0.json": {
+    "size": 25268,
+    "sha256": "1640fe428cf2c24101ad77a2338018e2e7245033d4a65abbf2d80bcbcf26e45f"
+  },
+  "raw/minesim_dual_reportcache_v1/native/coverage_policy_05__step0011/baseline_1.json": {
+    "size": 25266,
+    "sha256": "3505224f14713d300d3fe3d10affdfef0349bfcdc2519438cde1a3bb919027c3"
+  },
+  "raw/minesim_dual_reportcache_v1/native/coverage_policy_05__step0011/cached_0.json": {
+    "size": 25277,
+    "sha256": "8e66340314ea5460fa2eaa6afc8341cceee6c8976510bce112fd3279c1ec7248"
+  },
+  "raw/minesim_dual_reportcache_v1/native/coverage_policy_05__step0011/cached_1.json": {
+    "size": 25296,
+    "sha256": "482d4b144a64e4245c15bfbccd3895127ff5fac32950d3e210092054e6db6b7f"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/MANIFEST.json": {
+    "size": 13043,
+    "sha256": "cca2109b480c678bad946cd384f1b32b72c72e2c3e47dd2f84537767668f7f51"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/RC.txt": {
+    "size": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/RESULT.json": {
+    "size": 1860,
+    "sha256": "612b884bf0fe46cbde3e972e6e170b02c7311e5395e46b2e9353c8655f7308f0"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/native/coverage_policy_01__step0014/baseline_0.json": {
+    "size": 24521,
+    "sha256": "b922cacff44044f05f337d26422da066cd2fbe3ff8bc3f5ef53e336ab5253aa1"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/native/coverage_policy_01__step0014/baseline_1.json": {
+    "size": 24524,
+    "sha256": "8408cd09229cdf333cff4c64e04ce283d7dfe9bac331c32e1de483ea0a755fc2"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/native/coverage_policy_05__step0011/baseline_0.json": {
+    "size": 24524,
+    "sha256": "927900ea62e4cdf47f02973600072ea66d7a541772da8f59501de43eb5fbec5f"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/native/coverage_policy_05__step0011/baseline_1.json": {
+    "size": 24494,
+    "sha256": "23090232726e144ecb3e26427fc44cc82b1e7e9a081e09569e8051cfcf5b2af4"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/MANIFEST.json": {
+    "size": 74680,
+    "sha256": "6a14062a4bdc17d63f793c025d1f3e53e49c9ca67cd54333360118ea787a6fa3"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/RC.txt": {
+    "size": 2,
+    "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/RESULT.json": {
+    "size": 1671,
+    "sha256": "7d142916253f98be60f7f433d568a84aabd1491704ede8b713376094f9f0ab71"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/EXPECTED_IMPORT.json": {
+    "size": 461,
+    "sha256": "16a2e5be0929960c99dbb89e594845ae61052413d33ad9e0cfe10e5f56f302f9"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/__init__.py": {
+    "size": 85,
+    "sha256": "7d35678f99c3e6c37e62b6bb9d91cc6f7be616d2c1a5a9d0fc164137eb8172cd"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/action_space.py": {
+    "size": 649,
+    "sha256": "03ccff1923f0ed19de4765d2329489d505cfc68bfbeb0335e575cf1519953633"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_adapter_v1.py": {
+    "size": 16614,
+    "sha256": "04710705edeea28bf38560fc4e3ce8ee319fc0b6679dbf00bd4c61d897cd4961"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/dual_stop_motion_v1.py": {
+    "size": 13473,
+    "sha256": "e9d024a6f56b6279de41b6f0889a188a201eeef07acca425e2ea69c4ef9c0626"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/fleet_collision.py": {
+    "size": 4500,
+    "sha256": "41e1707c626c1f9e80ad28a46484fd984ebf5677d42c3c3cd9709688a11ef076"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/fleet_node.py": {
+    "size": 1460,
+    "sha256": "fe61be3c0732a65e4bac250b0d0ff647240a0a9cc9778f98009378ec6cc0184c"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/fleet_reward.py": {
+    "size": 3700,
+    "sha256": "bd2cefa0e6eac0980d009882aa5a4a0aa7f0b6701b6534ccb3af18634ad6213c"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/fleet_search.py": {
+    "size": 7431,
+    "sha256": "e96c82d60b75c6d2b3311b9fd9d569cab1404c5c2ba4c729cb25c8e605d6ec94"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/fleet_state.py": {
+    "size": 5748,
+    "sha256": "1b7efe18e2a77e96a9beb94070500ff811dd584754c03d57cb1e2e8a985c9d21"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/fleet_transition.py": {
+    "size": 5013,
+    "sha256": "006cd1ba4f64c5780da0bfb8de0b48555cb385655ed929b7c9d9fd269d4d77a2"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/joint_action.py": {
+    "size": 3513,
+    "sha256": "918f5e6e90631d28cdf6b6f8bdefb38d572c402a983b4cb622340408a968854e"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/reward.py": {
+    "size": 7651,
+    "sha256": "d225ca754b2e5f6a650a35a946819276d50c027eaf66449667973c45f98ed5a5"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/state.py": {
+    "size": 1366,
+    "sha256": "d0b7ab348ac02181eefc2481309945b3c281f8216df3667ff75d2ea03ae4d409"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/candidate_mcts/transition_model.py": {
+    "size": 2689,
+    "sha256": "9971189f68c64978b406482f2dde326cae774948a4fde025aae26dc0af64cb0c"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/definitions/frozen_codec.py": {
+    "size": 5598,
+    "sha256": "e5edc00e93003e834c71258d1561affbebfbde55e5637f0574ed5399247c0b43"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/definitions/route_helpers.py": {
+    "size": 1392,
+    "sha256": "1c10c16b8056ccd25a27cb8a12078d55d20e2457152df7361c3856ca96b0246c"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/__init__.py": {
+    "size": 39,
+    "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/common/__init__.py": {
+    "size": 39,
+    "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/__init__.py": {
+    "size": 39,
+    "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/car_footprint.py": {
+    "size": 3806,
+    "sha256": "0ec6b4fcb53345d64c5773071d991bc90f80b1a1bdd3c4683e5d98ad72e7a4ff"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/oriented_box.py": {
+    "size": 11274,
+    "sha256": "bdd88f0cf476308a498c42455c1e95ffc0e421c07378ef438bae5c3139322115"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/state_representation.py": {
+    "size": 18200,
+    "sha256": "b48042d0d917918969c08e97a6cddd9ab8f433f3b6b4d9adfb5e6b58b25def6e"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/common/actor_state/vehicle_parameters.py": {
+    "size": 11274,
+    "sha256": "e14a32f88bca707de5a6d9661188259be7a9112bbefb1b0d90bd4d22358c4977"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/common/geometry/__init__.py": {
+    "size": 39,
+    "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/common/geometry/transform.py": {
+    "size": 5318,
+    "sha256": "061b037a7a93a426b92ad426962af599123359cfd3c288ce1836e3ae70922c01"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/__init__.py": {
+    "size": 39,
+    "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/__init__.py": {
+    "size": 39,
+    "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/__init__.py": {
+    "size": 39,
+    "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/__init__.py": {
+    "size": 39,
+    "sha256": "a74f29e6ac70da27ee808d1ac04632b120c3139084e10af01afe36aaea99ad04"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/action_space.py": {
+    "size": 649,
+    "sha256": "03ccff1923f0ed19de4765d2329489d505cfc68bfbeb0335e575cf1519953633"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_collision.py": {
+    "size": 4500,
+    "sha256": "41e1707c626c1f9e80ad28a46484fd984ebf5677d42c3c3cd9709688a11ef076"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_node.py": {
+    "size": 1460,
+    "sha256": "fe61be3c0732a65e4bac250b0d0ff647240a0a9cc9778f98009378ec6cc0184c"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_reward.py": {
+    "size": 3700,
+    "sha256": "bd2cefa0e6eac0980d009882aa5a4a0aa7f0b6701b6534ccb3af18634ad6213c"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_search.py": {
+    "size": 7431,
+    "sha256": "e96c82d60b75c6d2b3311b9fd9d569cab1404c5c2ba4c729cb25c8e605d6ec94"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_state.py": {
+    "size": 5748,
+    "sha256": "1b7efe18e2a77e96a9beb94070500ff811dd584754c03d57cb1e2e8a985c9d21"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/fleet_transition.py": {
+    "size": 5013,
+    "sha256": "006cd1ba4f64c5780da0bfb8de0b48555cb385655ed929b7c9d9fd269d4d77a2"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/geometry_transition_model.py": {
+    "size": 17781,
+    "sha256": "8ac6513912c18e761426f86d532ee89774075e0f0e9d2f6bb8aa759e7960976d"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/joint_action.py": {
+    "size": 3513,
+    "sha256": "918f5e6e90631d28cdf6b6f8bdefb38d572c402a983b4cb622340408a968854e"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/reward.py": {
+    "size": 7651,
+    "sha256": "d225ca754b2e5f6a650a35a946819276d50c027eaf66449667973c45f98ed5a5"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/state.py": {
+    "size": 1366,
+    "sha256": "d0b7ab348ac02181eefc2481309945b3c281f8216df3667ff75d2ea03ae4d409"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/engine/devkit/sim_engine/planning/planner/mcts/transition_model.py": {
+    "size": 2689,
+    "sha256": "9971189f68c64978b406482f2dde326cae774948a4fde025aae26dc0af64cb0c"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/feature_projection.py": {
+    "size": 11943,
+    "sha256": "1b48576201960a73cf6a6205a411cd65d65f087d990f37010a217199eb8ea439"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/inputs/SELECTED_NEW16.json": {
+    "size": 43654,
+    "sha256": "bea017514307e503a88d115113402e614d4ce66425f298f7477ce1ab6bfb5667"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/inputs/contexts/C11_100M_SEED0_EP1.json": {
+    "size": 5959,
+    "sha256": "a13f2fc0b735d310d3bcd80fc44d09d366bd3474e284090b247654bc5ba5f911"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/inputs/contexts/C11_80M_SEED0_EP0.json": {
+    "size": 5957,
+    "sha256": "9298558b84b0dd19e13396a0fcc6eeeb033b7a080f4b2a76ca708ae2dba21878"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/inputs/resolved/policy_01.json": {
+    "size": 1142,
+    "sha256": "2874c4ae0a6a4a7c770745cd855a1ed8c56ef7ec51e74bac47e80ff03254e66b"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/inputs/resolved/policy_05.json": {
+    "size": 1141,
+    "sha256": "cd9c5ae2c7ad58efdca44300d40fb3ab4f6b524cafd0aa65542068035e0901c8"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/inputs/steps/coverage_policy_01__step0014.json": {
+    "size": 23993,
+    "sha256": "55da5d1adc5945715618cd7b1d73022ed29c3b57a992a7713e9bcfa96d523aa0"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/inputs/steps/coverage_policy_05__step0011.json": {
+    "size": 23988,
+    "sha256": "960f30227f2530c374b45c0fbf56e33f8cc584a2be2db32e7622a96c30f7f9ca"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/realroute_smoke.py": {
+    "size": 23644,
+    "sha256": "568479648e506d80b0a06d74e2a56b75677c92b6e010d9a98219042b461ea225"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/reference_paths.json": {
+    "size": 2440735,
+    "sha256": "5a8bd32d831b7d75cc90e8db45ac9d0880dcfe10bf5c5f0db93a8a31fb0e306f"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/teacher_cell_core.py": {
+    "size": 16731,
+    "sha256": "58c3e5d217189b5d4f7e108b57f3d3700f3e11216d1eab02d1d25c5e0885cba0"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/parent_sources/runtime/teacher_runner_smoke.py": {
+    "size": 12814,
+    "sha256": "6f90596ec54815b1e548624748fb4a09f47e27f51368ff915fdb739d17883c2a"
+  },
+  "raw/minesim_dual_reportcache_v1/parent_sources/release/PROTOCOL.json": {
+    "size": 1353,
+    "sha256": "b0765c6162c3aba6a3dfc6977fb00144cd04d5ed8f95eb1e71f5a15ba42bcc52"
+  },
+  "raw/minesim_dual_reportcache_v1/release/PROTOCOL.json": {
+    "size": 1539,
+    "sha256": "402a5ab5818e4059e065072408080d1284047f4a2efe5d48e9474ff02db2cec5"
+  },
+  "raw/minesim_dual_reportcache_v1/release/RELEASE_MANIFEST.json": {
+    "size": 633,
+    "sha256": "c62928be58969467e5d794a7a4501c447b9697ee8b8f80f75396b848be0ac0eb"
+  },
+  "raw/minesim_dual_reportcache_v1/release/SOURCE_BINDINGS.json": {
+    "size": 11733,
+    "sha256": "3a0bd4ad60ed1a9ca2a79be394e0831475443bd3a42fbd36bbd174ed8c64f208"
+  },
+  "raw/minesim_dual_reportcache_v1/release/action_cache.py": {
+    "size": 4139,
+    "sha256": "5e6da3af15306c4e38b4124a0ce1acfb0db4568140ce04ad7c2ad610da5be2b7"
+  },
+  "raw/minesim_dual_reportcache_v1/release/experiment.py": {
+    "size": 9400,
+    "sha256": "dea3dfc5c244befe257afeccf9e420edc4eca09e11a1d83c41388e8219a8e923"
+  },
+  "raw/minesim_dual_reportcache_v1/release/gate.py": {
+    "size": 15315,
+    "sha256": "db5ebbc18264ff3a3c03518d03cfe61508e074b87b07d87dcebb779ca8f95621"
+  }
+}

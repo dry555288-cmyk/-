@@ -1,0 +1,28 @@
+{
+  "evidence_cutoff": "Uploaded scaledridge result finished_utc 2026-09-17T14:54:30.569087+00:00",
+  "latest_completed_gate": "DUAL32_FIXED512_TRAIN_ONLY_SCALING_RIDGE_ABLATION_V1",
+  "technical_status": "COMPLETE_RC0_VERIFIED",
+  "scientific_status": "NO_NUMERICAL_ADVANTAGE_FIXED_SCALING_NEGATIVE_PRESERVED",
+  "data_frozen": {
+    "roots": 32,
+    "observations": 512,
+    "source_groups": 8
+  },
+  "latest_fits_completed": 8,
+  "additional_local_diagnostic": "Saved predictions converted to two-action empirical choice loss; post-outcome descriptive only",
+  "next_proposal": "DUAL32_SEARCH_UTILITY_AND_PAIRWISE_TARGET_DESIGN_REVIEW",
+  "new_execution_authorized": false,
+  "deployment_authorized": false,
+  "pruning_authorized": false,
+  "new_collection_authorized": false,
+  "single_vehicle_work_authorized": false,
+  "resource_for_next_design": "LOW",
+  "do_not_repeat": [
+    "collect256",
+    "fit16",
+    "dual32_regularized",
+    "dual32_interaction",
+    "dual32_scaledridge"
+  ],
+  "live_cloud_status": "NOT_QUERIED"
+}

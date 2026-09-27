@@ -1,0 +1,11 @@
+{
+  "evidence": "user preference result ZIP ded00c4b... plus identical 3e1c0d95...",
+  "status": "8_FITS_COMPLETE_NO_EMPIRICAL_CHOICE_ADVANTAGE",
+  "data": "FROZEN_32_STATES_512_RETURNS_8_SOURCE_GROUPS",
+  "mcts_efficiency_tested": false,
+  "deployment_authorized": false,
+  "pruning_authorized": false,
+  "user_request": "RESULT_REVIEW_AND_REFERENCE_PAPER_ANALYSIS_ONLY_NO_NEXT_STEP",
+  "new_training_or_collection": false,
+  "next_execution_script_created": false
+}

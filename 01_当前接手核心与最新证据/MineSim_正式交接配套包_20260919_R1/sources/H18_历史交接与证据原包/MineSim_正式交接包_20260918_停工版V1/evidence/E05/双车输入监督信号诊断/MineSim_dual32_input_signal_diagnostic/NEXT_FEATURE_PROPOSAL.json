@@ -1,0 +1,34 @@
+{
+  "status": "PROPOSAL_NOT_TRAINING_AUTHORIZATION",
+  "name": "DUAL32_FIXED512_EXPLICIT_INTERACTION_FEATURE_COMPARISON",
+  "why_now": "Previous regularized model had no joint MAE/RMSE advantage; root-only analysis found effects concentrated upstream of the saved conflict reference, mixed completion outcomes, and highly redundant feature26 columns.",
+  "data": {
+    "states": 32,
+    "observations": 512,
+    "source_groups": 8,
+    "dataset_sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+    "new_collection": false,
+    "drop_any_rows": false,
+    "change_target": false,
+    "change_old_labels": false
+  },
+  "proposed_features_not_finalized": [
+    "For A and B separately: signed own-route distance to bound conflict reference, not route_sA minus route_sB as a Euclidean distance.",
+    "Whether each vehicle has passed its own reference; this denotes point passage, not full vehicle clearing of an intersection.",
+    "Where both distances and speeds are positive: current-speed distance/velocity estimates and signed A-minus-B difference; explicit not-applicable mask otherwise.",
+    "Existing kinematics and goal braking margin remain; no post-rollout outcome or future clearance can enter features."
+  ],
+  "geometry_semantics": "Stored minimum_internal_clearance_m at these roots is prior-transition sampled minimum; do not silently reinterpret as instantaneous current clearance. Exact current geometry would require a separately documented reconstruction.",
+  "scope": "Post-outcome same-route development. Extra context expresses pre-existing route/position relationships; it does not establish new information or guaranteed sufficiency.",
+  "method_selection": "Feature count/scaling/encoding and model comparison must be fixed before a new run; no fitting under this diagnostic.",
+  "evaluation": "Keep original full32 primary MAE and RMSE, existing same-group baseline, and source splits. Upstream/non-upstream errors may be reported separately with post-hoc-development status; do not exclude CAP or small-gap states.",
+  "limits": [
+    "No evidence currently authorizes action exclusion, online deployment or single-vehicle experiments.",
+    "A constant-speed reference-arrival estimate has a retained counterexample and is not a hard priority rule.",
+    "Do not add data automatically if the feature comparison has no advantage."
+  ],
+  "execution_authorized": false,
+  "new_samples": 0,
+  "model_training_runs": 0,
+  "MCTS_calls": 0
+}

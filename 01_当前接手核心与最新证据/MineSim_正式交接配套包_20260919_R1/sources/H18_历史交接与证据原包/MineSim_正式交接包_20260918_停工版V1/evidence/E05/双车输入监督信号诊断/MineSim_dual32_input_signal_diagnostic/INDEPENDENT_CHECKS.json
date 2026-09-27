@@ -1,0 +1,13 @@
+{
+  "scope": "Separate arithmetic consistency checks on saved arrays; no model or simulation execution.",
+  "checks": {
+    "32_rows_512_records": true,
+    "all32_abs_gap_le2": true,
+    "new16_abs_gap_le2": true,
+    "all_CAP_roots_in_both_upstream_subset": true,
+    "all_block_discrepancies_match": true,
+    "sample_sd_matches_parent_saved_values": true,
+    "source_dataset_unchanged": true,
+    "point_time_proxy_counterexample_preserved": true
+  }
+}

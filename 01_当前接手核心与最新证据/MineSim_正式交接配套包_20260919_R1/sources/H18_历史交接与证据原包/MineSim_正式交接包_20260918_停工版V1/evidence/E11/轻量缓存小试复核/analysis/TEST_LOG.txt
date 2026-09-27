@@ -1,0 +1,94 @@
+test_01_python39_syntax (__main__.Tests.test_01_python39_syntax) ... ok
+test_02_candidate_byte_identical (__main__.Tests.test_02_candidate_byte_identical) ... ok
+test_03_search_harness_byte_identical (__main__.Tests.test_03_search_harness_byte_identical) ... ok
+test_04_protocol_count (__main__.Tests.test_04_protocol_count) ... ok
+test_05_balanced_order (__main__.Tests.test_05_balanced_order) ... ok
+test_06_release_verify (__main__.Tests.test_06_release_verify) ... ok
+test_07_all_bindings (__main__.Tests.test_07_all_bindings) ... ok
+test_08_parent_manifest (__main__.Tests.test_08_parent_manifest) ... ok
+test_09_related_timing_launcher (__main__.Tests.test_09_related_timing_launcher) ... ok
+test_10_tail_not_conflict (__main__.Tests.test_10_tail_not_conflict) ... ok
+test_11_other_collection_conflict (__main__.Tests.test_11_other_collection_conflict) ... ok
+test_12_no_throttle (__main__.Tests.test_12_no_throttle) ... ok
+test_13_throttle_limited (__main__.Tests.test_13_throttle_limited) ... ok
+test_14_missing_stat (__main__.Tests.test_14_missing_stat) ... ok
+test_15_changed_quota (__main__.Tests.test_15_changed_quota) ... ok
+test_16_reset_stat (__main__.Tests.test_16_reset_stat) ... ok
+test_17_summarize_fixed_pairs (__main__.Tests.test_17_summarize_fixed_pairs) ... ok
+test_18_warmup_excluded (__main__.Tests.test_18_warmup_excluded) ... ok
+test_19_no_best_trial_selection (__main__.Tests.test_19_no_best_trial_selection) ... ok
+test_20_limited_even_if_faster (__main__.Tests.test_20_limited_even_if_faster) ... ok
+test_21_nonfinite_rejected (__main__.Tests.test_21_nonfinite_rejected) ... ok
+test_22_extra_block_rejected (__main__.Tests.test_22_extra_block_rejected) ... ok
+test_23_mock40_driver (__main__.Tests.test_23_mock40_driver) ... TIMING_BLOCKS_COMPLETED=1/5; ROLE=warmup
+TIMING_BLOCKS_COMPLETED=2/5; ROLE=measured
+TIMING_BLOCKS_COMPLETED=3/5; ROLE=measured
+TIMING_BLOCKS_COMPLETED=4/5; ROLE=measured
+TIMING_BLOCKS_COMPLETED=5/5; ROLE=measured
+ok
+test_24_stops_on_failed_parity (__main__.Tests.test_24_stops_on_failed_parity) ... ok
+test_25_namespace_refuses_reuse (__main__.Tests.test_25_namespace_refuses_reuse) ... ok
+test_26_symlink_refused (__main__.Tests.test_26_symlink_refused) ... ok
+test_27_sources_exact_directory (__main__.Tests.test_27_sources_exact_directory) ... ok
+test_28_bad_sha_rejected (__main__.Tests.test_28_bad_sha_rejected) ... ok
+test_29_missing_source_rejected (__main__.Tests.test_29_missing_source_rejected) ... ok
+test_30_low_resources_no_search (__main__.Tests.test_30_low_resources_no_search) ... STATUS=HOLD_ENVIRONMENT
+MCTS_CALLS=0/40; NEW_TEACHER_TRACES=0; TRAINING_RUNS=0; TREE_REUSE_EXECUTED=False
+BUNDLE=/tmp/tmp6ew1w_fu/minesim_dual_cachetiming_v1.zip
+ZIP_VERIFIED=True; MANIFEST_ITEMS=15
+ok
+test_31_mock_full_lifecycle (__main__.Tests.test_31_mock_full_lifecycle) ... SEARCHES_COMPLETED=1/40
+SEARCHES_COMPLETED=2/40
+SEARCHES_COMPLETED=3/40
+SEARCHES_COMPLETED=4/40
+SEARCHES_COMPLETED=5/40
+SEARCHES_COMPLETED=6/40
+SEARCHES_COMPLETED=7/40
+SEARCHES_COMPLETED=8/40
+TIMING_BLOCKS_COMPLETED=1/5; ROLE=warmup
+SEARCHES_COMPLETED=9/40
+SEARCHES_COMPLETED=10/40
+SEARCHES_COMPLETED=11/40
+SEARCHES_COMPLETED=12/40
+SEARCHES_COMPLETED=13/40
+SEARCHES_COMPLETED=14/40
+SEARCHES_COMPLETED=15/40
+SEARCHES_COMPLETED=16/40
+TIMING_BLOCKS_COMPLETED=2/5; ROLE=measured
+SEARCHES_COMPLETED=17/40
+SEARCHES_COMPLETED=18/40
+SEARCHES_COMPLETED=19/40
+SEARCHES_COMPLETED=20/40
+SEARCHES_COMPLETED=21/40
+SEARCHES_COMPLETED=22/40
+SEARCHES_COMPLETED=23/40
+SEARCHES_COMPLETED=24/40
+TIMING_BLOCKS_COMPLETED=3/5; ROLE=measured
+SEARCHES_COMPLETED=25/40
+SEARCHES_COMPLETED=26/40
+SEARCHES_COMPLETED=27/40
+SEARCHES_COMPLETED=28/40
+SEARCHES_COMPLETED=29/40
+SEARCHES_COMPLETED=30/40
+SEARCHES_COMPLETED=31/40
+SEARCHES_COMPLETED=32/40
+TIMING_BLOCKS_COMPLETED=4/5; ROLE=measured
+SEARCHES_COMPLETED=33/40
+SEARCHES_COMPLETED=34/40
+SEARCHES_COMPLETED=35/40
+SEARCHES_COMPLETED=36/40
+SEARCHES_COMPLETED=37/40
+SEARCHES_COMPLETED=38/40
+SEARCHES_COMPLETED=39/40
+SEARCHES_COMPLETED=40/40
+TIMING_BLOCKS_COMPLETED=5/5; ROLE=measured
+STATUS=COMPLETE_DUAL_FLAT_CACHE_FIXED_TIMING
+MCTS_CALLS=40/40; NEW_TEACHER_TRACES=0; TRAINING_RUNS=0; TREE_REUSE_EXECUTED=False
+BUNDLE=/tmp/tmpgluubxx3/minesim_dual_cachetiming_v1.zip
+ZIP_VERIFIED=True; MANIFEST_ITEMS=136
+ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.263s
+
+OK

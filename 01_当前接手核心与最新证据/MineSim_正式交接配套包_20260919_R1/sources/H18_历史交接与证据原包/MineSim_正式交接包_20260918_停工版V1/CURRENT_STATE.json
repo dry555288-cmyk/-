@@ -1,0 +1,105 @@
+{
+  "document_date": "2026-09-18",
+  "document_version": "HANDOFF_STOP_V1_AFTER_H8_SMOKE",
+  "evidence_cutoff": {
+    "last_returned_archive": "2de0f8ec-2eb4-411c-92d8-9fbc61613670.zip",
+    "last_capture_utc": "2026-09-18T04:11:08.144614+00:00",
+    "latest_user_instruction": "先进行到这里，按照skill给我交接文档",
+    "instruction_independent_utc_timestamp": null
+  },
+  "current_stage": "双车MCTS H8子树后缀修正与统计重建小试已通过；policy4已交付、未收到执行结果。",
+  "current_gate": "HANDOFF_ONLY_USER_STOP",
+  "current_status": "STOPPED_BY_USER_NO_NEW_EXECUTION",
+  "latest_completed_gate": "DUAL_H8_SUFFIX_REBASED_SUBTREE_REUSE_SMOKE_V1",
+  "latest_completed_status": "PASS_DUAL_H8_SUBTREE_REBASE_SEMANTICS",
+  "latest_completed_counts": {
+    "mcts_calls": 8,
+    "successful_promotions": 2,
+    "new_teacher_traces": 0,
+    "training_runs": 0
+  },
+  "scientific_status": "SEMANTICS_SMOKE_PASS_STABLE_SPEEDUP_AND_POLICY_SUCCESS_NOT_ESTABLISHED",
+  "latest_git_snapshot": {
+    "head": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+    "staged_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "status": "?? ^C\n",
+    "unstaged_diff_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "latest_environment_snapshot": {
+    "conda": "minesim",
+    "cwd": "/root/MineSim-Dynamic",
+    "executable": "/root/miniconda3/envs/minesim/bin/python",
+    "gpu_visible": "",
+    "local_test": false,
+    "python": "3.9.25 (main, Nov  3 2025, 22:33:05) \n[GCC 11.2.0]"
+  },
+  "latest_resources_snapshot": {
+    "affinity": 192,
+    "cpu_max_raw": "50000 100000",
+    "effective_cpu": 0.5,
+    "free_disk_bytes": 31070343168,
+    "gpu_needed": false,
+    "memory_available_bytes": 1755140096,
+    "resource": "LOW"
+  },
+  "live_state": "NOT_QUERIED",
+  "current_evidence_root_recorded": "/root/autodl-tmp/minesim_dual_subtree_h8_smoke_v1",
+  "formal_repo": "/root/MineSim-Dynamic",
+  "data_root": "/root/autodl-tmp",
+  "frozen_dataset": {
+    "states": 32,
+    "returns": 512,
+    "source_groups": 8,
+    "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1",
+    "new_collection": false,
+    "cloud_recorded_path": "/root/autodl-tmp/minesim_grouped_coverage32_collect256_v1/DATASET32.json"
+  },
+  "next_gate": "DUAL_H8_SUBTREE_POLICY4_CONTINUATION_V1",
+  "next_gate_status": "RELEASE_PREPARED_RESULT_NOT_RECEIVED_CLOUD_EXECUTION_UNKNOWN",
+  "next_minimal_action": "恢复工作前先确认是否已执行policy4：已有结果则只上传并复核；没有结果则只读核查目标目录/lease/POLICY_START/进程，再由用户明确授权原固定方案的一次执行。",
+  "next_resources": {
+    "label": "HIGH-CPU",
+    "workers": 1,
+    "effective_cpu_min": 2,
+    "memory_available_bytes_min": 2147483648,
+    "free_disk_bytes_min": 2147483648,
+    "gpu": false
+  },
+  "next_expected_policy_runs": 4,
+  "next_max_search_calls": 512,
+  "next_source_binding_count": 63,
+  "next_launcher": "pending_policy4/run_dual_subtree_policy4.sh",
+  "next_launcher_sha256": "fbdd654772f176a0a5d773139b7ecdb1d35ab951791204d7ed3c3b6c2488c975",
+  "candidate_sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532",
+  "execution_permissions_now": {
+    "policy4": false,
+    "retry": false,
+    "restore": false,
+    "training": false,
+    "collection": false,
+    "tree_deployment": false,
+    "pruning": false,
+    "single_vehicle": false,
+    "delete": false,
+    "cloud_upload": false
+  },
+  "do_not_repeat": [
+    "Window16/已完成全部32状态模型实验",
+    "collect256全部版本与既有教师采集",
+    "Coverage32静态冻结及恢复/技术小试",
+    "treeprobe",
+    "reportcache/flatcache及固定40搜索计时",
+    "H8两步8搜索小试"
+  ],
+  "hold_items": [
+    "policy4是否已在云端启动/完成，尚无返回结果",
+    "实际实时Git/资源/进程/磁盘/软链接",
+    "完整任务与稳定提速",
+    "Controller/KBM完整追踪链",
+    "生产道路可行驶真值与连续物理安全",
+    "跨路线泛化/异构生产车群",
+    "新文档是否上传AutoDL/Library/Drive",
+    "历史文件实际删除范围"
+  ],
+  "created_only_in_conversation_container": true
+}

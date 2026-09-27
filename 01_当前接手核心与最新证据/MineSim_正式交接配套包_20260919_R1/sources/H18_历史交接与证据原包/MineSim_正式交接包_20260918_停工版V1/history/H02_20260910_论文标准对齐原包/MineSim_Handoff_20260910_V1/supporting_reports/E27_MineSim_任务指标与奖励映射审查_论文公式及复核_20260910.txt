@@ -1,0 +1,175 @@
+MineSim｜任务指标—冻结奖励对应关系审计 V1
+日期：2026-09-10；本轮仅使用已有两个冻结ZIP，不运行仿真、搜索、模型或训练。
+
+一、技术执行与直接结果
+{
+  "status": "PASS",
+  "version": "MINESIM_TASK_REWARD_ALIGNMENT_AUDIT_V1",
+  "files_verified": 3368,
+  "trajectories": 384,
+  "executed_transitions_read": 25691,
+  "action_batch_rows": 64,
+  "pair_batch_rows": 480,
+  "max_step_decomposition_error": 3.552713678800501e-15,
+  "max_discounted_decomposition_error": 1.4210854715202004e-14,
+  "outcomes": {
+    "BOTH_CONFIGURED_ROUTE_ENDS": 384
+  },
+  "nonzero_trajectory_component_counts": {
+    "progress": 384,
+    "speed": 384,
+    "ttc": 0,
+    "external_clearance": 0,
+    "comfort": 384,
+    "goal": 384,
+    "internal_clearance": 237,
+    "hard_safety": 0
+  },
+  "state_batch_summaries": [
+    {
+      "batch": "pilot",
+      "root": "NEW24__C06__C06_FROZEN_EP0__step76",
+      "empirical_reward_leader": "2,1",
+      "empirical_time_leader": "2,0",
+      "opposite_reward_time_pairs": 22,
+      "total_pairs": 120,
+      "empirical_reward_leader_mean_seconds": 30.5,
+      "empirical_min_mean_seconds": 30.25,
+      "reward_leader_excess_time": 0.25,
+      "interpretation": "POSTHOC_SAMPLE_MEANS_NOT_TRUE_POLICY_ORDER"
+    },
+    {
+      "batch": "pilot",
+      "root": "NEW24__C06__C06_SEED1_EP1__step73",
+      "empirical_reward_leader": "1,3",
+      "empirical_time_leader": "2,0",
+      "opposite_reward_time_pairs": 29,
+      "total_pairs": 120,
+      "empirical_reward_leader_mean_seconds": 33.875,
+      "empirical_min_mean_seconds": 31.5,
+      "reward_leader_excess_time": 2.375,
+      "interpretation": "POSTHOC_SAMPLE_MEANS_NOT_TRUE_POLICY_ORDER"
+    },
+    {
+      "batch": "fresh",
+      "root": "NEW24__C06__C06_FROZEN_EP0__step76",
+      "empirical_reward_leader": "3,0",
+      "empirical_time_leader": "3,0",
+      "opposite_reward_time_pairs": 4,
+      "total_pairs": 120,
+      "empirical_reward_leader_mean_seconds": 30.1875,
+      "empirical_min_mean_seconds": 30.1875,
+      "reward_leader_excess_time": 0.0,
+      "interpretation": "POSTHOC_SAMPLE_MEANS_NOT_TRUE_POLICY_ORDER"
+    },
+    {
+      "batch": "fresh",
+      "root": "NEW24__C06__C06_SEED1_EP1__step73",
+      "empirical_reward_leader": "3,0",
+      "empirical_time_leader": "3,0",
+      "opposite_reward_time_pairs": 24,
+      "total_pairs": 120,
+      "empirical_reward_leader_mean_seconds": 31.125,
+      "empirical_min_mean_seconds": 31.125,
+      "reward_leader_excess_time": 0.0,
+      "interpretation": "POSTHOC_SAMPLE_MEANS_NOT_TRUE_POLICY_ORDER"
+    }
+  ],
+  "arithmetic_replay_only": true,
+  "TRANSITION_RUN": false,
+  "MCTS_RUN": false,
+  "TRAINING_RUN": false,
+  "MODEL_FORWARD": false,
+  "TASK_OBJECTIVE_ADOPTED": false,
+  "TASK_EPSILON_APPROVED": false,
+  "PRUNING_EXECUTED": false,
+  "NEW_SAMPLING_APPROVED": false
+}
+
+二、奖励实际定义：不能把复合回报直接换算成秒
+每辆车尚未到目标时才计入progress/speed/TTC/clearance/comfort；两车贡献始终除以2，而不是除以当前活动车辆数。
+r_progress=0.5*sum_active[max(0,s_next-s_prev)/(10.5*0.5)]。目标速度这里固定10.5m/s。
+r_speed=0.5*sum_active[-0.3*abs(v_next-v_target)/v_target]。
+r_TTC=0.5*sum_active[-2*max(0,(3-TTC)/3)]；没有closing时为0；不是沿路线外对象的完备风险模型。
+r_external_clearance=0.5*sum_active[-w_clearance*clip((3-clearance)/3,0,1)^2]；本配置w_clearance=0。
+r_comfort=0.5*sum_active[-0.3*abs(a_next-a_prev)/(0.5*10)]。
+r_goal=15*(本步A首次到目标指示+本步B首次到目标指示)。
+r_internal_clearance=-0.5*clip((3-d_internal)/3,0,1)^2。硬安全项每个fleet转移最多一次-100。
+G=sum_k 0.99^k * sum_component r_component,k = sum_component G_component。
+这是对实际记录的逐项恒等分解，不是以另一种奖励重新搜索。样本中为零的风险分项不能据此从未来模型删除。
+
+三、真实对照，不按一个有利例子修改规则
+保留了全部480条“批次—状态—动作对”比较。旧4seed与新8seed不合并认证。
+新8seed的step73，(1,3)相对(3,1)：回报均值差=0.8167565777756352；完成时间均值差(秒)=2.25。
+该回报差可拆成：{'progress': 0.0053936199087658565, 'speed': 0.3048970455898141, 'ttc': 0.0, 'external_clearance': 0.0, 'comfort': 0.06303864604208664, 'goal': 0.4090735261569485, 'internal_clearance': 0.03435374007801802, 'hard_safety': 0.0}
+因此在这些样本中，分数更高的动作反而更慢；可能换取另一辆车更早到达、不同进度时序、舒适性等。不能仅凭这个关系把奖励说成错误。
+相同完成用时的不同轨迹也有不同回报。所有同用时分组已保存；最大观察范围组为：{'batch': 'fresh', 'root': 'NEW24__C06__C06_SEED1_EP1__step73', 'elapsed_seconds': 36.5, 'records': 7, 'min_return': 50.351813829064426, 'max_return': 60.995140784197325, 'range': 10.643326955132899, 'min_identity': '0,0:47007', 'max_identity': '3,3:47002'}
+同用时/均值反向只是开发数据上的反例，不证明真实期望排序或总体效应。代数上复合标量信息不足以唯一恢复多个任务代价。
+
+四、局部单位敏感度只是系数解释，不是任务损失换算
+在同一转移、其他字段固定时，一辆活动车多1m进度的即时奖励差为1/(2*10.5*0.5)=0.095238...，第k步再乘gamma^k。
+一辆车第一次到目标在第n步，目标项为15*gamma^(n-1)；延后一帧时该分项损失15*gamma^(n-1)*(1-gamma)。
+这些只讨论一个分项，不能模拟“其他情况完全相同多等一秒”的实际轨迹，更不能把任何回报差统一除一个系数。
+
+五、将精度写成秒的候选方案（新增评价口径，不替换旧奖励）
+C64=min(T_ok,64秒)。T_ok是两车到配置终点且此前没有硬安全终止的时间；同一步到目标又发生硬安全时仍按硬失败优先，T_ok=+inf；人工截止为64秒；缺日志不是时间截止，直接HOLD。
+Y_time=-C64，J_time=-E[C64]，因此max_b J_time(b)-J_time(a)=E[C64(a)]-min_b E[C64(b)]，单位为秒。
+这一新量不乘0.99折扣；旧搜索及奖励仍保持gamma=0.99不动。它只能解释“64秒封顶完成时间”，并非无限期真实运输时间。
+若以后批准用该量作为任务目标，epsilon_time_seconds就直接表示允许多慢几秒，不必从混合回报反推。但本轮没有批准或选定具体秒数。
+安全、未按窗口完成、内部净距和舒适性单列，不应让时间效率抵消违反硬安全。风险阈值和目标优先级必须来自任务需求，不从0次失败反推风险为0。
+双车全部通过时间max(T_A,T_B)与两车到达时间之和T_A+T_B是两个不同目标，本次都输出，不替用户选定其优先级。
+参考[R1]第4节的“目标+约束”形式。本轮没有实施CPO、没有策略更新，也不继承其可行性保证。
+参考[R2]保留终止/截断区分。本轮没有学习尾值，不保证64秒与完整任务期望相等。
+
+六、重要模型边界与数据字典
+既有3m仅为内部净距软惩罚尺度；冻结的internal_safety_margin_m=0，不得写成3m硬约束。
+到达配置路线进度不要求停车。已到目标的车之后由冻结转移模型保持，在奖励中不再计舒适性；因此同时输出active和all-state的加速度TV/jerk积分。
+这些是规划层运动学指标，不是控制器实测jerk、乘坐舒适性或燃油/能耗。外部障碍几何wrapper未启用，不应宣称已覆盖矿区所有风险。
+逐字段中文、英文和单位见METRIC_DICTIONARY.json。时间和回报表均保留失败/截止，不只平均成功样本。
+
+七、本轮结论与下一Gate
+奖励加总PASS；任务阈值仍未由需求给出；旧reward epsilon不能直接解释成通行秒数。
+本轮已输出可供选择的分离任务评价接口，而不是再追加8个seed。
+旧主目标、模型、K13和训练mask全部不改；不选经验最快动作上线。
+下一步需要确定保留复合回报还是采用有明确物理单位的评价目标，再登记容忍度、风险约束与统计预算；没有自动采样授权。
+
+八、论文索引与实现区别
+[R1] Achiam, J.; Held, D.; Tamar, A.; Abbeel, P. Constrained Policy Optimization. ICML 2017, PMLR 70:22-31. Section 4 (PDF第2页)，目标J与独立约束J_Ci<=d_i。
+https://proceedings.mlr.press/v70/achiam17a.html
+本次借用目标与约束分离的框架；奖励线性分解和秒制成本是项目算术/指标定义，不运行CPO或引用其安全保证。原文页面已在线核对并查看截图。
+[R2] Pardo, F.; Tavakoli, A.; Levdik, A.; Kormushev, P. Time Limits in Reinforcement Learning. ICML 2018, PMLR 80:4045-4054.
+https://proceedings.mlr.press/v80/pardo18a.html
+本次借用人工时间限制与真正任务终止的区别；没有采用该论文的学习式bootstrap，不将封顶均值视为无限任务价值。
+论文与实现区分见TASK_METRIC_CONTRACT.json。所有新的时间度量都是候选开发评价，非论文直接给定、非项目已批准指标。
+
+九、最终代码测试与来源标注补充（本轮实际执行）
+主程序通过44项单元/失败路径测试，日志test_log_final.txt；另以SHA锁定的原生RewardModel/FleetRewardModel纯奖励函数交叉核验25691个记录转移。
+原生标量奖励与保存reward最大误差为0；原生分项与独立公式分项最大误差为5.551115123125783e-17。
+交叉核验只执行纯奖励函数；不执行状态转移、几何、MCTS、随机rollout、模型或训练。
+独立公式与保存总奖励最大误差为3.552713678800501e-15；折扣分项合计最大误差为1.4210854715202004e-14。
+完整最终离线运行重新核验3368项清单文件、384条记录及25691条转移，所有输出ZIP成员CRC和SHA通过。
+没有新随机种子、新教师标签、新候选删除集合或训练mask。
+所有“均值”“排序反向”“相同完成用时”的结论仅为保留的旧4-seed和新8-seed各自批次的样本结果；未合并为独立确认样本。
+
+十、面向用户的关键反例（事后诊断，所有动作对已完整保存）
+新8-seed，C06 seed1 step73：
+动作1,3：平均旧回报=62.893615789；A到达=34.25s；B到达=20.125s；双车全部到达=34.25s；单车到达时间之和=54.375vehicle-s。
+动作3,1：平均旧回报=62.076859212；A到达=32.0s；B到达=24.125s；双车全部到达=32.0s；单车到达时间之和=56.125vehicle-s。
+因此(1,3)虽然双车全部到达更晚，但B车更早、两车时间总和更低，不能将其偏好直接称为“奖励bug”。当前未规定应优先最小化最大完成时间还是完成时间总和。
+“1单位奖励=几秒”不能由奖励中某个系数直接换算；需要先明确评价目标。新候选时间值Y_time=-C64仅作为附加指标，不改变旧控制器/教师目标。
+八分项差（(1,3)-(3,1)）如下：
+  progress: +0.005393619909
+  speed: +0.304897045590
+  ttc: +0.000000000000
+  external_clearance: +0.000000000000
+  comfort: +0.063038646042
+  goal: +0.409073526157
+  internal_clearance: +0.034353740078
+  hard_safety: +0.000000000000
+  sum: +0.816756577776
+
+十一、下一步的明确边界
+本轮已给出物理指标与冻结奖励的对应表，以及按秒计的候选评价公式。没有自动选择任务偏好，也不要求用户再次上云复算已存在数据。
+若后续将双车全部通行时间确认为主指标，可在安全/完成等独立约束满足的候选集合内比较其期望时间；epsilon_time_seconds对应允许延误秒数。
+若保留原复合奖励为主指标，则只能给出回报单位的精度，不能同时承诺同数值的通行延误界。
+这两个目标的选择、秒数容忍度、风险限额与统计预算是下一次前瞻实验的规格，不是从本次更有利结果中选择出来的通过阈值。

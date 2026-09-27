@@ -1,0 +1,93 @@
+{
+  "status": "ARCHIVED_PLAN_NOT_NEW_AUTHORIZATION",
+  "original_protocol_path": "pending_policy4/release/PROTOCOL.json",
+  "original_protocol_sha256": "1cec368d1b6755c36c8809d172e4109f1819912367f24abe9df6d7b7b505eee0",
+  "fixed_design": {
+    "gate": "DUAL_H8_SUBTREE_POLICY4_CONTINUATION_V1",
+    "design_status": "FIXED_BEFORE_RUNNING_POLICY_OUTCOMES",
+    "root_ids": [
+      "coverage_policy_01__step0014",
+      "coverage_policy_05__step0011"
+    ],
+    "runtime_relative": "parent_sources/parent_sources/parent_sources/parent_sources/parent_sources/runtime",
+    "max_search_calls": 512,
+    "max_decisions_per_arm": 128,
+    "expected_policy_runs": 4,
+    "arms": [
+      "unchanged_native_search",
+      "unchanged_H8_SUFFIX_REBASED_SUBTREE"
+    ],
+    "execution_order": [
+      [
+        "baseline",
+        "rebased"
+      ],
+      [
+        "rebased",
+        "baseline"
+      ]
+    ],
+    "seeds": "Use each original row task seed; restore each saved rng_before independently for both arms. No added seed.",
+    "candidate_sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532",
+    "mcts": {
+      "root_sample_target": 64,
+      "max_depth": 8,
+      "gamma": 0.99,
+      "c_uct": 1.4,
+      "dt": 0.5
+    },
+    "no_algorithm_change_from_smoke": true,
+    "scope": "Four policy continuations from two existing intermediate C11 states. Same route combination, not4 independent scenes. Baseline is re-executed for paired new continuation and resource timing, not re-labelling old tests.",
+    "budget_meaning": "Baseline64 new iterations; candidate inherited corrected+fresh=64. Correlated inherited/adaptively chosen support, not64 independent fresh samples.",
+    "stopping": "Stop each arm at first native hard safety terminal, native both parked, or128 steps. No padding, retries, outcome-based sampling, seed changes.",
+    "primary_records": [
+      "native task terminal/CAP",
+      "model seconds to terminal",
+      "minimum sampled clearance",
+      "total full system.search CPU/wall",
+      "mean and p95 full system.search",
+      "fresh iterations",
+      "inherited support",
+      "tail transitions",
+      "tree promotions/fallbacks",
+      "cgroup counters",
+      "full sample arithmetic"
+    ],
+    "measurement": "Single process. Per-search timers include candidate capture/guards/tail/rebuild, exclude separate debug export, IO and outer advance; separate end-to-end recording time includes them. No online-controller timing claim.",
+    "quality_criteria": "All tasks kept. Strict descriptive joint-improvement flag needs both arms parked safely in each pair, candidate no longer model time, no smaller sampled clearance and smaller total search CPU AND wall. Not statistical/production authorization.",
+    "timing_limitations": "Two already used fixed initial states; repeated decisions correlated, order counterbalanced but not CPU exclusive/frequency-controlled. No stable speedup or generalization theorem.",
+    "postconditions": [
+      "every candidate root contribution reconstructed from saved rewards",
+      "promotions linked to prior tree and fixedH8",
+      "cold first search exact to smoke",
+      "immutable sources/repo unchanged"
+    ],
+    "resources": {
+      "label": "HIGH-CPU",
+      "workers": 1,
+      "effective_cpu_min": 2,
+      "memory_available_bytes_min": 2147483648,
+      "free_disk_bytes_min": 2147483648,
+      "gpu": false
+    },
+    "new_teacher_traces": 0,
+    "training_runs": 0,
+    "dataset32_512_written": false,
+    "neural_network": false,
+    "action_report_cache": false,
+    "pruning": false,
+    "single_car": false,
+    "deployed": false,
+    "next_stage_authorized": false,
+    "automatic_retry": false
+  },
+  "user_stop_overrides_auto_execution": true,
+  "before_new_authorization": [
+    "先询问/检查现有policy4结果，不假定未执行",
+    "只读核验目标out/lease/POLICY_START/RESULT/RC/ZIP/pending与进程",
+    "核验原发布SHA、63份精确输入、正式repo/conda依赖和实际cgroup资源",
+    "现有已消费namespace不能覆盖；技术中断先按完成步数分类"
+  ],
+  "no_method_change_allowed_in_restore": true,
+  "execution_authorized_by_this_handoff": false
+}

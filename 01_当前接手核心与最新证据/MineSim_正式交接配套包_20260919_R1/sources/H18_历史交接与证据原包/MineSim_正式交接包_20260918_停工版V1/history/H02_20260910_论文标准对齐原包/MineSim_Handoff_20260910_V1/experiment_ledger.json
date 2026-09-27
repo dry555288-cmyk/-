@@ -1,0 +1,252 @@
+[
+  {
+    "phase": "root807教师稳定性",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_root807_teacher_q_stability_exec_v1",
+    "scope": "2,356-root audit branch; 1 root x 16 seeds x 3 budgets",
+    "evidence": "E06",
+    "settings": "31000-31015; B64/256/1024",
+    "status": "historical completed; no original-namespace rerun",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "root807均衡根对照",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_root807_balanced_root_diagnostic_exec_v1",
+    "scope": "48 new searches",
+    "evidence": "E06",
+    "settings": "same seeds and budgets; balanced root",
+    "status": "historical completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "9-root矩阵原尝试",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_v1",
+    "scope": "40 complete, cell41 technical interruption",
+    "evidence": "E06",
+    "settings": "32000-32015; 864-cell schedule",
+    "status": "consumed; preserved, not replaced",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "9-root矩阵恢复",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_multiroot_teacher_validation_exec_retry1_v1",
+    "scope": "40 reused + 824 new = 864",
+    "evidence": "E06",
+    "settings": "same frozen schedule",
+    "status": "completed; no rerun",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "36-root冻结",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_new_teacher_pilot_36root_freeze_v1",
+    "scope": "36 records / 6 episodes",
+    "evidence": "E07",
+    "settings": "selection not by Q",
+    "status": "historical input binding amended in later namespace",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "V2来源绑定失败",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v2",
+    "scope": "dictionary unpacking technical failure",
+    "evidence": "E07",
+    "settings": "no science",
+    "status": "consumed technical failure",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "V2 retry1失败",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_teacher_pilot_exact_context_binding_v2_retry1",
+    "scope": "destination mkdir omission",
+    "evidence": "E07",
+    "settings": "no science",
+    "status": "consumed technical failure",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "36-root原始记录重绑定",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_teacher_pilot_raw_rebind_v1",
+    "scope": "34 unchanged + 2 correct original seed0 records",
+    "evidence": "E08",
+    "settings": "no searches",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "三个冻结归档闭合",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_teacher_pilot_freeze_archive_closure_v1",
+    "scope": "3/3 missing source hashes recovered; total15/15",
+    "evidence": "E09",
+    "settings": "readonly",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "运行副本采集",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_teacher_pilot_runtime_snapshot_v1",
+    "scope": "17 engine files match old technical copy",
+    "evidence": "E30",
+    "settings": "readonly",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "36-root技术验证",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_teacher_pilot_36root_technical_parity_v1",
+    "scope": "576 transitions and72 technical searches",
+    "evidence": "E10",
+    "settings": "35000 B64",
+    "status": "completed technical only",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "36-root教师Pilot",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_teacher_pilot_balanced_matrix_v1",
+    "scope": "576 root searches",
+    "evidence": "E11",
+    "settings": "34000-34007 B256/B1024",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "36-root独立确认",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_teacher_pilot_pair_confirmation_v1",
+    "scope": "288 searches",
+    "evidence": "E12",
+    "settings": "36000-36007 B1024",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "33组可学习性",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_masked_ranking_learning_pilot_v1",
+    "scope": "12 fits x600 epochs",
+    "evidence": "E13",
+    "settings": "37000-37002; FIT_ALL/3LOSO",
+    "status": "completed, not deployed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "C11跨episode",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_c11_episode_transfer_learning_v1",
+    "scope": "6 fits x600 epochs",
+    "evidence": "E14",
+    "settings": "3 frozen paired initializations",
+    "status": "completed, not deployed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "24-state覆盖与重建",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_new_state_coverage_parity_v1",
+    "scope": "24 new groups;384 transitions",
+    "evidence": "E15",
+    "settings": "no scientific search",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "24-state教师与模型评价",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_new24_teacher_decision_validation_v1",
+    "scope": "384 discovery+192 confirmation;18 frozen models",
+    "evidence": "E16",
+    "settings": "40000-40007;41000-41007",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "覆盖增补成对训练",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_coverage_paired_episode_learning_v1",
+    "scope": "36 fits;6episode x2groups x3initializations",
+    "evidence": "E17",
+    "settings": "42000-42002;600 epochs",
+    "status": "completed, not deployed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "来源拆分训练",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_coverage_source_ablation_v1",
+    "scope": "36 new fits +36 reused",
+    "evidence": "E18",
+    "settings": "same paired seeds;600 epochs",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "C06时域对照",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_c06_horizon_sensitivity_v1",
+    "scope": "64 new +32 H8 reused +8 technical",
+    "evidence": "E19",
+    "settings": "H12/H16 B1024, old16seed pairing",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "叶续算契约",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_leaf_continuation_contract_v1",
+    "scope": "128 cases,256 splits",
+    "evidence": "E21",
+    "settings": "44000-44003",
+    "status": "completed technical",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "叶续接策略",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_leaf_policy_comparison_v1",
+    "scope": "256 trajectories;32leaves x4seeds x2policies",
+    "evidence": "E22",
+    "settings": "45000-45003; maximum16 steps",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "叶轨迹终止续行",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_leaf_policy_terminal_extension_v1",
+    "scope": "27 terminal reused +229 extended",
+    "evidence": "E23",
+    "settings": "same RNG streams; total128 steps",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "原始根动作策略回报",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_root_action_policy_return_v1",
+    "scope": "128 trajectories;2roots x16actions x4seeds",
+    "evidence": "E24",
+    "settings": "46000-46003;native B64/H8;T128",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  },
+  {
+    "phase": "根动作回报独立复验",
+    "recorded_default_namespace": "/root/autodl-tmp/minesim_root_policy_return_replication_v1",
+    "scope": "256 new trajectories;old128 readonly",
+    "evidence": "E25",
+    "settings": "47000-47007;native B64/H8;T128",
+    "status": "completed",
+    "live_verified_this_handoff": false,
+    "original_namespace_rerun_authorized": false
+  }
+]

@@ -1,0 +1,28 @@
+{
+  "gate": "DUAL32_SEARCH_UTILITY_AND_PAIRWISE_TARGET_DESIGN_REVIEW",
+  "status": "PROPOSAL_ONLY_NO_NEW_FITS",
+  "objective": "Define a bounded state-conditional two-action preference study aligned with later search use, without changing existing regression results or adding data.",
+  "inputs": "Frozen DATASET32, existing36 features, saved grouped predictions and action return repeats.",
+  "current_local_work_completed": "Read-only empirical choice-loss comparison; no observed advantage over both fixed first-action references.",
+  "to_decide_before_execution": [
+    "Whether pairwise preference supervision is the next agreed question; prior 26pair/4state/6state failures must not be presented as never attempted.",
+    "How to retain original unknown relations and avoid converting noisy mean signs into trusted labels.",
+    "Fixed grouping, model, supervision and all32 empirical selection-loss reporting, original6 and new5 reporting kept separate.",
+    "No direct pruning or runtime budget reduction from this two-action offline task."
+  ],
+  "permitted_now": [
+    "Read existing source files",
+    "Write local method proposal and status"
+  ],
+  "not_authorized": [
+    "Training",
+    "MCTS",
+    "New collection",
+    "Cloud modification",
+    "Full16-action pruning",
+    "Deployment",
+    "Old namespace retry",
+    "Single-vehicle work"
+  ],
+  "scientific_limit": "All32 states and sampled means are already development-exposed; not a fresh independent test."
+}

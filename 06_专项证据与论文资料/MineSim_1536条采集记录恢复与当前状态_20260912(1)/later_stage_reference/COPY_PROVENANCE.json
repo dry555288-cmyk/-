@@ -1,0 +1,53 @@
+[
+  {
+    "source_local_path": "/mnt/data/minesim_recent_review/key_evidence/DualStop_CandidateRegression_RESULT.json",
+    "copied_to": "later_stage_reference/candidate_regression_RESULT.json",
+    "size": 1138,
+    "sha256": "d3746173e1354deee9f1ff407d009d45ee4483f4e0f7ead3b155a653146cf1e8"
+  },
+  {
+    "source_local_path": "/mnt/data/minesim_recent_review/key_evidence/DualStop_Approved_Contract.json",
+    "copied_to": "later_stage_reference/dual_stop_contract.json",
+    "size": 1696,
+    "sha256": "7eea84e8fc1d3d0a13f9faf7e62b1aea46cb77edc99594b67ce24a796110624f"
+  },
+  {
+    "source_local_path": "/mnt/data/minesim_latest_recovery_20260912/minesim_dual_stop_realroute_smoke_v1/RESULT.json",
+    "copied_to": "later_stage_reference/realroute_smoke_RESULT.json",
+    "size": 1363,
+    "sha256": "40cc2339eab00089a851ade65e7cdae09c4b3def9adf394204f379eda4a66f56"
+  },
+  {
+    "source_local_path": "/mnt/data/minesim_policy4_found_review_20260912/original/ERROR.json",
+    "copied_to": "later_stage_reference/policy4_ERROR.json",
+    "size": 705,
+    "sha256": "feca4e48a5cc02c10ce253cd0dbf74971ff4e39520432dfe2192101b3ec3f8a6"
+  },
+  {
+    "source_local_path": "/mnt/data/minesim_policy4_found_review_20260912/original/PREFLIGHT.json",
+    "copied_to": "later_stage_reference/policy4_PREFLIGHT.json",
+    "size": 10092,
+    "sha256": "1429531de09cf12043208fd2c60210ad39fffbc61d1afd4407debfd4a4bf37e3"
+  },
+  {
+    "source_archive": "/mnt/data/a9a5e588-1c55-41ef-a58e-64f64687cc6c.zip",
+    "archive_member": "sources/data/minesim_dual_stop_policy4_v1/RESULT.json",
+    "copied_to": "later_stage_reference/policy4_RESULT.json",
+    "size": 326,
+    "sha256": "4417c7f3fbbfec84caa687145ab2a5dcb21029f13842455e2dca952bb4bb7ab2"
+  },
+  {
+    "source_archive": "/mnt/data/a9a5e588-1c55-41ef-a58e-64f64687cc6c.zip",
+    "archive_member": "sources/data/minesim_dual_stop_policy4_v1/RC.txt",
+    "copied_to": "later_stage_reference/policy4_RC.txt",
+    "size": 2,
+    "sha256": "53c234e5e8472b6ac51c1ae1cab3fe06fad053beb8ebfd8977b010655bfdd3c3"
+  },
+  {
+    "source_archive": "/mnt/data/a9a5e588-1c55-41ef-a58e-64f64687cc6c.zip",
+    "archive_member": "sources/data/minesim_dual_stop_policy4_v1.finished.json",
+    "copied_to": "later_stage_reference/policy4_finished.json",
+    "size": 288,
+    "sha256": "39cfac63f7d9b9c2b8f0f3844c92657ecd0fafddb5874e8d14e89ca8f004f8c9"
+  }
+]

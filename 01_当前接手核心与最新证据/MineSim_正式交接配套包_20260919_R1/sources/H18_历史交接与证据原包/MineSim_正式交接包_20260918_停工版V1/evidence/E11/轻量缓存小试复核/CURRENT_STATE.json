@@ -1,0 +1,24 @@
+{
+  "current_status": "FLAT_CACHE_SAVED_EQUIVALENCE_PASS_TIMING_INCONCLUSIVE",
+  "last_cloud_namespace": "minesim_dual_reportcache_flat_v1",
+  "old512_frozen": true,
+  "current_candidate_code_changed_after_returned_result": false,
+  "next_gate": "DUAL_FIXED_FLAT_CACHE_BALANCED_TIMING_V1",
+  "next_executed": false,
+  "next_authorization_argument": "--authorize-cachetiming-once",
+  "next_resource": "HIGH-CPU >=2 effective CPUs, but one worker and one thread; GPU unused",
+  "next_scope_max_searches": 40,
+  "warmup": 8,
+  "timed": 32,
+  "new_teacher_samples": 0,
+  "training_runs": 0,
+  "pruning_authorized": false,
+  "production_install_authorized": false,
+  "automatic_retry_authorized": false,
+  "no_repeat_namespaces": [
+    "minesim_dual_reportcache_v1",
+    "minesim_dual_reportcache_flat_v1"
+  ],
+  "next_result_namespace": "minesim_dual_cachetiming_v1",
+  "recorded_current_small_smoke_effects_are_not_general_speedup": true
+}

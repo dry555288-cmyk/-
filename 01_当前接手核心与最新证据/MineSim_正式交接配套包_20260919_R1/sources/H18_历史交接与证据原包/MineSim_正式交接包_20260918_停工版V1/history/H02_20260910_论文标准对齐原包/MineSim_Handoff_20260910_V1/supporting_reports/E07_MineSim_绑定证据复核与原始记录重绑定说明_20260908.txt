@@ -1,0 +1,154 @@
+MineSim：绑定证据包独立复核、Pilot 误取记录修正与下一步
+日期：2026-09-08
+当前 Gate：36_ROOT_RAW_RECORD_IDENTITY_REBIND_AND_CONTEXT_SOURCE_COLLECTION
+资源：LOW / CPU-only；不加载完整语义地图，不运行 MCTS、训练或模型 forward。
+
+一、核验依据
+收到的文件：90ad1ca4-54e3-4e1e-a78e-3441750a178b.zip
+文件 SHA256：c6339b5a8d36f5177dbf7e1595ffa63d905b9d5503e2f042d6465517e731183f
+包内入口：minesim_teacher_pilot_binding_evidence_v1/
+SHA256_MANIFEST.json SHA256：590b36c9bcca74559f1a3ff319fd0a135d9c95a7cc333eccfa2d930507588bf2
+SOURCE_INDEX.json SHA256：20a556f50267f8b514a9afed0709d725c7af6eb420f07f9222eb250788f75db5
+
+实际核验结果：
+1. ZIP CRC 检查通过，无重复成员名、绝对路径或路径穿越成员。
+2. ZIP 共162个文件；其中161个由 SHA256_MANIFEST.json 逐项列出，另外1个是清单本身。
+3. 161项文件的长度与 SHA256 全部一致。
+4. SOURCE_INDEX 的149条来源记录与包内复制件的 SHA 全部一致。
+5. SUMMARY 的 COLLECTION_STATUS=PASS；CONTEXT_BINDING_STATUS=NOT_CERTIFIED；READY_FOR_36_ROOT_SMOKE=false。
+6. 采集记录的 Git HEAD 为112d2bd0f3412fc83b13d5587d2b41402d2d0f5e，前后状态相同。
+   状态中存在“?? ^C”，所以只能说前后未改变，不能说工作树 clean。
+7. 采集器记录未运行 MCTS、训练、模型 forward 或项目模块。这是证据采集，不是运行验收。
+
+二、重要纠正：两个 step0 不是仅有 provenance 字段写错
+此前“保持整个错误记录不变，仅将 seed/context 改成正确来源”的方案不充分。
+本次把 frozen root 的16动作 Q、即时奖励、访问数与原始日志和 NPZ 对比后确认：
+
+A. C04__C04_FROZEN_EP0__step0
+   旧 Pilot 文件实际来自 C04 seed5 的搜索记录，而对应 NPZ 行属于 C04 seed0。
+   完整 root_state：与真正 seed0 记录相同。
+   12维输入：与 NPZ 相同。
+   16维即时奖励：与 NPZ 相同。
+   16个 Q：全部与正确记录不同；float32 下最大绝对差约1.25796723。
+   16个动作中，15个的访问数与正确记录不同。
+   两份记录的 selected_action_id 均为“3,3”；不能据此说最终动作不同。
+   正确 seed0 collector SHA 为
+   a44a237a2cb7fa6c3b7ed5088bc328b590a1a6816fda4e58d0ff670b10fd1377。
+   seed5 collector SHA 为
+   283d2bfb38af5bd3ef1897349f1e366f862ab508250c1f262f15fd0509c4a2a6。
+   两个版本不能因为同场景而混用。
+
+B. C06__C06_FROZEN_EP0__step0
+   旧 Pilot 文件实际来自 C06 seed1，而对应 NPZ 行属于 C06 seed0。
+   完整 root_state、12维输入与即时奖励均一致。
+   16个 Q 全部不同；float32 下最大绝对差约1.18132591。
+   12个动作的访问数不同。
+   selected_action_id 同样均为“3,3”。
+
+这两个问题属于 Pilot 的“原始搜索记录身份误绑定”，不是新的仿真 scientific FAIL。
+不能给其他 seed 的 Q/visits 换上 seed0 的 provenance 后就声称恢复了原始记录。
+本次没有修改旧 namespace。正确记录已经在返回包里的原始 JSONL 中找到，不需要重做搜索。
+
+三、原2356条数据与原始日志的完整复算
+冻结 NPZ：
+/root/autodl-tmp/paper1_value_v3_development_only_v1/expanded_2356_development_input_v1/paper1_value_v3_expanded_2356_episode_aware_root_dataset_v1.npz
+SHA256：106936a30e4c55b10b7968de2534e822c262db50c21494cca354700d78a70a27
+
+六个精确 episode 日志记录数：
+C04_FROZEN_EP0       126
+C04_SEED5_EP1        148
+C06_FROZEN_EP0       146
+C06_SEED1_EP1        156
+C11_100M_SEED0_EP1   890
+C11_80M_SEED0_EP0    890
+合计               2356
+
+以 episode_uid + root_step 对齐；episode 与原始日志的关系使用已审阅的路径、完整文件 SHA、
+原始 provenance、scene、seed 共同固定，C11 80m/100m 不只靠同一个 seed0 字段区分。
+按0,0—3,3的16动作顺序重建标签。
+2356条12维 state 全部与 NPZ 的 float32 字节一致。
+2356条16维 q_value 全部与 NPZ 的 float32 字节一致。
+2356条16维 immediate_reward 全部与 NPZ 的 float32 字节一致。
+这共覆盖103664个数值项。没有对 Q 进行平滑、平均或重新估计。
+
+因此：
+“两个 Pilot 文件误绑”不能解释成“原始2356条训练 NPZ 已被这两个错误记录污染”。
+本次证据支持的是原始 NPZ 与这六份日志转换一致，不是教师 Q 已稳定或神经网络已收敛。
+先前关于有限搜索支持、教师标签波动的科学问题，本次没有重新实验，也没有推翻。
+
+四、36个选点如何保留
+原36个 row_index / pilot_id / scene / episode_uid / root_step / selection_reason 均保持不变。
+仍为 C04/C06/C11 各12个，六个 episode 各6个。
+全部36个完整 root_state 与正确原始日志一致，无须换状态或重新选点。
+其余34个 frozen record 与对应原始记录在解析内容上完全一致，保留这34个文件的原字节。
+仅在新输出目录中，为两个误绑定 root 放入各自正确历史 JSONL 的原始行。
+旧36-root freeze、V1/V2/retry1、旧 NPZ、原日志、源码和地图全部保持原样。
+重新绑定使用实际原始记录，不使用“同 episode 其他5条多数投票”来重写 provenance。
+
+本地重建的可复核输出位于本审阅包：
+OFFLINE_REBOUND_INPUTS_NOT_RUNTIME_CERTIFIED/
+该目录是返回包的本地镜像复算，不是 AutoDL 新运行的验收证据。
+
+五、上下文尚缺什么
+这次149条来源复制件只有三份旧绑定脚本是 Python 文件，未提供真正的场景执行源码。
+根据六份原始日志的完整 provenance，可确定15个不同 SHA 的精确来源请求：
+4份 manifest、4份 scenario、2份 collector、1份显式记录的 parent runner、
+4份 dataset/dynamic/approach/intersection 合同或冻结记录。
+这些15个 SHA 对应的原始文件均未出现在此次 SOURCE_INDEX 的已复制文件集合中。
+这仅说明本包没有收集到它们，不能说明云端文件丢失。
+
+C04 两个 episode 显式记录了 parent_shadow_runner_sha256。
+其余4个 episode 的原始 provenance 未记录该字段。
+这不授权把 collector 当成 runner 或 route helper。
+存在 make_line / RouteAdapter 定义也只是候选线索，不能自动证明属于某 episode。
+
+六、本次可执行脚本
+文件：minesim_teacher_pilot_raw_rebind_v1.py
+脚本 SHA256：386af264f8937ab692f42caf233e68bb14c5efcf87227ea4ba95cfac6e56275c
+
+执行内容：
+1. 验证父证据包161项、来源索引，以及当前仍存在的所用原文件。
+2. 复算2356行并在全新 namespace 中建立正确的36-root输入 manifest。
+3. 保持候选协议字节不变：36 roots ×8 seeds ×B256/B1024，仅保存协议，不启动576次搜索。
+4. 在声明的 MineSim 目录范围内，以完整 SHA 查找15份上下文来源。
+5. 将 make_line / RouteAdapter 源文件另存为“未绑定候选”，不强行归属 episode。
+6. 输出来源和 Git 后验检查、SHA清单、结果ZIP。
+
+受限扫描：单文件≤4 MiB；总哈希读取≤768 MiB；≤60000个候选文件；扫描时间上限180秒。
+这些是停止边界，不是任务耗时承诺。
+不读取嵌套压缩归档，不解析大地图，不安装软件。找不到、超限、解析失败都会记录。
+错误或中断发生在 Python 可处理范围内时保存 HOLD 包；SIGKILL、实例关闭或磁盘耗尽不保证能完成打包。
+
+状态解释：
+INPUT_RECORD_BINDING_STATUS=PASS：本步的原始记录身份与输入比对通过。
+EXACT_SOURCES_FOUND=15/15：15份声明的来源字节已收集，不等于运行语义已验证。
+REBIND_AND_COLLECTION_STATUS=PASS：上述本步内容完成且后验未发现变化。
+RUNTIME_CONTEXT_STATUS=NOT_CERTIFIED、READY_FOR_36_ROOT_SMOKE=False：本版始终如此。
+在收到实际源码并检查路线构造与上下文调用链之前，不授权 smoke 或教师搜索。
+
+七、代码审核与测试边界
+56项 Python unittest：全部通过。
+其中包括使用本次真实149来源包、六份原日志和2356-root NPZ 的输入重绑定，
+完整的“来源尚缺→HOLD→ZIP”流程，空输入、非法JSON、重复JSON键、数值溢出、
+错误动作ID/重复动作、缺文件、SHA不符、同名不同内容、多副本同SHA、
+父目录创建、已有namespace保护、原文件未改、中断保存、Git变化失效等。
+另有6项 screen 启动脚本桩测试通过；bash -n 通过。
+screen 测试使用 stub，不是当前 AutoDL 的真实 screen 会话。
+整体PASS分支的流程测试包含合成替身，不应当被写成15份真实上下文已经绑定。
+Python 3.9语法 AST 检查通过；实际本地测试解释器为3.13.5，
+不是在用户云端 Python 3.9 下进行的运行验收。
+
+八、云端操作
+将主脚本和 launch_minesim_teacher_pilot_raw_rebind_v1_screen.sh 上传 /root/autodl-tmp/。
+只执行：
+bash /root/autodl-tmp/launch_minesim_teacher_pilot_raw_rebind_v1_screen.sh
+
+启动脚本先校验主脚本 SHA，使用 screen 执行，不覆盖已有输出或日志。
+日志：
+/root/autodl-tmp/minesim_teacher_pilot_raw_rebind_v1_screen.log
+结果：
+/root/autodl-tmp/minesim_teacher_pilot_raw_rebind_v1.zip
+
+启动成功只表示启动请求被接受，不是实验PASS。
+可以关闭终端，但不要关闭或重启云端实例。
+PASS/HOLD均上传ZIP；没有ZIP则提供启动日志。旧、新namespace均不要删除后重跑。

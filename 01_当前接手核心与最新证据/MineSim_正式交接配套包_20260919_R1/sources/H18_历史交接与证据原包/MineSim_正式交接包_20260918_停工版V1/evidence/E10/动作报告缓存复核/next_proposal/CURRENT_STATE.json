@@ -1,0 +1,28 @@
+{
+  "current_stage": "Dual-MCTS compute efficiency: scalar action-report memoization",
+  "latest_completed": "minesim_dual_reportcache_v1",
+  "equivalence": "PASS_4_PAIRS_EXACT_EXCEPT_TIMING",
+  "performance": "NEGATIVE_IN_THIS_SMOKE",
+  "cpu_ratio_cached_to_original": 1.7082079450498369,
+  "wall_ratio_cached_to_original": 2.731889863110783,
+  "effective_cpu_record": 0.5,
+  "frozen_teacher_states": 32,
+  "frozen_teacher_returns": 512,
+  "new_teacher_sampling_authorized": false,
+  "new_training_authorized": false,
+  "next_candidate": "minesim_dual_reportcache_flat_v1",
+  "next_state": "LOCAL_SCALAR_TESTS_PASSED_CLOUD_NOT_EXECUTED",
+  "next_resource": "LOW",
+  "next_max_searches": 8,
+  "cloud_execution_requires_user_command": "--authorize-flatcache-once",
+  "tree_statistics_reuse": false,
+  "deployed": false,
+  "auto_retry": false,
+  "review_new_mcts_calls": 0,
+  "review_new_training_runs": 0,
+  "notes": [
+    "No restatement of local scalar benchmarks as cloud full-search improvements",
+    "All old results retained",
+    "Only a new isolated cache implementation; no dataset/reward/model change"
+  ]
+}

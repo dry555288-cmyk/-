@@ -1,0 +1,42 @@
+test_all_fields (__main__.Tests.test_all_fields) ... ok
+test_atoms_types (__main__.Tests.test_atoms_types) ... ok
+test_baseline (__main__.Tests.test_baseline) ... ok
+test_bound_files (__main__.Tests.test_bound_files) ... ok
+test_bundle (__main__.Tests.test_bundle) ... ok
+test_capacity_invalid (__main__.Tests.test_capacity_invalid) ... ok
+test_capacity_lru (__main__.Tests.test_capacity_lru) ... ok
+test_claim_once (__main__.Tests.test_claim_once) ... ok
+test_claim_symlink (__main__.Tests.test_claim_symlink) ... ok
+test_close (__main__.Tests.test_close) ... ok
+test_compare_rejects_reward_and_q (__main__.Tests.test_compare_rejects_reward_and_q) ... ok
+test_config_invalidates (__main__.Tests.test_config_invalidates) ... ok
+test_cross_decision (__main__.Tests.test_cross_decision) ... ok
+test_double_install (__main__.Tests.test_double_install) ... ok
+test_duplicate_json (__main__.Tests.test_duplicate_json) ... ok
+test_exception_not_cached (__main__.Tests.test_exception_not_cached) ... ok
+test_existing_override_restore (__main__.Tests.test_existing_override_restore) ... ok
+test_global_map_invalidates (__main__.Tests.test_global_map_invalidates) ... ok
+test_hit_output_isolation (__main__.Tests.test_hit_output_isolation) ... ok
+test_hit_parity (__main__.Tests.test_hit_parity) ... ok
+test_miss_output_isolation (__main__.Tests.test_miss_output_isolation) ... ok
+test_model_map_invalidates (__main__.Tests.test_model_map_invalidates) ... ok
+test_mutable_key (__main__.Tests.test_mutable_key) ... ok
+test_nan (__main__.Tests.test_nan) ... ok
+test_nested_report_refused (__main__.Tests.test_nested_report_refused) ... ok
+test_nextafter (__main__.Tests.test_nextafter) ... ok
+test_no_core_modification (__main__.Tests.test_no_core_modification) ... ok
+test_parent_zip_read (__main__.Tests.test_parent_zip_read) ... ok
+test_paths (__main__.Tests.test_paths) ... ok
+test_process_filter (__main__.Tests.test_process_filter) ... ok
+test_protocol_unchanged_search (__main__.Tests.test_protocol_unchanged_search) ... ok
+test_signed_zero (__main__.Tests.test_signed_zero) ... ok
+test_type_identity (__main__.Tests.test_type_identity) ... ok
+test_validate_error_not_hidden (__main__.Tests.test_validate_error_not_hidden) ... ok
+test_validate_every_hit (__main__.Tests.test_validate_every_hit) ... ok
+test_version_invalidates (__main__.Tests.test_version_invalidates) ... ok
+test_window_invalidates (__main__.Tests.test_window_invalidates) ... ok
+
+----------------------------------------------------------------------
+Ran 37 tests in 0.057s
+
+OK

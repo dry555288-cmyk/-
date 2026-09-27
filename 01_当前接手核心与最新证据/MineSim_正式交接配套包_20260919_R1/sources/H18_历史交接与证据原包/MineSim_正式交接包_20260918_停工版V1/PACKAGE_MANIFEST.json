@@ -1,0 +1,235 @@
+{
+  "format": "MINESIM_HANDOFF_PACKAGE_MANIFEST_V1",
+  "document_date": "2026-09-18",
+  "packaged_utc": "2026-09-18T06:59:56.843520+00:00",
+  "package_name": "MineSim_正式交接包_20260918_停工版V1",
+  "scope": "Evidence copy and formal Word handoff; does not establish live cloud state or grant execution.",
+  "file_count": 44,
+  "total_file_bytes": 8883378,
+  "excluded_from_manifest": [
+    "PACKAGE_MANIFEST.json",
+    "SHA256SUMS"
+  ],
+  "files": [
+    {
+      "path": "ARTIFACT_SCOPE.json",
+      "size": 767,
+      "sha256": "0483b97af9948e449eab4bc97815da685a5e43fbd364468d9f33bf1e237ec356"
+    },
+    {
+      "path": "CURRENT_STATE.json",
+      "size": 4265,
+      "sha256": "c50320a42ab7d3355a49fcce8ba25fd42c3df51eecfa919badb357fcccd47ade"
+    },
+    {
+      "path": "DOCUMENT_QA.json",
+      "size": 1125,
+      "sha256": "8d7c2180f5c7db88a129f67924852ce9f64363a39d1781e55992d160dfd3185f"
+    },
+    {
+      "path": "EVIDENCE_INDEX.json",
+      "size": 10027,
+      "sha256": "5a9830e1a69002d06a1a39c9091b507829a99cca2696ea62abbaea006f2ec2be"
+    },
+    {
+      "path": "EXPERIMENT_LEDGER.json",
+      "size": 22854,
+      "sha256": "e9cc2fa4dc27efd24f02c536d542dbc98978c84cbe0419981edc89fa2240b227"
+    },
+    {
+      "path": "HANDOFF.md",
+      "size": 60550,
+      "sha256": "27222895555782c3cd8960e97a23462dd5db92b673687077daf21850d5b11e57"
+    },
+    {
+      "path": "HANDOFF_LOCAL_VERIFICATION.json",
+      "size": 1016,
+      "sha256": "7c895720a5117dad94d29a381a8be0048987b1ba13f26d21758fddc3415f34e2"
+    },
+    {
+      "path": "HISTORY_ASSET_INDEX.json",
+      "size": 9852,
+      "sha256": "a9a12330862803074a39e1e7d422d499223230afd4ed18016d2263a2f83e2b5e"
+    },
+    {
+      "path": "KEY_CODE_MAP.json",
+      "size": 19555,
+      "sha256": "481daaa0d6017c93da88651c1e517d798ea68dfb11d41cbd24389ebb6b4d5874"
+    },
+    {
+      "path": "MineSim_Dynamic_正式交接_截至20260918_H8子树小试后停工版V1.docx",
+      "size": 81171,
+      "sha256": "872e70b2635b48d9ae3bcc90ff6a62efac146660b4d7f2e34e35d84b834195a6"
+    },
+    {
+      "path": "NEXT_GATE_CONTRACT.json",
+      "size": 4215,
+      "sha256": "336f4cb21eb262c5d0d222cf4476530c57f605f0f8368817ac8e735c2f337fc5"
+    },
+    {
+      "path": "START_HERE.md",
+      "size": 1872,
+      "sha256": "cebbae64a16c6a63108411a64ae168ac2ea59db5c7b2cfd86b8af2017b308e19"
+    },
+    {
+      "path": "evidence/E01/Window16_复核.zip",
+      "size": 18416,
+      "sha256": "0f9c2f2d86df231c12d83b80dfc03929522f265d698eed78fe7d5907a16cfd52"
+    },
+    {
+      "path": "evidence/E02/Coverage32_数据封存复核.zip",
+      "size": 816656,
+      "sha256": "fbe16fce66ea467d0e091cac0a953c5b04599e1e7098a7b5d7ad4a24da24ca70"
+    },
+    {
+      "path": "evidence/E03/Coverage32_无正则拟合复核.zip",
+      "size": 114938,
+      "sha256": "ee950eb1e8fa19aac0f680a3b7e779bb95688e1bf25407048af1a4b848ab64ed"
+    },
+    {
+      "path": "evidence/E04/双车26维正则复核.zip",
+      "size": 219637,
+      "sha256": "48eb017a74e85abbcc12378ec2cef365248def6c40355d80ba9803593f3f4cd4"
+    },
+    {
+      "path": "evidence/E05/双车输入监督信号诊断.zip",
+      "size": 112949,
+      "sha256": "0225825b20f9ed4bce57fb497955db602e3880a265e226ae399794f25a6c5a0b"
+    },
+    {
+      "path": "evidence/E06/双车36维交互复核.zip",
+      "size": 127733,
+      "sha256": "02f0b1d2dd91949c6789af073a1a380bfe36db238e36f64221d759e7bc0db9bb"
+    },
+    {
+      "path": "evidence/E07/双车标准化岭回归复核.zip",
+      "size": 282198,
+      "sha256": "bf1996ba87637fe621f20c00627a6d98c7dcd37e235688a1ed1992f27e49e25c"
+    },
+    {
+      "path": "evidence/E08/双动作偏好与论文机制对照.zip",
+      "size": 22813,
+      "sha256": "da6c503a3dc6af9ac8af751114ae249247ed440fe91261b38f45af7a11b37e2b"
+    },
+    {
+      "path": "evidence/E09/树观察复核及旧缓存提案.zip",
+      "size": 71041,
+      "sha256": "0b690dea9677647770df6addbcb194e48c0df670eaff75748106e4b56ee1c0c8"
+    },
+    {
+      "path": "evidence/E10/动作报告缓存复核.zip",
+      "size": 904398,
+      "sha256": "d03d31fe2b4cbeb9a6c1c430cd925dac03a06e14e2c91a89e50cdb1bab4ff871"
+    },
+    {
+      "path": "evidence/E11/轻量缓存小试复核.zip",
+      "size": 82673,
+      "sha256": "f44a07a4ccbba6d070b9767421ea9f076bf6f6b0362ca51b09b5370cfa6c3357"
+    },
+    {
+      "path": "evidence/E12/轻量缓存固定计时复核.zip",
+      "size": 1367907,
+      "sha256": "e9fe11611a58c9ee8c86d20ecfece7c896d163e03bce9179debc563c1f1ed90d"
+    },
+    {
+      "path": "evidence/E13/PRIOR_REVIEW.json",
+      "size": 3212,
+      "sha256": "10998163fde0a6d49036b7cc313fe4d4c53eae01c36afd95725d58ea0e1f41de"
+    },
+    {
+      "path": "evidence/E13/minesim_dual_subtree_h8_smoke_v1.zip",
+      "size": 948911,
+      "sha256": "5e8cd447847cce2e435ebc8c0376dfc723552b73caf86f1dde424f0982ab3478"
+    },
+    {
+      "path": "evidence/P01/H8_policy4_已交付准备原包.zip",
+      "size": 990172,
+      "sha256": "a38baff7ec4770cb719684d9fc513eb905eb0e3d68870daa2fc6f763d781d31c"
+    },
+    {
+      "path": "frozen_data/DATASET32.json",
+      "size": 488232,
+      "sha256": "9abe28a904c3be43d68c0e5973d6bfa6d84e3cf7882c9d74d6b5b4b41471bbc1"
+    },
+    {
+      "path": "history/H01_20260913_正式交接原件.docx",
+      "size": 78897,
+      "sha256": "76da5790380919b876cf98177cb0e4621e10c1c9144a97cec3cafcaf232c2f47"
+    },
+    {
+      "path": "history/H02_20260910_论文标准对齐原包.zip",
+      "size": 1436537,
+      "sha256": "9b0f1cbaa787695c95fd2b2d6b455e720e1d1dc71cc019b269aeb84901646c37"
+    },
+    {
+      "path": "history/H03_RADEME_20260813.txt",
+      "size": 41285,
+      "sha256": "6ffd910cbbe9fb6b56af4b37153b96120dd3ea0dbd74d141732e601fc7935ac8"
+    },
+    {
+      "path": "history/H04_第一批资料目录.txt",
+      "size": 103484,
+      "sha256": "cd85f6b9843e6622529c5823d460bc90c699f55fad971cb4b61ef8158e11d8ea"
+    },
+    {
+      "path": "history/H05_第二批资料目录.txt",
+      "size": 303870,
+      "sha256": "eb34b9ad0025ceb6dee57e6577564c6ed1a43c4098a38a2f0ea1f0befe95aa3d"
+    },
+    {
+      "path": "pending_policy4/DO_NOT_RUN_WITHOUT_NEW_AUTHORIZATION.md",
+      "size": 500,
+      "sha256": "9969ace565e4d94fec795c96e25af49a6368ad3685d096fa5180ae88e02a881e"
+    },
+    {
+      "path": "pending_policy4/release/PROTOCOL.json",
+      "size": 3324,
+      "sha256": "1cec368d1b6755c36c8809d172e4109f1819912367f24abe9df6d7b7b505eee0"
+    },
+    {
+      "path": "pending_policy4/release/RELEASE_MANIFEST.json",
+      "size": 648,
+      "sha256": "d708997e72964e65a65a1461ecdde0b6dd17c2b64fe4269a733731228f24c8b5"
+    },
+    {
+      "path": "pending_policy4/release/SOURCE_BINDINGS.json",
+      "size": 14589,
+      "sha256": "beaee6de98c2310da943a3b063c2db039149fceb1512289cd6dae58bbb6f5637"
+    },
+    {
+      "path": "pending_policy4/release/experiment.py",
+      "size": 16886,
+      "sha256": "a59438b0a3337101aecb19d37e0da90561c33cab593585e185d0f02c62dec5ca"
+    },
+    {
+      "path": "pending_policy4/release/gate.py",
+      "size": 16572,
+      "sha256": "3f3ea7f7a6874782e2252cfad535b5a7099e16d9f68d06ad4b9512d81773e32f"
+    },
+    {
+      "path": "pending_policy4/release/subtree_reuse.py",
+      "size": 14097,
+      "sha256": "c9834a305c6db1cf31b0460e31cc67c6b5a78480ea1ba20b1ca9ece6986ab532"
+    },
+    {
+      "path": "pending_policy4/release/verify_audit.py",
+      "size": 3366,
+      "sha256": "3c4f00ec3e15f8f04f54cc72b28ccda6c36f0ac55ebcd6049178055efb477659"
+    },
+    {
+      "path": "pending_policy4/run_dual_subtree_policy4.sh",
+      "size": 34502,
+      "sha256": "fbdd654772f176a0a5d773139b7ecdb1d35ab951791204d7ed3c3b6c2488c975"
+    },
+    {
+      "path": "workflow/SESSION_DECISIONS.txt",
+      "size": 784,
+      "sha256": "3f28e81b11a34e3d8f06e308d23cfd46cfdb3e2ba5496d4e5f0ac352445b8e25"
+    },
+    {
+      "path": "workflow/USER_SKILL_ORIGINAL.md",
+      "size": 24882,
+      "sha256": "0d16a325ff3a79eb81e9c2b65e2a98e7b70002b2b301de36c590c17c896dc64f"
+    }
+  ]
+}

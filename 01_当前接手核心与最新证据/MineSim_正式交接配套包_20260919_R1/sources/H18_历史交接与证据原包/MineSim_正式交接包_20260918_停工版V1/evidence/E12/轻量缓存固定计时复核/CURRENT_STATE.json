@@ -1,0 +1,29 @@
+{
+  "evidence_cutoff": "2026-09-18T03:39:08.423748+00:00",
+  "current_gate": "DUAL_FIXED_FLAT_CACHE_BALANCED_TIMING_V1",
+  "execution_status": "COMPLETE_DUAL_FLAT_CACHE_FIXED_TIMING",
+  "integrity_review": "PASS_SAVED_ARTIFACT_INTEGRITY_AND_RECOMPUTATION",
+  "performance_status": "NO_REPRODUCIBLE_SPEEDUP_ON_FIXED_FIXTURES",
+  "cache_mean_cpu_increase_percent": 6.772417533692288,
+  "cache_mean_wall_increase_percent": 6.7725894639169,
+  "candidate_deployable": false,
+  "retry_authorized": false,
+  "extra_timing_authorized": false,
+  "new_data_collection_authorized": false,
+  "new_training_authorized": false,
+  "next_step_proposal": {
+    "name": "SUBTREE_REUSE_STATE_VALUE_HORIZON_SEMANTICS_DESIGN_ONLY",
+    "status": "PROPOSAL_NOT_EXECUTED",
+    "resource": "LOW",
+    "needs_old_teacher_recollection": false,
+    "scope": "Clarify carried statistics, incoming reward accounting, full 8-step horizon and fallback before any new search experiment. No cache retuning or new timing of the frozen candidate."
+  },
+  "do_not_repeat": [
+    "minesim_dual_cachetiming_v1",
+    "run_dual_cachetiming.sh",
+    "collect256 batches",
+    "frozen neural fit and preference experiments"
+  ],
+  "review_did_not_run_mcts": true,
+  "cloud_current_state_not_inspected": true
+}

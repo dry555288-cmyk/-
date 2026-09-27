@@ -1,0 +1,548 @@
+{
+  "scope": "POST_OUTCOME_DESCRIPTIVE_REPLAY_OF_SAVED_MODELS_NOT_NEW_FIT",
+  "per_fold_prediction_collapse": [
+    {
+      "model": "ridge26",
+      "source_group": "policy_00",
+      "lambda": 1.0,
+      "training_constant_gap": -3.5307084614621544,
+      "held_prediction_min": -13.545602983712532,
+      "held_prediction_max": 0.3332879703310636,
+      "held_prediction_range": 13.878890954043596,
+      "max_abs_difference_from_constant": 10.014894522250378,
+      "held_empirical_gap_range": 61.99575893533612,
+      "train_mae": 12.815374028016496
+    },
+    {
+      "model": "mlp26_8_1_l2",
+      "source_group": "policy_00",
+      "lambda": 0.1,
+      "training_constant_gap": -3.5307084614621544,
+      "held_prediction_min": -5.580594123530601,
+      "held_prediction_max": -2.730050306283437,
+      "held_prediction_range": 2.850543817247164,
+      "max_abs_difference_from_constant": 2.049885662068447,
+      "held_empirical_gap_range": 61.99575893533612,
+      "train_mae": 14.512905753445029
+    },
+    {
+      "model": "ridge26",
+      "source_group": "policy_01",
+      "lambda": 1.0,
+      "training_constant_gap": 1.3410851599542448,
+      "held_prediction_min": 1.5331512360166135,
+      "held_prediction_max": 2.2847740074189002,
+      "held_prediction_range": 0.7516227714022867,
+      "max_abs_difference_from_constant": 0.9436888474646554,
+      "held_empirical_gap_range": 71.84578090846824,
+      "train_mae": 12.933051099095103
+    },
+    {
+      "model": "mlp26_8_1_l2",
+      "source_group": "policy_01",
+      "lambda": 1.0,
+      "training_constant_gap": 1.3410851599542448,
+      "held_prediction_min": 1.3415987837816195,
+      "held_prediction_max": 1.3415994457092753,
+      "held_prediction_range": 6.619276557984222e-07,
+      "max_abs_difference_from_constant": 0.0005142857550304303,
+      "held_empirical_gap_range": 71.84578090846824,
+      "train_mae": 12.91748690037574
+    },
+    {
+      "model": "ridge26",
+      "source_group": "policy_02",
+      "lambda": 1.0,
+      "training_constant_gap": -0.1387757425777632,
+      "held_prediction_min": -0.6138759343047778,
+      "held_prediction_max": 0.9239774495926796,
+      "held_prediction_range": 1.5378533838974575,
+      "max_abs_difference_from_constant": 1.0627531921704427,
+      "held_empirical_gap_range": 41.72345289422455,
+      "train_mae": 14.178086532324777
+    },
+    {
+      "model": "mlp26_8_1_l2",
+      "source_group": "policy_02",
+      "lambda": 1.0,
+      "training_constant_gap": -0.1387757425777632,
+      "held_prediction_min": -0.13732633123945104,
+      "held_prediction_max": -0.13732574421027244,
+      "held_prediction_range": 5.870291786003179e-07,
+      "max_abs_difference_from_constant": 0.001449998367490768,
+      "held_empirical_gap_range": 41.72345289422455,
+      "train_mae": 13.982441945180488
+    },
+    {
+      "model": "ridge26",
+      "source_group": "policy_03",
+      "lambda": 1.0,
+      "training_constant_gap": 1.4892797771351998,
+      "held_prediction_min": 0.30895606366527784,
+      "held_prediction_max": 2.982277485903823,
+      "held_prediction_range": 2.673321422238545,
+      "max_abs_difference_from_constant": 1.492997708768623,
+      "held_empirical_gap_range": 46.58990906640637,
+      "train_mae": 12.7296254087435
+    },
+    {
+      "model": "mlp26_8_1_l2",
+      "source_group": "policy_03",
+      "lambda": 1.0,
+      "training_constant_gap": 1.4892797771351998,
+      "held_prediction_min": 1.4901012070014426,
+      "held_prediction_max": 1.4901024050678506,
+      "held_prediction_range": 1.1980664080812886e-06,
+      "max_abs_difference_from_constant": 0.0008226279326508656,
+      "held_empirical_gap_range": 46.58990906640637,
+      "train_mae": 12.847258888704133
+    },
+    {
+      "model": "ridge26",
+      "source_group": "policy_04",
+      "lambda": 1.0,
+      "training_constant_gap": -2.6574536055002294,
+      "held_prediction_min": -2.7294936604866558,
+      "held_prediction_max": -1.5738280804254303,
+      "held_prediction_range": 1.1556655800612254,
+      "max_abs_difference_from_constant": 1.083625525074799,
+      "held_empirical_gap_range": 36.70714077710705,
+      "train_mae": 14.339466126233072
+    },
+    {
+      "model": "mlp26_8_1_l2",
+      "source_group": "policy_04",
+      "lambda": 0.1,
+      "training_constant_gap": -2.6574536055002294,
+      "held_prediction_min": -2.633402117140838,
+      "held_prediction_max": -2.59308974028654,
+      "held_prediction_range": 0.040312376854298115,
+      "max_abs_difference_from_constant": 0.06436386521368931,
+      "held_empirical_gap_range": 36.70714077710705,
+      "train_mae": 15.391948811457562
+    },
+    {
+      "model": "ridge26",
+      "source_group": "policy_05",
+      "lambda": 1.0,
+      "training_constant_gap": -3.8646755750768227,
+      "held_prediction_min": -10.374211218705408,
+      "held_prediction_max": -0.6033636225711667,
+      "held_prediction_range": 9.770847596134242,
+      "max_abs_difference_from_constant": 6.509535643628586,
+      "held_empirical_gap_range": 50.075746930834086,
+      "train_mae": 12.992965594962671
+    },
+    {
+      "model": "mlp26_8_1_l2",
+      "source_group": "policy_05",
+      "lambda": 0.1,
+      "training_constant_gap": -3.8646755750768227,
+      "held_prediction_min": -4.3602367272517455,
+      "held_prediction_max": -3.5608576110300105,
+      "held_prediction_range": 0.799379116221735,
+      "max_abs_difference_from_constant": 0.4955611521749228,
+      "held_empirical_gap_range": 50.075746930834086,
+      "train_mae": 14.722710535176292
+    },
+    {
+      "model": "ridge26",
+      "source_group": "policy_06",
+      "lambda": 1.0,
+      "training_constant_gap": -0.4288382138393368,
+      "held_prediction_min": -1.2634420769558479,
+      "held_prediction_max": 1.3627368920662055,
+      "held_prediction_range": 2.626178969022053,
+      "max_abs_difference_from_constant": 1.7915751059055423,
+      "held_empirical_gap_range": 32.97772324820673,
+      "train_mae": 14.473515208021078
+    },
+    {
+      "model": "mlp26_8_1_l2",
+      "source_group": "policy_06",
+      "lambda": 1.0,
+      "training_constant_gap": -0.4288382138393368,
+      "held_prediction_min": -0.4282090116761987,
+      "held_prediction_max": -0.4282085946034672,
+      "held_prediction_range": 4.1707273146229795e-07,
+      "max_abs_difference_from_constant": 0.0006296192358695718,
+      "held_empirical_gap_range": 32.97772324820673,
+      "train_mae": 14.377377868951873
+    },
+    {
+      "model": "ridge26",
+      "source_group": "policy_07",
+      "lambda": 1.0,
+      "training_constant_gap": -2.00096058384514,
+      "held_prediction_min": -8.716073951280881,
+      "held_prediction_max": 0.9632351160458728,
+      "held_prediction_range": 9.679309067326754,
+      "max_abs_difference_from_constant": 6.715113367435741,
+      "held_empirical_gap_range": 19.905803218707206,
+      "train_mae": 14.430644547445501
+    },
+    {
+      "model": "mlp26_8_1_l2",
+      "source_group": "policy_07",
+      "lambda": 1.0,
+      "training_constant_gap": -2.00096058384514,
+      "held_prediction_min": -2.0000801322883337,
+      "held_prediction_max": -2.000079701107454,
+      "held_prediction_range": 4.311808798895811e-07,
+      "max_abs_difference_from_constant": 0.0008808827376860506,
+      "held_empirical_gap_range": 19.905803218707206,
+      "train_mae": 15.715022065204698
+    }
+  ],
+  "mlp_lambda1_folds": 5,
+  "mlp_lambda1_held_states": 20,
+  "mlp_lambda1_max_prediction_range": 1.1980664080812886e-06,
+  "mlp_lambda1_max_abs_deviation_from_constant": 0.001449998367490768,
+  "all32_mae_delta_constant_minus_mlp": 0.0067166600107704255,
+  "mae_relative_reduction_percent": 0.04487186117996244,
+  "old6_examples": {
+    "ridge26": [
+      {
+        "absolute_error": 74.60056785681077,
+        "block_absolute_errors": [
+          74.85007979218385,
+          74.35105592143769
+        ],
+        "block_mean_gaps": [
+          61.30447680847132,
+          60.80545293772516
+        ],
+        "constant_absolute_error": 64.5856733345604,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": true,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": 61.054964873098236,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": -13.545602983712532,
+        "prediction_sign": -1,
+        "repeated_order_sign": 1,
+        "root_id": "contrast_00",
+        "signed_error": -74.60056785681077,
+        "source_run": "policy_00",
+        "training_only_constant_gap": -3.5307084614621544,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 71.60509173118152,
+        "block_absolute_errors": [
+          71.8712671921773,
+          71.33891627018572
+        ],
+        "block_mean_gaps": [
+          -70.33811595616069,
+          -69.80576503416911
+        ],
+        "constant_absolute_error": 71.41302565511916,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": false,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": -70.07194049516491,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": 1.5331512360166135,
+        "prediction_sign": 1,
+        "repeated_order_sign": -1,
+        "root_id": "contrast_01",
+        "signed_error": 71.60509173118152,
+        "source_run": "policy_01",
+        "training_only_constant_gap": 1.3410851599542448,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 40.72715772691845,
+        "block_absolute_errors": [
+          56.7552743371976,
+          24.699041116639307
+        ],
+        "block_mean_gaps": [
+          -53.772996851293776,
+          -21.716763630735485
+        ],
+        "constant_absolute_error": 39.23416001814983,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": false,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": -37.74488024101463,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": 2.982277485903823,
+        "prediction_sign": 1,
+        "repeated_order_sign": -1,
+        "root_id": "newroot_02",
+        "signed_error": 40.72715772691845,
+        "source_run": "policy_03",
+        "training_only_constant_gap": 1.4892797771351998,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 38.71275954240908,
+        "block_absolute_errors": [
+          13.44565589876767,
+          63.9798631860505
+        ],
+        "block_mean_gaps": [
+          10.716162238281015,
+          61.25036952556385
+        ],
+        "constant_absolute_error": 38.64071948742266,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": true,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": 35.98326588192243,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": -2.7294936604866558,
+        "prediction_sign": -1,
+        "repeated_order_sign": 1,
+        "root_id": "contrast_04",
+        "signed_error": -38.71275954240908,
+        "source_run": "policy_04",
+        "training_only_constant_gap": -2.6574536055002294,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 59.376962483965286,
+        "block_absolute_errors": [
+          51.14653260735339,
+          67.60739236057718
+        ],
+        "block_mean_gaps": [
+          40.77232138864798,
+          57.23318114187177
+        ],
+        "constant_absolute_error": 52.867426840336705,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": true,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": 49.00275126525988,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": -10.374211218705408,
+        "prediction_sign": -1,
+        "repeated_order_sign": 1,
+        "root_id": "contrast_05",
+        "signed_error": -59.376962483965286,
+        "source_run": "policy_05",
+        "training_only_constant_gap": -3.8646755750768227,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 0.2609377510436992,
+        "block_absolute_errors": [
+          0.42005028851189574,
+          0.10182521357550267
+        ],
+        "block_mean_gaps": [
+          1.236798041651646,
+          0.9185729667152529
+        ],
+        "constant_absolute_error": 1.5065237180227862,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": true,
+        "is_old16": true,
+        "known_order_correct": true,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": 1.0776855041834494,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": 0.8167477531397502,
+        "prediction_sign": 1,
+        "repeated_order_sign": 1,
+        "root_id": "newroot_05",
+        "signed_error": -0.2609377510436992,
+        "source_run": "policy_06",
+        "training_only_constant_gap": -0.4288382138393368,
+        "unknown_not_imputed": false
+      }
+    ],
+    "mlp26_8_1_l2": [
+      {
+        "absolute_error": 66.63555899662883,
+        "block_absolute_errors": [
+          66.88507093200192,
+          66.38604706125575
+        ],
+        "block_mean_gaps": [
+          61.30447680847132,
+          60.80545293772516
+        ],
+        "constant_absolute_error": 64.5856733345604,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": true,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": 61.054964873098236,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": -5.580594123530601,
+        "prediction_sign": -1,
+        "repeated_order_sign": 1,
+        "root_id": "contrast_00",
+        "signed_error": -66.63555899662883,
+        "source_run": "policy_00",
+        "training_only_constant_gap": -3.5307084614621544,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 71.41353994087419,
+        "block_absolute_errors": [
+          71.67971540186997,
+          71.14736447987839
+        ],
+        "block_mean_gaps": [
+          -70.33811595616069,
+          -69.80576503416911
+        ],
+        "constant_absolute_error": 71.41302565511916,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": false,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": -70.07194049516491,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": 1.3415994457092753,
+        "prediction_sign": 1,
+        "repeated_order_sign": -1,
+        "root_id": "contrast_01",
+        "signed_error": 71.41353994087419,
+        "source_run": "policy_01",
+        "training_only_constant_gap": 1.3410851599542448,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 39.23498264608248,
+        "block_absolute_errors": [
+          55.26309925636163,
+          23.206866035803337
+        ],
+        "block_mean_gaps": [
+          -53.772996851293776,
+          -21.716763630735485
+        ],
+        "constant_absolute_error": 39.23416001814983,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": false,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": -37.74488024101463,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": 1.4901024050678506,
+        "prediction_sign": 1,
+        "repeated_order_sign": -1,
+        "root_id": "newroot_02",
+        "signed_error": 39.23498264608248,
+        "source_run": "policy_03",
+        "training_only_constant_gap": 1.4892797771351998,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 38.61666799906327,
+        "block_absolute_errors": [
+          13.349564355421853,
+          63.88377164270469
+        ],
+        "block_mean_gaps": [
+          10.716162238281015,
+          61.25036952556385
+        ],
+        "constant_absolute_error": 38.64071948742266,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": true,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": 35.98326588192243,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": -2.633402117140838,
+        "prediction_sign": -1,
+        "repeated_order_sign": 1,
+        "root_id": "contrast_04",
+        "signed_error": -38.61666799906327,
+        "source_run": "policy_04",
+        "training_only_constant_gap": -2.6574536055002294,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 53.36298799251163,
+        "block_absolute_errors": [
+          45.13255811589973,
+          61.59341786912351
+        ],
+        "block_mean_gaps": [
+          40.77232138864798,
+          57.23318114187177
+        ],
+        "constant_absolute_error": 52.867426840336705,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": true,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": 49.00275126525988,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": -4.3602367272517455,
+        "prediction_sign": -1,
+        "repeated_order_sign": 1,
+        "root_id": "contrast_05",
+        "signed_error": -53.36298799251163,
+        "source_run": "policy_05",
+        "training_only_constant_gap": -3.8646755750768227,
+        "unknown_not_imputed": false
+      },
+      {
+        "absolute_error": 1.5058945107552302,
+        "block_absolute_errors": [
+          1.6650070482234267,
+          1.3467819732870336
+        ],
+        "block_mean_gaps": [
+          1.236798041651646,
+          0.9185729667152529
+        ],
+        "constant_absolute_error": 1.5065237180227862,
+        "constant_known_order_correct": false,
+        "fixed03_known_order_correct": true,
+        "is_old16": true,
+        "known_order_correct": false,
+        "not_Q_star_or_safety_label": true,
+        "observed_empirical_mean_gap": 1.0776855041834494,
+        "ordering_subset": "OLD6_CONFIRMED",
+        "predicted_mean_gap": -0.42820900657178074,
+        "prediction_sign": -1,
+        "repeated_order_sign": 1,
+        "root_id": "newroot_05",
+        "signed_error": -1.5058945107552302,
+        "source_run": "policy_06",
+        "training_only_constant_gap": -0.4288382138393368,
+        "unknown_not_imputed": false
+      }
+    ]
+  },
+  "metrics": {
+    "ridge26": {
+      "mae": 15.350510426014772,
+      "rmse": 27.148876004895598,
+      "constant_mae": 14.968534476055464,
+      "constant_rmse": 25.630806743833702
+    },
+    "mlp26_8_1_l2": {
+      "mae": 14.961817816044693,
+      "rmse": 25.80921613194975,
+      "constant_mae": 14.968534476055464,
+      "constant_rmse": 25.630806743833702
+    }
+  },
+  "interpretation": "Saved small-MLP predictions are near training means in 5 of 8 folds; small aggregate MAE improvement is not a useful state-conditional decision advantage and RMSE is worse. L2, architecture, optimizer seed and selection differ from previous models, so this is not a single-factor L2 ablation. No safety/pruning/acceleration or independent-route generalization claim."
+}
