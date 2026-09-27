@@ -1,0 +1,113 @@
+{
+  "contract": {
+    "hard_safety": {
+      "between_tick_continuous_claim": false,
+      "hard_safety_penalty": -100.0,
+      "v2r": "EXACT_FOOTPRINT_COVERED_BY_D_DRIVABLE_AT_0.1S_TICKS",
+      "v2v": "EXACT_9x4M_FOOTPRINT_AT_0.1S_TICKS"
+    },
+    "outcome_taxonomy": [
+      "SUCCESS",
+      "HARD_SAFETY_TERMINAL",
+      "SAFE_DEADLOCK",
+      "SAFE_INCOMPLETE_CAP",
+      "PLANNING_DEADLINE_FAILURE",
+      "NO_ADMITTED_ACTION",
+      "RUNNING"
+    ],
+    "risk": {
+      "MMTTC": "DIAGNOSTIC_ONLY",
+      "PET": "DIAGNOSTIC_ONLY",
+      "new_pet_mmttc_reward_term": false,
+      "new_risk_pruning": false,
+      "new_risk_terminal": false
+    },
+    "task_terminal": {
+      "evaluation_cap_is_not_task_terminal": true,
+      "hard_safety_terminal": "EXACT_TICK_V2V_OR_V2R",
+      "no_admitted_action_separate": true,
+      "planning_deadline_failure_separate": true,
+      "safe_deadlock": "SAFE_ABSORBING_STATE_TRAP",
+      "success": "BOTH_VEHICLES_IN_OWN_FINAL_0.5M_WINDOW_AND_SPEED_EQ_0"
+    },
+    "utility": {
+      "both_parked_global_bonus": 20.0,
+      "internal_clearance": "SOFT_UTILITY",
+      "max_completion_credit": 30.0,
+      "per_vehicle_first_parked_bonus": 5.0,
+      "progress_cap_per_vehicle_step": 1.0,
+      "time_cost_nonterminal_outer_step": -0.05,
+      "ttc": "UTILITY_BUT_DUAL_ONLY_NEUTRAL_EXTERNAL_SLOTS_MAKE_ACTIVE_TERM_ZERO",
+      "wait_cost_full_stationary_unfinished": -0.1
+    }
+  },
+  "do_not_repeat_if_unchanged": [
+    "G1_V2V_EXACT_TICK_TECHNICAL_CHAIN_V1",
+    "G1_V2R_DRIVABLE_DOMAIN_V1",
+    "G1_V2R_STATE_CONTRACT_V1",
+    "G1_V2R_TRANSITION_OVERLAY_V1",
+    "G1_V2R_REAL_MAP_ONE_STEP_SMOKE_V1",
+    "G1_DEADLOCK_CONTRACT_V1",
+    "G1_DEADLOCK_TERMINAL_INTEGRATION_V1",
+    "G1_REWARD_VALUE_CONTRACT_V1",
+    "G1_LONG_HORIZON_RISK_SEMANTICS_V1"
+  ],
+  "drivable_token_set_sha256": "de78b0bdd63a41b9222bc0bf5ba8b343c46eacf751de8d5106308b58a5ec4e21",
+  "evidence": {
+    "deadlock_rebuilt": {
+      "path": "/root/autodl-tmp/minesim_g1_deadlock_terminal_integration_v1_rebuilt/RESULT.json",
+      "sha256": "ee0f0d72f4ca7f0f856ea0ed92e0c9ee91d1543fcd2b3f3831842ab42813131a"
+    },
+    "deadlock_retry": {
+      "path": "/root/autodl-tmp/G1_DEADLOCK_TASK_STATUS_FIXTURE_RETRY1.log",
+      "sha256": "29fb9f2aac72de57ccb6454e86295f4bb88150d7042c1a55b2f2808dd94f61a2",
+      "tokens": [
+        "STATE_TYPES = ['DualOnlyState', 'DualOnlyState']",
+        "DEADLOCK_TASK_STATUS = SAFE_DEADLOCK",
+        "RUNNING_STATUS = RUNNING",
+        "CAP_STATUS = EVALUATION_CAP_NOT_TASK_TERMINAL",
+        "PASS:G1_DEADLOCK_TASK_STATUS_FIXTURE_RETRY1"
+      ]
+    },
+    "reward_audit": {
+      "path": "/root/autodl-tmp/minesim_g1_reward_value_contract_audit_v1/RESULT.json",
+      "sha256": "7b07d274dbeec24b8cc27e7377fff6b5f54156da4b9043ca5ac391c2af065954"
+    },
+    "reward_candidate": {
+      "path": "/root/autodl-tmp/minesim_g1_reward_value_contract_candidate_v1/RESULT.json",
+      "sha256": "341e2de08968e3934e5bb19a937f9ab18b36b2d83933042873e4237e738e17f0"
+    },
+    "reward_overlay": {
+      "path": "/root/autodl-tmp/minesim_g1_reward_value_contract_overlay_v1/RESULT.json",
+      "sha256": "57749d4b185cb7a4742a355a03c4890b26926ae1a4692fad9c3ae6d12416255e"
+    },
+    "risk_audit": {
+      "path": "/root/autodl-tmp/minesim_g1_long_horizon_risk_semantics_audit_v1/RESULT.json",
+      "sha256": "bce509c16d7922f7c1e8e127e19b769a679fa1f59e750cbd2aaa804e3bdab37d"
+    }
+  },
+  "freeze": "G1_FINAL_FREEZE_V1",
+  "g0_status": "PASS_FROZEN",
+  "g1_status": "PASS_FROZEN",
+  "g2_status": "READY_NOT_STARTED",
+  "git_status": [
+    "?? ^C"
+  ],
+  "head": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+  "holdout_used": false,
+  "map_sha256": "b85a3d8b28f2252ecb5bda179d514573f6333079def838cd048566f556d95cd0",
+  "next_gate": "G2_TEACHER_BUDGET_X_HORIZON_CALIBRATION",
+  "next_gate_status": "READY_NOT_STARTED",
+  "real_benchmark": false,
+  "repo_write": false,
+  "runtime": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/runtime",
+  "scientific_runtime": false,
+  "source_sha256": {
+    "dual_stop_adapter_v1.py": "04710705edeea28bf38560fc4e3ce8ee319fc0b6679dbf00bd4c61d897cd4961",
+    "fleet_reward.py": "bd2cefa0e6eac0980d009882aa5a4a0aa7f0b6701b6534ccb3af18634ad6213c",
+    "reward.py": "d225ca754b2e5f6a650a35a946819276d50c027eaf66449667973c45f98ed5a5"
+  },
+  "status": "PASS",
+  "teacher_collection": false,
+  "training": false
+}

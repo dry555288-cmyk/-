@@ -1,0 +1,10 @@
+=== AUTODL CURRENT STATE ===
+
+HEAD:
+112d2bd0f3412fc83b13d5587d2b41402d2d0f5e
+
+STATUS:
+?? ^C
+
+LATEST COMMIT:
+112d2bd (HEAD -> fullmine-v4-mcts-representative-dev, tag: fullmine-vector-v4-runtime-freeze-20260814, tag: fullmine-v4-representative-coverage-v1-20260814, tag: fullmine-v4-pure-mcts-representative-transfer-v1-20260814, tag: fullmine-v4-polygon21-fleet-mcts-conflict-v1-20260815, newmap-j117-dev, fullmine-v4-coverage-dev) fullmine: freeze vector v4 runtime fixes

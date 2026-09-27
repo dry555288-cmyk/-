@@ -1,0 +1,1203 @@
+[
+  {
+    "path": "/root/MineSim-Dynamic/devkit/common/actor_state/oriented_box.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "261:     if there is an overlap, check for the exact intersection using geometry Polygon"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/database/utils/measure.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "22: def intersection(a: Rectangle, b: Rectangle) -> float:",
+      "24:     Intersection between rectangles.",
+      "27:     :return: Area of intersection between a and b.",
+      "35:     # return intersection",
+      "49:     return (a[2] - a[0]) * (a[3] - a[1]) + (b[2] - b[0]) * (b[3] - b[1]) - intersection(a, b)"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/database/utils/boxes/box3d.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "832:         Returns the coordinate of the following point: the center of the intersection of the bottom and forward faces"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/other/minesim_devkit_import_list.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "217: from devkit.sim_engine.map_manager.minesim_map_data.maps_datatypes import SemanticMapLayer",
+      "224: # semantic_map: MineSimSemanticMapJsonLoader",
+      "226: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "227: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapExplorer",
+      "245: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "246: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapExplorer"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/environment_manager/collision_lookup.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "238:         0.1 m pixel square has no physical intersection with the vehicle.",
+      "246:         Touching is treated as intersection (conservative)."
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/environment_manager/scenario_organizer.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "57:                 if type_str == \"intersection\":"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/abstract_map.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "16: from devkit.sim_engine.map_manager.minesim_map_data.maps_datatypes import SemanticMapLayer",
+      "28: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "29: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapExplorer",
+      "45:     def get_available_map_objects(self) -> List[SemanticMapLayer]:",
+      "48:         :return: A list of SemanticMapLayers.",
+      "75:     # def get_all_map_objects(self, point: Point2D, layer: SemanticMapLayer) -> List[MapObject]:",
+      "86:     # def get_one_map_object(self, point: Point2D, layer: SemanticMapLayer) -> Optional[MapObject]:",
+      "97:     # def is_in_layer(self, point: Point2D, layer: SemanticMapLayer) -> bool:",
+      "108:     # def get_proximal_map_objects(self, point: Point2D, radius: float, layers: List[SemanticMapLayer]) -> Dict[SemanticMapLayer, List[MapObject]]:",
+      "114:     #     :return: A dictionary mapping SemanticMapLayers to lists of map objects.",
+      "119:     # def get_map_object(self, object_token: str, layer: SemanticMapLayer) -> Optional[MapObject]:",
+      "129:     # def get_distance_to_nearest_map_object(self, point: Point2D, layer: SemanticMapLayer) -> Tuple[Optional[str], Optional[float]]:",
+      "140:     # def get_distance_to_nearest_raster_layer(self, point: Point2D, layer: SemanticMapLayer) -> float:",
+      "151:     # def get_distances_matrix_to_nearest_map_object(self, points: List[Point2D], layer: SemanticMapLayer) -> Optional[npt.NDArray[np.float64]]:"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/abstract_map_objects.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "16: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "155:     def __init__(self, dubinspose_token: str, semantic_map: MineSimSemanticMapJsonLoader):",
+      "157:         self.pose_id = semantic_map.getind(layer_name=MineSimMapLayer.DUBINS_POSE.fullname, token=dubinspose_token)",
+      "158:         self.dubins_pose_meta_data: Dict = semantic_map.dubins_pose[self.pose_id]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_manager.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "40:     from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "53:     # semanticmap_json_loader = MineSimSemanticMapJsonLoader(",
+      "57:     semanticmap_json_loader = get_mine_maps_semantic_json(",
+      "62:     mine_map_factory = MineSimMapFactory(bitmap_png_loader=bitmap_png_loader, semanticmap_json_loader=semanticmap_json_loader)"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/bit_map.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "57:         semantic_map_hashes = {\"jiangxi_jiangtong\": \"jiangxi_jiangtong_semantic_map\", \"guangdong_dapai\": \"guangdong_dapai_semantic_map\"}",
+      "58:         semantic_map_hash = semantic_map_hashes[self.location]",
+      "59:         dir_semantic_map = os.path.join(self.dataroot, \"maps\", \"semantic_map\", semantic_map_hash + \".json\")",
+      "60:         with open(dir_semantic_map, \"r\") as f:",
+      "61:             temp_semantic_map_info = json.load(f)",
+      "63:         self.bitmap_info[\"bitmap_rgb_PNG\"] = temp_semantic_map_info[\"bitmap_rgb_PNG\"]",
+      "64:         self.bitmap_info[\"bitmap_mask_PNG\"] = temp_semantic_map_info[\"bitmap_mask_PNG\"]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/map_api.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "49:             Exception: xxxx_semantic_map.json version is error.",
+      "65:         semantic_map_hashes = {\"jiangxi_jiangtong\": \"jiangxi_jiangtong_semantic_map\", \"guangdong_dapai\": \"guangdong_dapai_semantic_map\"}",
+      "66:         semantic_map_hash = semantic_map_hashes[self.location]",
+      "67:         dir_semantic_map = os.path.join(self.dataroot, \"maps\", \"semantic_map\", semantic_map_hash + \".json\")",
+      "68:         with open(dir_semantic_map, \"r\") as f:",
+      "69:             self.semantic_map_json = json.load(f)",
+      "72:         if \"version\" in self.semantic_map_json:",
+      "73:             self.version = self.semantic_map_json[\"version\"]",
+      "99:         return self.semantic_map_json[layer_name]",
+      "576:         self.canvas_max_x = self.map_api.semantic_map_json[\"bitmap_rgb_PNG\"][\"canvas_edge_meter\"][0]  # 画布的地理尺寸",
+      "578:         self.canvas_max_y = self.map_api.semantic_map_json[\"bitmap_rgb_PNG\"][\"canvas_edge_meter\"][0]",
+      "60:         self.non_geometric_polygon_layers = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]",
+      "108:         self.loading_area = self._load_layer(\"loading_area\")",
+      "109:         self.unloading_area = self._load_layer(\"unloading_area\")",
+      "119:             if layer_name == \"loading_area\":  # only one",
+      "551:         representative_layers: Tuple[str] = (\"intersection\", \"road\", \"unloading_area\", \"loading_area\"),",
+      "565:                 loading_area=\"#6a3d9a\",",
+      "566:                 unloading_area=\"#7e772e\",",
+      "60:         self.non_geometric_polygon_layers = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]",
+      "109:         self.unloading_area = self._load_layer(\"unloading_area\")",
+      "551:         representative_layers: Tuple[str] = (\"intersection\", \"road\", \"unloading_area\", \"loading_area\"),",
+      "566:                 unloading_area=\"#7e772e\",",
+      "60:         self.non_geometric_polygon_layers = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]",
+      "107:         self.intersection = self._load_layer(\"intersection\")",
+      "209:         :param layer_names:['intersection','road']或者 None",
+      "235:         :param layer_names:['intersection','road']或者 None",
+      "512:         temp_intersection = self.intersection.copy()",
+      "528:             intersection_number = int(pathsample_value[\"link_insection_token\"].split(\"-\")[1])  # 'intersection-0'提取0",
+      "551:         representative_layers: Tuple[str] = (\"intersection\", \"road\", \"unloading_area\", \"loading_area\"),",
+      "564:                 intersection=\"#fb9a99\","
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/plot_scripts/plot_global_add_token.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "220:         fig_name = location + \"_semantic_map_add_tokens\"",
+      "42:             loading_area=\"#6a3d9a\",",
+      "43:             unloading_area=\"#7e772e\",",
+      "127:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]",
+      "43:             unloading_area=\"#7e772e\",",
+      "127:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]",
+      "41:             intersection=\"#fb9a99\",",
+      "126:         # layer_names = ['intersection','road']",
+      "127:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/plot_scripts/plot_global_map.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "204:         fig_name = location + \"_semantic_map\"",
+      "42:             loading_area=\"#6a3d9a\",",
+      "43:             unloading_area=\"#7e772e\",",
+      "127:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]",
+      "43:             unloading_area=\"#7e772e\",",
+      "127:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]",
+      "41:             intersection=\"#fb9a99\",",
+      "126:         # layer_names = ['intersection','road']",
+      "127:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/plot_scripts/plot_local_range_map.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "185:         fig_name = location + \"_semantic_map\"",
+      "37:             loading_area=\"#6a3d9a\",",
+      "38:             unloading_area=\"#7e772e\",",
+      "103:             layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]",
+      "38:             unloading_area=\"#7e772e\",",
+      "103:             layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]",
+      "36:             intersection=\"#fb9a99\",",
+      "103:             layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/plot_scripts/view_global_map.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "42:             loading_area=\"#6a3d9a\",",
+      "43:             unloading_area=\"#7e772e\",",
+      "107:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]",
+      "43:             unloading_area=\"#7e772e\",",
+      "107:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]",
+      "41:             intersection=\"#fb9a99\",",
+      "106:         # layer_names = ['intersection','road']",
+      "107:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\", \"road_block\"]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_graph_search_edge_node.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "16: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "32:     def __init__(self, dubinspose_token: str, semantic_map: MineSimSemanticMapJsonLoader):",
+      "33:         super().__init__(dubinspose_token=dubinspose_token, semantic_map=semantic_map)",
+      "35:             semantic_map=semantic_map",
+      "38:     def _search_parent_and_child_nodes(self, semantic_map: MineSimSemanticMapJsonLoader):",
+      "41:             link_polygon_id = semantic_map.getind(layer_name=MineSimMapLayer.POLYGON.fullname, token=self.link_polygon_token)",
+      "43:             logging.error(f\"#log# Error: {self.token}: link_polygon_token '{self.link_polygon_token}' not found in semantic map.\")",
+      "51:         for link_referencepath_token in semantic_map.polygon[link_polygon_id][\"link_referencepath_tokens\"]:",
+      "52:             path_id = semantic_map.getind(layer_name=MineSimMapLayer.REFERENCE_PATH.fullname, token=link_referencepath_token)",
+      "53:             link_dubinspose_tokens = semantic_map.reference_path[path_id][\"link_dubinspose_tokens\"]",
+      "72: def get_graph_topology_node_dunbins(dubinspose_token: str, semantic_map: MineSimSemanticMapJsonLoader) -> GraphTopologyNodeMapObject:",
+      "76:     return GraphTopologyNodeMapObject(dubinspose_token=dubinspose_token, semantic_map=semantic_map)",
+      "87:     def __init__(self, path_token: str, semantic_map: MineSimSemanticMapJsonLoader):",
+      "90:         self.path_id = semantic_map.getind(layer_name=MineSimMapLayer.REFERENCE_PATH.fullname, token=path_token)",
+      "91:         self.refpath_meta_data: dict = semantic_map.reference_path[self.path_id]",
+      "92:         self.polygon_nodes: List[Dict] = semantic_map.reference_path[self.path_id][\"link_polygon_tokens\"]",
+      "94:             dubinspose_token=semantic_map.reference_path[self.path_id][\"link_dubinspose_tokens\"][0], semantic_map=semantic_map",
+      "97:             dubinspose_token=semantic_map.reference_path[self.path_id][\"link_dubinspose_tokens\"][-1], semantic_map=semantic_map"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_map.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "16: from devkit.sim_engine.map_manager.minesim_map_data.maps_datatypes import SemanticMapLayer",
+      "23: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "24: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapExplorer",
+      "39:     def __init__(self, map_name: str, bitmap_png_loader: MineSimBitMapPngLoader, semanticmap_json_loader: MineSimSemanticMapJsonLoader) -> None:",
+      "43:         self.semantic_map = semanticmap_json_loader",
+      "44:         self._map_objects: Dict[SemanticMapLayer, Dict[str, MapObject]] = defaultdict(dict)",
+      "46:         # self._map_object_getter: Dict[SemanticMapLayer, Callable[[str], MapObject]] = {",
+      "47:         #     SemanticMapLayer.ROAD_SEGMENT: self._get_lane,",
+      "48:         #     SemanticMapLayer.INTERSECTION: self._get_lane_connector,",
+      "49:         #     SemanticMapLayer.LOADING_AREA: self._get_roadblock,",
+      "50:         #     SemanticMapLayer.UNLOADING_AREA: self._get_roadblock_connector,",
+      "51:         #     SemanticMapLayer.ROAD_BLOCK: self._get_stop_line,",
+      "52:         #     SemanticMapLayer.REFERENCE_PATH: self._get_crosswalk,",
+      "53:         #     SemanticMapLayer.BORDERLINE: self._get_intersection,",
+      "54:         #     SemanticMapLayer.DUBINS_POSE: self._get_walkway,",
+      "58:             SemanticMapLayer.ROAD_SEGMENT: \"road\",",
+      "59:             SemanticMapLayer.INTERSECTION: \"intersection\",",
+      "60:             SemanticMapLayer.LOADING_AREA: \"loading_area\",",
+      "61:             SemanticMapLayer.UNLOADING_AREA: \"unloading_area\",",
+      "62:             SemanticMapLayer.ROAD_BLOCK: \"road_block\",",
+      "63:             SemanticMapLayer.REFERENCE_PATH: \"reference_path\",",
+      "64:             SemanticMapLayer.BORDERLINE: \"borderline\",",
+      "65:             SemanticMapLayer.DUBINS_POSE: \"dubins_pose\",",
+      "76:         return self.__class__, (self._map_name, self.raster_bit_map, self.semantic_map)",
+      "83:     def get_available_map_objects(self) -> List[SemanticMapLayer]:",
+      "87:     def get_available_raster_layers(self) -> List[SemanticMapLayer]:",
+      "107:     # def get_proximal_map_objects(self, point: Point2D, radius: float, layers: List[SemanticMapLayer]) -> Dict[SemanticMapLayer, List[MapObject]]:",
+      "118:     #     object_map: Dict[SemanticMapLayer, List[MapObject]] = defaultdict(list)",
+      "125:     # def get_distance_to_nearest_map_object(self, point: Point2D, layer: SemanticMapLayer) -> Tuple[Optional[str], Optional[float]]:",
+      "146:     # def get_distance_to_nearest_raster_layer(self, point: Point2D, layer: SemanticMapLayer) -> float:"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_map_factory.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "9: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "13: from devkit.sim_engine.map_manager.minesim_map_data.maps_datatypes import SemanticMapLayer",
+      "29:     def __init__(self, bitmap_png_loader: MineSimBitMapPngLoader, semanticmap_json_loader: MineSimSemanticMapJsonLoader):",
+      "34:         self._semanticmap_json_loader = semanticmap_json_loader",
+      "43:         return MineSimMap(map_name=map_name, bitmap_png_loader=self._bitmap_png_loader, semanticmap_json_loader=self._semanticmap_json_loader)",
+      "54: def get_mine_maps_semantic_json(map_root: str, location: str) -> MineSimSemanticMapJsonLoader:",
+      "55:     \"\"\"MineSimSemanticMapJsonLoader",
+      "62:     return MineSimSemanticMapJsonLoader(map_root=map_root, location=location)",
+      "75:     semanticmap_json_loader = get_mine_maps_semantic_json(map_root=map_root, location=map_name)",
+      "77:     return MineSimMap(map_name=map_name, bitmap_png_loader=bitmap_png_loader, semanticmap_json_loader=semanticmap_json_loader)",
+      "82:     map_name: str, semantic_map: MineSimSemanticMapJsonLoader",
+      "88:     :param semantic_map: Instance of MineSimSemanticMapJsonLoader containing map data.",
+      "98:     for ref_path in semantic_map.reference_path:",
+      "108:             graph_edge_refpath = ReferencePathBase(path_token=token, semantic_map=semantic_map)",
+      "110:             graph_edge_refpath = ReferencePathConnector(path_token=token, semantic_map=semantic_map)"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_polygon_map_object.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "10: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "17:     semantic_map.polygon[3]['token']",
+      "18:     semantic_map.polygon[3]['type']",
+      "19:     semantic_map.polygon[3]['link_node_tokens']",
+      "20:     semantic_map.polygon[3]['link_borderline_tokens']",
+      "21:     semantic_map.polygon[3]['link_dubinspose_tokens']",
+      "22:     semantic_map.polygon[3]['link_referencepath_tokens']",
+      "56:     def __init__(self, generic_polygon_area_token: str, generic_polygon_area_data: dict, semantic_map: MineSimSemanticMapJsonLoader):",
+      "63:         self.polygon_id = semantic_map.getind(layer_name=MineSimMapLayer.POLYGON.fullname, token=generic_polygon_area_token)",
+      "65:             generic_polygon_area_data=semantic_map.polygon[self.polygon_id]",
+      "67:         self.polygon_nodes: List[Dict] = self._get_polygon_nodes(semantic_map=semantic_map)",
+      "126:     def _get_polygon_nodes(self, semantic_map: MineSimSemanticMapJsonLoader) -> List[Dict]:",
+      "129:             node_id = semantic_map.getind(layer_name=MineSimMapLayer.NODE.fullname, token=node_token)",
+      "130:             _polygon_nodes.append(semantic_map.node[node_id])",
+      "90:             element_type = MineSimMapLayer.LOADING_AREA",
+      "92:             element_type = MineSimMapLayer.UNLOADING_AREA",
+      "92:             element_type = MineSimMapLayer.UNLOADING_AREA",
+      "28:         # self.type = \"intersection\"",
+      "85:         if self.polygon_meta_data.type == \"intersection\":",
+      "86:             element_type = MineSimMapLayer.INTERSECTION"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_polyline_map_object.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "12: from devkit.sim_engine.map_manager.minesim_map_data.maps_datatypes import MineSimMapLayer, SemanticMapLayer",
+      "13: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "38:         polyline_type: SemanticMapLayer,",
+      "39:         semantic_map: MineSimSemanticMapJsonLoader,",
+      "55:         self.polyline_type: SemanticMapLayer = polyline_type",
+      "56:         self.element_id = semantic_map.getind(layer_name=MineSimMapLayer.REFERENCE_PATH.fullname, token=self.token)",
+      "58:         self.waypoints_meta_data = semantic_map.reference_path[self.element_id][\"waypoints\"]",
+      "109:     def _get_polyline_meta_data(self, semantic_map: MineSimSemanticMapJsonLoader) -> Dict:",
+      "111:         if self.polyline_type == SemanticMapLayer.BORDERLINE:",
+      "112:             element_id = semantic_map.getind(layer_name=MineSimMapLayer.REFERENCE_PATH.fullname, token=self.token)",
+      "113:             points_meta_data = semantic_map.reference_path[element_id][\"waypoints\"]",
+      "114:         elif self.polyline_type == SemanticMapLayer.REFERENCE_PATH:",
+      "115:             element_id = semantic_map.getind(layer_name=MineSimMapLayer.BORDERLINE.fullname, token=self.token)",
+      "116:             points_meta_data = semantic_map.borderline[element_id][\"borderpoints\"]",
+      "134:         polyline_type: SemanticMapLayer,",
+      "135:         semantic_map: MineSimSemanticMapJsonLoader,",
+      "151:         self.polyline_type: SemanticMapLayer = polyline_type",
+      "153:         self.element_id = semantic_map.getind(layer_name=MineSimMapLayer.BORDERLINE.fullname, token=self.token)",
+      "154:         self.borderpoints_meta_data = semantic_map.borderline[self.element_id][\"borderpoints\"]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/reference_path_base.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "44:         # TODO 待完成；# semantic_map: MineSimSemanticMapJsonLoader):"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map_data/maps_datatypes.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "drivable_area",
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "114:     # DRIVABLE_AREA = 5",
+      "91: class SemanticMapLayer(IntEnum):",
+      "93:     Enum for SemanticMapLayers.",
+      "131:     def deserialize(cls, layer: str) -> SemanticMapLayer:",
+      "135:         return SemanticMapLayer.__members__[layer]",
+      "294: #     \"\"\"将 SemanticMapLayers 映射到关联的 VectorLayer 的数据类。",
+      "295: #     Dataclass mapping SemanticMapLayers to associated VectorLayer.",
+      "298: #     layers: Dict[SemanticMapLayer, VectorLayer]",
+      "304: #     Dataclass mapping SemanticMapLayers to associated RasterLayer.",
+      "307: #     layers: Dict[SemanticMapLayer, RasterLayer]",
+      "29:     LOADING_AREA = 8, \"loading_area\"",
+      "30:     UNLOADING_AREA = 9, \"unloading_area\"",
+      "85:     \"loading_area\": MineSimMapLayer.LOADING_AREA,",
+      "86:     \"unloading_area\": MineSimMapLayer.UNLOADING_AREA,",
+      "98:     LOADING_AREA = 2",
+      "99:     UNLOADING_AREA = 3",
+      "107:     # self.non_geometric_polygon_layers = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]",
+      "30:     UNLOADING_AREA = 9, \"unloading_area\"",
+      "86:     \"unloading_area\": MineSimMapLayer.UNLOADING_AREA,",
+      "99:     UNLOADING_AREA = 3",
+      "107:     # self.non_geometric_polygon_layers = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]",
+      "28:     INTERSECTION = 7, \"intersection\"",
+      "84:     \"intersection\": MineSimMapLayer.INTERSECTION,",
+      "97:     INTERSECTION = 1",
+      "107:     # self.non_geometric_polygon_layers = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]",
+      "110:     # INTERSECTION = 1"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map_data/mine_maps_json_png.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "25: #     \"\"\"组合 BitMap and TgScenesMap(semanticMap) .\"\"\"",
+      "40: #         self.semantic_map: TgScenesMap = None",
+      "54: #         self.semantic_map = TgScenesMap(self.data_root, self.location)",
+      "61: #         self.map_name = self.location + \"_semanticMap\" + \"_BitMap\""
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map_data/minesim_bitmap_png_loader.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "13: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import semantic_map_hashes",
+      "112:         semantic_map_hash = semantic_map_hashes[self.location]",
+      "113:         dir_semantic_map = os.path.join(self.map_root, \"semantic_map\", semantic_map_hash + \".json\")",
+      "114:         with open(dir_semantic_map, \"r\") as f:",
+      "115:             temp_semantic_map_info = json.load(f)",
+      "117:         self.bitmap_info[\"bitmap_rgb_PNG\"] = temp_semantic_map_info[\"bitmap_rgb_PNG\"]",
+      "118:         self.bitmap_info[\"bitmap_mask_PNG\"] = temp_semantic_map_info[\"bitmap_mask_PNG\"]",
+      "172:         layout is detected from the semantic-map metadata."
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map_data/minesim_semanticmap_json_loader.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "33: semantic_map_hashes = {\"jiangxi_jiangtong\": \"jiangxi_jiangtong_semantic_map\", \"guangdong_dapai\": \"guangdong_dapai_semantic_map\", \"geojson_j117_pilot\": \"geojson_j117_pilot_semantic_map\", \"geojson_full_mine_dev\": \"geojson_full_mine_dev_semantic_map\", \"geojson_full_mine_vector_v2_dev\": \"geojson_full_mine_vector_v2_dev_semantic_map\"}",
+      "39: class MineSimSemanticMapJsonLoader:",
+      "55:             Exception: xxxx_semantic_map.json version is error.",
+      "69:         semantic_map_hash = semantic_map_hashes[self.location]",
+      "70:         dir_semantic_map = os.path.join(self.map_root, \"semantic_map\", semantic_map_hash + \".json\")",
+      "71:         with open(dir_semantic_map, \"r\") as f:",
+      "72:             self.metadata_semantic_map_json = json.load(f)",
+      "75:         if \"version\" in self.metadata_semantic_map_json:",
+      "76:             self.map_version = self.metadata_semantic_map_json[\"version\"]",
+      "81:             raise Exception(f\"#log# Error:目前支持的 {semantic_map_hash}.json 地图版本为 {map_version_hash}, 你的地图版本是{self.map_version}\")",
+      "86:         self.explorer = MineSimSemanticMapExplorer(self)",
+      "90:     def __reduce__(self) -> Tuple[Type[\"MineSimSemanticMapJsonLoader\"], Tuple[Any, ...]]:",
+      "111:         return self.metadata_semantic_map_json[layer_name]",
+      "515: class MineSimSemanticMapExplorer:",
+      "520:         semanticmap_json_loader: MineSimSemanticMapJsonLoader,",
+      "525:         :param semanticmap_json_loader:TgScenesMap database class.",
+      "542:         self.semanticmap_json_loader = semanticmap_json_loader",
+      "546:         self.canvas_max_x = self.semanticmap_json_loader.metadata_semantic_map_json[\"bitmap_rgb_PNG\"][\"canvas_edge_meter\"][0]  # 画布的地理尺寸",
+      "548:         self.canvas_max_y = self.semanticmap_json_loader.metadata_semantic_map_json[\"bitmap_rgb_PNG\"][\"canvas_edge_meter\"][0]",
+      "573:             layer_names = self.semanticmap_json_loader.non_geometric_layers",
+      "670:         #     layer_names = self.semanticmap_json_loader.non_geometric_layers",
+      "716:         polygon_record = self.semanticmap_json_loader.get(\"polygon\", polygon_token)",
+      "719:             (self.semanticmap_json_loader.get(\"node\", token)[\"x\"], self.semanticmap_json_loader.get(\"node\", token)[\"y\"])",
+      "756:         # canvas_size_pixel = np.array(self.semanticmap_json_loader.canvas_edge_meter)[::-1] / 200",
+      "757:         canvas_size_pixel = np.array(self.semanticmap_json_loader.canvas_edge_meter) / 200",
+      "776:         if layer_name in self.semanticmap_json_loader.non_geometric_polygon_layers:",
+      "778:         elif layer_name in self.semanticmap_json_loader.non_geometric_line_layers:",
+      "798:         if layer_name not in self.semanticmap_json_loader.non_geometric_polygon_layers:",
+      "802:         records = getattr(self.semanticmap_json_loader, layer_name)  # 获得 某个图层'road'的内容,dict",
+      "807:                 polygon = self.semanticmap_json_loader.extract_polygon(record[\"link_polygon_token\"])  # 创建一个 Shapely 多边形对象"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/occupancy_map/abstract_occupancy_map.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "41:         :param geometry: geometry to check for intersection"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/map_manager/occupancy_map/test/test_occupancy_map.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "26:             intersection = occupancy_map.intersects(geometry=self.p2)",
+      "27:             assert not intersection.is_empty()",
+      "28:             intersection = occupancy_map.intersects(geometry=self.p3)",
+      "29:             assert intersection.is_empty()",
+      "40:             intersection = occupancy_map.intersects(geometry=self.l1)",
+      "41:             assert intersection.is_empty()",
+      "43:             intersection = occupancy_map.intersects(geometry=self.l1)",
+      "44:             assert not intersection.is_empty()",
+      "55:             intersection = occupancy_map.intersects(self.l1.buffer(distance=0.4, cap_style=2))",
+      "56:             assert intersection.is_empty()",
+      "58:             intersection = occupancy_map.intersects(self.l1.buffer(distance=0.1, cap_style=2))",
+      "59:             assert intersection.is_empty()",
+      "61:             intersection = occupancy_map.intersects(self.l1.buffer(distance=0.4, cap_style=2))",
+      "62:             assert not intersection.is_empty()"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/observation_manager/agent_update_policy/idm/idm_agent_manager.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "170:     #     lane_connectors = [self._map_api.get_map_object(lc_id, SemanticMapLayer.LANE_CONNECTOR) for lc_id in relevant_lane_connectors]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/observation_manager/agent_update_policy/idm/idm_agents_builder.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "456:         semantic_map=map_api.semantic_map,",
+      "457:         minesim_graph=create_minesim_graph(map_name=map_api.map_name, semantic_map=map_api.semantic_map),",
+      "489:                 ref_path_waypoints_interval=route_path_planner.semantic_map.reference_path[2][\"waypoint_sampling_interval_meter\"],"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/abstract_idm_planner.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "25: from devkit.sim_engine.map_manager.minesim_map_data.maps_datatypes import SemanticMapLayer",
+      "126:         # minesim_graph = create_minesim_graph(map_name=self._map_api.map_name, semantic_map=self._map_api.semantic_map)",
+      "130:                 semantic_map=self._map_api.semantic_map,",
+      "131:                 minesim_graph=create_minesim_graph(map_name=self._map_api.map_name, semantic_map=self._map_api.semantic_map),"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/local_planner/frenet_optimal_planner.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "306:         # minesim_graph = create_minesim_graph(map_name=self._map_api.map_name, semantic_map=self._map_api.semantic_map)",
+      "310:                 semantic_map=self._map_api.semantic_map,",
+      "311:                 minesim_graph=create_minesim_graph(map_name=self._map_api.map_name, semantic_map=self._map_api.semantic_map),"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/local_planner/mcts_planner.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "172:         intersection = route.intersection(goal_polygon)",
+      "174:         if intersection.is_empty:",
+      "212:         collect(intersection)",
+      "217:                 \"route/goal intersection.\""
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/local_planner/predefined_maneuver_mode_sampling_planner.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "290:         # minesim_graph = create_minesim_graph(map_name=self._map_api.map_name, semantic_map=self._map_api.semantic_map)",
+      "294:                 semantic_map=self._map_api.semantic_map,",
+      "295:                 minesim_graph=create_minesim_graph(map_name=self._map_api.map_name, semantic_map=self._map_api.semantic_map),"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/global_route_path_planner.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "19: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "38:         semantic_map: MineSimSemanticMapJsonLoader,",
+      "43:         self.semantic_map = semantic_map",
+      "81:             semantic_map=self.semantic_map,",
+      "99:                 self.semantic_map.get_polygon_token_using_node(",
+      "104:             start_polygon_id = self.semantic_map.getind(",
+      "108:             start_polygon = self.semantic_map.polygon[",
+      "139:                         semantic_map=self.semantic_map,",
+      "194:                     ref_path_waypoints_interval=self.semantic_map.reference_path[2][\"waypoint_sampling_interval_meter\"],",
+      "224:         polygon_token = self.semantic_map.get_polygon_token_using_node(x=start_pose_statese2.x, y=start_pose_statese2.y)",
+      "225:         polygon_id = self.semantic_map.getind(layer_name=MineSimMapLayer.POLYGON.fullname, token=polygon_token)",
+      "228:         if MineSimMapLayer.INTERSECTION.fullname == self.semantic_map.polygon[polygon_id][\"type\"]:",
+      "230:             candidate_connector_path_tokens = self.semantic_map.polygon[polygon_id][\"link_referencepath_tokens\"]",
+      "232:                 pose_statese2=start_pose_statese2, semantic_map=self.semantic_map, candidate_connector_path_tokens=candidate_connector_path_tokens",
+      "235:             MineSimMapLayer.LOADING_AREA.fullname == self.semantic_map.polygon[polygon_id][\"type\"]",
+      "236:             or MineSimMapLayer.UNLOADING_AREA.fullname == self.semantic_map.polygon[polygon_id][\"type\"]",
+      "237:             or MineSimMapLayer.ROAD_SEGMENT.fullname == self.semantic_map.polygon[polygon_id][\"type\"]",
+      "239:             candidate_referencepath_tokens = self.semantic_map.polygon[polygon_id][\"link_referencepath_tokens\"]",
+      "243:                 path_id = self.semantic_map.getind(layer_name=MineSimMapLayer.REFERENCE_PATH.fullname, token=path_token)",
+      "244:                 if ReferencePathType.BASE_PATH.fullname == self.semantic_map.reference_path[path_id][\"type\"]:",
+      "248:                     pose_statese2=start_pose_statese2, semantic_map=self.semantic_map, candidate_basepath_tokens=candidate_basepath_tokens",
+      "528:     semantic_map: MineSimSemanticMapJsonLoader,",
+      "539:         semantic_map=semantic_map,",
+      "235:             MineSimMapLayer.LOADING_AREA.fullname == self.semantic_map.polygon[polygon_id][\"type\"]",
+      "236:             or MineSimMapLayer.UNLOADING_AREA.fullname == self.semantic_map.polygon[polygon_id][\"type\"]",
+      "236:             or MineSimMapLayer.UNLOADING_AREA.fullname == self.semantic_map.polygon[polygon_id][\"type\"]",
+      "114:                 == MineSimMapLayer.INTERSECTION.fullname",
+      "166:                             \"#log# Intersection start fallback \"",
+      "228:         if MineSimMapLayer.INTERSECTION.fullname == self.semantic_map.polygon[polygon_id][\"type\"]:"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/onsite_mine/global_route_planner.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "intersection"
+    ],
+    "snippets": [
+      "197:         semantic_map = observation[\"hdmaps_info\"][\"tgsc_map\"]",
+      "202:         if id_polygon > len(semantic_map.polygon):",
+      "204:         if semantic_map.polygon[id_polygon][\"type\"] == \"intersection\":",
+      "207:         link_referencepath_tokens = semantic_map.polygon[id_polygon][\"link_referencepath_tokens\"]",
+      "212:             if semantic_map.reference_path[id_path][\"type\"] == \"base_path\":",
+      "215:                     waypoints=np.array(semantic_map.reference_path[id_path][\"waypoints\"]), veh_pose=veh_pose, downsampling_rate=5",
+      "204:         if semantic_map.polygon[id_polygon][\"type\"] == \"intersection\":"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/test/test_global_route_path_planner.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "22: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "57: minesim_graph = create_minesim_graph(map_name=map_name, semantic_map=mine_map_api.semantic_map)",
+      "59: route_planner = GlobalRoutePathPlanner(map_name=map_name, semantic_map=mine_map_api.semantic_map, minesim_graph=minesim_graph)"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/breadth_first_search.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "intersection"
+    ],
+    "snippets": [
+      "70:         #     self.end_refpath_token, self.end_refpath_waypoint_id = calculate_end_refpath_info(pose_statese2=goal_task.final_pose,semantic_map=semantic_map)",
+      "223:         # Convert the downsampled waypoints to shapely Point objects for intersection checks"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/graph_search_utils.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "10: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "17: def calculate_start_refpath_info(start_pose_statese2: StateSE2, semantic_map: MineSimSemanticMapJsonLoader) -> Tuple[str, int]:",
+      "19:     polygon_token = semantic_map.get_polygon_token_using_node(x=start_pose_statese2.x, y=start_pose_statese2.y)",
+      "20:     polygon_id = semantic_map.getind(layer_name=MineSimMapLayer.POLYGON.fullname, token=polygon_token)",
+      "21:     if MineSimMapLayer.INTERSECTION.fullname == semantic_map.polygon[polygon_id][\"type\"]:",
+      "23:             semantic_map.polygon[polygon_id][",
+      "29:             semantic_map=semantic_map,",
+      "35:         MineSimMapLayer.LOADING_AREA.fullname == semantic_map.polygon[polygon_id][\"type\"]",
+      "36:         or MineSimMapLayer.UNLOADING_AREA.fullname == semantic_map.polygon[polygon_id][\"type\"]",
+      "39:         candidate_referencepath_tokens = semantic_map.polygon[polygon_id][\"link_referencepath_tokens\"]",
+      "40:     elif MineSimMapLayer.ROAD_SEGMENT.fullname == semantic_map.polygon[polygon_id][\"type\"]:",
+      "41:         candidate_referencepath_tokens = semantic_map.polygon[polygon_id][\"link_referencepath_tokens\"]",
+      "46:         path_id = semantic_map.getind(layer_name=MineSimMapLayer.REFERENCE_PATH.fullname, token=path_token)",
+      "47:         if ReferencePathType.BASE_PATH.fullname == semantic_map.reference_path[path_id][\"type\"]:",
+      "52:             pose_statese2=start_pose_statese2, semantic_map=semantic_map, candidate_basepath_tokens=candidate_basepath_tokens",
+      "58: def calculate_end_refpath_info(pose_statese2: StateSE2, semantic_map: MineSimSemanticMapJsonLoader) -> Tuple[str, int]:",
+      "60:     return calculate_start_refpath_info(start_pose_statese2=pose_statese2, semantic_map=semantic_map)",
+      "64:     pose_statese2: StateSE2, semantic_map: MineSimSemanticMapJsonLoader, candidate_basepath_tokens: List[str]",
+      "71:     :param semantic_map: 地图数据加载器",
+      "78:         path_id = semantic_map.getind(layer_name=MineSimMapLayer.REFERENCE_PATH.fullname, token=path_token)",
+      "79:         waypoints = np.array(semantic_map.reference_path[path_id][\"waypoints\"])",
+      "113:     pose_statese2: StateSE2, semantic_map: MineSimSemanticMapJsonLoader, candidate_connector_path_tokens: List[str]",
+      "124:     :param semantic_map: 地图数据加载器",
+      "132:         path_id = semantic_map.getind(layer_name=MineSimMapLayer.REFERENCE_PATH.fullname, token=path_token)",
+      "135:         waypoints = np.array(semantic_map.reference_path[path_id][\"waypoints\"])",
+      "35:         MineSimMapLayer.LOADING_AREA.fullname == semantic_map.polygon[polygon_id][\"type\"]",
+      "36:         or MineSimMapLayer.UNLOADING_AREA.fullname == semantic_map.polygon[polygon_id][\"type\"]",
+      "38:         # TODO 待检查 2.2.查询 polygon属于 road unloading_area loading_are",
+      "36:         or MineSimMapLayer.UNLOADING_AREA.fullname == semantic_map.polygon[polygon_id][\"type\"]",
+      "38:         # TODO 待检查 2.2.查询 polygon属于 road unloading_area loading_are"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/minesim_graph.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "11: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "114: def create_minesim_graph(map_name: str, semantic_map: MineSimSemanticMapJsonLoader) -> MineSimGraph:",
+      "116:     Creates a graph from the semantic map.",
+      "119:     :param semantic_map: The semantic map loader instance.",
+      "122:     all_graph_edge_refpath, all_graph_node_dubinspose = get_graph_edges_and_nodes(map_name, semantic_map)",
+      "132: # mine_map_api = MineSimSemanticMapJsonLoader(\"path_to_map.json\")",
+      "133: # graph = create_graph(map_name=\"example_map\", semantic_map=mine_map_api.semantic_map)"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/test/test_breadth_first_search.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "23: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "62: minesim_graph = create_minesim_graph(map_name=map_name, semantic_map=mine_map_api.semantic_map)",
+      "66:     semantic_map=mine_map_api.semantic_map,",
+      "84: # mine_map_api = MineSimSemanticMapJsonLoader(\"path_to_map.json\")",
+      "85: # graph = create_graph(map_name=\"example_map\", semantic_map=mine_map_api.semantic_map)"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/test/test_breadth_first_search_isolation.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "intersection"
+    ],
+    "snippets": [
+      "77:     semantic_map = object()",
+      "82:         semantic_map=semantic_map,",
+      "89:         semantic_map=semantic_map,",
+      "109:     class FakeSemanticMap:",
+      "162:         semantic_map=FakeSemanticMap(),",
+      "111:             \"type\": \"intersection\","
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/test/test_graph_search_utils.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "intersection"
+    ],
+    "snippets": [
+      "9: class FakeSemanticMap:",
+      "31:     semantic_map = FakeSemanticMap()",
+      "45:             semantic_map,",
+      "52:         semantic_map=semantic_map,",
+      "11:         \"type\": \"intersection\","
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/test/test_minesim_graph.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map"
+    ],
+    "snippets": [
+      "23: from devkit.sim_engine.map_manager.minesim_map_data.minesim_semanticmap_json_loader import MineSimSemanticMapJsonLoader",
+      "62: minesim_graph = create_minesim_graph(map_name=map_name, semantic_map=mine_map_api.semantic_map)"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/devkit/visualization_tool/visualizer_2D.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "semantic_map",
+      "loading_area",
+      "unloading_area",
+      "intersection"
+    ],
+    "snippets": [
+      "141:             \"semantic_map_polygon\": None,",
+      "142:             \"semantic_map_road_block\": None,",
+      "143:             \"semantic_map_refpath\": None,",
+      "144:             \"semantic_map_borderline\": \"#003366\",",
+      "145:             \"semantic_map_dubins_pose\": None,",
+      "168:             \"semantic_map_polygon\": 3,",
+      "169:             \"semantic_map_road_block\": 4,",
+      "170:             \"semantic_map_refpath\": 4,",
+      "171:             \"semantic_map_borderline\": 5,",
+      "172:             \"semantic_map_dubins_pose\": 6,",
+      "1166:         self._plot_hdmaps_semantic_map_patch(tgsc_map_explorer=scenario.map_api.semantic_map.explorer, layer_names=layer_names, ax=self.axbg)",
+      "1168:     # scenario.map_api.semantic_map.explorer",
+      "1169:     def _plot_hdmaps_semantic_map_patch(",
+      "1181:                 zorder=self.zorders[\"semantic_map_polygon\"],",
+      "1191:                 zorder=self.zorders[\"semantic_map_refpath\"],",
+      "1199:                 zorder=self.zorders[\"semantic_map_refpath\"],",
+      "1208:                 zorder=self.zorders[\"semantic_map_borderline\"],",
+      "1215:                 zorder=self.zorders[\"semantic_map_borderline\"],",
+      "1161:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]",
+      "1161:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]",
+      "1161:         layer_names = [\"road\", \"intersection\", \"loading_area\", \"unloading_area\"]"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/research_archive/20260807_single_vehicle_mcts_v1/budget_ablation/evaluation_v1/evaluate.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "covers"
+    ],
+    "snippets": [
+      "71:         if polygon.covers(p):"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/research_archive/20260807_single_vehicle_mcts_v1/five_planner/dapai_full/evaluation_v1/evaluate_dapai.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "covers"
+    ],
+    "snippets": [
+      "271:             goal_polygon.covers(point)"
+    ]
+  },
+  {
+    "path": "/root/MineSim-Dynamic/research_archive/20260807_single_vehicle_mcts_v1/five_planner/jiangtong_full/evaluation_v1/evaluate_jiangtong.py",
+    "root": "/root/MineSim-Dynamic",
+    "hits": [
+      "covers"
+    ],
+    "snippets": [
+      "221:         goal_polygon.covers("
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/intent_rollout.py",
+    "root": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "47:     the only executed collision test. No point-intersection shortcut is used."
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/runtime/candidate_mcts/dual_stop_motion_v1.py",
+    "root": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release",
+    "hits": [
+      "bounded_motion"
+    ],
+    "snippets": [
+      "49: class BoundedMotion:",
+      "174:     def profile(self, state: DualOnlyState, action: MCTSAction) -> BoundedMotion:",
+      "178:         return BoundedMotion(state.speed_mps, float(ACTION_ACCEL[action]), self.cfg.dt, self.cfg.max_speed)"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/runtime/engine/devkit/common/actor_state/oriented_box.py",
+    "root": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "261:     if there is an overlap, check for the exact intersection using geometry Polygon"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/intent_rollout.py",
+    "root": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "47:     the only executed collision test. No point-intersection shortcut is used."
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/runtime/candidate_mcts/dual_stop_motion_v1.py",
+    "root": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release",
+    "hits": [
+      "bounded_motion"
+    ],
+    "snippets": [
+      "49: class BoundedMotion:",
+      "174:     def profile(self, state: DualOnlyState, action: MCTSAction) -> BoundedMotion:",
+      "178:         return BoundedMotion(state.speed_mps, float(ACTION_ACCEL[action]), self.cfg.dt, self.cfg.max_speed)"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/runtime/engine/devkit/common/actor_state/oriented_box.py",
+    "root": "/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release",
+    "hits": [
+      "intersection"
+    ],
+    "snippets": [
+      "261:     if there is an overlap, check for the exact intersection using geometry Polygon"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_g1_deadlock_contract_v1/smoke_deadlock_contract_v1.py",
+    "root": "/root/autodl-tmp/minesim_g1_deadlock_contract_v1",
+    "hits": [
+      "drivable_domain",
+      "drivable_area",
+      "drivable_violation",
+      "exact_provider",
+      "exact_footprint",
+      "route_provider",
+      "v2r_transition"
+    ],
+    "snippets": [
+      "85:         drivable_domain=domain,",
+      "125:     drivable_area_violation=True,",
+      "125:     drivable_area_violation=True,",
+      "126:     drivable_violating_tokens=(\"A\",),",
+      "84:         exact_geometry_providers=providers,",
+      "72: # Trap domain: exact initial footprints are covered, but any positive route",
+      "20: class RouteProvider:",
+      "29: class GuideCache(RouteProvider):",
+      "63: providers = {\"A\": RouteProvider(0.0), \"B\": RouteProvider(10.0)}",
+      "13: from g1_v2r_transition_overlay_v1 import G1V2RExactDualStopFleetTransition",
+      "81:     return G1V2RExactDualStopFleetTransition("
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_g1_deadlock_terminal_runtime_overlay_v1/runtime/candidate_mcts/dual_stop_motion_v1.py",
+    "root": "/root/autodl-tmp/minesim_g1_deadlock_terminal_runtime_overlay_v1",
+    "hits": [
+      "bounded_motion"
+    ],
+    "snippets": [
+      "49: class BoundedMotion:",
+      "174:     def profile(self, state: DualOnlyState, action: MCTSAction) -> BoundedMotion:",
+      "178:         return BoundedMotion(state.speed_mps, float(ACTION_ACCEL[action]), self.cfg.dt, self.cfg.max_speed)"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_g1_exact_tick_geometry_v1/g1_exact_geometry_overlay_v1.py",
+    "root": "/root/autodl-tmp/minesim_g1_exact_tick_geometry_v1",
+    "hits": [
+      "exact_provider",
+      "exact_footprint",
+      "route_provider"
+    ],
+    "snippets": [
+      "5: - hard A/B collision evaluation uses an explicit exact route-pose provider;",
+      "28: class ExactRouteGeometryProvider:",
+      "86:         exact_geometry_providers: Mapping[str, object],",
+      "93:             exact_geometry_providers is not None",
+      "94:             and set(exact_geometry_providers) == {\"A\", \"B\"},",
+      "95:             \"BOTH_EXACT_GEOMETRY_PROVIDERS_REQUIRED\",",
+      "100:                 for g in exact_geometry_providers.values()",
+      "112:         self._exact_geometry_providers = dict(exact_geometry_providers)",
+      "117:             geom = self._exact_geometry_providers[token].geometry_at(",
+      "29:     \"\"\"Exact footprint from the bound route pose; no route-space cache snapping.\"\"\"",
+      "5: - hard A/B collision evaluation uses an explicit exact route-pose provider;",
+      "28: class ExactRouteGeometryProvider:"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_g1_exact_tick_geometry_v1/smoke_v1.py",
+    "root": "/root/autodl-tmp/minesim_g1_exact_tick_geometry_v1",
+    "hits": [
+      "exact_provider",
+      "route_provider"
+    ],
+    "snippets": [
+      "18:     ExactRouteGeometryProvider,",
+      "56: # 1) Exact provider must not snap to the 1 m RouteGeometryCache.",
+      "65: exact = ExactRouteGeometryProvider(path, ego_box)",
+      "76: # 2) Transition hard-safety _geometry() must use exact providers, not caches.",
+      "107:     exact_geometry_providers=providers,",
+      "121: assert overlay._exact_geometry_providers[\"A\"] is near_a",
+      "122: assert overlay._exact_geometry_providers[\"B\"] is near_b",
+      "129: print(\"EXACT_PROVIDER_COLLISION =\", new_r.internal_collision)",
+      "18:     ExactRouteGeometryProvider,",
+      "56: # 1) Exact provider must not snap to the 1 m RouteGeometryCache.",
+      "65: exact = ExactRouteGeometryProvider(path, ego_box)"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_g1_v2r_state_contract_v1/g1_v2r_state_contract_v1.py",
+    "root": "/root/autodl-tmp/minesim_g1_v2r_state_contract_v1",
+    "hits": [
+      "drivable_area",
+      "drivable_violation"
+    ],
+    "snippets": [
+      "30:     drivable_area_violation: bool = False",
+      "37:             type(self.drivable_area_violation) is bool,",
+      "64:             bool(tokens) == self.drivable_area_violation,",
+      "72:             or self.drivable_area_violation",
+      "81:                 self.drivable_area_violation,",
+      "91:         drivable_area_violation: bool = False,",
+      "111:             drivable_area_violation=drivable_area_violation,",
+      "212:         \"drivable_area_violation\": (",
+      "213:             state.drivable_area_violation",
+      "244:         \"drivable_area_violation\",",
+      "360:         \"drivable_area_violation\",",
+      "413:         drivable_area_violation=payload[",
+      "414:             \"drivable_area_violation\"",
+      "30:     drivable_area_violation: bool = False",
+      "31:     drivable_violating_tokens: Tuple[str, ...] = ()",
+      "37:             type(self.drivable_area_violation) is bool,",
+      "41:             type(self.drivable_violating_tokens) is tuple,",
+      "45:         tokens = self.drivable_violating_tokens",
+      "64:             bool(tokens) == self.drivable_area_violation,",
+      "72:             or self.drivable_area_violation",
+      "76:         # Drivable violation can represent an intermediate-tick hard event,",
+      "81:                 self.drivable_area_violation,",
+      "82:                 self.drivable_violating_tokens,",
+      "91:         drivable_area_violation: bool = False,",
+      "92:         drivable_violating_tokens: Tuple[str, ...] = (),",
+      "111:             drivable_area_violation=drivable_area_violation,",
+      "112:             drivable_violating_tokens=tuple(",
+      "113:                 drivable_violating_tokens",
+      "212:         \"drivable_area_violation\": (",
+      "213:             state.drivable_area_violation"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_g1_v2r_state_contract_v1/smoke_state_contract_v1.py",
+    "root": "/root/autodl-tmp/minesim_g1_v2r_state_contract_v1",
+    "hits": [
+      "drivable_area",
+      "drivable_violation"
+    ],
+    "snippets": [
+      "73:     drivable_area_violation=True,",
+      "86:         \"drivable_area_violation\": True,",
+      "90:         \"drivable_area_violation\": False,",
+      "94:         \"drivable_area_violation\": True,",
+      "164: assert roundtrip.drivable_area_violation",
+      "207:     \"drivable_area_violation,\"",
+      "212:     \"V2V_OR_DRIVABLE_AREA\"",
+      "73:     drivable_area_violation=True,",
+      "74:     drivable_violating_tokens=(\"A\",),",
+      "86:         \"drivable_area_violation\": True,",
+      "87:         \"drivable_violating_tokens\": (),",
+      "90:         \"drivable_area_violation\": False,",
+      "91:         \"drivable_violating_tokens\": (\"A\",),",
+      "94:         \"drivable_area_violation\": True,",
+      "95:         \"drivable_violating_tokens\": (\"C\",),",
+      "164: assert roundtrip.drivable_area_violation",
+      "166:     roundtrip.drivable_violating_tokens",
+      "207:     \"drivable_area_violation,\"",
+      "208:     \"drivable_violating_tokens\""
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_g1_v2r_transition_overlay_v1/g1_v2r_transition_overlay_v1.py",
+    "root": "/root/autodl-tmp/minesim_g1_v2r_transition_overlay_v1",
+    "hits": [
+      "drivable_domain",
+      "drivable_area",
+      "drivable_violation",
+      "covers",
+      "exact_provider",
+      "exact_footprint",
+      "v2r_transition"
+    ],
+    "snippets": [
+      "6: - V2R uses drivable_domain.covers(footprint), so boundary contact is allowed;",
+      "58:         drivable_domain,",
+      "65:             drivable_domain is not None",
+      "66:             and hasattr(drivable_domain, \"covers\")",
+      "67:             and hasattr(drivable_domain, \"is_valid\")",
+      "68:             and hasattr(drivable_domain, \"is_empty\"),",
+      "72:             bool(drivable_domain.is_valid)",
+      "73:             and not bool(drivable_domain.is_empty),",
+      "93:         self._drivable_domain = drivable_domain",
+      "95:             drivable_domain",
+      "208:             drivable_area_violation=bool(",
+      "344:                     \"drivable_area_violation\": (",
+      "379:                 drivable_area_violation=bool(",
+      "407:             \"drivable_area_violation\": (",
+      "408:                 result.drivable_area_violation",
+      "208:             drivable_area_violation=bool(",
+      "211:             drivable_violating_tokens=tuple(",
+      "344:                     \"drivable_area_violation\": (",
+      "347:                     \"drivable_violating_tokens\": (",
+      "379:                 drivable_area_violation=bool(",
+      "382:                 drivable_violating_tokens=(",
+      "407:             \"drivable_area_violation\": (",
+      "408:                 result.drivable_area_violation",
+      "410:             \"drivable_violating_tokens\": list(",
+      "411:                 result.drivable_violating_tokens",
+      "6: - V2R uses drivable_domain.covers(footprint), so boundary contact is allowed;",
+      "115:             self._drivable_domain.covers(",
+      "57:         exact_geometry_providers: Mapping[str, object],",
+      "80:             exact_geometry_providers=(",
+      "81:                 exact_geometry_providers"
+    ]
+  },
+  {
+    "path": "/root/autodl-tmp/minesim_g1_v2r_transition_overlay_v1/smoke_transition_overlay_v1.py",
+    "root": "/root/autodl-tmp/minesim_g1_v2r_transition_overlay_v1",
+    "hits": [
+      "drivable_domain",
+      "drivable_area",
+      "drivable_violation",
+      "exact_provider",
+      "exact_footprint",
+      "route_provider",
+      "v2r_transition"
+    ],
+    "snippets": [
+      "123:         drivable_domain=drivable,",
+      "143: assert not bound.drivable_area_violation",
+      "175: assert result.drivable_area_violation",
+      "201: assert not samples[0][\"drivable_area_violation\"]",
+      "205:     assert sample[\"drivable_area_violation\"]",
+      "208: assert diag[\"drivable_area_violation\"]",
+      "143: assert not bound.drivable_area_violation",
+      "144: assert bound.drivable_violating_tokens == ()",
+      "175: assert result.drivable_area_violation",
+      "176: assert result.drivable_violating_tokens == (\"B\",)",
+      "201: assert not samples[0][\"drivable_area_violation\"]",
+      "202: assert samples[0][\"drivable_violating_tokens\"] == []",
+      "205:     assert sample[\"drivable_area_violation\"]",
+      "206:     assert sample[\"drivable_violating_tokens\"] == [\"B\"]",
+      "208: assert diag[\"drivable_area_violation\"]",
+      "209: assert diag[\"drivable_violating_tokens\"] == [\"B\"]",
+      "227: assert roundtrip.drivable_violating_tokens == (\"B\",)",
+      "122:         exact_geometry_providers=providers,",
+      "146: # bind_initial_geometry adds one exact-provider call.",
+      "240:     \"A_EXACT_PROVIDER_CALLS =\",",
+      "244:     \"B_EXACT_PROVIDER_CALLS =\",",
+      "110: # its exact footprint extends beyond the short B domain.",
+      "212:     == \"EVALUATED_EXACT_FOOTPRINT_COVERS_\"",
+      "254: print(\"EXACT_FOOTPRINT_REUSED_FOR_V2V_AND_V2R = yes\")",
+      "32: class CountingRouteProvider:",
+      "100:     \"A\": CountingRouteProvider(0.0),",
+      "101:     \"B\": CountingRouteProvider(10.0),",
+      "26: from g1_v2r_transition_overlay_v1 import (",
+      "27:     G1V2RExactDualStopFleetTransition,",
+      "119:     G1V2RExactDualStopFleetTransition("
+    ]
+  }
+]

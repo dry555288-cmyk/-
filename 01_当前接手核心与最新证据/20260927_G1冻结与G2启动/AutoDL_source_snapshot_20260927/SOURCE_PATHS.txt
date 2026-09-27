@@ -1,0 +1,4 @@
+RELEASE=/root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release
+DEADLOCK_RUNTIME=/root/autodl-tmp/minesim_g1_deadlock_terminal_runtime_overlay_v1/runtime/candidate_mcts
+V2R_OVERLAY=/root/autodl-tmp/minesim_g1_v2r_transition_overlay_v1
+G2_CURRENT=/root/autodl-tmp/G2_FORMAL_CALIBRATION_BUNDLE_V1/g2_formal.py

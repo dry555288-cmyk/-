@@ -1,0 +1,336 @@
+G2 production binding discovery
+======================================================================
+
+ROOT_COUNT=13
+COPIED_FILE_COUNT=66
+
+SOURCE: /root/MineSim-Dynamic/devkit/common/actor_state/oriented_box.py
+SHA256: bdd88f0cf476308a498c42455c1e95ffc0e421c07378ef438bae5c3139322115
+SIZE: 11274
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/database/utils/boxes/box3d.py
+SHA256: e5cd768bb85970c53b9849b8524eb99ac68d71701ba819bb388982a35af3eab2
+SIZE: 54667
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/database/utils/measure.py
+SHA256: d7d4de73e7506c4698a56093977cf83a1498a3dabae10a799bb1d680094bbbd7
+SIZE: 12527
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/other/minesim_devkit_import_list.py
+SHA256: 5a04d05f7dc5479002857ffd56a8df39307dc00fcca5877293c0564f4c674660
+SIZE: 25373
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/environment_manager/collision_lookup.py
+SHA256: 10c1d1339e742ca893fedb4aa51402addfba82e16e08f68339ea35d35ba3043b
+SIZE: 15917
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/environment_manager/scenario_organizer.py
+SHA256: 62c5788eece01e67ba9d2f33fd3e60979ff52e6b4d59812b44285648cf7ef631
+SIZE: 5185
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/abstract_map.py
+SHA256: 4637334a24a8091a05020dab35fddff32fbe3d56f3ae414a852f15203085a7f3
+SIZE: 8135
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/abstract_map_objects.py
+SHA256: 5dfc6741277f7ef31022d120597f34a8f884d560d12c93cf0be24d18bee8f911
+SIZE: 6000
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/bit_map.py
+SHA256: fba2a4f5fdeba19e532266793b67127ba4122d3409e4df0d7e0fbd3d4ab1f760
+SIZE: 12956
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/map_api.py
+SHA256: f411863ff5fc4a966ed57bebd3d4e0de5c47d9cc9d381f84ecb6dd1e1851c725
+SIZE: 52056
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/plot_scripts/plot_global_add_token.py
+SHA256: 546ad083cba20c3a7f31f2bf448d571cffa803423b0077ba8b0852571171be1b
+SIZE: 10071
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/plot_scripts/plot_global_map.py
+SHA256: 539edd5da822d32c99042f23ca4be817b3cca9e83d3a26c6f06446b02f2c48a8
+SIZE: 8702
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/plot_scripts/plot_local_range_map.py
+SHA256: c0620c62b55cea98a0bb358477fd50b0cfae59f4a6f516f5138e590d3d6f7f3c
+SIZE: 8299
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_expansion/plot_scripts/view_global_map.py
+SHA256: 6b628493b95e094285818706e3472507e9cfca22aeeadd25138ae227f61a39e4
+SIZE: 6936
+REASON: CONTENT:loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/map_manager.py
+SHA256: 25448bd1500deef6110f0c9e7b0494b65224e1549f98a7cc34f2ad8c56b4e841
+SIZE: 2386
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_graph_search_edge_node.py
+SHA256: eb9d874561ef8b03e2e9f8f60e12207f2839de811c1234632e7f930aa5c31e3d
+SIZE: 7603
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_map.py
+SHA256: a4984ae8605e93d4945a232e27979612e74916443d889b8bdfc6f8830cdb2543
+SIZE: 11166
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_map_factory.py
+SHA256: 17a2b178ebfb5155a305f36410a0029d38ff6e9a14483d1d0084f9a68f5205ea
+SIZE: 6658
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_polygon_map_object.py
+SHA256: 403b6140329b4281b482fb1016307bc8ba14eb47268aa23e9e806965b98b46e8
+SIZE: 6242
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/minesim_polyline_map_object.py
+SHA256: 5e8e98a93096f16769a238cb7fc06894060f22cdaa276eeae40155d54349a330
+SIZE: 9416
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map/reference_path_base.py
+SHA256: 657ed87adac260f84ee06a6364b62bda7be35ae9f65dc9eed346f54563b90cd3
+SIZE: 2774
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map_data/maps_datatypes.py
+SHA256: 37fca924a2019b78826838625093a9c58fce12d37cf920dbb3d90f377e3fffda
+SIZE: 9343
+REASON: CONTENT:drivable_area,semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map_data/mine_maps_json_png.py
+SHA256: 2ab39e862faf075bdd1a5a095a9c9b69816f7233c447ba95b4fc3d8b0f1f25c0
+SIZE: 3812
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map_data/minesim_bitmap_png_loader.py
+SHA256: 3bad8ebe750c2b56a02ac8ffeef4eaf81424f81a4727aa272b2345919b9bc651
+SIZE: 16537
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/minesim_map_data/minesim_semanticmap_json_loader.py
+SHA256: 41872d1e568cd1a68bc2c2997d7dfc3c7db93d3ef0e1959597d891902049ff34
+SIZE: 55228
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/occupancy_map/abstract_occupancy_map.py
+SHA256: 93b38f291e569fca9f90814c871a2d90cb2d716146b3b410147bab744ff23478
+SIZE: 4054
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/map_manager/occupancy_map/test/test_occupancy_map.py
+SHA256: 40954d41f24e8fde90b5a8e42563cf795088fa3f10b61eca60ce61bf9eee09a1
+SIZE: 5547
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/observation_manager/agent_update_policy/idm/idm_agent_manager.py
+SHA256: bd5af81b881f38325b6a46da97c132d1c03dcb3d3e6b958cf051be20b76dd78c
+SIZE: 9948
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/observation_manager/agent_update_policy/idm/idm_agents_builder.py
+SHA256: f8d508a6a953f4fce614a93c1bf9a34f4e89429b53f7cb7c65012765b2d33a12
+SIZE: 28780
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/abstract_idm_planner.py
+SHA256: 541ec74985d06322656e66c48abb382030d679171341408575d936e0a069e75e
+SIZE: 24622
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/local_planner/frenet_optimal_planner.py
+SHA256: daf034c7d3d7f418673d16c24152cf3292244d5866eee5584215ec1e14581f5e
+SIZE: 34921
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/local_planner/mcts_planner.py
+SHA256: 15079ad9d53ea9335834a26b6d19b1178ea9b10a8c7d1c1fc69298109875098b
+SIZE: 14941
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/local_planner/predefined_maneuver_mode_sampling_planner.py
+SHA256: f16a4127d8d4b1f456cf35279835d84ef29ad70c1fd1a235602ae63106f63500
+SIZE: 34202
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/global_route_path_planner.py
+SHA256: 315948a3999879f2a81cb8c96f47f4e3d9e20a60abed088a8ab16f460d5227ad
+SIZE: 28877
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/onsite_mine/global_route_planner.py
+SHA256: 8394b10f3231aaaa44f3b23a0b79fdef35ab2508d1eeddad24cef5384c51ce4f
+SIZE: 14626
+REASON: CONTENT:semantic_map,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/test/test_global_route_path_planner.py
+SHA256: 9ee8363c65cba2da0086e1a6e5b650e1be0a8adb5a59e81ef14c7215bedcd9cf
+SIZE: 3835
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/breadth_first_search.py
+SHA256: adb8d79e311bb36d07cb0f9cb83f9f4c34eb1449f80dd28c160740cc79472671
+SIZE: 12642
+REASON: CONTENT:semantic_map,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/graph_search_utils.py
+SHA256: 256a03c67e3bee3d1075eeb0f3514d8db8958be66ed5d0b7898aef26f2b26ca2
+SIZE: 10063
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/minesim_graph.py
+SHA256: bb6a41d3d5126df37d1b456ebb995d2a369471f24040253426386cf67a1c42c0
+SIZE: 5288
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/test/test_breadth_first_search.py
+SHA256: d9c2e62c48c0bb3c8b208b658cdd938a673944623ae9c24c51f63cd2b66bd920
+SIZE: 4275
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/test/test_breadth_first_search_isolation.py
+SHA256: f72ca8aefe55c3b87486ccbe1207cf0d9fc9b6fe467c14577cb121843b2dd197
+SIZE: 5727
+REASON: CONTENT:semantic_map,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/test/test_graph_search_utils.py
+SHA256: e438a6c0cafda39fa6db3ba9701192f94786e7fdb321856a3d849f326c3eadda
+SIZE: 1295
+REASON: CONTENT:semantic_map,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/sim_engine/planning/planner/route_planner/utils/test/test_minesim_graph.py
+SHA256: e1132e7d0339ce60a6054d205783476478737118e78b9e44ff7bac3da7bfc289
+SIZE: 3582
+REASON: CONTENT:semantic_map
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/devkit/visualization_tool/visualizer_2D.py
+SHA256: 13e1ca92bb0e91aabcc46a00a484f5144f1c460c33acd0ca6bfed0c203bcf350
+SIZE: 56461
+REASON: CONTENT:semantic_map,loading_area,unloading_area,intersection
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/research_archive/20260807_single_vehicle_mcts_v1/budget_ablation/evaluation_v1/evaluate.py
+SHA256: 1011b85816047bd4d43480a4e452a2bc7dc8b46179bd191482b137b2ef29b609
+SIZE: 8872
+REASON: CONTENT:covers
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/research_archive/20260807_single_vehicle_mcts_v1/five_planner/dapai_full/evaluation_v1/evaluate_dapai.py
+SHA256: 4d55d83a7fced94408608f41b9fe903dfc79b78b2fd777458ac91154edee5130
+SIZE: 17676
+REASON: CONTENT:covers
+----------------------------------------------------------------------
+SOURCE: /root/MineSim-Dynamic/research_archive/20260807_single_vehicle_mcts_v1/five_planner/jiangtong_full/evaluation_v1/evaluate_jiangtong.py
+SHA256: 741b57884292df113b1e97b2efbed999d98ca32ecd5fc19893f07bd316a8d1bd
+SIZE: 12523
+REASON: CONTENT:covers
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_g1_deadlock_contract_v1/smoke_deadlock_contract_v1.py
+SHA256: 59bc1bc47eeeff4dcc539591fe7f4c3e0f7aff6c1f3da649f4ea6d75fbc25844
+SIZE: 4159
+REASON: CONTENT:drivable_domain,drivable_area,drivable_violation,exact_provider,exact_footprint,route_provider,v2r_transition
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_g1_deadlock_terminal_runtime_overlay_v1/runtime/candidate_mcts/dual_stop_motion_v1.py
+SHA256: e9d024a6f56b6279de41b6f0889a188a201eeef07acca425e2ea69c4ef9c0626
+SIZE: 13473
+REASON: CONTENT:bounded_motion
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_g1_exact_tick_geometry_v1/g1_exact_geometry_overlay_v1.py
+SHA256: fb2896b21c872c12db6e4fad2d0fe97b71a4a553e70b5df157b6cae41ea9e81a
+SIZE: 4808
+REASON: CONTENT:exact_provider,exact_footprint,route_provider; EXACT_FILENAME
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_g1_exact_tick_geometry_v1/smoke_v1.py
+SHA256: 77125fe0fd4e2646185fc410db316c01230dbe326dd1ce7ba668b146cd4fb110
+SIZE: 3714
+REASON: CONTENT:exact_provider,route_provider
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_g1_v2r_state_contract_v1/g1_v2r_state_contract_v1.py
+SHA256: ea8ddb7c9068f846660e5016952335ec055b09440e139feec2f19d6a0c59bcf7
+SIZE: 11378
+REASON: CONTENT:drivable_area,drivable_violation; EXACT_FILENAME
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_g1_v2r_state_contract_v1/smoke_state_contract_v1.py
+SHA256: 62dd4901294553ad87fbd66a4f3af556f4f99a7304e8e1c716b835792a643317
+SIZE: 5167
+REASON: CONTENT:drivable_area,drivable_violation
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_g1_v2r_transition_overlay_v1/g1_v2r_transition_overlay_v1.py
+SHA256: 2a3ec5377306d55ea45460a3a2938babbaf64675673b53e1f83f43d7cf6546bd
+SIZE: 11718
+REASON: CONTENT:drivable_domain,drivable_area,drivable_violation,covers,exact_provider,exact_footprint,v2r_transition; EXACT_FILENAME
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_g1_v2r_transition_overlay_v1/smoke_transition_overlay_v1.py
+SHA256: 9a14a405830b85fa95eb3de302ddb818e6fdc6927d38583c931186a780d42f31
+SIZE: 5888
+REASON: CONTENT:drivable_domain,drivable_area,drivable_violation,exact_provider,exact_footprint,route_provider,v2r_transition
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/PROTOCOL.json
+SHA256: 0638a250d4d82a5c75d3cfea9f97f188f8eb355971547cd1f7e35eed00f0c082
+SIZE: 6034
+REASON: SIBLING_PROVENANCE_OF:intent_rollout.py
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/RELEASE_MANIFEST.json
+SHA256: b6a852d03501602acf71734f4a56ea7051f3f956765fa488140097079a0b8c8f
+SIZE: 19033
+REASON: SIBLING_PROVENANCE_OF:intent_rollout.py
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/intent_rollout.py
+SHA256: 44e365bf70c3069a7d6e681a2382626a563a8a6a85bc860b05d9e3695ba0ece4
+SIZE: 12186
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/runtime/candidate_mcts/dual_stop_motion_v1.py
+SHA256: e9d024a6f56b6279de41b6f0889a188a201eeef07acca425e2ea69c4ef9c0626
+SIZE: 13473
+REASON: CONTENT:bounded_motion
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/parent/core/parent/parent/core/parent/core/parent/runtime/engine/devkit/common/actor_state/oriented_box.py
+SHA256: bdd88f0cf476308a498c42455c1e95ffc0e421c07378ef438bae5c3139322115
+SIZE: 11274
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/PROTOCOL.json
+SHA256: 55529338a6ce03fd82dc0512b116629095d5d26dec339b89ad199e07b2a1d16c
+SIZE: 3383
+REASON: SIBLING_PROVENANCE_OF:intent_rollout.py
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/RELEASE_MANIFEST.json
+SHA256: d491c0af3e5be99cd006f6eeda6ad97c98e465ebd62b629c3aab0a6ce3b1f5c7
+SIZE: 9482
+REASON: SIBLING_PROVENANCE_OF:intent_rollout.py
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/SOURCE_BINDINGS.json
+SHA256: 6a278e9312dd6d6a2f5f8a5c5fafb685168bbec1b7a35b4902afd4ca870e78ca
+SIZE: 18715
+REASON: SIBLING_PROVENANCE_OF:intent_rollout.py
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/intent_rollout.py
+SHA256: 44e365bf70c3069a7d6e681a2382626a563a8a6a85bc860b05d9e3695ba0ece4
+SIZE: 12186
+REASON: CONTENT:intersection
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/runtime/candidate_mcts/dual_stop_motion_v1.py
+SHA256: e9d024a6f56b6279de41b6f0889a188a201eeef07acca425e2ea69c4ef9c0626
+SIZE: 13473
+REASON: CONTENT:bounded_motion
+----------------------------------------------------------------------
+SOURCE: /root/autodl-tmp/minesim_h8_guide_eager_vs_lazy_full_v1_retry2_review/evidence/release/parent/base/witness/runtime/engine/devkit/common/actor_state/oriented_box.py
+SHA256: bdd88f0cf476308a498c42455c1e95ffc0e421c07378ef438bae5c3139322115
+SIZE: 11274
+REASON: CONTENT:intersection
+----------------------------------------------------------------------

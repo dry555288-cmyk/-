@@ -1,0 +1,98 @@
+{
+  "as_of": "2026-09-27",
+  "authoritative_priority": "LATEST_REAL_AUTODL_SOURCE_SHA_AND_RUN_EVIDENCE",
+  "do_not_run": [
+    "G2_FORMAL_CALIBRATION_BUNDLE_V1 stage-a",
+    "G2 scientific runtime before V2 LOW prepare PASS"
+  ],
+  "g1": {
+    "deadlock": "SAFE_ABSORBING_STATE_TRAP",
+    "drivable_token_set_sha256": "de78b0bdd63a41b9222bc0bf5ba8b343c46eacf751de8d5106308b58a5ec4e21",
+    "freeze_sha256": "5629cfd987bfd9ebe832c389464de1cad1e4678c5119ccdfa6087ff96ac65b31",
+    "hard_safety": "EXACT_TICK_V2V_OR_V2R_AT_0.1S",
+    "map_sha256": "b85a3d8b28f2252ecb5bda179d514573f6333079def838cd048566f556d95cd0",
+    "reward": {
+      "both_parked_global": 20.0,
+      "first_parked_per_vehicle": 5.0,
+      "hard_safety_penalty": -100.0,
+      "max_completion_credit": 30.0,
+      "progress_cap": 1.0,
+      "time_cost_nonterminal": -0.05,
+      "wait_cost_full_stationary_unfinished": -0.1
+    },
+    "risk": {
+      "MMTTC": "DIAGNOSTIC_ONLY",
+      "PET": "DIAGNOSTIC_ONLY",
+      "TTC": "UTILITY",
+      "internal_clearance": "UTILITY"
+    }
+  },
+  "g2": {
+    "budgets": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "g9_holdout_eligible": false,
+    "horizons": [
+      4,
+      8,
+      16
+    ],
+    "next_gate": "G2_FORMAL_CALIBRATION_V2_PREPARE_LOW",
+    "old_v1_stage_a_scientific_runtime_started": false,
+    "replicates_stage_a": 1,
+    "required_runtime": [
+      "V2V_EXACT_TICK",
+      "V2R_EXACT_TICK",
+      "DEADLOCK_TERMINAL",
+      "G1_REWARD_CONTRACT",
+      "400_380_20MS_DEADLINE",
+      "PER_DECISION_PAIRED_RNG",
+      "RESUME_SAFE_CELLS"
+    ],
+    "role": "G2_CALIBRATION_DEVELOPMENT",
+    "roots": "CURRENT_RETRY2_4_C11_ROOTS",
+    "stage_a_cells": 60,
+    "stage_a_interpretation": "COARSE_SCREEN_ONLY_NOT_FINAL_G2_FREEZE",
+    "stage_b_later": "FRONTIER_ANCHOR_ONLY_C04_C06_C11_SANITY_TRANSFER_NO_RETUNING"
+  },
+  "g2_v2": {
+    "prepare_executed_on_autodl": false,
+    "runner_sha256": "4ddb829d96b76a1c49ae28b82ac09a99551086ff9f1a525d9ba8b3450d170301",
+    "stage_a_executed": false,
+    "zip_sha256": "4d8e84bb4ca60e1cb7de8aed760c83797fa2b3de13e995a811166e680bcbf2b4"
+  },
+  "gates": {
+    "G0": "PASS_FROZEN",
+    "G1": "PASS_FROZEN",
+    "G2": "HOLD_BEFORE_SCIENTIFIC_RUNTIME_PENDING_V2_PREPARE",
+    "G3": "NOT_STARTED",
+    "G9_HOLDOUT": "UNTOUCHED"
+  },
+  "production_binding": {
+    "discovery_zip_sha256": "24c3060b65cbfe322d338ef03fa7b75fcc437fbc648683bcb0b88633725a1cdd",
+    "drivable_layers": [
+      "road",
+      "intersection",
+      "loading_area",
+      "unloading_area"
+    ],
+    "layer_polygon_binding": "layer_record.link_polygon_token -> polygon.link_node_tokens -> node(x,y) -> Polygon",
+    "map_loader_sha256": "41872d1e568cd1a68bc2c2997d7dfc3c7db93d3ef0e1959597d891902049ff34",
+    "map_schema": "CUSTOM_MINESIM_SEMANTIC_JSON_NOT_GEOJSON_FEATURECOLLECTION",
+    "original_g1_drivable_domain_stage_script_present": false,
+    "v2_prepare_identity_basis": "EXACT_MAP_SHA+PRODUCTION_LOADER_SHA+FOUR_LAYER_RULE+178_LINKED_POLYGON_RECORDS+29_COMPONENTS+REAL_ROUTE_ENDPOINT_COVERS"
+  },
+  "repo": {
+    "allowed_historical_untracked": [
+      "?? ^C"
+    ],
+    "head": "112d2bd0f3412fc83b13d5587d2b41402d2d0f5e",
+    "path": "/root/MineSim-Dynamic",
+    "tracked_dirty": false
+  },
+  "schema": "MINESIM_CURRENT_PROJECT_STATUS_20260927_V2"
+}

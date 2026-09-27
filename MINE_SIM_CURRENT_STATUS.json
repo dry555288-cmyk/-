@@ -1,0 +1,9 @@
+{
+  "as_of": "2026-09-27",
+  "authoritative_file": "01_当前接手核心与最新证据/20260927_G1冻结与G2启动/CURRENT_PROJECT_STATUS_20260927.json",
+  "G0": "PASS_FROZEN",
+  "G1": "PASS_FROZEN",
+  "G2": "HOLD_BEFORE_SCIENTIFIC_RUNTIME_PENDING_V2_PREPARE",
+  "G3": "NOT_STARTED",
+  "G9_HOLDOUT": "UNTOUCHED"
+}
